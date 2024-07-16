@@ -1,0 +1,21 @@
+{
+  "name": "284876b2-fac6-4849-bf8a-cfbf9f23115c",
+  "displayName": "head_intent.google_purchases",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about Google purchases made from google play store and payment options or purchase review ",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 137
+}

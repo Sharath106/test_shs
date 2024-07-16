@@ -1,0 +1,28 @@
+{
+  "name": "d49e5146-042f-4021-afde-f8ea1872eced",
+  "displayName": "head_intent.equipment_unlock_device",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Asking for device unlock",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 341
+}

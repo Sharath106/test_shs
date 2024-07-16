@@ -1,0 +1,1455 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "renouvellement",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " de mon "
+    }, {
+      "text": "cellulaire",
+      "parameterId": "device_type"
+    }, {
+      "text": "\r "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "renouveler",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon "
+    }, {
+      "text": "cellulaire",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "renouveler",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " "
+    }, {
+      "text": "cellulaire",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "renouvellement",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " "
+    }, {
+      "text": "cellulaire",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer "
+    }, {
+      "text": "cellulaire",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer mon "
+    }, {
+      "text": "cellulaire",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer de "
+    }, {
+      "text": "cellulaire",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " actuel est vieux, avez-vous des offres pour le vendredi fou pour mettre à jour mon téléphone ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "avez-vous des offres pour le vendredi fou afin que je puisse mettre à jour mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souhaite mettre à jour mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": ", quelles sont les promotions du vendredi fou ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux profiter de votre offre du vendredi fou pour mettre mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " à niveau."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souhaite mettre à jour mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": ", avez-vous des offres pour le vendredi fou ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " est vieux et je veux le mettre à jour avec une offre du vendredi fou."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Des mises à jour pour les offres du vendredi fou ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer d'appareil"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux remplacer mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "renouvellement",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  de "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "renouveler",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "cherche à acheter un "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " portable pour "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " du "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " de mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " les téléphones"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " le "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changements de "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer de "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 6,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à jour de mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " d'un "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " du téléphone "
+    }, {
+      "text": "portable",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mobilité"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " "
+    }, {
+      "text": "iphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais mettre à jour mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à jour du "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " a besoin d'être changé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais changer mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " pour autre chose"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "remplacer un "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " et un forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changement de "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'appelle au sujet de la "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " de mon "
+    }, {
+      "text": "iphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " que j'ai mis en ligne le seize octobre dernier"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "parler au service client de la "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " de mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " du "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " intelligent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " nos téléphones"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à jour mon téléphone "
+    }, {
+      "text": "portable",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à jour mon forfait "
+    }, {
+      "text": "mobile",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "vérification d'une "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " du "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux mettre à jour mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  du nouveau "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " d'une ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à jour le téléphone "
+    }, {
+      "text": "portable",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je me demande si je suis capable d'avoir un "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " amélioré"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à jour le "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " nouveau téléphone "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je suis juste une question sur la "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " du téléphone "
+    }, {
+      "text": "portable",
+      "parameterId": "device_type"
+    }, {
+      "text": " de l'iphone onze de x max"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " des téléphones portables"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "une mise à jour du "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " vers le nouvel  "
+    }, {
+      "text": "iphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " cherche à "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " et conserver le forfait sur lequel je suis"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mises "
+    }, {
+      "text": "à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " de téléphone "
+    }, {
+      "text": "portable",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " sur "
+    }, {
+      "text": "iphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " de nos téléphones"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais mettre à jour  le téléphone "
+    }, {
+      "text": "portable",
+      "parameterId": "device_type"
+    }, {
+      "text": " s'il vous plaît"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à jour mon "
+    }, {
+      "text": "appareil",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changement d'appareil"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux changer mon "
+    }, {
+      "text": "appareil",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " du matériel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "renouveler",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  notre "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " matérielle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " le matériel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "appareil de "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mises "
+    }, {
+      "text": "à niveau",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "vérification de la "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " d'un "
+    }, {
+      "text": "appareil",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " de l'équipement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux changer mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux mettre à jour mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " sur mon "
+    }, {
+      "text": "compte existant",
+      "parameterId": "new_vs_existing_account"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souhaite passer  à l'Iphone 10. Puis-je l'obtenir gratuitement ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ai-je droit à "
+    }, {
+      "text": "un"
+    }, {
+      "text": " surclassement téléphonique ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ai-je droit à un surclassement de smartphone ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin de passer  à un nouveau "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Besoin de mettre à jour  mon "
+    }, {
+      "text": "hub",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon "
+    }, {
+      "text": "hub",
+      "parameterId": "device_type"
+    }, {
+      "text": " intelligent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon "
+    }, {
+      "text": "appareil",
+      "parameterId": "device_type"
+    }, {
+      "text": " sur la "
+    }, {
+      "text": "ligne existante",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter un "
+    }, {
+      "text": "iPhone",
+      "parameterId": "device_type"
+    }, {
+      "text": " à mon "
+    }, {
+      "text": "compte existant",
+      "parameterId": "new_vs_existing_account"
+    }, {
+      "text": "  s'il vous plaît mais je dois acheter un nouveau téléphone "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis prêt pour une "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " avec une "
+    }, {
+      "text": "nouvelle ligne",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voulais acheter  un "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " sur une "
+    }, {
+      "text": "nouvelle ligne",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "aimerait aussi avoir une "
+    }, {
+      "text": "nouvelle",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  "
+    }, {
+      "text": "tablette",
+      "parameterId": "device_type"
+    }, {
+      "text": " avec la "
+    }, {
+      "text": "nouvelle ligne",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voudrais connaître le coût de la "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  vers le 12 pro max"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je regarde Apple "
+    }, {
+      "text": "iPhone",
+      "parameterId": "device_type"
+    }, {
+      "text": " 13 Pro Max en me demandant si vous pouviez me dire combien il en coûterait pour passer  à ce téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demandais si je pouvais "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon téléphone vers "
+    }, {
+      "text": "samsung",
+      "parameterId": "device_type"
+    }, {
+      "text": " Ultra"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de mettre à jour  mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " et en regardant, je pense que c'est le 12"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je pense "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon téléphone vers un "
+    }, {
+      "text": "samsung",
+      "parameterId": "device_type"
+    }, {
+      "text": " 12"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche à "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon "
+    }, {
+      "text": "iPhone",
+      "parameterId": "device_type"
+    }, {
+      "text": " 12 Plus pour quelque chose de plus récent, avec de meilleures fonctionnalités d'appareil photo, mais je n'en veux pas trop"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Suis-je dû pour une "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche à "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " et je voulais voir ce qui est disponible"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "obtenir une "
+    }, {
+      "text": "nouvelle ligne",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  avec un nouveau "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voulais "
+    }, {
+      "text": "renouveler",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mes "
+    }, {
+      "text": "deux"
+    }, {
+      "text": " téléphones"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je cherche à "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon téléphone, je ne sais pas quel téléphone tant qu'il s'agit d'un "
+    }, {
+      "text": "iphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " et que je peux garder le plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je pensais "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  les téléphones sur mon compte. Je sais que mon contrat se termine en décembre, alors je me demande si je peux me renseigner maintenant ou s'il est trop tôt ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai deux téléphones avec vous. Je cherche à "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  les téléphones vers le "
+    }, {
+      "text": "nouveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " "
+    }, {
+      "text": "samsung",
+      "parameterId": "device_type"
+    }, {
+      "text": " ou l'iphone 12. Je me demande ce que vous pouvez faire pour moi."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je pense que nous devrions "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  nos téléphones portables qui peuvent être mis "
+    }, {
+      "text": "à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " tous les trois ans et je voulais vous demander ce que je dois faire avec ça comment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " ce "
+    }, {
+      "text": "cellulaire",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'appelle à propos de mon téléphone "
+    }, {
+      "text": "portable",
+      "parameterId": "device_type"
+    }, {
+      "text": ", je veux le "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Eh bien, je viens de faire une "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " hier et je me suis posé des questions sur la "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  de ma femme"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "renouvellement",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  de mon "
+    }, {
+      "text": "portable",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon téléphone J'ai mon propre téléphone en ce moment et j'aimerais obtenir un "
+    }, {
+      "text": "samsung",
+      "parameterId": "device_type"
+    }, {
+      "text": " A32"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai une question, mon contrat téléphonique arrive à échéance dans "
+    }, {
+      "text": "deux"
+    }, {
+      "text": " mois et je recherche une mise à jour  gratuite. Je me demande quand je peux l'obtenir"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis déjà  client de telus et je cherche à "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": ", mais je conserve mon forfait existant à moins que vous n'en ayez un meilleur pour environ le même prix."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche à "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "   mes deux téléphones, mon plan est terminé sur l'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " d'eux et l'autre sera bientôt terminé. Je veux "
+    }, {
+      "text": "deux"
+    }, {
+      "text": " nouveaux téléphones et une montre intelligente. pouvez-vous aider avec ceci"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche à "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " vers l'iPhone 12 violet, je veux que mon forfait et le montant de ma facture restent à peu près les mêmes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherchais à faire remplacer mon "
+    }, {
+      "text": "appareil",
+      "parameterId": "device_type"
+    }, {
+      "text": ", je ne savais pas quelles étaient mes options. Je regarde juste les téléphones en ce moment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je parlais hier à un représentant de Telus de la "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  de mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " vers l'iPhone 13"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il y a quelques jours, j'ai parlé avec un associé de la "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  de nos téléphones portables. Nous aimerions aller de l'avant et le faire"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai discuté avec quelques agents concernant la "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  de mon téléphone et de l'autre téléphone sur mon compte. Je regarde le "
+    }, {
+      "text": "samsung",
+      "parameterId": "device_type"
+    }, {
+      "text": " S21 sur une durée de deux ans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "lorsque j'ai mis à jour mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": ", l'assistant Telus a dit qu'il allait mettre des notes sur mon compte afin que je puisse obtenir la même offre pour ma femme sur ce compte sous mon nom, pouvez-vous vérifier cela pour moi s'il vous plaît"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Donc, en janvier, j'ai eu une "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " pour ma femme et maintenant je voudrais "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je cherche à "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  le "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": " sur mon compte "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai parlé avec un monsieur de fidélité hier et il a dit qu'il avait mit une offre sur mon compte pour "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  mon téléphone, je regarde soit un "
+    }, {
+      "text": "iPhone",
+      "parameterId": "device_type"
+    }, {
+      "text": " 12 Pro ou 13 Pro"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin de mettre à jour  mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "device_type"
+    }, {
+      "text": ", j'ai trop de problèmes avec, il est temps de le changer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "cherche à "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  "
+    }, {
+      "text": "deux"
+    }, {
+      "text": " téléphones sur mon compte dans les prochains mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Existe-t-il un moyen de "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "  en ligne mon "
+    }, {
+      "text": "iPhone",
+      "parameterId": "device_type"
+    }, {
+      "text": " 12 est entièrement payé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux mettre à jour  ma montre apple"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

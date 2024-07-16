@@ -1,0 +1,21 @@
+{
+  "name": "889b7087-f562-4f4d-8979-98e386ea1641",
+  "displayName": "head_intent.equipment_vague",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer has a general question regarding devices.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 180
+}

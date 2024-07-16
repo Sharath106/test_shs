@@ -1,0 +1,332 @@
+{
+  "trainingPhrases": [ {
+    "id": "1678baa7-39c5-434b-957f-77f92c518882",
+    "parts": [ {
+      "text": "reset a phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "919c2650-9437-4c23-a730-ccb27a9ec599",
+    "parts": [ {
+      "text": "resetting an old phone settings"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b2a25067-b1d0-4cf5-9e47-7be6bc90a2cc",
+    "parts": [ {
+      "text": "how do i check my gps settings?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ddd61ab0-d995-42a0-9200-869340ec4a02",
+    "parts": [ {
+      "text": "where can i see my curent location on gps?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3488ffa3-191f-49b3-b929-6ec630f563cb",
+    "parts": [ {
+      "text": "how to change location on gps "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "85f3070d-b18f-4f89-965b-33a3e62dd54e",
+    "parts": [ {
+      "text": "can you help me enable my current location on gps please "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "49775672-5b80-4b1d-969c-84a330da83e7",
+    "parts": [ {
+      "text": "how do i mute my gps?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ec4fe4bf-a50c-4bb8-b04d-6e3755a2d3bd",
+    "parts": [ {
+      "text": "how can i change the voice settings for my gps?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c5ee416e-e8c5-4b7f-ab1b-3dc8f9cfc1e1",
+    "parts": [ {
+      "text": "Do i need to have service to use gps?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1fbbf365-35e7-4cec-a474-ee81b2829056",
+    "parts": [ {
+      "text": "how do i change my location settings for my gps?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6d50a422-b5e4-4b4b-ab06-8cfb88bfc481",
+    "parts": [ {
+      "text": "can gps work without internet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3abe86b3-81ce-41cd-96e0-c6556efa43ab",
+    "parts": [ {
+      "text": "where do i go to change my gps settings?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8afb696c-1cd0-4fd5-9177-6cd1a37f6956",
+    "parts": [ {
+      "text": "can gps work without data?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cc978954-3949-4c62-82ea-b45328238509",
+    "parts": [ {
+      "text": "do i need bluetooth to use my gps?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "75b520ea-e686-4b16-ada4-c1f54fa3d398",
+    "parts": [ {
+      "text": "how do i use my gps?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a8a14ff9-a757-4dff-a043-43fd9a898139",
+    "parts": [ {
+      "text": "how do i change my location on gps?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "666dc371-5740-4ad4-8eb9-81c549419873",
+    "parts": [ {
+      "text": "how do i turn off my gps ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5a7f35a6-a44a-49f7-961f-af436840526a",
+    "parts": [ {
+      "text": "Just got a new gps and was wondering how to activate it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fcf0d48e-eff1-4462-ac28-fd4a3be0ea81",
+    "parts": [ {
+      "text": "can you explain a bit about this gps?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0f8c1968-37ae-41ed-b1c3-bf89f14aa318",
+    "parts": [ {
+      "text": "how does gps work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3e89475a-9952-4585-ae45-95af8b90ed75",
+    "parts": [ {
+      "text": "GPS information"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "389e9a57-b0c2-49cd-916b-3d1ec6d5102f",
+    "parts": [ {
+      "text": "use my GPS"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "85c5ef89-7847-4bc2-b304-a8bd6e026f77",
+    "parts": [ {
+      "text": "how to enable location services"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8e28eb65-c3f2-4d22-a525-8074aa876696",
+    "parts": [ {
+      "text": "use my location service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "97b57ab2-28d7-4870-83df-05d1356ee021",
+    "parts": [ {
+      "text": "I am wondering about how does the GPS work."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "31ce6794-88df-4500-bc4c-7223118532d2",
+    "parts": [ {
+      "text": "I would like to know how the GPS is working."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "899acb80-4821-4a3f-895b-271d865784fa",
+    "parts": [ {
+      "text": "I want to know how the GPS works."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "520ac135-0a23-4bce-8541-0d5db7c2614e",
+    "parts": [ {
+      "text": "GPS info"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9f52348f-84cd-42b6-a7f4-9d8496929477",
+    "parts": [ {
+      "text": "GPS details"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9a2bfb47-28f2-469e-9652-e4ccc115d4cb",
+    "parts": [ {
+      "text": "How can I use the GPS?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3c497d6b-4982-4623-89bf-c9b5307bd719",
+    "parts": [ {
+      "text": "I am wondering how to use the GPS."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f2e4edf6-22b3-47bd-93c4-8a3047da5dd6",
+    "parts": [ {
+      "text": "I would like to know more about how to use the GPS."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a1eb5eec-70db-4d4a-8942-825698578562",
+    "parts": [ {
+      "text": "Wondering how to enable the location services."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "34874fed-23f0-4630-b8be-00e34800f41a",
+    "parts": [ {
+      "text": "Can you please tell me how to turn on location services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "52b7acc5-713f-4c42-820f-f01907c0064e",
+    "parts": [ {
+      "text": "Can't figure out how to activate location services."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db8fb94c-5d57-49d6-85b9-9dd04317f6e0",
+    "parts": [ {
+      "text": "Just want to know how to enable the location services, please."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "03014555-e136-47cd-bb0f-a74baf18e21c",
+    "parts": [ {
+      "text": "Can you explain in details how the GPS works?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "65d374fc-efad-406d-bacd-428c8796ed51",
+    "parts": [ {
+      "text": "What do I need to do in order to use the GPS on my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a619af30-9f71-4ee7-95da-ce4c22824dad",
+    "parts": [ {
+      "text": "I don't understand how to make the GPS work on my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b14fa09d-2f3f-443e-9c96-8985dab3d14a",
+    "parts": [ {
+      "text": "Do I need to enable location services in order to use the GPS?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b7d5e67a-b9e1-46cb-85a0-8158c9f3be4e",
+    "parts": [ {
+      "text": "How is the GPS knowing where I am?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "30004320-3347-405d-9289-adf455dbd874",
+    "parts": [ {
+      "text": "I would like details regarding the GPS functions."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d150f313-5a46-40af-9dd7-a997ea0e40cb",
+    "parts": [ {
+      "text": "GPS functions."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2d4744b2-32cf-4d25-a16a-85fc45724544",
+    "parts": [ {
+      "text": "question about my GPS."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "212a9ed1-e8fa-43c8-a943-1cb477164d17",
+    "parts": [ {
+      "text": "change settings in GPS?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2c1e09b1-5acb-43ca-aa06-4345bd509230",
+    "parts": [ {
+      "text": "How do i access voice settings for GPS"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b5aadc2b-68c6-42dc-be7e-4e7b41365290",
+    "parts": [ {
+      "text": "how can i search for a previous address?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

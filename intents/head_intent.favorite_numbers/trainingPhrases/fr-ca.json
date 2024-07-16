@@ -1,0 +1,257 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "il y un moyen pour changer mes numéros favoris?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment je peux modifier numéros favoris?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "vous pouvez m'aider à gérer mes numéros favoris svp?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Offrez-vous toujours les numéros favoris?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne vois pas mes numéros préférés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Confirmer mes numéros favoris"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais mettre à "
+    }, {
+      "text": "jour"
+    }, {
+      "text": " mes numéros préférés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que les numéros favoris incluent les interurbains?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où se trouvent mes numéros favoris?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Changer mes 10 numéros favoris"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ajouter "
+    }, {
+      "text": "un"
+    }, {
+      "text": " numéro à mes numéros favoris"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Enlever "
+    }, {
+      "text": "un"
+    }, {
+      "text": " numéro préféré"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien de numéros favoris puis-je avoir?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où je peux trouver mes numéros préférés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux avoir les détails pour changer les numéros favoris"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Numéros préférés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Numéros favoris"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Changer"
+    }, {
+      "text": " le top "
+    }, {
+      "text": "10"
+    }, {
+      "text": " de numéros"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Avoir un"
+    }, {
+      "text": " top "
+    }, {
+      "text": "10"
+    }, {
+      "text": " de numéros"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de "
+    }, {
+      "text": "configurer"
+    }, {
+      "text": " mes numéros préférés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux "
+    }, {
+      "text": "configurer"
+    }, {
+      "text": " des numéros favoris"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne"
+    }, {
+      "text": " trouve pas comment "
+    }, {
+      "text": "changer"
+    }, {
+      "text": " mes numéros préférés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment "
+    }, {
+      "text": "gérer"
+    }, {
+      "text": " les numéros préférés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais "
+    }, {
+      "text": "gérer"
+    }, {
+      "text": " mes numéros favoris"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Besoin de "
+    }, {
+      "text": "retirer"
+    }, {
+      "text": " "
+    }, {
+      "text": "une"
+    }, {
+      "text": " de mes numéros préférés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Retirer"
+    }, {
+      "text": " des numéros favoris"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais "
+    }, {
+      "text": "faire"
+    }, {
+      "text": " "
+    }, {
+      "text": "changer"
+    }, {
+      "text": " mes numéros favoris"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment "
+    }, {
+      "text": "mettre à jour"
+    }, {
+      "text": " mes numéros favoris"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux "
+    }, {
+      "text": "changer"
+    }, {
+      "text": " mes numéros préférés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Changer"
+    }, {
+      "text": " mes numéros préférés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "303b995f-c4e9-4376-bd03-3e69cafaf79b",
+  "displayName": "head_intent.finding_imei_number",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about finding the IMEI (International Mobile Equipment Identity) number.",
+  "numTrainingPhrases": 140
+}

@@ -1,0 +1,356 @@
+{
+  "trainingPhrases": [ {
+    "id": "d1943487-0a2b-4598-ab05-402e54f9bf63",
+    "parts": [ {
+      "text": "I ordered a phone on "
+    }, {
+      "text": "telus.com"
+    }, {
+      "text": " but I have some issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d657ac23-ec21-4015-8a32-b7b9e29d2eab",
+    "parts": [ {
+      "text": "issue with order I placed it on your "
+    }, {
+      "text": "website"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bc99d8bf-afc4-4655-adde-78306be84df9",
+    "parts": [ {
+      "text": "i ordered a phone "
+    }, {
+      "text": "online"
+    }, {
+      "text": " but i need to make a change i made a mistake"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b25c0315-92d7-4d93-b64a-fa38cdddc4d9",
+    "parts": [ {
+      "text": "cancel my "
+    }, {
+      "text": "online"
+    }, {
+      "text": " order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0ea31c07-5472-41dc-bd6a-33001adf1c1d",
+    "parts": [ {
+      "text": "I just placed an order "
+    }, {
+      "text": "online"
+    }, {
+      "text": " but will need to cancel it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d7e6a336-3648-42e9-9447-479ebf388fa1",
+    "parts": [ {
+      "text": "I run into some issues when ordering stuff "
+    }, {
+      "text": "online"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "664f1b39-4abc-445d-97ce-39f975f035ef",
+    "parts": [ {
+      "text": "ordered a mobile and having issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "90db1e23-49cc-490d-8ed0-9b1341d322cc",
+    "parts": [ {
+      "text": "issue with "
+    }, {
+      "text": "phone"
+    }, {
+      "text": " order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f77b0d70-b6b8-416e-9410-1068a5188647",
+    "parts": [ {
+      "text": "phone"
+    }, {
+      "text": " order problems"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "138ea0c1-db7e-49bc-9e63-ec7499fa07a6",
+    "parts": [ {
+      "text": "I'm having issues with my "
+    }, {
+      "text": "phone"
+    }, {
+      "text": " order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f2be44e7-3fca-4a7b-9d32-f0e06951e8f4",
+    "parts": [ {
+      "text": "problem with "
+    }, {
+      "text": "online"
+    }, {
+      "text": " order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "585d88af-2233-4782-aa46-71e51854b148",
+    "parts": [ {
+      "text": "order error"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6018e803-a2df-43bb-b5dd-e42d0cf92c88",
+    "parts": [ {
+      "text": "problems with my order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d0f7b675-4454-46eb-b537-5182aa159cff",
+    "parts": [ {
+      "text": "I ordered a device but there's an issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b302c74-7a11-43de-b981-3f1d30e0cd77",
+    "parts": [ {
+      "text": "about an issue with an order I made"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b797fe01-d368-47e1-ad81-33624b558df5",
+    "parts": [ {
+      "text": "I'm calling about an order I placed yesterday I'm having some problems with it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dedb12f8-7454-4fc4-b5ec-fd884b653f50",
+    "parts": [ {
+      "text": "I placed an order through your "
+    }, {
+      "text": "website"
+    }, {
+      "text": " and I'm having some issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e195f18f-5075-4747-b390-2f607f01b5f3",
+    "parts": [ {
+      "text": "Online"
+    }, {
+      "text": " purchase issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c761665f-7f19-4275-94a8-e817acbca5ac",
+    "parts": [ {
+      "text": "issue with my order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d902eb98-fd39-4440-8198-bd820f0eabe6",
+    "parts": [ {
+      "text": "online"
+    }, {
+      "text": " order issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4d2ad2cd-2e83-4f36-b76c-f7be7beb9e45",
+    "parts": [ {
+      "text": "i'm having issues with my order "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "99657d36-40e7-4e08-96a5-4fc91010999c",
+    "parts": [ {
+      "text": "mistake in shipping address for my "
+    }, {
+      "text": "online"
+    }, {
+      "text": " order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f64c451e-a716-4fc2-b296-c6af6128e183",
+    "parts": [ {
+      "text": "i just placed an order and realized there is a mistake in the shipping address"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d93e08e5-09b9-4cca-be0c-803690705446",
+    "parts": [ {
+      "text": "change the shipping address on my order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cdb57008-4abe-4f4c-8845-05e7d2491e8e",
+    "parts": [ {
+      "text": " I just recently ordered a new phone and I want is to make sure the shipping address is correct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "47fe1429-b610-4e33-aba4-7d881c048857",
+    "parts": [ {
+      "text": "I just want to confirm that my order will be shipped to the correct address"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "18d60b8d-22f8-4e6a-af31-e4db865baf33",
+    "parts": [ {
+      "text": "incorrect order shipping address"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "16d39479-c76a-4bb8-8d6c-75416ec7c505",
+    "parts": [ {
+      "text": "correct the shipping address on my order "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6644ff95-0bb6-4275-ba94-35b246a21833",
+    "parts": [ {
+      "text": "change the shipping address"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f5f5f13e-7c08-45a4-8188-83d8ae036306",
+    "parts": [ {
+      "text": "i made a mistake on cancelling part of my "
+    }, {
+      "text": "phone"
+    }, {
+      "text": " order so i would like to have it put back"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "de598944-69a6-4d83-82a4-fbbf9022583d",
+    "parts": [ {
+      "text": "shipping order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3b4f198-04c5-45db-8f6e-ace969c35f92",
+    "parts": [ {
+      "text": "i want to review my order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "490fcd2a-b0e5-4c0b-941f-4b19391dc33d",
+    "parts": [ {
+      "text": "change an existing order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "759c4086-78b8-43f0-a439-617d941d7757",
+    "parts": [ {
+      "text": "change camera order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aa45dd57-4245-4797-92ac-1c8ee07e7275",
+    "parts": [ {
+      "text": "cancel order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d13d10e3-33ff-4dad-a516-fe0565877a37",
+    "parts": [ {
+      "text": "order update"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "57fb2c30-e314-4877-8484-b565ebcbc354",
+    "parts": [ {
+      "text": "i'd like to change some some an order please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5be7923b-881a-46ab-b599-29b8488c6b58",
+    "parts": [ {
+      "text": "order cancellation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "04b23287-d957-4468-a2e3-18bbc2d721d5",
+    "parts": [ {
+      "text": "cancel check on an order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8a731e57-feb9-48b0-b62b-cc94fafb7efe",
+    "parts": [ {
+      "text": "cancel an order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bac8b451-91c9-47c2-9d0b-4c0536c0d211",
+    "parts": [ {
+      "text": "order issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ffb8b19e-8730-4fe5-b5fc-d4e443813798",
+    "parts": [ {
+      "text": "cancel my order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0349bb60-001f-4911-9939-8105fa44be9b",
+    "parts": [ {
+      "text": "i need help with the an order i made"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

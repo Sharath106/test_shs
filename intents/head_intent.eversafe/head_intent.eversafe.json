@@ -1,0 +1,21 @@
+{
+  "name": "62a6f829-62b9-4bca-afb4-3dc51f4e251c",
+  "displayName": "head_intent.eversafe",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "program"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "TELUS EverSafe privacy protection program",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 115
+}

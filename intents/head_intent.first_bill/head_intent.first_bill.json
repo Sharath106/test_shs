@@ -1,0 +1,28 @@
+{
+  "name": "9c145eb1-92fa-4f56-9f1f-c92749b60163",
+  "displayName": "head_intent.first_bill",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": " Explanation of first bill for new customers.",
+  "asrCorrections": [ {
+    "errorPhrase": "1re",
+    "correctionPhrase": "première"
+  } ],
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 139
+}

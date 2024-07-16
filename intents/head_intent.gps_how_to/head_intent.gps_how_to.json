@@ -1,0 +1,20 @@
+{
+  "name": "5705bd12-108a-4d66-ad03-bc4d14482c59",
+  "displayName": "head_intent.gps_how_to",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about how does GPS work.",
+  "numTrainingPhrases": 143
+}

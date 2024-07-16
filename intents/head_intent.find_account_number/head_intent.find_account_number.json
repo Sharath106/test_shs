@@ -1,0 +1,28 @@
+{
+  "name": "e3bf0e2f-42b4-41ff-ba6d-19ab9d0a8042",
+  "displayName": "head_intent.find_account_number",
+  "parameters": [ {
+    "id": "online_vs_app",
+    "entityType": "@online-vs-app"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about how to find the account number or asking the account number.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 184
+}

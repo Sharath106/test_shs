@@ -1,0 +1,386 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "C'est quoi la procédure pour retrouver mon téléphone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux savoir quoi fair pour retrouver mon appareil"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire pour retrouver mon cellulaire?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais de l'aide pour retrouver mon cell"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourriez-vous me dire quoi faire pour retrouver mon cell?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je fais comment pour retrouver "
+    }, {
+      "text": "un"
+    }, {
+      "text": " téléphone perdu?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "localiser le téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "trouver un téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème avec mon téléphone portable il a été perdu et j'essaie de trouver où il se trouve dans t c ip"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'essaie de localiser mon dernier téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je viens d'acheter un nouveau téléphone et je l'ai perdu, pouvez-vous m'aider à le trouver ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voudrais trouver mon téléphone "
+    }, {
+      "text": "google",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-"
+    }, {
+      "text": "vous"
+    }, {
+      "text": " "
+    }, {
+      "text": "vérifier"
+    }, {
+      "text": " pour "
+    }, {
+      "text": "trouver"
+    }, {
+      "text": " mon "
+    }, {
+      "text": "samsung",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-"
+    }, {
+      "text": "vous"
+    }, {
+      "text": " "
+    }, {
+      "text": "savoir"
+    }, {
+      "text": " où se "
+    }, {
+      "text": "trouve"
+    }, {
+      "text": " "
+    }, {
+      "text": "mon téléphone"
+    }, {
+      "text": " "
+    }, {
+      "text": "Android",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin"
+    }, {
+      "text": " de "
+    }, {
+      "text": "savoir"
+    }, {
+      "text": " où se "
+    }, {
+      "text": "trouve"
+    }, {
+      "text": " mon "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "suivre "
+    }, {
+      "text": "mon téléphone"
+    }, {
+      "text": " "
+    }, {
+      "text": "Android",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "suivre "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-"
+    }, {
+      "text": "vous m'"
+    }, {
+      "text": "aider"
+    }, {
+      "text": " à suivre "
+    }, {
+      "text": "mon téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "suivre "
+    }, {
+      "text": "mon appareil"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment localiser mon telephone "
+    }, {
+      "text": "android",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "trouver"
+    }, {
+      "text": " mon "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin d'aide pour localiser mon "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "trouver"
+    }, {
+      "text": " "
+    }, {
+      "text": "mon appareil"
+    }, {
+      "text": " "
+    }, {
+      "text": "Android",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "trouve mon "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'"
+    }, {
+      "text": "arrive pas à "
+    }, {
+      "text": "trouver"
+    }, {
+      "text": " "
+    }, {
+      "text": "mon téléphone"
+    }, {
+      "text": ", pouvons-"
+    }, {
+      "text": "nous le"
+    }, {
+      "text": " "
+    }, {
+      "text": "localiser"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-"
+    }, {
+      "text": "vous"
+    }, {
+      "text": " m'"
+    }, {
+      "text": "aider"
+    }, {
+      "text": " à "
+    }, {
+      "text": "trouver"
+    }, {
+      "text": " "
+    }, {
+      "text": "mon téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment pourrais-je "
+    }, {
+      "text": "trouver"
+    }, {
+      "text": " "
+    }, {
+      "text": "mon téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment "
+    }, {
+      "text": "dois-"
+    }, {
+      "text": "je procéder pour "
+    }, {
+      "text": "localiser"
+    }, {
+      "text": " "
+    }, {
+      "text": "mon appareil"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "y a-t-il "
+    }, {
+      "text": "un"
+    }, {
+      "text": " moyen de "
+    }, {
+      "text": "trouver"
+    }, {
+      "text": " "
+    }, {
+      "text": "mon téléphone"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment "
+    }, {
+      "text": "trouver"
+    }, {
+      "text": " "
+    }, {
+      "text": "mon appareil"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "localiser"
+    }, {
+      "text": " "
+    }, {
+      "text": "mon appareil"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment "
+    }, {
+      "text": "localiser"
+    }, {
+      "text": " "
+    }, {
+      "text": "mon téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "trouver"
+    }, {
+      "text": " "
+    }, {
+      "text": "mon téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}
