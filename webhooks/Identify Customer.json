@@ -1,0 +1,10 @@
+{
+  "name": "540201b4-e9a0-4285-b6f4-7a1ce94e3f90",
+  "displayName": "Identify Customer",
+  "genericWebService": {
+    "uri": "https://ccai-lab.cloudapps.telus.com/identify-customer"
+  },
+  "timeout": {
+    "seconds": 30
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "4cd205f9-8edc-499c-906f-ca682ecdc6ed",
+  "displayName": "Account Identity",
+  "genericWebService": {
+    "uri": "https://ccai-lab.cloudapps.telus.com/accountidentification"
+  },
+  "timeout": {
+    "seconds": 30
+  }
+}

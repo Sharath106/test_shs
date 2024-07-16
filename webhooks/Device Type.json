@@ -1,0 +1,10 @@
+{
+  "name": "d8d0617d-5ffb-4388-9109-76122404481f",
+  "displayName": "Device Type",
+  "genericWebService": {
+    "uri": "https://ccai-lab.cloudapps.telus.com/device-info"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "fe27e5b9-f89f-4ff6-b930-be8fdad9e688",
+  "displayName": "Authentication",
+  "genericWebService": {
+    "uri": "https://ccai-lab.cloudapps.telus.com/authentication"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

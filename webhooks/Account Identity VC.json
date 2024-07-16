@@ -1,0 +1,10 @@
+{
+  "name": "0a99571b-24b7-4015-8d45-56e302685d61",
+  "displayName": "Account Identity VC",
+  "genericWebService": {
+    "uri": "https://ccai-lab.cloudapps.telus.com/identify-customer"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

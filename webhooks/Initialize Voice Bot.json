@@ -1,0 +1,10 @@
+{
+  "name": "08e77cf9-708e-4a99-a7ef-eaaf343df1b8",
+  "displayName": "Initialize Voice Bot",
+  "genericWebService": {
+    "uri": "https://ccai-lab.cloudapps.telus.com/initialize"
+  },
+  "timeout": {
+    "seconds": 10
+  }
+}

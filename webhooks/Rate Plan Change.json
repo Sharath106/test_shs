@@ -1,0 +1,10 @@
+{
+  "name": "7778d66a-d133-4e1a-b35f-4ab4d2f23ca2",
+  "displayName": "Rate Plan Change",
+  "genericWebService": {
+    "uri": "https://ccai-lab.cloudapps.telus.com/rateplanchange"
+  },
+  "timeout": {
+    "seconds": 30
+  }
+}

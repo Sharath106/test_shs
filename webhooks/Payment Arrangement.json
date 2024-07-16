@@ -1,0 +1,10 @@
+{
+  "name": "e327c259-d94a-47f0-9835-1cdd40e8e99d",
+  "displayName": "Payment Arrangement",
+  "genericWebService": {
+    "uri": "https://ccai-lab.cloudapps.telus.com/payment-arrangement"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

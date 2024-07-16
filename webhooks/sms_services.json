@@ -1,0 +1,10 @@
+{
+  "name": "fc6ce166-ad38-43d9-a7e9-b1a577aa16b7",
+  "displayName": "sms_services",
+  "genericWebService": {
+    "uri": "https://ccai-lab.cloudapps.telus.com/send-sms"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

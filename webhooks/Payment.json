@@ -1,0 +1,10 @@
+{
+  "name": "ec5a2c60-42e2-473c-b22c-2a88a3a608d4",
+  "displayName": "Payment",
+  "genericWebService": {
+    "uri": "https://ccai-lab.cloudapps.telus.com/payment"
+  },
+  "timeout": {
+    "seconds": 10
+  }
+}
