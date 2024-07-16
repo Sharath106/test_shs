@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "yes",
+    "synonyms": [ "dtmf_digits_1", "I want SMS", "send me a text", "send sms", "SMS", "SMS please", "text please" ],
+    "languageCode": "en"
+  }, {
+    "value": "no",
+    "synonyms": [ "dtmf_digits_2", "I don't want SMS", "don't send sms" ],
+    "languageCode": "en"
+  } ]
+}

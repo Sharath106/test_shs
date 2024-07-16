@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "sms",
+    "synonyms": [ "dtmf_digits_1", "message me", "online", "send details on ", "send details on sms", "send me instructions", "sms", "sms please", "text", "text please" ],
+    "languageCode": "en"
+  }, {
+    "value": "self_serve",
+    "synonyms": [ "be on the phone", "by calling", "by myself", "by phone", "by telephoning", "by the phone", "dtmf_digits_2", "for the telephone", "from my phone", "i will do it on my own", "off the phone", "on phone", "on the line", "on the telephone line", "over phone", "over the phone", "phone", "phone please", "self_serve", "stay on the phone", "telephonically", "self serve" ],
+    "languageCode": "en"
+  } ]
+}

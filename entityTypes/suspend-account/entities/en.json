@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "vacation disconnect",
+    "synonyms": [ "for a bit", "for a little bit", "for a little while", "for a while", "going away", "going in vacation", "going on vacation", "hold while traveling", "hold while travelling", "holiday mode", "out of the country", "out of town", "set up vacation", "temporarily ", "temporarily suspend", "temporary", "temporary suspend", "temporary suspension", "temporary vacation", "travelling", "vacation", "vacation disconenct", "vacation disconnect", "vacation mode", "vacation suspend", "vacation suspension", "vacationing", "while i travel", "while i'm away" ],
+    "languageCode": "en"
+  }, {
+    "value": "0",
+    "synonyms": [ "agent", "dtmf_digits_0", "operator" ],
+    "languageCode": "en"
+  }, {
+    "value": "account",
+    "synonyms": [ "account", "accounts", "cell", "cellphone", "device", "line", "lines", "mobile", "phone", "service", "services" ],
+    "languageCode": "en"
+  } ]
+}

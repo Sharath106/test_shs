@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "black",
+    "synonyms": [ "black", "noir", "noire" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "blue",
+    "synonyms": [ "bleu", "bleue", "blue" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "red",
+    "synonyms": [ "red", "rouge" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "silver",
+    "synonyms": [ "argent", "argente", "argenté", "argentee", "argentée", "silver" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "gold",
+    "synonyms": [ "dore", "doré", "doree", "dorée", "gold", "or" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "grey",
+    "synonyms": [ "grey", "gris", "gris espace", "gris sidéral", "grise", "gris sideral" ],
+    "languageCode": "fr-ca"
+  } ]
+}

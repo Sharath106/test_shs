@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "account number",
+    "synonyms": [ "account number", "Numéro de compte", "numéro de compte", "numéro de compte", "numéro de compte" ],
+    "languageCode": "fr"
+  }, {
+    "value": "billing address",
+    "synonyms": [ "billing address", "Adresse de facturation", "facturation", "adresse de facturation" ],
+    "languageCode": "fr"
+  }, {
+    "value": "email address",
+    "synonyms": [ "email address", "adresse e-mail professionnelle", "Identifiant de messagerie", "identifiant de messagerie", "adresse e-mail", "e-mail", "adresse e-mail professionnelle" ],
+    "languageCode": "fr"
+  }, {
+    "value": "name",
+    "synonyms": [ "name", "Nom", "Le nom sur le compte", "nom du compte", "Nom" ],
+    "languageCode": "fr"
+  }, {
+    "value": "shipping address",
+    "synonyms": [ "shipping address", "Adresse de livraison", "expédition", "adresse de livraison" ],
+    "languageCode": "fr"
+  } ]
+}

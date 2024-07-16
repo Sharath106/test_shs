@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "Apple Care+",
+    "synonyms": [ "Apple Care+", "Apple Care+", "apple care", "applecare", "apple care plus", "CA+", "garantie Apple", "garantie iphone", "iphone", "pomme +" ],
+    "languageCode": "fr"
+  }, {
+    "value": "TELUS Device Care",
+    "synonyms": [ "TELUS Device Care", "Entretien des appareils TELUS", "entretien de l'appareil", "Entretien des appareils TELUS", "PMH", "garantie android", "entretien des appareils Android", "entretien de l'appareil" ],
+    "languageCode": "fr"
+  } ]
+}

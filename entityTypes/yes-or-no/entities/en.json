@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "yes",
+    "synonyms": [ "Of course", "ok", "okay", "sure", "yeah", "yep", "yes " ],
+    "languageCode": "en"
+  }, {
+    "value": "no",
+    "synonyms": [ "na", "nah", "no", "nope" ],
+    "languageCode": "en"
+  } ]
+}

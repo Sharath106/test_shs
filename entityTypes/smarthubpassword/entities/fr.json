@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "Huawei",
+    "synonyms": [ "Huawei", "Huawei", "huawei e8372", "huawei e8372 lte", "e8372", "huwaei", "Terminal intelligent- Réinitialiser le mot de passe \u003e Huawei", "Huawei B882", "Huawei B612", "huawei", "b882", "b612" ],
+    "languageCode": "fr"
+  }, {
+    "value": "ZTE",
+    "synonyms": [ "ZTE", "Terminal intelligent - Réinitialiser le mot de passe \u003e ZTE", "ZTE MF288", "ZTE MF275", "ZTE MF279", "mf288", "mf275", "mf279", "279", "288", "275", "zte" ],
+    "languageCode": "fr"
+  } ]
+}

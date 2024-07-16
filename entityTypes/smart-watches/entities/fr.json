@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "Apple",
+    "synonyms": [ "Apple", "Pomme", "iphone", "Apple", "iphone" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung",
+    "synonyms": [ "Samsung", "Samsung", "samsung", "Samsung", "Galaxie", "Noter", "Samsung", "samsung galaxy", "galaxy" ],
+    "languageCode": "fr"
+  } ]
+}

@@ -1,0 +1,31 @@
+{
+  "entities": [ {
+    "value": "sms",
+    "synonyms": [ "message", "message texte", "messages", "sms", "text", "texte", "texto", "textos", "txt", "txto" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "agent",
+    "synonyms": [ "agent", "humain", "personne", "quelqu'un", "rep", "représentatif" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "dtmf_digits_0" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "9",
+    "synonyms": [ "dtmf_digits_9" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "activity",
+    "synonyms": [ "actions peu courantes", "activite", "activité", "activité suspecte", "danger", "menace", "tentative non autorisée", "activité inhabituelle" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "security",
+    "synonyms": [ "incident de sécurité", "Information de sécurité", "menace de sécurité", "problèmes de sécurité", "risque", "risque de sécurité", "sécurité", "sécurité du compte" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  } ]
+}

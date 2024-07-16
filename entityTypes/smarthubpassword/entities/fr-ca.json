@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "Huawei",
+    "synonyms": [ "b612", "b882", "e8372", "huawei", "Huawei B612", "Huawei B882", "huawei e8372", "huawei e8372 lte", "huwaei", "smarthub" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "ZTE",
+    "synonyms": [ "275", "279", "288", "mf275", "mf279", "mf288", "smarthub", "ZTE", "ZTE MF275", "ZTE MF279", "ZTE MF288" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  } ]
+}

@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "other email",
+    "synonyms": [ "another", "another address", "another email", "aol", "gmail", "hotmail", "not telus address", "other email", "outlook", "work email", "yahoo" ],
+    "languageCode": "en"
+  }, {
+    "value": "telus email",
+    "synonyms": [ "telus", "telus address", "telus email", "telus.net", "TELUS.net" ],
+    "languageCode": "en"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "en"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "learn_more",
+    "synonyms": [ "Am I eligible", "available plans", "availibility", "check address", "eligibility", "learn", "learn about product", "learn about smart hub", "learn about smarthub", "learn more", "learn more about smart hub", "learn more about smarthub", "learn more about the product", "learn_more", "learning more", "learning more about the product", "plans", "plans available", "tell me more", "what plans are there", "what's available" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "troubleshooting",
+    "synonyms": [ "issue", "issues", "not working", "problems with smarthub", "smarthub problem", "trouble", "troubleshoot", "troubleshooting" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "agent", "dtmf_digits_0", "team member", "zero" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "1", "dtmf_digits_1", "one" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "2", "dtmf_digits_2", "two" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "9",
+    "synonyms": [ "dtmf_digits_9", "nine", "send SMS", "sms", "sms link", "text" ],
+    "languageCode": "en-ca"
+  } ]
+}

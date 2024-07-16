@@ -1,0 +1,35 @@
+{
+  "entities": [ {
+    "value": "billing address",
+    "synonyms": [ "adresse", "adresse de facturation", "adresse residentielle", "adresse résidentielle", "billing address", "facturation", "residence", "résidence" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "email address",
+    "synonyms": [ "adresse courriel", "adresse courriel professionnelle", "adresse e mail", "adresse e-mail", "adresse e-mail professionnelle", "adresse e-mail professionnelle", "adresse email", "adresse email professionnelle", "courriel", "e mail", "e-mail", "email", "email address", "identifiant de messagerie", "Identifiant de messagerie" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "shipping address",
+    "synonyms": [ "adresse d'expedition", "adresse d'expédition", "adresse de livraison", "Adresse de livraison", "adresse postale", "expedition", "expédition" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "name",
+    "synonyms": [ "Changements de nom", "name", "nom", "nom de facturation", "nom de famille", "noms", "prenom", "prénom", "prenoms", "prénoms" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "line",
+    "synonyms": [ "ligne", "ligne telephonique", "ligne téléphonique", "numero", "numéro", "numero de cellulaire", "numéro de cellulaire", "numero de telephone", "numéro de téléphone" ],
+    "languageCode": "fr-ca"
+  } ]
+}

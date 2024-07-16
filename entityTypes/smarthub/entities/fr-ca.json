@@ -1,0 +1,31 @@
+{
+  "entities": [ {
+    "value": "learn_more",
+    "synonyms": [ "admissibilite", "admissibilité", "apprendre", "apprendre plus", "ce qui est disponible", "dis-m'en plus", "dis-moi en plus", "disponibilite", "disponibilité", "dit m'en plus", "dites-m'en plus", "dites-moi en plus", "en savoir plus sur le produit", "en savoir plus sur le terminal intelligent", "forfaits", "forfaits disponibles", "nos produits", "produits", "qu'est-ce que", "qu'y a-t-il de disponible", "quels forfaits y a-t-il", "suis-je eligible", "suis-je éligible", "verifier l'adresse", "vérifier l'adresse", "vos produits" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "troubleshooting",
+    "synonyms": [ "depannage", "dépannage", "depanner", "dépanner", "difficulte", "difficulté", "marche pas", "ne fonctionne pas", "ne marche pas", "probleme", "problème", "probleme de terminal intelligent", "problème de terminal intelligent", "problemes", "problèmes", "problemes avec le terminal intelligent", "problèmes avec le terminal intelligent" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "agent", "dtmf_digits_0", "membre de l'équipe" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "9",
+    "synonyms": [ "dtmf_digits_9", "envoyer un SMS", "lien par message texte", "lien sms", "message texte", "sms", "texto" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "activation",
+    "synonyms": [ "activation", "active", "activé", "activer", "brancher ", "configurer", "connecter", "connexion" ],
+    "languageCode": "fr-ca"
+  } ]
+}

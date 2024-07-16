@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "red",
+    "synonyms": [ "red" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "black",
+    "synonyms": [ "black" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "silver",
+    "synonyms": [ "silver" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "blue",
+    "synonyms": [ "blue" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "gold ",
+    "synonyms": [ "gold " ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "grey",
+    "synonyms": [ "grey", "space grey" ],
+    "languageCode": "en-ca"
+  } ]
+}

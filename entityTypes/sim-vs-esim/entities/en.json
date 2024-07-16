@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "sim card",
+    "synonyms": [ "sim", "sim card", "standard", "standard sim ", "telus sim card" ],
+    "languageCode": "en"
+  }, {
+    "value": "e-sim card",
+    "synonyms": [ "e", "e sim", "e-sim card", "esim", "eSIM", "new sim" ],
+    "languageCode": "en"
+  } ]
+}

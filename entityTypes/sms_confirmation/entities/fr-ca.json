@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "yes",
+    "synonyms": [ "dtmf_digits_1", "écris moi", "envoie-moi un texto", "envoyer un SMS", "je veux SMS", "SMS", "SMS s'il vous plaît", "texte s'il te plaît" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "no",
+    "synonyms": [ "dtmf_digits_2", "je ne veux pas de SMS", "n'envoie pas de sms", "pas de SMS" ],
+    "languageCode": "fr-ca"
+  } ]
+}

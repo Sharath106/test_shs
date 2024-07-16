@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "no",
+    "synonyms": [ "no", "non", "nan", "Nan", "n / A" ],
+    "languageCode": "fr"
+  }, {
+    "value": "yes",
+    "synonyms": [ "yes", "Oui", "Oui", "Ouais" ],
+    "languageCode": "fr"
+  } ]
+}

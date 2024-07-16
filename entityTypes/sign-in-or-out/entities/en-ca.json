@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "in",
+    "synonyms": [ "in", "into", "log in", "log into", "logging into", "login", "sign in", "sign into" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "out",
+    "synonyms": [ "disconnect", "log off", "log out", "logging out", "logout", "off", "out", "sign out" ],
+    "languageCode": "en-ca"
+  } ]
+}

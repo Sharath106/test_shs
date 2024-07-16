@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "ZTE",
+    "synonyms": [ " ZTE MF279", "275", "279", "288", "mf275", "mf279", "mf288", "Smart Hub- Reset Password \u003e ZTE", "zte", "ZTE MF275", "ZTE MF288" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Huawei",
+    "synonyms": [ "b612", "b882", "huawei", "Huawei B612", "Huawei B882", "Smart Hub- Reset Password \u003e Huawei" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1", "one" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2", "two" ],
+    "languageCode": "en-ca"
+  } ]
+}

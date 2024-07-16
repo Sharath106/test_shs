@@ -1,0 +1,35 @@
+{
+  "entities": [ {
+    "value": "login",
+    "synonyms": [ "can't access", "can't login", "Credentials issue", "forgot password", "logging in", "logging into", "logging into my TELUS", "logging into Telus", "login issue", "login issues with my telus", "password problem", "trouble in login", "unable to login" ],
+    "languageCode": "en"
+  }, {
+    "value": "registration",
+    "synonyms": [ "create ", "create online account", "enrol", "enrolment", "register for online account", "registering for", "registering for My TELUS", "registering for Telus", "registration", "registration issue", "registration issues with my Telus", "signup", "unable to create profile", "unable to register" ],
+    "languageCode": "en"
+  }, {
+    "value": "activation",
+    "synonyms": [ "activate", "activate stream+", "activating", "activating stream+", "activating Stream+ services", "activation", "can't activate", "link", "link account", "link Apple", "link Discovery", "link Netflix", "linked ", "login to Apple", "login to Discovery", "login to Netflix", "need help activating stream plus", "stream+ activation", "unable to link account" ],
+    "languageCode": "en"
+  }, {
+    "value": "anything else",
+    "synonyms": [ "anything else", "other issues", "other problems", "something else" ],
+    "languageCode": "en"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_one" ],
+    "languageCode": "en"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_two" ],
+    "languageCode": "en"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_three" ],
+    "languageCode": "en"
+  }, {
+    "value": "4",
+    "synonyms": [ "dtmf_digits_four" ],
+    "languageCode": "en"
+  } ]
+}

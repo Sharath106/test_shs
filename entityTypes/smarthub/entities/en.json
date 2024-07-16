@@ -1,0 +1,35 @@
+{
+  "entities": [ {
+    "value": "learn_more",
+    "synonyms": [ "Am I eligible", "available plans", "availibility", "check address", "eligibility", "learn", "learn about product", "learn about smart hub", "learn about smarthub", "learn more", "learn more about smart hub", "learn more about smarthub", "learn more about the product", "learning more", "learning more about the product", "our products", "plans", "plans available", "products", "tell me more", "what hubs are available", "what plans are there", "what's available" ],
+    "languageCode": "en"
+  }, {
+    "value": "troubleshooting",
+    "synonyms": [ "issue", "issues", "not working", "problem", "problems", "trouble", "troubleshoot", "troubleshooting" ],
+    "languageCode": "en"
+  }, {
+    "value": "0",
+    "synonyms": [ "agent", "dtmf_digits_0", "team member" ],
+    "languageCode": "en"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "en"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "en"
+  }, {
+    "value": "9",
+    "synonyms": [ "dtmf_digits_9", "send SMS", "sms", "sms link", "text" ],
+    "languageCode": "en"
+  }, {
+    "value": "activation ",
+    "synonyms": [ "activate", "activating", "activation", "guide for connecting", "hook up", "how to set up", "set up", "setting up", "setup", "start guide", "starter guide" ],
+    "languageCode": "en"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3" ],
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "Samsung",
+    "synonyms": [ "galaxy", "galaxy fit", "galaxy watch", "Samsung", "samsung galaxy" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Apple",
+    "synonyms": [ "Apple", "apple watch", "apple watch sport", "iphone", "iwatch", "Iwatch" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "none",
+    "synonyms": [ "a different brand", "another", "another brand", "huaewi", "huawei", "motorola", "neither", "none", "smart watch", "something else", "smart watches" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "1", "one" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "2", "two" ],
+    "languageCode": "en-ca"
+  } ]
+}
