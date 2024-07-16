@@ -1,0 +1,38 @@
+{
+  "name": "4e83a5ff-f700-4569-a152-19cd8d4d31fd",
+  "displayName": "End page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Est-ce qu'il y a autre chose sur lequel je peux vous aider?", "Puis-je vous aider avec autre chose?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Is there anything else I can help you with?", "Can I assist you with anything else?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "handoff_type",
+      "value": null
+    }, {
+      "parameter": "handoff_intent",
+      "value": null
+    }, {
+      "parameter": "from_flow",
+      "value": "UniversalHandoff"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "3e41dbc7-fb18-4ddd-be7e-a685ef84898f"
+  } ]
+}

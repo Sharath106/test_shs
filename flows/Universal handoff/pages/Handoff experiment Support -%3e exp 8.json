@@ -1,0 +1,215 @@
+{
+  "name": "b359aa47-6927-4d86-bd0e-1a795e9f6f3a",
+  "displayName": "Handoff experiment Support -\u003e exp 8",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_yesno",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Do you need help with technical support which can include data, texting or devices issues?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you need help with technical support which can include data,  texting or\u2028devices issues\u2028among others?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d367c763-7adc-4b32-8976-ce9fddd33aa2"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you need help with technical support which can include data,  texting or\u2028devices issues\u2028among others, say yes, or press 1, no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a73e1639-7fd2-4e65-a2d0-8d4bb3648c47"
+        }, {
+          "targetPage": "No match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "04d5a552-2a1f-41e5-a83c-e59992457d9e"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you need help with technical support which can include data,  texting or\u2028devices issues\u2028among others?\u2028" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "270e0a2a-2ede-4cde-84bd-c96a7cd2ec9b"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you need help with technical support which can include data,  texting or\u2028devices issues\u2028among others, say yes, or press 1, no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4f7b035f-7d54-4823-acc2-129d81d3a41f"
+        }, {
+          "targetPage": "No match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "6f49fe27-40e1-4bbf-a79a-1b1c35945f62"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 5
+          }
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member. " ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_yesno",
+        "value": null
+      }, {
+        "parameter": "agent_request",
+        "value": "fixmobile"
+      }, {
+        "parameter": "last_page",
+        "value": "give a bot shot exp 8 fixmobile"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "498cee41-160a-4eff-9420-9bdc93594133"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member. " ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_yesno",
+        "value": null
+      }, {
+        "parameter": "agent_request",
+        "value": "acctmgmt"
+      }, {
+        "parameter": "last_page",
+        "value": "give a bot shot exp 8 acctmgmt"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "9428f122-1f75-4f83-90e2-5a3325c30919"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_attempt = \"3\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "give a bot shot exp 8 acctmgmt"
+      }, {
+        "parameter": "agent_request",
+        "value": "acctmgmt"
+      }, {
+        "parameter": "agent_attempt",
+        "value": "4"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "1bd8f480-f310-41ec-b2d1-4182615664d6"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_yesno",
+        "value": null
+      }, {
+        "parameter": "agent_request",
+        "value": "fixmobile"
+      }, {
+        "parameter": "last_page",
+        "value": "give a bot shot exp 8 fixmobile"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "ddc7f025-5eae-4e90-88e5-5175e813e317"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member. " ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_yesno",
+        "value": null
+      }, {
+        "parameter": "agent_request",
+        "value": "acctmgnt"
+      }, {
+        "parameter": "last_page",
+        "value": "give a bot shot exp 8 acctmgnt"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "ca575c2c-b6be-4793-816f-18d433f158ac"
+  } ]
+}

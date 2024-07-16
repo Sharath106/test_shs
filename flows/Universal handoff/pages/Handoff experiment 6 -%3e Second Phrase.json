@@ -1,0 +1,23 @@
+{
+  "name": "a9f582bb-b5f7-43c4-aef5-64353a482293",
+  "displayName": "Handoff experiment 6 -\u003e Second Phrase",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I apologize, but I can't connect you to the right team member without understanding the reason behind your call. ", "Please let me know the specific type of support you need.", "I'm unable to connect you with a right team member without knowing the specific purpose of your call today.", "Without knowing the specific reason for your call, I won't be able to transfer you to the right  team member.\n" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "395f6036-7a9a-4ee0-845f-7a66cad61d16"
+  } ]
+}

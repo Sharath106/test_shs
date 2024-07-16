@@ -1,0 +1,305 @@
+{
+  "name": "72ac162a-3f25-40db-b941-fe6203b00949",
+  "displayName": "SMS Flow",
+  "description": "This flow will be used to send SMS messaging",
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "agent"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "572678db-6eca-4490-acc7-41cd68a237fc"
+  }, {
+    "intent": "supplemental.onlineacct",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "online_vs_app",
+        "value": "online"
+      } ]
+    },
+    "targetPage": "Online or App change",
+    "name": "d6ff8a42-4a8d-4a01-a3b2-72d10895020b"
+  }, {
+    "intent": "supplemental.appacct",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "online_vs_app",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "Online or App change",
+    "name": "0a3831d0-42d1-4b1a-adfb-cf663aff6cc1"
+  }, {
+    "intent": "supplemental.device_android",
+    "condition": "$session.params.route = \"extended_warranty\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_device_android"
+      }, {
+        "parameter": "last_page",
+        "value": "Extended warranty"
+      } ]
+    },
+    "targetPage": "Switch option",
+    "name": "7745d1e1-0f0f-4539-9d82-751b916a22e0"
+  }, {
+    "intent": "supplemental.device_iphone",
+    "condition": "$session.params.route = \"extended_warranty\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_device_iphone"
+      }, {
+        "parameter": "last_page",
+        "value": "Extended warranty"
+      } ]
+    },
+    "targetPage": "Switch option",
+    "name": "eb0a4c11-a179-4620-9258-0355b2d19deb"
+  }, {
+    "intent": "supplemental.device_iphone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_device_iphone"
+      } ]
+    },
+    "targetPage": "Switch option",
+    "name": "bf9f9366-7d63-4359-ba5b-53fc1fb1a2ae"
+  }, {
+    "intent": "supplemental.device_android",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_device_android"
+      } ]
+    },
+    "targetPage": "Switch option",
+    "name": "8bc74745-0bb2-4b50-b48d-a4d4d45220a0"
+  }, {
+    "condition": "$session.params.routeDetails = null AND $session.params.conversation = null AND $session.params.searchResult = null AND $session.params.user = null AND $session.params.init != null",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "init_retry",
+        "value": "sms flow"
+      } ]
+    },
+    "name": "e6c4d650-ae80-477c-aea6-a76458f24ee9"
+  }, {
+    "condition": "$session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template_fr",
+        "value": null
+      }, {
+        "parameter": "english",
+        "value": "true"
+      }, {
+        "parameter": "ss_mandatory_error",
+        "value": null
+      } ]
+    },
+    "name": "2ba495f5-f7f9-45d6-ae75-da13f8523cbf"
+  }, {
+    "condition": "$session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "$session.params.sms_template_fr"
+      }, {
+        "parameter": "english",
+        "value": "false"
+      }, {
+        "parameter": "ss_mandatory_error",
+        "value": null
+      } ]
+    },
+    "name": "c8e73527-6e08-4b1c-976b-df085c98e71a"
+  }, {
+    "condition": "($session.params.sms_template = null AND $session.params.english = \"true\") OR ($session.params.sms_template_fr = null AND $session.params.english = \"false\")",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec l'envoi du message texte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous amener à un membre de l'équipe.", "Je vais devoir vous mettre en contact avec quelqu'un qui pourra vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with sending the text." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I will need to get you to someone who can help.", "I will need to get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "isSrlTemplate",
+        "value": "false"
+      }, {
+        "parameter": "message",
+        "value": "Test i am here"
+      }, {
+        "parameter": "sms_template",
+        "value": null
+      } ]
+    },
+    "targetPage": "Api Error Agent request",
+    "name": "8697f488-c987-4481-8d70-afbbd7e104dc"
+  }, {
+    "condition": "$session.params.sms_sent_list : $session.params.last_page",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SMS Already Sent",
+    "name": "8f546075-48cf-4b9a-998f-2da2a828c1ba"
+  }, {
+    "condition": "$session.params.sms_not_received = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_not_received",
+        "value": null
+      } ]
+    },
+    "targetPage": "SMS Phone Number Collection",
+    "name": "0f67df89-dea3-4eea-b4ae-763cfcbe98a1"
+  }, {
+    "condition": "$session.params.mandatory_ss_change_num = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Force SMS number check",
+    "name": "86c9cf1e-daeb-4edc-b21f-63742759c941"
+  }, {
+    "condition": "($session.params.sms_template != null AND $session.params.english = \"true\") OR ($session.params.sms_template_fr != null AND $session.params.english = \"false\")",
+    "triggerFulfillment": {
+      "webhook": "Account Identity VC",
+      "tag": "verify_tn",
+      "setParameterActions": [ {
+        "parameter": "isSrlTemplate",
+        "value": "true"
+      }, {
+        "parameter": "lookupNumber",
+        "value": "$session.params.user.ani"
+      }, {
+        "parameter": "lookupType",
+        "value": "tn"
+      } ]
+    },
+    "targetPage": "SMS number check",
+    "name": "9f482c13-b86c-4680-9134-42af91d9d9c7"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "J'ai du mal à comprendre cette question.", "J'ai mal compris votre demande.", "Je n'ai pas saisi ce que vous avez dit.", "Je crois que je ne vous suis pas.", "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "J'ai du mal à comprendre cette question.", "J'ai mal compris votre demande.", "Je n'ai pas saisi ce que vous avez dit.", "Je crois que je ne vous suis pas.", "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "name": "f5a2c39a-2982-4b30-bc1e-5e9ee643819a"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "J'ai du mal à comprendre cette question.", "J'ai mal compris votre demande.", "Je n'ai pas saisi ce que vous avez dit.", "Je crois que je ne vous suis pas.", "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "J'ai du mal à comprendre cette question.", "J'ai mal compris votre demande.", "Je n'ai pas saisi ce que vous avez dit.", "Je crois que je ne vous suis pas.", "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "name": "08f28198-15fd-461d-8855-d5e9ad18fa2b"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "J'ai mal compris votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you rephrase?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b0c844ad-977d-4a9c-b03a-3cd7e2066627"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "d3090584-637d-4b54-9ba2-72ed8c1a3edf"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "J'ai mal compris votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you rephrase?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b45f1452-7e62-4fae-bd3c-c46517218039"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "29698c0a-b0f3-4600-a372-f541bcdc1563"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_CUSTOM",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "transitionRouteGroups": [ "small talk" ]
+}

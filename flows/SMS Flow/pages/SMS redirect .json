@@ -1,0 +1,196 @@
+{
+  "name": "2b296988-3ad9-4e54-a4ea-3679c3e4f626",
+  "displayName": "SMS redirect ",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "new_number_enter",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.responseCode != \"0\"",
+    "triggerFulfillment": {
+      "webhook": "SMS",
+      "tag": "send_sms",
+      "setParameterActions": [ {
+        "parameter": "responseCode",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "responseMessage",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "name": "ce7b747a-fe06-4db5-8e74-bc794b391caf"
+  }, {
+    "condition": "($session.params.responseCode != \"0\" AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.responseCode != \"0\")",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with sending the text." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I will need to get you to a team member.", "I will need to get you to someone who can help." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j’ai de la difficulté à envoyer le message texte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous amener à un membre de l'équipe.", "Je vais devoir vous mettre en contact avec quelqu'un qui pourra vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "responseCode",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "responseMessage",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "error $session.params.responseCode - $session.params.responseMessage"
+      } ]
+    },
+    "targetPage": "Api Error Agent request",
+    "name": "80c91d6d-a113-4907-a67b-8cb232b77b04"
+  }, {
+    "condition": "$session.params.bill_explain_easypay = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "is_multiple_lines"
+      } ]
+    },
+    "targetFlow": "Bill Explanation",
+    "name": "df6c7023-e8fb-48fa-874f-844fc1a56220"
+  }, {
+    "condition": "$session.params.mandatory_ss = \"true\" OR $session.params.responseCode = 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I have sent you a text with more information." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je vous ai envoyé un message texte avec plus d'informations pour que vous puissiez le faire vous-même." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_sent",
+        "value": null
+      }, {
+        "parameter": "sms_sent_list",
+        "value": "$sys.func.APPEND($session.params.sms_sent_list, $session.params.last_page)"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "success"
+      } ]
+    },
+    "name": "c3bc1234-19f2-48e1-9544-621f8a580960"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "success"
+      }, {
+        "parameter": "sms_sent_list",
+        "value": "$sys.func.APPEND($session.params.sms_sent_list, $session.params.last_page)"
+      }, {
+        "parameter": "mandatory_ss_change_num",
+        "value": null
+      }, {
+        "parameter": "sms_number",
+        "value": null
+      }, {
+        "parameter": "mandatory_ss",
+        "value": null
+      } ]
+    },
+    "targetPage": "Route back",
+    "name": "c84a67ec-4296-42a1-874c-8f8c20fbc347"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Api Error Agent request",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The text I sent isn't going through.", "I wasn't able to send you the text.", "Sorry, I'm not able to send you a text at this time." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I will need to get you to a team member.", "I will need to get you to someone who can help." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec l'envoi du texte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous amener à un membre de l'équipe.", "Je vais devoir vous mettre en contact avec quelqu'un qui pourra vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "b7585f44-d33e-4c6f-ad82-7c1f63ed7ace"
+  }, {
+    "targetPage": "Api Error Agent request",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm not able to send you a text at this time.", "I wasn't able to send you the text.", "The text I sent isn't going through." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I will need to get you to someone who can help.", "I will need to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec l'envoi du texte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous mettre en contact avec quelqu'un qui pourra vous aider.", "Je vais devoir vous amener à un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "3a874242-c801-4f2f-a0c7-a6727303127d"
+  } ]
+}

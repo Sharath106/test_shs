@@ -1,0 +1,117 @@
+{
+  "name": "3b84be6f-461b-42c4-ac44-d8ba70a78280",
+  "displayName": "Get SMS Offer Info",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "sms_services",
+    "tag": "get_sms_rules",
+    "setParameterActions": [ {
+      "parameter": "from_flow",
+      "value": "smsModular"
+    }, {
+      "parameter": "error_api_name",
+      "value": null
+    }, {
+      "parameter": "error_full_response",
+      "value": null
+    }, {
+      "parameter": "api_delay",
+      "value": null
+    }, {
+      "parameter": "error_retry",
+      "value": null
+    }, {
+      "parameter": "error_code",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_full_response : \"Business Unit Incorrect\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, currently we don’t support that for your account type." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, nous ne prenons actuellement pas en charge cette fonctionnalité pour votre type de compte" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Return To Start",
+    "name": "e30e3474-9ad7-4e3f-985b-7a5422737bb3"
+  }, {
+    "condition": "$session.params.offer_type = \"SmsMandatory\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SMS Mandatory",
+    "name": "12e86a06-a75c-4a1e-91bb-a1c3ad7b34e1"
+  }, {
+    "condition": "$session.params.offer_type = \"SmsOrAgent\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SMS or Agent",
+    "name": "c60ad97d-b023-44bf-9cb1-9d8f8e60165d"
+  }, {
+    "condition": "$session.params.offer_type = \"SmsOptional\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SMS Optional",
+    "name": "0392b988-3955-4786-9307-d9c547690221"
+  }, {
+    "condition": "$session.params.offer_type = \"SmsOrSelfServe\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Sms Or SelfServe",
+    "name": "cbeecee7-3b8b-4489-875f-aa9a1714f23a"
+  }, {
+    "condition": "$session.params.error_code != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I am having issues with sending the text." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne peux pas obtenir d'informations pour le moment." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "async_agent_count",
+        "value": "3"
+      } ]
+    },
+    "targetPage": "Route -\u003e Universal Handoff",
+    "name": "282b34cb-7bb4-49bc-bb5b-919c34c5d3a0"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Route -\u003e Universal Handoff",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I am having issues with sending the text." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "smsmod_webhook_error",
+        "value": "true"
+      }, {
+        "parameter": "async_agent_count",
+        "value": "3"
+      } ]
+    },
+    "name": "309d0306-edc2-4de6-b522-b4009a1b6283"
+  } ]
+}

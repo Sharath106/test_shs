@@ -1,0 +1,191 @@
+{
+  "name": "0a07314d-4176-4621-b40f-89c41b458647",
+  "displayName": "Online Or App",
+  "form": {
+    "parameters": [ {
+      "displayName": "online_vs_app",
+      "required": true,
+      "entityType": "@online_vs_app",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.long-utterance",
+          "triggerFulfillment": {
+          
+          },
+          "name": "3c887a36-8231-477b-8f3e-08787359caed"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't get that.  Would you like a link to telus dot com, or the my telus app?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "236f48bd-d0ba-4db6-a9a1-7f87fc3e25b5"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry,  still didn't get that.  To receive instructions for telus dot com, press one.  For an SMS with links to the my telus app, press two." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d74998c8-4782-4149-bbb5-b7cc0eb11328"
+        }, {
+          "targetPage": "Return To Start",
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I still didn't get that." ]
+              },
+              "languageCode": "en"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "return",
+              "value": "Y"
+            } ]
+          },
+          "name": "c8e66cdf-4bfc-4321-931a-7f3a3259b141"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't get that.  Did you want a link to our telus dot com web site, or the my telus app?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "433713ad-e67e-4275-acca-9ad966814231"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't understand that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To receive instructions for telus dot com, press one.  For an SMS with links to the my telus app, press two." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f25e77b9-2fa5-44f2-9687-4b6784ea0129"
+        }, {
+          "targetPage": "Return To Start",
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I still didn't understand that." ]
+              },
+              "languageCode": "en"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "return",
+              "value": "Y"
+            } ]
+          },
+          "name": "f926be3a-e10e-4b06-9668-d05e55499864"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Would you like a link to telus dot com, or the my telus app?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Preférez-vous passer a travers l'application Mon Télusse ou a travers notre site web?" ]
+      },
+      "languageCode": "fr-ca"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "return",
+        "value": "Y"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "Return To Start",
+    "name": "fe9677fb-9ba3-439b-bf32-fa1895b0e6c1"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "agent"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_online_or_app_agent",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Route -\u003e Universal Handoff",
+    "name": "86e3abb5-e925-4119-b3c1-18eac606b331"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "Return To Start",
+    "name": "88a58a01-00df-4e21-9319-c6344bdde0a8"
+  }, {
+    "condition": "$session.params.online_vs_app = \"online\" OR $session.params.online_vs_app = \"app\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "link_type",
+        "value": "$session.params.online_vs_app"
+      }, {
+        "parameter": "onlineorapp",
+        "value": "$session.params.online_vs_app"
+      } ]
+    },
+    "name": "e620f048-7dd1-4f06-b1a9-71647661a3ac"
+  }, {
+    "condition": "$session.params.sms_phone_number != null AND $session.params.link_type != \"ask_ss_link_type\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Get SMS Message Contents",
+    "name": "dea5de74-a9ef-44fb-a57f-2100d5bee4be"
+  }, {
+    "condition": "$session.params.sms_phone_number = null AND $session.params.link_type != \"ask_ss_link_type\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Check ANI-UTN Match",
+    "name": "5672ab0e-e14a-4761-931b-b86f6bb55dda"
+  } ],
+  "transitionRouteGroups": [ "Repeat1" ]
+}

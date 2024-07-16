@@ -1,0 +1,25 @@
+{
+  "name": "495c3650-976d-48fb-b4ec-f9e5ded1b1b3",
+  "displayName": "SMS Mandatory",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "offered"
+      }, {
+        "parameter": "sms_mandatory_check",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "SMS Accepted",
+    "name": "16ff1a3b-7e0a-43f9-ac41-5989c4769dfd"
+  } ],
+  "transitionRouteGroups": [ "Repeat1" ]
+}

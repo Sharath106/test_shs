@@ -1,0 +1,36 @@
+{
+  "name": "35248581-fdc5-46b3-82e0-62392d4b5627",
+  "displayName": "Return To Start",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_confirmation",
+        "value": null
+      }, {
+        "parameter": "offer_type",
+        "value": null
+      }, {
+        "parameter": "link_type",
+        "value": null
+      }, {
+        "parameter": "sms_number_retrycount",
+        "value": null
+      }, {
+        "parameter": "return",
+        "value": "Y"
+      }, {
+        "parameter": "from_flow",
+        "value": "smsModular"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "ea4c2713-29b2-41ba-a135-8ae6203e2b96"
+  } ]
+}

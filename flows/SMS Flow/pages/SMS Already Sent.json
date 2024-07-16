@@ -1,0 +1,300 @@
+{
+  "name": "28ad9358-e182-4a0e-878e-abdc7acd62f3",
+  "displayName": "SMS Already Sent",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_received_text_yesno",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Have you already received the text?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Avez-vous déjà reçu le texte?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Have you already received the text?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Avez-vous déjà reçu le texte?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous déjà reçu le texte?" ]
+              },
+              "languageCode": "fr"
+            } ]
+          },
+          "name": "c867cadd-5f5c-42ef-8c4f-7a798e91d695"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you've gotten the text, say yes, or press 1. Otherwise, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez reçu le texte, dites oui ou appuyez sur 1. Sinon, dites non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "9cd191c4-9a70-4dd8-ad80-91bfff22d854"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "19fc3a21-7c33-4f51-8e3e-5aafa7fbe2d5"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Have you already received the text?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Avez-vous déjà reçu le texte?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous déjà reçu le texte?" ]
+              },
+              "languageCode": "fr"
+            } ]
+          },
+          "name": "e41bf235-1c30-460a-b100-779d4cc2b9f7"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you've gotten the text, say yes, or press 1. Otherwise, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez reçu le texte, dites oui ou appuyez sur 1. Sinon, dites non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "0da81c31-c831-4b92-af40-a4dd7994af9f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "a11864a8-eecc-492b-a515-a7a254ec66c0"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.last_page2 != null"
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "\u003cspeak\u003eYou should already have received a text with the information you're looking for at, \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.sms_phone_number \u003c/say-as\u003e.\u003c/speak\u003e" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "\u003cspeak\u003eVous devriez avoir reçu un message texte avec les informations que vous recherchez au numéro, \u003csay-as interpret-as=\"telephone\"\u003e $session.params.sms_phone_number \u003c/say-as\u003e.\u003c/speak\u003e" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous devriez avoir reçu un message texte avec les informations que vous recherchez." ]
+            },
+            "languageCode": "fr"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Parfait." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page2",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "80385570-a12f-471d-aecb-15d0bfd87c17"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Alright." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Ok." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_phone_number",
+        "value": null
+      }, {
+        "parameter": "confirm_num",
+        "value": null
+      }, {
+        "parameter": "last_page2",
+        "value": null
+      } ]
+    },
+    "targetPage": "SMS Phone Number Collection",
+    "name": "8872e332-3995-46de-89fa-f1c1876cf638"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "last_page2",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "362d0848-c23b-4930-baee-82d715466f65"
+  }, {
+    "condition": "$session.params.dtmf_received_text_yesno = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Parfait." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_received_text_yesno",
+        "value": null
+      }, {
+        "parameter": "last_page2",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "b2faeaa7-f1d3-4c33-8cdd-00b29dcc738d"
+  }, {
+    "condition": "$session.params.dtmf_received_text_yesno = \"2\" AND $session.params.last_page2 != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "last_page2",
+        "value": null
+      }, {
+        "parameter": "sms_phone_number",
+        "value": null
+      }, {
+        "parameter": "dtmf_received_text_yesno",
+        "value": null
+      }, {
+        "parameter": "confirm_num",
+        "value": null
+      } ]
+    },
+    "targetPage": "SMS Phone Number Collection",
+    "name": "e3e45eca-47b5-48f1-8831-cc42637d41a1"
+  }, {
+    "condition": "$session.params.dtmf_received_text_yesno = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Alright." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Ok." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_phone_number",
+        "value": null
+      }, {
+        "parameter": "dtmf_received_text_yesno",
+        "value": null
+      }, {
+        "parameter": "confirm_num",
+        "value": null
+      }, {
+        "parameter": "last_page2",
+        "value": null
+      } ]
+    },
+    "targetPage": "SMS Phone Number Collection",
+    "name": "7c1b25df-92ae-483d-af3c-33b19847e695"
+  }, {
+    "condition": "$session.params.dtmf_received_text_yesno = \"0\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_received_text_yesno",
+        "value": null
+      }, {
+        "parameter": "last_page2",
+        "value": null
+      } ]
+    },
+    "targetPage": "Api Error Agent request",
+    "name": "4432bfd1-b1a7-4e90-ad43-42402458fa6f"
+  } ]
+}

@@ -1,0 +1,303 @@
+{
+  "name": "1c8498b0-4c2e-4962-bb02-2cb330220214",
+  "displayName": "Sms Or SelfServe",
+  "form": {
+    "parameters": [ {
+      "displayName": "sms_or_selfserve",
+      "required": true,
+      "entityType": "@sms_or_self_serve",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "$session.params.offer_script" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "$session.params.offer_script" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry,  I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like an SMS with online instructions, or carry on over the phone?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous un SMS avec des instructions en ligne ou continuer par téléphone ?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "0d436f4e-07e7-41eb-9ec3-7cd97dbdcb00"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry,  I still didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To receive an SMS with online self serve instructions, press 1.  To perform the self serve over the phone, press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un SMS avec des instructions en libre-service en ligne, appuyez sur 1. Pour effectuer le libre-service par téléphone, appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "8be6c053-0e10-43f7-b171-2ffee8f27518"
+        }, {
+          "targetPage": "Return To Start",
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still having issues understanding.  Let's start again." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris. Recommençons." ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "return",
+              "value": "Y"
+            } ]
+          },
+          "name": "8446ffa3-ab25-433e-9ce0-0d4636cc2057"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't understand that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like an SMS with online instructions, or to carry on over the phone?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous un SMS avec des instructions en ligne ou continuer par téléphone ?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "b9bfacb5-f634-4fdb-9a6c-8995ab79dbd3"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't understand that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To receive an SMS with online self serve instructions, press 1.  To perform the self serve over the phone, press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un SMS avec des instructions en libre-service en ligne, appuyez sur 1. Pour effectuer le libre-service par téléphone, appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "c279ba29-676b-497a-9775-e11f94ce9885"
+        }, {
+          "targetPage": "Return To Start",
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still having issues understanding.  Let's start again." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris. Recommençons." ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "return",
+              "value": "Y"
+            } ]
+          },
+          "name": "51e8c8af-5211-4b94-96da-984c5b96961a"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "Offer_type",
+        "value": "sms"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "offered"
+      } ]
+    },
+    "targetPage": "SMS Accepted",
+    "name": "3c1bac64-9934-4f54-964b-477e1b4bdf17"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour continuer, veuillez sélectionner l'une des options" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "smsorselfserve_retrycnt",
+        "value": "$sys.func.ADD($session.params.smsorselfserve_retrycnt,1)"
+      } ]
+    },
+    "name": "c0ef292d-f291-4e89-96d5-4137e5342bae"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laisse-moi demander à quelqu'un de t'aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "agent"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_selfserve_agent",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Route -\u003e Universal Handoff",
+    "name": "c3332664-0d48-436e-b60e-2aea7717dcdd"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "return",
+        "value": "Y"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "Return To Start",
+    "name": "f5c9bf15-677d-4686-b41b-2ae772498064"
+  }, {
+    "condition": "$session.params.sms_or_selfserve = \"sms\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "Offer_type",
+        "value": "sms"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "offered"
+      } ]
+    },
+    "targetPage": "SMS Accepted",
+    "name": "b403eb44-cd15-4a6b-afeb-a4c167dc6427"
+  }, {
+    "condition": "$session.params.sms_or_selfserve = \"self_serve\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "self_serve"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "Route -\u003e Universal Handoff",
+    "name": "7bc56a6a-29a7-468c-9f9b-0dcdf03431e9"
+  }, {
+    "condition": "$session.params.smsorselfserve_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smsorselfserve_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "772e4af3-9051-4980-8a5e-f1905d1ce7bd"
+  }, {
+    "condition": "$session.params.smsorselfserve_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me connect you to one of our team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Route -\u003e Universal Handoff",
+    "name": "7aa6cfda-b6bb-4337-91ac-cd06db4a2962"
+  } ],
+  "transitionRouteGroups": [ "Repeat1" ]
+}

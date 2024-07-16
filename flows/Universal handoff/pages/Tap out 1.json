@@ -1,0 +1,417 @@
+{
+  "name": "004bcd93-a776-4e59-a19d-e5e0d114d9fc",
+  "displayName": "Tap out 1",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "ss_prop_check",
+      "value": "$sys.func.GET($sys.func.FILTER(\"$session.params.modelList\", \"$.[?(@.modelId == '7857')].segmentName\"), 0)"
+    }, {
+      "parameter": "churn_check",
+      "value": "$sys.func.GET($sys.func.FILTER(\"$session.params.modelList\", \"$.[?(@.modelId == '6535')].percentilePct\"), 0)"
+    }, {
+      "parameter": "sms_sent_check",
+      "value": "$sys.func.IF(\"$session.params.sms_sent_list : $session.params.last_page\", true, false)"
+    }, {
+      "parameter": "ss_mandatory_page_list",
+      "value": "Bill notifications or eBill,Call control,Add Easy Roam,Everything Roaming,Change PIN,Activate SIM,Change Bill Address,Reset password,Enable or disable data"
+    }, {
+      "parameter": "service_fee_page_list",
+      "value": "Rate plan change,Bill reprint,Change Phone Number SMS"
+    }, {
+      "parameter": "app_page_list",
+      "value": "Missing credit,Renewal,New activation,Easy Payment Balance,Bring it Back amount,Purchase Sim card,Wireless Home Phone,Block data Temporary,Shop unlimited plans,Remove a feature,Other mobility plans,International text messaging,Favorite numbers,Block data Ongoing,Forgot username,How to sign in or out,Link accounts,Authorized user,2factorauthentication,Change Email Address,Data Limits,Phone Found,TELUS Rewards,Stream plus,Current plan,How to view CSA or Contract,View mobility bill,Find Account Number,Add a feature text,Bill due date,Billing cycle date,Text records,Bill and balance,Payment History"
+    }, {
+      "parameter": "web_page_list",
+      "value": "TELUS EverSafe,Tablet purchase,Store locator,Smart watches,Smart watches line Text,Price match,Easy Payment info,Device trade in,Device Care Complete,Connection fee,Certified pre owned,Bring it Back returns,Bring It Back information,Available phones,Apple Care plus,Accessories purchase,APN Setting iphone vs android,Back Up Data iphone vs android,Change Notifications for Sound,Content Recovery iphone vs android,Device How to,Different types of blocks,eSIM information,Factory Reset iphone vs android,iMessage,Insert or Remove SIM Card,Mobilie Internet or Hotspot Change WiFi Password Model,Mobile Klinik Device Checkup,Out of warranty repair,Passcode or PIN or Pattern,Repair process,Smart Hub Province Check East,Smart Hub Reset Password Model,Warranty lookup tool,WiFi or VOIP Calls,addons menu long distance,addons menu conferencing,addons menu call display,addons menu call forwarding,SMS issues,Smart hub issue,Visual Voicemail,Using your device abroad,Senior special plans,Roaming Coverage text,Outbound call display,Multiple Line Activation,international calling from Canada,Cruise,Call Canada from abroad,Billing while roaming,Apple Live VM,Activating StreamPlus,Battery issues,Browser crashing,Calling issues Mobile cant make or receive,CEIM Outage site Out of service area,Device will not start,MMS Issues,Slow or frozen device,Smart Watch issues text,VM Forgot password,VM How to setup,Voicemail to text issues,VVM iPhone troubleshooting,WiFi Calling Issues,Late payments,Role access,Self serve registration,Account not approved,Alert Ready,Cognitive Solutions,Data Notifications,Do not call list,Donate your phone,Health for Good,Hearing impaired,Internet for Good,Mobility for Good,Privacy Request Center,Referral Program,TELUS Future Friendly foundation,TELUS Giving Back,TELUS Social Impact,touTV extra package,Vacation disconnect Suspend,vision impaired,Order status,Coverage map,Reset TELUS Webmail Password,Smart Hub Activation,TELUS Email Address,Another Email Address,Smart Hub Province Check East,Transfer of ownership,Porting In,Lower my bill,CAN US plans,Available promotions,Add ons menu text,Accidental roaming,First bill explained,How to read your bill,Local calling,Mobility Fees,Taxes,Usage overage,TELUS Online Security"
+    }, {
+      "parameter": "loop_counter",
+      "value": "$sys.func.IF(\"$sys.func.GET($session.params.page_list, $sys.func.MINUS($sys.func.COUNT($session.params.page_list), 1)) :  Repeat\", 0, $sys.func.MINUS($sys.func.COUNT($session.params.page_list), $sys.func.COUNT($sys.func.REMOVE($session.params.page_list, Tap out))))"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.troubleshooting_still_having_issues",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "1fe9188f-a1f4-4e4d-97cc-e9ec69e61211"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I recommend checking out the link I sent you, as it'll help answer the questions you have. If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je vous suggère d’y jeter un œil, ça vous aidera à répondre aux questions que vous pourriez avoir à ce sujet. Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel de Mon TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "4ed0c28e-c02e-444d-901f-603477dbcb9f"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's fix this then." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Réglons ça dans ce cas." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_not_received",
+        "value": "true"
+      }, {
+        "parameter": "sms_sent_list",
+        "value": null
+      }, {
+        "parameter": "sms_phone_number",
+        "value": null
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "56873c7d-418a-4bd6-b13d-1163f09d6a62"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tap out 2",
+    "name": "8a84d69b-f250-48fa-b180-f1f2d0b05c9d"
+  }, {
+    "condition": "$session.params.loop_counter \u003e= 1",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tap out 2",
+    "name": "2ab1f551-5325-4846-a412-100076b2dc3f"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "page_list",
+        "value": "$sys.func.IF(\"$sys.func.GET($session.params.page_list, $sys.func.MINUS($sys.func.COUNT($session.params.page_list), 1)) :  Repeat\", $sys.func.APPEND($session.params.page_list, Done), $sys.func.APPEND($session.params.page_list, Tap out))"
+      }, {
+        "parameter": "loop_counter",
+        "value": "$sys.func.IF(\"$sys.func.GET($session.params.page_list, $sys.func.MINUS($sys.func.COUNT($session.params.page_list), 1)) :  Repeat\", 0, $sys.func.MINUS($sys.func.COUNT($session.params.page_list), $sys.func.COUNT($sys.func.REMOVE($session.params.page_list, Tap out))))"
+      } ]
+    },
+    "name": "61692aa1-2435-49fc-955c-38d1dc162867"
+  }, {
+    "condition": "$session.params.ss_prop_check = \"SELFSERVE_NO\" OR $session.params.churn_check = 1 OR $session.params.churn_check = 2 OR $session.params.sms_flow_status : \"error\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure thing.", "No problem.", "Definitely.", "Absolutely." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème.", "Absolument.", "Certainement." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "18c657f5-0a37-4bc1-851b-003e1d7fed8a"
+  }, {
+    "condition": "$session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "7553fcd6-40a0-44b2-a13d-e134cad08fe2"
+  }, {
+    "condition": "$session.params.last_page = \"Change Phone Number SMS\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "service_fee",
+        "value": "$session.params.number_change_fee"
+      } ]
+    },
+    "name": "dcd973fb-ac70-4d57-929b-9f581711c19d"
+  }, {
+    "condition": "$session.params.last_page = \"Bill reprint\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "service_fee",
+        "value": "$session.params.bill_reprint_fee"
+      } ]
+    },
+    "name": "6a3b8770-df5f-41ba-9474-c20ab4fde569"
+  }, {
+    "condition": "$session.params.last_page = \"Rate plan change\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "service_fee",
+        "value": "$session.params.rpc_fee"
+      } ]
+    },
+    "name": "c1aff4c0-8734-4a23-b4bd-2b475eabd849"
+  }, {
+    "condition": "$session.params.sms_sent_check = false",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_not_received",
+        "value": "true"
+      }, {
+        "parameter": "sms_sent_list",
+        "value": null
+      }, {
+        "parameter": "sms_phone_number",
+        "value": null
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.ss_mandatory_page_list : $session.params.last_page",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summary is a self-serve only transaction. It appears there was an issue when I tried sending you the information through text message. Let's give it another try." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summaryfr est une transaction en libre-service uniquement. Il semble y avoir eu un problème avec l'information que j'ai tenté de vous envoyer plus tôt par message texte. Essayons de nouveau." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.service_fee_page_list : $session.params.last_page",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summary is a self-serve only transaction, and there's a fee that would be charged for a team member to complete this for you. It appears there was an issue when I tried sending you the information through text message. Let's give it another try." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summaryfr est une transaction en libre-service uniquement seront facturés pour qu’un membre de l’équipe effectue cette opération à votre place. Il semble y avoir eu un problème avec l'information que j'ai tenté de vous envoyer plus tôt par message texte. Essayons de nouveau." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.app_page_list : $session.params.last_page",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summary can be completed online through your MyTELUS account." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "It appears there was an issue when I tried sending you the information through text message. Let's give it another try." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summaryfr peut être fait en ligne dans votre compte Mon TELUS. Il semble y avoir eu un problème avec l'information que j'ai tenté de vous envoyer plus tôt par message texte. Essayons de nouveau." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summary can be found on our website." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "It appears there was an issue when I tried sending you the information through text message. Let's give it another try." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summaryfr est disponible sur notre site Internet." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Il semble y avoir eu un problème avec l'information que j'ai tenté de vous envoyer plus tôt par message texte. Essayons de nouveau." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "64541823-7aa1-40ad-939e-0efd7d9af944"
+  }, {
+    "condition": "$session.params.sms_sent_check = true",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.last_page_summary != null",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "I've sent you a text message with more information on $session.params.last_page_summary. Did you receive it?" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Je vous ai envoyé un message texte avec plus d'informations sur" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summaryfr. L'avez-vous reçu?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "I've sent you a text message with more information on doing this yourself. Did you receive it?" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Je vous ai envoyé un message texte avec plus d'informations sur comment procéder par vous-même. L'avez-vous reçu?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "529cde25-60ac-41b0-9b75-f44871583e19"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I couldn't hear that. Just to confirm, did you get the text message I sent you on $session.params.last_page_summary?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je n'ai pas entendu. Pour confirmer, avez-vous reçu le message texte que je vous ai envoyé sur comment $session.params.last_page_summary ?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "a5eeabc9-f064-40d9-a414-74645d15f69d"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I still couldn't quite get that. I sent you a text message with more information about $session.params.last_page_summary. Have you received anything on your phone?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je n'ai toujours pas entendu. Je vous ai envoyé un textos avec plus d'information sur comment $session.params.last_page_summary. L'avez-vous reçu?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "5334ae64-9a1a-4bb7-b483-d570d95c3dbc"
+  }, {
+    "targetPage": "No match 2",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "4c51f1d9-e894-43c0-ac50-9ae98b96a761"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Just to confirm, did you receive the text message I sent you?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pour confirmer, avez-vous reçu le message texte que je vous ai envoyé sur comment $session.params.last_page_summary ?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "335283bc-1088-4305-a123-fb4728aee356"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm just looking to confirm, did you get the text message I sent to your phone around $session.params.last_page_summary ?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je tente de confirmer, avez-vous reçu le texto que je vous ai envoyé sur comment $session.params.last_page_summary ?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "f82c4e16-3c74-430a-9bdc-7fc0abbcb243"
+  }, {
+    "targetPage": "No match 2",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "555d4677-c3ad-49af-b4f7-86964806fea8"
+  } ]
+}

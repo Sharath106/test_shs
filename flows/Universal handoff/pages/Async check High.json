@@ -1,0 +1,257 @@
+{
+  "name": "19007aec-25ba-4872-9034-f990d8300a27",
+  "displayName": "Async check High",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "async_high_ss_prop",
+      "value": true
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.async_agent_count = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To get you to a team member for support, I'll connect you to TELUS expert messaging on the my TELUS app which is the most convenient way to get support." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "You’ll describe what you need help with and our TELUS expert will work on a resolution as quickly as possible while you go about your day. You won't have to stay in the app because we'll notify you when they respond." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "async_agent_count",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "SMS Flow Modular",
+    "name": "ffec5c39-83dd-434c-9ff2-8d770e72fee5"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.async_agent_count = \"1\" OR $session.params.ask_if_got_sms = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please take a moment to read the text on how to connect with a TELUS expert." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_async_check",
+        "value": "true"
+      }, {
+        "parameter": "ask_if_got_sms",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "33375ce4-985f-4a9f-a98d-e506ec5fd382"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.async_agent_count = \"1\" OR $session.params.ask_if_got_sms = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's fix this then." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_not_received",
+        "value": "true"
+      }, {
+        "parameter": "sms_sent_list",
+        "value": null
+      }, {
+        "parameter": "sms_phone_number",
+        "value": null
+      }, {
+        "parameter": "from_async_check",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "SMS Flow Modular",
+    "name": "456ffb18-8f0c-4f06-a860-eefa85802308"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.sms_sent_check = true AND $session.params.async_agent_count = \"2\" AND $session.params.ask_if_got_sms = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "fedaacb0-44ff-49ab-b7fd-eec577c06b58"
+  }, {
+    "condition": "$session.params.mandatory_ss = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Async check high 2",
+    "name": "8ea24016-bff7-4631-ad9c-22dc08a4b85c"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_sent_check",
+        "value": "$sys.func.IF(\"$session.params.async_sms_sent_list : $session.params.last_page\", true, false)"
+      } ]
+    },
+    "name": "15f35070-2966-4925-a75d-ff125e332a68"
+  }, {
+    "condition": "$session.params.sms_sent_check = false",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Async check high 2",
+    "name": "3ef441a2-af02-4944-8c6c-a475c6ade39b"
+  }, {
+    "condition": "$session.params.sms_sent_check = true AND $session.params.async_agent_count = \"1\"",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.last_page_summary != null",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "I've sent you a text message with more information on $session.params.last_page_summary. Did you receive it?" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "I've sent you a text message with more information on doing this yourself. Did you receive it?" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "43934b3a-1b69-4bc1-b791-08c73ff2457f"
+  }, {
+    "condition": "$session.params.sms_sent_check = true AND $session.params.async_agent_count = \"2\" AND $session.params.ask_if_got_sms = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Our TELUS expert messaging is the most convenient way to get support. I've sent you a text with details, have you received it?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_if_got_sms",
+        "value": "1"
+      } ]
+    },
+    "name": "1a12859d-9241-4550-8f1a-95d4de8c9291"
+  }, {
+    "condition": "$session.params.sms_sent_check = false AND $session.params.mandatory_ss = \"true\" AND $session.params.handoff_by_design != \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "It appears there was an issue when I tried sending you the information through text message. Let's give it another try." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_not_received",
+        "value": "true"
+      }, {
+        "parameter": "sms_sent_list",
+        "value": null
+      }, {
+        "parameter": "sms_phone_number",
+        "value": null
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "0aa9e15a-1159-4034-93f6-b119abd7b7cf"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that.", "Sorry, I didn't understand that.", "Sorry, I didn't catch that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Just to confirm, did you get the text message I sent you on $session.params.last_page_summary? Say yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "822042ba-d2f9-4829-aef1-b85b23bbb0f5"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm still not sure I got this. Did you get the text message I sent you on $session.params.last_page_summary? Say yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "69a84c53-e092-4e15-8f86-12068ce9c6ee"
+  }, {
+    "targetPage": "No match 2",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "async_agent_count",
+        "value": null
+      } ]
+    },
+    "name": "7be3d2f6-3a6d-4646-8a41-f0829bca3ce7"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Just to confirm, did you get the text message I sent you on $session.params.last_page_summary? Say yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "70785b2f-e4c4-41c5-aa6e-36592403cff6"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm still not sure I got this. Did you get the text message I sent you on $session.params.last_page_summary? Say yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ecea8990-4670-4e35-ad81-01ae366e4aec"
+  }, {
+    "targetPage": "No match 2",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "async_agent_count",
+        "value": null
+      } ]
+    },
+    "name": "59ce9c3f-a6e1-4245-bbb2-ca55514af0e5"
+  } ]
+}

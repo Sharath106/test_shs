@@ -1,0 +1,45 @@
+{
+  "name": "c2f2a791-fa12-4b88-8f72-d156479d605f",
+  "displayName": "Retry",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "sms_number_retrycount",
+      "value": "$sys.func.ADD($session.params.sms_number_retrycount,1)"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.french_dtmf_only = true AND $session.param.conversation.languageAbv = \"fr\" AND $session.params.sms_number_retrycount \u003c= 1",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collect SMS Number French DTMF",
+    "name": "b806729a-aa9d-4200-84d0-274eee2cd5d8"
+  }, {
+    "condition": "$session.params.sms_number_retrycount \u003c= 1",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collect SMS Number",
+    "name": "66fd1666-a58c-483f-a54f-58f45b1566c5"
+  }, {
+    "condition": "$session.params.sms_number_retrycount = 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, j'ai quelque difficulté a obtenir un numéro de téléphone, essayons quelque chose d'autre." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues getting a phone number.  Let's try something else." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Return To Start",
+    "name": "8bfcae18-dcb6-40da-a3d7-01d39b28509a"
+  } ]
+}

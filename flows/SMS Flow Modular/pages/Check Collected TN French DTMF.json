@@ -1,0 +1,54 @@
+{
+  "name": "57137654-c9ae-440e-aa37-d5d78c576621",
+  "displayName": "Check Collected TN French DTMF",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "identification",
+    "tag": "verify_tn"
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.isCanadianTn = false AND $session.params.french_dtmf_only = true AND $session.params.conversation.languageAbv = \"fr-CA\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "isCanadianTn",
+        "value": null
+      }, {
+        "parameter": "lookupNumber",
+        "value": null
+      }, {
+        "parameter": "lookupType",
+        "value": null
+      }, {
+        "parameter": "phone_number",
+        "value": null
+      } ]
+    },
+    "name": "233c1c5e-dbdc-4a35-a400-07ff0be2d8aa"
+  }, {
+    "condition": "$session.params.isTelusTn = true AND $session.params.isCanadianTn = true AND $session.params.french_dtmf_only = true AND $session.params.conversation.languageAbv = \"fr-CA\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "shortCode",
+        "value": 4240
+      }, {
+        "parameter": "mobileCarrierIsTelus",
+        "value": "y"
+      } ]
+    },
+    "name": "70c49734-9d2b-4c25-a649-768f33053b67"
+  }, {
+    "condition": "$session.params.isTelusTn = false OR $session.params.isCanadianTn = true OR $session.params.french_dtmf_only = true OR $session.params.conversation.languageAbv = \"fr-CA\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "shortCode",
+        "value": 4245
+      }, {
+        "parameter": "mobileCarrierIsTelus",
+        "value": "n"
+      } ]
+    },
+    "name": "f19c52be-f064-445b-9db6-7f326b4e2564"
+  } ]
+}

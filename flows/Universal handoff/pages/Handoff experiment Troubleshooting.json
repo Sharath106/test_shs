@@ -1,0 +1,183 @@
+{
+  "name": "b9eccec5-0fc9-402a-8a51-aa2d0fee5bc0",
+  "displayName": "Handoff experiment Troubleshooting",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_yesno",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Do you need help with troubleshooting?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you need help with troubleshooting? " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7c507cf3-d5c5-488e-b3f3-48f0065b8c1a"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you need help with troubleshooting, say yes, or press 1, no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "3fa3fa58-abc9-4f46-8f6e-39ee7f38d589"
+        }, {
+          "targetPage": "No match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "4d8e015c-0fc0-4484-aa40-e816f7f6a7aa"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you need help with troubleshooting? " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b9afba10-7c82-446e-a31b-819406bf7fef"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you need help with troubleshooting, say yes, or press 1, no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7fa3f454-3dae-4109-a80a-c41234eb8945"
+        }, {
+          "targetPage": "No match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "b888e53e-d30c-4b0a-b0f9-cb564d6c7a7e"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "finishDigit": "5",
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "tr vague"
+      }, {
+        "parameter": "dtmf_yesno",
+        "value": null
+      }, {
+        "parameter": "agent_request",
+        "value": "fixmobile"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "be012936-2946-4a20-8363-1f093979af46"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_yesno",
+        "value": null
+      }, {
+        "parameter": "agent_request",
+        "value": "acctmgmt"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "0339eb6c-13ee-47dd-a296-16221a08b9ee"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_attempt = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "agent_attempt",
+        "value": "3"
+      }, {
+        "parameter": "agent_request",
+        "value": "acctmgmt"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "112fdde0-54be-4744-8398-d35d40c9029a"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_yesno",
+        "value": null
+      }, {
+        "parameter": "agent_request",
+        "value": "fixmobile"
+      }, {
+        "parameter": "route",
+        "value": "tr vague"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "e6906906-205b-4c8e-8b4a-0d127123ac61"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_yesno",
+        "value": null
+      }, {
+        "parameter": "agent_request",
+        "value": "acctmgmt"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "8de58568-b4e1-4b7c-8da9-df0aede98e9d"
+  } ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "8d25e5b2-b44d-4b16-b877-8cd50b130109",
+  "displayName": "Check SMS Offer History",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "file_name",
+      "value": "res_wls_sms_rules.json"
+    }, {
+      "parameter": "business_unit",
+      "value": "$sys.func.IF(\"$session.params.routeDetails.businessUnit != null\", $session.params.routeDetails.businessUnit, \"res\")"
+    }, {
+      "parameter": "environment",
+      "value": "it04"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_offer_list",
+        "value": "$sys.func.APPEND($session.params.sms_offer_list,$session.params.last_page)"
+      } ]
+    },
+    "targetPage": "Get SMS Offer Info",
+    "name": "f9fb23b7-de68-4b79-923f-379c9c1135a1"
+  }, {
+    "condition": "$sys.func.CONTAIN($session.params.sms_offer_list, $session.params.last_page) = true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "already_offered_sms",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Get SMS Offer Info",
+    "name": "b5231039-d084-4476-ac37-59fa16c6ecfa"
+  } ]
+}

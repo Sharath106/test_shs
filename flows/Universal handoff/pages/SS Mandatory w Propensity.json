@@ -1,0 +1,242 @@
+{
+  "name": "4ff89e14-b167-4b7c-a49d-c345a2152367",
+  "displayName": "SS Mandatory w Propensity",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.daryl_test = \"1\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Notes - This page has been copied 1 to 1 from FFH Voice with the last page list updated to only those that automatically send an SMS. There is no scripting in FR side yet. (July 13)" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+      
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.mandatory_confirm_sms = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mandatory_confirm_sms",
+        "value": "2"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "c44a522c-5bdc-47f4-9d78-453c4ed1ee85"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.mandatory_confirm_sms = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_phone_number",
+        "value": null
+      }, {
+        "parameter": "mandatory_confirm_sms",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "d680c549-4ae5-46b1-a0f2-3aec37489510"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.mandatory_confirm_sms = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "agent"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "80576df3-b559-417d-8463-be059cce7916"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.mandatory_confirm_sms = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mandatory_confirm_sms",
+        "value": null
+      }, {
+        "parameter": "last_page",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "1639886c-fe26-438f-b679-83f2ca3816de"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "\"Change Bill Address / Change Bill Address attempt two / Report a Payment / RaP attempt two / Data TU or FP attempt two / Change Bill Address attempt two /Change PIN attempt two / Everything Roaming / Add Easy Roam / Enable or disable data / Fast Pass / Data top up or Fast pass / Activate SIM / Bill notifications or eBill / Payment Arrangement / Forgot PIN / Change PIN / Reset password / Call control / Make a payment / Change billing address / Payments arrangement online or app / Activate Sim online or app / Enable or disable data online or app / Add easy roam online or app\" : $session.params.last_page AND $session.params.targetAccount.isSelfserveMandatory = \"true\" AND $session.params.mandatory_confirm_sms = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, I will get you to a team member to help. Please know that our team members don't have access to complete the change for you, but they can guide you through the process online. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ " Do you still want to wait on hold?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "mandatory_confirm_sms",
+        "value": "3"
+      }, {
+        "parameter": "ss_mandatory_intent",
+        "value": "true"
+      }, {
+        "parameter": "old_route",
+        "value": null
+      } ]
+    },
+    "name": "850a74fd-842e-4b65-a76c-e45cc7822fef"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "\"Change Bill Address / Change Bill Address attempt two / Report a Payment / RaP attempt two / Data TU or FP attempt two / Change Bill Address attempt two / Change PIN attempt two / Everything Roaming / Add Easy Roam / Enable or disable data / Fast Pass / Data top up or Fast pass / Activate SIM / Bill notifications or eBill / Payment Arrangement / Forgot PIN / Change PIN / Reset password / Call control / Make a payment / Change billing address / Payments arrangement online or app / Activate Sim online or app / Enable or disable data online or app / Add easy roam online or app\" : $session.params.last_page AND $session.params.targetAccount.isSelfserveMandatory = \"false\" AND $session.params.mandatory_confirm_sms = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "ss_mandatory_intent",
+        "value": "true"
+      }, {
+        "parameter": "old_route",
+        "value": null
+      }, {
+        "parameter": "handoff_type",
+        "value": "agent"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "93afae7a-720e-4a02-bd8e-b301bac22b9e"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let's send the text." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_phone_number",
+        "value": null
+      }, {
+        "parameter": "mandatory_confirm_sms",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "123e9f8b-ba99-4178-bcb6-f95b9de9b04c"
+  }, {
+    "condition": "\"Change Bill Address / Change Bill Address attempt two / Report a Payment / RaP attempt two / Data TU or FP attempt two / Change Bill Address attempt two / Change PIN attempt two / Everything Roaming / Add Easy Roam / Enable or disable data / Fast Pass / Data top up or Fast pass / Activate SIM / Bill notifications or eBill / Payment Arrangement / Forgot PIN / Change PIN / Reset password / Call control / Make a payment / Change billing address / Payments arrangement online or app / Activate Sim online or app / Enable or disable data online or app / Add easy roam online or app\" : $session.params.last_page AND $session.params.targetAccount.isSelfserveMandatory = \"true\" AND $session.params.mandatory_confirm_sms = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ " \u003cspeak\u003e\u003cs\u003eThe transaction you're calling about is only available online. I have sent the text too, \u003cprosody rate=\".90\"\u003e \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e $session.params.sms_phone_number\u003c/say-as\u003e.\u003c/prosody\u003e\u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Have you received that text?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "mandatory_confirm_sms",
+        "value": "1"
+      }, {
+        "parameter": "ss_mandatory_intent",
+        "value": "true"
+      }, {
+        "parameter": "old_route",
+        "value": null
+      } ]
+    },
+    "name": "e4ebeb4e-c477-4cb8-9689-7ccc5dabe8fd"
+  }, {
+    "condition": "\"Change Bill Address / Change Bill Address attempt two / Report a Payment / RaP attempt two / Data TU or FP attempt two / Change Bill Address attempt two / Change PIN attempt two / Everything Roaming / Add Easy Roam / Enable or disable data / Fast Pass / Data top up or Fast pass / Activate SIM / Bill notifications or eBill / Payment Arrangement / Forgot PIN / Change PIN / Reset password / Call control / Make a payment / Change billing address / Payments arrangement online or app / Activate Sim online or app / Enable or disable data online or app / Add easy roam online or app\" : $session.params.last_page AND $session.params.targetAccount.isSelfserveMandatory = \"true\" AND $session.params.mandatory_confirm_sms = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, I will get you to a team member to help. Please know that our team members don't have access to complete the change for you, but they can guide you through the process online. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ " Do you still want to wait on hold?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ss_mandatory_intent",
+        "value": "true"
+      }, {
+        "parameter": "old_route",
+        "value": null
+      }, {
+        "parameter": "mandatory_confirm_sms",
+        "value": "3"
+      } ]
+    },
+    "name": "2c777217-4cb6-489b-b945-63100d58381a"
+  }, {
+    "condition": "\"Change Bill Address / Change Bill Address attempt two / Report a Payment / RaP attempt two / Data TU or FP attempt two / Change Bill Address attempt two / Change PIN attempt two / Everything Roaming / Add Easy Roam / Enable or disable data / Fast Pass / Data top up or Fast pass / Activate SIM / Bill notifications or eBill / Payment Arrangement / Forgot PIN / Change PIN / Reset password / Call control / Make a payment / Change billing address / Payments arrangement online or app / Activate Sim online or app / Enable or disable data online or app / Add easy roam online or app\" : $session.params.last_page AND $session.params.targetAccount.isSelfserveMandatory = \"false\" AND $session.params.mandatory_confirm_sms = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ " \u003cspeak\u003e\u003cs\u003eThe transaction you're calling about is also available online. I have sent you a text message with information on how to do this online to \u003cprosody rate=\".90\"\u003e \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e $session.params.sms_phone_number\u003c/say-as\u003e.\u003c/prosody\u003e\u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ " Do you still want to wait on hold?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "mandatory_confirm_sms",
+        "value": "3"
+      }, {
+        "parameter": "ss_mandatory_intent",
+        "value": "true"
+      }, {
+        "parameter": "old_route",
+        "value": null
+      } ]
+    },
+    "name": "f7e6dd42-e5d7-4310-be55-0e481693cb07"
+  }, {
+    "condition": "$session.params.ss_mand_flag = \"true\" OR $session.params.handoff_type = \"self_serve\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "69b59eb1-155f-487c-9ef4-d52f697954f0"
+  }, {
+    "condition": "$session.params.old_route != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "$session.params.old_route"
+      } ]
+    },
+    "name": "1ca95533-29d1-4246-87ea-4f30c8ddb1da"
+  }, {
+    "condition": "$session.params.ss_mandatory_intent = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "ss_mandatory_last_pages",
+        "value": null
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "94e4c15b-8924-4292-b807-3d8e3d270583"
+  } ]
+}

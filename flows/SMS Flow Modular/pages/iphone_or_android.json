@@ -1,0 +1,173 @@
+{
+  "name": "153e96b1-666e-4530-b01a-14e59a83d725",
+  "displayName": "iphone_or_android",
+  "form": {
+    "parameters": [ {
+      "displayName": "iphone_vs_android",
+      "required": true,
+      "entityType": "@iphone-vs-android",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "What is the phone you are using? Is it Android or Iphone?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Quel type de téléphone utilisez-vous? Est-ce un téléphone Androide ou un Iphone?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "f9a22b17-8242-4d8b-81df-0fad61d9005f"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Choose between one of the option for the phone you are using. Android or iphone." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Choisisseez l'un des options suivant: Androide ou Iphone?" ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "advancedSettings": {
+              "playbackInterruptionSettings": {
+                "allowPlaybackInterruption": true
+              }
+            }
+          },
+          "name": "f421bbb2-a052-4c94-92dd-a333d69f624b"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Not quite. Choose between options Android or iphone " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai pas saisi, veuillez choisir l'un des options suivantes: Androide ou Iphone." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "1f656bf7-1f2c-4315-a43b-95420171f804"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Is it Android or iphone?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Est-ce un Androide ou Iphone?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "dd707376-1fff-4478-8ae0-49392b589c38"
+        }, {
+          "targetPage": "Return To Start",
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still having issues understanding.  Let's start again." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai toujours pas compris" ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "return",
+              "value": "Y"
+            } ]
+          },
+          "name": "1821f959-5e35-4899-86ef-5fc1546eee0b"
+        }, {
+          "targetPage": "Return To Start",
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still having issues understanding.  Let's start again." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai toujours pas compris" ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "return",
+              "value": "Y"
+            } ]
+          },
+          "name": "3f9392f2-940f-4d8e-8e21-1d722e75f7c8"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Is your phone Android or iPhone?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Votre téléphone est-il Android ou Iphone ?" ]
+      },
+      "languageCode": "fr-ca"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "link_type",
+        "value": "$session.params.iphone_vs_android"
+      } ]
+    },
+    "name": "af96e39f-e761-47a5-9d04-b551a0af5a95"
+  }, {
+    "condition": "$session.params.sms_phone_number != null AND $session.params.link_type != \"ask_device_os\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Get SMS Message Contents",
+    "name": "08dbe5c3-b36f-4396-ad9a-79e67252b464"
+  }, {
+    "condition": "$session.params.sms_phone_number = null AND $session.params.link_type != \"ask_device_os\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Check ANI-UTN Match",
+    "name": "0db8a223-b8c2-41fa-a656-f7376c4c32d7"
+  } ],
+  "transitionRouteGroups": [ "Repeat1" ]
+}

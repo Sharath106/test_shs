@@ -1,0 +1,358 @@
+{
+  "name": "361b849c-69d4-4a45-8625-e8d7a9cd2852",
+  "displayName": "SS Mandatory sms_sent_list_contains_last_page",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_req_sms",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry," ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send it again?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que je vous l'envoie à nouveau?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "8e977af5-01e2-44b7-b1fb-ddbee91e4bfe"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text again, say yes, or press 1. Otherwise, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous souhaitez recevoir à nouveau le texte, dites oui ou appuyez sur 1. Sinon, dites non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "eb5f4cdb-dfb3-42c7-9aba-85592593fd9f"
+        }, {
+          "targetPage": "No match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "556ac196-8e8d-4370-b740-6304b8f7f356"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry," ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send it again?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que je vous l'envoie à nouveau?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "21093b1e-66ed-4424-be34-04143d05be62"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text again, say yes, or press 1. Otherwise, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous souhaitez recevoir à nouveau le texte, dites oui ou appuyez sur 1. Sinon, dites non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "7fd7132f-f45f-4fdf-ada7-10d44b3ef1b9"
+        }, {
+          "targetPage": "No match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "12c58160-0741-449e-b823-3202a9e19a46"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page2",
+      "value": "ss mandatory smslist_notcontains_last_page"
+    }, {
+      "parameter": "sms_sent_list_last_page",
+      "value": "$sys.func.GET($session.params.sms_sent_list,$sys.func.TO_NUMBER($sys.func.MINUS($sys.func.TO_NUMBER($sys.func.COUNT($session.params.sms_sent_list)),1)))"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.targetAccount.isSelfserveMandatory = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "The transaction you're calling about is only available online. Instead of waiting on hold, would you like me to send you a text message with a link where you can quickly make the change online?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "La transaction pour laquelle vous appelez est seulement disponible en ligne.  Au lieu de rester en attente, aimeriez-vous recevoir un message texte avec un lien où vous pourrez rapidement apporter le changement en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "The transaction you're calling about is also available online. Instead of waiting on hold, would you like me to send you a text message with a link where you can quickly make the change online?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "La transaction pour laquelle vous appelez est aussi disponible en ligne. Au lieu de rester en attente, aimeriez-vous recevoir un message texte avec un lien où vous pourrez rapidement apporter le changement en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.sms_sent_list_last_page = $session.params.last_page",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_req_sms",
+        "value": null
+      }, {
+        "parameter": "dtmf_received_text_yesno",
+        "value": "2"
+      }, {
+        "parameter": "sms_phone_number",
+        "value": null
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "94797047-6761-4f85-ba4f-5442998d4d6f"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SS Mandatory sms_sent_list_notcontains_last_page_reroute",
+    "name": "2d0ac601-7df5-4bd4-a7bb-3ad306a5545a"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.targetAccount.isSelfserveMandatory = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SS Mandatory sms_sent_list_repeat_error_handler",
+    "name": "73b12df5-c247-4d15-915f-c82c27afd981"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member.\r\nPlease stay on the line, and you'll be connected to someone as soon as they are available." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en communication avec un membre de l'équipe, restez en ligne et vous serez connecté à quelqu'un dès qu'il sera disponible." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "65577ac7-f4d6-44ff-8b18-2d57b21a4a65"
+  }, {
+    "intent": "small_talk.agent_redirect",
+    "condition": "$session.params.targetAccount.isSelfserveMandatory = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_req_sms",
+        "value": null
+      } ]
+    },
+    "targetPage": "SS Mandatory targetaccount_true Agent HO Handler",
+    "name": "c9596594-3932-45d8-84cc-b39b27c4a8a6"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.targetAccount.isSelfserveMandatory = \"false\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member.\r\nPlease stay on the line, and you'll be connected to someone as soon as they are available." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en communication avec un membre de l'équipe, restez en ligne et vous serez connecté à quelqu'un dès qu'il sera disponible." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "47cb01f8-ecf2-4a19-bacb-9309d22fac3a"
+  }, {
+    "intent": "small_talk.agent_redirect",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member.\nPlease stay on the line, and you'll be connected to someone as soon as they are available." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en communication avec un membre de l'équipe, restez en ligne et vous serez connecté à quelqu'un dès qu'il sera disponible." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "87a2f949-8033-4bf0-a6a0-354d8f22afb9"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.targetAccount.isSelfserveMandatory = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_req_sms",
+        "value": null
+      } ]
+    },
+    "targetPage": "SS Mandatory targetaccount_true Agent HO Handler",
+    "name": "522703fb-ddbe-4ae9-a502-259508d75a6b"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "2ff5309b-9aae-471d-9fde-ecb58e68c5d8"
+  }, {
+    "condition": "$session.params.dtmf_req_sms = \"1\" AND $session.params.sms_sent_list_last_page = $session.params.last_page",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_req_sms",
+        "value": null
+      }, {
+        "parameter": "dtmf_received_text_yesno",
+        "value": "2"
+      }, {
+        "parameter": "sms_phone_number",
+        "value": null
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "ee37e8f4-a34b-4065-bdc8-8517ae3c94a5"
+  }, {
+    "condition": "$session.params.dtmf_req_sms = \"1\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SS Mandatory sms_sent_list_notcontains_last_page_reroute",
+    "name": "840fb592-6034-4882-b73e-ce8843439e3e"
+  }, {
+    "condition": "$session.params.dtmf_req_sms = \"2\" AND $session.params.targetAccount.isSelfserveMandatory = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_req_sms",
+        "value": null
+      } ]
+    },
+    "targetPage": "SS Mandatory sms_sent_list_repeat_error_handler",
+    "name": "a90e79e6-82f3-40a3-878e-bd3f90b515fd"
+  }, {
+    "condition": "$session.params.dtmf_req_sms = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member.\r\nPlease stay on the line, and you'll be connected to someone as soon as they are available." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en communication avec un membre de l'équipe, restez en ligne et vous serez connecté à quelqu'un dès qu'il sera disponible." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_req_sms",
+        "value": null
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "eb978934-2ebc-4ce2-a2be-87d4564402b5"
+  }, {
+    "condition": "$session.params.dtmf_req_sms = \"0\" AND $session.params.targetAccount.isSelfserveMandatory = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_req_sms",
+        "value": null
+      } ]
+    },
+    "targetPage": "SS Mandatory targetaccount_true Agent HO Handler",
+    "name": "a3d0faed-1fb1-4d72-80d6-2f15df46a728"
+  }, {
+    "condition": "$session.params.dtmf_req_sms = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member.\r\nPlease stay on the line, and you'll be connected to someone as soon as they are available." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en communication avec un membre de l'équipe, restez en ligne et vous serez connecté à quelqu'un dès qu'il sera disponible." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_req_sms",
+        "value": null
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "87e3d78c-70eb-4c19-8bc4-a57b0385c005"
+  } ]
+}

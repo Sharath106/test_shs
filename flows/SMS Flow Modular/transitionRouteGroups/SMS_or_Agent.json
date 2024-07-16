@@ -1,0 +1,21 @@
+{
+  "name": "793b8714-8a93-4f6b-bb05-59e702acd252",
+  "displayName": "SMS_or_Agent",
+  "transitionRoutes": [ {
+    "condition": "$session.params.intent = \"head_intent\\.account_transfer_ownership\"",
+    "triggerFulfillment": {
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+          "allowPlaybackInterruption": true
+        }
+      }
+    },
+    "name": "85a4a480-0397-4caa-9bfa-0d60a16ebcfd"
+  }, {
+    "condition": "$session.params.businessUnit = \"corp\"",
+    "triggerFulfillment": {
+    
+    },
+    "name": "b4fd3167-f336-46c0-98d6-c4bd7a1e8a62"
+  } ]
+}

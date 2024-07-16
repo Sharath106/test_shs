@@ -1,0 +1,23 @@
+{
+  "name": "9291c7d7-fb0c-40ee-8c08-25c6eec63678",
+  "displayName": "Handoff experiment 2 - \u003e Second Phrase",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "To avoid a long wait time, please clarify the type of support you need.", "To ensure we provide you with the right support, please let me know the specific reason of your call today.", "To avoid transferring you to the wrong department, please share what you're specifically calling about today." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "e69cb296-07de-40d1-9bd5-336b34c1d384"
+  } ]
+}

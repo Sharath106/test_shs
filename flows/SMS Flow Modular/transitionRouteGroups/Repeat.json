@@ -1,0 +1,11 @@
+{
+  "name": "5e690537-c608-491f-b9ba-9dc534cc5179",
+  "displayName": "Repeat",
+  "transitionRoutes": [ {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "name": "efa26514-f471-4034-965d-c8d22eaaa378"
+  } ]
+}

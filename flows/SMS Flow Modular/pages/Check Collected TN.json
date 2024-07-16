@@ -1,0 +1,199 @@
+{
+  "name": "2202def9-815e-48ee-8830-e38ef4710462",
+  "displayName": "Check Collected TN",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Account Identity VC",
+    "tag": "verify_tn",
+    "setParameterActions": [ {
+      "parameter": "lookupType",
+      "value": "tn"
+    }, {
+      "parameter": "lookupNumber",
+      "value": "$session.params.sms_phone_number"
+    }, {
+      "parameter": "error_code",
+      "value": null
+    }, {
+      "parameter": "error_retry",
+      "value": null
+    }, {
+      "parameter": "api_delay",
+      "value": null
+    }, {
+      "parameter": "error_full_response",
+      "value": null
+    }, {
+      "parameter": "error_api_name",
+      "value": null
+    }, {
+      "parameter": "entryBrand",
+      "value": "$session.params.routeDetails.brand"
+    }, {
+      "parameter": "environment",
+      "value": "it04"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "webhook": "Account Identity VC",
+      "tag": "verify_tn",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "name": "c8b6cb7e-8a10-40da-9eb8-75e1a55e1f74"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with sending the text." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      }, {
+        "parameter": "sms_phone_number",
+        "value": null
+      }, {
+        "parameter": "async_agent_count",
+        "value": "3"
+      } ]
+    },
+    "targetPage": "Route -\u003e Universal Handoff",
+    "name": "7241d08a-82d5-453e-828b-aad1c357f26d"
+  }, {
+    "condition": "$session.params.serviceType = \"WIRELINE\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We are not able to send a text message to a home phone number." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_phone_number",
+        "value": null
+      } ]
+    },
+    "targetPage": "Collect SMS Number",
+    "name": "fe11a954-9134-473b-b3be-f0a9696d93d9"
+  }, {
+    "condition": "$session.params.isCanadianTn = \"false\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, we can only send SMS to Canadian telephone numbers." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_phone_number",
+        "value": null
+      } ]
+    },
+    "targetPage": "Retry",
+    "name": "99d56f23-6425-4bce-84f9-3e70c23d2f01"
+  }, {
+    "condition": "$session.params.isTelusTn = \"true\" AND $session.params.isCanadianTn = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "shortCode",
+        "value": "5420"
+      }, {
+        "parameter": "mobileCarrierIsTelus",
+        "value": "y"
+      } ]
+    },
+    "targetPage": "Get SMS Message Contents",
+    "name": "982bb183-2cff-466c-87aa-899623f606f6"
+  }, {
+    "condition": "$session.params.isTelusTn = \"false\" AND $session.params.isCanadianTn = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "shortCode",
+        "value": "53811"
+      }, {
+        "parameter": "mobileCarrierIsTelus",
+        "value": "n"
+      } ]
+    },
+    "targetPage": "Get SMS Message Contents",
+    "name": "0798b93e-7740-46f8-a300-1a0640e18dc3"
+  }, {
+    "condition": "$session.params.error_code != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I encountered a problem. Could you please re-enter your mobile number?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai rencontré un problème. Pourriez-vous entrer à nouveau votre numéro de téléphone portable ?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_phone_number",
+        "value": null
+      } ]
+    },
+    "targetPage": "Retry",
+    "name": "dac2054c-34dd-4ed0-b833-a808210be1fd"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Route -\u003e Universal Handoff",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I am having issues with sending the text." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "verifytn_apitimeout",
+        "value": "true"
+      }, {
+        "parameter": "async_agent_count",
+        "value": "3"
+      }, {
+        "parameter": "smsmod_webhook_error",
+        "value": "true"
+      } ]
+    },
+    "name": "42b118ec-8e29-458b-9839-a72306ae0fd7"
+  } ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "062f09ab-8d7f-4b89-b5e5-4a1bd8e59525",
+  "displayName": "SMS Already Offered",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$session.params.offer_script." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Je vous ai deja envoyé un SMS pour ce sujet." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "$session.params.offer_script." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ " I've already offered you an SMS for this topic." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Return To Start",
+    "name": "7436f7de-355d-4391-823f-97ed46952439"
+  } ]
+}

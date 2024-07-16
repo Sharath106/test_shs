@@ -1,0 +1,357 @@
+{
+  "name": "0818e8d4-6484-4185-ac71-669b64b40a64",
+  "displayName": "Force SMS number check",
+  "form": {
+    "parameters": [ {
+      "displayName": "force_sms_number",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive the text on a different number?", "Would you like me to send the text to a different number?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous recevoir le message texte sur un autre numéro?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "61ea4c9f-2ea7-4110-a728-2dfdf222e45c"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you would like to receive the text on a different number, say yes, or press 1, if not, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous souhaitez recevoir le message texte sur un autre numéro, dites oui, ou faites le 1. Sinon dites non, ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "100db299-2ea8-458f-b4ce-9c3573247645"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "ed2bb062-97c6-411a-948e-678520689793"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive the text on a different number?", "Would you like me to send the text to a different number?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous recevoir le message texte sur un autre numéro?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "8728e280-e84d-4662-8345-401f5039c4b8"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you would like to receive the text on a different number, say yes, or press 1, if not, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous souhaitez recevoir le message texte sur un autre numéro, dites oui, ou faites le 1. Sinon dites non, ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "7fe992fd-0e2d-4dd0-b330-448014c121e3"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "6dfbdae9-2018-42b7-a9ca-0c3e27bc1720"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.force_sms_retrycnt = null OR $session.params.force_sms_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "\u003cspeak\u003e\u003cs\u003eI have sent the text too, \u003cprosody rate=\".90\"\u003e \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e $session.params.sms_phone_number\u003c/say-as\u003e.\u003c/prosody\u003e\u003c/s\u003e\u003c/speak\u003e" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like me to send the text to a different number?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "\u003cspeak\u003e\u003cs\u003eJ'ai envoyé le message texte au, \u003cprosody rate=\".90\"\u003e \u003csay-as interpret-as=\"telephone\" google:style=\"zero-as-zero\"\u003e $session.params.sms_phone_number\u003c/say-as\u003e.\u003c/prosody\u003e\u003c/s\u003e\u003c/speak\u003e" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Souhaitez-vous recevoir le message texte sur un autre numéro?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.force_sms_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Would you like me to send the text to a different number?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Souhaitez-vous recevoir le message texte sur un autre numéro?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.force_sms_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "If you would like to receive the text on a different number, say yes, or press 1, if not, say no, or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous souhaitez recevoir le message texte sur un autre numéro, dites oui, ou faites le 1. Sinon dites non, ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_phone_number",
+        "value": null
+      }, {
+        "parameter": "force_sms_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "SMS Phone Number Collection",
+    "name": "98b17ab7-6da5-4d16-b1a3-fd75ea54763e"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "force_sms_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "4cb2f613-983d-4b0d-85eb-096d6cd1b8d9"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "force_sms_number",
+        "value": null
+      }, {
+        "parameter": "force_sms_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "4afa690b-9de7-4796-8893-3218e1f8e933"
+  }, {
+    "condition": "$session.params.force_sms_number = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_phone_number",
+        "value": null
+      }, {
+        "parameter": "force_sms_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "SMS Phone Number Collection",
+    "name": "95fe52d2-0f1c-4faa-9853-9395e40d16c2"
+  }, {
+    "condition": "$session.params.force_sms_number = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "force_sms_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "685b15a9-a80f-4187-b0db-86dbc3543f0e"
+  }, {
+    "condition": "$session.params.force_sms_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "force_sms_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "5d4e8b85-d1f4-406c-aa86-cd415b1865c8"
+  }, {
+    "condition": "$session.params.force_sms_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "force_sms_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "8a575808-a78b-424e-81dc-2cc941b9c41d"
+  }, {
+    "condition": "$session.params.force_sms_number = 0 OR $session.params.force_sms_number = 3 OR $session.params.force_sms_number = 9",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "force_sms_number",
+        "value": null
+      }, {
+        "parameter": "force_sms_retrycnt",
+        "value": "$sys.func.ADD($session.params.force_sms_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "397e45ad-d851-47bd-b17f-938356b23841"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "force_sms_retrycnt",
+        "value": "$sys.func.ADD($session.params.froce_sms_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.force_sms_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.force_sms_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "aa192792-b2c4-4e28-9e9c-dd852e968bb9"
+  } ]
+}

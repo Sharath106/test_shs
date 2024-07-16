@@ -1,0 +1,187 @@
+{
+  "name": "e53a748a-09a4-44c1-a648-a0ac16917ca9",
+  "displayName": "Collect SMS Number French DTMF",
+  "form": {
+    "parameters": [ {
+      "displayName": "sms_phone_number",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "setParameterActions": [ {
+            "parameter": "confirm_tn_sms",
+            "value": null
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je suis désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Veuillez dire ou entrer le numéro de téléphone mobile canadien à 10 chiffres auquel vous souhaitez envoyer les détails." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Veuillez dire ou entrer le numéro de téléphone mobile canadien à 10 chiffres auquel vous souhaitez envoyer les détails." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "cbfabb78-8215-40d3-bfa6-9eb02c4fdebf"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Avec votre clavier téléphonique, entrez le numéro de mobile canadien à 10 chiffres pour recevoir un SMS." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Avec votre clavier téléphonique, entrez le numéro de mobile canadien à 10 chiffres pour recevoir un SMS." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ba8afbb8-0d66-491f-9da2-998d5304c4a1"
+        }, {
+          "targetPage": "Return To Start",
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, j'ai des problèmes à comprendre." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "d8e966a8-b9c4-4f30-bb73-52bb65fe3f5f"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je suis désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Veuillez dire ou entrer le numéro de téléphone mobile canadien à 10 chiffres auquel vous souhaitez envoyer les détails." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Veuillez dire ou entrer le numéro de téléphone mobile canadien à 10 chiffres auquel vous souhaitez envoyer les détails." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "759b28b2-ee31-4602-91b3-b3b068d20243"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Avec votre clavier téléphonique, entrez le numéro de mobile canadien à 10 chiffres pour recevoir un SMS." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Avec votre clavier téléphonique, entrez le numéro de mobile canadien à 10 chiffres pour recevoir un SMS." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "e15ff97d-aa59-4357-9b30-ed93906b60d0"
+        }, {
+          "targetPage": "Return To Start",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, j'ai des problèmes à comprendre." ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "return",
+              "value": "Y"
+            } ]
+          },
+          "name": "60335ea5-4c60-46b1-80c5-2041b53901ef"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 10,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 12
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.sms_phone_number = null OR $session.params.french_dtmf_only = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Veuillez utiliser votre clavier pour entrer le numéro de téléphone canadien auquel nous pouvons vous envoyer le message texte." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "agent"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "Route -\u003e Universal Handoff",
+    "name": "64258d96-28d8-488a-a26c-e1bbad2a43d3"
+  }, {
+    "condition": "$session.params.sms_number_retrycount = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_number_retrycount",
+        "value": 0
+      } ]
+    },
+    "name": "ee914d3f-d59a-44be-be1b-98b98ab9bc84"
+  }, {
+    "condition": "$session.params.sms_phone_number != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Check Collected TN",
+    "name": "7bd1b3b0-ef1f-4aa0-a154-0461998f9f06"
+  } ]
+}

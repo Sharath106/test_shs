@@ -1,0 +1,190 @@
+{
+  "name": "3984d120-41d3-4166-8c3d-cae481d1c7a9",
+  "displayName": "SS Mandatory targetaccount_true Agent HO Handler",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_agent",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sachez qu'un membre de l'équipe n'aura pas accès à effectuer le changement pour vous, mais il peut vous guider tout au long du processus en ligne. Souhaitez-vous quand même patienter pour un membre de l'équipe?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Please know that our team member don't have access to complete the change for you but they can guide you through the process online. Do you still want to wait on hold?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f9f55b6c-7029-41d9-938e-6e974f67bf74"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour discuter avec un membre de l'équipe, dites oui ou appuyez sur 1. Sinon, dites non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To connect with a team member, say yes, or press 1. Otherwise, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "05bed1d5-6047-49af-b761-2afc18afdaa4"
+        }, {
+          "targetPage": "No match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "ed3bb81b-7979-468f-9bcb-f4fdd68a5392"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sachez qu'un membre de l'équipe n'aura pas accès à effectuer le changement pour vous, mais il peut vous guider tout au long du processus en ligne. Souhaitez-vous quand même patienter pour un membre de l'équipe?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Please know that our team member don't have access to complete the change for you but they can guide you through the process online. Do you still want to wait on hold?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "8a0090a3-9df6-4b41-ba1b-7d2d56467a7d"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour discuter avec un membre de l'équipe, dites oui ou appuyez sur 1. Sinon, dites non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To connect with a team member, say yes, or press 1. Otherwise, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ef2b4e28-f231-41d1-90a2-118c97e22234"
+        }, {
+          "targetPage": "No match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "a854d91e-024a-48f9-b544-b746204e8f88"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Sachez que les membres de notre équipe peuvent ne pas avoir accès pour compléter votre demande, mais ils peuvent vous guider tout au long du processus en ligne. Souhaitez-vous toujours patienter en attente?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Please note that our team members may not have access to complete your request, but they can guide you through the process online. Do you still want to wait on hold?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en communication avec un membre de l'équipe, restez en ligne et vous serez connecté à quelqu'un dès qu'il sera disponible." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member.\r\nPlease stay on the line, and you'll be connected to someone as soon as they are available." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "baf6abbd-48b8-4e2d-b5ed-f32792d893f5"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "7f526020-aeb8-457f-b8ae-56e2a5a529fe"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "c185985d-1b22-433c-9ff9-edffd9d8b804"
+  }, {
+    "condition": "$session.params.dtmf_agent = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en communication avec un membre de l'équipe, restez en ligne et vous serez connecté à quelqu'un dès qu'il sera disponible." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member.\r\nPlease stay on the line, and you'll be connected to someone as soon as they are available." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "ebcb0c64-cffa-47d6-afea-80e0f1daecea"
+  }, {
+    "condition": "$session.params.dtmf_agent = \"2\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "6ed26624-adff-4336-b140-81a51fbfc3ac"
+  }, {
+    "condition": "$session.params.dtmf_agent = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en communication avec un membre de l'équipe, restez en ligne et vous serez connecté à quelqu'un dès qu'il sera disponible." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member.\r\nPlease stay on the line, and you'll be connected to someone as soon as they are available." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "7966212a-331c-470b-ac17-34ba9bba1713"
+  } ]
+}

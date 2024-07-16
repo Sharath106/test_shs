@@ -1,0 +1,29 @@
+{
+  "name": "3a6ca9e8-e35d-4d1c-813d-040ab569f4d2",
+  "displayName": "Switch option",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "($session.params.last_page = \"APN Setting iphone vs android\" OR $session.params.last_page = \"Back Up Data iphone vs android\" OR $session.params.last_page = \"Content Recovery iphone vs android\" OR $session.params.last_page = \"Factory Reset iphone vs android\") AND $session.params.route = \"supp_device_android\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Equipment",
+    "name": "e0af6b7e-c0c5-4aa7-aadf-2a47540bba97"
+  }, {
+    "condition": "($session.params.last_page = \"APN Setting iphone vs android\" OR $session.params.last_page = \"Back Up Data iphone vs android\" OR $session.params.last_page = \"Content Recovery iphone vs android\" OR $session.params.last_page = \"Factory Reset iphone vs android\") AND $session.params.route = \"supp_device_iphone\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Equipment",
+    "name": "063db4ff-b246-4ca8-a11f-11c5e0cedad4"
+  }, {
+    "condition": "$session.params.last_page = \"Smart watches\" OR $session.params.last_page = \"Extended warranty\" OR $session.params.last_page = \"Device Care Complete\" OR $session.params.last_page = \"Apple Care plus\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "a0201e19-a857-41ee-a708-febd03a98e76"
+  } ]
+}

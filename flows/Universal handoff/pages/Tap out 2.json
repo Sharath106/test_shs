@@ -1,0 +1,101 @@
+{
+  "name": "955eaf25-2d76-4941-8768-b9ae2e31d780",
+  "displayName": "Tap out 2",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.loop_counter \u003e= 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tap out 3",
+    "name": "aece51d9-334d-4652-b343-2ca5b3a28942"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "page_list",
+        "value": "$sys.func.IF(\"$sys.func.GET($session.params.page_list, $sys.func.MINUS($sys.func.COUNT($session.params.page_list), 1)) :  Repeat\", $sys.func.APPEND($session.params.page_list, Done), $sys.func.APPEND($session.params.page_list, Tap out))"
+      }, {
+        "parameter": "loop_counter",
+        "value": "$sys.func.IF(\"$sys.func.GET($session.params.page_list, $sys.func.MINUS($sys.func.COUNT($session.params.page_list), 1)) :  Repeat\", 0, $sys.func.MINUS($sys.func.COUNT($session.params.page_list), $sys.func.COUNT($sys.func.REMOVE($session.params.page_list, Tap out))))"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.ss_mandatory_page_list : $session.params.last_page",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summary is a self-serve only transaction, which means our team member won't have access to do this for you. I have sent you a text with a link to help you complete this for yourself." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summaryfr est une transaction en libre-service uniquement, ce qui signifie que les membres de notre équipe n'auront pas accès pour le faire à votre place. Je vous ai envoyé un message texte avec un lien pour vous aider à compléter le tout par vous-même." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.service_fee_page_list : $session.params.last_page",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summary is a self-serve only transaction, and there's a $sys.func.IF(\"$session.params.service_fee != null\", $$session.params.service_fee, service) fee that would be charged for a team member to complete this for you. To avoid this cost, I've sent you a text with a link to help you complete this for yourself." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "$session.params.last_page_summaryfr est une transaction offerte en libre-service uniquement, et des frais de $sys.func.IF(\"$session.params.service_fee != null\", $session.params.service_fee$, service) seront facturés pour qu’un membre de l’équipe effectue cette opération à votre place. Afin d'éviter ce frais, je vous ai envoyé un message texte avec un lien pour vous aider à compléter le tout par vous-même." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.app_page_list : $session.params.last_page",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "You should use the My TELUS app when $session.params.last_page_summary. To make things easier for you and to avoid waiting on the line, I've sent you a link to My TELUS that will guide you through this." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Vous devriez utiliser l’application Mon TELUS pour $session.params.last_page_summaryfr. Pour vous faciliter la tâche et éviter d'attendre en ligne, je vous ai envoyé un lien vers Mon TELUS qui vous guidera dans les étapes à suivre." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "You should use the TELUS website when $session.params.last_page_summary. To make things easier for you and to avoid waiting on the line, we've sent you a link to the website that will guide you through this." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Vous devriez utiliser le site Web de TELUS pour $session.params.last_page_summaryfr. Pour vous faciliter la tâche et vous éviter d'attendre en ligne, nous vous avons envoyé un lien vers le site Internet qui vous guidera dans les étapes à suivre." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "7b721c18-f4de-4690-8862-8e873f0ef213"
+  } ]
+}

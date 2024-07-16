@@ -1,0 +1,21 @@
+{
+  "name": "e6d46bc5-50e5-4b87-b720-1813d29b5255",
+  "displayName": "Route -\u003e Universal Handoff",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "routeToFlow",
+        "value": "UniversalHandoff"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "3b783456-ff10-438a-bb65-03cf65fd42b9"
+  } ]
+}

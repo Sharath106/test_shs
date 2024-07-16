@@ -1,0 +1,41 @@
+{
+  "name": "e9b9856d-ce9f-448f-92cf-c279320c1814",
+  "displayName": "No Match 2",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I'm still not sure I've got this.", "I still don't quite understand." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Let's start over, can you try rephrasing one more time?", "Let's start over, can you rephrase that again for me?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Je ne crois toujours pas avoir compris.", "Je ne comprends toujours pas bien." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\r\nPouvez-vous recommencer et reformuler encore une fois?", "Seriez-vous en mesure de recommencer et reformuler de nouveau?" ]
+      },
+      "languageCode": "fr-ca"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_phone_number",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "3ca4eae5-de96-41af-9dcb-13755b84c0b7"
+  } ]
+}

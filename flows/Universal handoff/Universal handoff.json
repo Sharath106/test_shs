@@ -1,0 +1,401 @@
+{
+  "name": "cacd53b1-9d0f-4168-bf47-24ca7ed730cf",
+  "displayName": "Universal handoff",
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.device_type = \"FEAT_PHONE\" OR $session.params.device_type = \"WIRELSS_HOME_PHONE\") AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "targetAccount.isSelfserveMandatory",
+        "value": "false"
+      } ]
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "27d9f610-c1ab-49b5-a6b5-73b358198816"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.area_code = \"418\" OR $session.params.area_code = \"514\" OR $session.params.area_code = \"450\" OR $session.params.area_code = \"819\" OR $session.params.area_code = \"581\" OR $session.params.area_code = \"579\" OR $session.params.area_code = \"873\" OR $session.params.area_code = \"468\" OR $session.params.area_code = \"367\" OR $session.params.area_code = \"438\" OR $session.params.area_code = \"354\" OR $session.params.area_code = \"263\") AND $session.params.async_intent_list : $session.params.last_page AND $session.params.isEPP != \"true\" AND $session.params.conversation.language = \"en-US\" AND ($session.params.device_type != \"FEAT_PHONE\" OR $session.params.device_type != \"WIRELSS_HOME_PHONE\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "async_agent_count",
+        "value": null
+      }, {
+        "parameter": "async_intent",
+        "value": null
+      } ]
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "e97b0aa6-ba85-41f0-830c-2ca6ed46e83a"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.area_code != \"418\" OR $session.params.area_code != \"514\" OR $session.params.area_code != \"450\" OR $session.params.area_code != \"819\" OR $session.params.area_code != \"581\" OR $session.params.area_code != \"579\" OR $session.params.area_code != \"873\" OR $session.params.area_code != \"468\" OR $session.params.area_code != \"367\" OR $session.params.area_code != \"438\" OR $session.params.area_code != \"354\" OR $session.params.area_code != \"263\") AND $session.params.async_intent_list : $session.params.last_page AND $session.params.isEPP != \"true\" AND $session.params.conversation.language = \"en-US\" AND ($session.params.device_type != \"FEAT_PHONE\" OR $session.params.device_type != \"WIRELSS_HOME_PHONE\") AND $session.params.async_agent_count = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "async_agent_count",
+        "value": "1"
+      }, {
+        "parameter": "async_intent",
+        "value": true
+      } ]
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "b6fd1b55-d40f-43ff-879b-38b039463018"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.last_page = \"Roaming issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "7b372264-71fe-4e7f-bae6-46696fc62437"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_pages : $session.params.last_page AND $session.params.app_first_poc = true AND ($session.params.device_type = \"FEAT_PHONE\" OR $session.params.device_type = \"WIRELSS_HOME_PHONE\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "targetAccount.isSelfserveMandatory",
+        "value": false
+      } ]
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "41ac0a9c-9469-43fe-b1b8-7914fd026eaf"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.targetAccount.isSelfserveMandatory = false OR $session.params.targetAccount.isSelfserveMandatory = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "d1dd1e5a-07a6-440e-84aa-a8d309885f6d"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_pages : $session.params.last_page AND $session.params.app_first_poc = true AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+      "webhook": "Account Identity VC",
+      "tag": "ucar_model_list",
+      "setParameterActions": [ {
+        "parameter": "phone_number",
+        "value": "$session.params.user.utn"
+      }, {
+        "parameter": "ban",
+        "value": "$session.params.user.ban"
+      }, {
+        "parameter": "page_list",
+        "value": "$sys.func.IF(\"$session.params.page_list = null\", $sys.func.APPEND($session.params.page_list, $session.params.last_page), $session.params.page_list)"
+      } ]
+    },
+    "targetPage": "Tap out 1",
+    "name": "3bde89ae-b2c2-4760-8749-0536d2690bc9"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.daryl_test = \"1\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SS Mandatory w Propensity",
+    "name": "59dd66a8-2fa0-4bb7-a305-67a6bb96c501"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_attempt = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "8a10ae93-41cc-4d0c-8c7d-fbed5bd86cfd"
+  }, {
+    "intent": "small_talk.troubleshooting_still_having_issues",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I see, no problem, let me get you to a team member then. ", "I understand, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "8e57af6c-8ef0-4289-9067-2da48dc7b6b7"
+  }, {
+    "condition": "$session.params.routeDetails = null AND $session.params.conversation = null AND $session.params.searchResult = null AND $session.params.user = null AND $session.params.init != null",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "init_retry",
+        "value": "universal handoff flow"
+      } ]
+    },
+    "name": "b66944a4-3a16-433a-bc46-89adbde870cc"
+  }, {
+    "condition": "$session.params.is_repeat_prompted = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_repeat_prompted",
+        "value": null
+      } ]
+    },
+    "targetPage": "Repeat",
+    "name": "72e8c016-1542-40af-b6ae-55a9ee661523"
+  }, {
+    "condition": "($session.params.device_type = \"FEAT_PHONE\" OR $session.params.device_type = \"WIRELSS_HOME_PHONE\") AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "targetAccount.isSelfserveMandatory",
+        "value": "false"
+      } ]
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "a7bd204a-329e-4e45-b833-53f08ca55e1d"
+  }, {
+    "condition": "($session.params.area_code = \"418\" OR $session.params.area_code = \"514\" OR $session.params.area_code = \"450\" OR $session.params.area_code = \"819\" OR $session.params.area_code = \"581\" OR $session.params.area_code = \"579\" OR $session.params.area_code = \"873\" OR $session.params.area_code = \"468\" OR $session.params.area_code = \"367\" OR $session.params.area_code = \"438\" OR $session.params.area_code = \"354\" OR $session.params.area_code = \"263\") AND $session.params.async_intent_list : $session.params.last_page AND $session.params.isEPP != \"true\" AND $session.params.conversation.language = \"en-US\" AND ($session.params.device_type != \"FEAT_PHONE\" OR $session.params.device_type != \"WIRELSS_HOME_PHONE\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "async_agent_count",
+        "value": null
+      }, {
+        "parameter": "async_intent",
+        "value": null
+      } ]
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "1f6dd878-bba0-4494-b5d6-475e448460b3"
+  }, {
+    "condition": "($session.params.area_code != \"418\" OR $session.params.area_code != \"514\" OR $session.params.area_code != \"450\" OR $session.params.area_code != \"819\" OR $session.params.area_code != \"581\" OR $session.params.area_code != \"579\" OR $session.params.area_code != \"873\" OR $session.params.area_code != \"468\" OR $session.params.area_code != \"367\" OR $session.params.area_code != \"438\" OR $session.params.area_code != \"354\" OR $session.params.area_code != \"263\") AND $session.params.async_intent_list : $session.params.last_page AND $session.params.isEPP != \"true\" AND $session.params.conversation.language = \"en-US\" AND ($session.params.device_type != \"FEAT_PHONE\" OR $session.params.device_type != \"WIRELSS_HOME_PHONE\") AND $session.params.async_agent_count = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "async_intent",
+        "value": true
+      }, {
+        "parameter": "async_agent_count",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "81b7f3f0-10dc-4b13-8ec1-f49c3904d4ff"
+  }, {
+    "condition": "$session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "async_agent_count",
+        "value": null
+      }, {
+        "parameter": "async_intent",
+        "value": null
+      } ]
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "cfeb2630-2f81-4acc-ad85-fd97a6121b2a"
+  }, {
+    "condition": "$session.params.async_intent = true AND $session.params.async_agent_count = \"3\"",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.smsmod_webhook_error = \"true\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Let me get you to a team member." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Okay, let me get you to a team member." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "484a674b-fa73-4109-87bf-3f89a6c174b4"
+  }, {
+    "condition": "$session.params.async_low_ss_prop = true AND $session.params.async_agent_count = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "9d38a333-2605-445c-b7f6-4497d2e992bf"
+  }, {
+    "condition": "$session.params.async_high_ss_prop = true AND $session.params.async_agent_count = \"2\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Async check High",
+    "name": "5229f068-2203-405a-a953-e6615f343ebd"
+  }, {
+    "condition": "$session.params.async_intent = true AND $session.params.async_agent_count = \"2\" AND ($session.params.mandatory_ss != \"true\" OR $session.params.handoff_by_design = \"true\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Async check High",
+    "name": "4c685818-0ca0-4eea-9153-faaa36467a2e"
+  }, {
+    "condition": "$session.params.route = \"hours_of_operation\" AND ($session.params.repeat_counter \u003c 6 OR $session.params.repeat_counter = null)",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Hours of operation",
+    "name": "81dba8b1-270a-4d68-91d1-c677bdeb68f0"
+  }, {
+    "condition": "($session.params.isEPP = \"false\" OR $session.params.isEPP = null) AND $session.params.daryl_test = \"1\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SS Mandatory w Propensity",
+    "name": "28fd4a49-928e-474e-917e-8132ac914643"
+  }, {
+    "condition": "($session.params.isEPP = \"false\" OR $session.params.isEPP = null) AND $session.params.agent_attempt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "today",
+        "value": "$sys.func.NOW()"
+      } ]
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "803d478c-0451-4cf4-98e1-9e9abcefc15a"
+  }, {
+    "condition": "$session.params.agent_attempt = \"3\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "983bb522-03f3-4b91-a2b7-ab6bcc21e9c9"
+  }, {
+    "condition": "$session.params.last_page = \"Disambiguation\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "73a1731c-801d-40c2-bd63-73933c2b4d73"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SS Mandatory sms_sent_list handler",
+    "name": "fe6a8b73-5aa2-4f6c-8a28-71cf59a3ec4a"
+  }, {
+    "condition": "NOT $session.params.async_sms_sent_list : $session.params.last_page AND $session.params.async_agent_count != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "async_agent_count",
+        "value": "$sys.func.TO_TEXT($sys.func.ADD($sys.func.TO_NUMBER($session.params.async_agent_count), 1))"
+      } ]
+    },
+    "name": "39a9d26f-bdce-4e20-9238-f7b31b692777"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "b2a8b0e0-64c7-4d49-ac55-4ab36faa40de"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "b8559b46-778e-4545-8c60-ef595d0d2475"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I'm not sure I got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Can you reword that for me?", "Can you try to rephrase your question?", "Do you mind rephrasing?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir bien compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Seriez-vous en mesure de reformuler?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "63ee60ac-6af0-4b0f-b1fc-400bf2faea4d"
+  }, {
+    "targetPage": "No match 2",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "7c619ca9-e2d8-4748-874a-2850cc87a0a4"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I'm not sure I got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Can you reword that for me?", "Can you try to rephrase your question?", "Do you mind rephrasing?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir bien compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Seriez-vous en mesure de reformuler?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "8bb1276a-418b-4993-ba75-f0111d89bf52"
+  }, {
+    "targetPage": "No match 2",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "a2a1d2a0-a180-43d3-b02b-9f9e038b8017"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_CUSTOM",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL"
+  },
+  "transitionRouteGroups": [ "Small Talk" ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "2e36248f-fe18-4265-bfb2-48f9cc1ed5d4",
+  "displayName": "End page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Is there anything else I can help you with?", "Can I assist you with anything else?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Route -\u003e Default Start Flow",
+    "name": "26d38585-0822-45f1-9e77-0026b495ee4f"
+  } ]
+}

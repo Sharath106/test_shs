@@ -1,0 +1,337 @@
+{
+  "name": "2a815ba4-8895-4664-a618-1eb3bc53db5f",
+  "displayName": "Online or App change",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Bill and balance online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Bill and balance online or app\") OR ($session.params.last_page = \"Bill due date online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Bill due date online or app\" AND $session.params.online_vs_app = \"app\") OR ($session.params.last_page = \"Billing cycle date online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Billing cycle date online or app\" AND $session.params.online_vs_app = \"app\") OR ($session.params.last_page = \"Text records online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Text records online or app\" AND $session.params.online_vs_app = \"app\") OR ($session.params.last_page = \"Usage online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Usage online or app\" AND $session.params.online_vs_app = \"app\") OR ($session.params.last_page = \"View mobility bill online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"View mobility bill online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_onlineapp"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.online_vs_app = \"online\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, website instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour notre site web." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.online_vs_app = \"app\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, my telus app instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour l'application Mon TELUS." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "a8374d52-fdf9-49a8-b841-3231fba1b214"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"2 Factor Authentication online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"2 Factor Authentication online or app\") OR ($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Activate Sim online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Activate Sim online or app\") OR ($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Change Bill Address online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Change Bill Address online or app\") OR ($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Change Email Address online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Change Email Address online or app\") OR ($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Data Limits online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Data Limits online or app\") OR ($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Enable or disable data online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Enable or disable data online or app\") OR ($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Find account number online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Find account number online or app\") OR ($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Lost and Stolen or Find Phone online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Lost and Stolen or Find Phone online or app\") OR ($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Phone Found online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Phone Found online or app\") OR ($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"TELUS Rewards online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"TELUS Rewards online or app\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_onlineapp"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.online_vs_app = \"online\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, website instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour notre site web." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.online_vs_app = \"app\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, my telus app instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour l'application Mon TELUS." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "57217992-a587-4ae7-b389-a895280f5330"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"How to sign in or out online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"How to sign in or out online or app\") OR ($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Link accounts online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Link accounts online or app\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_onlineapp"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.online_vs_app = \"online\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, website instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour notre site web." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.online_vs_app = \"app\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, my telus app instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour l'application Mon TELUS." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "5c6e6535-0428-433f-9b50-7fdfb8633c50"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Add a feature online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Add a feature online or app\") OR ($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Block data Ongoing online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Block data Ongoing online or app\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_onlineapp"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.online_vs_app = \"online\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, website instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour notre site web." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.online_vs_app = \"app\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, my telus app instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour l'application Mon TELUS." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "3db6427f-0675-4fd5-b7a3-63b0724bca83"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Payment Arrangement online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Payment Arrangement online or app\") OR ($session.params.last_page = \"Pre auth Set up online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Pre auth Set up online or app\" AND $session.params.online_vs_app = \"app\") OR ($session.params.last_page = \"Pre auth Update Info online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Pre auth Update Info online or app\" AND $session.params.online_vs_app = \"app\") OR ($session.params.last_page = \"Report a Payment online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Report a Payment online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_onlineapp"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.online_vs_app = \"online\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, website instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour notre site web." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.online_vs_app = \"app\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, my telus app instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour l'application Mon TELUS." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "22271cf7-082d-45e8-970a-52bbf23de106"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Bring it Back amount Online vs App\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Bring it Back amount Online vs App\") OR ($session.params.last_page = \"Easy Payment Balance online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Easy Payment Balance online or app\" AND $session.params.online_vs_app = \"app\") OR ($session.params.last_page = \"How to view CSA or Contract online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"How to view CSA or Contract online or app\" AND $session.params.online_vs_app = \"app\") OR ($session.params.last_page = \"New activation no sim online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"New activation no sim online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_onlineapp"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.online_vs_app = \"online\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, website instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour notre site web." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.online_vs_app = \"app\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, my telus app instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour l'application Mon TELUS." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "7b4b2528-0ab5-4614-88fe-b84ef4c83221"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Add a feature online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Add a feature online or app\") OR ($session.params.last_page = \"Block data Ongoing online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Block data Ongoing online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_onlineapp"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.online_vs_app = \"online\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, website instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour notre site web." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.online_vs_app = \"app\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, my telus app instructions." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, les instructions pour l'application Mon TELUS." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "a2dfa535-649c-4d1f-96e4-f4285ec09a11"
+  } ]
+}

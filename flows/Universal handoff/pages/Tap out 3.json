@@ -1,0 +1,237 @@
+{
+  "name": "34af941e-d37b-4878-9126-5a127029731e",
+  "displayName": "Tap out 3",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "full_tap_out",
+      "value": "true"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Ok, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "da04249d-7d93-412f-af4f-8f269a3c39a3"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Ok, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "d67609c6-9542-4fcb-912a-1d66430fb8d0"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "56d7629e-ddca-4f55-9eb1-5aa895c3b8c5"
+  }, {
+    "condition": "$session.params.loop_counter \u003e= 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let me get you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "full_tap_out",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "# Handoff \u003e Start",
+    "name": "25c91895-f826-436d-aa58-df8150cf04a1"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "page_list",
+        "value": "$sys.func.IF(\"$sys.func.GET($session.params.page_list, $sys.func.MINUS($sys.func.COUNT($session.params.page_list), 1)) :  Repeat\", $sys.func.APPEND($session.params.page_list, Done), $sys.func.APPEND($session.params.page_list, Tap out))"
+      }, {
+        "parameter": "loop_counter",
+        "value": "$sys.func.IF(\"$sys.func.GET($session.params.page_list, $sys.func.MINUS($sys.func.COUNT($session.params.page_list), 1)) :  Repeat\", 0, $sys.func.MINUS($sys.func.COUNT($session.params.page_list), $sys.func.COUNT($sys.func.REMOVE($session.params.page_list, Tap out))))"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.ss_mandatory_page_list : $session.params.last_page",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je comprends que vous aimeriez parler à quelqu'un. Gardez à l’esprit que $session.params.last_page_summaryfr ne peut pas être complétée par un membre de l’équipe et doit être complétée dans Mon TELUS. Notez que vous pouvez demander un rappel prioritaire si vous avez encore besoin d'aide à partir de là. Souhaitez-vous quand même attendre pour un membre de l’équipe?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "I understand you'd like to speak with someone. As a reminder, $session.params.last_page_summary can't be completed by a team member and must be completed in My TELUS. Note that you can book a priority call back if you still need help from there. Do you still want to wait on hold for a team member?" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.service_fee_page_list : $session.params.last_page",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je comprends que vous aimeriez parler à quelqu'un. Gardez à l’esprit que $session.params.last_page_summaryfr entraînera des frais de $sys.func.IF(\"$session.params.service_fee != null\", $session.params.service_fee$, service), qui peuvent être évité en complétant le tout dans Mon TELUS. Notez que vous pouvez demander un rappel prioritaire si vous avez encore besoin d'aide à partir de là. Souhaitez-vous quand même attendre pour un membre de l’équipe?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "I understand you'd like to speak with someone. As a reminder, $session.params.last_page_summary will result in a $sys.func.IF(\"$session.params.service_fee != null\", $$session.params.service_fee, service) fee, which can be avoided by completing it in your My TELUS account. Note that you can book a priority call back if you still need help from there. Do you still want to wait on hold for a team member?" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.app_page_list : $session.params.last_page",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je comprends que vous aimeriez parler à quelqu'un. $session.params.last_page_summaryfr est quelque chose que vous pouvez faire rapidement sur votre compte Mon TELUS, et si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire. Souhaitez-vous quand même attendre pour un membre de l’équipe ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "I understand you'd like to speak with someone. $session.params.last_page_summary is something you can do quickly in your My TELUS account, and if you still need help from there you can ask for a priority call back. Do you still want to wait on hold for a team member?" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je comprends que vous aimeriez parler à quelqu'un. $session.params.last_page_summaryfr est quelque chose que vous pouvez faire rapidement sur le site Web de TELUS, et si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire. Souhaitez-vous quand même attendre pour un membre de l’équipe ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "I understand you'd like to speak with someone. $session.params.last_page_summary is something you can do quickly on the TELUS website, and if you still need help from there you can book a priority call back. Do you still want to wait on hold for a team member?" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "051bc6db-906a-427a-b3b5-e09669f39bcf"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour confirmer, voulez-vous toujours patientez pour un membre de l'équipe malgré tout?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Just to confirm, do you still want to wait on hold for a team member?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "343696cd-4651-44ba-b23a-9487c0a0e00e"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je tente de confirmer, considérant qu'un membre de l'équipe pourrait ne pas être en mesure de vous aider, voulez tout de même attendre pour parler avec quelqu'un?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I'm just looking to confirm, considering the fact a team member may not be able to help here, do you still want to wait on hold to speak with someone?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f06a4bc6-88c4-4534-9b4b-7871abbad82f"
+  }, {
+    "targetPage": "No match 2",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "6008965d-c592-4121-aaae-3bed9c6e17d5"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je n'ai pas entendu. Pour confirmer, voulez-vous toujours patientez pour un membre de l'équipe malgré tout?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I couldn't hear that. Just to confirm, do you still want to wait on hold for a team member?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "444684dd-fdc3-436f-9227-992fa151e8ad"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je n'ai toujours pas entendu. considérant qu'un membre de l'équipe pourrait ne pas être en mesure de vous aider, voulez tout de même attendre pour parler avec quelqu'un?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I still couldn't quite get that. Considering the fact a team member may not be able to help here, do you still want to wait on hold to speak with someone?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "24655744-8136-45a1-804a-d4fee9518320"
+  }, {
+    "targetPage": "No match 2",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "3866ca5d-3c1b-44b4-8600-a89dd50fcdd2"
+  } ]
+}
