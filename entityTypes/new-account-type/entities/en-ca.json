@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "online",
+    "synonyms": [ "my telus", "mytelus", "online", "online account", "online profile", "profile", "self serve", "self-serve", "ss", "telus account" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "family plan",
+    "synonyms": [ "family", "family plan", "family promos", "few lines", "many lines", "multiple lines" ],
+    "languageCode": "en-ca"
+  } ]
+}

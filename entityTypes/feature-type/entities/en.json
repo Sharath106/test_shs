@@ -1,0 +1,47 @@
+{
+  "entities": [ {
+    "value": "apple care",
+    "synonyms": [ "apple care" ],
+    "languageCode": "en"
+  }, {
+    "value": "call forwarding",
+    "synonyms": [ "call forwarding" ],
+    "languageCode": "en"
+  }, {
+    "value": "roaming",
+    "synonyms": [ "roaming" ],
+    "languageCode": "en"
+  }, {
+    "value": "voicemail",
+    "synonyms": [ "voicemail" ],
+    "languageCode": "en"
+  }, {
+    "value": "international calling",
+    "synonyms": [ "international calling" ],
+    "languageCode": "en"
+  }, {
+    "value": "long distance calling",
+    "synonyms": [ "long distance calling" ],
+    "languageCode": "en"
+  }, {
+    "value": "airtime",
+    "synonyms": [ "airtime" ],
+    "languageCode": "en"
+  }, {
+    "value": "messaging",
+    "synonyms": [ "messaging" ],
+    "languageCode": "en"
+  }, {
+    "value": "online security",
+    "synonyms": [ "online security" ],
+    "languageCode": "en"
+  }, {
+    "value": "device care",
+    "synonyms": [ "device care" ],
+    "languageCode": "en"
+  }, {
+    "value": "data",
+    "synonyms": [ "data", "data block" ],
+    "languageCode": "en"
+  } ]
+}

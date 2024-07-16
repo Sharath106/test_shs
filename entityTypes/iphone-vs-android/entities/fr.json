@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "android",
+    "synonyms": [ "android", "androïde", "Google", "samsung", "huwaei", "lg", "motorola", "Android", "Android", "Google", "pixels", "samsung", "galaxie", "Note", "huawei", "lg", "motorola", "sony", "nokia", "Samsung Galaxy", "droïde" ],
+    "languageCode": "fr"
+  }, {
+    "value": "blackberry",
+    "synonyms": [ "blackberry", "blackberry", "bb", "black berry" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iphone",
+    "synonyms": [ "iphone", "je téléphone", "iphone", "Pomme", "je téléphone", "iphone", "iPad", "itunes" ],
+    "languageCode": "fr"
+  }, {
+    "value": "other",
+    "synonyms": [ "other", "autre", "autre", "d'autres questions", "avez d'autres questions", "option 3", "3" ],
+    "languageCode": "fr"
+  } ]
+}

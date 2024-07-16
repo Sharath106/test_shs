@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "new phone",
+    "synonyms": [ "buy a", "buy a new", "buy a new phone", "buying", "get myself a new", "get the new", "like a new", "need a new", "need a new phone", "new", "new device", "new phone", "new phone with contract", "purchase a ", "purchase a new", "purchasing", "want a new", "want a new device" ],
+    "languageCode": "en"
+  }, {
+    "value": "byod",
+    "synonyms": [ "already have my", "bring my", "bring my own phone", "bring your own device", "byod", "don't need a new phone", "just the sim card", "keep my", "keep my device", "my own phone", "own device" ],
+    "languageCode": "en"
+  } ]
+}

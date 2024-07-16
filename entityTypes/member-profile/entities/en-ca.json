@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "owner",
+    "synonyms": [ "owner" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "manager",
+    "synonyms": [ "manager" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "member",
+    "synonyms": [ "member" ],
+    "languageCode": "en-ca"
+  } ]
+}

@@ -1,0 +1,47 @@
+{
+  "entities": [ {
+    "value": "airtime",
+    "synonyms": [ "airtime", "temps d'antenne" ],
+    "languageCode": "fr"
+  }, {
+    "value": "apple care",
+    "synonyms": [ "apple care", "soin des pommes" ],
+    "languageCode": "fr"
+  }, {
+    "value": "call forwarding",
+    "synonyms": [ "call forwarding", "renvoi d'appel" ],
+    "languageCode": "fr"
+  }, {
+    "value": "data",
+    "synonyms": [ "data", "notifications de données", "données", "données", "bloc de données" ],
+    "languageCode": "fr"
+  }, {
+    "value": "device care",
+    "synonyms": [ "device care", "entretien de l'appareil" ],
+    "languageCode": "fr"
+  }, {
+    "value": "international calling",
+    "synonyms": [ "international calling", "appel international" ],
+    "languageCode": "fr"
+  }, {
+    "value": "long distance calling",
+    "synonyms": [ "long distance calling", "appel interurbain" ],
+    "languageCode": "fr"
+  }, {
+    "value": "messaging",
+    "synonyms": [ "messaging", "messagerie" ],
+    "languageCode": "fr"
+  }, {
+    "value": "online security",
+    "synonyms": [ "online security", "sécurité en ligne" ],
+    "languageCode": "fr"
+  }, {
+    "value": "roaming",
+    "synonyms": [ "roaming", "roaming" ],
+    "languageCode": "fr"
+  }, {
+    "value": "voicemail",
+    "synonyms": [ "voicemail", "messagerie vocale" ],
+    "languageCode": "fr"
+  } ]
+}

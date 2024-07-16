@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "byod",
+    "synonyms": [ "byod", "avpa", "Apportez votre propre appareil", "apporter mon propre appareil", "avpa", "Apportez votre propre appareil", "le mien", "mon appareil", "garder mon appareil", "juste une carte sim", "avpa", "Apportez votre propre appareil", "apporter mon propre téléphone", "j'ai déjà mon", "apporter mon", "garder mon appareil", "garder mon", "pas besoin d'un nouveau téléphone", "juste la carte sim", "propre appareil", "mon propre téléphone" ],
+    "languageCode": "fr"
+  }, {
+    "value": "new phone",
+    "synonyms": [ "new phone", "nouveau", "acheter un nouveau", "m'en procurer un nouveau", "besoin d'un nouveau", "acheter un", "besoin d'un nouveau téléphone", "nouveau téléphone avec contrat", "veux un nouvel appareil", "obtenir le nouveau", "nouveau téléphone", "nouvel appareil" ],
+    "languageCode": "fr"
+  } ]
+}

@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "Google Chrome",
+    "synonyms": [ "Google Chrome", "Google Chrome", "Google", "chrome", "système d'exploitation chromé" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Internet explorer",
+    "synonyms": [ "Internet explorer", "Internet Explorer", "explorateur", "bord", "microsoft" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Mozilla Firefox",
+    "synonyms": [ "Mozilla Firefox", "Firefox", "mozilla", "mozilla firefox" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Safari",
+    "synonyms": [ "Safari", "Safari", "Pomme" ],
+    "languageCode": "fr"
+  } ]
+}

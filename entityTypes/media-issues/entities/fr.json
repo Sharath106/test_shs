@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "earphone",
+    "synonyms": [ "earphone", "écouteur", "écouteurs", "sur les écouteurs", "écouteurs", "prise audio", "écouteurs", "capsules d'air" ],
+    "languageCode": "fr"
+  }, {
+    "value": "hearing others",
+    "synonyms": [ "hearing others", "entendre les autres", "autres sur appel", "entendre les autres", "je ne peux pas entendre les autres", "entendre l'autre personne", "entendre l'autre", "pas de son sur les appels", "statique", "brouillé", "bruit étrange", "audition statique sur les appels" ],
+    "languageCode": "fr"
+  }, {
+    "value": "media",
+    "synonyms": [ "media", "médias", "lecteur multimédia auditif", "haut-parleurs", "musique", "vidéos sur haut-parleur", "musique sur haut-parleur", "média du lecteur", "pas de son", "conférencier" ],
+    "languageCode": "fr"
+  }, {
+    "value": "others hearing",
+    "synonyms": [ "others hearing", "d'autres entendent", "les autres m'entendent", "ne peut pas m'entendre", "ne pas m'entendre", "ne m'entends pas", "incapable de m'entendre", "les autres ne peuvent pas m'entendre", "microphone", "ne peux pas entendre" ],
+    "languageCode": "fr"
+  } ]
+}

@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "manager",
+    "synonyms": [ "directeur", "manager" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "member",
+    "synonyms": [ "membre" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "owner",
+    "synonyms": [ "proprietaire", "propriétaire", "proprietaire du compte", "propriétaire du compte" ],
+    "languageCode": "fr-ca"
+  } ]
+}

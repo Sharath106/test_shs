@@ -1,0 +1,47 @@
+{
+  "entities": [ {
+    "value": "airtime",
+    "synonyms": [ "airtime", "temps d'antenne" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "apple care",
+    "synonyms": [ "apple", "apple care", "soin des pommes", "soins apple", "soins d'apple" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "call forwarding",
+    "synonyms": [ "call forwarding", "renvoi d'appel" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "data",
+    "synonyms": [ "bloc de données", "data", "données", "notifications de données" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "device care",
+    "synonyms": [ "device care", "entretien de l'appareil" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "international calling",
+    "synonyms": [ "appel international", "international calling" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "long distance calling",
+    "synonyms": [ "appel interurbain", "long distance calling" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "messaging",
+    "synonyms": [ "messagerie", "messaging" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "online security",
+    "synonyms": [ "online security", "sécurité en ligne" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "roaming",
+    "synonyms": [ "errant", "roaming" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "voicemail",
+    "synonyms": [ "messagerie vocale", "voicemail" ],
+    "languageCode": "fr-ca"
+  } ]
+}

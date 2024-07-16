@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "serviceDescription",
+    "synonyms": [ "serviceDescription", "description" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "chargeAmount",
+    "synonyms": [ "chargeAmount", "cost", "price" ],
+    "languageCode": "en-ca"
+  } ]
+}

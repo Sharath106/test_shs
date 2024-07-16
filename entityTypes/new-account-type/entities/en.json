@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "online",
+    "synonyms": [ "my telus", "my telus account", "mytelus", "online", "online account", "online profile", "profile", "register", "registering", "self serve", "self-serve", "set up", "set up a my Telus account", "set up my telus account", "setup", "setup my telus account", "setup Telus account", "ss", "telus account" ],
+    "languageCode": "en"
+  }, {
+    "value": "family plan",
+    "synonyms": [ "add my daughter to my plan", "family", "family plan", "family promos", "few lines", "many lines", "multiple lines" ],
+    "languageCode": "en"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "en"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "en"
+  }, {
+    "value": "service",
+    "synonyms": [ "device", "devices", "get a new device", "get a new phone", "new device", "new phone", "new service", "service", "services" ],
+    "languageCode": "en"
+  } ]
+}

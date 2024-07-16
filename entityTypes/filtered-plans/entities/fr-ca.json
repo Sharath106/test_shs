@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "chargeAmount",
+    "synonyms": [ "Cout", "Coût", "le prix", "montant de frais", "montant total", "prix" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "serviceDescription",
+    "synonyms": [ "description", "description des services", "Description du service", "descriptionduservice", "la description", "serviceDescription" ],
+    "languageCode": "fr-ca"
+  } ]
+}

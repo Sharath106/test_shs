@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "existing",
+    "synonyms": [ "actuellement client", "ajouter une ligne", "avoir un compte", "client existant", "compte existant", "existant", "existing", "forfait existant", "ligne existante", "ligne supplementaire", "ligne supplémentaire", "mon compte", "supplementaire", "supplémentaire" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "new",
+    "synonyms": [ "ligne additionelle", "ligne supplementaire", "ligne supplémentaire", "n'ai pas de compte", "new", "new", "nouveau", "nouveau client", "nouveau compte", "nouvelle", "nouvelle activation", "nouvelle cliente", "nouvelle ligne", "pas un client" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "agent", "dtmf_digits_0", "membre", "operateur", "opérateur" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  } ]
+}

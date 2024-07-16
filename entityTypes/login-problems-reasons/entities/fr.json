@@ -1,0 +1,35 @@
+{
+  "entities": [ {
+    "value": "Account cancelled",
+    "synonyms": [ "Account cancelled", "Compte annulé", "annulé", "le compte est fermé", "fermé" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Account locked",
+    "synonyms": [ "Account locked", "Compte bloqué", "connexion bloquée", "trop d'essais", "débloquer mon compte", "se connecter trop de fois", "débloquer mon compte", "enfermé dehors", "le compte m'a bloqué", "débloquer mon compte telus", "le compte est bloqué", "débloquer mon compte en ligne" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Account not activated",
+    "synonyms": [ "Account not activated", "Compte non activé", "dit pas actif", "pas actif", "mon compte n'est pas actif", "n'arrive pas à s'activer", "impossible d'activer", "impossible d'activer", "non activé", "ne pense pas que mon compte est actif", "compte non actif", "activer", "besoin d'activer", "je ne pense pas que mon compte soit actif" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Account not approved",
+    "synonyms": [ "Account not approved", "Compte non approuvé", "toujours pas approuvé", "besoin d'approbation", "approbation du propriétaire", "accès non approuvé", "obtenir l'approbation", "doit approuver" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Entered info",
+    "synonyms": [ "Entered info", "Ne reconnaît pas les informations correctes", "entrer les informations correctes", "information correcte", "les bons identifiants", "la connexion est correcte", "avoir le bon mot de passe", "caractères sensibles à la casse", "sais que j'ai les bonnes infos", "ne reconnaîtra pas mes informations" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Forgot password",
+    "synonyms": [ "Forgot password", "Mot de passe oublié", "ne me souviens pas du mot de passe", "pas sûr du mot de passe", "quel est mon mot de passe", "réinitialiser le mot de passe", "passer la réinitialisation", "mot de passe en ligne", "obtenir un nouveau mot de passe", "je ne connais pas mon mot de passe", "trouver mon mot de passe", "le mot de passe", "réinitialisation du mot de passe" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Forgot username",
+    "synonyms": [ "Forgot username", "Identifiant oublié", "ne me souviens pas de l'email", "je ne connais pas mon nom d'utilisateur", "quel e-mail", "e-mail que j'ai utilisé", "nom d'utilisateur que j'ai utilisé", "réinitialiser le nom d'utilisateur", "e-mail de connexion", "email pour se connecter", "Nom d'utilisateur", "oublié mon nom d'utilisateur telus", "je ne sais pas quel nom d'utilisateur j'ai", "oublié ce que mon nom d'utilisateur", "récupérer le nom d'utilisateur", "vérifier si j'ai un compte", "je ne sais pas si j'ai un compte", "quel nom d'utilisateur" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Website errors",
+    "synonyms": [ "Website errors", "Erreurs du site Web", "problèmes sur le site", "telus.com ne fonctionne pas", "le site est en panne", "504 passerelle", "page Web expirée", "le site a des problèmes", "le site ne fonctionne pas", "le site web ne fonctionne pas", "le site web est en panne", "erreurs de site web", "problèmes avec le site web", "problèmes de site Web" ],
+    "languageCode": "fr"
+  } ]
+}

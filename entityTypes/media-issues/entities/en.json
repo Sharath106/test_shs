@@ -1,0 +1,35 @@
+{
+  "entities": [ {
+    "value": "media",
+    "synonyms": [ "hearing media player", "media", "media from player", "music", "music on speaker", "no audio", "speaker", "speakers", "videos on speaker" ],
+    "languageCode": "en"
+  }, {
+    "value": "hearing others",
+    "synonyms": [ "anything", "garbled", "hear others", "hearing others", "I can't", "I cannot", "I try to", "I'm not able to", "I'm unable", "no audio on calls", "no dial tone", "nobody", "others", "others on call", "static", "the other", "the other person", "weird noise" ],
+    "languageCode": "en"
+  }, {
+    "value": "others hearing",
+    "synonyms": [ "can't hear me", "he can't", "he's not able", "he's unable", "hear me", "hear us", "is not able", "is unable", "mic", "microphone", "others are not able", "others can't", "others hearing", "person can't", "person is unable", "she can't", "she's not able", "she's unable", "they can't", "they're not able", "they're unable" ],
+    "languageCode": "en"
+  }, {
+    "value": "earphone",
+    "synonyms": [ "air pods", "audio jack", "ear buds", "ear phones", "earbud", "earbuds", "earphone", "earphones", "headphones", "hearphones", "on earphones" ],
+    "languageCode": "en"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "en"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "en"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3" ],
+    "languageCode": "en"
+  }, {
+    "value": "4",
+    "synonyms": [ "dtmf_digits_4" ],
+    "languageCode": "en"
+  } ]
+}

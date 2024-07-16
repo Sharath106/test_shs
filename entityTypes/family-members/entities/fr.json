@@ -1,0 +1,35 @@
+{
+  "entities": [ {
+    "value": "aunt",
+    "synonyms": [ "aunt", "tante" ],
+    "languageCode": "fr"
+  }, {
+    "value": "child",
+    "synonyms": [ "child", "enfant", "fille", "fils", "enfants", "petit", "fils", "filles" ],
+    "languageCode": "fr"
+  }, {
+    "value": "friend",
+    "synonyms": [ "friend", "ami", "copains" ],
+    "languageCode": "fr"
+  }, {
+    "value": "grandparent",
+    "synonyms": [ "grandparent", "grand-père", "grand-mère", "grand-père", "grand-mère", "grands-parents", "grand-parent" ],
+    "languageCode": "fr"
+  }, {
+    "value": "parent",
+    "synonyms": [ "parent", "père", "père", "papa", "papa", "mère", "maman", "maman" ],
+    "languageCode": "fr"
+  }, {
+    "value": "sibling",
+    "synonyms": [ "sibling", "sœur", "soeur", "frère", "copain", "sœurs", "frères" ],
+    "languageCode": "fr"
+  }, {
+    "value": "significant other",
+    "synonyms": [ "significant other", "partenaire", "ma moitié", "conjoint", "épouse", "mari", "petit ami", "copine", "copine", "petit ami" ],
+    "languageCode": "fr"
+  }, {
+    "value": "uncle",
+    "synonyms": [ "uncle", "oncle" ],
+    "languageCode": "fr"
+  } ]
+}

@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "Account locked",
+    "synonyms": [ "account is blocked", "Account locked", "account locked me out", "locked", "locked out", "login blocked", "login too many times", "too many attempts", "unblock my account", "unlock my account", "unlock my online account", "unlocking my telus account" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Entered info",
+    "synonyms": [ "characters case sensitive", "correct information", "entering correct info", "have the right password", "invalid login credentials", "know I have the right info", "login credentials", "login is correct", "Not recognizing correct information", "the right credentials", "won't recognize my information" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Forgot username",
+    "synonyms": [ "check if I have an account", "don't know my username", "don't remember email", "email for login", "email I used", "email to sign in", "forget username", "forgot my telus username", "forgot my username", "forgot user name", "Forgot username", "forgot what my username", "not sure if I have an account", "not sure what username i have", "reset username", "retrieve user name", "username", "username I used", "what email", "what username" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Account not activated",
+    "synonyms": [ "Account not activated", "account not active", "activate", "cant activate", "cant seem to activate", "ddon't think my account is active", "don't think my account is active", "my account's not active", "need to activate", "not able to activate", "not activated", "not active", "says not active", "telus account is not activated", "telus account not activate" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Account not approved",
+    "synonyms": [ "access not approved", "Account not approved", "approval", "get approval", "need approval", "needs to approve", "owner approval", "still not approved" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Account cancelled",
+    "synonyms": [ "Account cancelled", "account is closed", "cancelled", "closed" ],
+    "languageCode": "en-ca"
+  } ]
+}

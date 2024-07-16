@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "find",
+    "synonyms": [ "gestionnaire", "localise ", "Localiser", "trouver" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "phone",
+    "synonyms": [ "telephone", "téléphone" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "online",
+    "synonyms": [ "en ligne", "online" ],
+    "languageCode": "fr-ca"
+  } ]
+}

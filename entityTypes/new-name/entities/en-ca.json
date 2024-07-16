@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "first name",
+    "synonyms": [ "first", "first name" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "last name",
+    "synonyms": [ "last", "last name " ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "middle name",
+    "synonyms": [ "middle", "middle name " ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Bob Walker",
+    "synonyms": [ "Bob", "bob walker" ],
+    "languageCode": "en-ca"
+  } ]
+}

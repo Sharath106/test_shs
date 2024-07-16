@@ -1,0 +1,39 @@
+{
+  "entities": [ {
+    "value": "parent",
+    "synonyms": [ "dad", "daddy", "father", "father-in-law", "mom", "mother", "mother-in-law", "mum", "pops", "step dad", "step father", "step mother", "step-mom" ],
+    "languageCode": "en"
+  }, {
+    "value": "sibling",
+    "synonyms": [ "bro", "brother", "brother-in-law ", "brothers", "sis", "sister", "sister-in-law", "sisters", "step brother", "step sister", "step-brother", "step-sister" ],
+    "languageCode": "en"
+  }, {
+    "value": "child",
+    "synonyms": [ "child", "children", "daughter", "daughters", "god daughter", "god son", "god-daughter", "god-son", "little one", "son", "sons" ],
+    "languageCode": "en"
+  }, {
+    "value": "uncle",
+    "synonyms": [ "nephew", "uncle" ],
+    "languageCode": "en"
+  }, {
+    "value": "aunt",
+    "synonyms": [ "aunt", "auntie", "niece" ],
+    "languageCode": "en"
+  }, {
+    "value": "significant other",
+    "synonyms": [ "boy friend", "boyfriend", "fiance", "girl friend", "girlfriend", "husband", "partner", "significant other", "spouse", "wife" ],
+    "languageCode": "en"
+  }, {
+    "value": "grandparent",
+    "synonyms": [ "grandfather", "grandma", "grandmother", "grandpa", "grandparent", "grandparents", "nana" ],
+    "languageCode": "en"
+  }, {
+    "value": "friend",
+    "synonyms": [ "family friend", "friend", "friends" ],
+    "languageCode": "en"
+  }, {
+    "value": "grand children",
+    "synonyms": [ "grand child", "grand children", "grand daughter", "grandson " ],
+    "languageCode": "en"
+  } ]
+}

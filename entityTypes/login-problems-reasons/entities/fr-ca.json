@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "Account cancelled",
+    "synonyms": [ "Account cancelled", "annule", "annulé", "annuler", "compte annule", "compte annulé", "Compte annulé", "ferme", "fermé", "le compte est ferme", "le compte est fermé", "suspendu" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Account locked",
+    "synonyms": [ " dépassé le nombre de tentatives", "acces a ete bloque", "accès a été bloqué", "acces a ete verrouille", "accès a été verrouillé", "acces bloque", "accès bloqué", "acces est bloque", "accès est bloqué", "acces verrouille", "accès verrouillé", "Account locked", "bloque", "bloqué", "compte bloque", "Compte bloqué", "compte est verrouille", "compte est verrouillé", "compte verrouille", "compte verrouillé", "connecte trop de fois", "connecté trop de fois", "connexion bloquee", "connexion bloquée", "debloque", "débloqué", "debloque compte", "débloqué compte", "debloque mon compte", "débloqué mon compte", "debloquer", "débloquer", "debloquer mon compte", "débloquer mon compte", "debloquer mon compte en ligne", "débloquer mon compte en ligne", "debloquer mon compte TELUS", "débloquer mon compte telus", "depasse le nombre de tentatives", "dépassé le nombre de tentatives", "depasse le nombre de tentatives de connexion", "dépassé le nombre de tentatives de connexion", "deverrouiller", "déverrouiller", "deverrouiller mon compte", "déverrouiller mon compte", "l'acces a mon compte est verrouille", "l'accès à mon compte est verrouillé", "le compte est bloque", "le compte est bloqué", "le compte m'a bloque", "le compte m'a bloqué", "mon acces a ete verrouille", "mon accès a été verrouillé", "mon acces est verrouille", "mon accès est verrouillé", "mon application est verrouillee", "mon application est verrouillée", "mon compte a ete bloque", "mon compte a été bloqué", "mon compte a ete verrouille", "mon compte a été verrouillé", "mon compte est verrouille", "mon compte est verrouillé", "mon compte TELUS est verrouille", "mon compte TELUS est verrouillé", "se connecter trop de fois", "trop d'essais", "trop nombreuses tentatives de connexion", "vérouille", "verouiller", "vérouiller ", "verrouille", "verrouillé", "verrouiller" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Account not activated",
+    "synonyms": [ "Account not activated", "activer", "besoin d'activer", "compte est inactif", "compte n'existe pas", "compte non actif", "compte non active", "Compte non active", "Compte non activé", "dit pas actif", "enregistré", "enregistrement", "enregistrer", "impossible d'activer", "impossible d'activer", "je n'ai pas de compte", "je ne pense pas que mon compte soit actif", "le compte telus n'est pas active", "le compte telus n'est pas activé", "mon compte n'est pas actif", "n'arrive pas à s'activer", "ne pense pas que mon compte est actif", "non active", "non activé", "pas actif", "pas activé", "pas activer", "pas capable d'activer", "pas de compte", "pas enregistré" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Account not approved",
+    "synonyms": [ "approbation", "approuve", "approuvé", "approuver", "verifier mon activation", "vérifier mon activation" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Forgot username",
+    "synonyms": [ "adresse courriel a change", "adresse courriel a changé", "courriel de connexion", "courriel pour se connecter", "courriel que j'ai utilise", "courriel que j'ai utilisé", "Forgot username", "identifiant oublie", "Identifiant oublié", "je ne connais pas mon nom d'utilisateur", "je ne sais pas quel nom d'utilisateur j'ai", "je ne sais pas si j'ai un compte", "ne me souviens pas de l'email", "ne me souviens pas du courriel", "ne trouve pas mon adresse courriel", "ne trouve pas mon adresse e-mail", "ne trouve pas mon adresse email", "Nom d'utilisateur", "nom d'utilisateur ", "nom d'utilisateur que j'ai utilise", "nom d'utilisateur que j'ai utilisé", "oublie ce que mon nom d'utilisateur", "oublié ce que mon nom d'utilisateur", "oublié mon courriel", "oublie mon nom d'utilisateur TELUS", "oublié mon nom d'utilisateur telus", "pas sur quel nom d'utilisateur que j'ai", "pas sûr quel nom d'utilisateur que j'ai", "pas sur si j'ai un compte", "pas sûr si j'ai un compte", "quel courriel", "quel nom d'utilisateur", "recuperer le nom d'utilisateur", "récupérer le nom d'utilisateur", "reinitialiser le nom d'utilisateur", "réinitialiser le nom d'utilisateur", "verifier si j'ai un compte", "vérifier si j'ai un compte" ],
+    "languageCode": "fr-ca"
+  } ]
+}

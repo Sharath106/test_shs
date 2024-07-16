@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "find",
+    "synonyms": [ "find", "locate", "manager" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "phone",
+    "synonyms": [ "phone" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "online",
+    "synonyms": [ "online" ],
+    "languageCode": "en-ca"
+  } ]
+}
