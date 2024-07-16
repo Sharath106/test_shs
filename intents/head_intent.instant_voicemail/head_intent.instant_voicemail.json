@@ -1,0 +1,24 @@
+{
+  "name": "7fc42a7f-722f-4340-b7d5-6a98460d1943",
+  "displayName": "head_intent.instant_voicemail",
+  "parameters": [ {
+    "id": "not_working",
+    "entityType": "@not-working"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about TELUS Instant voicemail.",
+  "numTrainingPhrases": 181
+}

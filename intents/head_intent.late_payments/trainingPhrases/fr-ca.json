@@ -1,0 +1,853 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "s'il te plait de "
+    }, {
+      "text": "supprimer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais de paiement tardif de mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment "
+    }, {
+      "text": "renoncer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais pour le paiement tardif de la facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "est-ce possible de "
+    }, {
+      "text": "reconsidérer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais de paiement tardif ? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "le frais de retard sur ma facture je le "
+    }, {
+      "text": "refuse",
+      "parameterId": "lpc-forgiveness"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-vous "
+    }, {
+      "text": "pardonner",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " une charge de paiement en retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "me "
+    }, {
+      "text": "débarasser",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " d'un frais de paiement en retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "retirer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " une charge de retard de la facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pour faire "
+    }, {
+      "text": "enlever",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " les frais de ma facture le frais de retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pour "
+    }, {
+      "text": "pardonner",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " une charge. un paiement en retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pardonner",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " un frais "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "se "
+    }, {
+      "text": "débarrasser",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " d'une charge à cause d'un paiement en retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'aimerais me "
+    }, {
+      "text": "débarrasser",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " du frais de retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "le frais de retard je veux le faire "
+    }, {
+      "text": "effacer",
+      "parameterId": "lpc-forgiveness"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "disputer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " une facture, un paiement en retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "on m'a chargé un frais pour un paiement en retard, je voudrais l'"
+    }, {
+      "text": "effacer",
+      "parameterId": "lpc-forgiveness"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "les frais de retards je veux qu'ils soient "
+    }, {
+      "text": "annulés",
+      "parameterId": "lpc-forgiveness"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " les frais de retard "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'apprécierais si vous pouviez "
+    }, {
+      "text": "enlever",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " ce frais de retard exceptionnellement. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous s'il vous plaît "
+    }, {
+      "text": "retirer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " ce frais de retard ? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'apprécierais si vous pouviez "
+    }, {
+      "text": "enlever",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais de retard. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Merci de "
+    }, {
+      "text": "retirer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais de paiement tardif de mon compte. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Veuillez "
+    }, {
+      "text": "enlever",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais de retard de ma facture. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Serait-il possible de "
+    }, {
+      "text": "retirer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais de paiement tardif ? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourriez-vous "
+    }, {
+      "text": "reconsidérer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais de retard de ma facture, s'il vous plaît ? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais que vous "
+    }, {
+      "text": "retiriez",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais de retard de ma facture. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Merci de bien vouloir "
+    }, {
+      "text": "enlever",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais de paiement en retard. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je vous serais reconnaissant si vous "
+    }, {
+      "text": "retiriez",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " ce frais de retard de ma facture. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce possible de "
+    }, {
+      "text": "pardonner",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais de paiement tardif de ma facture ? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous "
+    }, {
+      "text": "retirer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais de retard de ma facture, s'il vous plaît ? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "veuillez "
+    }, {
+      "text": "supprimer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " mes derniers frais de retard "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-vous s'il vous plaît "
+    }, {
+      "text": "renoncer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " aux frais de retard ? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "L'agent a dit qu'il pouvait "
+    }, {
+      "text": "renoncer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " aux frais de retard pour moi."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je vous ai payé aujourd'hui et je veux que mes frais de retard soient "
+    }, {
+      "text": "annulés",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": ", c'est un jour de retard, il ne devrait pas y avoir de pénalité pour cela"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourriez-vous s'il vous plaît "
+    }, {
+      "text": "supprimer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " les frais de retard ? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "supprimer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " les frais de retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "veuillez "
+    }, {
+      "text": "supprimer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " mes derniers frais de retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai combien de temps pour effectuer mon paiement avant que celui-ci ne soit en retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien de jours a-t-on avant qu'un paiement soit considéré comme étant en retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "frais pour paiement de facture en retard dont je veux me "
+    }, {
+      "text": "débarasser",
+      "parameterId": "lpc-forgiveness"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je pense que j'ai payé en retard, est-ce que je vais avoir un frais?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "si j'envoie mon paiement la même journée que la date d'échéance, est-ce que vous allez charger un frais de retard si vous recevez le paiement après la date d'échéance? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "concernant mes frais de retard sur la facture, je veux m'en "
+    }, {
+      "text": "débarasser",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Si ma facture a été payée en retard, allez-vous me charger un frais? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Facture payée en retard, qu'est-ce qui va se passer?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai des questions concernant les frais pour avoir payer en retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Y a-t-il une période de grâce si j'envoie mon paiement en retard? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous "
+    }, {
+      "text": "reconsidérer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " les frais de retard? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "La date limite pour payer ma facture a été dépassée de quelques jours, vais-je devoir payer un frais? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Besoin d'infos sur les frais par rapport au retard de paiement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que les frais de retard sont les mêmes pour une journée en retard ou, par exemple, une semaine en retard? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Chargez-vous un frais pour les personnes qui paient en retard? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est combien ça coûte si je paie en retard? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne pense pas pouvoir payer à temps ce mois-ci, est-ce que vous allez me faire payer un frais de retard? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que vous savez le montant que je devrai payer si j'ai payé une journée en retard? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai envoyé mon paiement après la date d'échéance, est-ce que je vais devoir payer un frais? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai payé après la date d'échéance de ma facture et je veux faire "
+    }, {
+      "text": "rembourser",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " le frais"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quels sont les frais pour un retard de paiement? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Qu'arrivera-t-il si je paie ma facture en retard? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai payé ma facture en retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "refuser",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " les frais pour retard de paiement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de comprendre pourquoi j'ai eu un retard de paiement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous me dire la raison pour laquelle j'ai eu un retard de paiement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire pour éviter les retards de paiement? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourquoi est-ce que j'ai eu un retard de paiement sur ma facture? Pouvez-vous me "
+    }, {
+      "text": "rembourser",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Avons-nous un retard de paiement si on paie en retard seulement d'une journée? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que je vais pouvoir éviter des frais de retard de paiement?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que je vais avoir un frais de retard si j'ai payé 2 jours plus tard que la date prévue? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me questionne par rapport aux frais de retard. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous regarder si je vais être chargée pour un frais de retard? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "disputer",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " un frais de retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Si je paye une journée en retard, est-ce que je vais avoir un frais?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai payé ma facture "
+    }, {
+      "text": "une journée"
+    }, {
+      "text": " en retard, est-ce que je vais avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " frais de retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que les retards de paiement génèrent des frais supplémentaires?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais savoir le processus pour "
+    }, {
+      "text": "contester",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " un frais que j'ai eu pour avoir payé ma facture en retard."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Vous gérez les frais de retard de quelle manière?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien sont vos frais de retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Les frais de retard sont appliqués quand?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "À quel moment suis-je à risque d'avoir des frais de retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire pour "
+    }, {
+      "text": "contester",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " un frais pour retard de paiement?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Peux-tu me donner de l'information sur les frais de retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où puis-je trouver de l'info sur les frais de retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai des questions sur vos frais retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "À partir de quel moment chargez-vous des frais de retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me questionne sur vos frais retard. je voudrais les "
+    }, {
+      "text": "renoncer",
+      "parameterId": "lpc-forgiveness"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment fonctionne les frais de retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je "
+    }, {
+      "text": "refuse",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " les paiements en retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai été facturé pour avoir payé en retard et je veux "
+    }, {
+      "text": "contester",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " ça."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai des frais pour avoir payé en retard que je veux faire "
+    }, {
+      "text": "annuler",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourquoi j'ai des frais de retard? Je veux les faire "
+    }, {
+      "text": "annuler",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Si je ne paie pas à temps, je me demande si j'aurai des frais?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est combien les frais de retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je vais devoir payer "
+    }, {
+      "text": "un"
+    }, {
+      "text": " frais si je paie en retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où je peux voir les frais de retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quand est-ce que je vais voir mes frais de retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est quoi qui arrive si je paie ma facture en retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux des informations sur les frais de retard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Aurai-je "
+    }, {
+      "text": "un"
+    }, {
+      "text": " frais de retard si je suis "
+    }, {
+      "text": "un jour"
+    }, {
+      "text": " de retard?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai été facturé pour des frais de retard et je voudrais me faire "
+    }, {
+      "text": "rembourser",
+      "parameterId": "lpc-forgiveness"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "refuser",
+      "parameterId": "lpc-forgiveness"
+    }, {
+      "text": " un frais de retard "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "combien de frais pour le paiement tardif de la facture?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

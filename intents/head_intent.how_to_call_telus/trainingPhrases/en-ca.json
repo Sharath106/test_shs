@@ -1,0 +1,374 @@
+{
+  "trainingPhrases": [ {
+    "id": "df9fa9a7-0cca-4bfa-be95-235e9dd90c2c",
+    "parts": [ {
+      "text": "What is the contact number for changing plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e2203b43-462c-40c6-a70b-ffdf607a9166",
+    "parts": [ {
+      "text": "Could you please tell me how to call telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f2ceb7a6-002c-4b0d-967d-266376a301d1",
+    "parts": [ {
+      "text": "What is the phone number to call Telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "42385744-5943-4912-991f-c4e7b2056b13",
+    "parts": [ {
+      "text": "Can I call you guys instead?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6a5ca05c-c5cb-4e19-bfc0-d677c85949d1",
+    "parts": [ {
+      "text": "What is the number to call you?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6d0899dd-0a3b-48e4-b192-57b028e43b2e",
+    "parts": [ {
+      "text": "I want to call you but I don't have your number."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "499682ac-6bc1-4dcc-97af-529c9cff3149",
+    "parts": [ {
+      "text": "How can I contact Telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e18b914a-492c-47ea-9042-3cb0cb635e23",
+    "parts": [ {
+      "text": "Trying to find your phone number on your website but I see nothing. Could you please give it to me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d32d89a2-dea1-45ad-a790-81d868c4884c",
+    "parts": [ {
+      "text": "Hey! Can you give me your phone number?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0fde036a-cb60-4514-8b19-b56a1d2e9dcb",
+    "parts": [ {
+      "text": "Hi! I need to call you but I don't see your phone number. Please give it to me!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cfad67fc-5ea1-4571-93e8-66b9aed62393",
+    "parts": [ {
+      "text": "I need your phone number."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "43f72099-6c6e-4613-9657-47de3d53cd7b",
+    "parts": [ {
+      "text": "I need the phone number for support."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "952928d0-54c4-43a5-9e18-927c248b312a",
+    "parts": [ {
+      "text": "I need to contact your Customer Care department. What's the phone number?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d01197d1-0c9b-4abd-bbf6-4bc7b34e7968",
+    "parts": [ {
+      "text": "Just asking for the Customer Care phone number."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d72ba5b9-f6a9-4f05-9fea-c82141d75693",
+    "parts": [ {
+      "text": "Can you give me the customer Care phone number?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "53516514-4063-48d8-a34b-e9cc73bb77c2",
+    "parts": [ {
+      "text": "I need to contact Telus support."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1050b21d-5513-4138-a014-1f5d17b1297f",
+    "parts": [ {
+      "text": "I need Telus Mobility's phone number."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f300e885-3e29-4351-9f31-1cd650c11d7d",
+    "parts": [ {
+      "text": "I need to call Telus Mobility."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1e0e29ec-939d-4562-b7fa-19b752b7c2cf",
+    "parts": [ {
+      "text": "I need Telus SmartHome Security phone number please."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2c5467aa-8220-4598-a1c3-a7ebff8542e0",
+    "parts": [ {
+      "text": "I need to reach out to Telus technical support. Please give me their phone number!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ae61ce6f-38f0-49d0-adef-b280db7ae4b5",
+    "parts": [ {
+      "text": "I'm unable to contact your technical support online. Could you please give me their phone number?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "802bc51a-8c06-47ba-a79c-45113bd37e19",
+    "parts": [ {
+      "text": "I'm trying to find the Telus Mobility phone number."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e740db4-0235-4ae1-bb52-8f35a492ce6f",
+    "parts": [ {
+      "text": "What's the phone number for billing services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "091ab6ac-8b5c-426c-a243-2de5cdafd690",
+    "parts": [ {
+      "text": "What is the number to call telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "27fa99f0-8f93-4293-8cf9-2be5571eb976",
+    "parts": [ {
+      "text": "I want to call telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "283603ea-766c-48db-b407-db20dfe9a8a9",
+    "parts": [ {
+      "text": "I want to call you guys, how do I do that"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6523ab0d-9798-4783-b799-3e1c4c5d311a",
+    "parts": [ {
+      "text": "I prefer a live conversation. How can I call?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ce4ab394-cf8c-4545-b705-05883c61f5a8",
+    "parts": [ {
+      "text": "Please give me the phone number to contact your online store"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e2677c0a-8b5b-4b17-bc9a-52945ef8376e",
+    "parts": [ {
+      "text": "How to contact Telus from outside of Canada?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "343f9964-81a3-44fd-ae52-9a1d6efd7b91",
+    "parts": [ {
+      "text": "Can you provide me with Telus's number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d25ff00e-b378-456b-8456-daf5327b1a1c",
+    "parts": [ {
+      "text": "Your phone number is nowhere to be found"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bd74acd2-e036-40c5-9fb4-a00d8f6bf01f",
+    "parts": [ {
+      "text": "I need an assistance from Telus how do I get in contact with your agents?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5bbb884f-22a8-499f-8c85-34d7c6e98cd8",
+    "parts": [ {
+      "text": "I'd like to reach out to Telus on the phone, how can I do that?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a95376c4-f7e5-409b-bc07-79f8d695eb64",
+    "parts": [ {
+      "text": "Where can I find Telus's contact details?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c0b686ef-a1e0-4be6-a19e-350023e6053f",
+    "parts": [ {
+      "text": "I can't find the Telus contact number on your site"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "15e8afd9-f435-4c01-bff1-0783b0ee5f0f",
+    "parts": [ {
+      "text": "How can I call Telus from outside of Canada"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eabafb13-3fd9-49b0-bf68-53435fc0b894",
+    "parts": [ {
+      "text": "How can I call Telus, if I need to talk to someone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8aff90d3-01d1-48cf-bea8-5036d521b94a",
+    "parts": [ {
+      "text": "How can I get in touch with a Telus agent, is there a number to call?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fa6b8604-bac0-4fea-8308-ae0eb9c838fe",
+    "parts": [ {
+      "text": "Need assistance from Telus, how do I call them?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9a0cbb81-02fb-4648-8858-44fea477e1eb",
+    "parts": [ {
+      "text": "I want to call Telus now, prefer to talk on the phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9665d395-85a2-4a34-abbe-e72875b4515a",
+    "parts": [ {
+      "text": "I'd like to have a live conversation, can I call you now?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3286b25a-9154-4886-888f-c56fe7877e6e",
+    "parts": [ {
+      "text": "If I need help later, how can I call you?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ae969d53-4dca-4b1e-bcd6-a0f0815ba17f",
+    "parts": [ {
+      "text": "If I need some more help, how can I call, is there a phone number?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fb46b0c6-76f8-493a-8ded-5b133baac455",
+    "parts": [ {
+      "text": "I'm trying to call you, can you tell me how I can reach you?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b1b27173-a05d-4b69-b9f8-e8a55601a48e",
+    "parts": [ {
+      "text": "Can I call you sir?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6640f2a8-b6fe-4575-8805-c83aaee3f23c",
+    "parts": [ {
+      "text": "can I call please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c68a627f-d040-4939-b6dc-4826c318efe9",
+    "parts": [ {
+      "text": "what is the e-mail address for client support"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d8655f85-e44d-4fad-9f4a-bab09c3ba7f0",
+    "parts": [ {
+      "text": "What's Telus' email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "58e6f443-3848-4eed-9392-1fe2f9ffc180",
+    "parts": [ {
+      "text": "i'd like the phone number for telus communications"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "798cbbb4-995b-4893-9f82-bd23f398e090",
+    "parts": [ {
+      "text": "address for telus"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "84cd7c30-266f-426e-8bec-9279523ea45d",
+    "parts": [ {
+      "text": "office of telus"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cbee600a-d97a-4a3d-b9ac-65eaae3d2736",
+    "parts": [ {
+      "text": "contact number"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3e4dccd3-8b4e-46c5-8262-6d1689e8920f",
+    "parts": [ {
+      "text": "need the address to a phone number"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  } ]
+}

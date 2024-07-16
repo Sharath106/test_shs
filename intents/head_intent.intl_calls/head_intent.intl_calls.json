@@ -1,0 +1,24 @@
+{
+  "name": "8e426b12-cdc6-4bcb-9f66-eba59cc352e3",
+  "displayName": "head_intent.intl_calls",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about how to make a call internationally.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 211
+}

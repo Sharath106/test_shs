@@ -1,0 +1,23 @@
+{
+  "name": "13a97eb4-a7b5-4f8e-8dd1-2b60568e0cc3",
+  "displayName": "head_intent.lost_stolen_phone",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about lost or stolen phone.",
+  "numTrainingPhrases": 141
+}

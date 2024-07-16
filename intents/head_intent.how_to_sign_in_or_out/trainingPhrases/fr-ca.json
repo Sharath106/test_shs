@@ -1,0 +1,554 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "je veux juste login"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème à me "
+    }, {
+      "text": "déconnecter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne suis pas capable de me "
+    }, {
+      "text": "déconnecter"
+    }, {
+      "text": " de "
+    }, {
+      "text": "Mon TELUS",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je trouve pas où me "
+    }, {
+      "text": "déconnecter"
+    }, {
+      "text": " de mon compte "
+    }, {
+      "text": "en ligne",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous m'aider à trouver le bouton de "
+    }, {
+      "text": "déconnexion"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche le bouton de "
+    }, {
+      "text": "déconnexion"
+    }, {
+      "text": " sur l'"
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Besoin d'aide pour trouver le bouton de "
+    }, {
+      "text": "déconnexion"
+    }, {
+      "text": " sur le "
+    }, {
+      "text": "site",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment j'ouvre une session à partir de "
+    }, {
+      "text": "telus.com",
+      "parameterId": "online_vs_app"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais savoir comment "
+    }, {
+      "text": "ouvrir"
+    }, {
+      "text": " une session"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment "
+    }, {
+      "text": "ouvrir"
+    }, {
+      "text": " une session sur "
+    }, {
+      "text": "mon telus",
+      "parameterId": "online_vs_app"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment "
+    }, {
+      "text": "accéder"
+    }, {
+      "text": " à mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Besoin d'aide pour "
+    }, {
+      "text": "accéder"
+    }, {
+      "text": " à mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Peux-tu me montrer où cliquer pour "
+    }, {
+      "text": "fermer"
+    }, {
+      "text": " la session?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où c'est que je clique pour me "
+    }, {
+      "text": "déconnecter"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je clique où pour "
+    }, {
+      "text": "fermer"
+    }, {
+      "text": " ma session?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux me "
+    }, {
+      "text": "déconnecter"
+    }, {
+      "text": " de l'"
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "aide pour me "
+    }, {
+      "text": "déconnecter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "déconnexion"
+    }, {
+      "text": " de mon compte s'il vous plaît."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "déconnexion"
+    }, {
+      "text": " du "
+    }, {
+      "text": "site",
+      "parameterId": "online_vs_app"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je pèse où pour la "
+    }, {
+      "text": "déconnexion"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous m'aider à me "
+    }, {
+      "text": "déconnecter"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'arrive pas à trouver le bouton de "
+    }, {
+      "text": "déconnexion"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux être certaine que je suis "
+    }, {
+      "text": "désauthentifié"
+    }, {
+      "text": " de mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire pour me "
+    }, {
+      "text": "désinscrire"
+    }, {
+      "text": " de mon compte? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment faire pour m'"
+    }, {
+      "text": "inscrire"
+    }, {
+      "text": " à mon compte "
+    }, {
+      "text": "Mon TELUS",
+      "parameterId": "online_vs_app"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais savoir comment m'"
+    }, {
+      "text": "authentifier"
+    }, {
+      "text": " à mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment m'"
+    }, {
+      "text": "authentifier"
+    }, {
+      "text": " au compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je m'"
+    }, {
+      "text": "enregistre"
+    }, {
+      "text": " comment dans mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je dois faire quoi pour m'"
+    }, {
+      "text": "enregistrer"
+    }, {
+      "text": " à mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment puis-je m'"
+    }, {
+      "text": "enregistrer"
+    }, {
+      "text": " au compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment m'"
+    }, {
+      "text": "enregistrer"
+    }, {
+      "text": " à mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "accès"
+    }, {
+      "text": " "
+    }, {
+      "text": "en ligne",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment "
+    }, {
+      "text": "accéder"
+    }, {
+      "text": " à mon compte "
+    }, {
+      "text": "en ligne",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "me "
+    }, {
+      "text": "connecter"
+    }, {
+      "text": " à mon "
+    }, {
+      "text": "application",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connexion"
+    }, {
+      "text": " au compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "me "
+    }, {
+      "text": "connecter"
+    }, {
+      "text": " à mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connexion"
+    }, {
+      "text": " "
+    }, {
+      "text": "en ligne",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "déconnecté"
+    }, {
+      "text": " de mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "configuration de la "
+    }, {
+      "text": "connexion"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "se connecter"
+    }, {
+      "text": " "
+    }, {
+      "text": "en ligne",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "se connecter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais me "
+    }, {
+      "text": "connecter"
+    }, {
+      "text": " à mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux me "
+    }, {
+      "text": "connecter"
+    }, {
+      "text": " à mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais parler à quelqu'un pour savoir comment "
+    }, {
+      "text": "accéder"
+    }, {
+      "text": " à mon compte sur l'ordinateur"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'aimerais savoir comment me "
+    }, {
+      "text": "connecter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "en ligne",
+      "parameterId": "online_vs_app"
+    }, {
+      "text": " se "
+    }, {
+      "text": "connecter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment "
+    }, {
+      "text": "accéder"
+    }, {
+      "text": " "
+    }, {
+      "text": "en ligne",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connecter"
+    }, {
+      "text": " au compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment "
+    }, {
+      "text": "accéder"
+    }, {
+      "text": " au "
+    }, {
+      "text": "site",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "se connecter"
+    }, {
+      "text": " au compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin d'aide pour me "
+    }, {
+      "text": "connecter"
+    }, {
+      "text": " à mon compte "
+    }, {
+      "text": "telus",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "l'"
+    }, {
+      "text": "ouverture de session"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'essaie de me "
+    }, {
+      "text": "connecter"
+    }, {
+      "text": " à mon compte "
+    }, {
+      "text": "telus",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

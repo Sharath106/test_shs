@@ -1,0 +1,24 @@
+{
+  "name": "9187eb5f-fe99-410a-b65e-522e8a7c222e",
+  "displayName": "head_intent.legal_age",
+  "parameters": [ {
+    "id": "geo-city",
+    "entityType": "@sys.geo-city"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about legal age to activate a line.",
+  "numTrainingPhrases": 129
+}

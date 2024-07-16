@@ -1,0 +1,23 @@
+{
+  "name": "4d1175fc-0ec5-45ea-8091-27b2479f9b21",
+  "displayName": "head_intent.intl_sms",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about how to send international text messages and international SMS plan options (aka add-ons)",
+  "numTrainingPhrases": 200
+}

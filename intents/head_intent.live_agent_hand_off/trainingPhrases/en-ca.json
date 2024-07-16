@@ -1,0 +1,318 @@
+{
+  "trainingPhrases": [ {
+    "id": "33e05261-1f35-40b2-a4f2-62964deb4073",
+    "parts": [ {
+      "text": "team member"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "279931d8-1c1f-4e15-84dc-c576d48a7385",
+    "parts": [ {
+      "text": "need assistance from a technician"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0a60ec46-c5b5-4f7a-9f69-9cb1883aaafc",
+    "parts": [ {
+      "text": "customer service tech support"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3e5be9e8-6e57-419e-b5d0-a7e17c9d5b4c",
+    "parts": [ {
+      "text": "would like a call back to talk to technician"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bd056a24-936c-4ff7-9b29-91239a569b9f",
+    "parts": [ {
+      "text": "wanna  speak to tech representative"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "55e4b80a-082b-4879-a679-539c8c12c63d",
+    "parts": [ {
+      "text": "put me through to somebody right now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "95ae3421-96da-4797-9c8a-3bfa12290bd0",
+    "parts": [ {
+      "text": "speak to supervisor"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "638ccbf0-65b1-400c-84fd-7419437ca2ed",
+    "parts": [ {
+      "text": "do you have twenty four hour service i would like to speak to somebody"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "53e0b466-5d0f-4754-8148-8d9fef2fbc61",
+    "parts": [ {
+      "text": "can i speak to an agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c96b01e0-b713-4c0a-aa0e-dd8587d5108d",
+    "parts": [ {
+      "text": "account log in human"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e625c2a1-deca-4422-b2d6-71531cf73b3a",
+    "parts": [ {
+      "text": "support help call me"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cce94cfb-8ef9-474f-963e-cfa3d4e96766",
+    "parts": [ {
+      "text": "call back"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8041e4cc-01b8-4f9a-8e21-f0ae64aafd57",
+    "parts": [ {
+      "text": "agent tech support"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "97b2af19-b7e5-472a-8bc9-dacebb2962ed",
+    "parts": [ {
+      "text": "looking for support"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c8f76f7f-aabe-46e1-90f9-0c432ddfffd7",
+    "parts": [ {
+      "text": "support support"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2cb70eed-2577-4a1f-b4e0-77458a66fb5d",
+    "parts": [ {
+      "text": "service support"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0296c3cb-caef-4fbb-b107-9d2c8c76abaa",
+    "parts": [ {
+      "text": "i would like a call back on to talk to a rep"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db19d2f6-6e22-486e-ac4d-e56ad44027f8",
+    "parts": [ {
+      "text": "set up a call back for customer support"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b371887-1db6-4963-8e11-7f73a52c3c77",
+    "parts": [ {
+      "text": "can i talk to somebody regarding telus support"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f5b58e25-3ba0-41ba-98d9-f2bcca55b740",
+    "parts": [ {
+      "text": "i need somebody's help need somebody to talk to"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "094c32c3-b73a-4064-a35f-62806cc4146d",
+    "parts": [ {
+      "text": "more support"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0e83c137-dde3-4a3d-8628-e877ae1f6ed2",
+    "parts": [ {
+      "text": "support person please"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1ee9a381-dd61-4bcc-81e4-8134d5a62d5b",
+    "parts": [ {
+      "text": "i need a telus support please thank you"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5b738f2e-1428-4d11-9c16-2bfc3d7fe774",
+    "parts": [ {
+      "text": "i need to talk to somebody in support"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "98c71167-e14f-44d8-811c-64a7cb5eef11",
+    "parts": [ {
+      "text": "telus support"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3f49b64f-4f4d-4155-bdf4-c3dbd8326a3c",
+    "parts": [ {
+      "text": "i need support"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "428c4651-d4a3-45c6-b03b-9762ae78b725",
+    "parts": [ {
+      "text": "support"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a93f84bd-a56a-49dc-9d62-48615d6ca08f",
+    "parts": [ {
+      "text": "so if you could please give me a return call a person please"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9120c960-8d3b-46d7-9749-afe53094ed65",
+    "parts": [ {
+      "text": "someone was supposed to call me back they never did"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7b64a01f-f952-4d41-b59c-a191736499d1",
+    "parts": [ {
+      "text": "returning a call speak to agent"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "45919f28-4ca5-4796-a2cf-443ed22109d4",
+    "parts": [ {
+      "text": "can you can you call back for me"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e302275c-950a-4b47-80ea-ed5a2c6fd37f",
+    "parts": [ {
+      "text": "my voicemail my call display doesn't work i can't get in to retrieve my messages so i need to talk to an operator"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0568633f-2d2a-44ca-aff0-61017415b347",
+    "parts": [ {
+      "text": "yes we are having problem with our telephone i'd like to speak to the lady"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a463f325-a45c-4f13-bb3f-c2893749886a",
+    "parts": [ {
+      "text": "i'm i got phone issues i'd like to talk to somebody"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "95a387f8-5028-41bf-87e7-21e6f835a989",
+    "parts": [ {
+      "text": "technical person human"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e1272353-66a9-4fed-895e-54b4c759334c",
+    "parts": [ {
+      "text": "call back support"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c03b975-e4b9-465a-b854-3eeeb1715270",
+    "parts": [ {
+      "text": "technical support call back please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a5eca829-3326-4484-867b-7d69d1b6f6df",
+    "parts": [ {
+      "text": "live tech"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "deff98b0-1659-450e-96a2-93029ca56f54",
+    "parts": [ {
+      "text": "need support"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "32d89cda-e672-49c6-9bb7-9dcad02511f4",
+    "parts": [ {
+      "text": "support please"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en-ca"
+  }, {
+    "id": "62df5473-4036-475d-a8f7-d9c976bcebc6",
+    "parts": [ {
+      "text": "on line support"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f74d1254-ae55-49a4-8d50-d31c86e7e0e4",
+    "parts": [ {
+      "text": "debits department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "75f3f70c-927b-485a-b523-6c1f1921cf9d",
+    "parts": [ {
+      "text": "I'd like to talk to an operator"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b722a1e9-973c-4cc3-973e-35e606e4799a",
+    "parts": [ {
+      "text": "speak to a support worker"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "28fbb9f7-7aa3-4c67-a076-6f25151962fe",
+    "parts": [ {
+      "text": "we're calling about our service and we have some issues so that's why i'm calling i wanna talk to someone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

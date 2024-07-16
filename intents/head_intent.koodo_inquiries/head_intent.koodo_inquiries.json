@@ -1,0 +1,33 @@
+{
+  "name": "6a8f0dc7-5720-42a3-a2af-965d6d9ab340",
+  "displayName": "head_intent.koodo_inquiries",
+  "parameters": [ {
+    "id": "currency-name",
+    "entityType": "@sys.currency-name"
+  }, {
+    "id": "percentage",
+    "entityType": "@sys.percentage"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customers asking about Koodo information",
+  "numTrainingPhrases": 144
+}

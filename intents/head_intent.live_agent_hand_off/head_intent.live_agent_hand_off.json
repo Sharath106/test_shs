@@ -1,0 +1,40 @@
+{
+  "name": "e6b29502-6ed3-408c-ac38-4461eed87f36",
+  "displayName": "head_intent.live_agent_hand_off",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "handoff"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Handoff intent - Customer wanting to speak to an agent over the chat or over the phone. Includes callback requests. For \"technical support\" inquiries, use head_intent.troubleshoot_vague.",
+  "asrCorrections": [ {
+    "errorPhrase": "gelé parler",
+    "correctionPhrase": "je voulais parler"
+  }, {
+    "errorPhrase": "proposer",
+    "correctionPhrase": "préposé"
+  }, {
+    "errorPhrase": "parler à proposer",
+    "correctionPhrase": "parler à préposé"
+  }, {
+    "errorPhrase": "tonnelle",
+    "correctionPhrase": "personnelle"
+  }, {
+    "errorPhrase": "mon agenda",
+    "correctionPhrase": "agent"
+  }, {
+    "errorPhrase": "un chien",
+    "correctionPhrase": "un agent"
+  }, {
+    "errorPhrase": "hajar",
+    "correctionPhrase": "agent"
+  } ],
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 469
+}

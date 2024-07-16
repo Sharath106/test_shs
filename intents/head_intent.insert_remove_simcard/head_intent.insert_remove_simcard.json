@@ -1,0 +1,28 @@
+{
+  "name": "4cce384f-e767-485e-b586-3d64ad979777",
+  "displayName": "head_intent.insert_remove_simcard",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about inserting/removing SIM card.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 162
+}

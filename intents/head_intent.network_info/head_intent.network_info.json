@@ -1,0 +1,21 @@
+{
+  "name": "1a6469f6-b4de-4655-a05d-1dbb8f2bed14",
+  "displayName": "head_intent.network_info",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Information about our different networks and speeds.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 140
+}

@@ -1,0 +1,346 @@
+{
+  "trainingPhrases": [ {
+    "id": "9ab1fbb3-3c46-47f4-8ee6-683941ff803d",
+    "parts": [ {
+      "text": "What does Telus offer in health care?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a5f55c37-b760-4e16-9459-c12999b2e588",
+    "parts": [ {
+      "text": "Can I register my company for your Corporate Care?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2416241b-93fd-42f2-aa36-79f0e5f452a4",
+    "parts": [ {
+      "text": "Who can benefit from Telus health for good?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5a3e3746-581c-4e79-93a4-1475d458df6f",
+    "parts": [ {
+      "text": "What does your LivingWell Companion do?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d45db3ec-9fa5-4753-bbe7-e6769e4f7565",
+    "parts": [ {
+      "text": "Where can I get a LivingWell Companion?"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a51f397f-bdb1-44b8-a2df-069ebeae6d15",
+    "parts": [ {
+      "text": "Is the TELUS Health MyCare app compatible with my device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ec830a18-6a9c-449e-8d0a-5185cf1848d6",
+    "parts": [ {
+      "text": "Where can I download the TELUS Health MyCare application?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "68bfa5ec-c4e1-4c6a-a356-d925803ecf4c",
+    "parts": [ {
+      "text": "How does TELUS Health MyCare works?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "be99a971-ac2c-4a3a-b1cc-d861cbb57c93",
+    "parts": [ {
+      "text": "What are your emergency response services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9595f961-85dd-488f-a633-8cae665f7065",
+    "parts": [ {
+      "text": "Do you offer an automatic fall detection service for seniors?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d61d91bb-7980-42b5-8a98-4eba82cfc731",
+    "parts": [ {
+      "text": "What is the LivingWell Companion?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "10db1546-dcda-40b9-9510-5d7db37b2e64",
+    "parts": [ {
+      "text": "What is the TELUS Healthy Living Network?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f9ca7c0c-f25c-4043-a0e7-728729a123af",
+    "parts": [ {
+      "text": "Where are you care center located?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d29ee5a0-21c3-4060-a0d0-89e0ca122e01",
+    "parts": [ {
+      "text": "I need info on your employee health services"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c0bb4ecb-7fa6-4008-9ac9-2ea3470e5e25",
+    "parts": [ {
+      "text": "How can I apply for your nationwide wellness programs and services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fb1894b9-bae4-4ade-92e4-b1c2c9b3a7d2",
+    "parts": [ {
+      "text": "Im inquiring about you health centers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7ab66227-493c-4985-8b46-730a625aad9c",
+    "parts": [ {
+      "text": "I heard about your virtual care, how can i get access?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "11aedb09-b45f-4a65-b1a0-f9db7f8a6577",
+    "parts": [ {
+      "text": "What is TELUS Health MyCareTM"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4a6afa89-7fd3-404c-a08f-de7a02181b08",
+    "parts": [ {
+      "text": "How much is Telus investing in health services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4d185018-7eec-4671-b603-1497f78f2d65",
+    "parts": [ {
+      "text": "Where does the Health for Good Mobile Clinics serve?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c0a72964-bd16-4d10-8a0d-aba21eb1bfa6",
+    "parts": [ {
+      "text": "Can you tell me more about the applications of the TELUS Health technology"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0db0f75e-f4d6-4a0f-9e50-65b111ccdeec",
+    "parts": [ {
+      "text": "What is the TELUS Health technology?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "678fb2a4-b794-44f7-804b-dfed084baf51",
+    "parts": [ {
+      "text": "Where are the TELUS Mobile Health Clinics situated?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3faee012-76f1-451f-916e-65b625b07d2d",
+    "parts": [ {
+      "text": "Where are the telus health for good trucks?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "38e90ebf-cd65-44da-ba19-1b54e083ea2f",
+    "parts": [ {
+      "text": "I heard about mobile health clinic from Telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "186d0a61-f6fe-4d98-8760-7672fbe8c715",
+    "parts": [ {
+      "text": "does telus offer mobile health"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2246d9f1-fbda-4a49-bf9d-e7c35b3649c6",
+    "parts": [ {
+      "text": "Who as access to the Telus mobile health services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c0503921-357b-4e0a-bede-012f57787b93",
+    "parts": [ {
+      "text": "what is telus mobile health services"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ce18c798-4122-485e-80c8-89fc8bc9a577",
+    "parts": [ {
+      "text": "do you have mobile health services"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8f2c0f8d-9f71-428a-b91a-423034cd7a3b",
+    "parts": [ {
+      "text": "What is health for good?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db1cdcd8-3284-4f7f-b2f9-e9bfd2b77222",
+    "parts": [ {
+      "text": "How do i find the TELUS Mobile Health Clinics?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "af3d2436-be96-4302-8b00-bad7a96c8699",
+    "parts": [ {
+      "text": "Does TELUS provide health services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "10ce0465-13c3-4083-88b9-07e8ee2f43a5",
+    "parts": [ {
+      "text": "Where does health for good operate?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ddc64e36-b5dd-4e12-b075-a8fa0d563b4c",
+    "parts": [ {
+      "text": "Is health for good services accessible across the country?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a59ca02e-d97b-4f4b-8178-493cfd9d60e6",
+    "parts": [ {
+      "text": "Where can i read more about health for good?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1a31f3b0-a5ac-4489-91d5-3a28262d7ac2",
+    "parts": [ {
+      "text": "Could you send me a link to the health for good webpage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7eb9fded-76c3-46c5-9f38-cc356d3691bd",
+    "parts": [ {
+      "text": "Explain how health for good works"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1001204f-34be-4bdf-b312-d8e639f14ba8",
+    "parts": [ {
+      "text": "Want to learn about health for good"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c3a0dd49-b5bf-4878-b2e0-8f5b6c64583c",
+    "parts": [ {
+      "text": "When did telus health for good start?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cfcf8550-fbe7-47ee-981b-59339d4e8efe",
+    "parts": [ {
+      "text": "How does health for good help people?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "566283e7-0073-43b1-b4aa-0ef685b2b033",
+    "parts": [ {
+      "text": "How much does TELUS invest in health for good?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3eda3ed3-acc3-437d-9eef-661d3f87b21f",
+    "parts": [ {
+      "text": "I would like Health for good information"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "777f6314-aecf-46fe-b175-402da0d032b4",
+    "parts": [ {
+      "text": "Who is eligible for health for good services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5db47cf2-45e5-4fdc-9256-50af3198a85d",
+    "parts": [ {
+      "text": "Is health for good services free?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "663bbc1c-b1a7-4b93-8557-d21e86bb89a2",
+    "parts": [ {
+      "text": "Is there a TELUS Mobile Health Clinics in my region?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1682aef9-6abf-4ac3-9a98-6ba3a400a9c9",
+    "parts": [ {
+      "text": "Which regions does health for good exist in?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e048c3eb-4bfc-4cf9-b7cf-78621a3a1aa6",
+    "parts": [ {
+      "text": "I was interested in knowing more information about TELUS's health for good"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "95ec66b2-077c-448a-9647-fcc03c48f264",
+    "parts": [ {
+      "text": "Does TELUS fund healthcare?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8f5c5b9a-cb46-410a-96e1-7986d59169e6",
+    "parts": [ {
+      "text": "What's the impact of the Telus health for good program?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

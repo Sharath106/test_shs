@@ -1,0 +1,24 @@
+{
+  "name": "e7aa563d-486a-4c4f-aa6e-b52d204b8a8c",
+  "displayName": "head_intent.mms_issues",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Troubleshooting MMS issues",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 175
+}

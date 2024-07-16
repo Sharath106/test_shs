@@ -1,0 +1,575 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "How do I "
+    }, {
+      "text": "sign in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't figure out how to "
+    }, {
+      "text": "log out",
+      "parameterId": "sign_in_or_out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't know how to "
+    }, {
+      "text": "log out",
+      "parameterId": "sign_in_or_out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't "
+    }, {
+      "text": "log out",
+      "parameterId": "sign_in_or_out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to get "
+    }, {
+      "text": "into",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm trying to "
+    }, {
+      "text": "log in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to my account through the "
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to "
+    }, {
+      "text": "log in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to my telus account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need help to "
+    }, {
+      "text": "log in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to my telus account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to sign on to telus dot com "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "log in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do i "
+    }, {
+      "text": "log off",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " from the telus "
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm not sure how to "
+    }, {
+      "text": "log out",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " of my telus account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "log off",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " the "
+    }, {
+      "text": "website",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where can I "
+    }, {
+      "text": "sign into",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " "
+    }, {
+      "text": "my telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to "
+    }, {
+      "text": "log out",
+      "parameterId": "sign_in_or_out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just downloaded Telus "
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    }, {
+      "text": ", how do I "
+    }, {
+      "text": "sign in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to "
+    }, {
+      "text": "sign out",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " of an account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help me "
+    }, {
+      "text": "log into",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i "
+    }, {
+      "text": "sign into",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " the "
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i "
+    }, {
+      "text": "sign out",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " of the "
+    }, {
+      "text": "app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i "
+    }, {
+      "text": "sign out",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " of the "
+    }, {
+      "text": "my telus app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to be able to "
+    }, {
+      "text": "log out",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " of the "
+    }, {
+      "text": "online",
+      "parameterId": "online_vs_app"
+    }, {
+      "text": " account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i "
+    }, {
+      "text": "log out",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " "
+    }, {
+      "text": "online",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how can i "
+    }, {
+      "text": "log out",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " on the "
+    }, {
+      "text": "web"
+    }, {
+      "text": " for my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i "
+    }, {
+      "text": "sign in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " on the "
+    }, {
+      "text": "website",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to exit from my account "
+    }, {
+      "text": "online",
+      "parameterId": "online_vs_app"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "exit from account in the "
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you tell me how to "
+    }, {
+      "text": "log into",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " my account on the "
+    }, {
+      "text": "web"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "account "
+    }, {
+      "text": "log out",
+      "parameterId": "sign_in_or_out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "account "
+    }, {
+      "text": "logged out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm trying to "
+    }, {
+      "text": "log in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to my telus account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "logging on"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need help logging "
+    }, {
+      "text": "in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to my telus account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "logging "
+    }, {
+      "text": "in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to get on the "
+    }, {
+      "text": "website",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "log in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to access my account "
+    }, {
+      "text": "online",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "online"
+    }, {
+      "text": " "
+    }, {
+      "text": "log in",
+      "parameterId": "sign_in_or_out"
+    } ],
+    "repeatCount": 2,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "online"
+    }, {
+      "text": " "
+    }, {
+      "text": "sign in",
+      "parameterId": "sign_in_or_out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to know how to "
+    }, {
+      "text": "log in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to talk to somebody to find out how i can get "
+    }, {
+      "text": "in"
+    }, {
+      "text": " to my account on the computer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want i want to "
+    }, {
+      "text": "log in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to my account using the "
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to "
+    }, {
+      "text": "sign in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " using "
+    }, {
+      "text": "my telus app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "logging "
+    }, {
+      "text": "in",
+      "parameterId": "sign_in_or_out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "log "
+    }, {
+      "text": "online"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "setting up "
+    }, {
+      "text": "log in",
+      "parameterId": "sign_in_or_out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "log out",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " of my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "logging "
+    }, {
+      "text": "in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "account "
+    }, {
+      "text": "log in",
+      "parameterId": "sign_in_or_out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "signing "
+    }, {
+      "text": "in",
+      "parameterId": "sign_in_or_out"
+    }, {
+      "text": " to my "
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "access my account "
+    }, {
+      "text": "online",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "online"
+    }, {
+      "text": " access"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}
