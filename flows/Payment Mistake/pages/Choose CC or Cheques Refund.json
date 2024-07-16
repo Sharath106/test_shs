@@ -1,0 +1,84 @@
+{
+  "name": "74633c48-4bcd-4103-9265-b357fffe7166",
+  "displayName": "Choose CC or Cheques Refund",
+  "form": {
+    "parameters": [ {
+      "displayName": "refund_method",
+      "required": true,
+      "entityType": "@refund-method",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Voulez-vous recevoir le remboursement directement sur la carte de crédit utilisée ou par chèque?", "Veuillez noter que le remboursement par chèque peut prendre de 4 à 6 semaines." ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Vous souhaitez recevoir le remboursement directement sur la carte bancaire utilisée ou par chèque ?", "Veuillez noter que le remboursement par chèque peut prendre de 4 à 6 semaines." ]
+            },
+            "languageCode": "fr"
+          }, {
+            "text": {
+              "text": [ "Do you want to receive the refund directly on the credit card used or by cheque?", "Please note that refund by cheque may take 4-6 weeks." ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.refund_method = \"cheques\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Afin de procéder à un remboursement par chèque, je devrai remplir et soumettre un formulaire dont le traitement prendra de 3 à 5 jours." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Afin de procéder à un remboursement par chèque, je devrai remplir et soumettre un formulaire dont le traitement prendra 3 à 5 jours." ]
+        },
+        "languageCode": "fr"
+      }, {
+        "text": {
+          "text": [ "In order to proceed to a refund by cheque, I will need to fill out and submit a form which will take 3-5 days to process." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Form",
+    "name": "1e03f83b-6c7c-4db1-865f-d5eb6951255e"
+  }, {
+    "condition": "$session.params.refund_method = \"credit card\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[API] Le remboursement pour le mauvais paiement de ${wrong-paid-amount} apparaîtra sous peu sur votre carte de crédit se terminant par ces numéros à 4 chiffres, {last-4-digit-cc}.", "Veuillez noter qu'il faudra 3 à 5 jours ouvrables pour être remboursé sur la carte de crédit." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[API] Le remboursement pour le mauvais paiement de ${wrong-paid-amount} apparaîtra sous peu sur votre carte de crédit se terminant par ces numéros à 4 chiffres, {last-4-digit-cc}.", "Veuillez noter qu'il faudra 3 à 5 jours ouvrables pour être remboursé sur la carte de crédit." ]
+        },
+        "languageCode": "fr"
+      }, {
+        "text": {
+          "text": [ "[API] The refund for the wrong payment of ${wrong-paid-amount} will appear shortly on your credit card ending with these 4 digit numbers, {last-4-digit-cc}. ", "Please note that it will take 3-5 business days to be refunded to the credit card." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "f1b6f040-d106-4f0f-9007-d8754b256bf2"
+  } ]
+}

@@ -1,0 +1,117 @@
+{
+  "name": "afce56d2-fd79-437e-bfd4-37d59c160b0d",
+  "displayName": "Buying New TELUS Device",
+  "form": {
+    "parameters": [ {
+      "displayName": "buy_device",
+      "required": true,
+      "entityType": "@buy-device",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What kind of device will you be adding to your TELUS account?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Quel type d'appareil allez-vous ajouter à votre compte TELUS?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Unfortunately, TELUS is not able to add a line for that device. Please choose another device to continue with your order." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2dad4a93-f738-43fb-a48c-80116a4c2ce0"
+        }, {
+          "targetFlow": "Default Start Flow",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Let's start over. Can you try rephrasing one more time?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "da6caff5-e7c4-4f54-a58c-add143b0f8c6"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding. Let me transfer you to a live agent who can further assist you. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "cbe143dd-61cb-46e4-9203-00ae0daea67d"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Je peux vous aider à ajouter une ligne à un appareil que vous avez déjà acheté. Chez TELUS, nous appelons cela « Apportez votre propre appareil (AVPA) »." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Je peux vous aider avec des informations sur Apportez votre propre appareil." ]
+      },
+      "languageCode": "fr"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You have selected a $session.params.buy_device line." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Parfait! Vous avez sélectionné $session.params.buy_device line." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Confirm Sim Card Addition",
+    "name": "bd3db17a-56bc-4bee-8646-554964d3c18d"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please respond by telling me the type of device you will be adding to your plan. For example, if you are adding a line for a tablet say \"tablet\"" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2b79891f-99db-46a9-8e93-0332a8a19f44"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "9374d338-81f8-428b-ae53-f6b88527b46b"
+  } ]
+}

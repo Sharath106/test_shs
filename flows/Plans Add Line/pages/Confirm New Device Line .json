@@ -1,0 +1,114 @@
+{
+  "name": "1dc8ea80-93f8-4804-83b8-90da7cebcbaa",
+  "displayName": "Confirm New Device Line ",
+  "form": {
+    "parameters": [ {
+      "displayName": "buy_device",
+      "required": true,
+      "entityType": "@buy-device",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Does your new device require a sim card to be fully activated?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not understanding, let me transfer you to somebody else for more assistance. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "025c3e5a-06db-43d2-b6dd-37b9cec665da"
+        }, {
+          "targetFlow": "Default Start Flow",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I still don't quite understand. Let's start over, can you rephrase that again for me?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f1465176-9082-4384-bb0b-70b4fc4ae178"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding, let me transfer you to somebody else for more assistance." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b2ddebd0-0da5-4102-b072-9af5cc8d4daf"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Would you like to add the new line to your account now?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Aimeriez-vous soumettre cette commande maintenant?" ]
+      },
+      "languageCode": "fr-ca"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To summarize your order request, you have selected the $session.params.buy_device line to be added to your plan." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "1e84bd15-4857-4452-812e-1c24b508e40f"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Sim Card",
+    "name": "646eebf2-07fe-4345-bb96-e8039a687f75"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please respond by saying \"yes\" to confirm that this new line will be added to your account" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d4222707-edfd-4180-bd7d-e70886bd0e13"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "48866f84-c67a-41cd-98b1-ab40ec84f6e0"
+  } ]
+}

@@ -1,0 +1,110 @@
+{
+  "name": "6b78e072-524a-4a0e-abc0-4a47568f42a4",
+  "displayName": "Choose Keep or Refund",
+  "form": {
+    "parameters": [ {
+      "displayName": "refund_type",
+      "required": true,
+      "entityType": "@refund-type",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like to keep the amount overpaid in your account to help cover your next invoice or get a refund?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Souhaitez-vous conserver le montant payé en trop sur votre compte pour couvrir votre prochaine facture ou obtenir un remboursement?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Souhaitez-vous conserver le montant payé en trop sur votre compte pour couvrir votre prochaine facture ou obtenir un remboursement ?" ]
+            },
+            "languageCode": "fr"
+          } ]
+        }
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.refund_type = \"refund\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[API - get-payment-method]" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "[API - get-payment-method]" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[API - get-payment-method]" ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "targetPage": "Payment Method Redirect",
+    "name": "97f01450-84fa-4af6-967c-8465a2cacf6f"
+  }, {
+    "condition": "$session.params.refund_type = \"keep\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[API - get-account-balance] Great, your account balance is $session.params.account-balance and it will be used towards your next invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "[API - get-account-balance] Parfait, le solde de votre compte est de $session.params.account-balance et ce montant sera utilisé pour payer votre prochaine facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[API - get-account-balance] Parfait, le solde de votre compte est $session.params.account-balance et il sera utilisé pour votre prochaine facture." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "c4615469-cfce-4c10-b62c-dfd8750d469a"
+  }, {
+    "condition": "$session.params.refund_type = \"transfer\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Unfortunately, we can only offer you to keep the overpaid amount in your account or receive a refund." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Malheureusement, nous pouvons seulement vous offrir de conserver le montant payé en trop sur votre compte ou de recevoir un remboursement." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Malheureusement, nous ne pouvons que vous proposer de conserver le montant payé en trop sur votre compte ou de recevoir un remboursement." ]
+        },
+        "languageCode": "fr"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "refund_type",
+        "value": null
+      } ]
+    },
+    "targetPage": "Choose Keep or Refund",
+    "name": "d0ff506a-e03e-4e81-ad4c-b1821e7d689d"
+  } ]
+}

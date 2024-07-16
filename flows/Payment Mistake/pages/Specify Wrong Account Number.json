@@ -1,0 +1,219 @@
+{
+  "name": "3f7f0f13-bccf-45a6-9ee0-b027346d4320",
+  "displayName": "Specify Wrong Account Number",
+  "form": {
+    "parameters": [ {
+      "displayName": "wrong_account_number",
+      "required": true,
+      "entityType": "@account-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Can you tell me the 10 digits account number to which the wrong payment was made?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Pouvez-vous m'indiquer le numéro de compte à 10 chiffres sur lequel le paiement erroné a été effectué?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Pouvez-vous m'indiquer le numéro de compte à 10 chiffres sur lequel le mauvais paiement a été effectué ?" ]
+            },
+            "languageCode": "fr"
+          } ],
+          "setParameterActions": [ {
+            "parameter": "is_wrong_account_associated",
+            "value": "true"
+          } ]
+        }
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    }, {
+      "displayName": "is_wrong_account_associated",
+      "required": true,
+      "entityType": "@boolean",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "[API - is_account_associated] (double check)" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "[API - is_account_associated] (double check)" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "[API - is_account_associated] (double vérification)" ]
+            },
+            "languageCode": "fr"
+          } ]
+        }
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    }, {
+      "displayName": "is_wrong_account_mobility",
+      "required": true,
+      "entityType": "@boolean",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "[API - is_wrong_account_mobility]" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "[API - is_wrong_account_mobility]" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "[API - is_wrong_account_mobility]" ]
+            },
+            "languageCode": "fr"
+          } ]
+        }
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    }, {
+      "displayName": "is_wrong_payment_received",
+      "required": true,
+      "entityType": "@boolean",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "[API - is_wrong_payment_received]" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "[API - is_wrong_payment_received]" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "[API - is_wrong_payment_received]" ]
+            },
+            "languageCode": "fr"
+          } ]
+        }
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.is_wrong_account_associated = false",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I’m sorry, that account number is not associated with your profile, I will need to get you over to a live agent." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, ce numéro de compte n'est pas associé à votre profil, je devrai vous mettre en contact avec un agent en direct." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je suis désolé, ce numéro de compte n'est pas associé à votre profil, je devrai vous mettre en contact avec un agent en direct." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "f20ba470-4ba7-40ed-8771-673360d52f55"
+  }, {
+    "condition": "$session.params.is_wrong_account_associated = true AND $session.params.is_wrong_account_mobility = false",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[API - get_account_service_type] This is an account for {account-service-type} services. Let me transfer you to a live agent in order to process your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "[API - get_account_service_type] Ceci est un compte pour les services {account-service-type}. Laissez-moi vous transférer vers un agent en direct afin de traiter votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[API - get_account_service_type] Ceci est un compte pour les services {account-service-type}. Laissez-moi vous transférer vers un agent en direct afin de traiter votre demande." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d1331e36-5381-4659-aa2c-8a1db69097a7"
+  }, {
+    "condition": "$session.params.is_wrong_account_associated = true AND $session.params.is_wrong_account_mobility = true AND $session.params.is_wrong_payment_received = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[API] A payment of ${wrong-paid-amount} has been made to this account." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "[API] Un paiement de {wrong-paid-amount} $ a été effectué sur ce compte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[API] Un paiement de ${wrong-paid-amount} a été effectué sur ce compte." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "targetPage": "Is Account Closed",
+    "name": "c0eb3663-47a0-4dd4-95ba-00c8072de452"
+  }, {
+    "condition": "$session.params.is_wrong_account_associated = true OR $session.params.is_wrong_account_mobility = true OR $session.params.is_wrong_payment_received = false",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We haven’t received the payment on this account yet, as it can take 3-5 days to be processed. Please contact your financial institution to cancel the payment." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Nous n'avons pas encore reçu le paiement sur ce compte car le traitement peut prendre de 3 à 5 jours. Veuillez communiquer avec votre institution financière pour annuler le paiement." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Nous n'avons pas encore reçu le paiement sur ce compte, car le traitement peut prendre 3 à 5 jours. Veuillez communiquer avec votre institution financière pour annuler le paiement." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "b9e7e0f0-93fd-4bce-83cd-a900f6147312"
+  } ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "3fd2d72a-a59b-47ec-8e5b-86812c15801a",
+  "displayName": "Member Profile",
+  "form": {
+    "parameters": [ {
+      "displayName": "member_profile",
+      "required": true,
+      "entityType": "@member-profile",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "[API - get-member-profile]" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "[API - get-member-profile]" ]
+            },
+            "languageCode": "en"
+          } ],
+          "setParameterActions": [ {
+            "parameter": "route_ci",
+            "value": "wrong account paid"
+          } ]
+        }
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Désolé pour cela." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Je suis désolé d'entendre ça." ]
+      },
+      "languageCode": "fr"
+    }, {
+      "text": {
+        "text": [ "I’m sorry to hear that." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.member_profile = \"member\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Prompt Not Owner / Manager",
+    "name": "37e70f17-fc33-44b7-9ac3-9dd1b8e876e1"
+  }, {
+    "condition": "($session.params.member_profile = \"owner\" OR $session.params.member_profile = \"manager\") AND $session.params.route_ci = \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Specify Payment Mistake",
+    "name": "0c7f1557-5b28-43ab-8ce5-0ae53b6daeb9"
+  }, {
+    "condition": "($session.params.member_profile = \"owner\" OR $session.params.member_profile = \"manager\") AND $session.params.route_ci = \"wrong account paid\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Specify Wrong Account Number",
+    "name": "02e3f14a-f329-4f88-9321-0332e6f9377a"
+  }, {
+    "condition": "($session.params.member_profile = \"owner\" OR $session.params.member_profile = \"manager\") AND ($session.params.route_ci = \"overpaid\" OR $session.params.route_ci = \"double paid\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Breakdown Overpaid Payment",
+    "name": "1d02b549-a9db-492f-ba48-5870dd9a506c"
+  } ]
+}

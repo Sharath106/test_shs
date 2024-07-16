@@ -1,0 +1,73 @@
+{
+  "name": "def40bea-a8b2-4154-a6bf-86831eb4ec96",
+  "displayName": "new_device",
+  "transitionRoutes": [ {
+    "intent": "supplemental.device_comparison",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "L'appareil [device_name_model1] a un écran de X pouces, vient avec XXX Go et coûte XX $/mois + taxes d'acompte (sur 24 mois à 0 % d'intérêt sur le crédit approuvé avec le Programme Paiements faciles de TELUS®).\n\nL'appareil [device_name_model2] a un écran de X pouces, vient avec XXX GB, et coûte XX $/mois + taxes d'acompte (sur 24 mois à 0 % d'intérêt sur crédit approuvé avec le Programme Paiments faciles de TELUS®)." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "The [device_name_model1] has a X inch screen, comes with XXX GB, and costs $XX/month + taxes upfront (over 24 months at 0% interest on approved credit with TELUS Easy Payment®).\n\nThe [device_name_model2] has a X inch screen, comes with XXX GB, and costs $XX/month + taxes upfront (over 24 months at 0% interest on approved credit with TELUS Easy Payment®)." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Select BYOD Device",
+    "name": "95d4c33b-4825-4fb5-9f35-2cffec5781c8"
+  }, {
+    "intent": "supplemental.keep_current_number",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vous pouvez transférer tout numéro de téléphone existant à votre compte de services mobiles TELUS, y compris les numéros d'autres fournisseurs et les numéros de téléphone fixe.\n\nPlus d'informations sur comment transférer un numéro. [https://www.telus.com/support/article/move-mobile-phone-number?INTCMP=Tcom_VirtualAssistant\u0026linktype=virtual_assistant]\n\nVous pouvez demander un transfert de numéro après avoir reçu votre appareil et avoir configuré votre compte Mon TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "You can transfer any existing phone number to your TELUS Mobility account, including numbers from other carriers and landline numbers.\n\nHow to transfer a number: LINK:https://www.telus.com/support/article/move-mobile-phone-number?INTCMP=Tcom_VirtualAssistant\u0026linktype=virtual_assistant\n\nYou can request a number transfer after you have received your device and have set up your My TELUS account." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Select BYOD Device",
+    "name": "8e1912c7-3c83-432f-8ced-d51857d15208"
+  }, {
+    "intent": "supplemental.select_new_number",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vous pouvez changer votre numéro de téléphone dans la même province, sans frais, en utilisant votre compte TELUS en ligne.\n\n1. Connectez-vous à Mon TELUS, sous Forfaits et appareils des services mobiles. [https://telus.com/my-account/plans/select?INTCMP=Tcom_VirtualAssistant\u0026linktype=virtual_assistant]\n2. Si vous avez plusieurs comptes liés à votre profil, sélectionnez le compte approprié.\n3. Sous Gérer vos services, sélectionnez Gérer votre numéro de téléphone.\n\nSi vous devez changer votre numéro pour une autre province, veuillez sélectionner une option ci-dessous pour parler à un agent." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "You can change your phone number within the same province, free of charge, using your online TELUS account.\n\n1. Login to My TELUS, under Mobility plans and devices. [https://telus.com/my-account/plans/select?INTCMP=Tcom_VirtualAssistant\u0026linktype=virtual_assistant]\n2. If you have multiple accounts linked to your profile, select the appropriate account.\n3. Under Manage your services, select Manage your phone number.\n\nIf you need to change your number to a different province, please select an option below to speak to an agent." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "69472749-c2b1-4042-80f7-6674932cc3ff"
+  }, {
+    "intent": "supplemental.sim_card_requests",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Nouveau téléphone : \nUne carte SIM est incluse lorsque vous achetez un nouveau téléphone avec TELUS.\n\nCommande de carte SIM :\nPuisque vous utiliserez votre propre appareil, il vous suffira d'acheter une nouvelle carte SIM TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "New Phone: \nA SIM card is included when you purchase any new phone with TELUS.\n\nOrder SIM Card:\nBecause you will be using your own device, you will simply need to purchase a new TELUS SIM card." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Buying New TELUS Device",
+    "name": "9a70e84c-1f0e-4448-9e6a-4a50421e35a1"
+  } ]
+}

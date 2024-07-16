@@ -1,0 +1,95 @@
+{
+  "name": "ad0c914f-6d5a-41a7-9965-fba58640cc84",
+  "displayName": "Choose Refund or Transfer",
+  "form": {
+    "parameters": [ {
+      "displayName": "refund_type",
+      "required": true,
+      "entityType": "@refund-type",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Souhaitez-vous transférer les fonds sur le bon compte ou obtenir un remboursement complet?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Souhaitez-vous transférer les fonds sur le bon compte ou obtenir un remboursement complet ?" ]
+            },
+            "languageCode": "fr"
+          }, {
+            "text": {
+              "text": [ "Would you like to transfer the funds to the right account or get a full refund?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.refund_type = \"refund\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[API - get_payment_method]" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[API - get_payment_method]" ]
+        },
+        "languageCode": "fr"
+      }, {
+        "text": {
+          "text": [ "[API - get_payment_method] " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Payment Method Redirect",
+    "name": "9b834e5e-1d5d-4322-94cc-b1d2aec4f26a"
+  }, {
+    "condition": "$session.params.refund_type = \"transfer\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Specify Right Account Number",
+    "name": "1569a4b1-34f2-4807-a5ac-0cbe933cfd08"
+  }, {
+    "condition": "$session.params.refund_type = \"keep\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Nous pouvons seulement vous offrir un remboursement ou un transfert vers un autre compte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Nous ne pouvons offrir qu'un remboursement ou un transfert vers un autre compte." ]
+        },
+        "languageCode": "fr"
+      }, {
+        "text": {
+          "text": [ "We can only offer a refund or a transfer to another account." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "refund_type",
+        "value": null
+      } ]
+    },
+    "targetPage": "Choose Refund or Transfer",
+    "name": "ce546114-e99d-497b-994b-ed128a9eb619"
+  } ]
+}

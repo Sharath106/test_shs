@@ -1,0 +1,69 @@
+{
+  "name": "ae200a09-fbf7-42fd-b61e-fc5f8707d41a",
+  "displayName": "Anything Else",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Can I help you with anything else today?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Est-ce que je peux vous aider avec quelque chose d'autre aujourd'hui?" ]
+      },
+      "languageCode": "fr-ca"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please proceed to ask me any questions you have related to your TELUS account. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je vous ai redirigé vers le début de notre conversation pour plus d'assistance. N'hésitez pas à me demander quoi que ce soit par rapport à votre compte TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "e2e55039-6b6f-434f-ae3a-5530cde4e07d"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thanks for chatting today. Have a good day!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Merci d'avoir discuté avec moi aujourd'hui. Passez une bonne journée !" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "7e4da4cb-9bc7-4508-b795-6ef707505383"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "52267d5f-3004-4332-baaa-2d6b601dd605"
+  }, {
+    "intent": "head_intent.equipment_upgrades",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Equipment Upgrades",
+    "name": "e4d6dfd1-968e-43e5-8394-19fcd0631297"
+  } ]
+}

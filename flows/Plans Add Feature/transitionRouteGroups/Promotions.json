@@ -1,0 +1,69 @@
+{
+  "name": "2e1c0c17-ce7b-469d-a045-ab7688ec5be8",
+  "displayName": "Promotions",
+  "transitionRoutes": [ {
+    "intent": "supplemental.get_discount",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi vous trouver un agent qui confirmera pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let me get you to an agent to confirm for you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c1ef2ac1-cb43-4a8f-811d-41e9fd5e4649"
+  }, {
+    "intent": "supplemental.get_for_free",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi vérifier si nous avons une option gratuite ou non." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let me review whether we have a free option or not." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "56887bdc-c026-4d2a-9127-24d55c773cc1"
+  }, {
+    "intent": "supplemental.keep_promo",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je peux certainement vérifier cela pour vous. \nDonnez-moi un moment pendant que je vérifie si la promotion est toujours disponible pour être ajoutée à votre compte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can definitely look into that for you. Give me a moment while I see if it is available to be added back to your account." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "fc022d99-d253-4381-b709-12b56377d760"
+  }, {
+    "intent": "supplemental.promo_info",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je peux certainement regarder cela pour vous. Laissez-moi vérifier votre forfait pour voir quand votre promotion se termine." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can definitely look into that for you. Let me check your plan and see when your promo ends." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0f64728a-241a-46fd-bfe7-2ffc19401ff7"
+  } ]
+}

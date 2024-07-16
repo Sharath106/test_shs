@@ -1,0 +1,117 @@
+{
+  "name": "4a486485-ed71-474c-b31f-29a80960f40a",
+  "displayName": "General",
+  "transitionRoutes": [ {
+    "intent": "supplemental.amount_owed",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Le solde sur votre compte est de XX.XX $ et est dû avant le [date]." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "The balance on your account shows as $XX.XX and is due by [DATE]." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "91f48690-0e01-4733-a1a3-b78bbac2a145"
+  }, {
+    "intent": "supplemental.asking_instructions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "En ce moment non, il n'y a rien à faire sauf la vérification de votre compte en ligne." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "At the moment no, there is nothing to do except checking your online account." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0ccff525-a16a-4788-97d1-7ad7a5491cf1"
+  }, {
+    "intent": "supplemental.correct_mistake",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Il y a plusieurs options que nous pouvons examiner pour résoudre le problème, notamment le transfert du montant sur un autre compte ou un remboursement pour un montant donné.\nQue souhaitez-vous faire?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "There are a number of options that we can look into to fix this including: Transferring the amount to another account, or Issuing a refund for a given amount.\nWhat would you like to do?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6dc20e26-698b-4eb3-b661-922c397cb4c6"
+  }, {
+    "intent": "supplemental.escalate_issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi contacter un agent qui pourra mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let me get to an agent that will be better to assist you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f5cdd481-955b-48f4-9a6a-80d52cbbd187"
+  }, {
+    "intent": "supplemental.transfer_chat",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "/= if available\nBien sûr. S'il vous plaît, donnez-moi un moment pendant que je vous transfère aux services résidentiels." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "/=if available\n Of course. Please give me a moment while I transfer you to home services.\n" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ed7444de-26d3-45f6-bed3-93ed2534369e"
+  }, {
+    "intent": "supplemental.transfer_credit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je peux certainement vous aider avec cela.\n\nTout d'abord, je vais avoir besoin de détails supplémentaires pour transférer les fonds entre les comptes." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can definitely help you with that.\n\nFirst, I'll need to get some additional details to transfer funds between accounts." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "001347dd-d945-440b-8d6f-712f14efc20c"
+  }, {
+    "intent": "supplemental.payment_made",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Donnez-moi un moment pendant que je vérifie votre historique de paiement.\n\nAprès vérification, le dernier paiement que nous avons reçu était le [date] pour un montant de XX,XX $." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Give me a moment while I review your payment history.\n\nUpon checking here, the last payment we received was [DATE] for the amount of XX.XX$." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9b3395cc-36f2-400a-8313-daf02cdfd2b5"
+  } ]
+}

@@ -1,0 +1,81 @@
+{
+  "name": "606039e8-5d53-4f19-bca9-a47afe5170e3",
+  "displayName": "EPP Account",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I can help add a line for your EPP account. Would you like to add a new line for a TELUS device now?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Je peux vous aider avec votre compte PEP." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Je peux vous aider avec votre compte EPP." ]
+      },
+      "languageCode": "fr"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "supplemental.epp_or_regular_Telus_account",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "In order to add a line to your EPP account, you need to speak with the EPP Department." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Afin d'ajouter une ligne à votre compte PEP, vous devez vous adresser au département PEP." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Afin d'ajouter une ligne à votre compte EPP, vous devez vous adresser au service EPP." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "7506eb4b-4f53-49e4-9b04-1344a16c445b"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Select BYOD Device",
+    "name": "307738cb-c399-4e95-bf01-e36e98c89e66"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Anything Else",
+    "name": "2498936c-073b-43c6-86f8-52717f6cb1d1"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please respond by saying \"yes\" in order to add a line to your EPP account." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "295b6c69-4ea3-4343-9e55-f0cd9f51c220"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "ed86e84a-4aba-4532-8ab2-9c1def128b5d"
+  } ]
+}

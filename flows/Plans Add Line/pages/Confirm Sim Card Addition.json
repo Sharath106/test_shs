@@ -1,0 +1,54 @@
+{
+  "name": "28730eb2-01d9-4700-a908-ed146c6ba1b6",
+  "displayName": "Confirm Sim Card Addition",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Does your new device require a TELUS SIM card?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirm New Sim Card",
+    "name": "6cfd067e-2865-4aba-b7b5-c13b4bf7c1cb"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To summarize your order request, you have selected the $session.params.buy_device line to be added to your account. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Confirm New Tablet or Smartwatch Line",
+    "name": "3d9b5661-c51b-40e9-8c03-c7fd636c8a70"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If your device is locked to TELUS, you do not need to unlock it to activate on a BYOD plan. If your device is locked to another carrier you need to contact them to receive unlocking instructions." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "32b0087b-596c-402a-b3a4-28abebd3d9ad"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "08ec5ce4-be21-4832-a3a5-5ab200ac7540"
+  } ]
+}

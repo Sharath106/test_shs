@@ -1,0 +1,40 @@
+{
+  "name": "55847b1e-9efe-4291-8bf9-bdb5dbce976a",
+  "displayName": "Is Account Closed",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.is_account_closed = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "However, this account is closed. You will automatically receive a cheque by mail for the amount of ${wrong-paid-amount}. ", "The cheque will be mailed after the second closing invoice is sent out. It could take 4-6 weeks before you receive it.", "There is no additional action required from you at this point." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Cependant, ce compte est fermé. Vous recevrez automatiquement par la poste un chèque d'un montant de {wrong-paid-amount} $.", "Le chèque sera posté après l'envoi de la deuxième facture de clôture. Cela peut prendre de 4 à 6 semaines avant de le recevoir.", "Aucune action supplémentaire n'est requise de votre part en ce moment." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Cependant, ce compte est fermé. Vous recevrez automatiquement par la poste un chèque d'un montant de ${wrong-paid-amount}.", "Le chèque sera posté après l'envoi de la deuxième facture de clôture. Cela peut prendre 4 à 6 semaines avant de le recevoir.", "Aucune action supplémentaire n'est requise de votre part à ce stade." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "targetPage": "Confirm Billing Address",
+    "name": "1ff2e378-199b-4398-80f3-257dcb7a8cc8"
+  }, {
+    "condition": "$session.params.is_account_closed = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Choose Refund or Transfer",
+    "name": "26893e1c-3e20-4247-a0d3-5c8684f396f9"
+  } ]
+}

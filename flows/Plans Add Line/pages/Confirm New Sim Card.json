@@ -1,0 +1,122 @@
+{
+  "name": "6f1d92fc-c37b-427d-8a29-b6488882efb3",
+  "displayName": "Confirm New Sim Card",
+  "form": {
+    "parameters": [ {
+      "displayName": "sim_vs_esim",
+      "required": true,
+      "entityType": "@sim-vs-esim",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't understand that. Please let me know if you want a standard SIM card or an eSIM card to complete your order. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d110673d-a96d-4d48-bac1-038559c27440"
+        }, {
+          "targetFlow": "Default Start Flow",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not sure I got this. Let's start over, can you try rephrasing one more time?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4d14a6e8-ffd2-4767-97e1-96c188af169c"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding, let me transfer you to somebody else for more assistance." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c6fa1f11-7286-48ef-95e5-789c16075253"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Would you like to add a standard TELUS sim card or the new eSIM card? Both options will include a $10 charge to your account " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Anything Else",
+    "name": "9a9db24d-3400-4288-bf4a-f2394aeaf705"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please specify if you would like to add a SIM card or an eSIM card to your account. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "eca27008-2b2d-496c-848d-b30270f68dc3"
+  }, {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great! We have successfully added a new phone line \u0026  TELUS $session.params.sim_vs_esim to your account. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "25135479-eccb-4d10-a9ff-5cd6a17c25bc"
+  }, {
+    "condition": "e-sim",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Get TELUS E-Sim Card",
+    "name": "dcd99ca0-47c7-45ab-9265-fb60c00f69c8"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please let me know if you would like to confirm adding a new TELUS sim card or e-sim card by saying \"sim\" or \"e-sim\" to complete your order. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "69a98627-8a3a-4ed0-8488-976ff27a3b49"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "347cbae5-f409-46f7-9d0d-5ac0c40d38eb"
+  } ]
+}

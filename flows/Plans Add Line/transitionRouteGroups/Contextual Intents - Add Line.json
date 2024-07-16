@@ -1,0 +1,50 @@
+{
+  "name": "84403646-8f91-4212-ab07-a230ccd3ce35",
+  "displayName": "Contextual Intents - Add Line",
+  "transitionRoutes": [ {
+    "intent": "supplemental.add_line_method",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'd be happy to help you with a new activation! \n\nAre you looking to get a new phone or bring your own device (BYOD)?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Il me fera plaisir de vous aider avec une nouvelle activation! \n\nVoulez-vous un nouveau téléphone ou allez-vous apporter votre propre appareil (AVPA)?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Add Another Line",
+    "name": "90ec41b8-8c4e-4ee0-a46e-68f5a86e85bf"
+  }, {
+    "intent": "supplemental.add_on_price",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Add Another Line",
+    "name": "047ffc10-73fa-435a-8840-04e258592dd6"
+  }, {
+    "intent": "supplemental.talk_text_only_plan",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Add Another Line",
+    "name": "ab3d9876-c2f6-408f-afd0-d463749f336c"
+  }, {
+    "intent": "supplemental.add_data",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Add Another Line",
+    "name": "edce710b-9091-49cb-9dc2-8c358c6bae68"
+  }, {
+    "intent": "supplemental.add_data_block",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Add Another Line",
+    "name": "dd0d62df-bd34-4080-90b4-a79da48813da"
+  } ]
+}

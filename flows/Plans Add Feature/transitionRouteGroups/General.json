@@ -1,0 +1,133 @@
+{
+  "name": "a72c106a-9444-49ee-a5aa-69da6171ad99",
+  "displayName": "General",
+  "transitionRoutes": [ {
+    "intent": "supplemental.amount_of_data",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can help you find out how much data you have used. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je peux vous aider à déterminer combien de données ont été utilisées." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "048c93b9-efa3-45de-aa76-bcab42b921e0"
+  }, {
+    "intent": "supplemental.carry_over",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me connect you to an agent who can verify this." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en communication avec un agent qui pourra vérifier cela pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "2e725e96-bc4c-47c3-a242-61c1cf5165d4"
+  }, {
+    "intent": "supplemental.data_sharing",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "With our Unlimited Plans, you'll never have to worry about data overedge charges.\n\nSimply choose your high-speed data threshold and enjoy unlimited nationwide talk and text.\n\nEven if you reach your threshold within your bill cycle, you can still enjoy endless data usage at no extra cost, just at a reduced speed.\n\nYour phone will still work as normal, just video quality will be reduced and other high-speed applications will take longer to load.\n\nYou can now also share your unlimited data with a connected device such as a smart watch or a tablet." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Avec nos plans illimités, vous n'aurez jamais à vous soucier des frais de dépassement de données.\n\nIl vous suffit de choisir votre limite de données haute vitesse et de profiter des appels et textos illimités dans tout le pays.\n\nMême si vous dépassez votre limite pendant votre cycle de facturation, vous pouvez toujours profiter de données illimitées sans frais supplémentaires, mais à une vitesse réduite.\n\nVotre téléphone fonctionnera normalement, mais la qualité des vidéos sera réduite et les autres applications à haute vitesse mettront plus de temps à charger.\n\nVous pouvez désormais aussi partager vos données illimitées avec un appareil connecté telles qu'une montre intelligente ou une tablette." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "e2f58bf8-f5ff-4198-91b4-ec159cd5f92f"
+  }, {
+    "intent": "supplemental.help_adding",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry to hear that. Let me have a look and see what the problem is." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé d'apprendre cela. Laissez-moi regarder pour voir quel est le problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "7b671e7c-37d4-4e7e-8039-2dee0d83d236"
+  }, {
+    "intent": "supplemental.included_in_plan_feature",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me check to see what is included in your plan." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vérifier ce qui est inclus dans votre forfait." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "f7b63aec-8037-49b4-a76a-800bc46466f5"
+  }, {
+    "intent": "supplemental.request_call_back",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "In a few words, please let us know the reason for your callback request.\n\nThanks! What number would you like us to call?\n\nSomeone will call you back within XX amount of time. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "En quelques mots, veuillez-nous indiquer la raison pour votre demande de retour d'appel.\n\nMerci! À quel numéro désirez-vous être contacté?\n\nQuelqu'un vous rappellera dans un délai de [amount_time] minutes." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "c214962e-017d-424c-bd3d-20dbda74fa34"
+  }, {
+    "intent": "supplemental.total_with_feature",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "With the add on, it will come to a total of $XX.XX/mo." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Avec l'option complémentaire, le total sera de XX,XX $ par mois." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "972fd187-235a-4c2c-aae3-c21ffd48d185"
+  }, {
+    "intent": "supplemental.troubleshoot_feature",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "That is not good, I can help you troubleshoot this." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Ceci n'est pas correct. Je peux vous aider à résoudre ce problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "448b99f4-7f67-477a-9b63-4aa314610682"
+  } ]
+}

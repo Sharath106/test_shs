@@ -1,0 +1,23 @@
+{
+  "name": "a13bb1e2-03da-4a77-b81a-3799099ecec2",
+  "displayName": "Get TELUS E-Sim Card",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "If you wish to buy any accessories for your eSIM card then you will be charged the full respective amount." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Anything Else",
+    "name": "2fc307b9-6028-4674-9565-e320fd89b790"
+  } ]
+}

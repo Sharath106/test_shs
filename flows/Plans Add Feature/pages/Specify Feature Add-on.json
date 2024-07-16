@@ -1,0 +1,117 @@
+{
+  "name": "52df712c-ac30-4049-805c-9beffaabf7a3",
+  "displayName": "Specify Feature Add-on",
+  "form": {
+    "parameters": [ {
+      "displayName": "feature_to_add",
+      "required": true,
+      "entityType": "@feature-type",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Quelle option voudriez-vous ajouter à votre forfait?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Quelle fonctionnalité voudriez-vous ajouter à votre forfait ?" ]
+            },
+            "languageCode": "fr"
+          }, {
+            "text": {
+              "text": [ "Which feature would you like to add to your plan?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.feature_to_add = \"apple care\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Feat - Apple Care",
+    "name": "992d6911-3c12-46eb-b2b7-abf0900c3623"
+  }, {
+    "condition": "$session.params.feature_to_add = \"call forwarding\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Feat - Call Forwarding",
+    "name": "eebd1b39-4294-43b9-8768-bc102907b2bd"
+  }, {
+    "condition": "$session.params.feature_to_add = \"roaming\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Feat - Roaming",
+    "name": "20d21b3e-3ead-47aa-bbf2-edadfd00d803"
+  }, {
+    "condition": "$session.params.feature_to_add = \"voicemail\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Feat - Voicemail",
+    "name": "449dc69a-ccde-4ced-be72-7f706186d97c"
+  }, {
+    "condition": "$session.params.feature_to_add = \"international calling\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Feat - Intl Calling",
+    "name": "fa3aa5ee-ab41-4561-bb79-0191f9f342cd"
+  }, {
+    "condition": "$session.params.feature_to_add = \"long distance calling\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Feat - LD Calling",
+    "name": "0a1a7a0c-29e3-4cd1-a4d7-7a619db76290"
+  }, {
+    "condition": "$session.params.feature_to_add = \"airtime\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Feat - Airtime",
+    "name": "ed2ff21c-b599-4286-9a54-beec25e7da26"
+  }, {
+    "condition": "$session.params.feature_to_add = \"messaging\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Feat - Messaging",
+    "name": "97bc685c-5cb3-40e6-80a0-c85ac77d85e7"
+  }, {
+    "condition": "$session.params.feature_to_add = \"online security\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Feat - Online Security",
+    "name": "d8cf9fe4-c550-4438-b78f-4b054b2962e2"
+  }, {
+    "condition": "$session.params.feature_to_add = \"device care\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Feat - Device Care",
+    "name": "75efd966-dbfa-4657-ba3b-58a28a952562"
+  }, {
+    "condition": "$session.params.feature_to_add = \"data\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Feat - Data",
+    "name": "b6a44b4d-d333-4889-b8e6-887640147d8c"
+  } ]
+}

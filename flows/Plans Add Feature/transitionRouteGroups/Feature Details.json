@@ -1,0 +1,133 @@
+{
+  "name": "42ca355e-87e4-44af-ab03-87a4e78e33ef",
+  "displayName": "Feature Details",
+  "transitionRoutes": [ {
+    "intent": "supplemental.add_on_price",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "L'option [add-on-choice] est XX,XX $ par mois." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "The [add-on-choice] is $XX.XX/mo." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e5f64f56-8e69-4205-9c84-1205a9c3458c"
+  }, {
+    "intent": "supplemental.feature_activation",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "L'option deviendra active dès que vous l'aurez ajouter à votre compte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "It will become active as soon as you add the feature to your account." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "075af9cf-7b97-4984-82de-541e492a2ecc"
+  }, {
+    "intent": "supplemental.feature_availability",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je peux certainement regarder cela pour vous. Laissez-moi vérifier votre forfait et les options disponibles pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can definitely look into that for you. Let me check your plan and see what options we have for you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5589a0d3-d733-422f-9d1a-a98b15a617f1"
+  }, {
+    "intent": "supplemental.feature_details",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "iPhone: \nLa Messagerie vocale visuelle vous permet d'avoir autant de message que vous le souhaitez en fonction de l'espace disponible sur votre appareil.\n\nAndroid: \nLa Messagerie vocale visuelle sauvegarde vos messages pour XX jours. Pour continuer à les sauvegarder, veuillez composer le numéro de votre boîte vocale et sauvegardez-les manuellement." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "iPhone: Visual Voicemail lets you save as many messages as you like depending on the available storage on your device.\nAndroid: Visual Voicemail saves your messages for XX amount of days, to re-save them for another XX days, please dial into your voicemail box and resave manually. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "4a5fcb16-2107-4f1a-9a3d-31fa4d40fd41"
+  }, {
+    "intent": "supplemental.feature_differences",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je peux vous décrire les différentes options dont nous disposons. Quelles options souhaiteriez-vous avoir plus de détails?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can help describe different features we have. What feature do you want to learn about?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e5b0381d-2b2c-4b53-9d36-1b9e4a3ecfb1"
+  }, {
+    "intent": "supplemental.feature_recommendation",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ça me fera plaisir de vous aider avec cela. Quel type d'option cherchez-vous à ajouter?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'll be happy to assist you with this. What kind of feature are you looking to add?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "84f80609-6009-4db2-bd68-fe16162a4809"
+  }, {
+    "intent": "supplemental.feature_supported",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Quels problèmes avez-vous avec votre appareil?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "What issues are you having with your device?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "01f52dda-87f6-4bef-986e-270b8d0963fa"
+  }, {
+    "intent": "supplemental.no_extra_charge",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi confirmer ce qui est inclus dans votre forfait." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let's confirm what is included in your current plan. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "996f5431-59d6-400c-ba94-db3ffdc1c270"
+  } ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "9839a265-1e86-4429-9e76-afc4c5c4aaf2",
+  "displayName": "Sim Card",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Will your device require a new TELUS sim card?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "After activating your new SIM card, a $10 fee will be charged to your account. This fee will be added to the following months bill. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Confirm New Sim Card",
+    "name": "b8a5060c-5ea0-475c-b4e3-f2d71256b9aa"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirm New Tablet or Smartwatch Line",
+    "name": "d55269bf-0e47-42cb-b85f-0a0c14dbf0d2"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please respond by saying \"yes\" if you have a TELUS sim card to activate your new device. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d2dc0692-9466-4282-a97b-587afde08498"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "8a7d8ce6-ecdb-4076-aa87-a48bc9ea9ba7"
+  } ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "5a3c6e47-8b42-4b71-89e7-b136ba056a3b",
+  "displayName": "Add Another Feature",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Souhaitez-vous ajouter une autre option à votre forfait?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Souhaitez-vous ajouter une autre fonctionnalité à votre forfait ?" ]
+      },
+      "languageCode": "fr"
+    }, {
+      "text": {
+        "text": [ "Would you like to add another feature to your plan?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Specify Feature Add-on",
+    "name": "e512654e-6590-4362-93db-a1a1409b201b"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Anything Else",
+    "name": "8ada5336-cae5-40c3-bd93-ea4a57cfdb3e"
+  } ]
+}

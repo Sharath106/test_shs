@@ -1,0 +1,113 @@
+{
+  "name": "29b91de3-13f5-4686-82c3-7aa5a5696ecd",
+  "displayName": "Select BYOD Device",
+  "form": {
+    "parameters": [ {
+      "displayName": "buy_device",
+      "required": true,
+      "entityType": "@buy-device",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Which type of device will you be adding to your account? " ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Quel type d'appareil voudriez-vous ajouter comme nouvelle ligne à votre compte?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't catch that. Please choose another device to continue with your order. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b6f7de21-06c6-4cb9-98b1-ef372ca39ce0"
+        }, {
+          "targetFlow": "Default Start Flow",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I still don't quite understand. Let's start over. Can you rephrase that again for me?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a1cdae0b-75df-49d0-8c23-c63ab581566f"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not understanding, let me transfer you to somebody else for more assistance. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "fc0396a6-c7a3-493c-8b91-71b46b8c76d2"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I can help add a line for a device you already purchased. Here at TELUS we like to call that \"Bring Your Own Device\" or \"BYOD\"." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Perfect! You have chosen the $session.params.buy_device line. As long as the device is locked to TELUS then I can help you complete your request. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Parfait! Vous avez choisi $session.params.buy_device." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Confirm New Device Line ",
+    "name": "c8ba5d60-1945-4935-a328-866db65b50e0"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please let me know what type of device you will be adding and I can help you complete your request. For example, If you are adding a line for a new smartwatch just say \"smartwatch\"" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1a4c190b-81b4-478b-b31b-985d4628fd2d"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "9bd655eb-33f7-45a4-a02d-21151ade3494"
+  } ],
+  "transitionRouteGroups": [ "Contextual Intents - Add Line" ]
+}

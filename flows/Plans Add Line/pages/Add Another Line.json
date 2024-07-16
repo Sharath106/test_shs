@@ -1,0 +1,81 @@
+{
+  "name": "b8215297-e585-402d-aee8-26b9b98fc540",
+  "displayName": "Add Another Line",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Would you like to add another line to your account?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Souhaitez-vous ajouter une autre ligne à votre compte?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Souhaitez-vous ajouter une autre ligne à votre compte ?" ]
+      },
+      "languageCode": "fr"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Aucun problème!" ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "targetPage": "Buying New TELUS Device",
+    "name": "5d0e8953-9879-4811-a3fb-202504ccb5e5"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Select BYOD Device",
+    "name": "fb689699-dbe4-4967-bcf7-9c14497ae8e5"
+  }, {
+    "intent": "head_intent.equipment_upgrades",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Equipment Upgrades",
+    "name": "488ed5e8-d858-43f3-9663-eb77b1ff1876"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You can respond by saying \"yes\" if you are adding a line for a new device you are purchasing from TELUS today. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0eb08dba-afed-4180-98af-858b099e79d4"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "a381e94e-0a6f-4f00-b946-41bc0236d7e0"
+  } ]
+}

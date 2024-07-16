@@ -1,0 +1,64 @@
+{
+  "name": "ddfa2c04-ed93-4e6e-b766-5d36b69856dd",
+  "displayName": "Pay Off Balance",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Would you like to pay off your balance now?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Voulez-vous payer votre solde maintenant?" ]
+      },
+      "languageCode": "fr-ca"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Anything Else",
+    "name": "353fc429-7353-4353-85a9-8e938671c42f"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great, let me redirect you to Billing." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous rediriger vers le département de la facturation." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "b0f9e38e-7eac-4d47-b386-fdaab9fea23a"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry I didn't understand what you said. Please respond by saying \"yes\" if you would like to pay off your current balance. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2bed07a0-594a-4562-acc8-60c012fdc39b"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "408987cc-c1b4-4ed5-aba0-5ffd2bee473e"
+  } ]
+}

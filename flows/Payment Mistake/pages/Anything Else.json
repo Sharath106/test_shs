@@ -1,0 +1,50 @@
+{
+  "name": "8fe57173-03b8-45a5-9904-464ddc1dc9a4",
+  "displayName": "Anything Else",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Can I help you with anything else today?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Puis-je vous aider avec autre chose aujourd'hui?" ]
+      },
+      "languageCode": "fr-ca"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "What else can I help you with today?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "6c9a8517-2ad4-4c01-842e-e9bb6b455443"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thanks for chatting today. Have a good day!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Merci d'avoir discuté avec moi aujourd'hui. Passez une belle journée!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "d127ab9b-19ea-4ec7-9c87-ae126c6eb98f"
+  } ]
+}

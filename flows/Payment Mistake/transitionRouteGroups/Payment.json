@@ -1,0 +1,101 @@
+{
+  "name": "78b98489-d743-4d2e-9364-9eb80ec138be",
+  "displayName": "Payment",
+  "transitionRoutes": [ {
+    "intent": "supplemental.add_preauthorized_payments",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vous pouvez ajouter ou modifer les détails de votre paiement préautorisé en passant par l'application Mon TELUS ou en ligne." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "You can add or modify your pre-authorized payment details through the My TELUS app or online.\n" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "47ee7dda-173d-467f-bff3-bc303db2ad1e"
+  }, {
+    "intent": "supplemental.confirm_late_charge",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "En regardant votre compte, je vois un paiement en retard de XX,XX $ sur votre facture en cours." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Looking at your account, I see a late payment of $xx.xx on your current invoice. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "cd8e6008-5a76-4b7a-bf8a-91159a2eeb95"
+  }, {
+    "intent": "supplemental.explain_closed_account_payment",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Les comptes peuvent toujours être trouvés dans notre système même s'ils ont été fermés. \nLaissez-moi vérifier votre compte pour voir ce qui s'est passé." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Accounts can still be found in our system even if they have been closed recently. Let me check your account to see what happened. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c941e81d-f1c1-4d5a-a8f8-57dc503fb472"
+  }, {
+    "intent": "supplemental.make_payment_vague",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour effectuer un paiement, vous pouvez passer par l'application Mon TELUS, en ligne, par téléphone, ou par votre banque. \n\nComment aimeriez-vous effectuer le paiement?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "To make a payment, you can go through the My TELUS app, online, by phone, or through your bank. How would you like to make the payment?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "cde63418-bb90-437a-8378-3690bf726cb0"
+  }, {
+    "intent": "supplemental.payment_made",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\"Donnez-moi un moment pendant que je vérifie votre historique de paiement.\n\nAprès vérification, le dernier paiement que nous avons reçu était le [date] pour un montant de XX,XX $. \"" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Give me a moment while I review your payment history.\n\nUpon checking here, the last payment we received was [DATE] for the amount of $XX.XX." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f4b86a13-e75f-4256-9456-ecd6bfdad632"
+  }, {
+    "intent": "supplemental.search_for_payment",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Donnez-moi un moment pendant que j'enquête sur le paiement. \n\nVoici les 2 derniers paiements que nous avons reçus sur votre compte : XX,XX $ le jj-mm-aaaa et XX,XX $ le jj-mm-aaaa." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Give me a moment while I investigate the payment.\nHere are the last 2 payments we received on your account $xx.xx on mmddyy and $xx.xx on mmddyy. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0546503f-b8c2-42d7-90b4-93a4189035a1"
+  } ]
+}

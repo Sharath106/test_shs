@@ -1,0 +1,53 @@
+{
+  "name": "1262cdfe-5164-423a-afe1-a67056ce654b",
+  "displayName": "To Plans Available Flow",
+  "transitionRoutes": [ {
+    "intent": "supplemental.cheaper_data_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "At TELUS, our phone plans are built to meet our customer's needs.\n\nOur plans include unlimited talk and text in Canada. They also include unlimited data. Don't need data? We have a plan for you.\n\nChoose our Unlimited plans with no data overedge, and possibility to share with any connected device!\n\nTry a Text and Voice only plan if you don't need any data connection.\n\nFind one that suits your needs\n" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Chez TELUS, nos forfaits téléphoniques sont conçus pour répondre aux besoins de nos clients.\n\nNos forfaits comprennent des appels et textos illimités au Canada. Ils comprennent également des données illimitées. Vous n'avez pas besoin de données? Nous avons un forfait pour vous.\n\nChoisissez nos plans illimités sans dépassement de données, et la possibilité de partager avec tous les appareils connectés!\n\nEssyez un plan avec Appels et textos seulement si vous n'avez pas besoin de la connexion de données.\n\nTrouvez celui qui correspond à vos besoins." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "c3068a6e-abd4-42d7-9cc3-0222aa204b66"
+  }, {
+    "intent": "supplemental.plan_options",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Our True North Affordability stamp allows you to easily find the plan that meets the Liberal Party benchmark for affordability.\n\nWhether you're looking for a plan with or without any data, we've got what you're looking for.\n\nAvailable plans" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Notre sceau Conforme aux exigences de prix abordables vous permet de trouver facilement le forfait qui répond aux critères d'abordabilité du Parti Libéral.\n\nQue vous cherchiez un forfait avec ou sans données, nous avons ce que vous cherchez.\n\n(Plans disponibles)" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "94760497-6a0f-4263-8767-fa3815a8201e"
+  }, {
+    "intent": "supplemental.request_plan_change",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I can help you change your plan." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, je peux vous aider à changer votre plan." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "d880250c-57af-425a-b802-2ed63e9e02fe"
+  } ]
+}
