@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "cheques",
+    "synonyms": [ "check", "checks", "cheque", "cheques" ],
+    "languageCode": "en"
+  }, {
+    "value": "bank",
+    "synonyms": [ "bank", "financial institution" ],
+    "languageCode": "en"
+  }, {
+    "value": "credit card",
+    "synonyms": [ "card", "credit", "credit card", "credits", "mastercard", "visa" ],
+    "languageCode": "en"
+  } ]
+}

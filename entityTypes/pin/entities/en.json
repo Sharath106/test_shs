@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "^[0-9]{4,6}$",
+    "synonyms": [ "^[0-9]{4,6}$" ],
+    "languageCode": "en"
+  }, {
+    "value": "^[0-9]{1,10}#$",
+    "synonyms": [ "^[0-9]{1,10}#$" ],
+    "languageCode": "en"
+  }, {
+    "value": "^[0-9]{1,10}$",
+    "synonyms": [ "^[0-9]{1,10}$" ],
+    "languageCode": "en"
+  } ]
+}

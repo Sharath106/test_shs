@@ -1,0 +1,31 @@
+{
+  "entities": [ {
+    "value": "phone",
+    "synonyms": [ "par telephone", "par téléphone", "telephone", "téléphone", "Téléphone", "telephoner", "téléphoner", "via telephone", "via téléphone" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "online",
+    "synonyms": [ "en ligne", "faire moi-meme", "faire moi-même", "instructions", "instructions libre-service", "le faire moi-meme", "le faire moi-même", "libre service", "libre-service", "moi meme", "moi même", "par moi-même", "plus d'informations" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "1", "dtmf_digits_1", "un" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "2", "deux", "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "3", "dtmf_digits_3", "trois" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "9",
+    "synonyms": [ "9", "dtmf_digits_9", "envoie un message", "envoyez un message texte", "envoyez-moi le message texte", "Envoyez-moi le message texte", "lien par message texte", "lien par sms", "lien par texto", "message texte", "neuf", "recevoir", "recevoir les informations", "sms", "texte", "textes", "texto" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "0", "agent", "dtmf_digits_0", "membre de l'équipe", "operateur", "opérateur", "representant", "représentant", "zéro", "zèro", "service à la clientèle" ],
+    "languageCode": "fr-ca"
+  } ]
+}

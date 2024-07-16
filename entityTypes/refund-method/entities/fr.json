@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "bank",
+    "synonyms": [ "bank", "banque ", "institution financière" ],
+    "languageCode": "fr"
+  }, {
+    "value": "cheques",
+    "synonyms": [ "cheques", "chèque", "chèques", "chèque", "chèques" ],
+    "languageCode": "fr"
+  }, {
+    "value": "credit card",
+    "synonyms": [ "credit card", "carte de crédit", "crédit", "visa", "MasterCard", "carte de crédit", "MasterCard", "visa", "débit Visa", "crédit", "carte de crédit", "carte de crédit", "amex", "American Express", "carte", "crédits", "carte", "crédits" ],
+    "languageCode": "fr"
+  } ]
+}

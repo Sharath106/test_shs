@@ -1,0 +1,31 @@
+{
+  "entities": [ {
+    "value": "phone",
+    "synonyms": [ "over the phone", "phone", "via the phone" ],
+    "languageCode": "en"
+  }, {
+    "value": "online",
+    "synonyms": [ "do it myself", "instructions", "more information", "myself", "online", "self", "self-serve", "self-serve instructions" ],
+    "languageCode": "en"
+  }, {
+    "value": "1",
+    "synonyms": [ "1", "dtmf_digits_1", "one" ],
+    "languageCode": "en"
+  }, {
+    "value": "2",
+    "synonyms": [ "2", "dtmf_digits_2", "two" ],
+    "languageCode": "en"
+  }, {
+    "value": "3",
+    "synonyms": [ "3", "dtmf_digits_3", "three" ],
+    "languageCode": "en"
+  }, {
+    "value": "9",
+    "synonyms": [ "9", "dtmf_digits_9", "nine", "receive", "receive information", "send sms", "sms", "sms link", "text" ],
+    "languageCode": "en"
+  }, {
+    "value": "0",
+    "synonyms": [ " operator", "0", "agent", "dtmf_digits_0", "representative", "team member", "zero", "customer service" ],
+    "languageCode": "en"
+  } ]
+}

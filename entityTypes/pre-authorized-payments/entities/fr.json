@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "discontinue",
+    "synonyms": [ "discontinue", "cesser", "arrêter", "supprimer", "retirer" ],
+    "languageCode": "fr"
+  }, {
+    "value": "multiple payments",
+    "synonyms": [ "multiple payments", "plusieurs", "de nombreux" ],
+    "languageCode": "fr"
+  }, {
+    "value": "set up",
+    "synonyms": [ "set up", "d'installation", "inscrire", "mettre en place", "mettre en place", "configurer", "ajouter" ],
+    "languageCode": "fr"
+  }, {
+    "value": "update information",
+    "synonyms": [ "update information", "monnaie", "mettre à jour", "faire en sorte" ],
+    "languageCode": "fr"
+  } ]
+}

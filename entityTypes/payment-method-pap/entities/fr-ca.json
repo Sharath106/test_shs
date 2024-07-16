@@ -1,0 +1,39 @@
+{
+  "entities": [ {
+    "value": "online banking",
+    "synonyms": [ "bancaire", "Banque", "banque en ligne", "compte bancaire", "en ligne", "online banking", "services bancaires en ligne" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "credit card",
+    "synonyms": [ "American Express", "amex", "carte", "carte de credit", "carte de crédit", "carte de debit", "carte de débit", "crédit", "credit card", "crédits", "debit", "débit", "debit visa", "débit Visa", "MasterCard", "visa" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "cash",
+    "synonyms": [ "boutique", "cash", "de l'argent", "en personne", "especes", "espèces", "facture en comptant", "magasin" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "mail",
+    "synonyms": [ "cheque", "chèque", "courrier", "mail", "par courrier", "par la poste" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "1", "dtmf_digits_1", "un", "une" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "2", "deux", "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "3", "dtmf_digits_3", "trois" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "4",
+    "synonyms": [ "4", "dtmf_digits_4", "trois" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "0", "agent", "agente", "dtmf_digits_0", "membre de l'équipe", "opérateur", "opératrice", "zéro" ],
+    "languageCode": "fr-ca"
+  } ]
+}

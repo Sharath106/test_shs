@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "keep",
+    "synonyms": [ "keep", "garder", "tenir en compte" ],
+    "languageCode": "fr"
+  }, {
+    "value": "refund",
+    "synonyms": [ "refund", "remboursement", "remboursement", "remboursement", "rembourser" ],
+    "languageCode": "fr"
+  }, {
+    "value": "transfer",
+    "synonyms": [ "transfer", "fonds de transfert", "transfert", "transfert de fonds" ],
+    "languageCode": "fr"
+  } ]
+}

@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "(?i)ES\\d{8}",
+    "synonyms": [ "(?i)ES\\d{8}" ],
+    "languageCode": "en"
+  }, {
+    "value": "(?i)TD\\d{7}",
+    "synonyms": [ "(?i)TD\\d{7}" ],
+    "languageCode": "en"
+  }, {
+    "value": "(?i)TD00\\d{5}",
+    "synonyms": [ "(?i)TD00\\d{5}" ],
+    "languageCode": "en"
+  }, {
+    "value": "\\d{8,12}",
+    "synonyms": [ "\\d{8,12}" ],
+    "languageCode": "en"
+  } ]
+}

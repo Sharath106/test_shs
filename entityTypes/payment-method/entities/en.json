@@ -1,0 +1,47 @@
+{
+  "entities": [ {
+    "value": "online banking",
+    "synonyms": [ " online ", "bank", "bank account", "bank transfer", "checking", "chequing", "chequing account", "chequing transfer", "online bank", "online banking", "online payments", "telephone banking", "checking account" ],
+    "languageCode": "en"
+  }, {
+    "value": "credit card",
+    "synonyms": [ "american express", "amex", "cc", "credit", "credit card", "creditcard", "debit", "debit card", "master card", "mastercard ", "mc", "visa", "visa debit" ],
+    "languageCode": "en"
+  }, {
+    "value": "phone",
+    "synonyms": [ "call", "cell phone", "cellular phone", "ivr", "mobile", "my cell", "my mobile", "on phone", "over the phone", "phone", "wireless phone" ],
+    "languageCode": "en"
+  }, {
+    "value": "cash",
+    "synonyms": [ "bill with cash", "cash", "in person", "money", "shop", "store" ],
+    "languageCode": "en"
+  }, {
+    "value": "mail",
+    "synonyms": [ "by mail", "check", "cheque", "mail", "mail in" ],
+    "languageCode": "en"
+  }, {
+    "value": "app",
+    "synonyms": [ "app", "application", "my telus app", "my telus application" ],
+    "languageCode": "en"
+  }, {
+    "value": "1",
+    "synonyms": [ "1", "dtmf_digits_1", "one" ],
+    "languageCode": "en"
+  }, {
+    "value": "2",
+    "synonyms": [ "2", "dtmf_digits_2", "two" ],
+    "languageCode": "en"
+  }, {
+    "value": "3",
+    "synonyms": [ "3", "dtmf_digits_3", "three" ],
+    "languageCode": "en"
+  }, {
+    "value": "4",
+    "synonyms": [ "4", "dtmf_digits_4", "four" ],
+    "languageCode": "en"
+  }, {
+    "value": "0",
+    "synonyms": [ "0", "agent", "dtmf_digits_0", "operator", "team member", "zero" ],
+    "languageCode": "en"
+  } ]
+}

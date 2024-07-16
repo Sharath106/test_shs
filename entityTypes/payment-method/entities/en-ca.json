@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "online banking",
+    "synonyms": [ " online ", "bank", "bank account", "bank transfer", "online banking" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "credit card",
+    "synonyms": [ "american express", "amex", "credit", "credit card", "creditcard", "mastercard ", "visa", "visa debit" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "phone",
+    "synonyms": [ "call", "ivr", "on phone", "over the phone", "phone" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "cash",
+    "synonyms": [ "bill with cash", "cash", "in person", "money", "shop", "store" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "mail",
+    "synonyms": [ "by mail", "check", "cheque", "mail", "mail in" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "app",
+    "synonyms": [ "app", "application", "my telus app", "my telus application" ],
+    "languageCode": "en-ca"
+  } ]
+}

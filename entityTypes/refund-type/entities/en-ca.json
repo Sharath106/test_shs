@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "keep",
+    "synonyms": [ "keep", "keep in account" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "refund",
+    "synonyms": [ "refund", "refunded", "refunding" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "transfer",
+    "synonyms": [ "fund transfer", "transfer", "transfer fund" ],
+    "languageCode": "en-ca"
+  } ]
+}

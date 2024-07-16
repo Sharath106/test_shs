@@ -1,0 +1,35 @@
+{
+  "entities": [ {
+    "value": "credit card",
+    "synonyms": [ "American Express", "amex", "Amex", "carte", "carte de credit", "carte de crédit", "cartes", "credit", "crédit", "credit card", "credits", "crédits", "débit", "debit Visa", "débit Visa", "mastercard", "Mastercard", "MasterCard", "visa", "Visa" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "online banking",
+    "synonyms": [ "bancaire", "banque", "Banque", "banque en ligne", "compte bancaire", "Compte bancaire en ligne", "en ligne", "online banking", "services bancaires en ligne" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "pre-authorized",
+    "synonyms": [ "auto", "automatique", "paiement", "paiement automatique", "paiements", "paiements automatiques", "Paiements préautorisés", "payement automatique", "pre-authorized", "pre-autorisation", "pré-autorisation", "pre-autorise", "pré-autorisé", "preautorisation", "préautorisation", "preautorise", "préautorisé" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "missed payment",
+    "synonyms": [ "défaut de paiement", "factures impayées", "paiement manquant" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "late payments",
+    "synonyms": [ "frais de retard", "paiement en retard", "payé en retard", "problèmes de retard de paiement" ],
+    "languageCode": "fr-ca"
+  } ]
+}

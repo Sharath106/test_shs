@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "next bill cycle",
+    "synonyms": [ "next bill cycle", "prochain cycle de facturation", "prochaine facture", "le prochain", "suivant", "le suivant", "date ultérieure", "futur" ],
+    "languageCode": "fr"
+  }, {
+    "value": "today",
+    "synonyms": [ "today", "aujourd'hui", "immédiat", "immédiatement", "à l'heure actuelle", "tout de suite", "maintenant" ],
+    "languageCode": "fr"
+  } ]
+}

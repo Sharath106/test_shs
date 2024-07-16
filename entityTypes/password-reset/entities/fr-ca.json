@@ -1,0 +1,51 @@
+{
+  "entities": [ {
+    "value": "mytelus",
+    "synonyms": [ "appli mon telus", "application mon telus", "compte en ligne", "compte mon telus", "compte telus", "mon appli", "mon telus", "mon TELUS", "mon telus.com", "montelus", "monTELUS", "mytelus", "telus.com" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "email",
+    "synonyms": [ "courriel", "courriel telus", "e mail", "e-mail", "e-mail telus", "email", "email telus", "mail", "messagerie électronique", "messagerie internet", "messagerie Web", "webmail" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "phone",
+    "synonyms": [ "appareil", "cell", "cellulaire", "iphone", "iPhone", "Iphone", "IPhone", "mobile", "phone", "samsung", "telephone", "téléphone" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "pin",
+    "synonyms": [ "nip", "nip de compte", "pin", "pin de compte" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "wifi",
+    "synonyms": [ "internet residentiel", "internet résidentiel", "réseau", "wi fi", "wi-fi", "Wi-Fi", "wifi" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "voicemail",
+    "synonyms": [ "boite vocale", "boîte vocale", "messagerie", "messagerie vocale", "mv", "vm", "voicemail" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2FA",
+    "synonyms": [ "2 etapes", "2 étapes", "A2F", "A2F verification", "A2F vérification ", "authentification a deux facteurs", "authentification à deux facteurs", "authentification en deux etapes", "authentification en deux étapes", "deux etapes", "deux étapes", "verification en 2 etapes", "Vérification en 2 étapes", "verification en deux etapes", "vérification en deux étapes" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "dtmf_digits_0" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "smarthub",
+    "synonyms": [ "internet mobile", "pour terminal intelligent", "smarthub", "terminal intelligent" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3" ],
+    "languageCode": "fr-ca"
+  } ]
+}

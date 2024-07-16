@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "Plan 1 selected",
+    "synonyms": [ "1", "one", "plan 1", "Plan 1 selected" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Plan 2 selected",
+    "synonyms": [ "2", "plan 2", "Plan 2 selected", "two" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Plan 3 selected",
+    "synonyms": [ "3", "plan 3", "Plan 3 selected", "three" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Plan 4 selected",
+    "synonyms": [ "4", "four", "plan 4", "Plan 4 selected" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Plan 5 selected",
+    "synonyms": [ "5", "five", "plan 5", "Plan 5 selected" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Plan 6 selected",
+    "synonyms": [ "6", "plan 6", "Plan 6 selected", "six" ],
+    "languageCode": "en-ca"
+  } ]
+}

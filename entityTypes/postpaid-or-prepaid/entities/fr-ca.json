@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "monthly billed",
+    "synonyms": [ "mensuel", "mensuelle", "postpaye", "postpayé", "service mensuel" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "pay as you go",
+    "synonyms": [ "payez à l'utilisation", "prepaye", "prépayé" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  } ]
+}

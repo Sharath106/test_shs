@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "today",
+    "synonyms": [ "today", "immediate", "immediately", "right now", "right away", "now" ],
+    "languageCode": "en"
+  }, {
+    "value": "next bill cycle",
+    "synonyms": [ "next bill cycle", "next bill", "next one", "next", "the next", "future date", "future" ],
+    "languageCode": "en"
+  } ]
+}

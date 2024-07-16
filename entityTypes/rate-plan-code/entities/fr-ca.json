@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "Plan 1 selected",
+    "synonyms": [ "1", "Plan 1 selected", "premier", "Premier forfait sélectionné", "première", "un", "une" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Plan 2 selected",
+    "synonyms": [ "2", "deux", "deuxième", "Deuxième forfait sélectionné", "deuxième option" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Plan 3 selected",
+    "synonyms": [ "3", "Plan 3 selected", "trois", "troisième", "Troisième option sélectionné" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Plan 4 selected",
+    "synonyms": [ "4", "Plan 4 selected", "quatre", "quatrième" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Plan 5 selected",
+    "synonyms": [ "5", "cinq", "Cinquième option sélectionné", "Plan 5 selected", "cinquième" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Plan 6 selected",
+    "synonyms": [ "Plan 6 selected", "six", "sixième", "Sixième option sélectionné", "6" ],
+    "languageCode": "fr-ca"
+  } ]
+}

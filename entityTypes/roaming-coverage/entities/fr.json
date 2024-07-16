@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "cruise",
+    "synonyms": [ "cruise", "croisière", "bateau de croisière", "itinérance des bateaux de croisière", "bateau", "Option 1", "1" ],
+    "languageCode": "fr"
+  }, {
+    "value": "guide",
+    "synonyms": [ "guide", "guider", "guide d'itinérance", "Option 2", "2" ],
+    "languageCode": "fr"
+  }, {
+    "value": "other",
+    "synonyms": [ "other", "autre", "autre", "d'autres questions", "avez d'autres questions", "option 3", "3" ],
+    "languageCode": "fr"
+  } ]
+}

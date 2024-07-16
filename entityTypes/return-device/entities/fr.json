@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "exchange",
+    "synonyms": [ "exchange", "échanger", "un autre téléphone", "changer de téléphone" ],
+    "languageCode": "fr"
+  }, {
+    "value": "refund",
+    "synonyms": [ "refund", "remboursement", "remboursement", "remboursement", "rembourser" ],
+    "languageCode": "fr"
+  } ]
+}

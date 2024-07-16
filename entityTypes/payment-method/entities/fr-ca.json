@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "cash",
+    "synonyms": [ "boutique", "cash", "de l'argent", "en personne", "especes", "espèces", "facture en comptant", "magasin" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "credit card",
+    "synonyms": [ "American Express", "amex", "carte", "carte de credit", "carte de crédit", "carte de debit", "carte de débit", "crédit", "credit card", "crédits", "debit", "débit", "debit visa", "débit Visa", "MasterCard", "visa" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "mail",
+    "synonyms": [ "cheque", "chèque", "courrier", "mail", "par courrier" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "online banking",
+    "synonyms": [ "bancaire", "Banque", "banque en ligne", "compte bancaire", "en ligne", "online banking", "services bancaires en ligne" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "phone",
+    "synonyms": [ "appareil mobile", "appel", "au telephone", "au téléphone", "cell", "cellulaire", "cellule", "dispositif", "dispositifs", "ivr", "mobile", "mon cell", "par telephone", "par téléphone", "phone", "telephone", "téléphone", "telephone portable", "téléphone portable", "telephones", "téléphones", "telephones portables", "téléphones portables", "portable" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "app",
+    "synonyms": [ "appli", "appli mon telus", "application", "application mon telus", "mon telus" ],
+    "languageCode": "fr-ca"
+  } ]
+}

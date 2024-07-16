@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "refund",
+    "synonyms": [ "refund", "reimburse", "reimbursement", "return" ],
+    "languageCode": "en"
+  }, {
+    "value": "exchange",
+    "synonyms": [ "another phone", "change phone", "exchange" ],
+    "languageCode": "en"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "en"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "en"
+  } ]
+}

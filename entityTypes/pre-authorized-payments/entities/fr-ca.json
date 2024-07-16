@@ -1,0 +1,43 @@
+{
+  "entities": [ {
+    "value": "discontinue",
+    "synonyms": [ "annuler", "arreter", "arrêter", "cesser", "désactiver", "discontinuer", "enlever", "retirer", "supprimer", "terminer" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "multiple payments",
+    "synonyms": [ "de nombreux", "deux", "paiements multiples", "plusieurs", "plusieurs paiements" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "set up",
+    "synonyms": [ "ajouter", "configuration", "configurer", "d'installation", "enregistrer", "inscrire", "instructions de configuration", "Instructions de configuration", "m'inscrire", "mettre en place", "set up" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "update information",
+    "synonyms": [ "changer", "mettre a jour", "mettre à jour", "mettre a jour les informations", "mettre à jour les informations", "mise a jour", "mise à jour", "modification", "modifier" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "9",
+    "synonyms": [ "dtmf_digits_9", "envoyer un message texte", "envoyer un SMS", "envoyer un texto", "lien par message texte", "lien par sms", "lien par texto", "message texte", "sms", "texto" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "agent", "dtmf_digits_0", "membre de l'equipe", "membre de l'équipe", "operateur", "opérateur" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "4",
+    "synonyms": [ "dtmf_digits_4" ],
+    "languageCode": "fr-ca"
+  } ]
+}
