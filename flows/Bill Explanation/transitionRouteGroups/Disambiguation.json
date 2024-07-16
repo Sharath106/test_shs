@@ -1,0 +1,99 @@
+{
+  "name": "d1a025ed-509a-4f83-8574-0035d4092005",
+  "displayName": "Disambiguation",
+  "transitionRoutes": [ {
+    "intent": "supplemental.call_forwarding",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6b1bafa3-b0dd-4031-b79b-e3d41a9c2343"
+  }, {
+    "intent": "supplemental.call_forwarding",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Bien sûr, laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe afin de mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "call_forwarding"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "c7f10a4e-c90d-4e39-9667-532159ecdf83"
+  }, {
+    "intent": "head_intent.taxes",
+    "condition": "$session.params.subscriber_summary_decimals.serviceSummary.serviceCharge.taxAmt != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can see that you have a total charge of $$session.params.subscriber_summary_decimals.serviceSummary.serviceCharge.taxAmt for taxes on your bill." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je peux voir que vous avez une charge totale de $session.params.subscriber_summary_decimals.serviceSummary.service Charge.taxAmt $ pour les taxes sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "07fcc649-fbe6-43c6-a3f6-b0bb78127f77"
+  }, {
+    "intent": "supplemental.upfront_tax_payment",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Along with the upfront cost of the device, the taxes for the total amount of the device are due when ordering." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "TELUS Easy Payment Plan lets you pay a portion of the pre-tax device cost upfront." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "The remaining cost of the device will be paid in 24 equal instalments over a 24-month term while on an Unlimited plan." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "En plus du prix initial de l'appareil, les taxes sur le montant total de l'appareil est dû lors de la commande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Le programme Paiements faciles de TELUS vous permet de payer une partie du montant avant taxes de l'appareil à l'avance." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Le reste du montant de l'appareil sera payé en 24 versements égaux sur une période de 24 mois dans le cadre d'un forfait illimité." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "upfront_tax_payment"
+      }, {
+        "parameter": "route",
+        "value": "easy_payment_balance"
+      }, {
+        "parameter": "bill_explain_easypay",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "edcf3e7e-7a49-4a60-b06d-cc629719d954"
+  } ]
+}

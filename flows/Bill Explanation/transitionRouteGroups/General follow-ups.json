@@ -1,0 +1,324 @@
+{
+  "name": "8d65b2cb-80d9-48ba-af27-7900a11d9c66",
+  "displayName": "General follow-ups",
+  "transitionRoutes": [ {
+    "intent": "supplemental.charges_occurred_when",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You can view your daily usage in your My TELUS app or in your online account." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Vous pouvez consulter votre utilisation quotidienne via votre application Mon TELUS ou dans votre compte en ligne." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "charges_occured_when"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "3bcbc3f0-8fc9-43ff-b937-2f3409cd54bc"
+  }, {
+    "intent": "supplemental.confirm_auto_charge",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You can view or modify your payment method through your My TELUS app or online." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Vous pouvez consulter ou modifier votre méthode de paiement via l'application Mon TELUS ou dans votre compte en ligne." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "confirm_auto_charge"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "1e103f75-7fab-4957-8b96-0b5d7174e92c"
+  }, {
+    "intent": "supplemental.disable_third_party_purchases",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6fb36bcd-1b3e-4f76-a413-e7ce1f6ebcc9"
+  }, {
+    "intent": "supplemental.disable_third_party_purchases",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Bien sûr, laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe afin de mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "disable_third_party_purchases"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "daa69c10-d09a-4067-b49e-f26ed9672749"
+  }, {
+    "intent": "supplemental.explain_easy_payment",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "TELUS Easy Payment Plan lets you pay a portion of the pre-tax device cost upfront." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "The remaining cost of the device will be paid in 24 equal installments over a 24-month term while on an Unlimited plan." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Le programme Paiements faciles de TELUS vous permet de payer d'avance une partie du coût de l'appareil avant les taxes. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Le reste du montant de l'appareil sera payé en 24 versements égaux sur une période de 24 mois, dans le cadre d'un forfait illimité." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "explain_easy_payment"
+      }, {
+        "parameter": "route",
+        "value": "easy_payment_balance"
+      }, {
+        "parameter": "bill_explain_easypay",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "88aa6209-547a-4283-9128-af43c28e52d3"
+  }, {
+    "intent": "supplemental.send_email_confirmation",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I can show you how to verify your billing notification settings." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, je peux vous montrer comment vérifier vos paramètres de notification de facturation." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_notifications"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "cac7ce58-bab5-4291-aa07-6bb49587277e"
+  }, {
+    "intent": "supplemental.transfer_departments",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Bien sûr, laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe afin de mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "transfer_departments"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "last_page",
+        "value": "GTBAS exp acctmgmt"
+      }, {
+        "parameter": "ss_mandatory_intent",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "49628945-edc1-4bc2-8136-74aa7d781adb"
+  }, {
+    "intent": "head_intent.payment_make",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "c1b506d3-1252-40ca-8f84-831ab8120919"
+  }, {
+    "intent": "supplemental.unexpectedly_high",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry to hear your bill is higher than expected. I can help review the details of the charges on the bill. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je suis désolé d'apprendre que votre facture est plus élevée que prévu. Je peux aider à examiner les détails des frais sur la facture." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "unexpectedly_high"
+      } ]
+    },
+    "targetPage": "Bill Compare Checklist",
+    "name": "8b00c076-86fe-42bf-8d03-b6c091522767"
+  }, {
+    "intent": "supplemental.why_additional_charge",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I can help review details of the charges on your invoice. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, je peux vous aider à examiner les détails des frais sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "why_additional_charge"
+      } ]
+    },
+    "targetPage": "Bill Compare Checklist",
+    "name": "28a1ba62-1dbb-423f-9839-fa40ac705569"
+  }, {
+    "intent": "head_intent.bill_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_vague"
+      } ]
+    },
+    "targetFlow": "Bill Vague",
+    "name": "48f54e67-0487-4a7b-beac-0158e14d8941"
+  }, {
+    "intent": "supplemental.waive_charges",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "327a1dde-2bba-42aa-9287-037c6e9e2cb6"
+  }, {
+    "intent": "supplemental.waive_charges",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Ok, laissez-moi vous transférer à un membre de l'équipe pour vous aider.", "Permettez-moi de vous mettre en communication avec un membre de l'équipe pour vous aider davantage." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "waive_charges"
+      }, {
+        "parameter": "route",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "865a53b9-6541-411d-80bd-35863e492e91"
+  }, {
+    "intent": "supplemental.airtime_charges",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I can help review your invoice for airtime charges." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, je peux vous aider à examiner votre facture pour les frais de temps d'antenne." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "airtime_charges"
+      } ]
+    },
+    "targetPage": "Airtime Overage",
+    "name": "94043479-48ca-494e-b884-0e3143615630"
+  }, {
+    "intent": "supplemental.long_distance_charge",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can definitely look at your invoice for these charges." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je peux certainement jeter un coup d'oeil sur votre facture pour ces frais." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "long_distance_charge"
+      } ]
+    },
+    "targetPage": "Long Distance Charges",
+    "name": "8242e8fc-496f-45c1-bafc-6b300f89e48f"
+  }, {
+    "intent": "supplemental.call_text_details",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You can view your current cycle's usage as well as up to 2 months of your previous usage in the My TELUS app.", "You can also view and print up to 18 months of your previous bills online, in PDF format, including a breakdown of your call history." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Vous pouvez voir l'utilisation de votre cycle actuel et jusqu'à 2 mois de votre utilisation précédente dans l'application Mon TELUS.", "Vous pouvez également consulter et imprimer jusqu'à 18 mois de vos factures précédentes en ligne, au format PDF, y compris les détails de votre historique d'appels." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "call_text_details"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "9c721a95-0cea-41ef-a72d-d6b4f5e89b21"
+  } ]
+}

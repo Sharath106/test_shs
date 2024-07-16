@@ -1,0 +1,83 @@
+{
+  "name": "80690e8e-4e3f-4f03-b6fc-f38d2e513bfc",
+  "displayName": "Data",
+  "transitionRoutes": [ {
+    "intent": "supplemental.add_block_data",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sûr, je peux y jeter un coup d'oeil pour vous.", "Laissez-moi y jeter un coup d'oeil pour vous.", "Laissez-moi vérifier cela pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, I can take a look at that for you.", "Let me take a look at that for you.", "Let me look into this for you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "block_data"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "route",
+        "value": "block_data"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "80100670-9762-4643-8d0a-539c53406374"
+  }, {
+    "intent": "supplemental.disable_data",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sûr, je peux regarder cela pour vous.", "Laissez-moi y jeter un coup d'oeil pour vous.", "Laissez-moi vérifier pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, I can take a look at that for you.", "Let me take a look at that for you.", "Let me look into this for you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "disable_data"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "route",
+        "value": "block_data"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "8d41f674-4681-4d08-a6cf-5da2c2544674"
+  }, {
+    "intent": "supplemental.explain_data_usage",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sûr, je peux regarder cela pour vous. ", "D'accord! Laissez-moi y jeter un coup d'oeil pour vous.", "Laissez-moi vérifier cela pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, I can take a look at that for you.", "Let me take a look at that for you.", "Let me look into this for you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "explain_data_usage"
+      }, {
+        "parameter": "route",
+        "value": "what_uses_data"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "0fe7210c-5484-4c8f-bd1c-b3b905421a01"
+  } ]
+}

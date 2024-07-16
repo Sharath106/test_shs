@@ -1,0 +1,299 @@
+{
+  "name": "140826a7-ee79-496c-90d8-1cc525e14242",
+  "displayName": "Agent Handoff Redirect",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_agent_handoff_redirect",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ " Would you like me to connect you to a team member now?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne pense pas avoir compris.", "Je n'ai pas vraiment compris.", "Je ne crois pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Pouvez-vous reformuler votre phrase pour moi?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "5daf007a-35c2-4aa1-a637-8ceac361e7b2"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not sure I got this.", "I still don't quite understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ " Would you like me to connect you to a team member now? For Yes, You can Say Yes or press 1. For No, Say No or Press 2 on your dial pad." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne crois toujours pas avoir compris.", "Je ne comprends toujours pas bien." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Vous pouvez dire ou appuyer sur 1 pour oui ou sur 2 pour non." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "83b60069-2f53-4d30-a5c8-b74012e4c71f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "996c99dc-4ed3-4ec3-bf74-325d57835e17"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ " Would you like me to connect you to a team member now?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne pense pas avoir compris. ", "Je n’ai pas vraiment compris.", "Je ne crois pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pouvez-vous reformuler votre phrase? ", "Pouvez-vous essayer de reformuler votre question?", "Pouvez-vous reformuler cela pour moi?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "8b160e1b-a972-4f10-b941-84d966b0f599"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not sure I got this.", "I still don't quite understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ " Would you like me to connect you to a team member now? For Yes, You can Say Yes or press 1. For No, Say No or Press 2 on your dial pad." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne pense toujours pas avoir compris.", "Je ne comprends toujours pas bien." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Vous pouvez appuyer sur la touche 1 de votre clavier pour oui et 2 pour non." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "782d721c-bd9b-4afb-8bdc-c5d5bfb78648"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "8b9de1bc-13aa-43d3-8ded-fdbf97eae427"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 10
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Would you like me to connect you to a team member now?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Voulez-vous parler avec un membre de l'équipe?" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_return_page",
+      "value": "Agent Handoff Redirect"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sûr, laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "c66d4bf5-1fdc-48ad-b2de-7f1230b9e1db"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Is Multiple Lines",
+    "name": "fcb6ca1c-cf6c-493c-83f4-558e802a3656"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "f14678b6-b812-4a4b-9283-a397ea055147"
+  }, {
+    "condition": "$session.params.dtmf_agent_handoff_redirect = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sûr, laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "dbd5336f-5ba8-4e69-8306-fa84d910be93"
+  }, {
+    "condition": "$session.params.retrycnt_agent_handoff_redirect = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_agent_handoff_redirect",
+        "value": 0
+      } ]
+    },
+    "name": "35a35740-a882-44f4-9edf-86aaf57869e0"
+  }, {
+    "condition": "$session.params.dtmf_agent_handoff_redirect = \"2\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Is Multiple Lines",
+    "name": "f86b3635-79f9-4c1b-af25-c2eef262dd7e"
+  }, {
+    "condition": "$session.params.retrycnt_agent_handoff_redirect \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_agent_handoff_redirect",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "e5a22828-b63c-4ad9-9358-d7e32d056464"
+  }, {
+    "condition": "$session.params.dtmf_agent_handoff_redirect = 3 OR $session.params.dtmf_agent_handoff_redirect = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_agent_handoff_redirect",
+        "value": null
+      }, {
+        "parameter": "retrycnt_agent_handoff_redirec",
+        "value": "$sys.func.ADD($session.params.retrycnt_agent_handoff_redirec,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "f9878600-b2c6-4e83-bffc-49aab99c9e46"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_agent_handoff_redirect",
+        "value": "$sys.func.ADD($session.params.retrycnt_agent_handoff_redirect ,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.retrycnt_agent_handoff_redirect = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.retrycnt_agent_handoff_redirect = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "cc26d2cb-587c-4c73-ba80-cf5cc88f3919"
+  } ]
+}

@@ -1,0 +1,424 @@
+{
+  "name": "a35e8655-00d0-4148-b589-844ae731fcfe",
+  "displayName": "Credit / Waive Fee / Discount",
+  "transitionRoutes": [ {
+    "intent": "supplemental.apply_discount",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "2ae2d128-8dca-495c-9ffd-d63d7d1eb039"
+  }, {
+    "intent": "supplemental.apply_discount",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Bien sûr, laissez-moi vous mettre en contact avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe afin de mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "apply_discount"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "805679d4-a83e-4fa5-8f58-f809b65e4d8a"
+  }, {
+    "intent": "supplemental.bill_adjustments",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If a credit has been applied and it doesn't reflect on your current balance, it should appear on the next invoice on $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleEndDt, \"MMMM dd, yyyy\", \"en\").", "Your credit would be applied on your next invoice on $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleEndDt, \"MMMM dd, yyyy\", \"en\"), if it doesn't immediately reflect on your current balance." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Si un crédit a été appliqué et ne s'affiche pas sur votre solde actuel, il devrait apparaître sur votre prochaine facture du $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleEndDt, \"dd MMMM yyyy\", \"fr-ca\").", "Votre crédit devrait s'appliquer sur votre prochaine facture du $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleEndDt, \"dd MMMM yyyy\", \"fr-ca\"), s'il ne s'affiche pas immédiatement sur votre solde actuel." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "bill_adjustments"
+      } ]
+    },
+    "targetPage": "Is Multiple Lines",
+    "name": "e51540d5-9d4e-41d7-8b2f-1da67f283fab"
+  }, {
+    "intent": "supplemental.confirm_discount",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "b408c2a3-ea3b-4945-b036-76caa2a04c85"
+  }, {
+    "intent": "supplemental.confirm_discount",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Bien sûr, laissez-moi vous mettre en contact avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "confirm_discount"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "5c190283-56d9-4717-83b4-f405ac2a8199"
+  }, {
+    "intent": "supplemental.credit_amount",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "8fac42b0-35da-42ee-a9ec-57048e5a71d6"
+  }, {
+    "intent": "supplemental.credit_amount",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en contact avec un membre de l'équipe pour plus d'assistance.", "Bien sûr, laissez-moi vous mettre en contact avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe afin de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "credit_amount"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9e1b2e00-98f8-4ab9-8526-88930a25183c"
+  }, {
+    "intent": "supplemental.credit_receive",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9e59a4cb-5be2-451e-84b0-c961326ae9a5"
+  }, {
+    "intent": "supplemental.credit_receive",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Bien sûr, laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe afin de mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "credit_receive"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "05668c12-70c5-4038-a41d-82d8c44fa5b4"
+  }, {
+    "intent": "supplemental.discount_eligibility",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "a70aff01-0ae8-4f34-bfaa-4cec9d0bb740"
+  }, {
+    "intent": "supplemental.discount_eligibility",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Bien sûr, laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe afin de mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "discount_eligibility"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "4b9c18f0-a989-48b0-97e9-f723396e5343"
+  }, {
+    "intent": "supplemental.missing_credit",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "bf436094-07ca-4b29-bfcc-b8d46a7469ff"
+  }, {
+    "intent": "supplemental.missing_credit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I will need to transfer you to a team member to confirm the status of your credit. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous mettre en communication avec un membre de l'équipe pour confirmer le statut de votre crédit." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "missing_credit"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6b15f15d-2b0d-4e24-bcc8-85aef523a031"
+  }, {
+    "intent": "supplemental.missing_discount",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e4a9f755-46a7-488c-82d6-31f916b5238b"
+  }, {
+    "intent": "supplemental.missing_discount",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I will need to transfer you to a team member to confirm the status of your discount. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous mettre en communication avec un membre de l'équipe pour confirmer le statut de votre rabais." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "missing_discount"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "20116088-aaba-4b08-9865-e58d17b31bef"
+  }, {
+    "intent": "supplemental.reflected_where",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Depending on when it was applied, credits can typically be found in the overview area of your online My TELUS app or online." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you don't see the credit on your latest invoice, it may reflect on the next one." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Dépendamment du moment où les crédits ont été appliqués, vous pouvez généralement les trouver dans la section Aperçu de votre application Mon TELUS ou en ligne." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous ne voyez pas le crédit sur votre dernière facture, il devrait apparaître sur la prochaine." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "reflected_where"
+      } ]
+    },
+    "targetPage": "Is Multiple Lines",
+    "name": "3e5b11d0-731d-4c8b-8d00-46499d16e6b8"
+  }, {
+    "intent": "supplemental.explain_credit",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "137cd166-1563-44d9-b7e1-fc9246ae2338"
+  }, {
+    "intent": "supplemental.explain_credit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I will need to transfer you to a team member to confirm the details of your credit." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous mettre en communication avec un membre de l'équipe pour confirmer les détails de votre crédit." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "explain_credit"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "2071e215-2f82-4e1a-8a2d-8314570b3d5d"
+  }, {
+    "intent": "supplemental.request_credit",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "517b9984-1e52-43db-8415-5ced9d490e53"
+  }, {
+    "intent": "supplemental.request_credit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe afin de mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "request_credit"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "3db54d63-dfb1-417e-8bea-617759e125f6"
+  }, {
+    "intent": "supplemental.see_credit_when",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If a credit has been applied and it doesn't reflect on your current balance, it should appear on the next invoice on $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleEndDt, \"MMMM dd, yyyy\", \"en\").", "Your credit would be applied on your next invoice on $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleEndDt, \"MMMM dd, yyyy\", \"en\"), if it doesn't immediately reflect on your current balance." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Si un crédit a été appliqué et ne s'affiche pas sur votre solde actuel, il devrait apparaître sur votre prochaine facture du $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleEndDt, \"dd MMMM yyyy\", \"fr-ca\"). ", "Votre crédit devrait s'appliquer sur votre prochaine facture du $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleEndDt, \"dd MMMM yyyy\", \"fr-ca\"), s'il ne s'affiche pas immédiatement sur votre solde actuel." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "see_credit_when"
+      } ]
+    },
+    "targetPage": "Is Multiple Lines",
+    "name": "4d6d39e8-d47a-48b8-b61a-04d4698b29cc"
+  }, {
+    "intent": "supplemental.waive_charges",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "8c38460f-6415-4990-b29d-3bebded5663d"
+  }, {
+    "intent": "supplemental.waive_charges",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Bien sûr, laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe afin de mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "waive_charges"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e90a8847-6e3d-440e-acf1-8a0c2f4cf4a6"
+  }, {
+    "intent": "supplemental.waive_connection_fees",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "768a7f9e-1345-4311-8934-c0abc266b833"
+  }, {
+    "intent": "supplemental.waive_connection_fees",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe afin de mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "waive_connection_fees"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "f78e87ae-f4a0-4e2b-b33b-3b749cc49e12"
+  } ]
+}

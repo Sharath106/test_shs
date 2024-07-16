@@ -1,0 +1,148 @@
+{
+  "name": "60540ff7-bb2b-4a98-b00f-3d47b19df86f",
+  "displayName": "Monthly Charges",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_charge_displayed",
+      "value": "monthly_charges"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.subscriber_summary_decimals.serviceSummary.serviceCharge.monthlyChargeItemList != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "monthly_chargeItemList",
+        "value": "$sys.func.IDENTITY($session.params.subscriber_summary_decimals.serviceSummary.serviceCharge.monthlyChargeItemList)"
+      } ]
+    },
+    "name": "4eb77cee-0c41-47f4-aaf6-ca0a880210bf"
+  }, {
+    "condition": "$sys.func.COUNT($session.params.monthly_chargeItemList) = 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "current_plan"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "b9ab3f96-cd1c-4e1e-8ab0-4e72544ce564"
+  }, {
+    "condition": "$sys.func.COUNT($session.params.monthly_chargeItemList) \u003e= 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can see that you have a monthly charge of " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je vois que vous avez des frais mensuels de" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "b3ce07e8-0698-4569-be25-8227b03b0f03"
+  }, {
+    "condition": "$session.params.monthly_chargeItemList[0] != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”x-slow”\u003e$$session.params.monthly_chargeItemList[0].chargeItemAmtTxt for $session.params.monthly_chargeItemList[0].chargeItemDescriptionTxt on your invoice.\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=\"x-slow\"\u003eJe vois que vous avez des frais mensuels de $$session.params.monthly_chargeItemList[0].chargeItemAmtTxt pour $session.params.monthly_chargeItemList[0].chargeItemDescriptionTxt sur votre facture .\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "8b680903-ad50-42a4-b896-57eb98955894"
+  }, {
+    "condition": "$session.params.monthly_chargeItemList[1] != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”x-slow”\u003e$$session.params.monthly_chargeItemList[1].chargeItemAmtTxt for $session.params.monthly_chargeItemList[1].chargeItemDescriptionTxt \u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=\"x-slow\"\u003eJe vois que vous avez des frais mensuels de $$session.params.monthly_chargeItemList[0].chargeItemAmtTxt pour $session.params.monthly_chargeItemList[0].chargeItemDescriptionTxt \u003cbreak time=\"5s\"/\u003e, $$session.params.monthly_chargeItemList[1].chargeItemAmtTxt pour $session. params.monthly_chargeItemList[1].chargeItemDescriptionTxt \u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "66e992bf-4675-446a-90d3-336faad0306c"
+  }, {
+    "condition": "$session.params.monthly_chargeItemList[2] != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”x-slow”\u003e$$session.params.monthly_chargeItemList[2].chargeItemAmtTxt for $session.params.monthly_chargeItemList[2].chargeItemDescriptionTxt. \u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eJe vois que vous avez des frais mensuels de \u003cprosody rate=”x-slow”\u003e$$session.params.monthly_chargeItemList[0].chargeItemAmtTxt for $session.params.monthly_chargeItemList[0].chargeItemDescriptionTxt , \u003c break time=\"5s\"/\u003e, $$session.params.monthly_chargeItemList[1].chargeItemAmtTxt pour $session.params.monthly_chargeItemList[1].chargeItemDescriptionTxt , \u003cbreak time=\"5s\"/\u003e, $$session.params. month_chargeItemList[2].chargeItemAmtTxt pour $session.params.monthly_chargeItemList[2].chargeItemDescriptionTxt. \u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "e5d14707-8e5f-486c-8343-93110deef4f0"
+  }, {
+    "condition": "$session.params.monthly_chargeItemList[3] != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.monthly_chargeItemList[3].chargeItemAmtTxt for $session.params.monthly_chargeItemList[3].chargeItemDescriptionTxt . \u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eJe vois que vous avez des frais mensuels de \u003cprosody rate=”slow”\u003e$$session.params.monthly_chargeItemList[0].chargeItemAmtTxt for $session.params.monthly_chargeItemList[0].chargeItemDescriptionTxt ,\u003cbreak time= \"5s\"/\u003e , $$session.params.monthly_chargeItemList[1].chargeItemAmtTxt pour $session.params.monthly_chargeItemList[1].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e , $$session.params.monthly_chargeItemList[2 ].chargeItemAmtTxt pour $session.params.monthly_chargeItemList[2].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e , $$session.params.monthly_chargeItemList[3].chargeItemAmtTxt pour $session.params.monthly_chargeItemList[3].chargeItemDescriptionTxt . \u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "6c5636d9-4730-4a7f-8e54-bb48ef6ca963"
+  }, {
+    "condition": "$session.params.monthly_chargeItemList[4] != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”x-slow”\u003e$$session.params.monthly_chargeItemList[4].chargeItemAmtTxt for $session.params.monthly_chargeItemList[4].chargeItemDescriptionTxt .\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eJe vois que vous avez des frais mensuels de \u003cprosody rate=”x-slow”\u003e$$session.params.monthly_chargeItemList[0].chargeItemAmtTxt for $session.params.monthly_chargeItemList[0].chargeItemDescriptionTxt , \u003cbreak time=\"5s\"/\u003e, $$session.params.monthly_chargeItemList[1].chargeItemAmtTxt pour $session.params.monthly_chargeItemList[1].chargeItemDescriptionTxt , \u003cbreak time=\"5s\"/\u003e, $$session.params.monthly_chargeItemList [2].chargeItemAmtTxt pour $session.params.monthly_chargeItemList[2].chargeItemDescriptionTxt , \u003cbreak time=\"5s\"/\u003e, $$session.params.monthly_chargeItemList[3].chargeItemAmtTxt pour $session.params.monthly_chargeItemList[3] .chargeItemDescriptionTxt , \u003cbreak time=\"5s\"/\u003e, $$session.params.monthly_chargeItemList[4].chargeItemAmtTxt for $session.params.monthly_chargeItemList[4].chargeItemDescriptionTxt .\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "69d7fd1f-50e3-46fb-ae67-3dc0bce48d99"
+  }, {
+    "condition": "$sys.func.COUNT($session.params.monthly_chargeItemList) \u003e= 6",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Monthly Charges_2",
+    "name": "1e8f3e10-8a2f-4519-8d60-d7e5a3b63501"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Unable to retrieve information of your monthly charges." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "770bec02-46da-4255-ba77-ca70bada113f"
+  } ]
+}

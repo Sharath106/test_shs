@@ -1,0 +1,265 @@
+{
+  "name": "aa9b1752-a80a-43e1-b461-9ab6a50495bf",
+  "displayName": "Filter Bill",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Bill explain",
+    "tag": "get_bill_info"
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = false AND $session.params.error_retry != 1",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": 1
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "0bbfa6eb-9afd-4550-9928-5ec70806c9b4"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      }, {
+        "parameter": "route",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "d674e7c7-69fd-458d-8782-5593f0f13a5f"
+  }, {
+    "condition": "($session.params.number_of_bills = 0 OR $session.params.number_of_bills = null) AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm unable to retrieve the information regarding your invoices." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I can transfer you to a team member to review your invoice." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "select_current_bill"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "22843050-5910-4bd0-af61-f6438563225d"
+  }, {
+    "condition": "$session.params.number_of_bills = 0 OR $session.params.number_of_bills = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm unable to retrieve the information regarding your invoices." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I can transfer you to a team member to review your invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je n'arrive pas à récupérer les informations concernant vos factures." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je peux vous transférer à un membre de l'équipe pour vérifier votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ss_mandatory_intent",
+        "value": null
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetFlow": "Universal handoff",
+    "name": "72f3ab35-e0c4-4d84-862c-664bc7f54fc1"
+  }, {
+    "condition": "$session.params.charge_amount != null",
+    "triggerFulfillment": {
+      "webhook": "Bill explain",
+      "tag": "selected_bill",
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": "0"
+      } ]
+    },
+    "targetPage": "Charge By Amount",
+    "name": "917870b2-1991-4192-afa1-fd43989dcd65"
+  }, {
+    "condition": "$session.params.number_of_bills = 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your latest bill was issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"MMMM dd, yyyy\", \"en\")." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Votre dernière facture a été émise le $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"dd MMMM YYYY\", \"fr-ca\")." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "first_bill"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetFlow": "Billing",
+    "name": "6f072100-89e4-4b38-b3f3-9eb6efd3d437"
+  }, {
+    "condition": "$session.params.number_of_bills \u003e 1 AND $session.params.compare_check = null",
+    "triggerFulfillment": {
+      "webhook": "Bill explain",
+      "tag": "selected_bill",
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": 0
+      }, {
+        "parameter": "compare_charge_flag",
+        "value": false
+      }, {
+        "parameter": "charges_count",
+        "value": 0
+      } ]
+    },
+    "targetPage": "Compare List",
+    "name": "1402bd66-ddd4-4c58-8ccc-bb1e264a97fa"
+  }, {
+    "condition": "$session.params.number_of_bills = 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": "0"
+      } ]
+    },
+    "targetPage": "Fetch Bill Details",
+    "name": "97d5e377-ce54-47a5-a425-d6d675e65009"
+  }, {
+    "condition": "$session.params.number_of_bills = 3",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Select Current Bill",
+    "name": "e58cb0d1-ef9c-437d-b621-30ab748e7c6b"
+  }, {
+    "condition": "$session.params.number_of_bills \u003e= 4",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To view invoices older than 3 months, please go to your online My Telus account or the My Telus app." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pour consulter les factures de plus de 3 mois, veuillez vous rendre sur votre compte TELUS en ligne ou dans l'application mobile TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Select Current Bill",
+    "name": "4db53ef8-19d6-4948-a8fd-5556d0f6f8f8"
+  } ],
+  "eventHandlers": [ {
+    "targetFlow": "Billing",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_explanation"
+      } ]
+    },
+    "name": "b2b9f75c-5ae4-4bb4-b30c-afddbfed1a3b"
+  }, {
+    "targetFlow": "Billing",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_explanation"
+      } ]
+    },
+    "name": "ee97e0ed-eb37-4c54-8146-df42d52e5015"
+  } ]
+}

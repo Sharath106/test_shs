@@ -1,0 +1,333 @@
+{
+  "name": "550415f8-a7ad-41e4-a6fa-dce327103c00",
+  "displayName": "Anything Else",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Avez-vous d'autres questions concernant votre facture de mobilité?", "En quoi d'autre puis-je vous aider?", "Puis-je vous assister avec autre chose?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Do you have any other questions about your mobility invoice?", "Is there anything else I can help you with?", "Can I assist you with anything else?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "is_via_anything_else",
+      "value": true
+    }, {
+      "parameter": "bill_difference_reason",
+      "value": null
+    }, {
+      "parameter": "last_page",
+      "value": "billexp anything else"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez me poser une question par rapport à votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please ask me a question about your invoice." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "5b7eb4f4-8b29-4a19-9501-fd9f44ab96da"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super. Merci d'avoir appelé Telus. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Passez une bonne journée" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great! Thank you for calling Telus. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Have a great day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "f43d013d-25dd-4035-b03f-3d422fd188ac"
+  }, {
+    "intent": "small_talk.no_more_questions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Merci d'avoir appelé TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Passez une bonne journée!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great! Thanks for calling TELUS." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Have a great day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "15729a35-7c6e-45b7-9ae8-dee4083eb038"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Je vais vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bill_period_select",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "5d2d01bf-bccc-4f8b-ba54-cbe917e68ca8"
+  }, {
+    "intent": "supplemental.check_another_bill",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "bill_period_select",
+        "value": null
+      }, {
+        "parameter": "bill_period",
+        "value": null
+      } ]
+    },
+    "targetPage": "Select Current Bill",
+    "name": "61689c19-d2aa-49db-9d93-be5c43da82d4"
+  }, {
+    "intent": "head_intent.payment_arrangements",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "91c93820-7817-49ec-8f5e-76549c448a22"
+  }, {
+    "intent": "head_intent.payment_made",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_made"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "831ae824-4569-4623-aeae-9f733f9aab21"
+  }, {
+    "intent": "head_intent.payment_make",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "db6cf4c6-7354-4f9a-9c9e-31636300c046"
+  }, {
+    "intent": "head_intent.preauthorized_payment_setup",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "preauth_payment"
+      }, {
+        "parameter": "payment_method_action",
+        "value": "add"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "9dad44a9-daa6-4e43-a2c0-478707f11e78"
+  }, {
+    "intent": "head_intent.bill_amount_due",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_amount_due"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "from_page",
+        "value": "anything_else"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "5bf9929b-1284-4fbb-b5db-08b8dba29594"
+  }, {
+    "intent": "supplemental.breakdown_bill",
+    "condition": "$session.params.subscriber_summary_decimals.serviceSummary.serviceCharge != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill Breakdown",
+    "name": "b94f6917-b5a0-4092-9ee6-85e470497bca"
+  }, {
+    "intent": "small_talk.repeat",
+    "condition": "$session.params.last_return_page = \"bill_breakdown\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_bill_breakdown_displayed",
+        "value": null
+      }, {
+        "parameter": "count_intl_charges",
+        "value": null
+      } ]
+    },
+    "targetPage": "Bill Breakdown",
+    "name": "74b1170d-57c5-4ad3-aa32-35c60b6b142e"
+  }, {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "7b5a54cf-dec8-4bdc-bd8f-9aa33a07f560"
+  }, {
+    "condition": "$session.params.retrycnt_anything_el = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_anything_el",
+        "value": 0
+      } ]
+    },
+    "name": "64ff7872-aa2c-478f-beb2-53bbe369c467"
+  }, {
+    "condition": "$session.params.retrycnt_anything_el \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_anything_el",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "ad40c959-4757-4548-994c-6875796f8125"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je suis désolé, je ne vous ai pas entendu.", "Désolé, je n'ai pas entendu ça.", "Désolé, je n'ai pas compris ça." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry, I didn't hear you.", "Sorry, I didn't hear that.", "Sorry, I didn't catch that." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "be2078d8-21b0-4ebe-b177-b1451baf2e3e"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je n'ai toujours pas compris.", "Je ne vous entends toujours pas.", "Je n'ai toujours pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I still didn't get that.", "I still don't hear you.", "I still didn't catch that." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e2e24f99-bf5f-4f55-90fd-92e3bcbfd51a"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "e2a0bc49-093d-4d86-a16a-6535d1f6d894"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je n'ai pas compris.", "Désolé, je ne pense pas avoir bien compris.", "Désolé, je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Avez-vous d'autres questions concernant votre facture de mobilité?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you have any other questions about your mobility invoice?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5e0f2318-3ab7-45c5-bec1-050237a2aa42"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne suis toujours pas sûr d'avoir compris. Recommençons, pouvez-vous essayer de reformuler encore une fois ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm still not sure I've got this. Let's start over, can you try rephrasing one more time?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "18bbe0d0-18d7-432d-90fa-db789dd0a3d6"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "0dce9fb5-79e0-41b8-91c1-b3c9304dee49"
+  } ],
+  "transitionRouteGroups": [ "Bill Balance", "Credit / Waive Fee / Discount", "Data", "Feature added", "General follow-ups", "Main / All reasons", "Payment overdue", "AAM Plans Available", "Small Talk", "Charges Details", "Disambiguation" ]
+}

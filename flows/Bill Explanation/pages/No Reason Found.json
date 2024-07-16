@@ -1,0 +1,54 @@
+{
+  "name": "b30fb585-3b2f-4fdc-a0dd-dc8c5dcc8eb5",
+  "displayName": "No Reason Found",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Je n'ai pas trouvé d'autres frais supplémentaires sur votre facture.", "Je n'ai pas été capable de trouver autres frais supplémentaire sur cette facture." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Il semble que je n'ai pas pu récupérer plus de détails sur votre facture.", "Souhaitez-vous parler à un agent?" ]
+      },
+      "languageCode": "fr"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "bill_compare_reason",
+      "value": "no_reason_found"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.reverse_lookup_mapped = false",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "It looks like I wasn't able to find any other additional charges on your invoice." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "reverse_lookup_mapped",
+        "value": false
+      } ]
+    },
+    "targetPage": "Is Multiple Lines",
+    "name": "65659f18-9300-44e8-a9c0-4f36e557fc3a"
+  } ],
+  "transitionRouteGroups": [ "General follow-ups" ]
+}

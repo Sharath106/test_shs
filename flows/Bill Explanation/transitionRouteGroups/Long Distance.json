@@ -1,0 +1,26 @@
+{
+  "name": "96c10ea3-6e40-4d6e-9d05-a6cbfdf701d1",
+  "displayName": "Long Distance",
+  "transitionRoutes": [ {
+    "intent": "supplemental.long_distance_charge",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je peux certainement vérifier votre facture pour ces frais. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can definitely look at your invoice for these charges." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "long_distance_charge"
+      } ]
+    },
+    "targetPage": "Long Distance Charges",
+    "name": "129c3572-aef5-4c43-948c-16ab9e6f5685"
+  } ]
+}

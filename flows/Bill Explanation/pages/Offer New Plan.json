@@ -1,0 +1,814 @@
+{
+  "name": "b0f74827-a7b3-48ef-aa63-89416c7d14bd",
+  "displayName": "Offer New Plan",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_offer_new_plan",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je ne pense pas avoir compris.", "Je n'ai pas vraiment compris.", "Je ne crois pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Pouvez-vous reformuler votre phrase pour moi?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you mind rephrasing?", "Can you try to rephrase your question? ", "Can you reword that for me?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b0cc4f7e-ab93-4a76-9f37-263734b0bb40"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je ne crois toujours pas avoir compris.", "Je ne comprends toujours pas bien." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Vous pouvez dire ou appuyer sur 1 pour oui ou sur 2 pour non." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm still not sure I got this.", "I still don't quite understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "You can type 1 for Yes and 2 for No on your dial pad." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "56305bf9-c274-499a-9258-5caf80616ffb"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "d8317c90-d650-4386-9f95-ac13a0acee68"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            } ],
+            "conditionalCases": [ {
+              "cases": [ {
+                "condition": "$session.params.last_ci = \"reduction_options_bill\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Aimeriez-vous vérifier pour un forfait moins cher maintenant?" ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "Would you like to look for a cheaper plan now?" ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.bill_compare_reason = \"data_overage\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour éviter les frais de dépassement de données à l’avenir, aimeriez-vous que je trouve un forfait qui répondra mieux à vos besoins?" ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To avoid data overage in the future, would you like me to look for a plan that would better suit your         needs?" ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.bill_compare_reason = \"airtime_overage\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour éviter les frais de dépassement du temps d’antenne à l’avenir, aimeriez-vous que je trouve un forfait qui répondra mieux à vos besoins?" ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To avoid airtime overage in the future, would you like me to look for a plan that would better suit your       needs?" ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.bill_compare_reason = \"long_distance_charges\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour éviter les frais d’interurbain au Canada à l’avenir, aimeriez-vous que je trouve un forfait qui répondra mieux à vos besoins?" ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To avoid Canadian long distance charges in the future, would you like me to look for a plan that would         better suit your needs?" ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.bill_compare_reason = \"international_charges\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour éviter les frais d’interurbain à l'international, aimeriez-vous que je trouve un forfait qui répondra mieux à vos besoins?" ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To avoid international long distance charges in the future, would you like me to look for a plan that         would better suit your needs?" ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Aimeriez-vous trouver un forfait qui répondra mieux à vos besoins?" ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "Would you like to look for a plan that would better suit your needs?" ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              } ]
+            } ]
+          },
+          "name": "4000058d-394c-4b7d-af37-94b788abf1df"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            } ],
+            "conditionalCases": [ {
+              "cases": [ {
+                "condition": "$session.params.last_ci = \"reduction_options_bill\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour connaître les forfaits moins dispendieux, appuyez sur le 1, pour dire non, appuyez sur le 2." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To look for cheaper plans press 1, to say no, press 2." ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.bill_compare_reason = \"data_overage\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour connaître les forfaits de données, appuyez sur le 1, pour dire non, appuyez sur le 2." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To look for data plans press 1, to say no, press 2." ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.bill_compare_reason = \"airtime_overage\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour connaître les forfaits de temps d’antenne, appuyez sur le 1, pour dire non, appuyez sur le 2." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To look for airtime plans press 1, to say no, press 2." ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.bill_compare_reason = \"long_distance_charges\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour connaître les forfaits interurbains au Canada, appuyez sur le 1, pour dire non, appuyez sur le 2." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To look for Canadian long distance plans press 1, to say no, press 2." ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.bill_compare_reason = \"international_charges\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour connaître les forfaits interurbains à l’international, appuyez sur le 1, pour dire non, appuyez sur le 2." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To look for international long distance plans press 1, to say no, press 2." ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour connaître les forfaits qui conviendraient le mieux à vos besoins, appuyez sur le 1, pour dire non, appuyez sur le 2." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To look for suitable plans press 1, to say no, press 2." ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              } ]
+            } ]
+          },
+          "name": "6ab95350-3528-4f92-9996-864fddb09d4c"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "6d23a547-509e-4ea0-9225-bad2f29c2d21"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 10
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "offer new plan"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.last_ci = \"reduction_options_bill\"",
+        "caseContent": [ {
+          "additionalCases": {
+            "cases": [ {
+              "condition": "$session.params.retrycnt_offer_new_plan = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour connaître les forfaits moins dispendieux, dites ou appuyez sur 1, sinon dites ou appuyez sur 2." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To look for cheaper plans press 1, to say no, press 2." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Aimeriez-vous connaître les forfaits moins dispendieux maintenant?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Would you like to look for a cheaper plan now?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          }
+        } ]
+      }, {
+        "condition": "$session.params.bill_compare_reason = \"data_overage\"",
+        "caseContent": [ {
+          "additionalCases": {
+            "cases": [ {
+              "condition": "$session.params.retrycnt_offer_new_plan = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour connaître les forfaits de données, dites ou appuyez sur 1, sinon dites ou appuyez sur 2." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To look for data plans press 1, to say no, press 2." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour éviter les frais de dépassement de données à l'avenir, voudriez-vous que je regarde pour un forfait qui répondrait mieux à vos besoins?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To avoid data overedge in the future, would you like me to look for a plan that would better suit your         needs?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          }
+        } ]
+      }, {
+        "condition": "$session.params.bill_compare_reason = \"airtime_overage\"",
+        "caseContent": [ {
+          "additionalCases": {
+            "cases": [ {
+              "condition": "$session.params.retrycnt_offer_new_plan = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour connaître les forfaits d'appels, dites ou appuyez sur 1, sinon dites ou appuyez sur 2." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To look for airtime plans press 1, to say no, press 2." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour éviter les frais de temps d'antenne à l'avenir, voudriez-vous que je regarde pour un forfait qui répondrait mieux à vos besoins?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To avoid airtime overedge in the future, would you like me to look for a plan that would better suit your       needs?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          }
+        } ]
+      }, {
+        "condition": "$session.params.bill_compare_reason = \"long_distance_charges\"",
+        "caseContent": [ {
+          "additionalCases": {
+            "cases": [ {
+              "condition": "$session.params.retrycnt_offer_new_plan = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour connaître les forfaits avec interurbains canadiens, dites ou appuyez sur 1, sinon dites ou appuyez sur 2." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To look for Canadian long distance plans press 1, to say no, press 2." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour éviter les frais interurbains canadiens à l'avenir, voudriez-vous que je regarde pour un forfait qui répondrait mieux à vos besoins?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To avoid Canadian long distance charges in the future, would you like me to look for a plan that would         better suit your needs?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          }
+        } ]
+      }, {
+        "condition": "$session.params.bill_compare_reason = \"international_charges\"",
+        "caseContent": [ {
+          "additionalCases": {
+            "cases": [ {
+              "condition": "$session.params.retrycnt_offer_new_plan = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour connaître les forfaits avec interurbains internationaux, dites ou appuyez sur 1, sinon dites ou appuyez sur 2." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To look for international long distance plans press 1, to say no, press 2." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour éviter les frais interurbains internationaux à l'avenir, voudriez-vous que je regarde pour un forfait qui répondrait mieux à vos besoins?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To avoid international long distance charges in the future, would you like me to look for a plan that         would better suit your needs?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "additionalCases": {
+            "cases": [ {
+              "condition": "$session.params.retrycnt_offer_new_plan = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour connaître les forfaits qui répondraient mieux à vos besoins, dites ou appuyez sur 1, sinon appuyez sur 2." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To look for suitable plans press 1, to say no, press 2." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Aimeriez-vous regarder pour un forfait qui répondrait mieux à vos besoins?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Would you like to look for a plan that would better suit your needs?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "route",
+        "value": "available_plans"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "b3715f44-fee7-4734-a87f-55e649ecde9d"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "19f91834-f30d-4323-89b2-4004ad312a0b"
+  }, {
+    "intent": "head_intent.bill_amount_due",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_amount_due"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "from_page",
+        "value": "offer_new_plan"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "402b9b50-b67d-4998-80f9-aa0273c5fbe8"
+  }, {
+    "intent": "supplemental.check_another_bill",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "bill_period_select",
+        "value": null
+      }, {
+        "parameter": "bill_period",
+        "value": null
+      } ]
+    },
+    "targetPage": "Select Current Bill",
+    "name": "de3d529a-de4c-4896-9993-100f9fec2155"
+  }, {
+    "intent": "small_talk.repeat",
+    "condition": "$session.params.last_return_page = \"bill_breakdown\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_bill_breakdown_displayed",
+        "value": null
+      }, {
+        "parameter": "count_intl_charges",
+        "value": null
+      } ]
+    },
+    "targetPage": "Bill Breakdown",
+    "name": "e8b344c5-c77d-4be9-ad86-a3f737828401"
+  }, {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "969fb1a3-a294-4872-b948-8eaa0f0322ce"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sur, il me fera plaisir de vous mettre en contact avec un membre de l’équipe.", "Permettez-moi de vous transférer à un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Permettez-moi de vous mettre en contact avec un membre de l'équipe pour vous aider davantage." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "c72593e2-85e9-4faa-a028-d4ca82892169"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.agent_attempt = 0 OR $session.params.agent_attempt = 1 OR $session.params.agent_attempt = 2) AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "agent_attempt",
+        "value": "$sys.func.ADD($session.params.agent_attempt, 1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.agent_attempt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je comprends votre inquiétude, et je suis là pour vous aider. Étant donné que le temps d'attente pour nos agents peut être plus long que d'habitude, je suis convaincu que je peux vous aider avec votre demande. Souhaitez-vous continuer notre conversation afin que je puisse faire de mon mieux pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.agent_attempt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je suis là pour vous aider en toute confiance et avec toutes vos questions concernant votre facturation. Voudriez-vous me donner une autre chance pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Afin de vous faire gagner du temps, veuillez m'indiquer en détail vos questions de facturation." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "60198807-bf57-4364-bbec-dbd63c965b0c"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_attempt = 3 AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sure, laissez-moi vous mettre en contacte avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "482f941e-c437-4e58-bb9a-78ee4501156a"
+  }, {
+    "condition": "$session.params.dtmf_offer_new_plan = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "route",
+        "value": "available_plans"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "b62a480a-71ce-44ab-9298-476d95a6ad6f"
+  }, {
+    "condition": "$session.params.dtmf_offer_new_plan = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetPage": "Is Multiple Lines",
+    "name": "66e18fc0-3769-413d-a6fe-6a25d7332e3b"
+  }, {
+    "condition": "$session.params.retrycnt_offer_new_plan = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_offer_new_plan",
+        "value": 0
+      } ]
+    },
+    "name": "12e7be56-9948-449f-bb27-07660bb72d61"
+  }, {
+    "condition": "$session.params.retrycnt_offer_new_plan \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_offer_new_plan",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "ae06ac0b-aa49-4365-9526-6b8926830ec4"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_offer_new_plan",
+        "value": "$sys.func.ADD($session.params.retrycnt_offer_new_plan ,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.retrycnt_offer_new_plan = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.retrycnt_offer_new_plan = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "5455db32-38e6-43dc-bdf2-95d5cbc95f78"
+  } ],
+  "transitionRouteGroups": [ "Data", "Credit / Waive Fee / Discount", "AAM Plans Available", "Payment overdue", "Disambiguation", "Main / All reasons", "Feature added", "General follow-ups", "Charges Details" ]
+}

@@ -1,0 +1,324 @@
+{
+  "name": "7003378e-e4aa-4aee-b4a6-87e0aa81d2f4",
+  "displayName": "Monthly Charges_2",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Souhaitez-vous connaître les frais mensuels restants appliqués à votre facture ?", "Voulez-vous connaître les charges mensuelles restantes appliquées à votre facture ?", "Voulez-vous entendre les frais mensuels restants ?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Would you like to hear the remaining monthly charges applied to your bill?", "Do you wish to know the remaining monthly charges applied to your bill?", "Do you wish to continue hearing the remaining monthly charges?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "monthly charges 2"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$sys.func.COUNT($session.params.monthly_chargeItemList) \u003c= 7",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voilà les charges mensuelles restantes." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "These are the remaining monthly charges." ]
+        },
+        "languageCode": "en"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$sys.func.COUNT($session.params.monthly_chargeItemList) = 6",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.monthly_chargeItemList[5].chargeItemAmtTxt for $session.params.monthly_chargeItemList[5].chargeItemDescriptionTxt . \u003c/prosody\u003e\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.monthly_chargeItemList[5].chargeItemAmtTxt for $session.params.monthly_chargeItemList[5].chargeItemDescriptionTxt . \u003c/prosody\u003e\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$sys.func.COUNT($session.params.monthly_chargeItemList) = 7",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.monthly_chargeItemList[5].chargeItemAmtTxt for $session.params.monthly_chargeItemList[5].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e , $$session.params.monthly_chargeItemList[6].chargeItemAmtTxt for $session.params.monthly_chargeItemList[6].chargeItemDescriptionTxt .\u003c/prosody\u003e\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.monthly_chargeItemList[5].chargeItemAmtTxt for $session.params.monthly_chargeItemList[5].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e , $$session.params.monthly_chargeItemList[6].chargeItemAmtTxt for $session.params.monthly_chargeItemList[6].chargeItemDescriptionTxt .\u003c/prosody\u003e\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "b30668b2-33f7-4413-844c-8de3233b008b"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$sys.func.COUNT($session.params.monthly_chargeItemList) \u003e= 7",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Il semble que vous avez plusieurs frais mensuels.", "Votre facture semble comporter de nombreux frais mensuels." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "It looks like you have multiple monthly charges.", "Your invoice appears to have a lot of monthly charges" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "current_plan"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "e79785ad-2fae-4f08-aaa6-59eda1ad5d67"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "637c1886-c6ec-41b8-a9f6-8449d6c4f40a"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "ebd15e73-05d3-445e-b8b7-5700e1092178"
+  }, {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Monthly Charges",
+    "name": "ba6d7086-35bf-47a4-9fe9-fc5ad3532c33"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "a9d290d5-f0e8-4a8f-a671-3e0844286bb5"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.agent_attempt = 0 OR $session.params.agent_attempt = 1 OR $session.params.agent_attempt = 2) AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "agent_attempt",
+        "value": "$sys.func.ADD($session.params.agent_attempt, 1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.agent_attempt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je comprends votre inquiétude, et je suis là pour vous aider. Étant donné que le temps d'attente pour nos agents peut être plus long que d'habitude, je suis convaincu que je peux vous aider avec votre demande. Souhaitez-vous continuer notre conversation afin que je puisse faire de mon mieux pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.agent_attempt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je suis là pour vous aider en toute confiance et avec toutes vos questions concernant votre facturation. Voudriez-vous me donner une autre chance pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Afin de vous faire gagner du temps, veuillez m'indiquer en détail vos questions de facturation." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "99c21dae-3792-41b7-8be7-18d3a3a2a66b"
+  }, {
+    "condition": "$session.params.agent_attempt = 3 AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sure, laissez-moi vous mettre en contacte avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "75ca3ec9-f1bf-4dc5-b595-bb9c1394a0a0"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je n'ai pas compris ça.", "Désolé, je n'ai pas compris.", "Désolé, je n'ai pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous connaître les charges mensuelles restantes appliquées à votre facture?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "Sorry, I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you wish to know the remaining monthly charges applied to your bill?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9a5e2381-79dd-4dee-83f7-e6c58d51585b"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je n'ai toujours pas compris.", "Je ne suis toujours pas sûr d'avoir compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous connaître les charges mensuelles restantes appliquées à votre facture?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I still didn't get that.", "I still didn't understand. ", "I'm still not sure I got this." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you wish to know the remaining monthly charges applied to your bill?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "39bc0b98-3df4-4a75-a778-c5f7b05f824e"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "66a9276d-016b-4554-b4fe-54d01c270157"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je n'ai pas compris ça.", "Désolé, je n'ai pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous connaître les charges mensuelles restantes appliquées à votre facture?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "Sorry, I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you wish to know the remaining monthly charges applied to your bill?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "daaa7854-81bf-46b2-8c9c-e3d111d3a872"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je n'ai toujours pas compris.", "Je ne suis toujours pas sûr d'avoir compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous connaître les charges mensuelles restantes appliquées à votre facture?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I still didn't get that.", "I still don't hear you.", "I still didn't catch that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you wish to know the remaining monthly charges applied to your bill?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "22d5b7e4-654b-43d2-9592-9c41c9662978"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "73bc4caa-d4e5-42c8-9886-6c0c33b59b8d"
+  } ],
+  "transitionRouteGroups": [ "Bill Balance", "Charges Details", "Data", "Disambiguation", "General follow-ups", "Main / All reasons", "Long Distance" ]
+}

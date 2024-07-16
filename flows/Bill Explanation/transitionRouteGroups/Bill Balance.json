@@ -1,0 +1,166 @@
+{
+  "name": "39c8ddbd-2f82-4869-8e32-edb3d20f0c47",
+  "displayName": "Bill Balance",
+  "transitionRoutes": [ {
+    "intent": "supplemental.balance_breakdown",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I can take a look at that for you.", "Let me take a look at that for you.", "Let me look into this for you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, je peux regarder cela pour vous.", "Laissez-moi y jeter un coup d'oeil pour vous.", "Laissez-moi vérifier cela pour vous. " ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "balance_breakdown"
+      }, {
+        "parameter": "route",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetPage": "Bill Breakdown",
+    "name": "87e46f56-2ca0-4484-93b3-c7e000ae3b3f"
+  }, {
+    "intent": "supplemental.bill_amount_payed",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me take a look at that for you.", "Let me take a look at that for you.", "Let me look into this for you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, laissez-moi y jeter un coup d'oeil pour vous.", "Laissez-moi y jeter un coup d'œil pour vous.", "Laissez-moi vérifier cela pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "bill_amount_payed"
+      }, {
+        "parameter": "route",
+        "value": "payment_history"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "a738e53b-dd0a-4640-8cc6-76a5f896ae49"
+  }, {
+    "intent": "supplemental.confirm_amount_owed",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The current amount owing is $$session.params.bill_summary.billSummary.totalDueAmt and is due on $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.paymentDueDt, \"MMMM dd, yyyy\", \"en\")." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Le montant dû est de $session.params.bill_summary.billSummary.totalDueAmt $ avant le $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.paymentDueDt, \"dd MMMM yyyy\", \"fr-ca\")." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "confirm_amount_owed"
+      } ]
+    },
+    "targetPage": "Is Multiple Lines",
+    "name": "81bf3407-c5fc-4831-b3ac-786de07282ab"
+  }, {
+    "intent": "supplemental.confirm_bill_amount",
+    "condition": "$session.params.bill_summary.billSummary.totalDueAmt != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The current amount owing is $$session.params.bill_summary.billSummary.totalDueAmt and is due on $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.paymentDueDt, \"MMMM dd, yyyy\", \"en\")." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Le montant actuel à payer est de $session.params.bill_summary.billSummary.totalDueAmt $ et est dû le $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.paymentDueDt, \"dd MMMM yyyy\", \"fr-ca\")." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "confirm_bill_amount"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "44c3685b-9aa5-4ff6-817e-7f52c03629ad"
+  }, {
+    "intent": "supplemental.confirm_future_amount",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "1a2aff8f-9cbe-4e89-a900-1252d2f33ae4"
+  }, {
+    "intent": "supplemental.confirm_future_amount",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your future amount due can be influenced by many factors." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me transfer you to a team member to assist you.", "Let me get you to a team member to assist you.", "Let me look into this for you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Votre prochain montant dû peut être influencé par plusieurs facteurs." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en communication avec un membre de l'équipe afin de vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe pour vous aider.", "Laissez-moi vérifier cela pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "confirm_future_amount"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "fb44a0cb-3515-4680-ab83-dd121a9b7404"
+  }, {
+    "intent": "supplemental.breakdown_bill",
+    "condition": "$session.params.subscriber_summary_decimals.serviceSummary.serviceCharge != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lets look at the bill breakdown." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Regardons les détails de la facture." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Bill Breakdown",
+    "name": "b24ee072-9e0e-43f0-927f-01b099754ee6"
+  }, {
+    "intent": "head_intent.bill_amount_due",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_amount_due"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "216ecf4a-72e1-4087-ad2e-af9d2a60a1ab"
+  } ]
+}

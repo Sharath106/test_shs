@@ -1,0 +1,79 @@
+{
+  "name": "f44811e0-b0ee-4e27-b7fd-1b7c13ee85d8",
+  "displayName": "Payment overdue",
+  "transitionRoutes": [ {
+    "intent": "supplemental.confirm_late_payment",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me take a look at that for you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi y jeter un coup d’oeil pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "confirm_late_payment"
+      }, {
+        "parameter": "route",
+        "value": "payment_history"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "9420d0b4-77fd-4ef7-acf4-4e7638536f59"
+  }, {
+    "intent": "supplemental.waive_late_charge",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "778ab348-af64-4a72-bc46-184abc4f4038"
+  }, {
+    "intent": "supplemental.waive_late_charge",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you to a team member to assist you.", "Sure, let me get you to a team member to assist you.", "Let me connect you with a team member to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord! Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Bien sûr, laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe afin de mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "waive_late_charge"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "793f092a-f7ca-45f0-86e4-228a568b4d68"
+  }, {
+    "intent": "head_intent.payment_history",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me take a look at that for you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi y jeter un coup d’oeil pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_history"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "b56e95ed-eeb6-4e0b-bc41-42d0b89292b9"
+  } ]
+}

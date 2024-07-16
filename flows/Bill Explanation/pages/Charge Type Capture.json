@@ -1,0 +1,187 @@
+{
+  "name": "3ca63828-6fef-45a4-9e5e-a67f7151a9b5",
+  "displayName": "Charge Type Capture",
+  "form": {
+    "parameters": [ {
+      "displayName": "select_charge",
+      "required": true,
+      "entityType": "@bill-difference-reason",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry. \n\nWhich charge are you looking for?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "0c2e3e6c-c3e4-4532-8bf6-61b2ddc4a03c"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I am not sure I got that. Can you please rephrase and say for which charge are you looking for? " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f7392f90-b041-4b84-966c-b2ecb0125df3"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "db81b909-2965-4b50-97ce-9da48cc0f7a3"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry. \n\nWhich charge are you looking for?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ddec41ee-a44d-4270-86c7-a6ce0214c694"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I am not sure I have got that. \n\nWhich charge are you looking for?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "34421283-0459-49d1-8eb3-8b72c3269b7d"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "6c253ae8-60b1-4b07-a797-83f534bd1fcb"
+        } ]
+      },
+      "description": "This parameter captures the type of charge on the bill"
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "select_charge",
+      "value": "none"
+    }, {
+      "parameter": "last_page",
+      "value": "Charge Type Capture"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Quelle charge recherchez-vous?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Which charge are you looking for?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "select_charge",
+        "value": null
+      } ]
+    },
+    "name": "f6e6dab6-d8a3-4e9d-8356-c964731293ac"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Anything Else",
+    "name": "207c41eb-d1ba-4ec3-bf8d-6bb93e2287be"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "3f6be536-a67a-4abc-bc93-6228a8a56723"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.agent_attempt = 0 OR $session.params.agent_attempt = 1 OR $session.params.agent_attempt = 2) AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "agent_attempt",
+        "value": "$sys.func.ADD($session.params.agent_attempt, 1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.agent_attempt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je comprends votre inquiétude, et je suis là pour vous aider. Étant donné que le temps d'attente pour nos agents peut être plus long que d'habitude, je suis convaincu que je peux vous aider avec votre demande. Souhaitez-vous continuer notre conversation afin que je puisse faire de mon mieux pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.agent_attempt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je suis là pour vous aider en toute confiance et avec toutes vos questions concernant votre facturation. Voudriez-vous me donner une autre chance pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Afin de vous faire gagner du temps, veuillez m'indiquer en détail vos questions de facturation." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "7ecf276b-d2b3-48ba-a2ee-93cc13fd50dc"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_attempt = 3 AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sure, laissez-moi vous mettre en contacte avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "76cc6f10-2315-48e2-8a8b-f80920d55d52"
+  }, {
+    "condition": "$session.params.select_charge != \"none\" AND $session.params.select_charge != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "bill_difference_reason",
+        "value": "$session.params.select_charge"
+      } ]
+    },
+    "targetPage": "Bill Difference Reason",
+    "name": "fa9ce664-df76-4fa8-9ec8-3cb267b9901b"
+  } ],
+  "description": "This page is used to see if the user wants to check for a specific charge or not"
+}

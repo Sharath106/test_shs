@@ -1,0 +1,410 @@
+{
+  "name": "91f1f6bf-216c-4948-9d56-6fd509ed93ed",
+  "displayName": "View Bill Breakdown_online or app",
+  "form": {
+    "parameters": [ {
+      "displayName": "online_vs_app",
+      "required": true,
+      "entityType": "@online-vs-app",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas compris.", "Je ne comprends pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous avoir des instructions pour l'application Mon TELUS ou pour votre compte en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you rather prefer My TELUS app or online instructions?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "32b88626-c81d-409c-85c8-f0e27e399c03"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte avec les instructions pour l'application Mon TELUS, dites ou appuyez sur 1, pour votre compte en ligne, dites ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message for the app, press one, for my Telus online, press two." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "64bb13dc-2391-4323-ac3a-4c7e65fa3b0e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "32b1f95b-cb68-4721-847a-c08a111bd091"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous l'application Mon TELUS ou les instructions en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you rather prefer My TELUS app or online instructions?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5f740b4c-6d96-4bdc-be3c-fc2c865128de"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte pour l'application, dites ou appuyez sur le 1, pour Mon TELUS en ligne, dites ou appuyez sur le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To receive a text message for the app, say or press one, for my Telus online, say or press two." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f7745d8e-539e-4f38-9b04-58b34ba3af5e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "0d498278-d1cd-472a-9461-5b8b28bae7d6"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 10
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "sms_flow_status",
+      "value": "accepted"
+    }, {
+      "parameter": "last_page",
+      "value": "view bill breakdown online or app"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.view_bill_breakdown_retrycnt = null OR $session.params.view_bill_breakdown_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Préférez-vous avoir des instructions pour l'application Mon TELUS ou pour votre compte en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you rather prefer My TELUS app or online instructions?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.view_bill_breakdown_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Préférez-vous avoir des instructions pour l'application Mon TELUS ou pour votre compte en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you rather prefer My TELUS app or online instructions?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.view_bill_breakdown_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour recevoir les instructions pour l'application Mon TELUS, dites ou appuyez sur 1, pour votre compte en ligne, dites ou appuyez sur 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To receive a text message for the app, say or press one, for my Telus online, say or press two." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "ada53bc7-3268-4d92-b432-1c696f9a389d"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sur, il me fera plaisir de vous mettre en contact avec un membre de l’équipe.", "Permettez-moi de vous transférer à un membre de l'équipe pour vous aider.", "Laissez-moi vous mettre en contact avec un membre de l'équipe pour vous aider.", "Laissez-moi vous connecter avec un membre de l'équipe pour vous aider davantage." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "748450b6-be23-48b4-b0cc-74cbcdc78bb6"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.agent_attempt = 0 OR $session.params.agent_attempt = 1 OR $session.params.agent_attempt = 2) AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "agent_attempt",
+        "value": "$sys.func.ADD($session.params.agent_attempt, 1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.agent_attempt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je comprends votre inquiétude, et je suis là pour vous aider. Étant donné que le temps d'attente pour nos agents peut être plus long que d'habitude, je suis convaincu que je peux vous aider avec votre demande. Souhaitez-vous continuer notre conversation afin que je puisse faire de mon mieux pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.agent_attempt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je suis là pour vous aider en toute confiance et avec toutes vos questions concernant votre facturation. Voudriez-vous me donner une autre chance pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Afin de vous faire gagner du temps, veuillez m'indiquer en détail vos questions de facturation." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "ebb22be6-5122-4792-8bc8-b8f2c317dd53"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_attempt = 3 AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sure, laissez-moi vous mettre en contacte avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6e1c3231-5aad-43ed-b275-1a03830fe481"
+  }, {
+    "condition": "$session.params.view_bill_breakdown_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "view_bill_breakdown_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "c343e5e0-3fed-4562-9ae1-58c9a6c9583d"
+  }, {
+    "condition": "$session.params.view_bill_breakdown_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "view_bill_breakdown_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "46f09f9a-bcf5-42ff-b5aa-ec6edcf75272"
+  }, {
+    "condition": "$session.params.online_vs_app = \"app\" OR $session.params.online_vs_app = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900MJ"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319002F"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "0507fcbc-0559-444b-833e-d7bcd5cf9e0c"
+  }, {
+    "condition": "$session.params.online_vs_app = \"online\" OR $session.params.online_vs_app = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900V8"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190067"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "online"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "97160bba-6397-40b3-943b-7d999dd215ed"
+  }, {
+    "condition": "$session.params.online_vs_app = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e1f0f3b4-6d6f-45b1-a2f9-2c5dfc19edfa"
+  }, {
+    "condition": "$session.params.online_vs_app = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "view_bill_breakdown_retrycnt",
+        "value": "$sys.func.ADD($session.params.view_bill_breakdown_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "11735dbe-32cb-4740-af46-8a6f24a9d805"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "view_bill_breakdown_retrycnt",
+        "value": "$sys.func.ADD($session.params.view_bill_breakdown_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.view_bill_breakdown_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.view_bill_breakdown_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "099815f0-bb10-49a3-9128-d5ea81612198"
+  } ],
+  "transitionRouteGroups": [ "Bill Balance", "General follow-ups", "Credit / Waive Fee / Discount", "Disambiguation" ]
+}

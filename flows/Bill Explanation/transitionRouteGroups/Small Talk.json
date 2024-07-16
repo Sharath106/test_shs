@@ -1,0 +1,166 @@
+{
+  "name": "49170211-17d6-4df5-ada5-e03408948b12",
+  "displayName": "Small Talk",
+  "transitionRoutes": [ {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem", "Ok" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème.", "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "48a75af4-727c-4501-82b7-f26ce060bf7a"
+  }, {
+    "intent": "small_talk.swear_hate_words",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry you feel that way." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please give me another chance with a new question." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je regrette que vous pensiez cela." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Donnez-moi une autre chance avec une nouvelle question, s'il vous plaît." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "13a49f27-e224-4a50-9d57-bc85feb47c59"
+  }, {
+    "intent": "small_talk.good_bye",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Au revoir! Merci d'avoir clavardé." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Passez une bonne journée!", "Profitez du reste de votre journée!", "Passez une agréable journée!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "335664ca-f4fd-431c-91d1-78f251dcec5d"
+  }, {
+    "intent": "small_talk.robot",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm TELUS Assist, your virtual assistant and I'm here to answer your questions", "I am artificially intelligent and I'm here to answer your questions.", "I am a virtual assistant, here to help you! I'm TELUS Assist.", "I'm not a person but I have a lot of answers and can help with a number of inquiries.", "I'm TELUS Assist who is artificially intelligent and I'm here to answer your questions." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je suis l'Assistant TELUS, votre assistant virtuel. Je suis là pour répondre à vos questions.", "Je suis une intelligence artificielle. Je suis là pour répondre à vos questions.", "Je suis un assistant virtuel, je suis là pour vous aider ! Je suis Assistant TELUS.", "Je ne suis pas une personne mais j'ai beaucoup de réponses et je peux aider avec un certain nombre de questions.", "Je suis Assistant TELUS qui est artificiellement intelligent et je suis ici pour répondre à vos questions." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "83ee60ec-3452-4368-a268-ddb295118d5a"
+  }, {
+    "intent": "small_talk.thank_you",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem!", "My pleasure!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème.", "Avec plaisir!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "c4dbe941-c3c5-4b08-8954-68592ab9f8f9"
+  }, {
+    "intent": "small_talk.not_helping",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry you feel that way." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please give me another chance with a new question." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je regrette que vous réagissiez ainsi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "S'il vous plaît, donnez-moi une autre chance avec une nouvelle question." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "bf50234b-38ac-4069-915b-33d9367df1d7"
+  }, {
+    "intent": "small_talk.let_me_think",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem, take your time.", "Of course, take your time.", "Sure, I can wait." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème prenez votre temps.", "Bien sûr, prenez votre temps.", "Bien sûr, je peux attendre." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "44794f05-aff8-409a-afdd-1d4033317806"
+  }, {
+    "intent": "small_talk.no_more_questions",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "e3de3f7d-a937-4cb7-88dc-af1c9e450719"
+  }, {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "c64abd32-cc87-4bf6-a920-7dffd7bc5ac1"
+  }, {
+    "intent": "small_talk.go_back",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "06ad6d06-29ed-4434-86f1-c4a7fd6abe21"
+  } ]
+}

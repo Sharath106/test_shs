@@ -1,0 +1,197 @@
+{
+  "name": "00365ec1-e382-47b1-985b-4f230bbed18c",
+  "displayName": "Bill Difference Reason",
+  "form": {
+    "parameters": [ {
+      "displayName": "bill_difference_reason",
+      "required": true,
+      "entityType": "@bill-difference-reason",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris. Pouvez-vous reformuler votre phrase?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler votre question?", "Je ne crois pas avoir bien compris. Pouvez-vous reformuler cela pour moi?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Do you mind rephrasing?", "Can you try to rephrase your question?", "Can you reword that for me?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "493ff3a4-77b0-48f4-be91-9d27e894975a"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je ne crois toujours pas avoir compris. Pouvez-vous recommencer et reformuler encore une fois?", "Je ne comprends toujours pas. Seriez-vous en mesure de recommencer et reformuler de nouveau?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Can you try rephrasing one more time?", "Can you rephrase that again for me?", "Can you try asking your question differently one more time?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f36cda29-a43d-4563-93f8-ed50cc3dcc5f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "e1193717-cbae-4860-836e-14abf6f33e9f"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je suis désolé, je n'ai pas entendu. Pouvez-vous répéter cela?", "Désolé, je n'ai pas entendu. Pouvez-vous répéter votre question?", "Je n'ai pas compris. Pouvez-vous répéter cela pour moi?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I am sorry I didn't hear you.", "Sorry, I didn't hear that.", "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "06306058-4da0-4dcc-977a-ac9bcf8ed110"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je n'ai toujours pas compris. Pouvez-vous répéter cela directement dans le récepteur?", "Je ne vous entends toujours pas. Pouvez-vous répéter cela directement dans le récepteur?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I still didn't get that.", "I still don't hear you.", "I still didn't catch that." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c860cfb3-a1d9-4e9d-b38a-0537139af072"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "b679c7cd-b664-4126-a876-531c4403000a"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.bill_difference_reason = \"data overage\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_data_overage",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      } ]
+    },
+    "targetPage": "Data Overage",
+    "name": "e5264b7a-f802-450b-b4d7-6edf6754eb3c"
+  }, {
+    "condition": "$session.params.bill_difference_reason = \"airtime overage\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_airtime_overage",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      } ]
+    },
+    "targetPage": "Airtime Overage",
+    "name": "e5059c13-75a5-4552-ba82-4be2bdd6bfb1"
+  }, {
+    "condition": "$session.params.bill_difference_reason = \"long distance\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_ld_charges",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      } ]
+    },
+    "targetPage": "Long Distance Charges",
+    "name": "0287e717-b1be-4bbe-8c91-fa177c5bdc9f"
+  }, {
+    "condition": "$session.params.bill_difference_reason = \"international\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_intl_charges",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      } ]
+    },
+    "targetPage": "Intl. Charges_Counter",
+    "name": "f9dcb471-ddb2-483a-bd27-5940a7a242cb"
+  }, {
+    "condition": "$session.params.bill_difference_reason = \"payment overdue\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_payment_overdue",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      } ]
+    },
+    "targetPage": "Payment Overdue",
+    "name": "365bede6-f456-4462-bf85-9cbc80bf49c7"
+  }, {
+    "condition": "$session.params.bill_difference_reason = \"connection fee\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_connection_fee",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      } ]
+    },
+    "targetPage": "Connection Fee",
+    "name": "f1d0f2f8-0324-4046-aedd-7fc67b599615"
+  }, {
+    "condition": "$session.params.bill_difference_reason = \"reconnection fee\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_reconnection_fee",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      } ]
+    },
+    "targetPage": "Reconnection Fee",
+    "name": "f6be7ffd-1080-4396-abd6-6d8118cbe604"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill Compare Checklist",
+    "name": "ef602503-af4e-4121-94e6-2d1f01912523"
+  } ]
+}

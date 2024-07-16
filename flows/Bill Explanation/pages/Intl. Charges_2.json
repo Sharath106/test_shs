@@ -1,0 +1,194 @@
+{
+  "name": "82b5198c-ac2a-4aa0-b88a-d9001008d24a",
+  "displayName": "Intl. Charges_2",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "There are multiple items related to international charges on your bill." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Il y a plusieurs éléments en lien avec des frais internationaux sur votre facture." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "bill_compare_reason",
+      "value": "international_charges"
+    }, {
+      "parameter": "from_bill_explanation",
+      "value": "intl_charges"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "f0f3364b-7a34-4af1-94ca-1c69369372e1"
+  }, {
+    "condition": "$session.params.usage_summary_charges.RoamingLDUSInternational.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ " \u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.usage_summary_charges.RoamingLDUSInternational.totalChargeAmt\u003c/prosody\u003e for calls completed while in the US\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$session.params.usage_summary_charges.RoamingLDUSSInternational.totalChargeAmt $\u003c/prosody\u003e pour les appels passés aux États-Unis\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "name": "3fbf0c85-376a-4927-bc9d-f457443d4d15"
+  }, {
+    "condition": "$session.params.usage_summary_charges.InternationalGPRSDataRoaming.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ " \u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.usage_summary_charges.InternationalGPRSDataRoaming.totalChargeAmt\u003c/prosody\u003e for data usage while travelling outside of the country\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$session.params.usage_summary_charges.InternationalGPRSDataRoaming.totalChargeAmt $\u003c/prosody\u003e pour l'utilisation de données à l'international\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "name": "5e92018b-f66f-4ea4-88a6-0d3cdaba0bc1"
+  }, {
+    "condition": "$session.params.usage_summary_charges.US1XDataRoaming.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ " \u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.usage_summary_charges.US1XDataRoaming.totalChargeAmt\u003c/prosody\u003e for data usage while travelling in the US\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$session.params.usage_summary_charges.InternationalGPRSDataRoaming.totalChargeAmt $\u003c/prosody\u003e pour l'utilisation de données à l'international\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "name": "4793c01e-3af5-48e0-84cc-f4e1970659d1"
+  }, {
+    "condition": "$session.params.usage_summary_charges.RoamingTxtMsgSent.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.usage_summary_charges.RoamingTxtMsgSent.totalChargeAmt\u003c/prosody\u003e for international text messages\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$session.params.usage_summary_charges.RoamingTxtMsgSent.totalChargeAmt $\u003c/prosody\u003e pour des messages texte envoyés à l'international\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "name": "36b277cb-4b49-4449-92e9-c8a3537f131f"
+  }, {
+    "condition": "$session.params.usage_summary_charges.EasyRoamUS.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.usage_summary_charges.EasyRoamUS.totalChargeAmt\u003c/prosody\u003e for romaing in the US\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$session.params.usage_summary_charges.EasyRoamUS.totalChargeAmt $\u003c/prosody\u003e pour Voyagez connecté aux États-Unis\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "name": "c28c4b8b-e14a-4205-9d16-b1254077fa94"
+  }, {
+    "condition": "$session.params.usage_summary_charges.EasyRoamINTL.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.usage_summary_charges.EasyRoamINTL.totalChargeAmt\u003c/prosody\u003e for Easy Roam\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$session.params.usage_summary_charges.EasyRoamUS.totalChargeAmt $\u003c/prosody\u003e pour Voyagez connecté à l'international\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "name": "88672b4c-3b5d-4c7e-ba1d-0235c6a9bb1b"
+  }, {
+    "condition": "$session.params.usage_summary_charges.CANtoUSTxtMsgSent.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$$session.params.usage_summary_charges.CANtoUSTxtMsgSent.totalChargeAmt\u003c/prosody”\u003e for international text messages to the US\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”slow”\u003e$session.params.usage_summary_charges.CANtoUSTxtMsgSent.totalChargeAmt $\u003c/prosody\u003e pour des frais de messages texte envoyés vers un numéro des États-Unis\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "name": "8ccfbb63-475f-4137-b2f4-43e9cb012546"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Offer Add Package",
+    "name": "e881f1fb-de58-4f2d-acaa-9336f354967e"
+  } ]
+}

@@ -1,0 +1,161 @@
+{
+  "name": "574d4bbd-4dba-456f-9ab4-f67335eb80b5",
+  "displayName": "Verify Bill Month",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$sys.func.GET_FIELD($sys.func.GET($session.params.bill_dates, 0), \"month\") = $session.params.given_month",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, regardons votre dernière facture émise le $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"dd MMMM YYYY\", \"fr-ca\")" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Ok, Let's look at your latest bill issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"MMMM dd, yyyy\", \"en\")" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": 0
+      }, {
+        "parameter": "bill_period_select",
+        "value": "current"
+      } ]
+    },
+    "targetPage": "Fetch Bill Details",
+    "name": "b6947456-06e4-4000-b29d-e7ed779eb35d"
+  }, {
+    "condition": "$sys.func.GET_FIELD($sys.func.GET($session.params.bill_dates, 1), \"month\") = $session.params.given_month",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, regardons votre facture précédente émise le $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 1), \"dd MMMM YYYY\", \"fr-ca\")" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Ok, Let's look at your previous bill issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 1), \"MMMM dd, yyyy\", \"en\")" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": "-1"
+      }, {
+        "parameter": "bill_period_select",
+        "value": "previous"
+      } ]
+    },
+    "targetPage": "Fetch Bill Details",
+    "name": "a8c9ad94-a524-4d5c-b185-4f0331d5b70e"
+  }, {
+    "condition": "$sys.func.GET_FIELD($sys.func.GET($session.params.bill_dates, 2), \"month\") = $session.params.given_month",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour consulter les factures de 3 mois ou plus, vous pouvez utiliser votre compte Mon TELUS en ligne ou l'application Mon TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je peux vous aider à entrer en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "To view invoices 3 months or older, you can use your online My TELUS account or the My TELUS app." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I can help you connect with a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": -2
+      }, {
+        "parameter": "bill_period_select",
+        "value": "older"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "3c149088-e8c9-41da-ba3a-69bcbe4c3f73"
+  }, {
+    "condition": "$session.params.last_page = \"select_current_page\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je comprends que vous vous renseignez sur votre facture mensuelle du  $sys.func.FORMAT_DATE($session.params.given_bill_period.startDate, MMMM , \"fr-ca\")." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pour le moment, je peux seulement vous aider avec vos 3 dernières factures." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I understand that you are inquiring about your $sys.func.FORMAT_DATE($session.params.given_bill_period.startDate, MMMM , \"en\") month's bill." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "At the moment, I can only help you with your last 3 invoice." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_verify_bill_month",
+        "value": true
+      }, {
+        "parameter": "last_page",
+        "value": null
+      } ]
+    },
+    "targetPage": "Select Current Bill",
+    "name": "39c55c3d-5f4d-4997-9db3-f0b7fbf2e2f7"
+  }, {
+    "condition": "$session.params.last_page = \"select_previous_bill\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je comprends que vous vous renseignez sur votre facture mensuelle du  $sys.func.FORMAT_DATE($session.params.given_bill_period.startDate, MMMM , \"fr-ca\")." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pour le moment, je ne peux vous aider qu'avec vos 3 dernières factures." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I understand that you are inquiring about your $sys.func.FORMAT_DATE($session.params.given_bill_period.startDate, MMMM , \"en\") month's bill." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "At the moment, I can only help you with your last 3 invoices." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": null
+      }, {
+        "parameter": "from_verify_bill_month",
+        "value": true
+      } ]
+    },
+    "targetPage": "Select Previous Bill",
+    "name": "be64aab8-70ac-45fe-bc4a-a9aceb018c31"
+  } ]
+}

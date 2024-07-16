@@ -1,0 +1,405 @@
+{
+  "name": "48357ae9-b4e9-4c52-8c28-da0e9cf81d2f",
+  "displayName": "Bill Explanation",
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "2b6436dd-4920-4ff9-a06f-c902c30262f4"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.agent_attempt = 0 OR $session.params.agent_attempt = 1 OR $session.params.agent_attempt = 2) AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "agent_attempt",
+        "value": "$sys.func.ADD($session.params.agent_attempt, 1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.agent_attempt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je comprends votre inquiétude, et je suis là pour vous aider. Étant donné que le temps d'attente pour nos agents peut être plus long que d'habitude, je suis convaincu que je peux vous aider avec votre demande. Souhaitez-vous continuer notre conversation afin que je puisse faire de mon mieux pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.agent_attempt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je suis là pour vous aider en toute confiance et avec toutes vos questions concernant votre facturation. Voudriez-vous me donner une autre chance pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Afin de vous faire gagner du temps, veuillez m'indiquer en détail vos questions de facturation." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "5a526a23-db84-4097-8622-a8edcba05ee4"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_attempt = 3 AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sure, laissez-moi vous mettre en contacte avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "26db4851-aaf0-49c5-a8bd-29ae0e9d6dd3"
+  }, {
+    "condition": "$session.params.agent_attempt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "agent_attempt",
+        "value": 0
+      } ]
+    },
+    "name": "71827da4-fb14-4552-8070-25c6ab8de251"
+  }, {
+    "condition": "$session.params.humanagent_attempt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "humanagent_attempt",
+        "value": 0
+      } ]
+    },
+    "name": "0527d21b-5cf1-450d-9967-5f8bf1e2f761"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "enter_bill_explanation",
+        "value": "true"
+      }, {
+        "parameter": "mandatory_ss",
+        "value": null
+      }, {
+        "parameter": "ss_mandatory_intent",
+        "value": "true"
+      }, {
+        "parameter": "sms_sent_check",
+        "value": null
+      }, {
+        "parameter": "async_no_mand_sms",
+        "value": null
+      }, {
+        "parameter": "from_page",
+        "value": null
+      }, {
+        "parameter": "async_agent_count",
+        "value": null
+      }, {
+        "parameter": "ss_man_async_no",
+        "value": null
+      } ]
+    },
+    "name": "8b273458-d29f-4f96-b7b7-987e236f54ae"
+  }, {
+    "condition": "$session.params.routeDetails = null AND $session.params.conversation = null AND $session.params.searchResult = null AND $session.params.user = null AND $session.params.init != null",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "init_retry",
+        "value": "bill explanation flow"
+      } ]
+    },
+    "name": "e133c68a-f0cc-40aa-89d6-027acf52e56b"
+  }, {
+    "condition": "$session.params.bill_difference_reason = \"payment overdue\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "late_payments"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "d444a9e7-062d-4fe4-b437-193a8e2ecb32"
+  }, {
+    "condition": "$session.params.enter_bill_explanation != \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "61f2f8ba-f186-4bd9-8c66-141296490ef7"
+  }, {
+    "condition": "$session.params.from_flow = \"bill_vague\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intent",
+        "value": "acctmgmt"
+      }, {
+        "parameter": "count_intl_charges",
+        "value": null
+      }, {
+        "parameter": "count_data_overage",
+        "value": null
+      }, {
+        "parameter": "count_ld_charges",
+        "value": null
+      }, {
+        "parameter": "count_airtime_overage",
+        "value": null
+      }, {
+        "parameter": "count_connection_fee",
+        "value": null
+      }, {
+        "parameter": "count_reconnection_fee",
+        "value": null
+      }, {
+        "parameter": "count_payment_overdue",
+        "value": null
+      }, {
+        "parameter": "count_partial_charges",
+        "value": null
+      } ]
+    },
+    "targetPage": "LP Bill Vague CIs",
+    "name": "0c19136a-0632-4372-aa37-6e769144d5b7"
+  }, {
+    "condition": "$session.params.route = \"bill_explanation\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intent",
+        "value": "acctmgmt"
+      }, {
+        "parameter": "count_intl_charges",
+        "value": null
+      }, {
+        "parameter": "count_data_overage",
+        "value": null
+      }, {
+        "parameter": "count_ld_charges",
+        "value": null
+      }, {
+        "parameter": "count_airtime_overage",
+        "value": null
+      }, {
+        "parameter": "count_connection_fee",
+        "value": null
+      }, {
+        "parameter": "count_reconnection_fee",
+        "value": null
+      }, {
+        "parameter": "count_payment_overdue",
+        "value": null
+      }, {
+        "parameter": "count_partial_charges",
+        "value": null
+      } ]
+    },
+    "targetPage": "Auth Validation",
+    "name": "ef210c7e-4f40-450f-aac5-2ccc4b97eadd"
+  }, {
+    "condition": "$session.params.from_flow = \"billing\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Anything Else",
+    "name": "fb81f740-93db-486a-b493-2aef3973d857"
+  }, {
+    "condition": "$session.params.billvague_billbreakdown = true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill Breakdown",
+    "name": "83792ade-4cf2-4c33-bb3c-5543e7520472"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je n'ai pas compris. Pouvez-vous répéter?", "Je n'ai pas compris ce que vous avez dit. Pouvez-vous répéter?", "Désolé, pourriez-vous répéter?", "Désolé, pouvez-vous répéter?", "Pouvez-vous répéter?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler votre phrase?", "Désolé, pouvez-vous répéter?", "Pouvez-vous répéter?", "Pouvez-vous répéter?", "Pouvez-vous répéter encore une fois?", "Je n'ai pas compris. Pouvez-vous répéter?", "Je n'ai pas compris. Pouvez-vous répéter?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je n'ai pas compris. Pouvez-vous le répéter ?", "J'ai raté ce que vous avez dit. Qu'est ce que c'était ?", "Excusez-moi, pouvez-vous vous répéter ?", "Excusez-moi, pouvez-vous vous répéter ?", "Pouvez-vous répéter ça ?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler votre phrase ?", "Désolé, je n'ai pas compris ?", "Encore une fois ?", "Comment ?", "Dites-moi ça encore une fois ?", "Je n'ai pas compris. Pouvez-vous vous répéter ?", "Je n'ai pas compris, encore une fois ?" ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "name": "16bbe1ee-06a5-4818-8ede-e07a0469b52b"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je n'ai pas compris. Pouvez-vous répéter?", "Je n'ai pas compris ce que vous avez dit. Pouvez-vous répéter?", "Désolé, pourriez-vous répéter?", "Désolé, pouvez-vous répéter?", "Pouvez-vous répéter?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler votre phrase?", "Désolé, pouvez-vous répéter?", "Pouvez-vous répéter?", "Pouvez-vous répéter?", "Pouvez-vous répéter encore une fois?", "Je n'ai pas compris. Pouvez-vous répéter?", "Je n'ai pas compris, pouvez-vous répéter?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je n'ai pas compris. Pouvez-vous le répéter ?", "J'ai raté ce que vous avez dit. Qu'est ce que c'était ?", "Excusez-moi, pouvez-vous vous répéter ?", "Excusez-moi, pouvez-vous vous répéter ?", "Pouvez-vous répéter ça ?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler votre phrase ?", "Désolé, je n'ai pas compris ?", "Encore une fois ?", "Comment ?", "Dites-moi ça encore une fois ?", "Je n'ai pas compris. Pouvez-vous vous répéter ?", "Je n'ai pas compris, encore une fois ?" ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "name": "a21923b2-d017-485e-b7f4-220ad6e28fd4"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne pense pas avoir compris.", "Je n'ai pas vraiment compris.", "Je ne crois pas avoir compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Pouvez-vous reformuler votre phrase pour moi?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Do you mind rephrasing?", "Can you try to rephrase your question? ", "Can you reword that for me?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0412c644-22b2-4a8e-a61a-140606a806ba"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne crois toujours pas avoir compris.", "Je ne comprends toujours pas bien." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous recommencer et reformuler votre phrase encore une fois?", "Pouvez-vous recommencer et reformuler votre phrase encore une fois pour moi?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Can you try rephrasing one more time?", "Can you rephrase that again for me?", "Can you try asking your question differently one more time?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "no_match",
+        "value": "true"
+      } ]
+    },
+    "name": "9ead828b-bbdb-4ac8-bde7-4e64dbea2c4e"
+  }, {
+    "targetFlow": "Billing",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_explanation"
+      } ]
+    },
+    "name": "03392274-0bd8-4d1a-91f6-8562f506e9fc"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "9c9fea49-71a4-479d-87d0-c5b48d794bbd"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je suis désolé, je n'ai pas entendu. Pouvez-vous répéter cela?", "Désolé, je n'ai pas entendu. Pouvez-vous répéter votre question?", "Je n'ai pas compris. Pouvez-vous répéter cela pour moi?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I am sorry I didn't hear you.", "Sorry, I didn't hear that.", "Sorry, I didn't catch that." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "96ad5517-983c-4c87-a197-9191ed4babfc"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je n'ai toujours pas compris. Pouvez-vous répéter cela directement dans le récepteur?", "Je ne vous entends toujours pas. Pouvez-vous répéter cela directement dans le récepteur?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I still didn't get that.", "I still don't hear you.", "I still didn't catch that." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1af82004-1c4f-4d19-b421-bf15d72e140b"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "6951c116-0bef-40c5-ba1b-b375e6c9ce3a"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_CUSTOM",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "transitionRouteGroups": [ "Small Talk" ]
+}

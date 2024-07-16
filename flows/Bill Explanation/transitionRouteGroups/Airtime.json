@@ -1,0 +1,78 @@
+{
+  "name": "32a72e58-a1e4-400e-88d5-f740e47097e9",
+  "displayName": "Airtime",
+  "transitionRoutes": [ {
+    "intent": "supplemental.airtime_charges",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I can help review your invoice for airtime charges.", "Ok, let's take a look at your bill for airtime charges." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, je peux vous aider à vérifier votre facture pour les frais de temps d'antenne.", "D'accord! Allons voir votre facture pour les frais de temps d'antenne." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "airtime_charges"
+      } ]
+    },
+    "targetPage": "Airtime Overage",
+    "name": "b951e557-1a98-4eda-b178-38057602c067"
+  }, {
+    "intent": "supplemental.call_text_details",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You can view your current cycle's usage as well as up to 2 months of your previous usage in the My TELUS app." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "You can also view and print up to 18 months of your previous bills online, in PDF format, including a breakdown of your call history." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Vous pouvez consulter votre utilisation pour le cycle en cours, ainsi que les 2 mois précédents, sur votre application Mon TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Vous pouvez également consulter et imprimer vos factures en ligne des 18 derniers mois, en format PDF, y compris le détail de votre historique d'appels." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "call_text_details"
+      } ]
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "10761c93-9920-41d5-836c-294082a578f2"
+  }, {
+    "intent": "supplemental.incoming_call_charges",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I can help review your invoice for airtime charges.", "Ok, let's take a look at your bill for incoming call charges." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, je peux vous aider à vérifier votre facture pour les frais d'appels entrants. ", "D'accord! Jetons un coup d'oeil à votre facture pour les frais d'appels entrants." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "incoming_call_charges"
+      } ]
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "25963053-0a14-4699-8eeb-0c96b13b2db3"
+  } ]
+}

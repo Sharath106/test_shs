@@ -1,0 +1,213 @@
+{
+  "name": "10eb70ab-669b-4747-bb46-f85a820bc85b",
+  "displayName": "Bill Compare Checklist",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Bill explain",
+    "tag": "compare_bills"
+  },
+  "transitionRoutes": [ {
+    "condition": "($session.params.usage_summary_charges.RoamingLDUSInternational.totalChargeAmt \u003e 0 OR $session.params.usage_summary_charges.InternationalGPRSDataRoaming.totalChargeAmt \u003e 0 OR $session.params.usage_summary_charges.US1XDataRoaming.totalChargeAmt \u003e 0 OR $session.params.usage_summary_charges.RoamingTxtMsgSent.totalChargeAmt \u003e 0 OR $session.params.usage_summary_charges.EasyRoamUS.totalChargeAmt \u003e 0 OR $session.params.usage_summary_charges.EasyRoamINTL.totalChargeAmt \u003e 0 OR $session.params.usage_summary_charges.CANtoUSTxtMsgSent.totalChargeAmt \u003e 0) AND $session.params.count_intl_charges = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_intl_charges",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      }, {
+        "parameter": "last_charge_displayed",
+        "value": "intl_charges"
+      } ]
+    },
+    "targetPage": "Intl. Charges_Counter",
+    "name": "3287cecc-ab51-48c4-b9a4-93a80ee8a131"
+  }, {
+    "condition": "($session.params.usage_charges.Data.usageSummaryChargeAmt \u003e 0 OR $session.params.usage_charges.Dataservices.usageSummaryChargeAmt \u003e 0) AND $session.params.count_data_overage = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_data_overage",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      }, {
+        "parameter": "last_charge_displayed",
+        "value": "data_overage"
+      } ]
+    },
+    "targetPage": "Data Overage",
+    "name": "45ab6098-e3b0-45d8-bd81-5060ee4857b7"
+  }, {
+    "condition": "($session.params.usage_summary_charges.LongDistanceUSInternationalVoiceUsage.totalChargeAmt != null OR $session.params.usage_summary_charges.LongDistanceDomesticPhone.totalChargeAmt != null) AND $session.params.count_ld_charges = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_ld_charges",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      }, {
+        "parameter": "last_charge_displayed",
+        "value": "ld_charges"
+      } ]
+    },
+    "targetPage": "Long Distance Charges",
+    "name": "cd380b85-7995-4084-beaa-cd0c251f64f3"
+  }, {
+    "condition": "($session.params.usage_charges.Airtime.usageSummaryChargeAmt \u003e 0 OR $session.params.usage_summary_charges.LocalAirtimePhoneminutes.totalChargeAmt \u003e 0) AND $session.params.count_airtime_overage = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_airtime_overage",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      }, {
+        "parameter": "last_charge_displayed",
+        "value": "airtime_overage"
+      } ]
+    },
+    "targetPage": "Airtime Overage",
+    "name": "013ed74d-e03a-4a39-a57c-686ecb316d93"
+  }, {
+    "condition": "$session.params.monthly_charges.ConnectionFee[2] \u003e 0 AND $session.params.count_connection_fee = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_connection_fee",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      }, {
+        "parameter": "last_charge_displayed",
+        "value": "connection_fee"
+      } ]
+    },
+    "targetPage": "Connection Fee",
+    "name": "6f7d123f-8f19-41fd-b93b-8a5b94d284c3"
+  }, {
+    "condition": "$session.params.monthly_charges.MobileReconnectionChrg[2] \u003e 0 AND $session.params.count_reconnection_fee = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_reconnection_fee",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      }, {
+        "parameter": "last_charge_displayed",
+        "value": "reconnection_fee"
+      } ]
+    },
+    "targetPage": "Reconnection Fee",
+    "name": "eeca7487-88b6-4335-bc23-6c8160de42fc"
+  }, {
+    "condition": "$sys.func.COUNT($session.params.duplicate_charges.previousBill.otherChargeItems.LatePaymentCharge) = 2 OR $sys.func.COUNT($session.params.duplicate_charges.previousBill.monthlyChargeItems.ConnectionFee) = 2 OR $sys.func.COUNT($session.params.duplicate_charges.previousBill.monthlyChargeItems.ReconnectionFee) = 2 OR $sys.func.COUNT($session.params.duplicate_charges.previousBill.monthlyChargeItems.RatePlanChangeFee) = 2 OR $sys.func.COUNT($session.params.duplicate_charges.currentBill.otherChargeItems.LatePaymentCharge) = 2 OR $sys.func.COUNT($session.params.duplicate_charges.currentBill.monthlyChargeItems.ConnectionFee) = 2 OR $sys.func.COUNT($session.params.duplicate_charges.currentBill.monthlyChargeItems.ReconnectionFee) = 2 OR $sys.func.COUNT($session.params.duplicate_charges.currentBill.monthlyChargeItems.RatePlanChangeFee) = 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_duplicate_charges",
+        "value": 1
+      }, {
+        "parameter": "duplicate_charges_explained",
+        "value": "$sys.func.ADD($session.params.duplicate_charges_explained, 1)"
+      }, {
+        "parameter": "last_charge_displayed",
+        "value": "duplicate_charges"
+      } ]
+    },
+    "targetPage": "Duplicate Charges",
+    "name": "db9567ed-024d-4d31-b837-d7709b8e7879"
+  }, {
+    "condition": "$session.params.bill_summary.billSummary.balanceForwardAmt \u003e 0 AND $session.params.count_payment_overdue = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_payment_overdue",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      }, {
+        "parameter": "last_charge_displayed",
+        "value": "payment_overdue"
+      } ]
+    },
+    "targetPage": "Payment Overdue",
+    "name": "77656c6f-004b-48e1-a11f-0d98f2c3fd55"
+  }, {
+    "condition": "$session.params.partial_charges[0] != null AND $session.params.count_partial_charges = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_partial_charges",
+        "value": 1
+      }, {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      }, {
+        "parameter": "last_charge_displayed",
+        "value": "partial_charges"
+      } ]
+    },
+    "targetPage": "Partial Charges",
+    "name": "578b2779-559c-4625-8db3-ddc3c50b9869"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "bill_charges_explained",
+        "value": "$sys.func.ADD($session.params.bill_charges_explained, 1)"
+      }, {
+        "parameter": "last_charge_displayed",
+        "value": "no_reason_found"
+      } ]
+    },
+    "targetPage": "No Reason Found",
+    "name": "b4b47fb3-cb9f-468b-9be6-465cc6864dd3"
+  } ],
+  "eventHandlers": [ {
+    "targetFlow": "Billing",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_explanation"
+      } ]
+    },
+    "name": "58b3cb93-711f-4eed-a412-d6b915530377"
+  }, {
+    "targetFlow": "Billing",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_explanation"
+      } ]
+    },
+    "name": "7d995c08-4f13-4bd1-a41f-f799f4fc69ab"
+  } ],
+  "transitionRouteGroups": [ "Bill Balance", "General follow-ups" ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "3ae4beca-973f-455a-a1f6-ba3f40175a06",
+  "displayName": "Reconnection Fee",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "bill_compare_reason",
+      "value": "reconnection_fee"
+    }, {
+      "parameter": "last_charge_displayed",
+      "value": "reconnection_fee"
+    }, {
+      "parameter": "last_page",
+      "value": "Reconnection Fee"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.monthly_charges.MobileReconnectionChrg[2] \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003eYour account was recently restored, which resulted in a \u003cprosody rate=”slow”\u003e$$session.params.monthly_charges.MobileReconnectionChrg[2]\u003c/prosody\u003e Reconnection Fee charge on your invoice.\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVotre compte a récemment été remis en service. Des frais de reconnexion de \u003cprosody rate=”x-slow”\u003e$session.params.monthly_charges.MobileReconnectionChrg[2] $\u003c/prosody\u003e ont donc été appliqués sur votre facture.\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "2e74aa75-b725-46da-91ba-771318075116"
+  }, {
+    "condition": "$session.params.monthly_charges.MobileReconnectionChrg[2] \u003c= 0 OR $session.params.monthly_charges.MobileReconnectionChrg[2] = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can't see Reconnection Fees on your invoice for restoring your account." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne vois pas de frais de reconnexion pour une activation récente sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "06b26a55-f683-4f25-a695-55a7f037bac8"
+  } ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "0610da60-387e-4d7d-ae05-519cbcb9513e",
+  "displayName": "Compare Bill",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Compare Bill"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.compare_charge_flag = false AND $session.params.charges_count \u003c 3",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": "$sys.func.ADD($session.params.bill_period, -1)"
+      }, {
+        "parameter": "charges_count",
+        "value": "$sys.func.ADD($session.params.charges_count, 1)"
+      } ]
+    },
+    "targetPage": "Compare List",
+    "name": "0fb22a41-796b-419b-89dc-49292d2914c1"
+  }, {
+    "condition": "$session.params.compare_charge_flag = false AND $session.params.charges_count \u003e= 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I couldn't find any differences" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": 0
+      }, {
+        "parameter": "compare_check",
+        "value": "none"
+      } ]
+    },
+    "targetPage": "Filter Bill",
+    "name": "e16af86d-4d8f-472b-91b8-d58853a1a92d"
+  }, {
+    "condition": "$session.params.compare_charge_flag = true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Compare Charge List",
+    "name": "6c1f4653-d2d7-4a57-b098-5a0b24bef7cf"
+  } ],
+  "description": "This page checks if any differences and based on the result it will go back to go through other bills or go ahead to next page to display the charges"
+}

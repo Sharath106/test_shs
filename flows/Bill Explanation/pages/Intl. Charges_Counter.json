@@ -1,0 +1,116 @@
+{
+  "name": "f3177ca4-2c49-487c-9ebf-ef2287e912ef",
+  "displayName": "Intl. Charges_Counter",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "intl_charges_counter",
+      "value": 0
+    }, {
+      "parameter": "last_charge_displayed",
+      "value": "intl_charges"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.usage_summary_charges.RoamingLDUSInternational.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intl_charges_counter",
+        "value": "$sys.func.ADD($session.params.intl_charges_counter, 1)"
+      } ]
+    },
+    "name": "08eaf8ce-d322-45e1-9443-e499400adf24"
+  }, {
+    "condition": "$session.params.usage_summary_charges.InternationalGPRSDataRoaming.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intl_charges_counter",
+        "value": "$sys.func.ADD($session.params.intl_charges_counter, 1)"
+      } ]
+    },
+    "name": "7058b85d-6083-433d-9f34-c1553c0d4030"
+  }, {
+    "condition": "$session.params.usage_summary_charges.US1XDataRoaming.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intl_charges_counter",
+        "value": "$sys.func.ADD($session.params.intl_charges_counter, 1)"
+      } ]
+    },
+    "name": "7105bd63-3f2d-450a-9f18-4d59e11e4176"
+  }, {
+    "condition": "$session.params.usage_summary_charges.RoamingTxtMsgSent.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intl_charges_counter",
+        "value": "$sys.func.ADD($session.params.intl_charges_counter, 1)"
+      } ]
+    },
+    "name": "c2c426d0-4d9e-4d1e-9b97-b6cdd5c294e6"
+  }, {
+    "condition": "$session.params.usage_summary_charges.EasyRoamUS.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intl_charges_counter",
+        "value": "$sys.func.ADD($session.params.intl_charges_counter, 1)"
+      } ]
+    },
+    "name": "f1eab5d9-cb04-4fb2-ba89-049e47eff96f"
+  }, {
+    "condition": "$session.params.usage_summary_charges.EasyRoamINTL.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intl_charges_counter",
+        "value": "$sys.func.ADD($session.params.intl_charges_counter, 1)"
+      } ]
+    },
+    "name": "871a7e2a-ced6-4956-8fc4-9dd7868d0e81"
+  }, {
+    "condition": "$session.params.usage_summary_charges.CANtoUSTxtMsgSent.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intl_charges_counter",
+        "value": "$sys.func.ADD($session.params.intl_charges_counter, 1)"
+      } ]
+    },
+    "name": "7871f83b-2e3e-4f21-86cd-dbf0fd5499d3"
+  }, {
+    "condition": "$session.params.intl_charges_counter = 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can't see international usage charges on your invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne vois aucun frais d'interurbain international sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "ce6cd275-d558-4f7e-807a-4f26035b07e5"
+  }, {
+    "condition": "$session.params.intl_charges_counter = 1",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Intl. Charges_1",
+    "name": "db4ddf63-0e7b-43f5-9deb-5d78a9781ec7"
+  }, {
+    "condition": "$session.params.intl_charges_counter \u003e 1",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Intl. Charges_2",
+    "name": "97a19b65-8fce-47ce-809a-66d611647568"
+  } ]
+}

@@ -1,0 +1,101 @@
+{
+  "name": "9adb4d59-7e0f-4ad8-8610-c92bf6e4cc62",
+  "displayName": "Airtime Overage",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "bill_compare_reason",
+      "value": "airtime_overage"
+    }, {
+      "parameter": "from_bill_explanation",
+      "value": "airtime_overage"
+    }, {
+      "parameter": "last_charge_displayed",
+      "value": "airtime_overage"
+    }, {
+      "parameter": "last_page",
+      "value": "Airtime Overage"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.usage_charges.Airtime.usageSummaryChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003eYou have usage charges of \u003cprosody rate=”slow”\u003e$$session.params.usage_charges.Airtime.usageSummaryChargeAmt\u003c/prosody\u003e for airtime usage on your invoice.\u003c/speak\u003e", "\u003cspeak\u003eI see a total of\u003cprosody rate=”slow”\u003e $$session.params.usage_charges.Airtime.usageSummaryChargeAmt\u003c/prosody\u003e for airtime usage on your bill.\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVous avez des frais de \u003cprosody rate=”x-slow”\u003e$session.params.usage_charges.Airtime.usageSummaryChargeAmt $\u003c/prosody\u003e pour l'utilisation du temps d'antenne sur votre facture du $sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.billDt, \"dd MMMM yyyy\", \"fr-ca\").\u003c/speak\u003e", "\u003cspeak\u003eJe vois un total de \u003cprosody rate=”x-slow”\u003e$session.params.usage_charges.Airtime.usageSummaryChargeAmt $\u003c/prosody\u003e pour l'utilisation du temps d'antenne sur votre facture.\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "name": "40f1b308-88de-434e-b30c-31c88abc682f"
+  }, {
+    "condition": "$session.params.usage_summary_charges.LocalAirtimePhoneminutes.totalChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003eYou have usage charges of \u003cprosody rate=”slow”\u003e$$session.params.usage_summary_charges.LocalAirtimePhoneminutes.totalChargeAmt\u003c/prosody\u003e for local airtime usage on your invoice.\u003c/speak\u003e", "\u003cspeak\u003eI see a total of \u003cprosody rate=”slow”\u003e$$session.params.usage_summary_charges.LocalAirtimePhoneminutes.totalChargeAmt\u003c/prosody\u003e for data overedges on your bill.\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVous avez des frais de \u003cprosody rate=”slow”\u003e$session.params.usage_summary_charges.LocalAirtimePhoneminutes.totalChargeAmt $\u003c/prosody\u003e pour l'utilisation de temps d'antenne local sur votre facture.\u003c/speak\u003e", "\u003cspeak\u003eJe vois un total de \u003cprosody rate=”slow”\u003e $session.params.usage_summary_charges.LocalAirtimePhoneminutes.totalChargeAmt $\u003c/prosody\u003e pour l'utilisation de données sur votre facture.\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "name": "9676d9d4-64ed-4b5a-b5e1-03b3ca64cabe"
+  }, {
+    "condition": "($session.params.usage_charges.Airtime.usageSummaryChargeAmt = null OR $session.params.usage_charges.Airtime.usageSummaryChargeAmt \u003c= 0) AND ($session.params.usage_summary_charges.LocalAirtimePhoneminutes.totalChargeAmt = null OR $session.params.usage_summary_charges.LocalAirtimePhoneminutes.totalChargeAmt \u003c= 0)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can't see charges for airtime overedges on your invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne vois pas de frais de dépassement du temps d'antenne sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "29cf9602-6079-4717-ab08-cc1533fe137e"
+  }, {
+    "condition": "$session.params.usage_charges.Airtime.usageSummaryChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.LocalAirtimePhoneminutes.totalChargeAmt \u003e= 10",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Offer New Plan",
+    "name": "b7165aca-bb40-47bb-adfc-995e2481f53b"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "2f92954b-080e-4a02-b1e3-fef5518a1fe8"
+  } ]
+}

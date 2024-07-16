@@ -1,0 +1,650 @@
+{
+  "name": "69bef774-a881-49d6-8924-84d84aea1755",
+  "displayName": "Select Current Bill",
+  "form": {
+    "parameters": [ {
+      "displayName": "bill_period_select",
+      "required": true,
+      "entityType": "@bill-period",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous des questions par rapport à votre dernière facture émise le $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"dd MMMM, yyyy\", \"fr-ca\")?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you inquiring about your latest invoice issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"MMMM dd, yyyy\", \"en\")?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d27e4d62-3747-41d2-b8ef-05eb880354c1"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je n'ai toujours pas bien compris. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Si vous avez des questions par rapport à votre dernière facture émise le  $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"dd MMMM YYYY\", \"fr-ca\"), appuyez sur le 1, sinon appuyez sur le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm still not sure I got this one.", "I still don't quite understand.", "I still didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you inquiring about your bill issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"MMMM dd, yyyy\", \"en\")? You can type 1 for Yes and 2 for No on your dial pad.", "Are you inquiring about your invoice issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"MMMM dd, yyyy\", \"en\")? You can type 1 for Yes and 2 for No on your dial pad." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "28ce69e5-d7f9-4bf0-9126-a3bd4b2ea5a9"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "8018cd78-0df4-416f-8c13-47bdb08f6bc4"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, mais je n'ai pas entendu." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous des questions par rapport à votre dernière facture émise le $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"dd MMMM, yyyy\", \"fr-ca\")?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you inquiring about your latest invoice issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"MMMM dd, yyyy\", \"en\")?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "29224e46-5f41-4f3f-afbc-9e452566a201"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je n'ai toujours rien entendu." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Si vous avez des questions par rapport à votre dernière facture émise le  $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"dd MMMM YYYY\", \"fr-ca\"), appuyez sur le 1, sinon appuyez sur le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "If you are inquiring about your latest invoice issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"MMMM dd, yyyy\", \"en\"), press 1, to say no, press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "51aaa8c6-6ec7-4c61-96f9-6f640dba98fe"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "32ed0d5d-9660-49ae-b27b-57db56ea57ff"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 10
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "bill_period",
+      "value": null
+    }, {
+      "parameter": "bill_period_select",
+      "value": null
+    }, {
+      "parameter": "last_page",
+      "value": "select_current_bill"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.from_verify_bill_month != true",
+        "caseContent": [ {
+          "additionalCases": {
+            "cases": [ {
+              "condition": "$session.params.retrycnt_select_current_bill = null OR $session.params.retrycnt_select_current_bill = 0",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Avez-vous des questions par rapport à votre dernière facture émise le $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"dd MMMM yyyy\", \"fr-ca\")" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Are you inquiring about your latest bill issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates,0),\"MMMM dd,yyyy\",\"en\")?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.retrycnt_select_current_bill = 1",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Avez-vous des questions par rapport à votre dernière facture émise le $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"dd MMMM yyyy\", \"fr-ca\")" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Are you inquiring about your latest invoice issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0),\"MMMM dd,yyyy\",\"en\")?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.retrycnt_select_current_bill = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Si vous avez des questions concernant votre dernière facture émise le $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"dd MMMM yyyy\", \"fr-ca\"), faites le 1, sinon, faites le deux." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "If you are inquiring about your latest invoice issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0),\"MMMM dd,yyyy\",\"en\"), press 1, to say no, press 2." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Voulez-vous regarder votre dernière facture émise le $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0), \"dd MMMM yyyy\", \"fr-ca\") instead?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like to take a look at your latest bill issued on $sys.func.FORMAT_DATE($sys.func.GET($session.params.bill_dates, 0),\"MMMM dd,yyyy\",\"en\") instead?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "supplemental.confirm_bill_period",
+    "condition": "$session.params.given_bill_period != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "given_month",
+        "value": "$session.params.given_bill_period.startDate.month"
+      }, {
+        "parameter": "last_page",
+        "value": "select_current_page"
+      }, {
+        "parameter": "verify_bill_month",
+        "value": null
+      } ]
+    },
+    "targetPage": "Verify Bill Month",
+    "name": "31431e1e-62f3-46eb-915c-61c0bad49d5c"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.from_verify_bill_month = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Got it. " ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_verify_bill_month",
+        "value": null
+      }, {
+        "parameter": "route",
+        "value": "bill_reprint"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "9a423066-bf27-4140-972f-9f9bb5269d40"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Got it." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bill_period_select",
+        "value": null
+      } ]
+    },
+    "targetPage": "Select Previous Bill",
+    "name": "476ba252-cb60-40a4-811a-894f1ffbd570"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord.", "Pas de soucis.", "J'ai compris.", "Ok!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "1478f3ee-8aff-410e-ad9d-b76c2bd378f1"
+  }, {
+    "intent": "small_talk.repeat",
+    "condition": "$session.params.last_return_page = \"filter_bill\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "last_return_page",
+        "value": "select_current_bill"
+      } ]
+    },
+    "targetPage": "Filter Bill",
+    "name": "179d9f75-ef96-4e45-ae6e-f9c57d3a5e7d"
+  }, {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "b763717f-6847-45ee-91eb-15e3e52da258"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, regardons votre dernière facture.", "D'accord, laissez-moi vérifier votre dernier relevé de compte. ", "Ok, allons voir votre dernière facture.", "D'accord, laissez-moi vérifier votre dernière facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Ok, let's look at your latest bill.", "Sure, let me check your latest bill.", "Ok, let's look at your latest invoice.", "Sure, let me check your latest invoice." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": "0"
+      }, {
+        "parameter": "bill_period_select",
+        "value": "current"
+      }, {
+        "parameter": "last_return_page",
+        "value": "select_current_bill"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Fetch Bill Details",
+    "name": "142473c5-f2be-4cb3-ae25-f8adc5538794"
+  }, {
+    "intent": "head_intent.plans_promotions",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "promotions"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "10833384-3809-4718-9555-8dbe6f72b551"
+  }, {
+    "intent": "head_intent.bill_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_vague"
+      } ]
+    },
+    "targetFlow": "Bill Vague",
+    "name": "4ff8e991-7949-41cd-a64c-6ddb85f3dbc2"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.agent_attempt = 0 OR $session.params.agent_attempt = 1 OR $session.params.agent_attempt = 2) AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "agent_attempt",
+        "value": "$sys.func.ADD($session.params.agent_attempt, 1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.agent_attempt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je comprends votre inquiétude, et je suis là pour vous aider. Étant donné que le temps d'attente pour nos agents peut être plus long que d'habitude, je suis convaincu que je peux vous aider avec votre demande. Souhaitez-vous continuer notre conversation afin que je puisse faire de mon mieux pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.agent_attempt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je suis là pour vous aider en toute confiance et avec toutes vos questions concernant votre facturation. Voudriez-vous me donner une autre chance pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Afin de vous faire gagner du temps, veuillez m'indiquer en détail vos questions de facturation." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "1f782de2-e620-4734-b01d-9e6f2480d216"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_attempt = 3 AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sure, laissez-moi vous mettre en contacte avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e2622fc8-a32d-4fee-8eff-2786628f509b"
+  }, {
+    "condition": "$session.params.bill_period_select = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, regardons votre dernière facture.", "D'accord, laissez-moi vérifier votre dernier relevé de compte. ", "Ok, allons voir votre dernière facture.", "D'accord, laissez-moi vérifier votre dernière facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Ok, let's look at your latest bill.", "Sure, let me check your latest bill.", "Ok, let's look at your latest invoice.", "Sure, let me check your latest invoice." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": "0"
+      }, {
+        "parameter": "bill_period_select",
+        "value": "current"
+      }, {
+        "parameter": "last_return_page",
+        "value": "select_current_bill"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Fetch Bill Details",
+    "name": "d1909b54-ada9-4f28-9e61-cda825138c43"
+  }, {
+    "condition": "$session.params.bill_period_select = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Got it." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_return_page",
+        "value": "select_current_bill"
+      }, {
+        "parameter": "bill_period_select",
+        "value": null
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Select Previous Bill",
+    "name": "d508d886-8f9b-46e7-811e-78b7626b6304"
+  }, {
+    "condition": "$session.params.bill_period_select = \"current\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, regardons votre dernière facture.", "D'accord, laissez-moi vérifier votre dernier relevé de compte.", "Ok, allons voir votre dernière facture.", "D'accord, laissez-moi vérifier votre dernière facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Ok, let's look at your latest bill.", "Sure, let me check your latest bill.", "Ok, let's look at your latest invoice.", "Sure, let me check your latest invoice." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": "0"
+      }, {
+        "parameter": "last_return_page",
+        "value": "select_current_bill"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Fetch Bill Details",
+    "name": "e8b2d7af-c327-4fd5-b79d-2b7539c839f9"
+  }, {
+    "condition": "$session.params.bill_period_select = \"previous\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Got it." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bill_period",
+        "value": "-1"
+      }, {
+        "parameter": "last_return_page",
+        "value": "select_current_bill"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Select Previous Bill",
+    "name": "accbbcd5-6163-43e8-aeb3-9f46146da687"
+  }, {
+    "condition": "$session.params.bill_period_select = \"older\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour consulter des factures datant de 3 mois et plus, vous pouvez utiliser votre compte TELUS en ligne ou l'application Mon TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voulez-vous consulter une ancienne facture avec un membre de l'équipe?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "To view invoices 3 months or older, you can use your online My TELUS account or the My TELUS app." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I can help you connect with a team member to review an older invoice." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_return_page",
+        "value": "select_current_bill"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "274e72bf-c3d8-48ac-b8ec-6eafb79addd8"
+  }, {
+    "condition": "$session.params.retrycnt_select_current_bill = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_select_current_bill",
+        "value": 0
+      } ]
+    },
+    "name": "6e2519df-6ef7-44dc-b8fd-f3b38a787e55"
+  }, {
+    "condition": "$session.params.retrycnt_select_current_bill \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_select_current_bill",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "3e4e08b1-895f-4f26-bbc2-93539ca5d991"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_select_current_bill",
+        "value": "$sys.func.ADD($session.params.retrycnt_select_current_bill ,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.retrycnt_select_previous_bill = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.retrycnt_select_previous_bill = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "635d33fc-8a32-4280-829e-2d4a78c9a80e"
+  } ],
+  "transitionRouteGroups": [ "Agent Handoff", "Bill Balance", "From No Match" ]
+}

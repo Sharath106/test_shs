@@ -1,0 +1,213 @@
+{
+  "name": "f127e10c-b97a-4044-a6b6-4aaf07afb48e",
+  "displayName": "Partial Charges",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "bill_compare_reason",
+      "value": "prorated_charges"
+    }, {
+      "parameter": "last_charge_displayed",
+      "value": "partial_charges"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$sys.func.COUNT($session.params.partial_charges) = 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je vois des frais partiels de $session.params.partial_charges[0].chargeItemAmtTxt $ pour $session.params.partial_charges[0].chargeItemDescriptionTxt sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”x-slow”\u003eI can see you have a partial charge of $$session.params.partial_charges[0].chargeItemAmtTxt for $session.params.partial_charges[0].chargeItemDescriptionTxt on your invoice.\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "8296abb2-469c-4d44-a444-91c3c7ffd02f"
+  }, {
+    "condition": "$sys.func.COUNT($session.params.partial_charges) = 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je vois que vous avez des frais partiels sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voici les détails de ces frais :\n\n$session.params.partial_charges[0].chargeItemAmtTxt $ pour $session.params.partial_charges[0].chargeItemDescriptionTxt\n$session.params.partial_charges[1].chargeItemAmtTxt $ pour $session.params.partial_charges[1].chargeItemDescriptionTxt" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can see you have partial charges on your invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”x-slow”\u003eThese are the details of the charges: \u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[0].chargeItemAmtTxt for $session.params.partial_charges[0].chargeItemDescriptionTxt, \u003cbreak time=\"3s\"/\u003e $$session.params.partial_charges[1].chargeItemAmtTxt for $session.params.partial_charges[1].chargeItemDescriptionTxt \u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "be9e5e6a-11a3-48d8-bedc-c78d00fa4d2f"
+  }, {
+    "condition": "$sys.func.COUNT($session.params.partial_charges) = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je vois que vous avez des frais partiels sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voici les détails de ces frais :\n\n$session.params.partial_charges[0].chargeItemAmtTxt $ pour $session.params.partial_charges[0].chargeItemDescriptionTxt\n$session.params.partial_charges[1].chargeItemAmtTxt $ pour $session.params.partial_charges[1].chargeItemDescriptionTxt\n$session.params.partial_charges[2].chargeItemAmtTxt $ pour $session.params.partial_charges[2].chargeItemDescriptionTxt" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can see you have partial charges on your invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”x-slow”\u003eThese are the details of the charges: \u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[0].chargeItemAmtTxt for $session.params.partial_charges[0].chargeItemDescriptionTxt ,\u003cbreak time=\"3s\"/\u003e $$session.params.partial_charges[1].chargeItemAmtTxt for $session.params.partial_charges[1].chargeItemDescriptionTxt ,\u003cbreak time=\"3s\"/\u003e $$session.params.partial_charges[2].chargeItemAmtTxt for $session.params.partial_charges[2].chargeItemDescriptionTxt .\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "c6c74d23-5568-41bb-8c6d-741de0616f1a"
+  }, {
+    "condition": "$sys.func.COUNT($session.params.partial_charges) = 4",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je vois que vous avez des frais partiels sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voici les détails de ces frais :\n\n$session.params.partial_charges[0].chargeItemAmtTxt $ pour ,,$session.params.partial_charges[0].chargeItemDescriptionTxt ,,\n$session.params.partial_charges[1].chargeItemAmtTxt $ pour ,,$session.params.partial_charges[1].chargeItemDescriptionTxt ,,\n$session.params.partial_charges[2].chargeItemAmtTxt $ pour ,,$session.params.partial_charges[2].chargeItemDescriptionTxt ,,\n$session.params.partial_charges[3].chargeItemAmtTxt $ pour  ,,$session.params.partial_charges[3].chargeItemDescriptionTxt " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can see you have partial charges on your invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”x-slow”\u003eThese are the details of the charges: \u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[0].chargeItemAmtTxt for $session.params.partial_charges[0].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[1].chargeItemAmtTxt for $session.params.partial_charges[1].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[2].chargeItemAmtTxt for $session.params.partial_charges[2].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[3].chargeItemAmtTxt for $session.params.partial_charges[3].chargeItemDescriptionTxt.\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "75538232-5c87-408b-93ab-dc4f7238804c"
+  }, {
+    "condition": "$sys.func.COUNT($session.params.partial_charges) = 5",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je vois que vous avez des frais partiels sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voici les détails de ces frais :\n\n$session.params.partial_charges[0].chargeItemAmtTxt $ pour $session.params.partial_charges[0].chargeItemDescriptionTxt\n$session.params.partial_charges[1].chargeItemAmtTxt $ pour $session.params.partial_charges[1].chargeItemDescriptionTxt\n$session.params.partial_charges[2].chargeItemAmtTxt $ pour $session.params.partial_charges[2].chargeItemDescriptionTxt\n$session.params.partial_charges[3].chargeItemAmtTxt $ pour $session.params.partial_charges[3].chargeItemDescriptionTxt\n$session.params.partial_charges[4].chargeItemAmtTxt $ pour $session.params.partial_charges[4].chargeItemDescriptionTxt" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can see you have partial charges on your invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”x-slow”\u003eThese are the details of the charges: \u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[0].chargeItemAmtTxt for $session.params.partial_charges[0].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[1].chargeItemAmtTxt for $session.params.partial_charges[1].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[2].chargeItemAmtTxt for $session.params.partial_charges[2].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[3].chargeItemAmtTxt for $session.params.partial_charges[3].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[4].chargeItemAmtTxt for $session.params.partial_charges[4].chargeItemDescriptionTxt .\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "f59ace06-5ebc-4121-be24-b4e15b3ff87f"
+  }, {
+    "condition": "$sys.func.COUNT($session.params.partial_charges) = 6",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je vois que vous avez des frais partiels sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voici les détails de ces frais :\n\n$session.params.partial_charges[0].chargeItemAmtTxt $ pour $session.params.partial_charges[0].chargeItemDescriptionTxt\n$session.params.partial_charges[1].chargeItemAmtTxt $ pour $session.params.partial_charges[1].chargeItemDescriptionTxt\n$session.params.partial_charges[2].chargeItemAmtTxt $ pour $session.params.partial_charges[2].chargeItemDescriptionTxt\n$session.params.partial_charges[3].chargeItemAmtTxt $ pour $session.params.partial_charges[3].chargeItemDescriptionTxt\n$session.params.partial_charges[4].chargeItemAmtTxt $ pour $session.params.partial_charges[4].chargeItemDescriptionTxt\n$session.params.partial_charges[5].chargeItemAmtTxt $ pour $session.params.partial_charges[5].chargeItemDescriptionTxt" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can see you have partial charges on your invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=”x-slow”\u003eThese are the details of the charges: \u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[0].chargeItemAmtTxt for $session.params.partial_charges[0].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[1].chargeItemAmtTxt for $session.params.partial_charges[1].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[2].chargeItemAmtTxt for $session.params.partial_charges[2].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[3].chargeItemAmtTxt for $session.params.partial_charges[3].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[4].chargeItemAmtTxt for $session.params.partial_charges[4].chargeItemDescriptionTxt ,\u003cbreak time=\"5s\"/\u003e $$session.params.partial_charges[5].chargeItemAmtTxt for $session.params.partial_charges[5].chargeItemDescriptionTxt .\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "241f2185-bc97-4bb4-a9e4-0d999d0dad99"
+  }, {
+    "condition": "$sys.func.COUNT($session.params.partial_charges) \u003e 6",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Il y a plusieurs frais partiels sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voulez-vous les réviser avec un membre de l'équipe?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "There are many partial charges on your invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I can help you connect with a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "6eb4ed4f-a553-424b-a865-a1ca663cd45f"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "6a895877-aa31-4e03-865d-6f4b4dcbaebf"
+  } ]
+}

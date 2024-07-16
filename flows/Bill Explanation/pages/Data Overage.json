@@ -1,0 +1,101 @@
+{
+  "name": "f1ba440b-4061-4e16-ad58-bb5b7effaf29",
+  "displayName": "Data Overage",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "bill_compare_reason",
+      "value": "data_overage"
+    }, {
+      "parameter": "from_bill_explanation",
+      "value": "data_overage"
+    }, {
+      "parameter": "last_charge_displayed",
+      "value": "data_overage"
+    }, {
+      "parameter": "last_page",
+      "value": "Data Overage"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.usage_charges.Data.usageSummaryChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003eYou have usage charges of \u003cprosody rate=”slow”\u003e$$session.params.usage_charges.Data.usageSummaryChargeAmt\u003c/prosody\u003e for data overedges on your invoice.\u003c/speak\u003e", "\u003cspeak\u003eI see a total of \u003cprosody rate=”slow”\u003e$$session.params.usage_charges.Data.usageSummaryChargeAmt\u003c/prosody\u003e for data overedges on your bill.\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVous avez des frais de \u003cprosody rate=”x-slow”\u003e$session.params.usage_charges.Data.usageSummaryChargeAmt $\u003c/prosody\u003e à cause d'une utilisation excédentaire de données sur votre facture.\u003c/speak\u003e", "\u003cspeak\u003eJe vois un total de \u003cprosody rate=”x-slow”\u003e$session.params.usage_charges.Data.usageSummaryChargeAmt $\u003c/prosody\u003e pour des frais d'utilisation excédentaire de données sur votre facture.\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "name": "d5be417b-841a-495b-89ad-9e59f13ee91f"
+  }, {
+    "condition": "$session.params.usage_charges.Dataservices.usageSummaryChargeAmt \u003e 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003eYou have usage charges of \u003cprosody rate=”slow”\u003e$$session.params.usage_charges.Dataservices.usageSummaryChargeAmt\u003c/prosody\u003e for data overages on your invoice.\u003c/speak\u003e", "\u003cspeak\u003eI see a total of $$session.params.usage_charges.Dataservices.usageSummaryChargeAmt\u003c/prosody\u003e for data overages on your bill.\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVous avez des frais de \u003cprosody rate=”x-slow”\u003e$session.params.usage_charges.Dataservices.usageSummaryChargeAmt $\u003c/prosody\u003e pour utilisation excédentaire de données sur votre facture.\u003c/speak\u003e", "\u003cspeak\u003eJe vois un total de \u003cprosody rate=”x-slow”\u003e$session.params.usage_charges.Dataservices.usageSummaryChargeAmt $\u003c/prosody\u003e pour des frais d'utilisation excédentaire de données sur votre facture.\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "name": "2655a7dc-2d37-4d2f-b308-81fdafcde39c"
+  }, {
+    "condition": "$session.params.usage_charges.Data.usageSummaryChargeAmt \u003e= 10 OR $session.params.usage_charges.Dataservices.usageSummaryChargeAmt \u003e= 10",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Offer New Plan",
+    "name": "c68315cc-c5b3-41b6-af32-6f11575fda23"
+  }, {
+    "condition": "($session.params.usage_charges.Data.usageSummaryChargeAmt = null AND $session.params.usage_charges.Dataservices.usageSummaryChargeAmt = null) OR ($session.params.usage_charges.Data.usageSummaryChargeAmt \u003c= 0 AND $session.params.usage_charges.Dataservices.usageSummaryChargeAmt \u003c= 0) OR ($session.params.usage_charges.Data.usageSummaryChargeAmt = null AND $session.params.usage_charges.Dataservices.usageSummaryChargeAmt \u003c= 0) OR ($session.params.usage_charges.Data.usageSummaryChargeAmt \u003c= 0 AND $session.params.usage_charges.Dataservices.usageSummaryChargeAmt = null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can't see charges for data overedges on your invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne vois pas de frais de dépassement de données sur votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "55292ef6-8139-45fa-a510-dc6476a000cf"
+  }, {
+    "condition": "$session.params.usage_charges.Data.usageSummaryChargeAmt \u003c 10 OR $session.params.usage_charges.Dataservices.usageSummaryChargeAmt \u003c 10",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "7bfa208a-cf47-4448-8a2d-0deeb03c9145"
+  } ]
+}

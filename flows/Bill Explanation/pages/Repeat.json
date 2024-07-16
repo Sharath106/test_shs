@@ -1,0 +1,73 @@
+{
+  "name": "bca78ee1-3b99-45d5-96b4-d3c4c28454af",
+  "displayName": "Repeat",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.repeat_counter = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": 0
+      } ]
+    },
+    "name": "80f4d145-5d3e-4a54-92ee-f2e6c6be7e24"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e= 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": "$sys.func.ADD($session.params.repeat_counter,1)"
+      } ]
+    },
+    "name": "903ae6c5-70fb-45e0-ab9d-85c98729d90a"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e 5",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For further assistance, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "58fa79c0-3a97-4486-8790-d83e6472e2eb"
+  }, {
+    "condition": "$session.params.last_page = \"Airtime Overage\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Airtime Overage",
+    "name": "6e77cc29-bf7e-418e-afba-17ade9573419"
+  }, {
+    "condition": "$session.params.last_page = \"Connection Fee\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Connection Fee",
+    "name": "7d73623b-9f18-4e86-af52-bcbb8f7a2f03"
+  }, {
+    "condition": "$session.params.last_page = \"Data Overage\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data Overage",
+    "name": "476973ef-fbdd-46c5-aa5b-72a1a346d26b"
+  }, {
+    "condition": "$session.params.last_page = \"Reconnection Fee\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Reconnection Fee",
+    "name": "4b3ca4d1-5f89-4dea-a42d-015ecbf629d4"
+  }, {
+    "condition": "$session.params.last_page = \"Payment Overdue\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Payment Overdue",
+    "name": "2e6f5084-43ac-4482-be5f-617124e715f2"
+  } ]
+}

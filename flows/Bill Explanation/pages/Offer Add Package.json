@@ -1,0 +1,610 @@
+{
+  "name": "e69bcc5e-8bc6-46f3-adc3-4cab445f5cbf",
+  "displayName": "Offer Add Package",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_offer_add_package",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je ne pense pas avoir compris.", "Je n'ai pas vraiment compris.", "Je ne crois pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Pouvez-vous reformuler votre phrase pour moi?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you mind rephrasing?", "Can you try to rephrase your question? ", "Can you reword that for me?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "88295038-ff5b-4825-a45c-b6eda50c66da"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je ne crois toujours pas avoir compris.", "Je ne comprends toujours pas bien." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pouvez-vous recommencer et reformuler votre phrase encore une fois?", "Pouvez-vous recommencer et reformuler votre phrase encore une fois pour moi?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm still not sure I got this.", "I still don't quite understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "You can type 1 for Yes and 2 for No on your dial pad." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "744a5248-5381-4bbe-be18-248a308baa3e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "c2f2a563-9291-474a-af38-90250f4aa240"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            } ],
+            "conditionalCases": [ {
+              "cases": [ {
+                "condition": "$session.params.bill_compare_reason = \"long_distance_charges\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'avenir, pour éviter les frais d’interurbain au Canada, vous pourriez envisager d'ajouter un forfait interurbain à partir de 5 dollars par mois." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "Souhaiteriez-vous voir les options que nous proposons?" ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "In the future, to avoid charges for Canadian long distance, you could consider adding a long distance package starting at 5$ per month." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "Would you like to see the options we have?" ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.bill_compare_reason = \"international_charges\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'avenir, pour éviter les frais d’interurbain à l'international, vous pourriez envisager d'ajouter un forfait interurbain à partir de 5 dollars par mois." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "Souhaiteriez-vous voir les options que nous proposons?" ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "In the future, to avoid charges for International long distance, you could consider adding a long distance     package starting at 5$ per month." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "Would you like to see the options we have?" ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              } ]
+            } ]
+          },
+          "name": "7036a1f5-b7a6-4c34-bd05-09f54dee0ffd"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            } ],
+            "conditionalCases": [ {
+              "cases": [ {
+                "condition": "$session.params.bill_compare_reason = \"long_distance_charges\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour écouter les options d’interurbain au Canada que nous offrons, appuyez sur le 1, pour dire non, appuyez sur le 2." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To listen canadian long distance options we have, press 1, to say no, press 2" ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.bill_compare_reason = \"international_charges\"",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Pour écouter les options d’interurbain à l’international que nous offrons, appuyez sur le 1, pour dire non, appuyez sur le 2." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "To listen International long distance options we have, press 1, to say no, press 2" ]
+                    },
+                    "languageCode": "en"
+                  }
+                } ]
+              } ]
+            } ]
+          },
+          "name": "5c02076b-0f84-4991-bd08-9e65250441d4"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "57fa81ee-cf4c-4af6-a0f9-cfb6fe05d42f"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 10
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "offer add package"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.bill_compare_reason = \"long_distance_charges\"",
+        "caseContent": [ {
+          "additionalCases": {
+            "cases": [ {
+              "condition": "$session.params.retrycnt_offer_add_package = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour entendre nos options d’appels interurbains au Canada, appuyez sur le 1, sinon, appuyez sur le 2" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To listen canadian long distance options we have, press 1, to say no, press 2" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour éviter les frais d'interurbain au Canada, vous pourriez ajouter un forfait d'interurbain à partir de 5 $ par mois." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Voulez-vous entendre les options que nous proposons?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "In the future, to avoid charges for Canadian long distance, you could consider adding a long distance package starting at 5$ per month." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Would you like to see the options we have?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          }
+        } ]
+      }, {
+        "condition": "$session.params.bill_compare_reason = \"international_charges\"",
+        "caseContent": [ {
+          "additionalCases": {
+            "cases": [ {
+              "condition": "$session.params.retrycnt_offer_add_package = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour entendre nos options d’appels interurbains à l’international, appuyez sur le 1, sinon, appuyez sur le 2" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To listen International long distance options we have, press 1, to say no, press 2" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour éviter les frais d’interurbains à l’international, vous pourriez ajouter un forfait d’interurbain à partir de 5 $ par mois." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Voulez-vous entendre les options que nous proposons?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "In the future, to avoid charges for International long distance, you could consider adding a long distance     package starting at 5$ per month." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Would you like to see the options we have?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "route",
+        "value": "plans_add_feature"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "9e67402c-ba11-4be6-8fbc-f3a7fe48a8ca"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.usage_summary_charges.RoamingLDUSInternational.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.InternationalGPRSDataRoaming.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.US1XDataRoaming.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.RoamingTxtMsgSent.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.EasyRoamUS.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.EasyRoamINTL.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.LongDistanceUSInternationalVoiceUsage.totalChargeAmt \u003e= 10",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Offer New Plan",
+    "name": "16b47a2f-0813-47ec-b371-0e92b3c46e6e"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Is Multiple Charge",
+    "name": "9c9c5295-6f1d-4d6f-b0e8-396dc24d6e7f"
+  }, {
+    "intent": "head_intent.bill_amount_due",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_amount_due"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "from_page",
+        "value": "offer_add_package"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "cc3f3f06-7540-4419-a0b3-c77e3ef439a0"
+  }, {
+    "intent": "small_talk.repeat",
+    "condition": "$session.params.last_return_page = \"bill_breakdown\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_intl_charges",
+        "value": null
+      }, {
+        "parameter": "is_bill_breakdown_displayed",
+        "value": "false"
+      } ]
+    },
+    "targetPage": "Bill Breakdown",
+    "name": "2be37bfd-53ad-4cff-bbf6-0e197f9d3ef3"
+  }, {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "82e27e80-5c33-4acb-aa1c-2da03ed73bd4"
+  }, {
+    "intent": "supplemental.check_another_bill",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "bill_period_select",
+        "value": null
+      }, {
+        "parameter": "bill_period",
+        "value": null
+      } ]
+    },
+    "targetPage": "Select Current Bill",
+    "name": "e24438ce-d100-470f-94b1-931e4ac7dd89"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sur, il me fera plaisir de vous mettre en contact avec un membre de l’équipe.", "Permettez-moi de vous transférer à un membre de l'équipe afin de vous aider.", "Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider davantage." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "af93175a-db38-4c04-91e6-21a24559d3bd"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "($session.params.agent_attempt = 0 OR $session.params.agent_attempt = 1 OR $session.params.agent_attempt = 2) AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": " agent_attempt",
+        "value": "$sys.func.ADD($session.params.agent_attempt, 1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.agent_attempt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je comprends votre inquiétude, et je suis là pour vous aider. Étant donné que le temps d'attente pour nos agents peut être plus long que d'habitude, je suis convaincu que je peux vous aider avec votre demande. Souhaitez-vous continuer notre conversation afin que je puisse faire de mon mieux pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.agent_attempt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je suis là pour vous aider en toute confiance et avec toutes vos questions concernant votre facturation. Voudriez-vous me donner une autre chance pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Afin de vous faire gagner du temps, veuillez m'indiquer en détail vos questions de facturation." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "9050008d-dd2a-4c16-b82d-f96f4109d8d8"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_attempt = 3 AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sure, laissez-moi vous mettre en contacte avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6c7fc8e5-84ab-49ff-b61e-ae83184469e4"
+  }, {
+    "condition": "$session.params.dtmf_offer_add_package = \"2\" AND ($session.params.usage_summary_charges.RoamingLDUSInternational.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.InternationalGPRSDataRoaming.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.US1XDataRoaming.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.RoamingTxtMsgSent.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.EasyRoamUS.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.EasyRoamINTL.totalChargeAmt \u003e= 10 OR $session.params.usage_summary_charges.LongDistanceUSInternationalVoiceUsage.totalChargeAmt)",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Offer New Plan",
+    "name": "f6cd15b5-22a3-46d9-963f-6a524fc60cbd"
+  }, {
+    "condition": "$session.params.dtmf_offer_add_package = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "route",
+        "value": "plans_add_feature"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "786f78a5-d0f3-4670-8aa8-ecb262886117"
+  }, {
+    "condition": "$session.params.dtmf_offer_add_package = \"2\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Is Multiple Lines",
+    "name": "08b86e16-0990-4c30-9b78-903596f487dd"
+  }, {
+    "condition": "$session.params.retrycnt_offer_add_package = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_offer_add_package",
+        "value": 0
+      } ]
+    },
+    "name": "bb88701b-73c5-4f0d-b260-121d2763b0c9"
+  }, {
+    "condition": "$session.params.retrycnt_offer_add_package \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_offer_add_package",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "09217029-0cf5-467c-9031-15d3675a435c"
+  }, {
+    "condition": "$session.params.dtmf_offer_add_package = 3 OR $session.params.dtmf_offer_add_package = 9 OR $session.params.dtmf_offer_add_package = 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je n'ai pas bien compris.", "Désolé, je n'ai pas compris.", "Je n'ai pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_offer_add_package",
+        "value": null
+      }, {
+        "parameter": "retrycnt_offer_add_package",
+        "value": "$sys.func.ADD($session.params.retrycnt_offer_add_package,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "d57e97d1-f0db-47f9-baa9-ca1530b64283"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "retrycnt_offer_add_package",
+        "value": "$sys.func.ADD($session.params.retrycnt_offer_add_package ,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.retrycnt_offer_add_package = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.retrycnt_offer_add_package = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "09e8ffc8-769f-4bb3-8398-76f69713393e"
+  } ],
+  "transitionRouteGroups": [ "Feature added", "Credit / Waive Fee / Discount", "Charges Details", "Data", "Main / All reasons", "Payment overdue", "Disambiguation", "General follow-ups", "Bill Balance", "AAM Plans Available" ]
+}
