@@ -1,0 +1,636 @@
+{
+  "name": "0169db5f-ba30-4f75-b154-736532806ca7",
+  "displayName": "Account Management",
+  "transitionRoutes": [ {
+    "intent": "head_intent.bill_vague",
+    "condition": "$session.params.route_hi = \"bill_vague\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Bill Vague",
+    "name": "e91745c1-d0ae-4b76-b44c-a2959fa780cd"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I'm happy to get you to a live agent." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Certainement, je peux vous transférer à un membre de l’equipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e1a357bf-db7c-4215-941a-a275999893d1"
+  }, {
+    "intent": "head_intent.account_activation",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "multiple_line_activation"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "08a66a31-ec3e-44a5-9479-398f76e7dccf"
+  }, {
+    "intent": "head_intent.account_close",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_close"
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "41550c2b-33f3-4147-a59c-37c89c4043fd"
+  }, {
+    "intent": "head_intent.churn_remove_a_line",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "remove_a_line"
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "8490065f-55a5-4192-9712-3a7008806b08"
+  }, {
+    "intent": "head_intent.account_vague",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "0c10bb52-9799-4d37-be9d-832fe700cb58"
+  }, {
+    "intent": "head_intent.everything_roaming",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "everything_roaming"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "51a2fe9f-f946-403c-a646-7dbd67e105cf"
+  }, {
+    "intent": "head_intent.suspend",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "suspend"
+      } ]
+    },
+    "targetPage": "Suspend",
+    "name": "6b5d1208-4a42-474b-9eea-45d4ac04812f"
+  }, {
+    "condition": "$session.params.routeDetails = null AND $session.params.conversation = null AND $session.params.searchResult = null AND $session.params.user = null AND $session.params.init != null",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "init_retry",
+        "value": "acct mgmt flow"
+      } ]
+    },
+    "name": "3da9136c-75fb-4341-aacb-5ab34fec94ce"
+  }, {
+    "condition": "$session.params.is_repeat_prompted = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_repeat_prompted",
+        "value": null
+      } ]
+    },
+    "targetPage": "Repeat",
+    "name": "7abef5dd-e769-4b9f-99ec-00f5ac9f2260"
+  }, {
+    "condition": "$session.params.route = \"login_problems\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Online Profile",
+    "name": "7531ead3-985c-4ae8-a11d-0c5a162acf44"
+  }, {
+    "condition": "$session.params.route = \"equipment_details\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Equipment",
+    "name": "46a6dc53-814b-43d8-8839-3adafb6cc6f0"
+  }, {
+    "condition": "$session.params.route = \"account_fraud\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Security Fraud",
+    "name": "851b5dfd-ac84-47a9-b8d0-f76a5e26e011"
+  }, {
+    "condition": "$session.params.route = \"giving back\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Giving Back",
+    "name": "094c5420-9898-44b7-927a-4f03d70377ca"
+  }, {
+    "condition": "$session.params.route = \"why_two_bans\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Why 2 account numbers",
+    "name": "0d7a9815-c72a-4318-932f-9a0dd4092a30"
+  }, {
+    "condition": "$session.params.route = \"change_phonenumber\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Phone Number",
+    "name": "ddc07423-0e6d-4874-8b60-cc86b1955ce6"
+  }, {
+    "condition": "$session.params.route = \"change_secquestion\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Security Question",
+    "name": "7885b691-c1c8-43cc-a409-f99072936b67"
+  }, {
+    "condition": "$session.params.route = \"change_PIN\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change PIN",
+    "name": "54758200-7a41-42c1-95d2-17bb90182b4d"
+  }, {
+    "condition": "$session.params.route = \"lost_stolen_phone\" AND $session.params.acct_id_error = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Losing a phone or device can definitely be a tough experience to go through. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Most phones have Location services enabled which may allow you to find it. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you can't find your device, I can send you a text with instructions how to suspend your services." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Perdre un téléphone ou un autre appareil peut certainement être une expérience stressante. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "La majorité des téléphones ont un service de localisation qui peut vous permettre de le retrouver. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous ne trouvez pas votre appareil, je peux vous envoyer un texte contenant des instructions sur la manière de suspendre vos services." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Lost and Stolen or Find Phone online or app",
+    "name": "134e5314-4790-4573-a11a-352d3d9f66e9"
+  }, {
+    "condition": "$session.params.route = \"phone_found\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Phone Found",
+    "name": "777cf484-8a58-48c3-88cb-7a1beb623366"
+  }, {
+    "condition": "$session.params.route = \"account_update_info\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Account update info",
+    "name": "f1c03bf4-a1f6-46e8-a0c5-250ba235c4a6"
+  }, {
+    "condition": "$session.params.route = \"forgot_PIN\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Forgot PIN",
+    "name": "3844273f-446c-4bcc-af10-4b783479d3fe"
+  }, {
+    "condition": "$session.params.route = \"notifications\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Notifications",
+    "name": "d748249d-d643-4e1e-aa94-aa7170a6f3c3"
+  }, {
+    "condition": "$session.params.route = \"town\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Transfer of ownership",
+    "name": "33bfea04-3fe0-4ceb-9a03-5ea42a8473bd"
+  }, {
+    "condition": "$session.params.route = \"suspend\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Suspend",
+    "name": "a0754401-af27-4697-811d-69dd9a638217"
+  }, {
+    "condition": "$session.params.route = \"suspend_re-instate_service\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Reinstate Service",
+    "name": "252f0181-8b7a-4082-b808-0432879adf31"
+  }, {
+    "condition": "$session.params.route = \"deceased_client\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Deceased customer",
+    "name": "4ed37491-c033-4e12-adf5-42a8efc0e4e3"
+  }, {
+    "condition": "$session.params.route = \"timing_of_changes\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Timing of account changes",
+    "name": "0ee020aa-a045-4ed7-abdb-4abe53ffebe1"
+  }, {
+    "condition": "$session.params.route = \"find_account_number\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Find Account Number",
+    "name": "3b1eff70-d445-4bce-898f-df57a2105ef2"
+  }, {
+    "condition": "$session.params.route = \"enable_disable_data\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Enable or disable data",
+    "name": "04f25aa0-bb36-4c29-ab26-06539362deb0"
+  }, {
+    "condition": "$session.params.route = \"data_limits\" AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data Limits",
+    "name": "503c5856-fb67-4d81-ad68-15797fe73b9c"
+  }, {
+    "condition": "$session.params.route = \"do_not_call_list\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Do not call list",
+    "name": "f76c5d47-eacf-431b-97ba-a42df62bf80d"
+  }, {
+    "condition": "$session.params.route = \"activate_sim\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Choose New/Existing",
+    "name": "767ec3bc-2310-41a6-9cc1-8c9098e1db19"
+  }, {
+    "condition": "$session.params.route = \"cant_renew_contract\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cannot Renew Contract",
+    "name": "c35e8962-6e03-49ff-ae58-3e76ce8412c9"
+  }, {
+    "condition": "$session.params.route = \"find_my_phone\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Find my phone",
+    "name": "1f5a2c42-c483-4922-8f52-cef591fddada"
+  }, {
+    "condition": "$session.params.route = \"privacy_request_center\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Privacy Request Center",
+    "name": "13625b42-1e25-4135-8dd6-8d6930510137"
+  }, {
+    "condition": "$session.params.route = \"out_of_scope_corporate\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Out of scope Corp",
+    "name": "67f53c36-4ef2-4295-89b6-def830b9ad5b"
+  }, {
+    "condition": "$session.params.route = \"account_status\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Account Status Start",
+    "name": "00ffb191-f986-4cb8-9d66-bfdf120c9abf"
+  }, {
+    "condition": "$session.params.route = \"donate_your_phone\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Donate your phone",
+    "name": "5b842d0e-6fe9-4570-94d8-3985d328ae0a"
+  }, {
+    "condition": "$session.params.route = \"health_for_good\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Health for Good",
+    "name": "0079b9cb-9bf6-4f0e-b514-0c10df179d83"
+  }, {
+    "condition": "$session.params.route = \"internet_for_good\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Internet for Good",
+    "name": "a701c85b-5592-4034-a6a9-86b63ce1dba1"
+  }, {
+    "condition": "$session.params.route = \"future_friendly_foundation\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Future Friendly foundation",
+    "name": "a6fefdc4-bc11-44bf-9a6a-bf1b01da4aaf"
+  }, {
+    "condition": "$session.params.route = \"mobility_for_good\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Mobility for Good",
+    "name": "120a36d6-df27-49c2-a7dd-ffbf7f4eb2e4"
+  }, {
+    "condition": "$session.params.route = \"social_impact\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Social Impact",
+    "name": "1b808659-543d-404d-bab5-67ebfc6b8fe4"
+  }, {
+    "condition": "$session.params.route = \"account_switch\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Account type",
+    "name": "b12dcf68-c903-4e8f-8590-e779e6e43f01"
+  }, {
+    "condition": "$session.params.route = \"referral_program\" AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Referral Program",
+    "name": "0ce74380-24c5-4b8a-9755-7747c2546744"
+  }, {
+    "condition": "$session.params.route = \"referral_program\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Referral program EPP",
+    "name": "c805e25e-b12a-4471-ac2b-04a080608296"
+  }, {
+    "condition": "$session.params.route = \"calls_from_telus\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Calls from TELUS",
+    "name": "b81d36e9-eb58-4ef4-b9ea-92745089b38c"
+  }, {
+    "condition": "$session.params.route = \"chinese_support\" AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Chinese support",
+    "name": "06cb1dc5-e2b2-4c35-8c4e-40df7c0cb95e"
+  }, {
+    "condition": "$session.params.route = \"chinese_support\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Chinese support EPP",
+    "name": "a64f805e-08c7-4a20-a48d-767923899ee1"
+  }, {
+    "condition": "$session.params.route = \"telus_rewards\" AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Rewards ",
+    "name": "23fae06a-62c8-45c6-91e4-b223bb6890b3"
+  }, {
+    "condition": "$session.params.route = \"telus_rewards\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Rewards EPP",
+    "name": "46659990-1625-48f0-a503-a532f327dbc3"
+  }, {
+    "condition": "$session.params.route = \"marketing\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Marketing",
+    "name": "30e6069f-ce3d-4f41-b195-c88e1255b65d"
+  }, {
+    "condition": "$session.params.route = \"alert_ready\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Alert Ready",
+    "name": "52a86858-1bb0-420d-b2a5-c27707581800"
+  }, {
+    "condition": "$session.params.route = \"accessibility\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Accessibility",
+    "name": "1954adc7-336f-417c-b4ae-d0ef69381979"
+  }, {
+    "condition": "$session.params.route = \"account_complaints_feedback\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Escalations",
+    "name": "4abacd3d-a481-4989-b03b-b2ec5400f780"
+  }, {
+    "condition": "$session.params.route = \"consumer_health_product\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Consumer Health Product",
+    "name": "377bffac-a178-465b-b810-b955488dedc9"
+  }, {
+    "condition": "$session.params.route = \"name_change\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Account name change",
+    "name": "fc4b7c42-8ca7-477f-ba59-3bd265db2147"
+  }, {
+    "condition": "$session.params.route = \"2FA\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "2 Factor Authentication",
+    "name": "ec8fd9c4-9fed-4b6c-a6ff-5338d125fe6a"
+  }, {
+    "condition": "$session.params.route = \"eversafe\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS EverSafe",
+    "name": "83f68948-467b-452d-871a-10e812112b35"
+  }, {
+    "condition": "$session.params.route = \"tou_tv\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "touTV extra package",
+    "name": "533651e9-2bb7-46fc-b0f6-2a1e8f1e5829"
+  }, {
+    "condition": "$session.params.route = \"Sal testing Reinstate\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RReinstate Mock Test Page",
+    "name": "72b8ecb5-8f80-44d1-87f8-9169059d3740"
+  }, {
+    "condition": "$session.params.route = \"supp_onlineapp\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bounce Back",
+    "name": "3ea293a4-fa3d-4955-abeb-7975f30387d3"
+  }, {
+    "condition": "$session.params.route = \"lost_stolen_phone\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Lost and Stolen or Find Phone",
+    "name": "ba8182f0-c733-43a6-8a81-2dd8dd638d0b"
+  }, {
+    "condition": "$session.params.route = \"routeback_smsunhelpful\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bounce Back",
+    "name": "ac714ca9-16d1-4eb5-ab97-52aafd1d69ef"
+  }, {
+    "condition": "$session.params.route = \"data_limits\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data Limits EPP",
+    "name": "21dc2a8d-0d80-4f4b-87d9-56acc1e77c7c"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "J'ai du mal à comprendre cette question.", "J'ai mal compris votre demande.", "Je n'ai pas saisi ce que vous avez dit.", "Je crois que je ne vous suis pas.", "Je ne comprends pas de quoi vous me parlez.", "Je n'ai pas compris. Pouvez-vous répéter?", "Je n'ai pas compris ce que vous avez dit. Pouvez-vous répéter?", "Désolé, pourriez-vous répéter?", "Désolé, pouvez-vous répéter?", "Pouvez-vous répéter?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler votre phrase?", "Pouvez-vous répéter encore une fois?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "8294ee7d-8b91-4c54-8196-28bbaf3629f9"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "179075bc-d5ea-4feb-a955-b4d46a9a1ca0"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I'm not sure I got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Can you try to rephrase your question?", "Can you reword that for me?", "Do you mind rephrasing?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir bien compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Seriez-vous en mesure de reformuler?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "6d981a46-c632-4dee-8a79-dd1d4262e941"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "40ada380-36b5-4a7a-a1a9-5f130ba14e5f"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I did not catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Can you try to rephrase your question?", "Can you reword that for me?", "Do you mind rephrasing?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous essayer de reformuler votre question?", "Pouvez-vous reformuler cette question?", "Pouvez-vous reformuler votre question?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "adb2d76b-c7e5-42ac-a375-162819a48b60"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "ec5fd176-ab53-4585-9db0-66e2583d6558"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_CUSTOM",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "transitionRouteGroups": [ "Small Talk" ]
+}
