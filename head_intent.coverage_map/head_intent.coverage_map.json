@@ -1,0 +1,23 @@
+{
+  "name": "114d7c99-6f0f-4da6-b447-d34af326141a",
+  "displayName": "head_intent.coverage_map",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about the coverage map of TELUS network.",
+  "numTrainingPhrases": 176
+}

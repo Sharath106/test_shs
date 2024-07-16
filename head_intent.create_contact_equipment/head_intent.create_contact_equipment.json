@@ -1,0 +1,20 @@
+{
+  "name": "a9fb484b-ab15-4614-98bd-542272d534a6",
+  "displayName": "head_intent.create_contact_equipment",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "create contact in equipment",
+  "numTrainingPhrases": 131
+}

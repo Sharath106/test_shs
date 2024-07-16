@@ -1,0 +1,20 @@
+{
+  "name": "9ed6029d-571c-4317-960b-4582525ad17c",
+  "displayName": "head_intent.contact_webstore",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "info"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer asking to contact Telus webstore. ",
+  "numTrainingPhrases": 141
+}

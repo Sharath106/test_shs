@@ -1,0 +1,31 @@
+{
+  "name": "a694f989-26b4-435f-a54e-13633a7d58ee",
+  "displayName": "head_intent.cruise",
+  "parameters": [ {
+    "id": "location",
+    "entityType": "@sys.location"
+  }, {
+    "id": "location1",
+    "entityType": "@sys.location"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer roaming on a cruise ship.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 166
+}

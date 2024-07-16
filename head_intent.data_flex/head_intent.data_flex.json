@@ -1,0 +1,21 @@
+{
+  "name": "abf23820-29e4-4264-ae2d-aeabbd1bb033",
+  "displayName": "head_intent.data_flex",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about Data Flex add-on.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 134
+}

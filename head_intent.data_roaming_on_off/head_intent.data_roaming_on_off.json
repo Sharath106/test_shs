@@ -1,0 +1,21 @@
+{
+  "name": "79be5d6a-c5ed-4908-bbea-4ec03a20eda5",
+  "displayName": "head_intent.data_roaming_on_off",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about how to turn data roaming on/off.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 123
+}

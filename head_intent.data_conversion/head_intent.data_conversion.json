@@ -1,0 +1,24 @@
+{
+  "name": "6c5f3bcd-74ca-4723-a991-6a5fadea3399",
+  "displayName": "head_intent.data_conversion",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about how data is converted.",
+  "asrCorrections": [ {
+    "errorPhrase": "MB",
+    "correctionPhrase": "megabytes"
+  } ],
+  "numTrainingPhrases": 181
+}
