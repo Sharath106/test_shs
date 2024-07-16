@@ -1,0 +1,47 @@
+{
+  "entities": [ {
+    "value": "smartwatch",
+    "synonyms": [ "smart watch", "smartwatch", "watch" ],
+    "languageCode": "en"
+  }, {
+    "value": "tablet",
+    "synonyms": [ "ipad", "tab", "tablet" ],
+    "languageCode": "en"
+  }, {
+    "value": "sim card",
+    "synonyms": [ "esim", "sim", "sim card" ],
+    "languageCode": "en"
+  }, {
+    "value": "iphone",
+    "synonyms": [ "apple", "i phone", "iphone" ],
+    "languageCode": "en"
+  }, {
+    "value": "android",
+    "synonyms": [ "android" ],
+    "languageCode": "en"
+  }, {
+    "value": "samsung",
+    "synonyms": [ "Galaxy", "Samsung" ],
+    "languageCode": "en"
+  }, {
+    "value": "iphone max",
+    "synonyms": [ "iphone max" ],
+    "languageCode": "en"
+  }, {
+    "value": "iphone 12",
+    "synonyms": [ "iphone 12" ],
+    "languageCode": "en"
+  }, {
+    "value": "iphone 13",
+    "synonyms": [ "iphone 13" ],
+    "languageCode": "en"
+  }, {
+    "value": "iphone 14",
+    "synonyms": [ "iphone 14" ],
+    "languageCode": "en"
+  }, {
+    "value": "iphone mini",
+    "synonyms": [ "iphone mini" ],
+    "languageCode": "en"
+  } ]
+}

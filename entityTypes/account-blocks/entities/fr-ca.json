@@ -1,0 +1,43 @@
+{
+  "entities": [ {
+    "value": "data",
+    "synonyms": [ "connexion", "data", "depassement", "dépassement", "depassements", "dépassements ", "donnees", "données", "internet", "limites de donnees", "limites de données", "utilisation de donnees", "utilisation de données" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "people",
+    "synonyms": [ "# de cell", "# de telephone", "# de téléphone", "appel", "appels", "ex", "numero", "numéro", "numero de telephone", "numéro de téléphone", "people", "personne", "quelqu'un", "telephone", "téléphone", "telephonique", "téléphonique", "telephoniques", "téléphoniques" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "spam",
+    "synonyms": [ "appels indesirables", "appels indésirables", "call control", "controle des appels", "contrôle des appels", "indesirable", "indésirable", "indesirables", "indésirables", "spam", "spams", "telemarketing" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "ld",
+    "synonyms": [ "a l'etranger", "à l'étranger", "appel interurbain", "appel longue distance", "appels interurbains", "appels longue distance", "autre pays", "hors du pays", "international", "internationaux", "interurbains", "l'exterieur du Canada", "l'extérieur du Canada", "ld", "longue distance" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "port",
+    "synonyms": [ "port", "transfer", "transfere", "transféré", "transfère", "transferer", "transférer", "transfert" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "9",
+    "synonyms": [ "dtmf_digits_9", "envoyer un message texte", "envoyer un SMS", "envoyer un texto", "lien par message texte", "lien par sms", "lien par texto", "message texte", "sms", "texto" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "agent", "dtmf_digits_0", "membre de l'equipe", "membre de l'équipe", "operateur", "opérateur" ],
+    "languageCode": "fr-ca"
+  } ]
+}

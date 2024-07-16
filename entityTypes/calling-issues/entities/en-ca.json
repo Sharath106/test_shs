@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "no signal",
+    "synonyms": [ "cell service", "cell service issues", "emergency calls", "network", "no connection", "no network", "no phone service", "no service", "No Service", "no signal", "no signals", "not connecting", "service issues", "signal" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "receive",
+    "synonyms": [ "can't receive", "can't receive calls", "cannot receive", "cannot receive calls", "getting", "incoming", "phone in", "receive", "receiving", "recieving" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "place",
+    "synonyms": [ "can't call", "can't make", "can't make calls", "can't place", "can't place calls", "cannot make calls", "make", "making", "phone out", "place", "placing", "cannot make" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "long distance",
+    "synonyms": [ "abroad", "international", "international calling", "internationally", "ld calling", "long distance", "overseas" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "search",
+    "synonyms": [ "search", "searching" ],
+    "languageCode": "en-ca"
+  } ]
+}

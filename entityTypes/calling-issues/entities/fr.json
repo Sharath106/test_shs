@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "no signal",
+    "synonyms": [ "no signal", "aucun signal", "pas de signal", "pas de réseau", "pas de connection", "pas de service", "appels d'urgence", "pas de service téléphonique", "problèmes de service cellulaire", "problèmes de service", "signal", "réseau", "service cellulaire" ],
+    "languageCode": "fr"
+  }, {
+    "value": "place",
+    "synonyms": [ "place", "ne peut pas passer d'appels", "endroit", "Fabriquer", "fabrication", "placement", "téléphoner", "impossible de passer des appels" ],
+    "languageCode": "fr"
+  }, {
+    "value": "receive",
+    "synonyms": [ "receive", "ne peut pas recevoir d'appels", "recevoir", "entrant", "recevoir", "appeler", "ne peut pas recevoir d'appels", "recevoir" ],
+    "languageCode": "fr"
+  } ]
+}

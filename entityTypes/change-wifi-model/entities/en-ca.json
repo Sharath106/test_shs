@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "Novatel",
+    "synonyms": [ "mifi", "mifi 7000", "novatel", "Novatel", "Novatel wireless mifi 7000 " ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "Huawei",
+    "synonyms": [ "e8372", "Huawei", "huawei e8372", "huawei e8372 lte", "huwaei" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "NetGear",
+    "synonyms": [ "785", "AC785S", "NetGear", "NetGear AC785S" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1", "one" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2", "two" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3", "three" ],
+    "languageCode": "en-ca"
+  } ]
+}

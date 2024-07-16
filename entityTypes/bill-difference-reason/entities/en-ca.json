@@ -1,0 +1,39 @@
+{
+  "entities": [ {
+    "value": "data overage",
+    "synonyms": [ "data", "data charges", "data extra charge", "data over charge", "data overage", "data overages" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "airtime overage",
+    "synonyms": [ "air time", "airtime", "airtime extra charge", "airtime over charge", "airtime overage" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "long distance",
+    "synonyms": [ "LD", "long distance" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "international",
+    "synonyms": [ "international" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "payment overdue",
+    "synonyms": [ "late fee", "payment overdue" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "feature added",
+    "synonyms": [ "call forwarding", "feature added" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "connection fee",
+    "synonyms": [ "connect charge", "connection charge", "connection fee" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "double charges",
+    "synonyms": [ "billed twice", "charged 2x", "charged me twice", "charged twice", "charged two times", "double billed", "double charged", "double charges", "double-charge", "double-charged", "invoiced twice", "noticed it doubled", "twice", "twice the charge" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "reconnection fee",
+    "synonyms": [ "re-connection charge", "re-connection charges", "re-connection fees", "reconnection charge", "reconnection charges", "reconnection fee", "reconnection fees", "re-connection fee" ],
+    "languageCode": "en-ca"
+  } ]
+}

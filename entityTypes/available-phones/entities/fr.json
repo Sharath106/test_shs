@@ -1,0 +1,147 @@
+{
+  "entities": [ {
+    "value": "Alcatel GoFlip 3",
+    "synonyms": [ "Alcatel GoFlip 3", "Alcatel GoFlip 3", "goflip 3", "allez flip 3", "allez flip3" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Bring Your Own Device",
+    "synonyms": [ "Bring Your Own Device", "Apportez votre propre appareil", "BYOD" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Certified Pre-Owned (CPO)",
+    "synonyms": [ "Certified Pre-Owned (CPO)", "Véhicules d'occasion certifiés (CPO)", "CPO de l'iPhone 12 Pro Max", "CPO de l'iPhone 12 Max", "CPO iPhone 12", "iPhone 12 mini CPO", "Samsung S21 5G CPO", "S21 5G CPO" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone",
+    "synonyms": [ "iPhone", "iPhone", "iphone" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone 11",
+    "synonyms": [ "iPhone 11", "iPhone 11", "iphone 11", "iphone onze" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone 12",
+    "synonyms": [ "iPhone 12", "iPhone 12", "iphone 12", "iphone douze", "iPhone 12", "12" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone 12 Mini",
+    "synonyms": [ "iPhone 12 Mini", "iPhone 12 Mini" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone 12 Pro",
+    "synonyms": [ "iPhone 12 Pro", "iPhone 12 Pro", "iPhone 12 Pro", "12 Pro" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone 12 Pro Max",
+    "synonyms": [ "iPhone 12 Pro Max", "iPhone 12 Pro Max", "iPhone 12 Pro Max", "12 pro max" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone 13",
+    "synonyms": [ "iPhone 13", "iPhone 13", "iphone 13", "iphone treize" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone 13 Mini",
+    "synonyms": [ "iPhone 13 Mini", "iPhone 13 Mini" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone 13 Pro",
+    "synonyms": [ "iPhone 13 Pro", "iPhone 13 Pro" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone 13 Pro Max",
+    "synonyms": [ "iPhone 13 Pro Max", "iPhone 13 Pro Max" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone SE",
+    "synonyms": [ "iPhone SE", "iPhone SE", "iphone se" ],
+    "languageCode": "fr"
+  }, {
+    "value": "iPhone XR",
+    "synonyms": [ "iPhone XR", "iPhone XR", "iphone xr" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Motorola moto g power",
+    "synonyms": [ "Motorola moto g power", "Motorola moto g puissance", "moto g puissance" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Motorola one 5G ace",
+    "synonyms": [ "Motorola one 5G ace", "Motorola un as 5G", "un as 5G" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung",
+    "synonyms": [ "Samsung", "Samsung", "samsung", "Samsung", "Galaxie", "Noter", "Samsung", "samsung galaxy", "galaxy" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung Galaxy A32 5G",
+    "synonyms": [ "Samsung Galaxy A32 5G", "Samsung Galaxy A32 5G", "Galaxy A32 5G" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung Galaxy A52 5G",
+    "synonyms": [ "Samsung Galaxy A52 5G", "Samsung Galaxy A52 5G", "Galaxy A52 5G" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung Galaxy Note20 Ultra 5G",
+    "synonyms": [ "Samsung Galaxy Note20 Ultra 5G", "Samsung Galaxy Note20 Ultra 5G", "Galaxy Note20 Ultra 5G" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung Galaxy S20 FE 5G",
+    "synonyms": [ "Samsung Galaxy S20 FE 5G", "Samsung Galaxy S20 FE 5G", "Galaxy S20 FE 5G" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung Galaxy S21 5G",
+    "synonyms": [ "Samsung Galaxy S21 5G", "Samsung Galaxy S21 5G", "Galaxy S21 5G" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung Galaxy S21 Ultra 5G",
+    "synonyms": [ "Samsung Galaxy S21 Ultra 5G", "Samsung Galaxy S21 Ultra 5G", "Galaxy S21 Ultra 5G" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung Galaxy S21+ 5G",
+    "synonyms": [ "Samsung Galaxy S21+ 5G", "Samsung Galaxy S21+ 5G", "Galaxy S21+ 5G" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung Galaxy XCover Pro",
+    "synonyms": [ "Samsung Galaxy XCover Pro", "Samsung Galaxy XCover Pro", "Galaxy XCover Pro" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung Galaxy Z Flip3 5G",
+    "synonyms": [ "Samsung Galaxy Z Flip3 5G", "Galaxy Z Flip3 5G", "Samsung Galaxy Z Flip3 5G" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Samsung Galaxy Z Fold3 5G",
+    "synonyms": [ "Samsung Galaxy Z Fold3 5G", "Samsung Galaxy Z Fold3 5G", "Galaxy Z Fold3 5G" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Sonim XP3",
+    "synonyms": [ "Sonim XP3", "Sonim XP3", "xp3" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Sonim XP5s",
+    "synonyms": [ "Sonim XP5s", "Sonim XP5", "xp5s" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Sonim XP8",
+    "synonyms": [ "Sonim XP8", "Sonim XP8", "xp8" ],
+    "languageCode": "fr"
+  }, {
+    "value": "TCL 10L",
+    "synonyms": [ "TCL 10L", "TCL 10L", "10l" ],
+    "languageCode": "fr"
+  }, {
+    "value": "TCL 20 Pro 5G",
+    "synonyms": [ "TCL 20 Pro 5G", "TCL 20 Pro 5G", "20 Pro 5G" ],
+    "languageCode": "fr"
+  }, {
+    "value": "TCL 20S",
+    "synonyms": [ "TCL 20S", "TCL 20S", "20s" ],
+    "languageCode": "fr"
+  }, {
+    "value": "ZTE Blade A3L",
+    "synonyms": [ "ZTE Blade A3L", "Lame ZTE A3L", "lame a3l" ],
+    "languageCode": "fr"
+  }, {
+    "value": "ZTE Cymbal 2",
+    "synonyms": [ "ZTE Cymbal 2", "Cymbale ZTE 2", "cymbale 2" ],
+    "languageCode": "fr"
+  } ]
+}

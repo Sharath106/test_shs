@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "true",
+    "synonyms": [ "true", "True", "TRUE" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "false",
+    "synonyms": [ "false", "False", "FALSE" ],
+    "languageCode": "en-ca"
+  } ]
+}

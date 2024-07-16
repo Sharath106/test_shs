@@ -1,0 +1,47 @@
+{
+  "entities": [ {
+    "value": "smartwatch",
+    "synonyms": [ "montre", "montre intelligente", "smartwatch" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "tablet",
+    "synonyms": [ "ipad", "tab", "tablet", "tablette" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "sim card",
+    "synonyms": [ "carte sim", "esim", "SIM", "sim card" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "iphone",
+    "synonyms": [ "apple", "i phone", "I phone", "iphone", "iPhone", "Iphone", "IPhone" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "android",
+    "synonyms": [ "android", "Android" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "samsung",
+    "synonyms": [ "galaxy", "Galaxy", "samsung", "Samsung" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "iphone max",
+    "synonyms": [ "iphone max", "iPhone max", "iPhone Max", "Iphone max", "Iphone Max", "IPhone max", "IPhone Max" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "iphone 12",
+    "synonyms": [ "iphone 12", "iPhone 12", "Iphone 12", "IPhone 12" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "iphone 13",
+    "synonyms": [ "iphone 13", "iPhone 13", "Iphone 13", "IPhone 13" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "iphone 14",
+    "synonyms": [ "iphone 14", "iPhone 14", "Iphone 14", "IPhone 14" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "iphone mini",
+    "synonyms": [ "iphone mini", "iPhone mini", "iPhone Mini", "Iphone mini", "Iphone Mini", "IPhone mini", "IPhone Mini" ],
+    "languageCode": "fr-ca"
+  } ]
+}

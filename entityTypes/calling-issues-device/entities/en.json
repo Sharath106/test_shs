@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "smarthub",
+    "synonyms": [ "hub", "internet hub", "smart hub", "smarthub" ],
+    "languageCode": "en"
+  }, {
+    "value": "whp",
+    "synonyms": [ "whp", "wireless", "Wireless home phone" ],
+    "languageCode": "en"
+  }, {
+    "value": "mobile",
+    "synonyms": [ "android", "blackberry", "cell", "cell phone", "cellphone", "cellular", "google", "htc", "huawei", "i phone", "iphone", "iPhone", "Iphone", "lg", "mobile", "mobile phone", "motorola", "samsung", "telephone" ],
+    "languageCode": "en"
+  }, {
+    "value": "residential",
+    "synonyms": [ "home phone", "home service", "home services", "Residential", "wireline" ],
+    "languageCode": "en"
+  } ]
+}

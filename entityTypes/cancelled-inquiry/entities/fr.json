@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "error",
+    "synonyms": [ "error", "erreur", "veux revenir", "erreur", "annuler l'annulation", "changé d'avis", "ne voulait pas annuler", "par erreur", "annulation inverse", "annulé accidentellement" ],
+    "languageCode": "fr"
+  }, {
+    "value": "still getting billed",
+    "synonyms": [ "still getting billed", "toujours facturé", "encore chargé", "facturé pour un compte fermé", "j'ai une facture", "reçu une facture", "j'ai été débité", "me facture toujours", "être facturé" ],
+    "languageCode": "fr"
+  } ]
+}

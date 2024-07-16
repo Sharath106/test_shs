@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "true",
+    "synonyms": [ "true", "TRUE", "vrai", "Vrai", "VRAI", "vraie", "Vraie", "VRAIE" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "false",
+    "synonyms": [ "false", "FALSE", "faux", "Faux", "FAUX" ],
+    "languageCode": "fr-ca"
+  } ]
+}

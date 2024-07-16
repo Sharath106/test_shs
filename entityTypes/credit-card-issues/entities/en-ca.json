@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "canadian",
+    "synonyms": [ "Canadian", "canada", "can" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "international",
+    "synonyms": [ "international", "intl", "inter national", "another country" ],
+    "languageCode": "en-ca"
+  } ]
+}

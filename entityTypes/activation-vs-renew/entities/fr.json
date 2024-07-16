@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "activate",
+    "synonyms": [ "activate", "activer", "nouvelle activation", "activation", "nouvelle ligne", "ajouter une ligne", "ajouter une nouvelle ligne téléphonique", "ligne supplémentaire", "activer une nouvelle ligne" ],
+    "languageCode": "fr"
+  }, {
+    "value": "renew",
+    "synonyms": [ "renew", "renouveler", "améliorer", "ligne actuelle", "renouvellement", "un autre contrat", "renouveler", "renouvelé", "propre ligne" ],
+    "languageCode": "fr"
+  } ]
+}

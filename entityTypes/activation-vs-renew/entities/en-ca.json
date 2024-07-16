@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "renew",
+    "synonyms": [ "another contract", "current line", "existing", "own line", "renew", "renewal", "renewed", "renewing", "upgrade", "upgrading" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "activate",
+    "synonyms": [ "activate", "activate new line", "activation", "add", "add a line", "add a new phone line", "additional line", "new", "new activation", "new line" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "1", "one" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "2", "two" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "don't know",
+    "synonyms": [ "don't know", "dont know", "help", "not sure" ],
+    "languageCode": "en-ca"
+  } ]
+}

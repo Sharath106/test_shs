@@ -1,0 +1,47 @@
+{
+  "entities": [ {
+    "value": "airtime overage",
+    "synonyms": [ "airtime overage", "dépassement de temps d'antenne" ],
+    "languageCode": "fr"
+  }, {
+    "value": "connection fee",
+    "synonyms": [ "connection fee", "frais de connexion" ],
+    "languageCode": "fr"
+  }, {
+    "value": "data overage",
+    "synonyms": [ "data overage", "dépassement de données" ],
+    "languageCode": "fr"
+  }, {
+    "value": "double charges",
+    "synonyms": [ "double charges", "doubles frais" ],
+    "languageCode": "fr"
+  }, {
+    "value": "feature added",
+    "synonyms": [ "feature added", "fonctionnalité ajoutée" ],
+    "languageCode": "fr"
+  }, {
+    "value": "international",
+    "synonyms": [ "international", "international", "international", "international", "international", "un autre pays" ],
+    "languageCode": "fr"
+  }, {
+    "value": "long distance",
+    "synonyms": [ "long distance", "longue distance" ],
+    "languageCode": "fr"
+  }, {
+    "value": "no changes",
+    "synonyms": [ "no changes", "aucun changement" ],
+    "languageCode": "fr"
+  }, {
+    "value": "payment mistake",
+    "synonyms": [ "payment mistake", "erreur de paiement" ],
+    "languageCode": "fr"
+  }, {
+    "value": "payment overdue",
+    "synonyms": [ "payment overdue", "retard de paiement" ],
+    "languageCode": "fr"
+  }, {
+    "value": "prorated charges",
+    "synonyms": [ "prorated charges", "frais au prorata" ],
+    "languageCode": "fr"
+  } ]
+}

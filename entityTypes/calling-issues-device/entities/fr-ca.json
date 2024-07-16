@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "smarthub",
+    "synonyms": [ "hub", "smart hub", "smarthub", "terminal", "terminal intelligent", "terminal internet" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "whp",
+    "synonyms": [ "résidentiel mobile", "résidentiel sans fil", "téléphonie résidentielle mobile", "whp", "trm" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "residential",
+    "synonyms": [ "à domicile", "filaire", "fixe", "maison", "residential", "résidentiel" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "mobile",
+    "synonyms": [ "blackberry", "cell", "cellulaire", "google", "htc", "huawei", "iphone", "iPhone", "Iphone", "lg", "mobile", "portable", "samsung", "telephone", "téléphone" ],
+    "languageCode": "fr-ca"
+  } ]
+}

@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "no signal",
+    "synonyms": [ "appels d'urgence", "aucun service", "aucun signal", "connexion ", "connexions", "pas de connection", "pas de reseau", "pas de réseau", "pas de service", "pas de service telephonique", "pas de service téléphonique", "pas de signal", "problemes de service", "problèmes de service", "problemes de service cellulaire", "problèmes de service cellulaire", "réception ", "recevoir", "réseau", "service cellulaire", "signal" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "place",
+    "synonyms": [ "composer", "faire", "ne peut pas appeler", "ne peut pas passer d'appels", "passer", "placer", "sortant", "sortants", "telephoner", "téléphoner" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "receive",
+    "synonyms": [ "entrant", "entrants", "ne peut pas recevoir ", "ne peut pas recevoir d'appels", "réception", "recevoir", "repondre", "répondre" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "long distance",
+    "synonyms": [ "a l'etranger", "à l'étranger", "américain", "appels internationaux", "appels interurbains", "autre province", "dans un autre pays", "internationaux", "interurbain", "interurbains", "longue distance", "longues distance", "nationaux ", "outre-mer" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "search",
+    "synonyms": [ " rechercher un réseau", " vérifier manuellement les réseaux ", "cherche ", "chercher un réseau", "recherche", "rechercher", "trouve le réseau telus", "trouver", "trouver le réseau telus" ],
+    "languageCode": "fr-ca"
+  } ]
+}

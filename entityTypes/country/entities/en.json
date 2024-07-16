@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "other country",
+    "synonyms": [ "Africa", "america", "another country", "Argentina", "Asia", "Australia", "Austria", "Belgium", "Brazil", "Bulgaria", "Carribeans", "Central america", "chile", "china", "cuba", "dominican", "Dubai", "Egypt", "England", "europe", "Finland", "france", "Greece", "guatemala", "Haiti", "Honduras", "Hong Kong", "india", "ireland", "Israel", "italy", "japan", "mexico", "netherlands", "other country", "out of country", "overseas", "Philippines", "republic dominican", "romania", "scotland", "SOuth america", "spain", "states", "Sweden", "the world", "UK", "United States", "US", "USA", "Britain" ],
+    "languageCode": "en"
+  }, {
+    "value": "Canada",
+    "synonyms": [ "AB", "Alberta", "another province", "BC", "British-Columbia", "Calgary", "Canada", "Edmonton", "Labrador", "Manitoba", "MB", "Montreal", "NB", "New Brunswick", "Newfoundland", "NFL", "Northwest territories", "Nove Scotia", "NS", "NT", "NU", "Nunavut", "ON", "Ontario", "other province", "Ottawa", "Quebec", "Saskatchewan", "Saskatoon", "SK", "Toronto", "Vancouver", "Winnipeg", "Yukon" ],
+    "languageCode": "en"
+  } ]
+}

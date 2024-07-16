@@ -1,0 +1,43 @@
+{
+  "entities": [ {
+    "value": "data",
+    "synonyms": [ "data", "data block", "data limit", "data limits", "data usage", "limit" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "people",
+    "synonyms": [ "ex", "number", "people", "person", "phone #", "phone number", "phone numbers", "phone#", "someone" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "spam",
+    "synonyms": [ "call control", "control", "spam", "spam callers", "spam calls" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "ld",
+    "synonyms": [ "international", "international callers", "ld", "long distance" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "port",
+    "synonyms": [ "port", "transfer", "transferred" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1", "one" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2", "two" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3", "three" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "9",
+    "synonyms": [ "dtmf_digits_9", "nine", "send link", "send SMS", "sms" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "agent", "dtmf_digits_0", "team member", "zero" ],
+    "languageCode": "en-ca"
+  } ]
+}

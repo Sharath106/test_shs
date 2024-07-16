@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "canus",
+    "synonyms": [ "Can-ÉU", "Canada-États-Unis", "canada-éu", "canéu", "canus", "États", "États Unis" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "can",
+    "synonyms": [ "can", "Canada", "Canada seulement" ],
+    "languageCode": "fr-ca"
+  } ]
+}

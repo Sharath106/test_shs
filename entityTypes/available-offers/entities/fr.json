@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "Black Friday",
+    "synonyms": [ "Black Friday", "Vendredi noir" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Boxing Day",
+    "synonyms": [ "Boxing Day", "Le lendemain de Noël" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Bring-It-Back program",
+    "synonyms": [ "Bring-It-Back program", "programme gagnez à retourner", "gagnez à retourner", "gagnez à retourner" ],
+    "languageCode": "fr"
+  }, {
+    "value": "Cyber Monday",
+    "synonyms": [ "Cyber Monday", "Cyber lundi" ],
+    "languageCode": "fr"
+  } ]
+}
