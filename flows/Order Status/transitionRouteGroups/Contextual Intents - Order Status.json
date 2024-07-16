@@ -1,0 +1,373 @@
+{
+  "name": "a9db7dc2-44c9-4a15-8fb0-2a18f4001892",
+  "displayName": "Contextual Intents - Order Status",
+  "transitionRoutes": [ {
+    "intent": "supplemental.cancel_order",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour annuler une commande, vous devez contacter l'équipe de la boutique en ligne au 1-866-488-2709, entre 9 h et 17 h du lundi au vendredi, ou par courriel à telusorders@telus.com." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "To cancel the order, you would need to contact webstore team. Please call them at 1-866-488-2709, between 9 a.m. to 5 p.m. Monday to Friday, or email them at telusorders@telus.com." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "af422f84-bead-4f98-901e-4ac76d7ff3ba"
+  }, {
+    "intent": "supplemental.carrier",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[Shipped == True] : Votre commande a été expédiée via FedEx.\n\n[Shipped == False] : Votre commande sera expédiée par Postes Canada ou UPS. Les détails vous seront envoyés par  courriel sous peu." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[Shipped == True]: Your order has been shipped using FedEx.\n\n[Shipped == False] Your order will be shipped using Canada Post or UPS. Shipping details will be emailed to you shortly." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1af21946-3321-435f-af84-67d1c88857d5"
+  }, {
+    "intent": "supplemental.confirm_model_ordered",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vous avez commandé l'appareil [device_name] [device_color] avec [device_storage] Go." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "You have ordered a [device_color] [device_name] with [device_storage] GB." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "bd15571b-1a9a-4b69-af16-81bf5554ed4f"
+  }, {
+    "intent": "supplemental.confirm_order_made",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Votre commande a été passée avec succès le [order_made_date].\n\nVous recevrez les détails de suivi par courriel une fois la commande expédiée." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Your order was successfully placed on [order_made_date].\n\nYou will receive tracking details via email once your order has shipped." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "98d79225-544f-49fc-908c-06f2f5cac928"
+  }, {
+    "intent": "supplemental.confirm_order_shipped",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Votre commande a été expédiée le [order_shipped_date]. Vous pouvez afficher plus de détails sur l'état du suivi en utilisant ce {lien}. Vous pouvez également suivre votre commande en visitant telus.com/orderstatus. https://www.telus.com/fr/commerce/order-status?intcmp=van_orderstatus." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Your order was shipped on [order_shipped_date]. You can view more details about the tracking status using this {link}. You can also track your order by visiting telus.com/orderstatus" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "8455f801-5fe9-41a1-a6db-3731748f5a67"
+  }, {
+    "intent": "supplemental.confirm_shipping_date",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[Shipped == True] Votre commande a été expédiée le [order_shipped_date].\n\n[Shipped == False] Votre commande n'a pas encore été expédiée. Vous recevrez un courriel aussitôt qu'elle sera expédiée." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[Shipped == True] Your order was shipped on [order_shipped_date]. \n\n[Shipped == False] Your order has not yet been shipped. You will receive an email when your order has shipped." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "deaa52a4-83af-44b9-a0c7-4ae46786a28f"
+  }, {
+    "intent": "supplemental.contact_team",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vous pouvez contacter notre boutique en ligne par courriel au telusorders@telus.com ou en composant le 1-866-488-2709, du lundi au vendredi, de 9 h à 17 h." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "You can contact the Webstore department by email at  telusorders@telus.com or by dialing 1-866-488-2709, Monday through Friday from 9 a.m. to 5 p.m." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1053554b-1133-4252-ad18-d9ec69638556"
+  }, {
+    "intent": "supplemental.edit_order",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour modifier une commande en ligne, je devrai annuler la commande en cours et en passer une nouvelle. Le remboursement serait ensuite fait dans les deux prochaines semaines.\n\nVoulez-vous procéder avec l'annulation de votre commande actuelle?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "To edit your order, I'll need to cancel your existing order and place a new one. You would then receive a refund in 2 weeks. \n\nWould you like to proceed with canceling your existing order?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "96fbf97f-928c-424a-909c-030ff49fdd65"
+  }, {
+    "intent": "supplemental.expedite_order",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Malheureusement, TELUS n'a pas la capacité d'accélérer les commandes." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Unfortunately, I am unable to expedite your order." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "cb301f8a-639c-4a71-983c-090764fe3447"
+  }, {
+    "intent": "supplemental.get_credit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez appeler notre équipe au {team_contact_number} pour discuter de l'obtention d'un crédit." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please call our team at {team_contact_number} to discuss about getting a credit." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "cf8715ee-3c8a-469e-9fbe-a5b4b4e16e5d"
+  }, {
+    "intent": "supplemental.get_refund",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour recevoir un remboursement, veuillez envoyer un courriel d'annulation à l'équipe de la boutique en ligne à l'adresse suivante : telusorders@telus.com. Après l'annulation, vous recevrez un remboursement dans les 3 à 4 semaines suivantes." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "To receive a refund, kindly send a cancellation email to the webstore team at telusorders@telus.com. After the cancellation, you'll receive your refund in 3-4 weeks." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e17af4e7-5a76-4fe4-98ca-bb3055abb209"
+  }, {
+    "intent": "supplemental.how_to_track_order",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour suivre votre commande, veuillez visiter telus.com/fr/commerce/order-status." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "To track your order, you can visit telus.com/orderstatus." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c2d4a24b-519b-4fdd-8590-483735a75ee3"
+  }, {
+    "intent": "supplemental.in_store_pickup",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vous ne pouvez pas aller chercher votre commande en ligne en magasin. Vous devrez d'abord annuler votre commande en contactant la boutique en ligne, puis vous pourrez passer une nouvelle commande en succursale.\n\nVoulez-vous procéder avec l'annulation de votre commande?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Online orders cannot be picked up from a physical store. You will need to cancel your order first by contacting the webstore, then you can place a fresh order at physical store. \n\nWould you like to proceed with canceling your order?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "717ff3d9-7164-4258-a11e-7cf25f74ce7d"
+  }, {
+    "intent": "supplemental.is_order_delayed",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[Shipped == True] Si vous n'avez pas reçu votre commande dans les délais prévus, il peut y avoir un retard du côté du transporteur.\n\n[Shipped == False] Nous ne voyons aucun délai pour le moment." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[Shipped == True] If you haven't received your order within the expected time, there might be delay from the carrier side.\n\n[Shipped == False] We are not seeing any delays right now." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a64b14cf-a4a5-49a4-a0dc-f3517788fc62"
+  }, {
+    "intent": "supplemental.no_charge_for_wait",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Les frais débuteront lorsque votre appareil sera expédié." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Charges begin when your device ships." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a8d5fd02-71fd-4bb4-b101-8bce8d8c5a6e"
+  }, {
+    "intent": "supplemental.order_eta",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "La date de livraison estimée est le {order_eta} et dépend du transporteur." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Your estimated delivery date is [order_eta]. Delivery is dependent on your carrier." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b40c2e46-ecbb-4911-9216-1d0f9b0eff2a"
+  }, {
+    "intent": "supplemental.order_ships_when",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Une fois votre commande traitée, l'expédition devrait prendre entre 2 et 3 jours." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Once your order is processed, shipping should take between 2-3 days." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5e9faee2-7067-4afd-a6e7-dd9c7911940b"
+  }, {
+    "intent": "supplemental.reason_for_delay",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Il peut y avoir différentes raisons de retard. Vous allez recevoir un courriel lorsque votre commande sera expédiée." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "There can be a number of reasons for your delay. You will receive an email when your order has shipped." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "60cc1a37-1552-44d5-9856-7a61c1c41e27"
+  }, {
+    "intent": "supplemental.receive_updates",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Une fois votre commande traitée et expédiée, vous recevrez un courriel avec votre numéro de suivi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Once your order is processed and shipped you will receive an email with your tracking number." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "4bd8354e-cfb0-4de3-ac48-f6d6f46f45d4"
+  }, {
+    "intent": "supplemental.shipping_from",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[shipping_from info available] Votre commande sera expédiée depuis {shipping_from}.\n\n[shipping_from info not available] Votre commande sera expédiée depuis un entrepôt à proximité de votre emplacement." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[shipping_from info available] Your order will ship from {shipping_from}.\n\n[shipping_from info not available] Your order will ship from warehouse nearby your location." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "180e0089-eb24-4df7-9137-d49e3d897eea"
+  }, {
+    "intent": "supplemental.shipping_to_where",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Votre commande sera livrée à l'adresse indiquée au dossier, qui est le [address]." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Your order will be delivered to the address on file, which is [address]." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c1173540-b972-49a3-a836-5f1afd948770"
+  }, {
+    "intent": "supplemental.stock_availability",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Le fabricant connaît actuellement des retards de stock." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Manufacturer is currently experiencing delays with stock." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "044362c4-5428-43b2-982e-2ca42d1172ea"
+  }, {
+    "intent": "supplemental.tracking_number",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[Shipped == True] Votre numéro de suivi est le [tracking_number]. Vous trouverez les détails de suivi à [tracking_link].\n\n[Shipped == False] Lorsque la commande sera traitée et expédiée, vous recevrez un courriel avec votre numéro de suivi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[Shipped == True] Your tracking number is [tracking_number]. You can find tracking details at [tracking_link].\n\n[Shipped == False] Once your order is processed and shipped, you will receive an email with your tracking number." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "3f98f1f8-7d9f-4fc6-bfe5-33140ce718a3"
+  } ]
+}

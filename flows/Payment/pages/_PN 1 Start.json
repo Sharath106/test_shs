@@ -1,0 +1,72 @@
+{
+  "name": "89904f4e-f0c8-49a2-8db0-dc6f7b2de24a",
+  "displayName": "_PN 1 Start",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PN 1 Start"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.acct_id_error = \"true\" OR $session.params.pin_verification = \"blocked\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "One time Payment",
+    "name": "3c251b43-afe5-415a-a604-7f0feb7f911a"
+  }, {
+    "condition": "$session.params.user.ban = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "One time Payment",
+    "name": "d2c43844-98b8-43ec-9359-c4766f9fde16"
+  }, {
+    "condition": "$session.params.number != null AND $sys.func.COUNT($session.params.number) = 1",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pay_now_amount",
+        "value": "$session.params.number[0]"
+      } ]
+    },
+    "name": "3d208a92-bf1c-4135-9a4d-ecdaf895c657",
+    "description": "used for assigning value to parameter"
+  }, {
+    "condition": "$session.params.number != null AND $sys.func.COUNT($session.params.number) \u003e 1",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pay_now_amount",
+        "value": "$sys.func.CONCATENATE($sys.func.TO_TEXT($session.params.number[0]), \".\", $sys.func.TO_TEXT($session.params.number[1]))"
+      } ]
+    },
+    "name": "c9b48e3e-9694-4fa6-9933-7ba9228c54dd",
+    "description": "used for assigning value to parameter"
+  }, {
+    "condition": "$session.params.pay_now_amount != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pay_now_amount",
+        "value": "$sys.func.TO_NUMBER($session.params.pay_now_amount)"
+      } ]
+    },
+    "name": "77bb7f1d-a5f3-42dd-9115-c6374f03342d",
+    "description": "used for assigning value to parameter"
+  }, {
+    "condition": "$session.params.route = \"pay_otheracct\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_PN 8 Collect Phone Number",
+    "name": "911e5ca9-e423-4acc-b8c1-cc22034510f1"
+  }, {
+    "condition": "$session.params.user.ban != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_PN 3 Validate Account",
+    "name": "5f76f160-4835-40cf-b49f-ab05726ccf05"
+  } ]
+}

@@ -1,0 +1,197 @@
+{
+  "name": "97675b8d-ece1-4c10-96d0-9c6d384b832e",
+  "displayName": "_PAP 9 Propose PAP Setup",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Would you like to set up automatic payment now?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Souhaitez-vous configurer le paiement automatique maintenant?" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PAP 9 Propose PAP Setup"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.pap_confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "payment_method_action",
+        "value": "add"
+      }, {
+        "parameter": "sent_for_pin_verify",
+        "value": null
+      }, {
+        "parameter": "payment_method_type",
+        "value": null
+      } ]
+    },
+    "targetPage": "_PAP 1 Start",
+    "name": "8857175d-c05a-49b7-a1ff-02defcfadcaf"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "fae6446c-730f-4d16-ac57-afbb1420643b"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that. ", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to set up automatic payment now?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je n'ai pas compris.", "Désolé, je ne comprends pas.", "Je n'ai pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous configurer le paiement automatique maintenant?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "22877c2a-d1ce-4efa-af4b-7ec8c115cb00"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm still not sure I got that.", "I still don't quite understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to set up automatic payment now?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je n'ai toujours pas compris.", "Je ne comprends toujours pas." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous configurer le paiement automatique maintenant?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "3eaf9882-edcb-4cc6-8051-c44f3fa2cc66"
+  }, {
+    "targetFlow": "Universal handoff",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm still not understanding. Let me transfer you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne comprends toujours pas. Laissez-moi vous transférer à un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "1b28931d-bbed-4a6b-bc24-90e951277809"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that. ", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to set up automatic payment now?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne comprends pas.", "Désolé, je n'ai pas compris.", "Je n'ai pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous configurer le paiement automatique maintenant?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "04f9f8a0-5ee0-42da-b137-f5bd44c9d6c4"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm still not sure I got that.", "I still don't quite understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to set up automatic payment now?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je n'ai toujours pas compris.", "Je ne comprends toujours pas." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous configurer le paiement automatique maintenant?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "61771d29-289d-453d-a973-fb29534244dc"
+  }, {
+    "targetFlow": "Universal handoff",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm still not understanding. Let me transfer you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne comprends toujours pas. Laissez-moi vous transférer à un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "a1cc96d2-7826-4c0c-b965-9a05e4484c44"
+  } ]
+}

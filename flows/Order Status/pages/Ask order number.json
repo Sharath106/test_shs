@@ -1,0 +1,133 @@
+{
+  "name": "465dd208-5aee-42e2-bc89-e97610d529b4",
+  "displayName": "Ask order number",
+  "form": {
+    "parameters": [ {
+      "displayName": "order-number",
+      "required": true,
+      "entityType": "@order-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Quel est votre numéro de commande?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "What is your order number?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "setParameterActions": [ {
+            "parameter": "main-counter",
+            "value": "$sys.func.ADD($session.params.main-counter, 1)"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Veuillez fournir un numéro de commande valide, s'il vous plaît." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Please provide a valid order number." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "77a274d9-42fd-4af3-ac9c-9bd40b2ddac3"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Veuillez fournir un numéro de commande valide commençant par ES, TD ou ne comportant que des chiffres." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Kindly provide a valid order number that starts with ES or TD and can be all digits as well." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5534d38a-deaa-4f16-85d4-223df22fdeca"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas. Laissez-moi vous trasnférer à un agent." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding. Let me transfer you to an agent. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "30a49ab1-cb00-4b00-99e9-1e219b5e8d88"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "count",
+      "value": 0
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.i_dont_know",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi vous transférer à un agent pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let me transfer you to an agent to help you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "4191a493-0e8d-4e8a-a8e1-1ec0adcae251"
+  }, {
+    "condition": "$sys.func.MID($sys.func.LOWER($session.params.order-number), 1, 2) = es",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez patienter pendant que je vous connecte à un agent pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please wait, connecting you to an agent to help you out." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "bdb90754-62cc-4d16-b18f-1e1013ea81fa"
+  }, {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Use login phone number",
+    "name": "2d12c1df-7f4c-4ac8-9e4e-ebca40fc8887"
+  } ]
+}

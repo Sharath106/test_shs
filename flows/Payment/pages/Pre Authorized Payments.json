@@ -1,0 +1,540 @@
+{
+  "name": "a6f2336f-86c8-42d4-b9dc-bed7aa166b26",
+  "displayName": "Pre Authorized Payments",
+  "form": {
+    "parameters": [ {
+      "displayName": "pre_authorized_payments",
+      "required": true,
+      "entityType": "@pre-authorized-payments",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Les paiements préautorisés sont disponibles avec une carte de crédit, une carte Visa Débit ou un compte bancaire en ligne." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Les paiements seront pris environ quinze jours après votre date de facturation." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Si vous avez un solde dû sur votre compte, il est recommandé d'effectuer un paiement manuel unique pour éviter les frais de retard." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Quels renseignements aimeriez-vous obtenir en ce qui concerne les paiements préautorisés?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Pre-authorized payments are available using a bank account, credit card, or Visa debit card." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Payments will be withdrawn approximately on the 15th day of your bill cycle." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "If you have a balance due on your account, it is recommended that you make a one-time manual payment to avoid any late charges." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "What information would you like in regards to pre-authorized payments?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Les paiements préautorisés peuvent être configurés en utilisant un compte bancaire, une carte de crédit ou une carte de débit Visa." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Les paiements seront automatiquement prélevés vers le quinzième jour de votre cycle de facturation." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "S'il y a un solde impayé sur votre compte, il est conseillé de faire un paiement manuel ponctuel pour éviter tout frais de retard." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Quels renseignements aimeriez-vous obtenir en ce qui concerne les paiements préautorisés?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Pre-authorized payments can be set up using a bank account, credit card, or Visa debit card." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Payments will be automatically withdrawn around the 15th day of your billing cycle." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "If there is an outstanding balance on your account, it is advisable to make a one-time manual payment to avoid any late charges." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "What information would you like in regards to pre-authorized payments?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Vous pouvez établir des paiements préautorisés en utilisant un compte bancaire, une carte de crédit ou une carte de débit Visa." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Les paiements seront automatiquement déduits vers le quinzième jour de votre cycle de facturation." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Pour éviter tout frais de retard, il est recommandé de faire un paiement manuel ponctuel s'il y a un solde impayé sur votre compte." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Quels renseignements aimeriez-vous obtenir en ce qui concerne les paiements préautorisés?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "You can establish pre-authorized payments using a bank account, credit card, or Visa debit card." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Payments will be automatically deducted around the 15th day of your billing cycle." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To avoid any late charges, it is recommended that you make a one-time manual payment if there is an outstanding balance on your account." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "What information would you like in regards to pre-authorized payments?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quels renseignements aimeriez-vous obtenir en ce qui concerne les paiements préautorisés? Je peux vous aider avec les instructions de configuration, les mises à jour des informations, comment les discontinuer ou les paiements multiples." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What information would you like in regards to pre-authorized payments? I can help you with, set-up instructions, update information, discontinue, or Multiple payments." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a362fdbd-6c37-4cc4-ba37-32c5357c3939"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour les instructions de configuration, dites configurer ou faites le 1. Mise a jour ou faites le 2. Discontinuer ou faites le 3. Paiements multiples ou faites le 4. Membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For set-up instructions say set up, or press 1, update, or press 2, to discontinue, or press  3, multiple payments, or press 4. team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5574f339-da37-4c39-a4a3-f48f97c90b7f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "360c09dc-7f3c-4d23-97a0-a3af2be1a2e3"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quels renseignements aimeriez-vous obtenir en ce qui concerne les paiements préautorisés? Je peux vous aider avec les instructions de configuration, les mises à jour des informations, comment les discontinuer ou les paiements multiples." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What information would you like in regards to pre-authorized payments? I can help you with, set-up instructions, update information, discontinue, or Multiple payments." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d0aa3fe0-1a44-4dd4-8b21-d7d6838938c0"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour les instructions de configuration, dites configurer ou faites le 1. Mise a jour ou faites le 2. Discontinuer ou faites le 3. Paiements multiples ou faites le 4. Membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For set-up instructions say set up, or press 1, update, or press 2, to discontinue, or press  3, multiple payments, or press 4. team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "e3a14a9f-4d4b-4882-bc50-3adc043a4423"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "6694fdae-d61a-4ae3-8e73-2607ad090518"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Pre Authorized Payments"
+    }, {
+      "parameter": "pre_authorized_payments",
+      "value": "discontinue"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.payment_method_action = \"remove\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Je peux certainement vous aider à annuler vos paiements préautorisés." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I can definitely help you remove your pre-authorized payments." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Je peux certainement vous aider à gérer vos paiements préautorisés." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I can definitely help you manage your pre-authorized payments." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "preauthpayments_retrycnt",
+        "value": null
+      }, {
+        "parameter": "pre_authorized_payments",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "83b4e50f-f55b-44c3-a616-f26147257fd5"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "preauthpayments_retrycnt",
+        "value": null
+      }, {
+        "parameter": "pre_authorized_payments",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "35457afd-7c25-4192-9ada-61ccf0f6c709"
+  }, {
+    "condition": "$session.params.routeDetails.province = \"ON\" AND $session.params.sal_testing = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "pre-authorized_payments"
+      }, {
+        "parameter": "on_poc",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "279c6c86-572e-4907-ac1f-f0f2ed300929"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez patienter un instant pendant que je vous transfère à un membre de notre équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please wait a moment while I transfer you to our team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "self_serve"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "713992d0-77cf-4911-bcd6-184d8eddd81e"
+  }, {
+    "condition": "$session.params.pre_authorized_payments = \"set up\" OR $session.params.pre_authorized_payments = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pre_authorized_payments",
+        "value": null
+      }, {
+        "parameter": "preauthpayments_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Pre auth Set up",
+    "name": "72e82734-818f-40d7-8d57-8a9a95383c00"
+  }, {
+    "condition": "($session.params.pre_authorized_payments = \"update information\" OR $session.params.pre_authorized_payments = \"2\") AND $session.params.acct_id_error = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Pre auth Update Info online or app",
+    "name": "20f5f66c-0a7b-4740-8b4d-95727fada40c"
+  }, {
+    "condition": "$session.params.pre_authorized_payments = \"update information\" OR $session.params.pre_authorized_payments = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pre_authorized_payments",
+        "value": null
+      }, {
+        "parameter": "preauthpayments_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Pre auth Update Info",
+    "name": "eebda5df-98bf-4c08-809d-2372a8b5010a"
+  }, {
+    "condition": "$session.params.pre_authorized_payments = \"discontinue\" OR $session.params.pre_authorized_payments = \"3\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Voici comment annuler vos paiements préautorisés en ligne:\nOuvrez une session Mon TELUS et assurez-vous de sélectionner le bon compte, puis appuyez sur Annuler les paiements préautorisés et confirmer votre sélection." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Here's how to cancel your pre-authorized payments online:\nSign in to My TELUS and ensure you select the correct account, then tap Cancel Pre-Authorized Payments and confirm your selection." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "preauthpayments_retrycnt",
+        "value": null
+      }, {
+        "parameter": "pre_authorized_payments",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "00b7f6de-41f1-4967-bb45-ea1df0b46c3f"
+  }, {
+    "condition": "$session.params.pre_authorized_payments = \"multiple payments\" OR $session.params.pre_authorized_payments = \"4\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Malgré que vous pouvez faire plusieurs paiements uniques à votre compte, vous ne pouvez pas configurer plusieurs paiements préautorisés au compte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "You can make one-time payments from multiple sources to one account but you cannot have multiple pre-authorized payments on an account." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "preauthpayments_retrycnt",
+        "value": null
+      }, {
+        "parameter": "pre_authorized_payments",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "bc6be4a7-60cc-4ef4-9122-b175513264cc"
+  }, {
+    "condition": "$session.params.pre_authorized_payments = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay, let me find someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "preauthpayments_retrycnt",
+        "value": null
+      }, {
+        "parameter": "pre_authorized_payments",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6b80c7b2-4513-47fe-a144-0d67c93eb8b6"
+  }, {
+    "condition": "$session.params.pre_authorized_payments = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "pre_authorized_payments",
+        "value": null
+      }, {
+        "parameter": "preauthpayments_retrycnt",
+        "value": "$sys.func.ADD($session.params.preauthpayments_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "54e06d9d-5fe8-4dc2-84f4-49d81d6c5deb"
+  } ],
+  "transitionRouteGroups": [ "Supp_route_payment" ]
+}

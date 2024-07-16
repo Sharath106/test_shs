@@ -1,0 +1,442 @@
+{
+  "name": "6b37a526-e5d5-492c-966a-e67e69b79627",
+  "displayName": "Forgot username",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_forgot_username",
+      "required": true,
+      "entityType": "@dtmf-menu-9-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous recevoir un message texte vous expliquant comment récupérer votre nom d'utilisateur?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text message on how to retrieve your username?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7e0a25fb-c344-4423-8609-1260d82b0eb8"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a372b4fe-35a7-42ea-bcb7-99ea3c5dbcf0"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "968de451-f4f5-4c0e-b8ba-46a666b2e28f"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous recevoir un message texte vous expliquant comment récupérer votre nom d'utilisateur?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text message on how to retrieve your username?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "892ef629-d509-43eb-9889-bfc0936c7928"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "6d5a7695-d5e8-4d78-aaa2-2b208c75a0b4"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "7af3e33d-c8b8-46fc-b325-a37285739b60"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Forgot username"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "forgetting your username for your My TELUS account"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "l'oubli de votre nom d'utilisateur pour votre compte Mon TELUS"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "changing you username"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "la procédure pour changer votre nom d'usagé"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour récupérer votre nom d'usagé, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To recover your username, you must use your My TELUS app, It's easy to use and allows you to avoid waiting on the line.An agent cannot help perform this on a customer behalf." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Dans la plupart des cas, votre nom d'utilisateur pour votre compte Mon TELUS est votre adresse de courriel." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Assurez-vous d'avoir enregistré et activé votre compte, et vérifiez que vos informations de connexion sont saisies correctement." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "In most cases, your username for your My TELUS account is your email address." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ensure you’ve registered and activated your account, and verify that your login info is entered correctly." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319012Q"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900NG"
+      }, {
+        "parameter": "forgotuser_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_forgot_username",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "38c83e39-b0f7-4bf4-8e53-7d5e6d218226"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "forgotuser_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_forgot_username",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319012Q"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900NG"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "cd2fb43d-51f2-4be1-90f3-814baaf74034"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "forgotuser_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_forgot_username",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319012Q"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900NG"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "1118ad5b-1260-48ad-97f6-ea957328b8e4"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319012Q"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900NG"
+      }, {
+        "parameter": "forgotuser_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "5e4c5f2a-49ff-40d6-9db7-d76c9d3b1b14"
+  }, {
+    "condition": "$session.params.dtmf_forgot_username = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319012Q"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900NG"
+      }, {
+        "parameter": "forgotuser_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_forgot_username",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "9e6a80e7-9c44-475f-9e27-a0958b9a7971"
+  }, {
+    "condition": "$session.params.dtmf_forgot_username = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, demandons à quelqu'un de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "forgotuser_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_forgot_username",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "12a479a6-21df-455e-817b-b9a1415e0121"
+  }, {
+    "condition": "$session.params.forgotuser_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "forgotuser_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "8316415c-7bfc-4a24-a0e9-f6664374b34a"
+  }, {
+    "condition": "$session.params.forgotuser_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "20b58a4f-5a9a-4046-9485-30ffcae5c4ef"
+  }, {
+    "condition": "$session.params.dtmf_forgot_username = 1 OR $session.params.dtmf_forgot_username = 2 OR $session.params.dtmf_forgot_username = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_forgot_username",
+        "value": null
+      }, {
+        "parameter": "forgotuser_retrycnt",
+        "value": "$sys.func.ADD($session.params.forgotuser_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "8f89fa03-7fa9-4628-88e1-f246712f6c8b"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "forgotuser_retrycnt",
+        "value": "$sys.func.ADD($session.params.forgotuser_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.forgotuser_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.forgotuser_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "4f7f9a5d-10c3-4e29-afc2-095fa9fa865a"
+  } ]
+}

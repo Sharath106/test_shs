@@ -1,0 +1,54 @@
+{
+  "name": "e0ef9579-62a6-42d7-836b-f21f93ab0124",
+  "displayName": "_PARRS 1 Start",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PARRS 1 Start"
+    }, {
+      "parameter": "ban",
+      "value": "$session.params.user.ban"
+    }, {
+      "parameter": "phone_number",
+      "value": "$session.params.user.utn"
+    }, {
+      "parameter": "parrs_option_selection",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.acct_id_error = \"true\" OR $session.params.pin_verification = \"blocked\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Payment Arrangement",
+    "name": "9facfd06-4a5c-4192-9487-e16c9263f4b8"
+  }, {
+    "condition": "$session.params.user = null OR $session.params.phone_number = null OR $session.params.ban = null OR $session.params.isTrustedUser = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "In many circumstances you could make a payment arrangement, but after reviewing your account, I think it is best I get you over to our support team to help." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Dans la majorité des cas, vous pouvez conclure une entente de paiement, mais après avoir vérifié votre compte, je pense qu'il est préférable de vous mettre en communication avec un membre de notre équipe qui pourra vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "3ef95d45-c38e-473a-955e-8b77e42deacb"
+  }, {
+    "condition": "$session.params.phone_number != null AND $session.params.ban != null AND $session.params.isTrustedUser != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_PARRS 2 Validate Account",
+    "name": "8e5450d3-b4f5-4541-96f9-6c0ddb4ba997"
+  } ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "306bf469-cacd-4b24-9cb6-3d4ad1e1ef01",
+  "displayName": "Get order status info",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.count \u003e 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne suis toujours pas capable de trouver le statut de votre commande avec le numéro de téléphone que vous avez fourni et vous avez épuisé le nombre de tentatives." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous connecter rapidement à un agent pour vous assister." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry, I am still unable to find the status of your order with the phone number provided and you have exhausted the number of retries. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me quickly connect you with an agent to help you out." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "144b6411-3014-48d1-9d0a-d7693e02e464"
+  }, {
+    "condition": "$session.params.order-number = 9988776655 AND $session.params.phone-number = 9988776655",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "order_status",
+        "value": "Your order has been shipped. You will receive tracking information via email."
+      } ]
+    },
+    "targetPage": "Provide order status",
+    "name": "efecf1ea-3d0c-4546-856c-dfd247a6229c"
+  }, {
+    "condition": "$session.params.order-number = 1122334455 AND $session.params.phone-number = 1122334455",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "order_status",
+        "value": "Your order is being processed. Once it ships - you'll receive an email with tracking details."
+      } ]
+    },
+    "targetPage": "Provide order status",
+    "name": "c9b8050c-906c-4b45-8c8f-74f83dfd1263"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No order info",
+    "name": "7d457aeb-4762-4fac-b7a1-05a6cc1b1f67"
+  } ]
+}

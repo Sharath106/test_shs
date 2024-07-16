@@ -1,0 +1,52 @@
+{
+  "name": "63c4d328-d9d3-4e0d-ac49-b2e94b4983f3",
+  "displayName": "Unlink account",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "To unlink an account I will need to get you over to a team member. Once unlinked, that profile will no longer have access to your account." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Pour dissocier un compte d'un profil, je devrai vous mettre en contact avec un membre de l'équipe. Une fois dissocié, ce profil n'aura plus accès à votre compte." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Unlink account"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.account-status = cancelled",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "If your account has been cancelled and you are looking to remove your online profile, it will automatically delete after 90 days from the date the account was deactivated." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si votre compte a été annulé et que vous souhaitez supprimer votre profil en ligne, il sera automatiquement supprimé après 90 jours à compter de la date à laquelle le compte a été désactivé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "f8600ea4-5207-408b-9fc9-83b2d5bfca3d"
+  } ]
+}

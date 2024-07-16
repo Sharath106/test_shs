@@ -1,0 +1,41 @@
+{
+  "name": "eb3d9d9c-b50e-4ed6-bd9c-6921e2d64cd9",
+  "displayName": "Cash Payment",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "At this time, we are unable to accept cash payments, or take payments at TELUS stores." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Pour l'instant, nous ne pouvons pas accepter les paiements en espèces, ni prendre des paiements dans les magasins TELUS." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "changed_payment_method",
+      "value": null
+    }, {
+      "parameter": "last_page",
+      "value": "Cash Payment"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "payment"
+      }, {
+        "parameter": "last_page",
+        "value": "Cash Payment"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "e25dfc43-0c1c-426b-bf3f-6302e246a924"
+  } ]
+}

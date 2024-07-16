@@ -1,0 +1,472 @@
+{
+  "name": "afbe24e0-3662-4601-adfa-7790c917bbb6",
+  "displayName": "Clear cache and cookies",
+  "form": {
+    "parameters": [ {
+      "displayName": "internet_browser",
+      "required": true,
+      "entityType": "@internet-browser",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Juste pour confirmer, puis-je vous demander quel navigateur Internet utilisez-vous?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Just to confirm, may I ask which internet browser are you using?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b72efe6b-d97f-4f46-85c9-7ad664176d9a"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour Google Chrome, dites google ou faites le 1. Mozilla Firefox, ou faites le 2. Safari, ou faites le 3. Explorer ou Edge, ou faites le 4." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For google chrome, say google or press 1. Mozilla Firefox, or press 2. Safari or press, 3. Explorer or Edge, say Explorer or press 4." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "fb9b5dbe-a9f9-4a62-a39b-37bc6a5a1f84"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "948b831d-d708-44c7-8ede-be38ece541eb"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Juste pour confirmer, puis-je vous demander quel navigateur Internet utilisez-vous?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Just to confirm, may I ask which internet browser are you using?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "99006043-14b1-4570-8bb9-992d1e6bb9a3"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour Google Chrome, dites google ou faites le 1. Mozilla Firefox, ou faites le 2. Safari, ou faites le 3. Explorer ou Edge, ou faites le 4." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For google chrome, say google or press 1. Mozilla Firefox, or press 2. Safari or press, 3. Explorer or Edge, say Explorer or press 4." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "daa4250d-8af8-4fc3-aa6d-fc1b316cd6c1"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "51d48e0b-3bab-4353-94a1-46186e031785"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Clear cache and cookies"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.clearcandc_retrycnt = null OR $session.params.clearcandc_retrycnt = 0) AND $session.params.internet_browser = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Je peux vous aider à vider le cache et les cookies." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Juste pour confirmer, quel navigateur Internet utilisez-vous?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I can definitely help with clearing cache and cookies." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Just to confirm, may I ask which internet browser are you using?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.clearcandc_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Quel navigateur internet utilisez-vous?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Voici quelques exemples de navigateurs:" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Google Chrome," ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Mozilla Firefox," ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Safari d'Apple," ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "ou, Internet Explorer ou Edge." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Which internet browser are you using?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Some examples of browsers are:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Google Chrome," ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Mozilla Firefox," ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Apple's Safari," ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "or, Internet Explorer or Edge." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.clearcandc_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour Google Chrome, dites google ou faites le 1. Mozilla Firefox, ou faites le 2. Safari, ou faites le 3. Explorer ou Edge, ou faites le 4." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "For google chrome, say google or press 1. Mozilla Firefox, or press 2. Safari or press, 3. Explorer or Edge, say Explorer or press 4." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je suis heureux de l'entendre.", "Parfait." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Comment puis-je vous aider autrement?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm glad to hear.", "Perfect" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "How else can I help you?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "internet_browser",
+        "value": null
+      }, {
+        "parameter": "clearcandc_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "8d750c87-1313-480b-af3c-bfb5e97e3bb3"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Hmm. Let me get you to a team member for further assistance." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "internet_browser",
+        "value": null
+      }, {
+        "parameter": "clearcandc_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "42e35a30-cd3c-4f61-ac03-019f44f2fc54"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "clearcandc_retrycnt",
+        "value": null
+      }, {
+        "parameter": "internet_browser",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "e6177cf2-b87a-4de3-a882-55d1b503f46d"
+  }, {
+    "condition": "$session.params.internet_browser = \"Google Chrome\" OR $session.params.internet_browser = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Parfait, laissez-moi vous guider à travers Chrome.\n\nTout d'abord, ouvrez le navigateur Chrome.\nEnsuite, regardez en haut à droite pour trouver les 3 points verticaux. Cliquez sur les 3 points  et un menu se déroulera.\nEt enfin, faites défiler vers le bas jusqu'à ce que vous voyiez \"Plus d'outils\", puis sélectionnez \"Effacer les données de navigation.\"\n\nVous verrez une fenêtre pour sélectionner les données à effacer. Je recommande de sélectionner \"Toutes les périodes\" comme période, avec les cases face à Cookies et données de site et Images et fichiers en cache cochées. Puis cliquez sur \"Effacer les données.\"\nUne fois que vous avez vider la mémoire cache et les cookies de votre navigateur, laissez-moi savoir si ça fonctionne?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Perfect, let me guide you through Chrome.\n\nFirst, Open your browser.\nNext, Look at the top right to find 3 vertical dots. Click on the dots and a menu will drop down.\nAnd lastly, scroll down until you see \"more tools\", and then select \"clear browsing data.\"\n\nYou'll see window to select what data to clear. I recommend selecting \"All time\" as your time range, with Cookies and Cached images boxes both checked. Once done, select \"clear data.\"\nOnce you have cleared your browser's cache and cookies, let me know, is it working now?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "289792b1-5325-4ffe-9a47-4ec3ec080513"
+  }, {
+    "condition": "$session.params.internet_browser = \"Safari\" OR $session.params.internet_browser = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Parfait, laissez-moi vous guider à travers Safari.\nTout d'abord, ouvrez le navigateur Safari.\nDeuxièmement,, cliquez sur Safari dans le coin supérieur gauche de votre écran.\nTroisièmement, dans le menu qui apparaît, cliquez sur \"Préférences\".\nQuatrièmement, dans la fenêtre qui apparaît, cliquez sur l'onglet Confidentialité.\nCinquièmement, cliquez sur le bouton \"Supprimer toutes les données du site Web.\"\nEnfin, sélectionnez \"Supprimer tout puis\", dans la petite fenêtre contextuelle, sélectionnez \"Supprimer maintenant.\"\nUne fois que vous avez vider la mémoire cache et les cookies de votre navigateur, laissez-moi savoir s'il fonctionne?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Perfect, let me guide you through Safari.\nFirst, Open your browser.\nSecond, Click \"Safari\" in the upper left corner.\nThird, In the menu that appears, click \"Preferences\".\nFourth, A window will appear with some tabs. click the Privacy tab.\nFifth, Click on \"Remove All Website Data\"\nLastly, Select \"Remove All\" and in the small popup, select \"Remove Now\".\nOnce you have cleared your browser's cache and cookies, let me know, is it working now?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9d2d4321-72e9-40f7-b391-f82f9bef9fc6"
+  }, {
+    "condition": "$session.params.internet_browser = \"Mozilla Firefox\" OR $session.params.internet_browser = \"3\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Parfait, laissez-moi vous guider à travers Firefox.\nTout d'abord, ouvrez le navigateur Firefox.\nDeuxièmement, cliquez sur le menu, représenté par 3 lignes horizontales dans le coin supérieur droit, et sélectionnez \"Options\" ou \"Paramètres\".\nTroisièmement, sélectionnez le panneau Vie privée et sécurité à gauche.\nQuatrièmement, faites défiler jusqu'à la section Cookies et données de sites où vous pouvez cliquer sur \"Gérer les données\".\nEnfin, cliquez sur Supprimer les sites affichés, puis sur Enregistrer les changements.\nUne fenêtre apparaît, sélectionnez \"Effacer maintenant\".\nUne fois que vous avez vider la mémoire cache et les cookies de votre navigateur, laissez-moi savoir si ça fonctionne?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Perfect, let me guide you through Firefox.\nFirst, Open your browser.\nSecond, Click on the menu, shown as 3 horizontal lines in the upper right corner, and select \"Options\" or \"Settings\".\nThird, Select the Privacy and Security panel on the left.\nFourth, Scroll down to the Cookies and Site Data area where you can click on \"Manage Data\".\nLastly, Click Remove All, and then Save Changes.\nA small popup will appear for you to then select \"Clear Now\".\nOnce you have cleared your browser's cache and cookies, let me know, is it working now?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f00217a4-e32a-492a-b12e-0f857fe9b131"
+  }, {
+    "condition": "$session.params.internet_browser = \"Internet explorer\" OR $session.params.internet_browser = \"4\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Parfait, laissez-moi vous guider à travers Edge ou Explorer.\nTout d'abord, ouvrez votre navigateur Edge ou Explorer.\nDeuxièmement, cliquez sur le menu, représenté par 3 points horizontaux dans le coin supérieur droit, et sélectionnez \"Paramètres\".\nTroisièmement, sélectionnez le panneau Confidentialité, recherche et services sur la gauche.\nQuatrièmement, faites défiler jusqu'à la zone \"Effacer les données de navigation\" où vous pouvez cliquer sur \"Choisir ce qu'il faut effacer\".\nEnfin, je vous recommande de sélectionner \"Toutes les périodes\" comme période  avec les cases face à Cookies et données de site et Images et fichiers en cache cochées.\nUne fois cela fait, sélectionnez \"effacer maintenant\".\nUne fois que vous avez vider la mémoire cache et les cookies de votre navigateur, laissez-moi savoir si ça fonctionne?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Perfect, let me guide you through Edge or Explorer.\r\nFirst, Open your browser.\r\nSecond, Click on the menu, shown as 3 horizontal dots in the upper right corner, and select \"Settings\".\r\nThird, Select the Privacy, search, and services panel on the left.\r\nFourth, Scroll down to the \"clear browsing data\" area where you can click on \"Choose what to clear\".\r\nLastly, I recommend selecting \"All time\" as your time range, with Cookies and Cached images boxes both checked. \r\nOnce done, select \"clear now\".\r\nOnce you have cleared your browser's cache and cookies, let me know, is it working now?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ea80b91e-cc0a-4ce7-b894-0e284264bb01"
+  }, {
+    "condition": "$session.params.clearcandc_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "clearcandc_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "67627035-e318-4ba8-b695-cffb9369538e"
+  }, {
+    "condition": "$session.params.clearcandc_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "clearcandc_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "099459e8-b568-4220-9fdf-81fe0ce6bee0"
+  } ],
+  "eventHandlers": [ {
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "clearcandc_retrycnt ",
+        "value": "$sys.func.ADD($session.params.clearcandc_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.clearcandc_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.clearcandc_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "2329f641-fbf5-40c1-bb4d-776258aad8d6"
+  } ],
+  "transitionRouteGroups": [ "troubleshooting_answers" ]
+}

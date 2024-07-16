@@ -1,0 +1,130 @@
+{
+  "name": "6bbcbbeb-0bb0-4de6-9046-79a6bf16db0a",
+  "displayName": "_PARRS 5 Ineligible",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PARRS 5 Ineligible"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.arrangement_status_cd = \"1015\" OR $session.params.arrangement_status_cd = \"1002\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "It appears you already have payment arrangements set up on this account. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Il semble que vous ayez déjà mis en place des ententes de paiement sur ce compte." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "_PARRS 5.1 Confirm PARRS changes",
+    "name": "1edd4aa1-ce08-4549-8ce8-150c764ec5b6"
+  }, {
+    "condition": "$session.params.arrangement_status_cd = \"1000\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your account is not past due enough for us to make an arrangement at this time." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "We will make multiple attempts to contact you if a payment arrangement is required before the account is suspended. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Even with alternative arrangements, past due balances are charged a late payment fee and reported to the credit bureau." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Votre compte n'est pas suffisamment en souffrance pour que nous puissions conclure une entente à l'heure actuelle." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Nous tenterons de vous contacter à plusieurs reprises si une entente de paiement est nécessaire avant que le compte ne soit suspendu. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Même en cas d'une entente, les soldes en souffrance sont facturés des frais de retard et signalés au bureau de crédit." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "_PARRS Not Overdue"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "f52d1891-9e65-4f06-91df-3fd1b533ebdb"
+  }, {
+    "condition": "$session.params.arrangement_status_cd = \"1001\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your account has no amount over due. No arrangement is required at this time." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If an arrangement is needed we will contact you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Votre compte n'a pas de montant dû. Aucune entente n'est requise pour le moment." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si une entente est nécessaire, nous vous contacterons." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "_PARRS Not Overdue"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "b64f8ec7-32f2-4ff3-a348-2a916ca4a138"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Payment arrangements allows us to protect your account from suspension when you need a bit more time to get caught up on payments. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "In most cases I can help make payment arrangements, but after reviewing your account I think it's best to transfer you to our support team for help." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Les ententes de paiement nous permettent de protéger votre compte contre la suspension lorsque vous avez besoin d'un peu plus de temps pour que vos paiements soient à jour.\n" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Dans la plupart des cas, je peux vous aider à faire ces ententes, mais après avoir examiné votre compte, je pense qu'il serait préférable que je vous mette en communication avec un membre de notre équipe qui pourra vous assister." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9feed7dd-8371-478f-9e20-ea8cff5e1f8d"
+  } ]
+}

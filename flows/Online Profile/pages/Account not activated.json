@@ -1,0 +1,386 @@
+{
+  "name": "216d62fe-ca20-4ee8-a0f1-363ddb5332a9",
+  "displayName": "Account not activated",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_account_not_activated",
+      "required": true,
+      "entityType": "@dtmf-menu-1-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous enregistrer votre compte?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to register your account?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c7a57b66-7952-4575-bb21-b3b1b0ddde34"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour enregistrer votre compte, dites enregistrer mon compte ou faites le 1. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To register your account, say register account or press 1,  team member or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "9ca6ce27-5f5b-4331-be32-69a91ae2604e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "46f5e977-1aa5-4467-b057-70c4058e4e1e"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous enregistrer votre compte?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to register your account?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "e65cb89d-f09f-4175-8640-7ffe375f3d4f"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour enregistrer votre compte, dites enregistrer mon compte ou faites le 1. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To register your account, say register account or press 1,  team member or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "fa7aae2e-7742-4a7e-9764-170a1c4d4eba"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "786f9453-18f8-4880-82c2-23a4658814a9"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Account not activated"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.accountnotactivated_retrycnt = null OR $session.params.accountnotactivated_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour finaliser l'enregistrement de votre compte en ligne, assurez-vous de valider votre adresse courriel." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous recevrez un courriel pour le faire une fois que vous vous serez inscrit." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous êtes certain de ne pas avoir enregistré votre compte, aimeriez-vous le faire?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To complete your online account registration, make sure to validate your email address." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You will receive an email to do so once you register." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you're sure you haven't registered your account, would you like to go ahead and do that?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.accountnotactivated_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous enregistrer votre compte?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like to register your account?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.accountnotactivated_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour enregistrer votre compte, dites enregistrer mon compte ou faites le 1. Membre de l'équipe, ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To register your account, say register account or press 1,  team member or press 0." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "Self serve registration",
+    "name": "9502d0fc-4614-4105-8b6a-880a11fefe91"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "login_problems_reasons",
+        "value": null
+      }, {
+        "parameter": "dtmf_account_not_activated",
+        "value": null
+      }, {
+        "parameter": "accountnotactivated_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "b6bf6ed4-c66d-4997-b7a2-849e3a6f90a1"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "5784220b-bfd7-4be6-915a-74be339964f4"
+  }, {
+    "intent": "head_intent.account_activation",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Self serve registration",
+    "name": "be7e6477-73c0-42a6-9c2c-e68d3799c576"
+  }, {
+    "condition": "$session.params.dtmf_account_not_activated = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "Self serve registration",
+    "name": "7e05a2a9-9654-4320-b8f0-468a5b373291"
+  }, {
+    "condition": "$session.params.dtmf_account_not_activated = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "0a1b10ec-896e-4a33-986b-ffeb53ad45d5"
+  }, {
+    "condition": "$session.params.accountnotactivated_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "accountnotactivated_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "e1231962-efc3-4fb4-a533-66a4eab3b806"
+  }, {
+    "condition": "$session.params.accountnotactivated_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "accountnotactivated_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_account_not_activated",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "f79cca3f-2f72-410c-ba8d-fd21ee5f248d"
+  }, {
+    "condition": "$session.params.dtmf_account_not_activated = 3 OR $session.params.dtmf_account_not_activated = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_account_not_activated",
+        "value": null
+      }, {
+        "parameter": "accountnotactivated_retrycnt",
+        "value": "$sys.func.ADD($session.params.accountnotactivated_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "ea1ea9f7-969c-439f-a3bd-a7b4b29c49f6"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "accountnotactivated_retrycnt",
+        "value": "$sys.func.ADD($session.params.accountnotactivated_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.accountnotactivated_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.accountnotactivated_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "879dd44b-8df2-4624-8667-bb4c3cf99118"
+  } ]
+}

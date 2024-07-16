@@ -1,0 +1,167 @@
+{
+  "name": "871d1a92-6e08-4168-a9b7-de0afae29b38",
+  "displayName": "_PARRS 2 Validate Account",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Rate Plan Change",
+    "tag": "rate_plan_change_initial",
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PARRS 2 Validate Account"
+    }, {
+      "parameter": "ban",
+      "value": "$session.params.user.ban"
+    }, {
+      "parameter": "phone_number",
+      "value": "$session.params.user.ani"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please wait, I'm still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Veuillez patienter pendant que j'accède à vos informations." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Rate Plan Change",
+      "tag": "rate_plan_change_initial",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "returnPartialResponses": true
+    },
+    "name": "5710ac4e-7122-4ceb-bc14-a8841ef9248c"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Webhook Error Redirect",
+    "name": "39940a92-d24b-4fa9-a2b9-4316ecc1f82f"
+  }, {
+    "condition": "$session.params.suspend_reason = \"VADR\" OR $session.params.suspend_reason = \"CVAD\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your account is currently on vacation suspension." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Before we can make a payment arrangement, I need to transfer you over to our support team to get your service restored." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Votre compte est actuellement en suspension temporaire." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Avant que nous puissions faire une entente de paiement, je devrai vous mettre en communication avec notre équipe du soutien pour faire rétablir votre service." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "selfserve_mandatory",
+        "value": "false"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "af454647-9a82-4c5e-ad0f-cf9fe1dcdc1c"
+  }, {
+    "condition": "($session.params.isTrustedUser = \"false\" OR $session.params.isTrustedUser = \"true\" OR $session.params.isTrustedUser = null) AND $session.params.user.auth_status != \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Account Identification",
+    "name": "b60aad9c-0d87-41ee-957b-c0a78cbfabf5"
+  }, {
+    "condition": "($session.params.isTrustedUser = \"false\" OR $session.params.isTrustedUser = \"true\") AND $session.params.user.auth_status = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_PARRS 3 Fetch PARRS",
+    "name": "02784792-06b4-478c-bae6-7f0a4bf3b218"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm having an issue with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "isWebhookError",
+        "value": true
+      } ]
+    },
+    "name": "f594c894-15b6-43a4-b03e-6d808a9b1d1a"
+  }, {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm having an issue with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "isWebhookError",
+        "value": true
+      } ]
+    },
+    "name": "6d615927-9a8a-4af4-b4c5-3349a65b2a49"
+  } ]
+}

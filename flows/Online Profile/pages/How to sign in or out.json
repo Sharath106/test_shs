@@ -1,0 +1,428 @@
+{
+  "name": "4fd8372b-7422-4a58-9b32-a33164b6b62d",
+  "displayName": "How to sign in or out",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_sign_in_out",
+      "required": true,
+      "entityType": "@dtmf-menu-9-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous recevoir un message texte avec plus d'informations sur la marche à suivre?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I didn't get that.", "Sorry, I didn’t understand that.", "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text message with more information on how to do this?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "77393701-ce1e-4bb6-9d30-7b181cebf3e4"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c524ee68-a0db-45e8-8d4f-46dadabfd525"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "e5f34fc9-2aef-4e7a-9919-5c206844a639"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous recevoir un message texte avec plus d'informations sur la marche à suivre?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text message with more information on how to do this?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f8600b4b-81f7-4c5b-9c97-0bb807e50528"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2a7c2231-ecfa-4495-ae60-1f2edb906f24"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "5f12938a-537b-4180-bded-61c836b5e860"
+        } ]
+      },
+      "defaultValue": "in",
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "How to sign in or out"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "signing in or out of your account"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la connexion ou la déconnexion de votre compte"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "logging, in or out of your TELUS account"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "la procédure pour vous connecter ou vous déconnecter de votre compte Mon TELUS"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour ouvrir ou fermer une session, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To log in or out of your account, you can use the My TELUS app or the website. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez facilement vous connecter ou vous déconnecter de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can easily sign in or out of your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "signinout_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_sign_in_out",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "How to sign in or out online or app",
+    "name": "e47a4297-4737-447d-b2de-23a55e4f7e5b"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "signinout_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_sign_in_out",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900A5"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900RK"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "bc6c563b-e32f-4ac2-bdb2-0fd7ab87920e"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "signinout_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_sign_in_out",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900A5"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900RK"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "eaefb58e-c9e1-4340-ab1a-f31457faa34d"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "signinout_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900A5"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900RK"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "e0f28e56-f3a0-4508-9a19-16e5109f1889"
+  }, {
+    "condition": "$session.params.dtmf_sign_in_out = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "signinout_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_sign_in_out",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "How to sign in or out online or app",
+    "name": "b50529b7-8941-47aa-9ffc-77fc62c5551a"
+  }, {
+    "condition": "$session.params.dtmf_sign_in_out = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "signinout_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_sign_in_out",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "ea9eda08-6d27-4b21-8278-9d5c8abc1885"
+  }, {
+    "condition": "$session.params.signinout_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "signinout_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "71925025-3993-4dbf-bb02-6826041e6672"
+  }, {
+    "condition": "$session.params.signinout_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "be22a388-77a3-440c-8521-427e2fb06625"
+  }, {
+    "condition": "$session.params.dtmf_sign_in_out = 1 OR $session.params.dtmf_sign_in_out = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_sign_in_out",
+        "value": null
+      }, {
+        "parameter": "signinout_retrycnt",
+        "value": "$sys.func.ADD($session.params.signinout_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "37c192b3-3715-49d8-b62c-6be23ef3a3ae"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "signinout_retrycnt",
+        "value": "$sys.func.ADD($session.params.signinout_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.signinout_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.signinout_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "74d80559-6941-4d76-a382-1e69d004e650"
+  } ]
+}

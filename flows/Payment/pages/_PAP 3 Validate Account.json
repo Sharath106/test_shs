@@ -1,0 +1,31 @@
+{
+  "name": "e875bf2b-3cb1-40c4-a0ac-69f2a924f734",
+  "displayName": "_PAP 3 Validate Account",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PAP 3 Validate Account"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "($session.params.isTrustedUser = \"false\" OR $session.params.isTrustedUser = \"true\" OR $session.params.isTrustedUser = null) AND $session.params.user.auth_status != \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sent_for_pin_verify",
+        "value": true
+      } ]
+    },
+    "targetFlow": "Account Identification",
+    "name": "ce0ed0b3-52ed-4238-8679-a50ccc4dee1a"
+  }, {
+    "condition": "($session.params.isTrustedUser = \"false\" OR $session.params.isTrustedUser = \"true\") AND $session.params.user.auth_status = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_PAP 6 PAP Route Check",
+    "name": "f5bbfa15-2008-466e-9f92-87b3a01a46f7"
+  } ]
+}

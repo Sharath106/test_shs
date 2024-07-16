@@ -1,0 +1,77 @@
+{
+  "name": "8ac92b80-b8f9-48e8-988c-bb644ffd3b6b",
+  "displayName": "Anything else",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "order-number",
+      "value": null
+    }, {
+      "parameter": "phone-number",
+      "value": null
+    }, {
+      "parameter": "count",
+      "value": 0
+    }, {
+      "parameter": "phone_counter",
+      "value": 0
+    }, {
+      "parameter": "main-counter",
+      "value": 0
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Comment puis-je vous aider autrement aujourd'hui?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "What else can I help you with today?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "96c0ec11-1bae-4c38-b6ee-3dd76a87a0be"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Merci d'avoir discuté avec moi aujourd'hui. Bonne journée!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Thanks for chatting today. Have a good day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "06cc53ac-df48-4ab9-9867-15865a0ffc50"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Est-ce que je peux vous aider avec autre chose?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Is there anything else I can help you with?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5ce572a5-c9ec-4711-96d7-a1a40cf1f3b3"
+  } ],
+  "transitionRouteGroups": [ "Contextual Intents - Order Status" ]
+}

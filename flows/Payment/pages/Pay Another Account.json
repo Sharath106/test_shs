@@ -1,0 +1,160 @@
+{
+  "name": "d44b46a6-d421-40b6-9b0d-c3ce851baf12",
+  "displayName": "Pay Another Account",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Pay Another Account"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez définitivement faire un paiement sur le compte d'un ami ou membre de la famille." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour payer par compte bancaire en ligne, vous aurez besoin du numéro de compte que vous voulez payer." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour payer par carte de crédit, si la carte de crédit n'a pas la même adresse que celle au compte, vous pourriez avoir à l'enregistrer avec un membre de l'équipe." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You have the option to make a payment to a TELUS mobility account, on behalf of a friend or family member." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To pay by online banking, you will need the account number you would like to pay." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To pay by credit card, most financial institutions will require a match to the billing address. In which case the credit card may have to be registered before it can be used, by speaking to a team member." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez effectuer un paiement pour le compte de votre ami ou membre de votre famille sur un compte de mobilité TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour payer en utilisant la banque en ligne, vous aurez besoin du numéro de compte que vous souhaitez payer." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous payez par carte de crédit, la plupart des institutions financières exigeront une correspondance avec l'adresse de facturation. Dans ce cas, vous devrez peut-être enregistrer la carte de crédit en parlant à un membre de l'équipe avant de pouvoir l'utiliser." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can make a payment to a TELUS mobility account on behalf of a friend or family member." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To pay using online banking, you will need the account number you wish to pay. If paying by credit card, most financial institutions will require a match to the billing address." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "In this case, you may need to register the credit card by speaking to a team member before it can be used." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous souhaitez effectuer un paiement pour le compte de votre ami ou membre de votre famille sur un compte de mobilité TELUS, vous avez la possibilité de le faire." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour effectuer un paiement en utilisant la banque en ligne, vous aurez besoin du numéro de compte de la personne que vous payez. Si vous prévoyez de payer par carte de crédit, la plupart des institutions financières exigeront une correspondance avec l'adresse de facturation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour utiliser la carte de crédit, vous devrez peut-être l'enregistrer en parlant à un membre de l'équipe." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you wish to make a payment to a TELUS mobility account on behalf of a friend or family member, you have the option to do so." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To make a payment using online banking, you will need the account number of the person you are paying." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you plan to pay by credit card, most financial institutions will require a match to the billing address. In order to use the credit card, you may need to register it by speaking to a team member." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "9585674a-f445-40b7-9e02-5c9a98d67103"
+  } ],
+  "transitionRouteGroups": [ "Supp_route_payment" ]
+}

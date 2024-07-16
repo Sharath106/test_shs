@@ -1,0 +1,263 @@
+{
+  "name": "5b7ed64c-b0c8-4e01-a1a3-73feab1d6892",
+  "displayName": "_PARRS 9 Final Confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PARRS 9 Final confirmation"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm having an issue with your request. Let me transfer you to a team member for assistance. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j’ai un problème avec votre demande. Laissez-moi vous mettre en communication avec un membre de l’équipe pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6dc52e6e-3b0b-40f8-99f5-b9a06aadb720"
+  }, {
+    "condition": "$session.params.suspend_reason = \"SNP\" AND $session.params.data_issues = \"PARRS\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great. Your account is now protected. A confirmation of your arrangements has been sent to $session.params.email. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please note late payment fees still apply, credit reporting still occurs and a reconnection fee will be applied to your next invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Your services will resume shortly. Please power cycle your phone and test your data." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Génial! Votre compte est maintenant protégé, une confirmation de vos ententes de paiement a été envoyée à $session.params.email." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Veuillez noter que les frais de paiement tardif s'appliquent toujours, qu'un rapport de crédit sera toujours effectué et que des frais de rebranchement seront appliqués sur votre prochaine facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Vos services seront rétablis dans l'heure qui suit. Sinon, veuillez redémarrer votre téléphone et tester vos données." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "data_not_working"
+      }, {
+        "parameter": "data_issues",
+        "value": "PARRS"
+      }, {
+        "parameter": "transaction",
+        "value": "payment arrangement"
+      }, {
+        "parameter": "intent",
+        "value": "acctmgmt"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "dc16cb4f-e6cb-4f9d-b37a-59faaf75af44"
+  }, {
+    "condition": "$session.params.suspend_reason != \"SNP\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great. Your account is now protected. A confirmation of your arrangements has been sent to $session.params.email." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "When making arrangements, it's important to remember these are put in place to protect account from cancellation or suspension." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please note late payment fees still apply and credit reporting still occurs." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Votre compte est maintenant protégé, une confirmation de vos ententes de paiement a été envoyée à $session.params.email." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Lorsque vous avez des ententes de paiement, il est important de se rappeler que celles-ci protègent le compte contre la suspension ou l'annulation." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Veuillez noter que les frais de paiement tardif s'appliquent toujours et qu'un rapport de crédit sera toujours effectué." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "transaction",
+        "value": "payment arrangement"
+      }, {
+        "parameter": "intent",
+        "value": "acctmgmt"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "End page",
+    "name": "3125c910-daed-4b8c-9670-c320fd440148"
+  }, {
+    "condition": "$session.params.suspend_reason = \"SNP\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great. Your account is now protected. A confirmation of your arrangements has been sent to $session.params.email. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Your services will resume within the hour. If it is not, please power cycle your phone." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "A reconnection fee will be applied to your next invoice." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please note late payment fees still apply and credit reporting still occurs." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Génial! Votre compte est maintenant protégé, une confirmation de vos ententes de paiement a été envoyée à $session.params.email." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Vos services seront rétablis dans l'heure qui suit. Si ce n'est pas le cas, veuillez redémarrer votre téléphone." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Des frais de rebranchement seront appliqués sur votre prochaine facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Veuillez noter que les frais de paiement tardif s'appliquent toujours et qu'un rapport de crédit sera toujours effectué." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "transaction",
+        "value": "payment arrangement"
+      }, {
+        "parameter": "intent",
+        "value": "acctmgmt"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "End page",
+    "name": "8905d129-c6d7-4d5f-9db5-9276025f54de"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm having an issue with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "isWebhookError",
+        "value": true
+      } ]
+    },
+    "name": "fc3469a8-7046-423c-9b8b-561b5d03c1ef"
+  }, {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm having an issue with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "isWebhookError",
+        "value": true
+      } ]
+    },
+    "name": "42c3e053-8555-4712-b3c8-dedf9669cec3"
+  } ]
+}

@@ -1,0 +1,447 @@
+{
+  "name": "bfb562a8-7c45-45cd-a8fc-11bcf7698cd3",
+  "displayName": "Login problems",
+  "form": {
+    "parameters": [ {
+      "displayName": "login_problems_reasons",
+      "required": true,
+      "entityType": "@login-problems-reasons",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel genre de problèmes rencontrez-vous avec votre profil en ligne?\n  Vous pouvez dire quelque chose comme: Mot de passe oublié, Nom d'utilisateur oublié, ou, Compte verrouillé." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What is the issue exactly with your online profile? You can say something like, Forgot password, Forgot username, or, Account locked." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a84c098e-a546-43e9-a729-cf52a362b5f9"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour entrer en contact avec un membre de l'équipe, dites membre de l'équipe ou faites le 0. Pour poser une autre question, dites non ou faites le 1." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you want to connect with a team member, say team member or press 0, to ask another question, say no or press 1." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "8e8853a9-f3bf-4bda-89ce-c5f52e28cf67"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "setParameterActions": [ {
+              "parameter": "login_problems_reasons",
+              "value": null
+            } ]
+          },
+          "name": "a665a47f-d846-4e70-8944-70e07d34a819"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel genre de problèmes rencontrez-vous avec votre profil en ligne?\n  Vous pouvez dire quelque chose comme: Mot de passe oublié, Nom d'utilisateur oublié, ou, Compte verrouillé." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What is the issue exactly with your online profile? You can say something like, Forgot password, Forgot username, or, Account locked." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "baf1a360-bb2b-47c8-80d9-a150dd26b6ca"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour entrer en contact avec un membre de l'équipe, dites membre de l'équipe ou faites le 0. Pour poser une autre question, dites non ou faites le 1." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you want to connect with a team member, say team member or press 0, to ask another question, say no or press 1." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "0066b4f2-63dd-4211-92ec-52b5c3a552d9"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "setParameterActions": [ {
+              "parameter": "login_problems_reasons",
+              "value": null
+            } ]
+          },
+          "name": "8b7bdde4-7b07-4089-b70c-7be5c5cc7b34"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Login problems"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.loginproblem_retrycnt = null OR $session.params.loginproblem_retrycnt = 0) AND $session.params.login_problems_reasons = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Il peut y avoir plusieurs raisons pour lesquelles vous ne pouvez pas vous connecter à votre compte." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Quel genre de problèmes rencontrez-vous avec votre profil en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "There could be a number of reasons why you can't log into your account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "What kind of issues are you having with your online profile?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.loginproblem_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Quel genre de problèmes rencontrez-vous avec votre profil en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez dire quelque chose comme: Mot de passe oublié, Nom d'utilisateur oublié, ou, Compte verrouillé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "What is the issue exactly with your online profile? You can say something like, Forgot password, Forgot username, or, Account locked." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.loginproblem_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour entrer en contact avec un membre de l'équipe, dites membre de l'équipe ou faites le 0. Pour poser une autre question, dites non ou faites le 1." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you want to connect with a team member, say team member or press 0, to ask another question, say no or press 1." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.troubleshoot_website_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "Website errors",
+    "name": "cc923699-18ff-448e-8f5a-9915764e9d1a"
+  }, {
+    "intent": "head_intent.password",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "Reset password",
+    "name": "83e367ca-1e8b-43a8-8738-55ef2fa061de"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "e3c20fe7-3924-4263-a304-3aeaf8f11677"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "cbee21ca-fac0-494f-8fc0-d5c2f9616db0"
+  }, {
+    "condition": "$session.params.login_problems_reasons = \"Account locked\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "Account locked",
+    "name": "191db896-aa78-4bb0-9cd9-cb0ce5aa262b"
+  }, {
+    "condition": "$session.params.login_problems_reasons = \"Forgot password\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "Reset password",
+    "name": "a7783f3d-c430-4661-a708-72bcb9eef549"
+  }, {
+    "condition": "$session.params.login_problems_reasons = \"Forgot username\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "Forgot username",
+    "name": "3f7507b1-3052-4ad3-b62e-5c56103d34a8"
+  }, {
+    "condition": "$session.params.login_problems_reasons = \"Account not activated\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "Account not activated",
+    "name": "a2ef8c08-4bd2-4798-85ae-296fe63dc232"
+  }, {
+    "condition": "$session.params.login_problems_reasons = \"Account not approved\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "Account not approved",
+    "name": "4915ef62-f7e2-4ddb-a486-6f89c4035fc0"
+  }, {
+    "condition": "$session.params.login_problems_reasons = \"Account cancelled\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "Account cancelled",
+    "name": "7cb826a0-d10f-4c87-9563-de70aebd2bd4"
+  }, {
+    "condition": "$session.params.login_problems_reasons = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "fb7750be-f90f-4004-9dc0-9e1a81d61c9d"
+  }, {
+    "condition": "$session.params.login_problems_reasons = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      }, {
+        "parameter": "login_problems_reasons",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6bc759c0-546c-47a8-a814-f03f5e3691bb"
+  }, {
+    "condition": "$session.params.loginproblem_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "c3a1b83f-8cc9-4b23-a14a-01d513c5b634"
+  }, {
+    "condition": "$session.params.loginproblem_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "ea50e42f-8cc2-42f3-b285-dd0156cc261e"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loginproblem_retrycnt",
+        "value": "$sys.func.ADD($session.params.loginproblem_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.loginproblem_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.loginproblem_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "597c4319-e666-457e-bd22-e99efe7ae7ec"
+  } ]
+}

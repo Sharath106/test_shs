@@ -1,0 +1,98 @@
+{
+  "name": "3c271bf8-756b-4d59-be73-fdadc11c7b33",
+  "displayName": "Anything Else",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Avez-vous une autre question par rapport à votre appareil TELUS?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Do you have another question about your TELUS device?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.equipment_vague",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Start Page",
+    "name": "4a82f7be-e6e0-43f7-8b1f-b73cea4c1ba3"
+  }, {
+    "intent": "head_intent.equipment_upgrades",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Equipment Upgrades",
+    "name": "5f50786a-db2c-45da-8b64-fb5b2c1a1aa7"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Il me fera plaisir de vous connecter à un agent." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'll be happy to connect you with a live agent." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6e3dd8ea-37b0-438f-84b9-073d4cd9093f"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Comment puis-je vous aider?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "What can I help you with?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "equipment_vague"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "5390caa4-0115-49e3-b107-71e68ebc08e8"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Merci d'avoir clavardé avec moi!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Thanks for chatting with me!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "fdd980ef-4aeb-4611-810c-e94fbf00f304"
+  }, {
+    "intent": "head_intent.plans_add_line",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Plans Add Line",
+    "name": "f956a4c0-3fb3-4042-9f69-a7a23a8d7bad"
+  } ],
+  "transitionRouteGroups": [ "Contextual Intents - Equipment Vague" ]
+}

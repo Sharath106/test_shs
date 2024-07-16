@@ -1,0 +1,111 @@
+{
+  "name": "9b5cbcdf-2f74-411c-9b26-6fe698ea4186",
+  "displayName": "_PAP 6 PAP Route Check",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PAP 6 PAP Route Check"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.payment_method_action = \"remove\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_PAP 7 PAP Setup Check",
+    "name": "4277e11e-7e6b-41d9-9b84-1baa0e73d73e"
+  }, {
+    "condition": "$session.params.payment_method_action = \"retrieve\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_PAP 7 PAP Setup Check",
+    "name": "c2626029-c046-43e1-a36a-2caa27a4fbc6"
+  }, {
+    "condition": "$session.params.payment_method_action != \"remove\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Les paiements préautorisés effectués par l'intermédiaire de votre banque ou de votre carte de crédit sont traités environ 15 jours après la date de votre facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pre-authorized payments set up through your bank and credit card are processed approximately 15 days after your bill date." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "36b0a4a7-ed7a-4d50-8793-d59e5ac59304"
+  }, {
+    "condition": "$session.params.payment_method_action = \"add\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez patienter un instant pendant que je vous transfère vers notre système de paiement sécurisé." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please wait a moment while I transfer you to our secure payment processing system." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "payment_bot"
+      }, {
+        "parameter": "last_page",
+        "value": "preauthorized payment"
+      }, {
+        "parameter": "handoff_payment_bot",
+        "value": true
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "End Session",
+    "name": "7e802f0c-f760-49a4-b7a3-028797dd60ae"
+  }, {
+    "condition": "$session.params.payment_method_action = \"update\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez patienter un instant pendant que je vous transfère vers notre système de paiement sécurisé." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please wait a moment while I transfer you to our secure payment processing system." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "preauth_payment_update"
+      }, {
+        "parameter": "handoff_type",
+        "value": "payment_bot"
+      }, {
+        "parameter": "last_page",
+        "value": "preauthorized payment"
+      }, {
+        "parameter": "handoff_payment_bot",
+        "value": true
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetPage": "End Session",
+    "name": "02805c55-af74-4e98-8e1f-52aa5b23c5e7"
+  } ]
+}

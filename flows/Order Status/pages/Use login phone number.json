@@ -1,0 +1,44 @@
+{
+  "name": "95f3b2cd-df54-4f74-8f78-fed7b29f87cd",
+  "displayName": "Use login phone number",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Êtes-vous connecté avec le même numéro de téléphone que vous avez utilisé pour passer votre commande?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Are you logged in with the same phone number that you used when placing the order?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count",
+        "value": "$sys.func.ADD($session.params.count, 1)"
+      }, {
+        "parameter": "phone-number",
+        "value": "$session.params.loggedin-phone-number"
+      } ]
+    },
+    "targetPage": "Get order status info",
+    "name": "898e7cb2-b762-41ab-abe3-902f487c7197"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phone_counter",
+        "value": 0
+      } ]
+    },
+    "targetPage": "Ask phone number",
+    "name": "16e34e21-77af-4668-bcdb-f8cfb17ca734"
+  } ]
+}

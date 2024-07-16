@@ -1,0 +1,104 @@
+{
+  "name": "ba49d09f-693c-468e-9901-27eb88e65b9a",
+  "displayName": "_PARRS 5.2 Gather data",
+  "form": {
+    "parameters": [ {
+      "displayName": "paymentarr_issue",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Comment puis-je vous aider avec vos ententes de paiement?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What kind of help do you need with your payment arrangements?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "21a4f022-0a72-4dcf-8707-05429fb1e5db"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n’ai toujours pas bien compris. Laissez-moi vous mettre en relation avec un membre de l’équipe." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry I still didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Let me get you to a team member for further assistance." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "90e64fd4-a79c-4a7c-988f-6502ded123c3"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Comment puis-je vous aider avec vos ententes de paiement?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "What kind of help do you need with your payment arrangements?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PARRS 5.2 Gather data"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.paymentarr_issue != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Afin de vous assister au mieux, laissez-moi vous mettre en relation avec un membre de l’équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "To help you with this issue, let me transfer you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "agent"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9d35154f-f8f9-4c64-addc-a901504fd901"
+  } ]
+}

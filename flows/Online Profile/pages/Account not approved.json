@@ -1,0 +1,436 @@
+{
+  "name": "a3d63e06-88e5-49a6-9179-586f24850e18",
+  "displayName": "Account not approved",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_not_approved",
+      "required": true,
+      "entityType": "@dtmf-menu-9-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous recevoir un message texte avec plus d'informations sur les rôles d'utilisateur du compte?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text message with more information about account user roles?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "cf12168b-a7a1-4ca0-9108-daf508be6404"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f8f2a39a-a72c-4281-9a21-0872930c0b3f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1cbd517e-a1df-4928-9e91-eef9e132ab90"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous recevoir un message texte avec plus d'informations sur les rôles d'utilisateur du compte?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text message with more information about account user roles?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "80b292ac-1e97-455c-85ee-f5745116b88b"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "fe50943a-5120-4bc4-9d88-ced29836fda4"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "07d437e8-4f4b-4c81-a008-c8e05cd50627"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Account not approved"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "les rôles des utilisateurs du compte"
+    }, {
+      "parameter": "page_summary",
+      "value": "account user roles"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "approving access to your my TELUS account"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "l'approbation d'accès sur votre compte Mon TELUS"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur l'approbation d'accès sur votre compte Mon TELUS, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To get information on approving access to your my telus account, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous êtes membre du compte, le titulaire du compte ou l’administrateur du compte doit approuver votre demande d’accès au compte." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you're an Account Member, the Account Owner, or Manager must approve your request to access the account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900H6"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319007T"
+      }, {
+        "parameter": "notapproved_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_not_approved",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "51d09f8c-9440-4098-913f-3e14423573e2"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "notapproved_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_not_approved",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900H6"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319007T"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "1c5cdb91-c272-4240-a35d-e4ffd57144cb"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "notapproved_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_not_approved",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900H6"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319007T"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "f5603e8d-8582-4133-9432-e9d3f7ffaaf1"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900H6"
+      }, {
+        "parameter": "page_summary",
+        "value": "account user roles"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319007T"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "e50806bc-0b5c-4b58-9d6f-fbb66b8d12d1"
+  }, {
+    "condition": "$session.params.dtmf_not_approved = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900H6"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319007T"
+      }, {
+        "parameter": "notapproved_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_not_approved",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "ef6ef65f-2359-4dac-9dcc-5bdb78d8f175"
+  }, {
+    "condition": "$session.params.dtmf_not_approved = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, demandons à quelqu'un de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "notapproved_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_not_approved",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9e5fbe88-1cfc-4525-98c1-af0e41786131"
+  }, {
+    "condition": "$session.params.notapproved_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "notapproved_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "4b2cee65-07c6-45ac-8d2e-8d167516ce3d"
+  }, {
+    "condition": "$session.params.notapproved_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "notapproved_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "f9ed8691-48e0-4bec-acc1-2914488ad3c3"
+  }, {
+    "condition": "$session.params.dtmf_not_approved = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_not_approved",
+        "value": null
+      }, {
+        "parameter": "notapproved_retrycnt",
+        "value": "$sys.func.ADD($session.params.notapproved_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "8d63adec-dd28-4ccb-8a72-6dd7130f81d5"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "notapproved_retrycnt",
+        "value": "$sys.func.ADD($session.params.notapproved_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.notapproved_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.notapproved_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "ccd88203-d2dd-45d2-84c8-9ca5fff95307"
+  } ]
+}

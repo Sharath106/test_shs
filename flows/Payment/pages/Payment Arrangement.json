@@ -1,0 +1,418 @@
+{
+  "name": "72f4730a-ac05-432f-91af-13488f936dfb",
+  "displayName": "Payment Arrangement",
+  "form": {
+    "parameters": [ {
+      "displayName": "phone_online_parrs",
+      "required": true,
+      "entityType": "@phone-or-online",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris cela.", "Désolé, je n'ai pas compris.", "Je n'ai pas compris cela." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Voulez-vous faire un arrangement de paiement par téléphone, ou voulez-vous recevoir un message texte avec plus d’information pour le faire vous-même?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to make a payment arrangement over the phone, or would you like to receive a text message with more information on how to do this yourself." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "acd86c4e-374a-4d3e-87ec-5d0931a184e7"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour continuer par téléphone, dites oui ou faites le 1. Envoyez-moi le message texte ou faites le 9. Membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To continue over the phone, say yes or press 1. receive a text or press 9, team member or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "07f5df95-2441-4d8f-bbfd-39a765b23e6e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "e0541f3e-b9a7-4af3-a23c-6fc2966a6593"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n’ai pas compris cela.", "Désolé, je n'ai pas compris.", "Je n'ai pas compris cela." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Voulez-vous faire un arrangement de paiement par téléphone, ou voulez-vous recevoir un message texte avec plus d’information pour le faire vous-même?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to make a payment arrangement over the phone, or would you like to receive a text message with more information on how to do this yourself." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4ea51149-c154-413a-ad33-d7559e68189d"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour continuer par téléphone, dites oui ou faites le 1. Envoyez-moi le message texte ou faites le 9. Membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To continue over the phone, say yes or press 1. receive a text or press 9, team member or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b44a9fdb-900c-4ea6-8825-954fe0a6a733"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "b2baa29a-a0c0-4ac1-8cd7-edce133468cb"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Je peux vous aider à faire une entente de paiement." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "I can help you make a payment arrangement." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Payment Arrangement"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "page_summary",
+      "value": "making a payment arrangement"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "le paiement"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "parrs_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_parrs",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9dc63d4c-a8ca-49eb-8d64-1ee42b42a250"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "parrs_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_parrs",
+        "value": null
+      } ]
+    },
+    "targetPage": "Payment Arrangement online or app",
+    "name": "e5aacdcc-3bf6-4208-85b3-c4ada42b086c"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "self_serve"
+      }, {
+        "parameter": "parrs_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_parrs",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d7701cf5-7d56-47ee-a089-69df726fb666"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "parrs_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_parrs",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319004W"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319016F "
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "24465adf-fc5b-43f0-bb4a-a75b80750ca1"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "parrs_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_parrs",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Payment Arrangement online or app",
+    "name": "6610251a-35fc-4401-a41b-48b2d8418b33"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319004W"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319016F"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "cd1ee669-9f37-4df1-bf8c-c7f1dfc7bb74"
+  }, {
+    "condition": "$session.params.phone_online_parrs = \"9\" OR $session.params.phone_online_parrs = \"online\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "parrs_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_parrs",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Payment Arrangement online or app",
+    "name": "38e3243b-5f98-4d19-a0a2-d0ace064d5cd"
+  }, {
+    "condition": "$session.params.phone_online_parrs = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi trouver un agent pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "parrs_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_parrs",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9e74409b-9efc-4daf-8456-e455071fe647"
+  }, {
+    "condition": "$session.params.phone_online_parrs = 1 OR $session.params.phone_online_parrs = \"phone\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Génial!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "self_serve"
+      }, {
+        "parameter": "parrs_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e3953937-8461-4cc9-b341-66462dec93f1"
+  }, {
+    "condition": "$session.params.parrs_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "parrs_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "6e77f8c8-fa64-4ce4-84fc-212aa9e58a9d"
+  }, {
+    "condition": "$session.params.parrs_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "51712382-a338-4d25-a585-b9d97aa7e836"
+  }, {
+    "condition": "$session.params.phone_online_parrs = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je suis désolé, je n’ai pas compris cela.", "Désolé, je n'ai pas compris.", "Je n'ai pas compris cela." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "phone_online_parrs",
+        "value": null
+      }, {
+        "parameter": "parrs_retrycnt",
+        "value": "$sys.func.ADD($session.params.parrs_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "a93c080c-6b57-4f15-9f26-639fc270e893"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "parrs_retrycnt",
+        "value": "$sys.func.ADD($session.params.parrs_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.parrs_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.parrs_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "a1aa0284-87af-417d-9c02-6fd14099c3f1"
+  } ],
+  "transitionRouteGroups": [ "Supp_route_payment" ]
+}

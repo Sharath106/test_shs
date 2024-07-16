@@ -1,0 +1,27 @@
+{
+  "name": "3188cf0b-0dbb-4d0e-aee7-ce5c576ba7ad",
+  "displayName": "Greeting",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'd be happy to help you find the status of your order." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Il me fera plaisir de vérifier le statut de votre commande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "6f81cc41-246c-4bc8-bd8c-e46b20de70d0"
+  } ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "a378a9c2-981c-4ff0-8363-8ded10e42e81",
+  "displayName": "No order info",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Désolé, je n'ai pas pu trouver la commande avec :\nNuméro de commande : $session.params.order-number\nNuméro de téléphone : $session.params.phone-number " ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Voulez-vous réessayer avec un numéro de commande différent?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Sorry, I couldn't find the order with: \norder number: $session.params.order-number \nphone number: $session.params.phone-number " ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Would you like to retry with a different order number?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phone-number",
+        "value": null
+      }, {
+        "parameter": "order-number",
+        "value": null
+      } ]
+    },
+    "targetPage": "Check main counter",
+    "name": "26f47af5-f893-4e2a-b06d-0a8f9de168f1"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Retry for a different phone number",
+    "name": "e5bad916-ac35-4866-846c-eb9df4283848"
+  } ]
+}

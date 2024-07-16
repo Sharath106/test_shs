@@ -1,0 +1,273 @@
+{
+  "name": "9b1ed830-ee42-4a83-ac21-41cbf45d8764",
+  "displayName": "_PAP 2 Method Type - Add",
+  "form": {
+    "parameters": [ {
+      "displayName": "payment_method_type",
+      "required": true,
+      "entityType": "@payment-method-pap",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that. ", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What payment method would you like to set up? for example, Credit Card, Visa Debit Card or Bank account. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris. ", "Désolé, je ne comprends pas.", "Je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel mode de paiement aimeriez-vous configurer? Par exemple, carte de crédit, carte de débit Visa ou compte de banque." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ba19fe43-636e-4f4b-b0ca-40099a52d7e1"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not sure I got that.", "I still don't quite understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What payment method would you like to set up? Say credit card, or press 1. Online banking, or press 2. Check, or press  3. Cash, or press 4. Or, to talk to a team member, press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai toujours pas compris.", "Je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel mode de paiement aimeriez-vous configurer? Dites carte de crédit, ou appuyez sur le un. Banque en ligne, ou appuyez sur le deux. Chèque, ou appuyez sur le trois. Argent comptant, ou appuyez sur le quatre. Ou, pour parler à un membre de l'équipe, appuyez sur zéro." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "a9b0ccd7-d243-4117-bbff-98f116f747bd"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding. Let me transfer you to a team member for more assistance." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas. Laissez-moi vous transférer à un membre de l'équipe qui pourra vous assister." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ea34686e-fa25-4851-ad28-8cf568b1e21f"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that. ", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What payment method would you like to set up? for example, Credit Card, Visa Debit Card or Bank account. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris.", "Désolé, je ne comprends pas.", "Je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel mode de paiement aimeriez-vous mettre en place? Par exemple, carte de crédit, carte de débit Visa ou compte de banque." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ce964b9f-0f21-4d6c-9689-881121004536"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not sure I got that.", "I still don't quite understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What payment method would you like to set up? Say credit card, or press 1. Online banking, or press 2. Check, or press  3. Cash, or press 4. Or, to talk to a team member, press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai toujours pas compris.", "Je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel mode de paiement aimeriez-vous configurer? Dites carte de crédit, ou appuyez sur le un. Banque en ligne, ou appuyez sur le deux. Chèque, ou appuyez sur le trois. Argent comptant, ou appuyez sur le quatre. Ou, pour parler à un membre de l'équipe, appuyez sur zéro." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "20f89ed2-1a91-4a6b-97ce-fb577c7d7979"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding. Let me transfer you to a team member for more assistance." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas. Laissez-moi vous transférer à un membre de l'équipe qui pourra vous assister." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "fc9780e2-7ac2-4f28-baa6-fb6a285054e3"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PAP 2 Method Type - Add"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.payment_method_type = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "\u003cspeak\u003eI can help you set up automatic payments. What payment method would you like to set up? You can say, \u003cbreak time=\"600ms\"/\u003eChequing Account, \u003cbreak time=\"600ms\"/\u003eCredit Card, \u003cbreak time=\"600ms\"/\u003eVisa Debit Card \u003cbreak time=\"600ms\"/\u003e or Mastercard Debit Card \u003c/speak\u003e" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "\u003cspeak\u003eJe peux vous aider à mettre en place des paiements automatiques. Quel mode de paiement voulez-vous configurer?  Vous pouvez dire, \u003cbreak time=\"600ms\"/\u003eCompte chèque, \u003cbreak time=\"600ms\"/\u003eCarte de crédit, \u003cbreak time=\"600ms\"/\u003eCarte de débit Visa \u003cbreak time=\"600ms\"/\u003e ou Carte de débit Mastercard \u003c/speak\u003e" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.payment_method_type = \"credit card\" OR $session.params.payment_method_type = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great.", "Okay." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please note that at this time we only accept Credit or Debit card from Canadian financial institutions." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Parfait.", "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Veuillez noter que, pour le moment, nous n'acceptons que les cartes de crédit ou de débit provenant d'institutions financières canadiennes." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "card_nationality",
+        "value": null
+      } ]
+    },
+    "targetPage": "_PAP 3 Validate Account",
+    "name": "1ec0b49d-95d1-4e55-86a0-4cfd1ef07c29"
+  }, {
+    "condition": "$session.params.payment_method_type = \"online banking\" OR $session.params.payment_method_type = \"2\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "PAP Setup via Bank Account",
+    "name": "a29132c8-d9af-4c75-9343-ce1a0a581e94"
+  }, {
+    "condition": "$session.params.payment_method_type = \"mail\" OR $session.params.payment_method_type = \"3\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Mail Payment",
+    "name": "328cd567-468b-4fe6-8a1e-f9c2bc84ed9e"
+  }, {
+    "condition": "$session.params.payment_method_type = \"cash\" OR $session.params.payment_method_type = \"4\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cash Payment",
+    "name": "11568728-1382-4818-8fd9-4157e1f8d0c1"
+  }, {
+    "condition": "$session.params.payment_method_type = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous transférer à un agent." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "payment_method_type",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "c6975256-b7d1-44f7-a790-07cd8f42056a"
+  } ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "456694a8-f40c-43d5-9039-e3519f1556c4",
+  "displayName": "Provide order status",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$session.params.order_status" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "$session.params.order_status" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Anything else",
+    "name": "cca3d0da-a5c4-4202-bdf2-381542498f01"
+  } ]
+}

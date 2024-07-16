@@ -1,0 +1,63 @@
+{
+  "name": "534f5dd9-09e0-4910-a834-1e164f4f3f28",
+  "displayName": "troubleshooting_answers",
+  "transitionRoutes": [ {
+    "intent": "small_talk.acknowledge_fixed_issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "That's great!", "Awesome!", "Glad to hear it!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "What else can I help you with?", "How else can I help?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "C'est génial!", "Heureux de l'apprendre!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Comment puis-je vous aider autrement?", "Que puis-je faire d'autre pour aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "login-problems-reasons",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "a59926f0-87e8-4bf2-8e99-2b184ebad215"
+  }, {
+    "intent": "small_talk.troubleshooting_still_having_issues",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry about that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "At this point, let's get you to an agent to troubleshoot your issue further." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé de l'apprendre." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Dans ce cas, je peux vous transférer à un agent pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "ea1a22cd-a545-4251-bfbe-3cd28e8239a0"
+  } ]
+}

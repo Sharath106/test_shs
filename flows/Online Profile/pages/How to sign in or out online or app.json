@@ -1,0 +1,368 @@
+{
+  "name": "7b96b423-b42d-4b9e-bb1a-d35df7f2c8ee",
+  "displayName": "How to sign in or out online or app",
+  "form": {
+    "parameters": [ {
+      "displayName": "online_vs_app",
+      "required": true,
+      "entityType": "@online-vs-app",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you prefer the My TELUS app or online instructions?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "0238f9e5-135e-498b-aa6c-be42b8c84d95"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive instructions, say app or press 1. online or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "e0151a23-7025-44a4-ae70-9785ba96a486"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "3f3ed148-27a7-4dbd-9a65-0f186555def4"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi.", "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you prefer the My TELUS app or online instructions?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "dbee10b3-9be2-4f06-94e1-d405838b598a"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive instructions, say app or press 1. online or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "23091862-3cbf-4fae-94ed-f9d69b98143a"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "2d2646f3-f3b2-4cf0-b5eb-eea85979f9f1"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "How to sign in or out online or app"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.signinout_retrycnt = null OR $session.params.signinout_retrycnt = 0) AND $session.params.online_vs_app = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Do you prefer the My TELUS app or online instructions?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.signinout_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Do you prefer the My TELUS app or online instructions?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.signinout_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To receive instructions, say app or press 1. online or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "signinout_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900A5"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900RK"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "a43932b3-a8ed-469f-a484-d67aa6dfefb3"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "signinout_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900RK"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900A5"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "1436fcc0-3b39-488d-97df-b47446c760af"
+  }, {
+    "condition": "$session.params.online_vs_app = \"app\" OR $session.params.online_vs_app = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900A5"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900RK"
+      }, {
+        "parameter": "signinout_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "1d1b4840-ddd7-4139-8833-362e0b223419"
+  }, {
+    "condition": "$session.params.online_vs_app = \"online\" OR $session.params.online_vs_app = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900XD"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900FY"
+      }, {
+        "parameter": "signinout_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "online"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "e66016ff-004f-4bb0-b37b-1d764e8314dc"
+  }, {
+    "condition": "$session.params.signinout_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "signinout_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "8dc16ca9-9bb0-4181-b2d7-499fc7150c27"
+  }, {
+    "condition": "$session.params.signinout_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "bcf50e72-681a-4d7d-abdb-5ff623c54240"
+  }, {
+    "condition": "$session.params.online_vs_app = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "signinout_retrycnt",
+        "value": "$sys.func.ADD($session.params.signinout_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "db685109-b73e-4a29-a3fd-535eadab3aec"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "signinout_retrycnt",
+        "value": "$sys.func.ADD($session.params.signinout_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.signinout_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.signinout_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "3a263c45-df21-4079-ba72-a47239abb0a7"
+  } ]
+}

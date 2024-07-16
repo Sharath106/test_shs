@@ -1,0 +1,45 @@
+{
+  "name": "7a52929b-e9af-47fe-b123-45823d362bd1",
+  "displayName": "One time Payment",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I can help you make a one time payment." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "One time Payment"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "page_summary",
+      "value": "making a one time payment"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "effectuer un paiement unique"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190128"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319002C"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "f1136346-ddf1-4d25-b0c8-712232fb7aac"
+  } ]
+}

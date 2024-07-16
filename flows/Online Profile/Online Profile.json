@@ -1,0 +1,235 @@
+{
+  "name": "1db02c04-203b-4b45-bfe0-44ddaee05e2a",
+  "displayName": "Online Profile",
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I'm happy to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Certainement, je peux vous transférer à un membre de l’equipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "f17f9977-4834-412a-84db-4c1d15d9b3af"
+  }, {
+    "condition": "$session.params.routeDetails = null AND $session.params.conversation = null AND $session.params.searchResult = null AND $session.params.user = null AND $session.params.init != null",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "init_retry",
+        "value": "online profile flow"
+      } ]
+    },
+    "name": "9c9b58f3-549f-419a-8a83-b9905d819f6e"
+  }, {
+    "condition": "$session.params.is_repeat_prompted = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_repeat_prompted",
+        "value": null
+      } ]
+    },
+    "targetPage": "Repeat",
+    "name": "c969a904-b847-46df-a366-e347a653ec19"
+  }, {
+    "condition": "$session.params.route = \"account_recovery\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Login problems",
+    "name": "1dc0ce3a-7391-4272-a2fe-e879e6864b3a"
+  }, {
+    "condition": "$session.params.route = \"my_telus_capabilities\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "What can I do with My TELUS account",
+    "name": "2459625e-4a33-4372-aea8-9518029ae07f"
+  }, {
+    "condition": "$session.params.route = \"how_to_sign_in/out\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "How to sign in or out",
+    "name": "d9e7ad9b-dc09-4ff3-bd98-a35ba31ae8d8"
+  }, {
+    "condition": "$session.params.route = \"account_link_accounts\" AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Link accounts",
+    "name": "9921f636-bc1f-4471-bbbb-ce73ef2c8066"
+  }, {
+    "condition": "$session.params.route = \"unlink_account\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Unlink account",
+    "name": "3f2b950b-10d3-4010-b171-ada00dc79702"
+  }, {
+    "condition": "$session.params.route = \"account_authorization\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Authorized user",
+    "name": "a744f2a6-951e-4a50-95fa-d2aa6b6fedea"
+  }, {
+    "condition": "$session.params.route = \"self_serve_registration\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Self serve registration",
+    "name": "a7b4b59a-47ff-4e79-a31a-ee2c6ed3bf00"
+  }, {
+    "condition": "$session.params.route = \"account_link_accounts\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Link accounts EPP",
+    "name": "93c93610-a06e-431c-b6ff-4dfa1912d1fb"
+  }, {
+    "condition": "$session.params.route = \"troubleshooting_website_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Website errors",
+    "name": "82ce422c-bd3c-4184-9a3b-4d03dadac72c"
+  }, {
+    "condition": "$session.params.route = \"account_link_accounts\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Link accounts EPP",
+    "name": "92862dc6-3acd-461e-8380-c79ad0f61d4e"
+  }, {
+    "condition": "$session.params.route = \"role access\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Role access",
+    "name": "fa118fad-a7d2-4d43-964f-335c09c6074f"
+  }, {
+    "condition": "$session.params.route = \"supp_onlineapp\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bounce Back",
+    "name": "8b9702ef-3d06-4429-a6ac-e6ffd916a6ff"
+  }, {
+    "condition": "$session.params.route = \"supp_acccancelled\" OR $session.params.route = \"supp_accnotactivated\" OR $session.params.route = \"supp_accnotapproved\" OR $session.params.route = \"supp_acclocked\" OR $session.params.route = \"supp_forgotuser\" OR $session.params.route = \"supp_forgotpass\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bounce Back",
+    "name": "8cfb2f41-80f1-42a6-b1ab-48bd295da1db"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "9f5d4970-ff1b-4635-bbf3-cc828ce3bbca"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "65fed047-9aa6-423b-9c19-86bbaf36e424"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I'm not sure I got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you mind rephrasing?", "Can you try to rephrase your question?", "Can you reword that for me?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir bien compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Seriez-vous en mesure de reformuler?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "01def5b6-f0c7-4118-8699-2ce499593c88"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "login-problems-reasons",
+        "value": null
+      } ]
+    },
+    "name": "79b609c1-db37-406a-a564-b445ae6cd29f"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you rephrase?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "ae0dad00-898c-4c5e-a6fb-2ed6f1fff78a"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "16ffd64e-84bc-4a95-84fc-79adb8f6e8d7"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_CUSTOM",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL"
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "transitionRouteGroups": [ "Small Talk" ]
+}

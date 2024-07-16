@@ -1,0 +1,42 @@
+{
+  "name": "62822a2b-0c8c-45b3-a4f6-b97fa4b35037",
+  "displayName": "What can I do with My TELUS account",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You can do a lot of different things with your My TELUS account, like:" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003eView your bill\u003cbreak time=\"500ms\"/\u003e\nTrack your usage\u003cbreak time=\"500ms\"/\u003e\nChange your rate plan\u003cbreak time=\"500ms\"/\u003e\nUpgrade your phone\u003cbreak time=\"500ms\"/\u003e\nAnd much more\u003cbreak time=\"500ms\"/\u003e\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Vous pouvez faire beaucoup de choses différentes avec votre compte Mon TELUS comme:" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003eConsulter votre facture.\u003cbreak time=\"500ms\"/\u003e\nVérifier votre utilisation.\u003cbreak time=\"500ms\"/\u003e\nModifier forfait/options.\u003cbreak time=\"500ms\"/\u003e\nAdmissibilité à renouveler.\u003cbreak time=\"500ms\"/\u003e\nEt beaucoup plus!\u003cbreak time=\"500ms\"/\u003e\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "What can I do with My TELUS account"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "ebf0519d-0f13-4575-a513-d55df3d4ea04"
+  } ]
+}

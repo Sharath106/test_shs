@@ -1,0 +1,43 @@
+{
+  "name": "934d2299-cf9b-408b-ab5d-6b9b592fd2a4",
+  "displayName": "Bounce Back",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Payment Arrangement online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Payment Arrangement online or app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Payment Arrangement online or app",
+    "name": "961a0856-262d-489f-90cb-3f557e2c62dd"
+  }, {
+    "condition": "($session.params.last_page = \"Pre auth Set up online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Pre auth Set up online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Pre auth Set up online or app",
+    "name": "a7f2bbc3-bc8a-48f5-ada4-c61ba95cccae"
+  }, {
+    "condition": "($session.params.last_page = \"Pre auth Update Info online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Pre auth Update Info online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Pre auth Update Info online or app",
+    "name": "cc83aeac-bd28-4d7b-a50a-9444120f0379"
+  }, {
+    "condition": "($session.params.last_page = \"Report a Payment online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Report a Payment online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Report a Payment online or app",
+    "name": "83edcd32-a537-458d-8b43-4daf5c21bde9"
+  }, {
+    "condition": "$session.params.last_page = \"Report a Payment\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RaP attempt 2",
+    "name": "daef0eec-cd49-4e95-8f83-49389f2c5eda"
+  } ]
+}
