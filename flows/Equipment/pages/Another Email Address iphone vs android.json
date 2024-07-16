@@ -1,0 +1,347 @@
+{
+  "name": "6fce10ba-396b-47c9-8ef2-64309ab56eb3",
+  "displayName": "Another Email Address iphone vs android",
+  "form": {
+    "parameters": [ {
+      "displayName": "iphone_vs_android",
+      "required": true,
+      "entityType": "@iphone-vs-android",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you have an iPhone or Android device?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous un iPhone ou un Android?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "def16897-1087-4eaa-8725-2312964b0fb3"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "2294e5cd-a430-4a5d-9d84-16507feea283"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "bcd77241-23fe-418a-9811-763c60ae423b"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you have an iPhone or Android device?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous un iPhone ou un Android?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "85c14fde-0329-4bfe-b3f1-349a3a30e0f3"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "23bc9bec-6b12-4348-9a2c-2018fefc5dd0"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "573e2f51-61b4-450d-96d5-c419e814da50"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Another Email Address iphone vs android"
+    }, {
+      "parameter": "page_summary",
+      "value": "another Email address"
+    }, {
+      "parameter": "page_summary_fr",
+      "value": "another Email address"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.anotheremailaddress_retrycnt = null OR $session.params.anotheremailaddress_retrycnt = 0) AND $session.params.iphone_vs_android = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Are you inquiring about an iPhone or an Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous renseignez-vous sur un iPhone, ou un appareil Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.anotheremailaddress_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Do you have an iPhone or Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Avez-vous un appareil iPhone ou Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.anotheremailaddress_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "c96d34d1-cd62-41cf-9356-ca89ed2e1587"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "62869a70-4c80-46b8-b724-22e6483c0bcb"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900NV"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900U1"
+      }, {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "iphone"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "6720aa87-4783-45eb-b657-cbd38bff5e59"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900NV"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900U1"
+      }, {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "android"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "67ee4c4d-6da0-4edf-8810-f493f55d85f3"
+  }, {
+    "condition": "$session.params.anotheremailaddress_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "7edb31cd-59df-42db-8896-61c7a755e2e2"
+  }, {
+    "condition": "$session.params.anotheremailaddress_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "cdbcdd3b-864d-4e51-8cb6-4077249c88c3"
+  }, {
+    "condition": "$session.params.iphone_vs_android = 0 OR $session.params.iphone_vs_android = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": "$sys.func.ADD($session.params.anotheremailaddress_retrycnt,1)"
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "b5e43f64-2b9d-4c40-a069-a47099e56699"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": "$sys.func.ADD($session.params.anotheremailaddress_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.anotheremailaddress_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.anotheremailaddress_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "cc8a540e-deb1-45bd-aed2-09e149d0cc9b"
+  } ]
+}

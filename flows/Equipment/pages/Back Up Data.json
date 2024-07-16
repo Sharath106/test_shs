@@ -1,0 +1,83 @@
+{
+  "name": "ddd8c6d0-79c4-46c8-b9cd-afc8c988096a",
+  "displayName": "Back Up Data",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Back Up Data"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "Understanding data backup"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "La sauvegarde de vos données"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour savoir comment sauvegarder vos données, vous devez utiliser le site web de TELUS pour la résolution la plus rapide. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To know how to backup your data, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Il existe plusieurs façons de sauvegarder et de restaurer votre téléphone, y compris vos contacts, vos paramètres, vos documents, et plus encore." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Certaines d'entre elles peuvent être facilement effectuées à l’aide d’un autre téléphone en les branchant à un ordinateur, par un réseau Wi-Fi ou au moyen d’une application en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "There are multiple ways to backup your phone including your contacts, settings, documents, and more." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Some of which can easily be done through your computer, over Wi-Fi, or through online apps." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Back Up Data iphone vs android",
+    "name": "91df26c4-738c-48e9-bf4d-ef3263b207df"
+  } ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "3c899d69-db17-4578-88c4-24d698ceffbc",
+  "displayName": "Repair status",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Pour vérifier l'état de votre réparation, je dois vous mettre en contact avec un membre de l'équipe." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "To check the status of your repair, I'll need to get you to a team member." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Repair status"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "03bf61ba-4036-4b74-84e9-0885aeb0b83e"
+  } ]
+}

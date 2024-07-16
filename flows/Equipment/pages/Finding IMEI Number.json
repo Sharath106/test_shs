@@ -1,0 +1,194 @@
+{
+  "name": "68a51824-43f8-45d0-9041-549330db5b4e",
+  "displayName": "Finding IMEI Number",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Finding IMEI Number"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour connaître le numéro IMEI de votre appareil :" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez composer, étoile, carré, zéro, six carré, et votre IMEI apparaîtra à l’écran." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez également vérifier l’emballage d’origine de l'appareil. Un autocollant y est normalement apposé avec le numéro IMEI de votre appareil." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Chaque appareil est différent. Pour les terminaux intelligents, les clés Internet et les montres intelligentes, vous allez devoir vous référer au site Web du fabricant." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To find your device's IMEI number:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can dial, star, pound, 0, 6, pound, and your IMEI will pop-up on screen." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Also, your IMEI number is usually on a sticker on the original box that the device came in with." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Each device may differ. For smart hubs, internet keys, or for wearables like smart watches, you may need to refer to the manufacturer's website." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour localiser le numéro IMEI de votre appareil, vous pouvez composer étoile, carré, zéro, six, carré, et le numéro apparaîtra sur votre écran." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "De plus, le numéro IMEI peut généralement être trouvé sur une étiquette située sur l'emballage d'origine de votre appareil. Cependant, l'emplacement du numéro IMEI peut varier en fonction du type d'appareil." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour lesles terminaux intelligents, les clés Internet ou les accessoires portables tels que les montres intelligentes, vous devrez peut-être consulter le site Web du fabricant." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To locate your device's IMEI number, you can dial, star, pound, 0, 6, pound, and the number will appear on your screen." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Additionally, the IMEI number can usually be found on a sticker located on the original packaging of your device." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "However, the location of the IMEI number may vary depending on the type of device." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "For smart hubs, internet keys, or wearables such as smartwatches, you may need to consult the manufacturer's website." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous devez trouver le numéro IMEI de votre appareil, vous pouvez composer étoile, carré, zéro, six, carré, et numéro s'affichera sur votre écran." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "De plus, le numéro IMEI peut généralement être trouvé sur une étiquette sur la boîte d'origine de votre appareil." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cependant, l'emplacement du numéro IMEI peut différer en fonction du type d'appareil que vous avez." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour les terminaux intelligents, les clés Internet ou les accessoires portables tels que les montres intelligentes, il peut être nécessaire de consulter le site Web du fabricant." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you need to find your device's IMEI number, you can dial, star, pound, 0, 6, pound, and the number will be displayed on your screen." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Furthermore, the IMEI number can typically be found on a sticker on the original box that your device came in." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "However, the location of the IMEI number may differ depending on the type of device you have." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "For smart hubs, internet keys, or wearables like smartwatches, it may be necessary to check the manufacturer's website." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "650dabe1-a19a-4e32-a539-5b0badba7547"
+  } ]
+}

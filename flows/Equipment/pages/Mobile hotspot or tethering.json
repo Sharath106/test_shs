@@ -1,0 +1,52 @@
+{
+  "name": "acca0a09-1277-4b28-9087-75dce6b67739",
+  "displayName": "Mobile hotspot or tethering",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Setting up your phone as a mobile hotspot allows it to act as a Wi-Fi source to other devices and the ability to connect to the Internet with your cellular data plan." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\n\u003cprosody rate=\"slow\"\u003e\nThe 3 common methods for enabling a hotspot are: USB tethering, Bluetooth, or Wi-Fi.\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003eAlthough, most plans include tethering \n\u003cprosody rate=\"slow\"\u003e\nsome older plans might not have this feature included.\u003c/speak\u003e \nCheck your plan details to confirm." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "En configurant votre téléphone comme point d’accès mobile, vous en faites une source Wi-Fi qui permet aux appareils sans connexion mobile d’accéder à Internet en utilisant le forfait de données de votre téléphone." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\n\u003cprosody rate=\"slow\"\u003e\nIl y a trois façons courantes de configurer un point d’accès: Fonction modem USB, Bluetooth, ou Wi-Fi.\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003eMeme si la plupart des forfaits incluent le fonction modem \n\u003cprosody rate=\"slow\"\u003e\ncertains forfaits plus anciens peuvent ne pas inclure cette fonctionnalité.\u003c/speak\u003e \nVérifiez les détails de votre forfait pour confirmer." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Mobile hotspot or tethering"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "3f770aa4-60f0-4048-a3ab-f5d4b8728c0f"
+  } ]
+}

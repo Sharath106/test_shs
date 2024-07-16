@@ -1,0 +1,359 @@
+{
+  "name": "cda3ff73-47bc-4105-b9ed-986422fab63f",
+  "displayName": "Remove Email from Phone",
+  "form": {
+    "parameters": [ {
+      "displayName": "iphone_vs_android",
+      "required": true,
+      "entityType": "@iphone-vs-android",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry I did not get that.", "I am not sure I got this right.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Could you rephrase that for me? Are you using an iPhone or Android device?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pourriez-vous reformuler cela pour moi? Utilisez-vous un iPhone ou un appareil Android?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "f70e6969-1972-4312-8bb4-5eab33486d9d"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "388e3cb4-c9ad-4d07-bbac-1952fc4922a9"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "35d5c2f0-7c80-4c43-96df-6f02e5dfcaa0"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry I did not get that.", "I am not sure I got this right.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Could you rephrase that for me? Are you using an iPhone or Android device?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pourriez-vous reformuler cela pour moi? Utilisez-vous un iPhone ou un appareil Android?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "6b0d089f-8281-426a-a5c8-fa0459f7f297"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "06bc8391-d78f-4f6f-8e2e-f0868c4669e0"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "ca3ffbf4-fa58-4d6d-a0ce-3307da610d8e"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Remove Email from Phone"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.removeemailfromphone_retrycnt = null OR $session.params.removeemailfromphone_retrycnt = 0) AND $session.params.iphone_vs_android = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "I would be happy to guide you on how to remove an email address from your phone." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Do you have an iPhone or Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Il me fera plaisir de vous expliquer comment supprimer une adresse courriel de votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pouvez-vous me dire si vous avez un iPhone ou un appareil Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.removeemailfromphone_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Could you rephrase that for me? Are you using an iPhone or Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pourriez-vous reformuler cela pour moi? Utilisez-vous un iPhone ou un appareil Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.removeemailfromphone_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "removeemailfromphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "05fa7b46-a0dd-470c-a47c-684f4998d236"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "removeemailfromphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "43e043dd-e520-4919-a513-2ffd776514e0"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Removing an email address from an iPhone is easy.\n\nUnder Settings on your phone, Select Accounts \u0026 Passwords.\nThen, Select the account you would like to remove and tap on Delete Account, and confirm." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Voici comment supprimer une adresse courriel d'un iPhone:\n\nSélectionnez Réglages sur votre téléphone et appuyez Comptes/mots de passe.\nEnsuite, choisissez le compte que vous souhaitez supprimer et sélectionné le compte, appuyez sur Supprimer le compte, puis confirmez." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "removeemailfromphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "ceadda56-3982-4b2c-bd29-abad33dab206"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Removing an email address from an Android device is easy.\n\nUnder Settings on your phone, Select Cloud and accounts, or Users \u0026 accounts.\nThen, Select the account you would like to remove and Tap on Remove account, and Confirm." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Voici comment supprimer une adresse courriel d'un Android:\n\nSélectionnez l'icône des Paramètres et Appuyez sur Comptes.\nEnsuite, sélectionnez le compte que vous souhaitez supprimer puis, appuyez sur Supprimer le compte et confirmez." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "removeemailfromphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "9003aa72-0d1f-4842-a255-d70ab1644c7c"
+  }, {
+    "condition": "$session.params.removeemailfromphone_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "removeemailfromphone_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "b1e4f85d-a86c-4970-b895-89d8173b9510"
+  }, {
+    "condition": "$session.params.removeemailfromphone_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "removeemailfromphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "b2a96c07-f875-4920-8af8-6f5884aebddc"
+  }, {
+    "condition": "$session.params.iphone_vs_android = 0 OR $session.params.iphone_vs_android = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "removeemailfromphone_retrycnt",
+        "value": "$sys.func.ADD($session.params.removeemailfromphone_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "ccb0403f-c38a-4b5e-91a0-0fdf2e387aed"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "removeemailfromphone_retrycnt",
+        "value": "$sys.func.ADD($session.params.removeemailfromphone_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.removeemailfromphone_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.removeemailfromphone_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "f9582f73-0465-4751-baab-ea826e1c0ad3"
+  } ]
+}

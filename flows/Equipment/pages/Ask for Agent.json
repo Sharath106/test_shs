@@ -1,0 +1,331 @@
+{
+  "name": "3248b0ed-f573-42b8-b5be-73afc0e13870",
+  "displayName": "Ask for Agent",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_ask_for_agent",
+      "required": true,
+      "entityType": "@dtmf-menu-1-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ " Would you like me to connect you to a team member now?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Aimeriez-vous que je vous connecte à un membre de l'équipe maintenant?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you want to connect to a team member?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Voulez-vous vous connecter à un membre de l'équipe?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "254a5d69-ba8d-4ed8-a0a7-daa8a2ab1d36"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To connect with a team member, say yes or press 0, To ask another question say no or press 1." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous souhaitez parler avec un membre de l'équipe, dites oui ou faites le 0. Pour poser une autre question, dites non ou faites le 1." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ca4d8a68-ffb5-410e-9fa0-236cb9c7684f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "143373f2-b4d7-485c-832d-d3351353b0da"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you want to connect to a team member?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Voulez-vous que je vous connecte à un membre de l'équipe?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "5949a8cb-c4e7-44de-9609-8759fc85d6e4"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To connect with a team member, say yes or press 0, To ask another question say no or press 1." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous souhaitez parler avec un membre de l'équipe, dites oui ou faites le 0. Pour poser une autre question, dites non ou faites le 1." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "243ecd80-c9de-4b59-8e1d-0304b0884a19"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "d811cf9b-f48a-4581-a867-41f5efeb4c1f"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "askforagent_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_ask_for_agent",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "675e38ff-f1df-44f6-a3f1-b4e647b400ac"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "askforagent_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_ask_for_agent",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "ff058039-0d4e-4ab5-b9eb-004c9243d39a"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "askforagent_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_ask_for_agent",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "c02366fd-5688-427e-9836-f3c72520118f"
+  }, {
+    "condition": "$session.params.dtmf_ask_for_agent = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "askforagent_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_ask_for_agent",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "65183905-9c51-4713-9add-436e9e093aba"
+  }, {
+    "condition": "$session.params.dtmf_ask_for_agent = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "askforagent_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_ask_for_agent",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "ec6720af-b5df-43eb-bdb3-c9b81c3c17f3"
+  }, {
+    "condition": "$session.params.askforagent_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "askforagent_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "b828cf66-27a7-4402-9426-e18562ebd209"
+  }, {
+    "condition": "$session.params.askforagent_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "askforagent_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_ask_for_agent",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "44746906-8395-4b05-ad43-0de9d262a383"
+  }, {
+    "condition": "$session.params.dtmf_ask_for_agent = 1 OR $session.params.dtmf_ask_for_agent = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_ask_for_agent",
+        "value": null
+      }, {
+        "parameter": "askforagent_retrycnt",
+        "value": "$sys.func.ADD($session.params.differentblocks_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "ea9ab9b7-ce78-43b1-9a09-52b0767c9daa"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "askforagent_retrycnt",
+        "value": "$sys.func.ADD($session.params.askforagent_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.askforagent_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.askforagent_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "a1828432-7b37-4446-a0ea-8c1a531c3f4b"
+  } ]
+}

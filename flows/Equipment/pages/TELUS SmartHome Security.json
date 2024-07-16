@@ -1,0 +1,24 @@
+{
+  "name": "5f131979-d0d1-44af-8030-2634250139a0",
+  "displayName": "TELUS SmartHome Security",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "TELUS SmartHome Security"
+    }, {
+      "parameter": "cross_domain",
+      "value": "true"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Cross Domain Transfer",
+    "name": "2aacabad-f93f-46bf-b3c9-e51fe6d3fbb0"
+  } ]
+}

@@ -1,0 +1,308 @@
+{
+  "name": "78bebe59-4535-4dfd-b2eb-0f3c9275e0a5",
+  "displayName": "Smart Hub Province Check",
+  "form": {
+    "parameters": [ {
+      "displayName": "province",
+      "required": true,
+      "entityType": "@provinces",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour quelle province cherchez-vous à obtenir de l’information?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What province are you looking to get information for?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "cce854b1-a3ea-4bb1-a46d-27e0d087e70c"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous vous renseignez sur l'Alberta ou la Colombie-Britannique, dites Alberta ou Colombie-Britannique ou faites 1. Une autre province, ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you are inquiring about Alberta or BC, say Alberta or BC or press 1. Another province or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "0091b872-da78-459e-9219-531ad8a194a7"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "f4d789cd-bfbc-453f-9884-5e92637d2850"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour quelle province cherchez-vous à obtenir de l’information?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What province are you looking to get information for?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5007426a-a2c6-4f0a-be66-16a34342c9d6"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous vous renseignez sur l'Alberta ou la Colombie-Britannique, dites Alberta ou Colombie-Britannique ou faites 1. Une autre province, ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you are inquiring about Alberta or BC, say Alberta or BC or press 1. Another province or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "1e35d892-3bf5-40aa-bd2d-e0a51e10d856"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "ba5d15c7-9237-45fb-adaa-3c12a9a7dfab"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Smart Hub Province Check"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.smarthub_retrycnt = null OR $session.params.smarthub_retrycnt = 0) AND $session.params.province = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour quelle province cherchez-vous à obtenir de l’information?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "What province are you looking to get information for?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.smarthub_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour quelle province cherchez-vous à obtenir de l’information?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "What province are you looking to get information for?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.smarthub_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous vous renseignez sur l'Alberta ou la Colombie-Britannique, dites Alberta ou Colombie-Britannique ou faites 1. Une autre province, ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you are inquiring about Alberta or BC, say Alberta or BC or press 1. Another province or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      }, {
+        "parameter": "province",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "e8bb19ec-5780-4297-84cc-ffb1cfcbaeed"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_province",
+        "value": null
+      }, {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "17adf976-7aad-4651-826a-ded51c395609"
+  }, {
+    "condition": "$session.params.province = \"1\" OR $session.params.province = \"AB\" OR $session.params.province = \"BC\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      }, {
+        "parameter": "province",
+        "value": null
+      } ]
+    },
+    "targetPage": "Smart Hub Province Check West SMS",
+    "name": "15b22ca5-da2d-4e35-9835-2d97cb3335fd"
+  }, {
+    "condition": "$session.params.province = \"2\" OR $session.params.province = \"MB\" OR $session.params.province = \"SK\" OR $session.params.province = \"ON\" OR $session.params.province = \"QC\" OR $session.params.province = \"NB\" OR $session.params.province = \"NS\" OR $session.params.province = \"NL\" OR $session.params.province = \"NT\" OR $session.params.province = \"YT\" OR $session.params.province = \"PE\" OR $session.params.province = \"NU\" OR $session.params.province = \"PEI\" OR $session.params.province = \"another\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      }, {
+        "parameter": "province",
+        "value": null
+      } ]
+    },
+    "targetPage": "Smart Hub Province Check East",
+    "name": "f500fb0a-40c6-49c6-ac16-f8b7b1ae3fe0"
+  }, {
+    "condition": "$session.params.smarthub_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "03c35e4b-5e83-40d5-8d2b-931e1e04c230"
+  }, {
+    "condition": "$session.params.smarthub_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      }, {
+        "parameter": "province",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "7e7c0a5b-4747-40c2-b395-420ec9288acf"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": "$sys.func.ADD($session.params.smarthub_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.smarthub_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.smarthub_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "d26e59e0-aee6-4b65-9d68-9de847ec8bc0"
+  } ]
+}

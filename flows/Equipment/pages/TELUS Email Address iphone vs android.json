@@ -1,0 +1,347 @@
+{
+  "name": "b609b55e-bdc8-4b15-9778-ec27ccd6227c",
+  "displayName": "TELUS Email Address iphone vs android",
+  "form": {
+    "parameters": [ {
+      "displayName": "iphone_vs_android",
+      "required": true,
+      "entityType": "@iphone-vs-android",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you have an iPhone, or, Android device?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous un iPhone ou un Android?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "555e8464-e5d3-4627-84d8-ccc6d52519f9"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "2e16aa02-e0a7-4d6f-aae1-1ec183aa19f4"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "d0133517-6f24-4249-b3a1-444236314f23"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you have an iPhone, or, Android device?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous un iPhone ou un Android?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "d49443ca-b505-46d5-8515-f85ca136e47e"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "efa70a28-804b-4634-9bcf-e93afb50b278"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "f42956e2-f05e-484d-b261-c1f3d87b3729"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "TELUS Email Address iphone vs android"
+    }, {
+      "parameter": "page_summary",
+      "value": "TELUS Email Address"
+    }, {
+      "parameter": "page_summary_fr",
+      "value": "TELUS Email Address"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.telusemailaddress_retrycnt = null OR $session.params.telusemailaddress_retrycnt = 0) AND $session.params.iphone_vs_android = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Just to be sure, are you inquiring about an iPhone, or, an Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Avez-vous un appareil iPhone ou Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.telusemailaddress_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Do you have an iPhone, or, Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Avez-vous un iPhone ou un Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.telusemailaddress_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "7637942b-a4b2-4794-b3cf-97d9c3a99f5d"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "6fe68922-6f4a-4ca5-a88a-8c23231e5db2"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900ER"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900K5"
+      }, {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "iphone"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "3f9b8de6-52d9-4d26-8ea6-87a933fc5793"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319007W"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900MX"
+      }, {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "android"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "6328c734-5fb6-4661-aeec-ce4db00ad4dc"
+  }, {
+    "condition": "$session.params.telusemailaddress_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "5a861c10-a773-49a2-a0a2-1db40ecd1fe4"
+  }, {
+    "condition": "$session.params.telusemailaddress_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "1a403423-918c-44d9-9ccd-4278a90d12af"
+  }, {
+    "condition": "$session.params.iphone_vs_android = 0 OR $session.params.iphone_vs_android = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": "$sys.func.ADD($session.params.telusemailaddress_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "0a0c2a5e-a748-45f2-859e-dcbc54fcd486"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": "$sys.func.ADD($session.params.telusemailaddress_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.telusemailaddress_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.telusemailaddress_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "378b4c18-99d1-4d80-b916-b83f98e98887"
+  } ]
+}

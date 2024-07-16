@@ -1,0 +1,117 @@
+{
+  "name": "5588b7f8-2294-4fa0-8e74-c47b3cc2fe69",
+  "displayName": "Data Roaming On or Off",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Data Roaming On or Off"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les données en itinérance sont désactivées par défaut sur votre appareil. Il est fortement recommandé de les activer uniquement lorsque vous en avez besoin." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez activer ou désactiver les données en itinérance dans les paramètres de votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "By default, data roaming is turned off on your device. It is strongly recommended to keep it turned off until you need to use it." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can enable or disable data roaming by going into settings on your phone." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "En général, l'itinérance des données est désactivée par défaut sur votre appareil, et il est fortement recommandé de la laisser désactivée jusqu'à ce que vous en ayez besoin." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez accéder aux paramètres de votre téléphone pour activer ou désactiver l'itinérance des données." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Your device typically has data roaming turned off by default, and it's highly recommended that you leave it that way until you require it." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can access your phone's settings to enable or disable data roaming." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Par défaut, l'itinérance des données est désactivée sur votre appareil. Il est fortement recommandé de la laisser désactivée, sauf si vous avez besoin de l'utiliser." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez modifier les paramètres de votre téléphone pour activer ou désactiver l'itinérance des données." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "By default, data roaming is disabled on your device. It's highly advisable to keep it disabled unless you need to use it." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can modify your phone's settings to switch data roaming on or off." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "f33dc517-f4db-492f-899a-18827b4f1982"
+  } ]
+}

@@ -1,0 +1,414 @@
+{
+  "name": "7ffe480e-7a21-4123-8045-d64441c2af8c",
+  "displayName": "Another Email Address",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_another_email_address",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ " Would you like me to send a text with more information on how to add an email account?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur la façon d'ajouter un compte courriel?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "6be079eb-b626-43c9-87ea-3a75ab30097b"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "3c5c26a7-9d3b-4a7e-b50f-4161f6cdc09e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "968a7d8c-21d8-451d-b7e8-75f61ca3b21e"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text with more information on how to add an email account?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur la façon d'ajouter un compte courriel?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "20d81a1b-adcf-468b-972b-64684ecf3dbe"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "0b9a4438-ca18-48d5-9582-589354200b57"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "5e3f67bb-b05b-4606-bdd5-bca40905a546"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Another Email Address"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "setting up your email in your device"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "configurer votre courriel dans votre appareil"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To set up your email on your device, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent may not be able to help perform this on a customer behalf." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To help you find information on email set up, we are sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour configurer votre adresse courriel dans votre téléphone, vous devez utiliser le site web de TELUS pour la résolution la plus rapide. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent peut ne pas être en mesure d'aider à configurer une adresse courriel au nom d'un client." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour vous aider à trouver de l'information sur la configuration d'un courriel, nous vous envoyons maintenant un lien vers le site web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Adding another email address is quite simple." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ajouter une autre adresse courriel est assez simple." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_another_email_address",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Another Email Address iphone vs android",
+    "name": "51dedfd1-686a-4e8e-b419-7044da56ddfa"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_another_email_address",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "a0c38700-6798-475d-97bb-7fdb99d633f6"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_another_email_address",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "fc11d2a0-a53b-4379-8f75-b9a8a3180627"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900NV"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900U1"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "ef7b8e4f-1951-4edb-9df9-6a7b73c5e4b8"
+  }, {
+    "condition": "$session.params.dtmf_another_email_address = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_another_email_address",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Another Email Address iphone vs android",
+    "name": "a11f97df-98c9-4ac1-a86a-5cf918873dec"
+  }, {
+    "condition": "$session.params.dtmf_another_email_address = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_another_email_address",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "f0dfc8b2-2c94-4fc5-8330-5e704582d0f9"
+  }, {
+    "condition": "$session.params.anotheremailaddress_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "fa9a3b35-1003-40ed-b855-0582fd37e7c5"
+  }, {
+    "condition": "$session.params.anotheremailaddress_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "8d9438d9-29a2-42d0-a450-312f78e3caa7"
+  }, {
+    "condition": "$session.params.dtmf_another_email_address = 1 OR $session.params.dtmf_another_email_address = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_another_email_address",
+        "value": null
+      }, {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": "$sys.func.ADD($session.params.anotheremailaddress_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "2bac0181-809e-46a4-a804-fad48b15595d"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "anotheremailaddress_retrycnt",
+        "value": "$sys.func.ADD($session.params.anotheremailaddress_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.anotheremailaddress_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.anotheremailaddress_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "e422f439-2aa1-4fd1-90fd-d35cbf272173"
+  } ]
+}

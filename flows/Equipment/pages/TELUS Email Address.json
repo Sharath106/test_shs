@@ -1,0 +1,414 @@
+{
+  "name": "bfc76050-8952-4fff-bc50-ee4808abcf26",
+  "displayName": "TELUS Email Address",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_telus_email_address",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'information sur la façon de configurer le courriel TELUS sur votre appareil?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to text you with more information on how to set up TELUS email on your device?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ff92203d-2854-47d3-b972-f060964a2ef9"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "6c52b52c-21d6-483d-8462-83a9d47a66f1"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "f1731a07-f39b-4024-84d0-2badaab93360"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'information sur la façon de configurer le courriel TELUS sur votre appareil?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say or press 9. For a team member, 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ebbd4bda-4515-4200-a1e9-1d8d2363df4c"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "911c5a11-daff-45ad-9c67-b66c4b941517"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "41c40493-9742-4342-a69d-2a55511757e2"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "TELUS Email Address"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "setting up your telus email in your device"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "configurer votre courriel telus dans votre appareil"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour configurer votre adresse courriel telus dans votre téléphone, vous devez utiliser le site web de TELUS pour la résolution la plus rapide. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent peut ne pas être en mesure d'aider à faire ça au nom d'un client." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour vous aider à trouver de l'information sur la configuration d'un courriel, nous vous envoyons maintenant un lien vers le site web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To set up a telus email on your device, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent may not be able to help perform this on a customer behalf." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To help you find information on email set up, we are sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez facilement configurer votre adresse courriel TELUS sur n'importe quel appareil en suivant quelques étapes simples." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can easily setup your TELUS email on any device with a few steps." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_email_address",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "TELUS Email Address iphone vs android",
+    "name": "0e875f8d-1fca-4d7e-bf2c-c985ed9aeb10"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_email_address",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "0a328694-910e-4b02-ba32-1ad6bfbb52d2"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_email_address",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "70f3050c-c92a-41b3-b282-4ff586f13f5d"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900ER"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900K5"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "a0ba1564-8d88-41df-8465-b828b9d7baee"
+  }, {
+    "condition": "$session.params.dtmf_telus_email_address = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_email_address",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "TELUS Email Address iphone vs android",
+    "name": "2a241e2f-1b74-4cd0-abb0-5d10600d0d9b"
+  }, {
+    "condition": "$session.params.dtmf_telus_email_address = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_email_address",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e0fa17c8-a359-42e0-878e-d17b95d3a299"
+  }, {
+    "condition": "$session.params.telusemailaddress_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "71ed5e74-5665-469f-a807-bf29b9b07066"
+  }, {
+    "condition": "$session.params.telusemailaddress_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "c3151f83-e9d5-420d-b0d5-db528adc0e88"
+  }, {
+    "condition": "$session.params.dtmf_telus_email_address = 1 OR $session.params.dtmf_telus_email_address = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_telus_email_address",
+        "value": null
+      }, {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": "$sys.func.ADD($session.params.telusemailaddress_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "77bbbff6-2ad1-4e34-b0ea-6d689fe6efda"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telusemailaddress_retrycnt",
+        "value": "$sys.func.ADD($session.params.telusemailaddress_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.telusemailaddress_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.telusemailaddress_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "eb22412a-5055-4285-82b5-2449a185c541"
+  } ]
+}

@@ -1,0 +1,401 @@
+{
+  "name": "cf0d52e2-24fd-4737-ab7c-ca4034f04c54",
+  "displayName": "Return device",
+  "form": {
+    "parameters": [ {
+      "displayName": "return_device",
+      "required": true,
+      "entityType": "@return-device",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Est-ce que vous souhaitez retourner votre appareil pour un échange ou pour un remboursement?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you looking to exchange your device, or return it and get a refund?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c1e491fa-05ba-4bd3-93ce-7056bf5fc4c7"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous souhaitez échanger votre appareil, dites échanger ou faites le 1. Si vous souhaitez retourner votre appareil et obtenir un remboursement, dites remboursement ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you want to exchange your device say exchange or press 1, if you want to return your device and get a refund say return or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "77b55a8d-56c0-4a1f-b0ff-07ceea59c90e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "74758d8e-8887-48ff-b25c-4e362aebcb4d"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Est-ce que vous souhaitez retourner votre appareil pour un échange ou pour un remboursement?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you looking to exchange your device, or return it and get a refund?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "fe3d9444-90c0-4ac2-88bc-6df221486acd"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous souhaitez échanger votre appareil, dites échanger ou faites le 1. Si vous souhaitez retourner votre appareil et obtenir un remboursement, dites remboursement ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you want to exchange your device say exchange or press 1, if you want to return your device and get a refund say return or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "311df3a2-4054-4fab-98b6-091ab94d8110"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "761361a9-af4b-4c46-a2dd-125e76585e4e"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Return device"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.returndevice_retrycnt = null OR $session.params.returndevice_retrycnt = 0) AND $session.params.return_device = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Besoin de retourner un appareil?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Que vous l'ayez acheté en ligne, au téléphone ou d'un représentant en vente à la porte, vous pouvez retourner votre appareil dans une boutique corporatif TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Juste pour confirmer, est-ce que vous souhaitez retourner votre appareil pour un échange ou pour un remboursement?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Need to return a device?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Whether you've purchased it online, over the phone, or from a door-to-door sales person, you can return a device at a TELUS corporate store." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Just to confirm, are you looking to exchange your current phone for a different model or return for a refund?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.returndevice_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Est-ce que vous souhaitez retourner votre appareil pour un échange ou pour un remboursement?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Are you looking to exchange your device, or return it and get a refund?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.returndevice_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous souhaitez échanger votre appareil, dites échanger ou faites le 1. Si vous souhaitez retourner votre appareil et obtenir un remboursement, dites remboursement ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you want to exchange your device say exchange or press 1, if you want to return your device and get a refund say return or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.contact_webstore",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "contact_webstore"
+      }, {
+        "parameter": "returndevice_retrycnt",
+        "value": null
+      }, {
+        "parameter": "return_device",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "2216cf24-8f18-482c-b9e1-0f3da246cad1"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "returndevice_retrycnt",
+        "value": null
+      }, {
+        "parameter": "return_device",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "d020fedb-07c8-4bf4-ad09-3488a60a0882"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "returndevice_retrycnt",
+        "value": null
+      }, {
+        "parameter": "return_device",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "e936d114-aad7-4662-bf32-0de357b3b954"
+  }, {
+    "condition": "$session.params.return_device = \"exchange\" OR $session.params.return_device = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vous pouvez retourner votre appareil durant les périodes d'échange suivantes, 30 jours si vous avez acheté votre téléphone en ligne via notre équipe ventes et services,15 jours si vous avez acheté votre téléphone en magasin." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pour un échange, si vous avez acheté en ligne, veuillez contacter l'équipe web. Si vous avez acheté en boutique, veuillez y retourner. Pour une commande avec un représentant à la porte, un membre de l'équipe devra vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "You can exchange your device within the exchange period of:\n30 days, if purchased online, over the phone, or from a door-to-door sales person.\n15 days, if purchased in store." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "For an exchange:\nIf you purchased online, contact the Webstore team.\nIf you purchased at a TELUS store, return to the store.\nIf ordered over the phone or with a door-to-door sales person, you can connect to an agent for more assistance." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "returndevice_retrycnt",
+        "value": null
+      }, {
+        "parameter": "return_device",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "3a529a1d-f16a-4d29-84c3-5528a6e727cc"
+  }, {
+    "condition": "$session.params.return_device = \"refund\" OR $session.params.return_device = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vous pouvez retourner votre appareil au magasin TELUS le plus proche." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Le traitement du remboursement pour la carte de crédit utilisée lors de l'achat initial prend généralement de 5 à 7 jours ouvrables." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous avez acheté votre appareil en ligne, contactez d'abord la boutique en ligne pour confirmer votre admissibilité aux retours." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "You can bring your device to the nearest TELUS Corporate store, and they will arrange shipping the device back to us." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "The refund processing for the credit card used for the original purchase typically takes 5-7 business days." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you bought your device online initially, contact the webstore first to confirm your eligibility for returns." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "returndevice_retrycnt",
+        "value": null
+      }, {
+        "parameter": "return_device",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "32eb565e-dd6b-48a9-85bb-ccdc475a0370"
+  }, {
+    "condition": "$session.params.returndevice_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "returndevice_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "ccb32ee1-ce69-4547-83e3-4c8164c2a27f"
+  }, {
+    "condition": "$session.params.returndevice_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "returndevice_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "1c94b76c-6e74-415d-88df-098ae45170ed"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "returndevice_retrycnt",
+        "value": "$sys.func.ADD($session.params.returndevice_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.returndevice_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.returndevice_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "46db8caf-05a9-4130-869d-ef5cd81463f4"
+  } ]
+}

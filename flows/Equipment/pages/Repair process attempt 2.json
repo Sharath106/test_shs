@@ -1,0 +1,66 @@
+{
+  "name": "95e4611f-e751-4d93-8720-187ec3164ab9",
+  "displayName": "Repair process attempt 2",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "We offer a user-friendly repair guide on our website for all devices. TELUS provides hassle-free returns and in-or-out-of-warranty repairs with no extra charges. Our priority is to reconnect you quickly.\n" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Did that help you?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Nous proposons un guide de réparation amiable sur notre site web pour tous les appareils. TELUS offre des retours sans ennuis et des réparations sous garantie ou hors garantie sans frais supplémentaires. Notre priorité est de vous reconnecter rapidement." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Est-ce que cela vous a aidé?" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Repair process attempt two"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "7a40864d-abaa-4ed7-92fa-82d4552e8bed"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Super!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "4fc9bfaf-2c8b-45a8-8a93-a1da755e9e26"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "4546ccc1-18dd-4583-b852-ac49cdde26ab"
+  } ]
+}

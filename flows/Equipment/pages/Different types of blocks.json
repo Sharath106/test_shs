@@ -1,0 +1,427 @@
+{
+  "name": "a2327cee-68b1-45b4-9b18-5c8d9a68fea3",
+  "displayName": "Different types of blocks",
+  "form": {
+    "parameters": [ {
+      "displayName": "account_blocks",
+      "required": true,
+      "entityType": "@account-blocks",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "$session.params.account_blocks = null",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Afin de confirmer, que cherchez-vous à bloquer?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "In order to confirm, what are you looking to block?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+            
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Je peux vous aider à bloquer vos données, vos appels indésirables ou vos appels interurbains." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "Sorry, I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "I can help you block your data, spam, or long distance calls." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "dd139a0e-b0cb-4e07-a36c-b26ed2041b05"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour bloquer les données, dites données ou faites le 1. Appels indésirables ou faites le 2. Appels interurbains ou faites le 3. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To block data, say data or press 1. spam or press 2. long distance or press 3. team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4780f6b1-bf53-43b3-8729-5dfb21e3586f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "7f31a48f-a016-4191-8bb7-30e048828b0a"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Je peux vous aider à bloquer vos données, vos appels indésirables ou vos appels interurbains." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "I can help you block your data, spam, or long distance calls." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c0338245-91e7-4784-a4b4-dcfe7f8fe32c"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour bloquer les données, dites données ou faites le 1. Appels indésirables ou faites le 2. Appels interurbains ou faites le 3. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To block data, say data or press 1. spam or press 2. long distance or press 3. team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c799786d-5d3e-4ec3-8d62-474e1ce3dad2"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "7aa58305-bd93-4689-83ef-87b202be6168"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Different types of blocks"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "differentblocks_retrycnt",
+        "value": null
+      }, {
+        "parameter": "account_blocks",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "fcbc1251-17d9-4d85-a256-9bb3aee03f9c"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "differentblocks_retrycnt",
+        "value": null
+      }, {
+        "parameter": "account_blocks",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "dc3b1787-62a5-4f6c-9e34-66138d3fd3e3"
+  }, {
+    "condition": "$session.params.account_blocks = \"people\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "differentblocks_retrycnt",
+        "value": null
+      }, {
+        "parameter": "account_blocks",
+        "value": null
+      }, {
+        "parameter": "last_page_summary",
+        "value": "blocking calls or text messages"
+      }, {
+        "parameter": "last_page_summaryfr",
+        "value": "Connaitre la procédure pour restreindre les appels ou messages texte"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900XG"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900JD"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "mandatory_ss",
+        "value": "true"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Pour savoir comment bloquer des appels ou sms, vous devez utiliser le site web de TELUS pour la résolution la plus rapide. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "To know how to block a call or sms, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "I am sending you a link to the website now." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "De nombreux téléphones intelligents permettent de bloquer des appels et des textos directement." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Many smartphones have features allowing you to block calls or texts directly." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "01d15995-cfd9-4455-8b94-30532653c533"
+  }, {
+    "condition": "$session.params.account_blocks = \"data\" OR $session.params.account_blocks = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "data_limits"
+      }, {
+        "parameter": "differentblocks_retrycnt",
+        "value": null
+      }, {
+        "parameter": "account_blocks",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "b4bc655b-8e3e-4a08-86b1-74846c975575"
+  }, {
+    "condition": "$session.params.account_blocks = \"spam\" OR $session.params.account_blocks = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "call_control"
+      }, {
+        "parameter": "differentblocks_retrycnt",
+        "value": null
+      }, {
+        "parameter": "account_blocks",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "21a0bbfd-a380-45af-b153-7f9f9df911ed"
+  }, {
+    "condition": "$session.params.account_blocks = \"ld\" OR $session.params.account_blocks = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "restrict_intl_calls"
+      }, {
+        "parameter": "differentblocks_retrycnt",
+        "value": null
+      }, {
+        "parameter": "account_blocks",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "f2d975af-c85e-45b2-b533-fdda31c5bcaf"
+  }, {
+    "condition": "$session.params.account_blocks = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "differentblocks_retrycnt",
+        "value": null
+      }, {
+        "parameter": "account_blocks",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "0f6a7c0e-6407-42bc-bd75-dbe31bb9f14f"
+  }, {
+    "condition": "$session.params.account_blocks = \"port\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Si vous aimeriez activer un blocage de transfert de votre numéro de téléphone, je dois vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "If you'd like to enable the protection of phone number transfer, I'll need to get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "differentblocks_retrycnt",
+        "value": null
+      }, {
+        "parameter": "account_blocks",
+        "value": null
+      } ]
+    },
+    "targetPage": "Ask for Agent",
+    "name": "fa6198dd-18fa-427f-b188-8178d1f29242"
+  }, {
+    "condition": "$session.params.differentblocks_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "differentblocks_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "42f9ba75-9b4e-4ac3-b0dd-0cb037735342"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "differentblocks_retrycnt",
+        "value": "$sys.func.ADD($session.params.differentblocks_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.differentblocks_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.differentblocks_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "2e619783-f538-4627-bcb8-4df7e2f245d1"
+  } ]
+}

@@ -1,0 +1,365 @@
+{
+  "name": "9500e63d-fe14-42c5-b2c8-87a8ef388815",
+  "displayName": "APN Setting iphone vs android",
+  "form": {
+    "parameters": [ {
+      "displayName": "iphone_vs_android",
+      "required": true,
+      "entityType": "@iphone-vs-android",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "($session.params.apnsetting_retrycnt = null OR $session.params.apnsetting_retrycnt = 0) AND $session.params.iphone_vs_android = null",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Vous vous renseignez sur un iPhone ou un appareil Android?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Are you inquiring about an iPhone or an Android device?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.apnsetting_retrycnt = 1",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Avez-vous un appareil iPhone ou Android?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Do you have an iPhone or Android device?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.apnsetting_retrycnt = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Si vous vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous un iPhone ou un Android?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you have an iPhone or Android device?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "55b27ae7-9b25-4e7d-8c8a-8370f5492af5"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "8da63a23-126b-472f-9e68-de16770cca09"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "9fac834b-1c85-4a90-b457-6b6f368053ea"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous un iPhone ou un Android?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you have an iPhone or Android device?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "eded6d57-d9df-442a-b1d4-81e2bc331de2"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un appareil Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "cf298483-4624-4bde-93b8-1ed7b9465940"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1e571852-4821-4e3b-b5b8-670c8e1ef16a"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "APN Setting iphone vs android"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "apnsetting_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "01fd2ae3-08c5-4956-8624-169a22785e78"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "apnsetting_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "1501ed48-c1b2-4127-a9e8-6429ec68dbe2"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ " Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900DB"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900YW"
+      }, {
+        "parameter": "apnsetting_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "iphone"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "6d5299ca-1fe3-4eda-9e41-137d69243ea1"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ " Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319013U"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190048"
+      }, {
+        "parameter": "apnsetting_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "android"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "917a79fc-e67d-4a86-abbc-80e84130838f"
+  }, {
+    "condition": "$session.params.apnsetting_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "apnsetting_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "59cf47db-b87e-4b4a-8b35-da56790f59ac"
+  }, {
+    "condition": "$session.params.apnsetting_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "apnsetting_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "edc577d8-e23d-40ad-9fbb-9e8e993c6997"
+  }, {
+    "condition": "$session.params.iphone_vs_android = 0 OR $session.params.iphone_vs_android = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "apnsetting_retrycnt",
+        "value": "$sys.func.ADD($session.params.apnsetting_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "c808ae5f-c42e-4d32-aed0-ec695ac5a70a"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "apnsetting_retrycnt",
+        "value": "$sys.func.ADD($session.params.apnsetting_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.apnsetting_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.apnsetting_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "26344963-a7e7-4215-8c21-6f8313c8461e"
+  } ]
+}

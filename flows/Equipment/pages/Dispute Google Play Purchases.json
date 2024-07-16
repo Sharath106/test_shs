@@ -1,0 +1,285 @@
+{
+  "name": "e6117f34-847b-4c69-9a2f-5fc2beff7549",
+  "displayName": "Dispute Google Play Purchases",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Dispute Google Play Purchases"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les applications et les jeux peuvent être retournés dans les deux heures suivant l'achat. Si l'achat a été effectué il y a plus de deux heures, les modalités de remboursement de Google varient:" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Tout d'abord, ouvrez le Play Store," ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ensuite, sélectionnez votre compte, généralement l'icône en haut à droite." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Puis, faites défiler jusqu'à Aide et commentaires." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "À l'aide de l'option de recherche, saisissez Demander votre remboursement Google Play." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Une fois que vous y êtes, suivez les instructions à l'écran." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Apps \u0026 games can be returned within 2 hours of purchase. If the purchase was made more than 2 hours ago, Google refund policies vary." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can try to request refund with the following steps:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "First, open the play store," ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Second, select your account, usually found as the top right icon." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "And lastly, scroll until you see Help and Feedback." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can also use the search option, and then type \"Request Google play refund.\"" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Once you are there, follow the prompts on the screen." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez acheté une application ou un jeu, vous pouvez demander un remboursement dans les deux heures suivant l'achat. Cependant, si l'achat a été effectué il y a plus de deux heures, les politiques de remboursement de Google peuvent s'appliquer" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour demander un remboursement, suivez ces étapes : Tout d'abord, ouvrez le Play Store." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ensuite, sélectionnez votre compte, généralement situé en haut à droite." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Enfin, faites défiler vers le bas pour trouver Aide et commentaires. Vous pouvez également utiliser l'option de recherche pour rechercher Demande de remboursement Google Play." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Une fois que vous êtes sur la page de remboursement, suivez les instructions affichées à l'écran." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you have purchased an app or game, you can request a refund within two hours of the purchase." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "However, if the purchase was made more than two hours ago, refund policies of Google may apply." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To request a refund, follow these steps: Firstly, open the Play Store." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Secondly, select your account, usually located at the top right corner." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Lastly, scroll down to find Help and Feedback." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Alternatively, you can use the search option to look for \"Request Google Play refund.\"" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Once you are on the refund page, follow the instructions displayed on the screen." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les applications et les jeux peuvent être retournés dans les deux heures suivant l'achat." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cependant, si l'achat a été effectué il y a plus de deux heures, les politiques de remboursement de Google peuvent s'appliquer." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour demander un remboursement, suivez ces étapes :" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ouvrez le Play Store, sélectionnez votre compte situé en haut à droite et faites défiler jusqu'à ce que vous voyez Aide et commentaires." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Alternativement, vous pouvez rechercher Demander un remboursement Google Play à l'aide de la barre de recherche." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Une fois que vous êtes sur la page de remboursement, suivez les instructions fournies à l'écran." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Apps and games can be returned within two hours of purchase." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "However, if the purchase was made more than two hours ago, refund policies of Google may apply." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To request a refund, follow these steps:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Open the Play Store, select your account located at the top right corner, and scroll down until you see Help and Feedback." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Alternatively, you can search for \"Request Google Play refund\" using the search bar. Once you are on the refund page, follow the prompts provided on the screen." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "97d65a84-d22d-432b-a504-fece441df964"
+  } ]
+}

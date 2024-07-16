@@ -1,0 +1,174 @@
+{
+  "name": "7dcb0fe3-3f02-4da6-8ef3-030bca739efc",
+  "displayName": "Setup a new phone",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Setup a new phone"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Lorsque vous commandez un nouveau téléphone, chaque fabricant de téléphone dispose d'un guide de configuration unique qui sera lancé automatiquement une fois le téléphone allumé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Assurez-vous d'avoir votre carte SIM prête à être insérée dans le téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez également vous connecter avec un membre de l'équipe, qui peut vous aider à configurer votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous que je vous connecte à un membre de l'équipe maintenant?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "When you order a new phone, the manufacturer will have a unique setup guide that will automatically launch once the phone is turned on." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Be sure to have your sim card ready to be inserted in the phone." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can also connect with a team member, who can help you on setting up your phone." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Lors de la mise en marche d'un nouveau téléphone, le guide de configuration exclusif du fabricant se lancera automatiquement pour vous aider dans le processus de configuration initiale." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Assurez-vous d'avoir votre carte SIM prête pour l'insertion. De plus, vous pouvez contacter un membre de l'équipe qui peut fournir une assistance supplémentaire pour la configuration de votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous que je vous connecte à un membre de l'équipe maintenant?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Upon turning on a new phone, the manufacturer's unique setup guide will automatically launch to assist with the initial setup process." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Make sure to have your SIM card ready for insertion." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Additionally, you can connect with a team member who can provide further assistance with setting up your phone." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Lorsque vous allumez un nouveau téléphone, le guide de configuration exclusif du fabricant se lancera automatiquement pour vous aider dans le processus de configuration initiale." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Assurez-vous d'avoir votre carte SIM prête pour l'insertion." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez besoin d'aide pour configurer votre téléphone, vous pouvez également contacter un membre de l'équipe pour obtenir de l'aide." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous que je vous connecte à un membre de l'équipe maintenant?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "When you receive a new phone, the manufacturer's exclusive setup guide will automatically activate upon powering it on." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ensure that you have your SIM card available for insertion." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you require assistance with setting up your phone, you can also contact a team member for support." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "50b6c035-4312-4a20-9206-dbdf38a124ab"
+  } ],
+  "transitionRouteGroups": [ "sup_equipment_group" ]
+}

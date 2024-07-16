@@ -1,0 +1,145 @@
+{
+  "name": "29c8496d-1ba9-44fb-9754-81e038d8138e",
+  "displayName": "Airplane Mode",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Airplane Mode"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Le mode Avion est une fonction sur votre appareil qui désactive toutes les connexions réseau." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cela comprend les connexions aux données mobiles, au point d’accès mobile personnel et au Bluetooth." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez tout de même vous connecter au Wi-Fi lorsque le mode Avion est activé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Airplane Mode is a setting found in most devices and when activated your phones ability to connect the network is disabled." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "This includes cellular, personal hot-spot and Bluetooth connections." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "When airplane mode is activated, your device will still have the ability to connect to Wi-Fi when turned on." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Le mode Avion est une fonctionnalité intégrée à la plupart des appareils qui, une fois activée, désactive la capacité de votre téléphone à se connecter au réseau, y compris les connexions cellulaires, le point d’accès mobile personnel et Bluetooth." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cependant, même avec le mode Avion activé, votre appareil peut toujours se connecter au Wi-Fi s'il est activé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Airplane Mode is a built-in feature in most devices that, once enabled, disables your phone's ability to connect to the network, including cellular, personal hotspot, and Bluetooth connections." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "However, even with Airplane Mode turned on, your device can still connect to Wi-Fi if it's enabled." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Le mode Avion est une fonctionnalité présente dans la plupart des appareils qui, une fois activée, désactive la capacité de votre téléphone à se connecter au réseau." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cela inclut les connexions cellulaires,  les points d’accès mobile personnels et Bluetooth." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cependant, même lorsque le mode Avion est activé, votre appareil peut toujours se connecter au Wi-Fi s'il est activé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Airplane Mode is a feature present in most devices that, when enabled, turns off your phone's ability to connect to the network." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "This includes cellular, personal hotspot, and Bluetooth connections." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "However, even when Airplane Mode is on, your device can still connect to Wi-Fi if it's turned on." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "7743ba5f-1fac-414b-9954-f1b1324d4cd6"
+  } ]
+}

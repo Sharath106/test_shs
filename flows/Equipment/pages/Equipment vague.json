@@ -1,0 +1,329 @@
+{
+  "name": "12d8f7ff-91ca-470b-8fef-3ad876394f0d",
+  "displayName": "Equipment vague",
+  "form": {
+    "parameters": [ {
+      "displayName": "equipment_vague_dtmf",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pourriez-vous clarifier votre demande en fournissant des renseignements supplémentaires s’il vous plaît?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Could you add more clarity to your request by providing additional information please?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "9d424515-6c83-4634-a484-2e2bee53a748"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour les problèmes d’appel, dites problème avec les appels, ou faites le 1. Pour les problèmes d’appareil, dites problème avec l’appareil, ou faites le 2. Pour renouveler un appareil, dites renouveler, ou appuyer sur le 3." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For calling issues, say issue with calls, or press 1, for device issues, say issue with device, or press 2, for upgrading device, say upgrade, or press 3." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "6408b3fb-aea9-46e8-bed3-0e41a17352b4"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "7e1e837e-f5bd-4ea7-98a0-aa931b006a2e"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pourriez-vous clarifier votre demande en fournissant des renseignements supplémentaires s’il vous plaît?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Could you add more clarity to your request by providing additional information please?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "285b2c84-7617-4a35-acee-ffed8026c7fa"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour les problèmes d’appel, dites problème avec les appels, ou faites le 1. Pour les problèmes d’appareil, dites problème avec l’appareil, ou faites le 2. Pour renouveler un appareil, dites renouveler, ou appuyer sur le 3." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For calling issues, say issue with calls or press 1, for device issues, say issue with device, or press 2, for upgrading device, say upgrade, or press 3." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "787699cc-e744-4224-a12c-cff6fb0fd402"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "590c5411-ba1f-455c-9af4-9ff3a2acfa4b"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "intent",
+      "value": "acctmgmt"
+    }, {
+      "parameter": "last_page",
+      "value": "Equipment vague"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.equipmentvague_retrycnt = null OR $session.params.equipmentvague_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pouvez-vous s'il vous plaît être plus précis avec votre demande d'appareil?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Can you please be more specific with your equipment request?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.equipmentvague_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pouvez-vous s'il vous plaît être plus précis avec votre demande d'appareil?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Can you please be more specific with your equipment request?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.equipment_upgrades",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_upgrade"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "bd45c3aa-fa5e-431d-95ef-b46e51996015"
+  }, {
+    "intent": "head_intent.equipment_order",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "b5dcd6e3-c6e1-4578-8a10-59316544ea80"
+  }, {
+    "intent": "head_intent.troubleshoot_calling_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "calling_issues"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "4ec34dd5-b0be-4109-85ca-ce987dea2497"
+  }, {
+    "intent": "head_intent.troubleshoot_phone_not_working",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "phone_not_working"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "65f279aa-fef4-44df-971d-3a25eb52803a"
+  }, {
+    "intent": "head_intent.equipment_exchange_return",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_exchange_return"
+      } ]
+    },
+    "targetPage": "Return device",
+    "name": "681655ec-ecda-4ad1-9ab8-941aa4943466"
+  }, {
+    "condition": "$session.params.equipmentvague_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "equipmentvague_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "5e10e83d-21d6-4d67-bcae-b346105cf21f"
+  }, {
+    "condition": "$session.params.equipmentvague_retrycnt \u003e= 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "equipmentvague_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "787386cd-81b6-4578-ab0f-5bd3949e4059"
+  }, {
+    "condition": "$session.params.equipment_vague_dtmf = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "calling_issues"
+      }, {
+        "parameter": "equipment_vague_dtmf",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "bbd2b4e4-00f7-4b6a-b806-36f50f6c122c"
+  }, {
+    "condition": "$session.params.equipment_vague_dtmf = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "phone_not_working"
+      }, {
+        "parameter": "equipment_vague_dtmf",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "35a2e771-7f85-45a8-b866-2cf36b688433"
+  }, {
+    "condition": "$session.params.equipment_vague_dtmf = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "equipment_vague_dtmf",
+        "value": null
+      }, {
+        "parameter": "route",
+        "value": "equipment_upgrade"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "f50f55ac-7f58-496e-af34-783a9202a76b"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "equipmentvague_retrycnt",
+        "value": "$sys.func.ADD($session.params.equipmentvague_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.equipmentvague_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.equipmentvague_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "566afb90-e189-47da-b5de-239f6d442663"
+  } ],
+  "transitionRouteGroups": [ "sup_equipment_group" ]
+}

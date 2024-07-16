@@ -1,0 +1,167 @@
+{
+  "name": "e6cd45b9-afc3-4059-8bbb-d063cf32b0e1",
+  "displayName": "Software Updates",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Software Updates"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les mises à jour logicielles sont un moyen pour les fabricants de corriger des problèmes ou d’ajouter de nouvelles fonctionnalités aux appareils." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "La plupart des appareils comportent une notification automatisée ou une mise à jour logicielle, si elle est activée dans les paramètres de l’appareil." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS travaille avec les fabricants pour signaler les anomalies logicielles et pour confirmer la compatibilité des appareils." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Software updates are a way for manufacturers to fix bugs or add new functionality to their devices." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Most smartphones will feature an automated notification or software update, if enabled in the device settings." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS works with manufacturers to report software problems and to confirm compatibility with devices." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les mises à jour logicielles sont un moyen pour les fabricants de résoudre les bugs ou d'implémenter de nouvelles fonctionnalités sur leurs appareils." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "La plupart des téléphones intelligents disposent d'une fonction de notification ou de mise à jour logicielle automatisée, à condition qu'elle soit activée dans les paramètres de l'appareil." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS collabore avec les fabricants pour signaler les problèmes logiciels et assurer la compatibilité avec les appareils." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Software updates are a means for manufacturers to address bugs or implement new features on their devices." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Most smartphones have an automated notification or software update feature, provided it is enabled in the device settings." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS collaborates with manufacturers to report software issues and ensure compatibility with devices." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les fabricants utilisent les mises à jour logicielles pour résoudre les bugs et introduire de nouvelles fonctionnalités sur leurs appareils." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si elle est activée dans les paramètres de l'appareil, la plupart des téléphones intelligents recevront une notification ou une mise à jour logicielle automatisée." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS travaille avec les fabricants pour signaler les problèmes logiciels et vérifier la compatibilité des appareils." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Manufacturers use software updates to resolve bugs and introduce new features to their devices." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If enabled in the device settings, most smartphones will receive an automated notification or software update." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS partners with manufacturers to report software concerns and verify device compatibility." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.device_how_to",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Device How to",
+    "name": "4ac46d67-8bca-4352-805f-3fb2df18b149"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "aba51669-0dc2-40d4-be3b-6363fdf4acc7"
+  } ],
+  "transitionRouteGroups": [ "sup_equipment_group" ]
+}

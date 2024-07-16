@@ -1,0 +1,32 @@
+{
+  "name": "059504e6-0b9e-479f-8194-67da6cce8b59",
+  "displayName": "Create a Contact",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Creating a contact is simple and can be done through the Contacts or People app on your phone, by selecting the + symbol to add a new contact." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "La création d'un contact est simple et peut être effectuée via vos Contacts ou par l'application Contacts sur votre téléphone en sélectionnant le signe + pour ajouter un nouveau contact." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Create a Contact"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "1115e56d-b06b-4799-8393-89b33fb54446"
+  } ]
+}

@@ -1,0 +1,152 @@
+{
+  "name": "6002448f-c86b-4117-9c20-55749b1d6f7d",
+  "displayName": "Deleted Text Messages",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Deleted Text Messages"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Malheureusement, une fois qu’un message a été supprimé d’un téléphone, il ne peut pas être récupéré." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "En raison de notre politique de protection de la vie privée, TELUS ne conserve pas le contenu des messages texte." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez consulter l'historique des messages texte des quatre-vingt-dix derniers jours y compris les dates, les heures et les numéros de téléphone  dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Unfortunately once a text message has been deleted from a phone there is no way to retrieve or restore the message." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Due to our privacy policy, TELUS does not store text message content." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can view the past 90 days text message history, including dates, timestamps and phone numbers in your TELUS online account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Il est regrettable qu'une fois qu'un message texte a été supprimé d'un téléphone, il ne peut pas être récupéré ou restauré." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cela est dû au fait que TELUS ne stocke pas le contenu des messages texte dans le cadre de sa politique de confidentialité." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cependant, vous pouvez accéder à l'historique de vos messages texte, qui comprend les dates, les horodatages et les numéros de téléphone, pendant quatre-vingt-dix jours en vous connectant à votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "It is regrettable that once a text message has been deleted from a phone, it cannot be retrieved or restored." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "This is because TELUS does not store text message content as part of its privacy policy." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "However, you can access your text message history, which includes dates, timestamps, and phone numbers, for up to 90 days by logging into your TELUS online account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Malheureusement, il n'est pas possible de récupérer ou de restaurer un message texte qui a été supprimé d'un téléphone. TELUS ne stocke pas le contenu des messages texte en raison de sa politique de confidentialité." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cependant, vous pouvez consulter l'historique de vos messages texte, qui contient les dates, les horodatages et les numéros de téléphone, pour les quatre-vingt-dix derniers jours en vous connectant à votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Unfortunately, it is not possible to retrieve or restore a text message that has been deleted from a phone." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS does not store text message content due to its privacy policy." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "However, you can view your text message history, which contains dates, timestamps, and phone numbers, for the past 90 days by signing into your TELUS online account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "d727a4b7-f551-491c-8bf8-c80fc036e081"
+  } ]
+}

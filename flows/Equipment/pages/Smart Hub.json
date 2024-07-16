@@ -1,0 +1,409 @@
+{
+  "name": "f15d7146-8022-41ec-a3fd-e423e022c22f",
+  "displayName": "Smart Hub",
+  "form": {
+    "parameters": [ {
+      "displayName": "smart_hub",
+      "required": true,
+      "entityType": "@smarthub",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je n'ai pas compris", "Désolé je n'ai pas compris.", "Désolé je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous  en savoir plus sur : nos produits, les plans disponibles, le dépannage ou l'activation?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I didn't get that.", "Sorry, I didn't catch that.", "Sorry, I didn’t understand that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to know more about: our products, available plans, troubleshooting or activation." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "60767459-6067-4ad8-9086-7ed30fdad694"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour plus d'informations, dites apprendre ou faites le 1. Depannage ou faites le 2. Activation ou faites le 3." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For more information, say learn or press 1. troubleshoot or press 2. activating or press 3." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "aab7b734-45c4-48c5-ab94-5ca260fb9ad5"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "42cd6c63-c313-40fd-9617-0dba20e50057"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé je n'ai pas bien compris.", "Désolé je n'ai pas compris.", "Je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous en savoir plus sur : nos produits, les plans disponibles, le dépannage ou l'activation." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to know more about: our products, available plans, troubleshooting or activation." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b1415dd8-a8cb-4c7b-893f-3d7bf878c726"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour plus d'informations, dites apprendre ou faites le 1. Depannage ou faites le 2. Activation ou faites le 3." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For more information, say learn or press 1. troubleshoot or press 2. activating or press 3." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "bbd23903-d80c-45b2-a603-ed1c1c247f42"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "011359d3-7993-446c-a669-6bfb4ae1fd38"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Smart Hub"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.smarthub_retrycnt = null OR $session.params.smarthub_retrycnt = 0) AND $session.params.smart_hub = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Le terminal intelligent de TELUS est une solution Wi-Fi domestique qui fournit un accès Internet haute vitesse fixe aux foyers." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Il est alimenté par nos réseaux TELUS 5G et LTE." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Souhaitez-vous obtenir de l'aide avec : nos produits, les forfaits disponibles, le dépannage ou l'activation?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS Smart Hub, is a home Wi-Fi solution that provides fixed high speed internet access for homes." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "It's powered by our TELUS 5G, and LTE Network." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Are you looking to get help with: our products, available plans, troubleshooting or activation?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.smarthub_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Souhaitez-vous en savoir plus sur : nos produits, les forfaits disponibles, le dépannage ou l'activation?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like to know more about: our products, available plans, troubleshooting or activation." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.smarthub_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour plus d'informations, dites apprendre ou faites le 1. Depannage ou faites le 2. Activation ou faites le 3." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "For more information, say learn or press 1. troubleshoot or press 2. activating or press 3." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      }, {
+        "parameter": "smart_hub",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "05852787-b075-449e-927b-69ddcb12f3e4"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      }, {
+        "parameter": "smart_hub",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "966b350e-9e63-48b8-ba81-b2a8862df537"
+  }, {
+    "condition": "$session.params.smart_hub = \"activation\" OR $session.params.smart_hub = \"activation \"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      }, {
+        "parameter": "smart_hub",
+        "value": null
+      } ]
+    },
+    "targetPage": "Smart Hub Activation",
+    "name": "7e53ce9c-80c2-4c7e-8bf5-329eb4d967ca"
+  }, {
+    "condition": "$session.params.smart_hub = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      }, {
+        "parameter": "smart_hub",
+        "value": null
+      } ]
+    },
+    "targetPage": "Smart Hub Activation",
+    "name": "0af49bd0-6fc2-4ce9-9358-65a1b64eddb8"
+  }, {
+    "condition": "$session.params.smart_hub = \"troubleshooting\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "smart_hub_issues"
+      }, {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      }, {
+        "parameter": "smart_hub",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "19cbdbd6-f4ea-4cbf-8341-4e976c901d96"
+  }, {
+    "condition": "$session.params.smart_hub = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "smart_hub_issues"
+      }, {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      }, {
+        "parameter": "smart_hub",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "d9b095c5-6919-4842-b6ae-b88d1047c963"
+  }, {
+    "condition": "$session.params.smart_hub = \"learn_more\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Smart Hub Province Check",
+    "name": "03478cae-03ce-469d-952e-7c0cc1c644f1"
+  }, {
+    "condition": "$session.params.smart_hub = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Smart Hub Province Check",
+    "name": "844e15e8-d31d-4ab2-8d47-4a52a40bd8be"
+  }, {
+    "condition": "$session.params.smarthub_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "1e715f32-e3b0-4f72-a872-e474483daac1"
+  }, {
+    "condition": "$session.params.smarthub_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "919d965a-59c6-4eea-b96b-8c5885bafda0"
+  }, {
+    "condition": "$session.params.smart_hub = 0 OR $session.params.smart_hub = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "smart_hub",
+        "value": null
+      }, {
+        "parameter": "smarthub_retrycnt",
+        "value": "$sys.func.ADD($session.params.smarthub_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "01542b72-f868-42c9-b8a4-49146323d739"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthub_retrycnt",
+        "value": "$sys.func.ADD($session.params.smarthub_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.smarthub_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.smarthub_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "48bffa14-edf6-46db-8695-2522f498fbc0"
+  } ]
+}

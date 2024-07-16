@@ -1,0 +1,159 @@
+{
+  "name": "004553e8-4774-4ffd-8e04-db917c11f013",
+  "displayName": "Google Purchases",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Google Purchases"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Vous avez la possibilité de porter ces achats à votre compte TELUS, à une carte de crédit ou à une carte-cadeau Android." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Les achats Google Play portés à votre compte TELUS sont plafonnés à cinquante dollars." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez configurer votre option de paiement préférée directement dans le Google Play Store." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Google purchases can be charged to your TELUS account, a credit card or an Android gift card." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Transactions charged to your TELUS account are capped at $50." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can set up a preferred payment option directly in the google play store." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Lorsque vous effectuez des achats sur Google, vous pouvez choisir de les facturer à votre compte TELUS, à une carte de crédit ou à une carte-cadeau Android." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Les transactions facturées à votre compte TELUS sont limitées à cinquante dollars." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour configurer une méthode de paiement préférée, vous pouvez le faire directement dans le Google Play Store." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "When making purchases on Google, you can opt to charge them to your TELUS account, a credit card, or an Android gift card." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Transactions charged to your TELUS account are limited to $50." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To set up a preferred payment method, you can do so directly in the Google Play Store." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les achats Google peuvent être payés en utilisant votre compte TELUS, une carte de crédit ou une carte-cadeau Android." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Il convient de noter que les transactions facturées à votre compte TELUS sont soumises à un plafond de cinquante dollars." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour configurer une option de paiement préférée, il suffit d'accéder au Google Play Store." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Google purchases can be paid for using your TELUS account, a credit card, or an Android gift card." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "It's worth noting that transactions charged to your TELUS account are subject to a $50 cap." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To configure a preferred payment option, simply access the Google Play Store." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "c2347aa3-0903-4549-b972-744a0453c8a0"
+  } ]
+}
