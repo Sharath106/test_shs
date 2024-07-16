@@ -1,0 +1,20 @@
+{
+  "name": "c2e70dc3-9223-4c8e-9cd0-b8943b94fe3e",
+  "displayName": "Plans Available - Selected Plan Summary",
+  "placeholders": [ {
+    "id": "serviceDescription",
+    "name": "serviceDescription"
+  }, {
+    "id": "selected_plan_name",
+    "name": "selected_plan_name"
+  } ],
+  "modelParameter": {
+    "temperature": 0.1,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "text-bison"
+  }
+}

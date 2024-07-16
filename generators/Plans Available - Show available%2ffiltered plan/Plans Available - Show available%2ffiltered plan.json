@@ -1,0 +1,20 @@
+{
+  "name": "69091487-0a08-4e4e-abff-9b762f5727f6",
+  "displayName": "Plans Available - Show available/filtered plan",
+  "placeholders": [ {
+    "id": "serviceDescription",
+    "name": "serviceDescription"
+  }, {
+    "id": "selected_plan_name",
+    "name": "selected_plan_name"
+  } ],
+  "modelParameter": {
+    "temperature": 0.1,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "text-bison"
+  }
+}

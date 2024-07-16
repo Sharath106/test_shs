@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "Objective:\n- create a summary of the plan description. find plan details in $serviceDescription\n\nRules for plan description:\n- Show text (limited VS unlimited)\n- Show calling (limited VS unlimited)\n- Show data (limited VS unlimited), Show how much data is offered in the plan only if available in the description\n- Say Canada-US calling only if US is mentioned in the plan description else say Canada only\n- Show data speed if available, example 3G, 4G, 5G or 5G+\n\nFinal result:\n- Start with \"you selected the plan $selected_plan_name plan.\"\n- Do not add anything to plan name\n- Write \"Which offers\" and then description\n- Write \"as well as\" before showing data included\n- Do not show plan cost.\n- Remove any type of special characters\n- Remove round brackets\n- Write \"GB\" as gigabytes\n- Write \"MB\" as megabytes\n- Write \"CAN\" as Canada\n- Write \"POM\" as Peace of Mind",
+    "languageCode": "en"
+  } ]
+}
