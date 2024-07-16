@@ -1,0 +1,272 @@
+{
+  "name": "0e6eee62-014c-41f1-b9bd-08bd47519cfb",
+  "displayName": "PIN Blocked",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_pin_blocked",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous réinitialiser votre code NIP ou entrer en contact avec un membre de l'équipe?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to reset your pin or connect with a team member?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "3fc25a06-e08e-436d-8c02-15c941b52029"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour réinitialiser un NIP, dites ou faites le 1. Pour vous connecter avec un membre de l'équipe, dites ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To reset a pin say or press, 1. To connect with a team member say or press, 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "26f35d00-6f67-4656-9c9c-4cc464fa1818"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "be2a4f45-0a28-4c8b-84ee-f1d01519055d"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous réinitialiser votre code NIP ou entrer en contact avec un membre de l'équipe?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to reset your pin or connect with a team member?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "26754be4-998b-4422-aea0-e97608fedb90"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour réinitialiser un NIP, dites ou faites le 1. Pour vous connecter avec un membre de l'équipe, dites ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To reset a pin say or press, 1. To connect with a team member say or press, 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "67d94ae6-b4f5-4519-aaa9-ed2fd4dff3cf"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1e294d23-6ee8-4b2a-a175-be0ff12d3012"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Vous avez saisi plusieurs fois un code NIP incorrect. Souhaitez-vous réinitialiser votre code NIP de sécurité ?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "You have entered an incorrect pin multiple times. Would you like to reset your security pin?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "acct_id_error",
+      "value": "true"
+    }, {
+      "parameter": "last_page_temp",
+      "value": "PIN Blocked"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "forgot_PIN"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "c9dba7da-22ec-4f95-91f9-dfa194a3e589"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "96d5a706-34d5-4711-af6b-7a925d575650"
+  }, {
+    "intent": "head_intent.password",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "forgot_PIN"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "17776837-11a3-4f58-8348-27a7bb2212f8"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e35b5a8f-9c71-4073-a637-bffc35a677e6"
+  }, {
+    "condition": "$session.params.dtmf_pin_blocked = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "forgot_PIN"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "dc98ba57-a43b-4814-a5be-e337e5797583"
+  }, {
+    "condition": "$session.params.dtmf_pin_blocked = \"2\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "5780a0a0-bd2e-4266-8f2a-db547abbba46"
+  }, {
+    "condition": "$session.params.dtmf_pin_blocked = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "de9f58fe-6c9d-4744-b13b-a18fc5b53ed7"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pinblocked_retrycnt",
+        "value": "$sys.func.ADD($session.params.pinblocked_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.pinblocked_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.pinblocked_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "25e68ae5-6381-47dc-8d06-24c622e0835d"
+  } ]
+}

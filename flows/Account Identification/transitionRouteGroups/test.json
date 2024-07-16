@@ -1,0 +1,27 @@
+{
+  "name": "b9c3cce1-899a-4753-9b30-255db08a6a72",
+  "displayName": "test",
+  "transitionRoutes": [ {
+    "intent": "head_intent.bill_view",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Yassss queen!!!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "382c78c2-a9a8-4b85-9f0f-14ecedf386af"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Oh naaana" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "092a3adf-20d5-4a81-9673-36d1b5d79ba5"
+  } ]
+}

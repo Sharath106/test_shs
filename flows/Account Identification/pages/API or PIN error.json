@@ -1,0 +1,80 @@
+{
+  "name": "ee16d2e1-2125-4925-a0f1-dd7f539621e2",
+  "displayName": "API or PIN error",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "acct_id_error",
+      "value": "true"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.targetAccount.isCollection = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let me get you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "API or PIN error"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "b1f5c7b3-7c14-40dd-9d2f-e5f70a5c7299"
+  }, {
+    "condition": "$session.params.route = \"account_balance\" OR $session.params.route = \"payment_history\" OR $session.params.route = \"bill_amount_due\" OR $session.params.route = \"bill_due_date\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Billing",
+    "name": "8c85451d-2651-45c3-9461-f92937abaa97"
+  }, {
+    "condition": "$session.params.route = \"payment_arrangement\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Payment",
+    "name": "832eda4a-bd4f-40fd-b1ae-53616d84f3fe"
+  }, {
+    "condition": "$session.params.route = \"bill_explanation\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Bill Explanation",
+    "name": "87e0633e-0843-4e41-a941-edd6268325d1"
+  }, {
+    "condition": "$session.params.route = \"bill_vague\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Bill Vague",
+    "name": "244624fe-1638-4e16-bf7a-47e7e0b5c1d8"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, une erreur s'est produite." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry, something went wrong." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "44f55ff0-f424-45e6-a38d-d091ffeb682c"
+  } ]
+}

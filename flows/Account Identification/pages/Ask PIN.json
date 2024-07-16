@@ -1,0 +1,458 @@
+{
+  "name": "255524e9-b06a-4487-9960-a41e9a7e43d4",
+  "displayName": "Ask PIN",
+  "form": {
+    "parameters": [ {
+      "displayName": "pin",
+      "required": true,
+      "entityType": "@pin",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "$session.params.pin = null",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Afin d'accéder à votre compte, veuillez entrer votre code NIP de 4 à 6 chiffres." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "In order to access your account, please enter or say your 4 to 6 digit security pin." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.pin_retrycnt = 1 OR $session.params.pin_retrycnt = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Veuillez entrer votre code NIP de 4 à 6 chiffres." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Please enter or say your 4 to 6 digit security pin." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé," ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Veuillez entrer votre code NIP de 4 à 6 chiffres pour vérifier votre compte." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry," ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Please enter or say your 4 to 6 digit security pin to verify your account." ]
+              },
+              "languageCode": "en"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "askpin_retrycnt",
+              "value": "$sys.func.ADD($session.params.askpin_retrycnt,1)"
+            }, {
+              "parameter": "pin",
+              "value": null
+            } ]
+          },
+          "name": "ccd02b99-5994-44fc-a0cf-9b8a2f5c2e4f"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Vous pouvez entrer votre code NIP pour vérifier votre compte." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "You can either say or enter your security pin to verify your account." ]
+              },
+              "languageCode": "en"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "askpin_retrycnt",
+              "value": "$sys.func.ADD($session.params.askpin_retrycnt,1)"
+            }, {
+              "parameter": "pin",
+              "value": null
+            } ]
+          },
+          "name": "821a3fb4-7558-4952-9e4b-6a07ad2ec899"
+        }, {
+          "targetPage": "Transaction redirect",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "setParameterActions": [ {
+              "parameter": "askpin_retrycnt",
+              "value": "$sys.func.ADD($session.params.askpin_retrycnt,1)"
+            }, {
+              "parameter": "acct_id_error",
+              "value": "true"
+            } ]
+          },
+          "name": "301cace3-5f7a-41de-b72f-a2582a6e69a5"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé," ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Veuillez entrer votre code NIP de 4 à 6 chiffres pour vérifier votre compte." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry," ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Please enter or say your 4 to 6 digit security pin to verify your account." ]
+              },
+              "languageCode": "en"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "askpin_retrycnt",
+              "value": "$sys.func.ADD($session.params.askpin_retrycnt,1)"
+            }, {
+              "parameter": "pin",
+              "value": null
+            } ]
+          },
+          "name": "e8e68a2d-118d-4b85-8fae-e666c2b62823"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Vous pouvez entrer votre code NIP pour vérifier votre compte." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "You can either say or enter your security pin to verify your account." ]
+              },
+              "languageCode": "en"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "askpin_retrycnt",
+              "value": "$sys.func.ADD($session.params.askpin_retrycnt,1)"
+            }, {
+              "parameter": "pin",
+              "value": null
+            } ]
+          },
+          "name": "81c5e829-b1ed-454a-9e4c-f1de6a4f8b70"
+        }, {
+          "targetPage": "Transaction redirect",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "setParameterActions": [ {
+              "parameter": "askpin_retrycnt",
+              "value": "$sys.func.ADD($session.params.askpin_retrycnt,1)"
+            }, {
+              "parameter": "acct_id_error",
+              "value": "true"
+            } ]
+          },
+          "name": "34543e82-73ce-4ffd-ae5b-958a3ef647de"
+        } ]
+      },
+      "redact": true,
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 6,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page_temp",
+      "value": "Ask PIN"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.password",
+    "condition": "$session.params.targetAccount.isCollection = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let me get you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "Ask PIN"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "1efc1a06-4253-45c4-bc91-a51ff08adc7e"
+  }, {
+    "intent": "head_intent.password",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "forgot_PIN"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "2c73fcb2-872e-43bd-91b5-457a394cdedf"
+  }, {
+    "intent": "supplemental.do_not_have_pin",
+    "condition": "$session.params.targetAccount.isCollection = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "coll_pin_declined",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Collections",
+    "name": "30777d20-1089-4124-9d95-397065e509f3"
+  }, {
+    "intent": "supplemental.do_not_have_pin",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vous n'avez pas votre NIP ou" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Don't have your PIN with you or" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "forgot_PIN"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "538ae94b-9fb6-4926-ae23-b6092a151aa5"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.targetAccount.isCollection = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "coll_pin_declined",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Collections",
+    "name": "7a2cd32f-316a-407e-854a-4aa6d72ac477"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "askpin_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "71ac2e30-4387-4c70-9711-8b51b5bb3fb3"
+  }, {
+    "intent": "supplemental.give_some_time",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003eCertainement, pas de problème.\u003cbreak time=\"58s\"/\u003eÊtes-vous toujours là?\u003c/speak\u003e", "\u003cspeak\u003eD'accord, je vous attends.\u003cbreak time=\"58s\"/\u003eÊtes-vous toujours là?\u003c/speak\u003e", "\u003cspeak\u003eAucun problème, je patiente.\u003cbreak time=\"58s\"/\u003eÊtes-vous toujours là?\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eSure, no problem.\u003cbreak time=\"58s\"/\u003eAre you still there?\u003c/speak\u003e", "\u003cspeak\u003eOf course, take your time.\u003cbreak time=\"58s\"/\u003eAre you still there?\u003c/speak\u003e", "\u003cspeak\u003eNo problem, I'll wait.\u003cbreak time=\"58s\"/\u003eAre you still there?\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+          "allowPlaybackInterruption": true
+        }
+      }
+    },
+    "name": "a1870bb3-5736-47fe-9d4d-8a9cb4fd5155"
+  }, {
+    "intent": "supplemental.ready_for_pin",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.pin = null",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Super. Quel est votre nip de sécurité de 4 à 6 chiffres?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Great. What is your 4 to 6 digits security pin?" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "a0dcd442-42d9-45d0-9fd2-98ba067c0dfd"
+  }, {
+    "intent": "head_intent.bill_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_vague"
+      } ]
+    },
+    "targetFlow": "Bill Vague",
+    "name": "3d30191c-5d0f-4f54-9499-eae7b683c7e9"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "dbe71678-1e5f-48f7-a6ca-f5b0bc0a6692"
+  }, {
+    "condition": "$session.params.pin : \"#\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pin",
+        "value": "$sys.func.SUBSTITUTE($session.params.pin, \"#\", \"\")"
+      } ]
+    },
+    "name": "4825680d-ab19-4801-b17d-a39ee6f33558"
+  }, {
+    "condition": "$session.params.pin_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pin_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "7e59827b-7c06-4411-b51c-fba2388ccddf"
+  }, {
+    "condition": "$session.params.pin != null AND (($sys.func.LEN($sys.func.TO_TEXT($session.params.pin)) \u003e 6 OR $sys.func.LEN($sys.func.TO_TEXT($session.params.pin)) \u003c 4) OR $sys.func.TO_NUMBER($session.params.pin) != $session.params.pin)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ça ne semble être un nip de sécurité valide. Veuillez entrer votre nip de 4 à 6 chiffre." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "This doesn't look like a valid security pin. Please say, or key in your 4 to 6 digit security pin." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "420b7796-aafb-4b37-bb07-48d7f3cd777b"
+  }, {
+    "condition": "$session.params.pin != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez patienter pendant que je vérifie votre code NIP." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please wait while I verify your pin." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "PIN Verification",
+    "name": "92227c32-1211-4430-b1ab-d7251bd50ba8"
+  }, {
+    "condition": "$session.params.pin_retrycnt = 3 AND $session.params.targetAccount.isCollection = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let me get you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "pin_verification",
+        "value": "blocked"
+      }, {
+        "parameter": "last_page",
+        "value": "Ask PIN"
+      }, {
+        "parameter": "$sys.func.NESTED_FIELD(\"$session.params.conversation\",\"pin_verification\")",
+        "value": "blocked"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9579f561-fa42-48f4-8809-c7bd91de8de0"
+  }, {
+    "condition": "$session.params.pin_retrycnt = 3",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pin_verification",
+        "value": "blocked"
+      }, {
+        "parameter": "$sys.func.NESTED_FIELD(\"$session.params.conversation\",\"pin_verification\")",
+        "value": "blocked"
+      } ]
+    },
+    "targetPage": "PIN Blocked",
+    "name": "6a4ca591-c779-484e-af92-a412bd33392d"
+  } ]
+}

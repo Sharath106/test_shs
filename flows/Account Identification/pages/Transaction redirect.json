@@ -1,0 +1,66 @@
+{
+  "name": "ba18c824-b1e0-4172-8b45-e8e916ef7b69",
+  "displayName": "Transaction redirect",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "ban",
+      "value": "$session.params.targetAccount.billingAccountNum"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.route = \"account_balance\" OR $session.params.route = \"payment_history\" OR $session.params.route = \"bill_amount_due\" OR $session.params.route = \"bill_due_date\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Billing",
+    "name": "1635eaa8-db88-4b2b-bfc7-dd90ca8ea6c3"
+  }, {
+    "condition": "$session.params.route = \"payment_arrangement\" OR $session.params.route = \"payment_made\" OR $session.params.route = \"preauth_payment\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Payment",
+    "name": "dd643ac8-35f9-4577-97ac-e9db1ce95308"
+  }, {
+    "condition": "$session.params.route = \"bill_explanation\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Bill Explanation",
+    "name": "e2f541d3-a6a7-42d3-8e26-0fd29e20078e"
+  }, {
+    "condition": "$session.params.targetAccount.isCollection = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "coll_pin_verified",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Collections",
+    "name": "6ff3ad00-27dc-415e-abb2-33b8d2b77574"
+  }, {
+    "condition": "$session.params.route = \"bill_vague\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Bill Vague",
+    "name": "12ceb598-355c-4f74-9aa0-9e0db6a85fd0"
+  }, {
+    "condition": "$session.params.route = \"bib\" OR $session.params.route = \"BIB_Amount\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "5447a5fd-aaec-41ea-850d-aa1026dc382f"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "8ffddee5-25cd-413c-b136-5fd61e7cf31b"
+  } ]
+}

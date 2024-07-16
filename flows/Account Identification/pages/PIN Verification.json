@@ -1,0 +1,84 @@
+{
+  "name": "395a0e9c-a8ad-4e24-8ca1-6142a3807bbd",
+  "displayName": "PIN Verification",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Authentication",
+    "tag": "verifyPin",
+    "setParameterActions": [ {
+      "parameter": "targetAccountListPos",
+      "value": "$session.params.user.targetAccountListPos"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null AND $session.params.error_code != 200",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with the request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec la demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "API or PIN error",
+    "name": "d4f23fcc-ac2f-4884-9b05-0adbcc6ab67c"
+  }, {
+    "condition": "$session.params.user.auth_status = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your pin has been entered successfully." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Votre code NIP a été entré avec succès." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ban",
+        "value": "$session.params.targetAccount.billingAccountNum"
+      }, {
+        "parameter": "phone_number",
+        "value": "$session.params.user.utn"
+      }, {
+        "parameter": "pin",
+        "value": null
+      } ]
+    },
+    "targetPage": "Transaction redirect",
+    "name": "7d95ea9a-45c5-408b-b6df-625cd5c2ca6d"
+  }, {
+    "condition": "$session.params.user.auth_status = false",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, that doesn't match the security pin on your account.", "The pin entered does not match the security pin on your account." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, cela ne correspond pas au NIP de sécurité de votre compte.", "Le code NIP saisi ne correspond pas au NIP de sécurité de votre compte." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "pin",
+        "value": null
+      }, {
+        "parameter": "pin_retrycnt",
+        "value": "$sys.func.ADD($session.params.pin_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Ask PIN",
+    "name": "28fc4640-c42d-4c45-874f-1f2108f79221"
+  } ]
+}

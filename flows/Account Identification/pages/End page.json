@@ -1,0 +1,28 @@
+{
+  "name": "db80e944-070b-4987-9118-655699f4f077",
+  "displayName": "End page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Est-ce qu'il y a autre chose sur lequel je peux vous aider?", "Puis-je vous aider avec autre chose?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Is there anything else I can help you with?", "Can I assist you with anything else?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "634ceaa5-0706-44b7-bd67-b7ce34ec305d"
+  } ]
+}
