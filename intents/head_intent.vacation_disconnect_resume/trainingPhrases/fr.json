@@ -1,0 +1,567 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "\tÇa fait plaisir à entendre. J'aimerais mettre fin à ma suspension de service pour vacances à compter du [CUSTOM_NUMBER] mars s'il vous plaît"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe voudrais juste réactiver le mode vacances"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tSalut [CUSTOM_NAME]. Ça va bien - je voulais vous demander si vous pouviez vérifier si notre ligne téléphonique est toujours active."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " je souhaite désactiver le mode vacances"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tbonjour [PERSON_NAME]"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\t[CUSTOM_NUMBER] - Pouvez-vous confirmer que ma ligne a été réactivée ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe souhaite réactiver mon service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tS'il vous plaît confirmer quand notre arrêt de vacances se termine"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tÇa va bien [PERSON_NAME]. Je souhaite réactiver une de mes lignes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'aimerais désactiver le mode vacances sur mon téléphone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " j'essaie de me reconnecter à mon forfait mensuel après avoir été en vacances pendant [CUSTOM_NUMBER] mois. Pouvez-vous me reconnecter maintenant. [PERSON_NAME]"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " pas très bien pour le moment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tbonjour"
+    } ],
+    "repeatCount": 15,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " mon forfait est actuellement en mode vacances. Pourriez-vous le réactiver demain ? Merci!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tMon compte est actuellement en mode vacances et je souhaite qu'il soit réactivé s'il vous plaît"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " qui était actif jusqu'à la fin novembre de l'année dernière."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tNous venons de rentrer au Canada et j'aimerais renouveler mon ancien plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'aimerais réactiver mon cellulaire s'il vous plaît"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe voudrais suspendre l'une de nos lignes de cellulaire s'il vous plaît"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe voudrais suspendre ma ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " et nous souhaitons suspendre temporairement son compte. Cela sera-t-il possible ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " ma carte de crédit est la enregistrée sur ce compte). Mon père ne peut pas retourner au Canada pour le moment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " [PERSON_NAME]. Je m'appelle [CUSTOM_NAME][PERSON_NAME] et je suis le fils du responsable de ce compte. (si vous remarquez"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe leur ai demandé de prolonger le mode vacances de [CUSTOM_NUMBER] également. ne vous inquiétez pas pour la ligne [CUSTOM_NUMBER]. tout est parfait sur cette ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tje voudrais juste mettre ma ligne de services mobiles en suspension de vacances"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe souhaite suspendre le service pendant mon voyage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tdonc je voulais de l'aide pour savoir si mon cycle de facturation pouvait être suspendu pour le moment après que fin du cycle de cette facture finisse et soit renuovelé en janvier de l'année prochaine une fois que je serai de retour au canada"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ''aimerais suspendre les frais mensuels de mon terminal intelligent pendant plusieurs mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe souhaite suspendre ma ligne pendant [CUSTOM_NUMBER] semaine"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tveuillez me dire comment je peux suspendre temporairement mon service car je suis à l'étranger depuis plus de [CUSTOM_NUMBER] mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe voulais mettre mon compte en suspension"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe pars en vacances ; J'aimerais suspendre mes services temporairement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " j'espère que vous allez bien aussi ! J'aimerais suspendre temporairement l'une de mes lignes téléphoniques pendant que je voyage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tBonjour [PERSON_NAME] Ça va très bien"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe souhaite suspendre le service pendant quelques mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe voulais savoir comment mettre l'un des numéros de mon compte en attente"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe veux suspendre la ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tpouvez-vous me parler de la déconnexion pour vacances s'il vous plaît"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe souhaite suspendre [CUSTOM_NUMBER]"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tj'aimerais suspendre mon forfait pour les vacances"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tBien. Merci. J'aimerais voir si c'est possible de suspendre letéléphone de mon fils pendant un certain temps."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tSuspendre pour vacances"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " j'ai donc besoin d'informations sur la suspension temporaire de la ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe prévois de partir en vacances dans ma ville natale"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tsuspendre mes services jusqu'à mon retour"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tje souhaite suspendre une ligne pendant [CUSTOM_NUMBER] mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tje souhaite suspendre temporairement mon service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe veux suspendre une ligne jusqu'à la semaine prochaine"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe souhaite suspendre mon forfait pour des vacances temporaires"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'espère mettre certains de nos numéros en mode veille"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'aimerais suspendre plusieurs lignes à compter du [CUSTOM_NUMBER] avril"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe voudrais mettre une suspension de vacances sur mon forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tvoudrais suspendre un de mes forfaits"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'ai voyagé à l'extérieur du canada le [CUSTOM_NUMBER] février et je devais vous contacter pour suspendre mon compte pour le numéro [CUSTOM_NUMBER] mais j'étais occupé par mes déplacements et je n'avais pas le temps"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tje voudrais suspendre la ligne temporairement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe vais visiter ma ville natale donc j'ai besoin d'être en mode vacances"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tsuspension de vacances"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'aimerais que ma ligne soit suspendue pendant que je suis à l'extérieur du Canada"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " je veux activer le mode vacances."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tSalut"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe souhaite suspendre ou geler mon service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tsouhaite prolonger la suspension pour vacances à partir du [CUSTOM_NUMBER] mars"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " je vois que le mode vacances sur mon téléphone a été désactivé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'aiimerais mettre un téléphone en mode vacances"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'aimerais suspendre la ligne qui se termine par [CUSTOM_NUMBER]"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tj'aimerais suspendre les appels/textos/données cellulaires Telus pour l'une de mes lignes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " je souhaite suspendre une des lignes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tpouvez-vous commencer le mode vacances de [CUSTOM_NUMBER] à partir du [CUSTOM_NUMBER] juillet ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tSi vous souhaitez suspendre ma ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tje voudrais le suspendre"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tje dois suspendre ma ligne temporairement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " puis-je faire une suspension de vacances ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe vais aller en Corée aujourd'hui"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " je pars en voyage la semaine prochaine et j'aimerais demander une suspension de vacances."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe veux suspendre temporairement une de mes lignes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " je souhaite suspendre [PHONE_NUMBER][CUSTOM_NUMBER][CUSTOM_NUMBER][CUSTOM_NUMBER] s'il vous plaît"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe souhaite suspendre une ligne du compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'ai du réactiver mon téléphone hier pour une urgence bancaire puis-je le remettre en mode vacances s'il vous plait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe dois mettre mon forfait en veille prolongée/vacances à partir d'octobre [CUSTOM_NUMBER] jusqu'en mai [CUSTOM_NUMBER]"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'ai besoin de suspendre une ligne s'il vous plait merci !"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tje veux suspendre ma ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe vais bien merci. Je voulais demander s'il serait possible de suspendre le service car je suis à l'étranger"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe souhaite suspendre la ligne se terminant par [CUSTOM_NUMBER]."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " est-il possible que mon service téléphonique soit temporairement suspendu ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\ten raison du covid [CUSTOM_NUMBER]"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'ai un forfait avpa et je quitte le pays ce soir pour [CUSTOM_NUMBER] mois Je souhaite suspendre mes services"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'aimerais suspendre l'une de mes lignes téléphoniques"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJe souhaite une suspension temporaire de mon service en raison de mes vacances"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tSalut! Je voudrais activer ma suspension de vacances s'il vous plaît !"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tJ'utilise ce cellulaire depuis notre résidence au bord du lac et j'aimerais le suspendre pendant [CUSTOM_NUMBER] mois jusqu'à ce que nous y retournions en été"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " j'aimerais savoir si je peux mettre mon téléphone en mode vacances ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "\tje voudrais suspendre une ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": " puis-je suspendre nos téléphones pour vacances en ligne ou dois-je appeler pour le faire"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "parts": [ {
+      "text": "bonjour"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  } ]
+}

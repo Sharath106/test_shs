@@ -1,0 +1,1829 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "la ligne fonctionne plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon téléphone fonctionne pas la"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "cell"
+    }, {
+      "text": " ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "il y "
+    }, {
+      "text": "a un"
+    }, {
+      "text": " problème avec ma ligne ça fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "notre ligne ne fonctionne plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ma ligne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème avec les appels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne suis pas capable de "
+    }, {
+      "text": "faire",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " d'appel "
+    }, {
+      "text": "interurbain",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problèmes avec mes appels "
+    }, {
+      "text": "interurbains",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mes appel "
+    }, {
+      "text": "interurbains",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne parviens pas à appeler "
+    }, {
+      "text": "un"
+    }, {
+      "text": " numéro "
+    }, {
+      "text": "américain",
+      "parameterId": "calling_issues"
+    }, {
+      "text": ", pouvez-vous m'aider"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne peux pas appeler mon ami qui est en "
+    }, {
+      "text": "allemagne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème avec mes appels vers "
+    }, {
+      "text": "un"
+    }, {
+      "text": " numéro de l'"
+    }, {
+      "text": "italie"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pourquoi je ne peux pas appeler vers la "
+    }, {
+      "text": "france"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "incapable de faire "
+    }, {
+      "text": "un"
+    }, {
+      "text": " appel vers l'"
+    }, {
+      "text": "espagne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne suis pas capable d'appeler "
+    }, {
+      "text": "un"
+    }, {
+      "text": " numéro des "
+    }, {
+      "text": "états-unis"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment puis-je faire en sorte que mon téléphone "
+    }, {
+      "text": "trouve le réseau telus",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "puis-je "
+    }, {
+      "text": "vérifier manuellement les réseaux"
+    }, {
+      "text": " ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "rechercher un réseau"
+    }, {
+      "text": " disponible"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment "
+    }, {
+      "text": "chercher un réseau",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment puis-je "
+    }, {
+      "text": "trouver le réseau telus",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-vous me dire comment "
+    }, {
+      "text": "rechercher un réseau"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "rechercher",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problèmes de service cellulaire"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "il n'y a "
+    }, {
+      "text": "pas de service",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " sur mon téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'ai "
+    }, {
+      "text": "pas de service",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problèmes de service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nous n'avons aucun service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nous n'avons "
+    }, {
+      "text": "pas de service cellulaire"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai perdu le service sur mon "
+    }, {
+      "text": "portable",
+      "parameterId": "calling_issues_device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pas de service",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  sur mon "
+    }, {
+      "text": "portable",
+      "parameterId": "calling_issues_device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pas de service",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  sur mon téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "il n'y a pas de service téléphonique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon téléphone me dit que je n'ai "
+    }, {
+      "text": "pas de service",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-vous me dire pourquoi il n'y a pas de service téléphonique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'ai pas de service téléphonique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon téléphone n'a "
+    }, {
+      "text": "pas de service",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pas de service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Problème de connection"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problèmes de "
+    }, {
+      "text": "connexion"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mes "
+    }, {
+      "text": "connexions"
+    }, {
+      "text": " ont baissé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connexion"
+    }, {
+      "text": " perdue à nouveau"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai du mal à me connecter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'ai aucune "
+    }, {
+      "text": "connexion"
+    }, {
+      "text": " sur"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mauvaise "
+    }, {
+      "text": "connexion"
+    }, {
+      "text": " constante"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de connectivité"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'ai reçu aucun appel entrant pouvez-vous vous connecter avec le technicien client"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin d'aide avec nos appels téléphoniques entrants"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "aide avec les appels entrants"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'arrive pas à joindre un numéro"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ne peut pas appeler",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " ne reçoit pas d'appels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pas d'appels téléphoniques entrants et "
+    }, {
+      "text": "sortants",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible d'appeler impossible de "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " des appels sur le "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    }, {
+      "text": "résidentiel",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais savoir pourquoi je n'arrive pas à joindre ma mère avec son numéro de "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment se fait-il que je ne puisse pas me connecter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai une très mauvaise ligne et je ne peux pas "
+    }, {
+      "text": "passer",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  d'appels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne peux pas "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " aucun appel entrant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de "
+    }, {
+      "text": "composer"
+    }, {
+      "text": " un numéro au Royaume-Uni et j'ai des problèmes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quelque chose ne va pas avec mon appel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'ai reçu aucun appel entrant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problèmes avec le "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " recevant des appels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai du mal à "
+    }, {
+      "text": "répondre",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " à un deuxième appel entrant mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " ne mettra pas ma personne à qui je parle en attente pour que je puisse parler à la personne suivante"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nous ne pouvons pas "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  d'appels entrants ou "
+    }, {
+      "text": "sortants",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " ne "
+    }, {
+      "text": "compose"
+    }, {
+      "text": " pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "notre "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " ne "
+    }, {
+      "text": "compose"
+    }, {
+      "text": " pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon je ne peux pas "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " d'appel sur mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " excusez-moi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne peux pas appeler "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai un problème avec les clients qui appellent notre ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'essaie d'obtenir un numéro de "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " et ça ne passe pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nos téléphones professionnels ne "
+    }, {
+      "text": "compose"
+    }, {
+      "text": " pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne peux pas "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " d'  appels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème d'appel directe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " professionnel ne sonne pas je n'arrive pas à le joindre"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "avoir du mal à "
+    }, {
+      "text": "passer",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " des appels téléphoniques"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai du mal à "
+    }, {
+      "text": "composer"
+    }, {
+      "text": " un numéro au mexique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mes paramètres sur mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " n'autorisent pas les appels entrants"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Eh bien, je ne sais pas, je ne peux pas "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " d'appels entrants"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'arrive pas à joindre un numéro de "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ne pas "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " d'appels téléphoniques"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "l'appel ne passera pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne reçois pas d'appels téléphoniques entrants"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "les appels ne passent pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux parler à un agent de la raison pour laquelle je reçois des appels téléphoniques et je ne peux pas me connecter au numéro de "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " ne fonctionne pas les gens essaient de me téléphoner ils n'arrivent pas à me joindre j'ai essayé d'appeler et ça continue à dire occupé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne parviens pas à "
+    }, {
+      "text": "passer",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " ou à "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " des appels téléphoniques sur mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " même s'il indique que j'ai un "
+    }, {
+      "text": "signal",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    }, {
+      "text": "cellulaire",
+      "parameterId": "calling_issues_device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème d'appel sur mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " ne "
+    }, {
+      "text": "compose"
+    }, {
+      "text": " pas ou ne reçoit pas d'appels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "service téléphonique j'ai besoin d'aide avec le service téléphonique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'essaie de téléphoner à une personne et ça ne marche pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nous ne pouvons pas appeler sur l'une de nos lignes téléphoniques "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible de "
+    }, {
+      "text": "passer",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " des  appels sur mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai un problème avec mes appels téléphoniques"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " ne fonctionne pas je n'arrive pas à "
+    }, {
+      "text": "composer"
+    }, {
+      "text": " le numéro"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ma femme n'a "
+    }, {
+      "text": "pas de réseau",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " telus sur son "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " quelque chose ne va pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": "  n'est pas en service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": "  non reconnu sur le "
+    }, {
+      "text": "réseau",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'ai reçu aucun appel téléphonique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "salut mon "
+    }, {
+      "text": "réseau",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " telus ne fonctionne pas et mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " ne fonctionne pas non plus notre réseau affiche l'erreur réseau trois et le dns est introuvable"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "appels entrants non reçus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible de "
+    }, {
+      "text": "passer",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " des  appels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ne peut pas être appelé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " n'a aucun potentiel de service "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne peux pas "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  d'appels téléphoniques  ça va directement sur ma messagerie vocale"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "réparer mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": "  pour que je puisse "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " un appel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "signaler un problème avec les appels entrants"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "prise en charge du "
+    }, {
+      "text": "réseau",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon facetime ne fonctionne pas sur mon "
+    }, {
+      "text": "iPhone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " onze"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon ordinateur "
+    }, {
+      "text": "portable",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " n'accepte pas le "
+    }, {
+      "text": "réseau",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " sans fil"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " pour un problème avec le "
+    }, {
+      "text": "portable",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mes téléphones portables ne fonctionnent pas, il n'y a pas de "
+    }, {
+      "text": "connexion"
+    }, {
+      "text": " "
+    }, {
+      "text": "réseau",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "service ou problème de "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    }, {
+      "text": "portable",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problèmes de "
+    }, {
+      "text": "connexion"
+    }, {
+      "text": " avec mon "
+    }, {
+      "text": "iphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "appel au sujet de mon "
+    }, {
+      "text": "portable",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " qui ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai des problèmes avec mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    }, {
+      "text": "portable",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": ", la "
+    }, {
+      "text": "connexion"
+    }, {
+      "text": " ne se rend pas où j'habite"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai des problèmes avec mon téléphone "
+    }, {
+      "text": "portable",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": ", je n'arrive pas à appeler mon "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " à la "
+    }, {
+      "text": "maison",
+      "parameterId": "calling_issues_device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mauvaise "
+    }, {
+      "text": "connexion"
+    }, {
+      "text": " "
+    }, {
+      "text": "cellulaire",
+      "parameterId": "calling_issues_device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "appeler pour des problèmes de "
+    }, {
+      "text": "connexion"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de "
+    }, {
+      "text": "connexion",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'ai "
+    }, {
+      "text": "pas de signal",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  j'ai besoin d'assistance technique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nous ne semblons pas "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " d'appels téléphoniques de numéros bloqués"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pas de "
+    }, {
+      "text": "connexion",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "manque de service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mes services ne fonctionnent pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon service ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin d'aide avec mon "
+    }, {
+      "text": "service cellulaire",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'appelle pour "
+    }, {
+      "text": "aucun service",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  sur mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Problèmes d'appel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "appels d'urgence",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  mais pas de "
+    }, {
+      "text": "connexion",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " au "
+    }, {
+      "text": "réseau",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pas de "
+    }, {
+      "text": "connexion",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    }, {
+      "text": "réseau",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ne pas avoir de "
+    }, {
+      "text": "réseau",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pas de signal",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pas de signal",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  sur Iphone "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "le "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " dit "
+    }, {
+      "text": "pas de signal",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pas de signal",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  sur le "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    }, {
+      "text": "portable",
+      "parameterId": "calling_issues_device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Nous avons eu des "
+    }, {
+      "text": "problèmes de service cellulaire",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " ces derniers jours"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de "
+    }, {
+      "text": "signal",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  "
+    }, {
+      "text": "mobile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "le "
+    }, {
+      "text": "signal",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  "
+    }, {
+      "text": "mobile",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " est faible"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème avec les appels "
+    }, {
+      "text": "entrants",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problèmes de "
+    }, {
+      "text": "réception",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " d'appels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne peux pas "
+    }, {
+      "text": "passer",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  d'appels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "le téléphone  ne passera pas d' appels "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problèmes pour appeler "
+    }, {
+      "text": "à l'étranger",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible d'appeler "
+    }, {
+      "text": "à l'étranger",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible de "
+    }, {
+      "text": "faire",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " des "
+    }, {
+      "text": "appels internationaux",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible d'appeler des numéros "
+    }, {
+      "text": "internationaux",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Impossible d'appeler l"
+    }, {
+      "text": "'international"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible de "
+    }, {
+      "text": "passer",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " des "
+    }, {
+      "text": "appels internationaux",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible de "
+    }, {
+      "text": "passer",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " des "
+    }, {
+      "text": "appels interurbains",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible d'appeler "
+    }, {
+      "text": "longue distance",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "les "
+    }, {
+      "text": "appels interurbains",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  ne passent pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne peux pas appeler un numéro "
+    }, {
+      "text": "longue distance",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin d'aide pour appeler "
+    }, {
+      "text": "à l'étranger",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne peux pas appeler "
+    }, {
+      "text": "à l'étranger",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "les appels vers l'étranger ne fonctionnent pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voulais appeler "
+    }, {
+      "text": "à l'étranger",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  mais ça n'a pas marché"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "recherche",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  de "
+    }, {
+      "text": "réseau",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": "  "
+    }, {
+      "text": "recherche",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  "
+    }, {
+      "text": "réseau",
+      "parameterId": "calling_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne peux pas "
+    }, {
+      "text": "recevoir",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " d'"
+    }, {
+      "text": "appels interurbains",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "les appels échouent lors de la composition d'un numéro interurbain "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "L'appel "
+    }, {
+      "text": "longue distance",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  échoue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ma "
+    }, {
+      "text": "longue distance",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  est-elle bloquée et a-t-elle des problèmes ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "résoudre les problèmes d'"
+    }, {
+      "text": "appels interurbains",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  sur "
+    }, {
+      "text": "iphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin d'aide pour les "
+    }, {
+      "text": "appels interurbains",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "support technique pour les "
+    }, {
+      "text": "appels interurbains",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible d'appeler depuis "
+    }, {
+      "text": "smarthub",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "le "
+    }, {
+      "text": "hub",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": "  ne passe pas d'appels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible de "
+    }, {
+      "text": "passer",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " des  appels sur mon "
+    }, {
+      "text": "hub",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " intelligent "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "avoir des problèmes pour appeler le "
+    }, {
+      "text": "hub",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de "
+    }, {
+      "text": "téléphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    }, {
+      "text": "résidentiel",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " sans fil pour "
+    }, {
+      "text": "passer",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " des appels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne peux pas "
+    }, {
+      "text": "passer",
+      "parameterId": "calling_issues"
+    }, {
+      "text": "  d'appels sur mon "
+    }, {
+      "text": "iphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "l'"
+    }, {
+      "text": "iphone",
+      "parameterId": "calling_issues_device"
+    }, {
+      "text": " ne montre aucun "
+    }, {
+      "text": "réseau",
+      "parameterId": "calling_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "05913072-3a70-48f4-94e7-8b765ed7d7af",
+  "displayName": "head_intent.voicemail_issues_stuck_indicator",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Troubleshooting steps to remove a stuck indicator",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 132
+}

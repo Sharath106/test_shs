@@ -1,0 +1,24 @@
+{
+  "name": "0b61bd5f-4610-4023-ae2a-9f0f511b5352",
+  "displayName": "head_intent.voicemail_issues_mailbox_number",
+  "parameters": [ {
+    "id": "iphone_vs_android",
+    "entityType": "@iphone-vs-android"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer needs to enter their mailbox phone number manually",
+  "numTrainingPhrases": 139
+}

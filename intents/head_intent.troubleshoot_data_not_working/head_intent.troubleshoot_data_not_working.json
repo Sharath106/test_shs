@@ -1,0 +1,22 @@
+{
+  "name": "7019793a-845c-4960-baec-61e19d40820c",
+  "displayName": "head_intent.troubleshoot_data_not_working",
+  "parameters": [ {
+    "id": "data_device_types",
+    "entityType": "@data-device-types"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Issues with data connection.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 168
+}

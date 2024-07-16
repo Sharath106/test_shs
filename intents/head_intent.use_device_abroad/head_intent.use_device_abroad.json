@@ -1,0 +1,27 @@
+{
+  "name": "fb4d81f7-d3b3-4a94-881e-4e41fd885569",
+  "displayName": "head_intent.use_device_abroad",
+  "parameters": [ {
+    "id": "geo-country",
+    "entityType": "@sys.geo-country"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "How to use device outside of the country",
+  "numTrainingPhrases": 171
+}

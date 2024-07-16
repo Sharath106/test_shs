@@ -1,0 +1,20 @@
+{
+  "name": "046d1684-9ada-4af4-816f-611c34ee82dd",
+  "displayName": "head_intent.troubleshoot_wifi_issues",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Troubleshooting Wi-Fi issues.",
+  "numTrainingPhrases": 316
+}

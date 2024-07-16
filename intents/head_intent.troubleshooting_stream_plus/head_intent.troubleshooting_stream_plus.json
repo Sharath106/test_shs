@@ -1,0 +1,28 @@
+{
+  "name": "6e41be97-11eb-4a03-97bd-765f601ed533",
+  "displayName": "head_intent.troubleshooting_stream_plus",
+  "parameters": [ {
+    "id": "streamplus_troubleshooting",
+    "entityType": "@streamplus-troubleshooting"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Troubleshooting Stream+ (Netflix, Disney+, Amazon Prime Video, and TELUS TV+ bundle and old package with Discovery+ and Apple TV).",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 114
+}

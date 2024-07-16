@@ -1,0 +1,400 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "need help troubleshooting my Apple TV"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "issues with Discovery plus and Netflix"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have many problems with my Apple TV account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need help fixing issues with Discovery plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you help me resolve issue with Apple TV? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me fix Discovery plus issues? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't log in into my Apple TV account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "trouble accessing Discovery plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i "
+    }, {
+      "text": "activate",
+      "parameterId": "streamplus_troubleshooting"
+    }, {
+      "text": " stream plus and Disney plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What should I do if my Stream plus service is freezing or crashing? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why am I experiencing issues with my Stream plus streaming quality? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I update my Stream plus software or firmware? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I reset my Stream plus device or system? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I troubleshoot issues with my Stream plus remote or controller? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What should I do if my Stream plus service is not connecting to my TV or device? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I troubleshoot Stream plus issues on my own or do I need to contact customer service? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What happens if I am experiencing issues with multiple Stream plus services? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I resolve issues with my Stream plus billing or account information? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why am I having issues accessing TELUS TV plus through Stream plus? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I troubleshoot issues with my disney plus subscription through Stream plus? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What do I do if my Disney plus is not working correctly through Stream plus? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I fix issues with my Netflix Premium subscription through Stream plus? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why am I experiencing buffering or lagging issues with my Stream plus service? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I troubleshoot issues with my Stream plus service and Apple TV? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't login to stream plus and Apple TV"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help me with "
+    }, {
+      "text": "activating stream+",
+      "parameterId": "streamplus_troubleshooting"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "facing issue "
+    }, {
+      "text": "activating Stream+ services",
+      "parameterId": "streamplus_troubleshooting"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "something else",
+      "parameterId": "streamplus_troubleshooting"
+    }, {
+      "text": " is creating issue with Disney plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "facing "
+    }, {
+      "text": "other issues",
+      "parameterId": "streamplus_troubleshooting"
+    }, {
+      "text": " with Disney plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "issues with Netflix"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "problem"
+    }, {
+      "text": " with "
+    }, {
+      "text": "stream plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am having issues while "
+    }, {
+      "text": "registering for My Telus",
+      "parameterId": "streamplus_troubleshooting"
+    }, {
+      "text": " with stream plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "stream plus issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Netflix credentials"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "unable to link stream plus with my telus account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have problems with stream plus and Discovery"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "problems"
+    }, {
+      "text": " "
+    }, {
+      "text": "using"
+    }, {
+      "text": " "
+    }, {
+      "text": "stream plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I did not receive the "
+    }, {
+      "text": "enrolment",
+      "parameterId": "streamplus_troubleshooting"
+    }, {
+      "text": " email for Stream plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "didn't receive "
+    }, {
+      "text": "enrolment",
+      "parameterId": "streamplus_troubleshooting"
+    }, {
+      "text": " email for stream plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I "
+    }, {
+      "text": "can't activate",
+      "parameterId": "streamplus_troubleshooting"
+    }, {
+      "text": " stream plus and Discovery plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need help with resolving "
+    }, {
+      "text": "password problem",
+      "parameterId": "streamplus_troubleshooting"
+    }, {
+      "text": " with Amazon prime"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "unable to link to my Netflix account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "unable to create an account for disney plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "having issue with activating stream plus services"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need help with "
+    }, {
+      "text": "enrolment",
+      "parameterId": "streamplus_troubleshooting"
+    }, {
+      "text": " into Amazon"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need help activating stream plus",
+      "parameterId": "streamplus_troubleshooting"
+    }, {
+      "text": " and Amazon"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I already added stream plus but I am having trouble "
+    }, {
+      "text": "activating",
+      "parameterId": "streamplus_troubleshooting"
+    }, {
+      "text": " it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need help accessing my stream plus services"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I added stream plus but am not sure how to access the services and Amazon?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to make sure Netflix is "
+    }, {
+      "text": "linked"
+    }, {
+      "text": " to my stream plus bundle and don't know how"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need some help with setting up stream plus and Amazon prime"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you help me with stream plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "unable to access Stream plus due to a password issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't access my stream plus services and Amazon"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

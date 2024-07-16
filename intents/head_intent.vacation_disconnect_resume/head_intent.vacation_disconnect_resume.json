@@ -1,0 +1,23 @@
+{
+  "name": "b0c9015b-1f36-4348-bffc-98939acddc48",
+  "displayName": "head_intent.vacation_disconnect_resume",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "inquiries about resuming service after suspension.",
+  "numTrainingPhrases": 202
+}

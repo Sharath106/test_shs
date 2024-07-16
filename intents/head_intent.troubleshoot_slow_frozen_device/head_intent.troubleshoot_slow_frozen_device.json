@@ -1,0 +1,34 @@
+{
+  "name": "fc52f97a-f7f8-490b-85cb-dc7e45e58339",
+  "displayName": "head_intent.troubleshoot_slow_frozen_device",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Troubleshoot slow or frozen device issue",
+  "asrCorrections": [ {
+    "errorPhrase": "je vais",
+    "correctionPhrase": "gelé"
+  }, {
+    "errorPhrase": "gilet",
+    "correctionPhrase": "gelé"
+  }, {
+    "errorPhrase": "je l'ai",
+    "correctionPhrase": "gelé"
+  } ],
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 156
+}

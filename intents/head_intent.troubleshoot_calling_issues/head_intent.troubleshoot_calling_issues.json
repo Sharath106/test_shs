@@ -1,0 +1,34 @@
+{
+  "name": "f33f02ff-3e41-4fe1-8193-9a05d1d82ccf",
+  "displayName": "head_intent.troubleshoot_calling_issues",
+  "parameters": [ {
+    "id": "calling_issues",
+    "entityType": "@calling-issues"
+  }, {
+    "id": "calling_issues_device",
+    "entityType": "@calling-issues-device"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Issues with phone calls and no signal.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 547
+}

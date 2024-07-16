@@ -1,0 +1,29 @@
+{
+  "name": "e7e8a5a4-91d2-49fe-a930-1cc24c88194e",
+  "displayName": "head_intent.troubleshoot_phone_not_working",
+  "parameters": [ {
+    "id": "currency-name",
+    "entityType": "@sys.currency-name"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "General phone not working ",
+  "asrCorrections": [ {
+    "errorPhrase": "this is port",
+    "correctionPhrase": "tech support"
+  } ],
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 560
+}

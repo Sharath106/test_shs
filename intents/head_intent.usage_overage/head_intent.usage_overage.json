@@ -1,0 +1,28 @@
+{
+  "name": "800ad624-da96-44e7-b556-e9b1b5f1dd64",
+  "displayName": "head_intent.usage_overage",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Overage information for airtime, sms and data",
+  "asrCorrections": [ {
+    "errorPhrase": "donner",
+    "correctionPhrase": "donnée"
+  } ],
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 133
+}
