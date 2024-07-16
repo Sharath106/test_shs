@@ -1,0 +1,28 @@
+{
+  "name": "fa44799f-c96c-49c3-a402-04f7abcec413",
+  "displayName": "head_intent.plans_add_line",
+  "parameters": [ {
+    "id": "new_or_byod_phone",
+    "entityType": "@new-or-byod-phone"
+  }, {
+    "id": "new_vs_existing_account",
+    "entityType": "@new-vs-existing-account"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer looking to add a new line to plan (phone, watch or tablet).",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 204
+}

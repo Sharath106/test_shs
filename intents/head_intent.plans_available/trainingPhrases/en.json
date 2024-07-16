@@ -1,0 +1,1281 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "interested in unlimited data plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add unlimited data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to have unlimited data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want unlimited data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to get unlimited data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "pom service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "pom services"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "rate plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "rate plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "student plans? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "looking for plans with more data for black friday "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "have any plans with more data for Black Friday?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to know if you have black friday offers for US calling plans "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you have any Black Friday deals for US calling plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "interested in black friday plans "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "phone plans for black friday "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm looking for a plan with more data for black friday "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "are there any black friday offers with a family plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm wondering about your "
+    }, {
+      "text": "black friday"
+    }, {
+      "text": " plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What's the pricing for data plans bigger than "
+    }, {
+      "text": "4G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How much is the unlimited plan with "
+    }, {
+      "text": "3G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me if the plans are compatible with more data than "
+    }, {
+      "text": "4G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me about the Unlimited "
+    }, {
+      "text": "50"
+    }, {
+      "text": " plan with "
+    }, {
+      "text": "4G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is the Unlimited 50 "
+    }, {
+      "text": "3G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": " plan any good?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need something that has "
+    }, {
+      "text": "4G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": " data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I hear about a "
+    }, {
+      "text": "4G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What's the pricing for data plans bigger than "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How much is the unlimited plan with "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me about the Unlimited "
+    }, {
+      "text": "50"
+    }, {
+      "text": " plan with "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What's the difference between the "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": " and more than "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": " plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Are there any "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": " plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to know about the plan with "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": " data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I just want to hear about a "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I hear about a "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what's the cost of a "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed",
+      "auto": true
+    }, {
+      "text": " data plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "5G",
+      "parameterId": "data_speed"
+    }, {
+      "text": " data plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "a "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed"
+    }, {
+      "text": " plan, that's it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want a "
+    }, {
+      "text": "4G",
+      "parameterId": "data_speed"
+    }, {
+      "text": " data plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm looking for a "
+    }, {
+      "text": "5G+",
+      "parameterId": "data_speed"
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "5G",
+      "parameterId": "data_speed"
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to to know phone plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I have free phone calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can I see if there are free calls available?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "available free phone calls plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "free phone calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to have free phone calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to know about talk and talk and text"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "a data set"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "find out about data plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plan with data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "find out about data options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "available data options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "data plan options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "data options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "mobile internet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "mobile internet plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "internet plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "phone plan options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "available telus phone plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "TELUS telephone plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "telus phone plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "telephone plans"
+    } ],
+    "repeatCount": 8,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "available phone plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What are the differences between plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Talk about "
+    }, {
+      "text": "3G",
+      "parameterId": "data_speed"
+    }, {
+      "text": " plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Compatibility with "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed"
+    }, {
+      "text": " plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "is it compatible with a "
+    }, {
+      "text": "4G",
+      "parameterId": "data_speed"
+    }, {
+      "text": " plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just want to know the cost of a "
+    }, {
+      "text": "5G",
+      "parameterId": "data_speed"
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what plans",
+      "parameterId": "plan_options",
+      "auto": true
+    }, {
+      "text": " do you have currently"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What plans",
+      "parameterId": "plan_options",
+      "auto": true
+    }, {
+      "text": " do you have available currently?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i was hoping to talk to someone about different plans and options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "check student plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "available family plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "family plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to dicusss your available plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "discuss available plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "whats plans do you have at the moment?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what are the plans you have currently? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "any good phone plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what phone plans are available?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "subsidized phone plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you have subsidized phone plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what plans",
+      "parameterId": "plan_options"
+    }, {
+      "text": " do you  currently have "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to compare different plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "tablet plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "family plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what plans",
+      "parameterId": "plan_options"
+    }, {
+      "text": " do you have available at the moment?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What plans",
+      "parameterId": "plan_options"
+    }, {
+      "text": " do you currently offer?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what packages do you have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "byod plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "long distance plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "High speed data plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "compare available plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "bundles"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "unlimited"
+    }, {
+      "text": " packages"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Telus bundles"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what are your plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "available bundles"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what bundles do you have available"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Telus bundles and packages offer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am looking for information, regarding the "
+    }, {
+      "text": "Peace of Mind",
+      "parameterId": "plan_options",
+      "auto": true
+    }, {
+      "text": " plan (at $110), and the "
+    }, {
+      "text": "Peace of Mind Connect",
+      "parameterId": "plan_options",
+      "auto": true
+    }, {
+      "text": " (at $95). What is the difference between the two?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The "
+    }, {
+      "text": "peace of mind connect plus"
+    }, {
+      "text": ", can this be shared with a partner?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What plan",
+      "parameterId": "plan_options",
+      "auto": true
+    }, {
+      "text": " can you recommend for my 12 year old daughter?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what are your "
+    }, {
+      "text": "unlimited data plans"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How much is the "
+    }, {
+      "text": "Peace of Mind",
+      "parameterId": "plan_options",
+      "auto": true
+    }, {
+      "text": " plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What's the difference between "
+    }, {
+      "text": "peace of mind",
+      "parameterId": "plan_options",
+      "auto": true
+    }, {
+      "text": " and "
+    }, {
+      "text": "peace of mind connect",
+      "parameterId": "plan_options",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "current plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plan rates for new customer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plan costs for a new customer "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "tell me about your packages and costs"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Available packages and pricing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "check out "
+    }, {
+      "text": "available plans",
+      "parameterId": "plan_options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm calling about your "
+    }, {
+      "text": "available plan",
+      "parameterId": "plan_options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm calling to check your "
+    }, {
+      "text": "allplan",
+      "parameterId": "plan_options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "rural plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "cheapest "
+    }, {
+      "text": "unlimited data plans"
+    }, {
+      "text": " for kids"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "family friendly mobility plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "do you have just talk and text plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "simple plans with less data?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plans with long distance calling"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plans with shared data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "do you have plans with "
+    }, {
+      "text": "unlimited data"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "different plans and options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "peace of mind",
+      "parameterId": "plan_options"
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "bundle options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plans that include netflix"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "pricing and bundles"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "want to compare plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "iwatch plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plans for tablets"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "looking for a good plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "would like to know about your rates"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to review available services and prices"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what kind of plans do you have available"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I wanted know what kind of plans you have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What talk and text plans do you have? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you have any plan with "
+    }, {
+      "text": "unlimited"
+    }, {
+      "text": " international messaging"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "do you have a plan with no internet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what student plans do you have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you have any family plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "available plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what plans",
+      "parameterId": "plan_options"
+    }, {
+      "text": " do you have "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "better data plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to know of phone offers and a rate plan please"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plan offers"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to talk to an agent in regards to phone plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "looking for a phone plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "review phone plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to know if there is any student internet plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "looking for packages or bundles"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i wanna look at plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "about student plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "review plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "student plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "peace of mind",
+      "parameterId": "plan_options"
+    }, {
+      "text": " data"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "package options"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "build your own plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "see what the packages are"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like prices on a bundle"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what plans to get"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "available telus plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "telus package"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "student plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "monthly plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "quote on service"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i have been offered new rates and i just wanna speak to a representative about it"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "package pricing"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "a quote to get your services"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i wanna know rate plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "basic rate"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i just wanna find out how much your plans cost"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "checking up the cost of plans plus the cost of phones"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  } ]
+}

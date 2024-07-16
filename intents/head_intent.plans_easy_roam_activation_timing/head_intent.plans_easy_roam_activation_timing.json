@@ -1,0 +1,20 @@
+{
+  "name": "0a2f6874-4244-4d33-b77e-ae0b59def76d",
+  "displayName": "head_intent.plans_easy_roam_activation_timing",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about when is the best time to start easy roam.",
+  "numTrainingPhrases": 189
+}

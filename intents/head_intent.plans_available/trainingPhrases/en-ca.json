@@ -1,0 +1,499 @@
+{
+  "trainingPhrases": [ {
+    "id": "1b16a90a-141d-484a-93e5-c8a0a120350c",
+    "parts": [ {
+      "text": "plan rates for new customer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a62ca93a-fc1d-41e6-9884-d080e58d60bc",
+    "parts": [ {
+      "text": "plan costs for a new customer "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "71cef6a2-36b0-450c-9f0c-b5ce3b7ad2d9",
+    "parts": [ {
+      "text": "tell me about your packages and costs"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bd830eea-f2a9-4d5f-9f78-5dfb70a7c1e3",
+    "parts": [ {
+      "text": "Available packages and pricing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8635287b-e18f-44bc-89aa-d8d1c11475a8",
+    "parts": [ {
+      "text": "check out available plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5b190b76-58ba-400d-8db7-7da5b645aa71",
+    "parts": [ {
+      "text": "i'm calling about your available plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "93626f55-ad95-476f-8bb9-19e212871be8",
+    "parts": [ {
+      "text": "i'm calling to check your plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c7c196d-ebb2-49d0-ab16-64c151012253",
+    "parts": [ {
+      "text": "rural plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f68fcfcb-4f04-4065-ae9a-155d1bcb3b49",
+    "parts": [ {
+      "text": "cheapest plans for kids"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "78fb3a12-9e9e-4a54-b014-394c96d5cd71",
+    "parts": [ {
+      "text": "family friendly mobility plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a07025c1-2475-45d7-84db-c45291de81a7",
+    "parts": [ {
+      "text": "do you have just talk and text plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fe09dc9f-157e-4f35-ab78-519ac90e883d",
+    "parts": [ {
+      "text": "simple plans with less data?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b9b558c1-dceb-4038-8e72-eaf57465b729",
+    "parts": [ {
+      "text": "plans with long distance calling"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cd0ec1f3-5cd4-49e6-b5f4-a7217ed085d9",
+    "parts": [ {
+      "text": "plans with shared data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0be093d5-1665-4d67-bbb5-75e9c06e8fbb",
+    "parts": [ {
+      "text": "do you have plans with unlimited data?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "89127dd8-e016-40a7-80e7-a5ec1c7d760b",
+    "parts": [ {
+      "text": "different plans and options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "beec9b0c-b173-4b80-9778-c72bffedc741",
+    "parts": [ {
+      "text": "peace of mind"
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "730fc09d-ebc8-4ad6-92b4-76399391c64f",
+    "parts": [ {
+      "text": "bundle options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e6ae1feb-3945-4460-a379-c984cf97548c",
+    "parts": [ {
+      "text": "plans that include netflix"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f55bf568-dbaa-4fac-b3da-404a9486a678",
+    "parts": [ {
+      "text": "pricing and bundles"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1a988e4b-8fa3-4d8b-a896-2a72b9de4689",
+    "parts": [ {
+      "text": "want to compare plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "da5cd0a9-10b6-491a-97af-9dd64699d214",
+    "parts": [ {
+      "text": "iwatch plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "78d51d02-e22f-498c-a0e9-0d33faa6d20f",
+    "parts": [ {
+      "text": "plans for tablets"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "59aba31f-f34e-4538-a367-c6c5c6b72fce",
+    "parts": [ {
+      "text": "looking for a good plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d845c5fe-c5ed-4f4b-8a52-5acecf323cc2",
+    "parts": [ {
+      "text": "would like to know about your rates"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "92fae076-5dff-4cba-982e-c072457f064a",
+    "parts": [ {
+      "text": "I want new services and their prices"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66b1467e-b50b-44a8-a6f0-04a5239b2afb",
+    "parts": [ {
+      "text": "what kind of plans do you have available"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e551dac-2189-4a2d-b0e2-b0a39f8d2ecc",
+    "parts": [ {
+      "text": "I wanted know what kind of plans you have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9a018aa9-3aec-416a-a9da-3a0f19dc8fa0",
+    "parts": [ {
+      "text": "What talk and text plans do you have? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8d0da1ee-d9cf-418a-86c9-30b0c5d9e035",
+    "parts": [ {
+      "text": "Do you have any plan with unlimited international messaging"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "56aeda8a-4fa9-44da-850c-5a74231b598d",
+    "parts": [ {
+      "text": "do you have a plan with no internet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1ee8d589-7538-41e1-b579-51bdfe5fc6ac",
+    "parts": [ {
+      "text": "what student plans do you have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3dfcbf68-98cf-4a47-845d-a85dacf68927",
+    "parts": [ {
+      "text": "Do you have any family plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9d067f43-790d-429e-9207-40674a391798",
+    "parts": [ {
+      "text": "available plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "570aae1d-dcd4-4a0f-8551-65462f97e24b",
+    "parts": [ {
+      "text": "what plans"
+    }, {
+      "text": " do you have "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a5be32f2-3724-4eb7-a4b8-796e45a2a92e",
+    "parts": [ {
+      "text": "better data plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b18bb4e8-f634-4c62-98f0-78668ec1f5ab",
+    "parts": [ {
+      "text": "i would like to know of new phone offers and a new rate plan please"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "212cb8f0-e6a5-4474-a5b6-1ff6dd3bc26d",
+    "parts": [ {
+      "text": "plan offers"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c95f0797-356e-4fba-8e07-b156f287f4a5",
+    "parts": [ {
+      "text": "telephone plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f95dcb1f-b19f-45e4-8aa6-806736f3a5b0",
+    "parts": [ {
+      "text": "i want to talk to an agent in regards to phone plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ab29678e-654c-424b-b786-29173e81f072",
+    "parts": [ {
+      "text": "i'd like to discuss new phone plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3518d33e-fbfb-49d0-b6b0-5c0fe4ece81a",
+    "parts": [ {
+      "text": "looking for a phone plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bae80da8-e9a8-4d47-8ad7-fdfece6b930f",
+    "parts": [ {
+      "text": "review phone plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d125a68d-7a3e-47d8-ab82-da1ff236b1c4",
+    "parts": [ {
+      "text": "new phone plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c122077-e5ab-40a0-917c-656a96fff0d7",
+    "parts": [ {
+      "text": "i want to know if there is any student internet plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "408bb77c-bbef-473e-bfdd-a9eadb6f1ad6",
+    "parts": [ {
+      "text": "looking for packages or bundles"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "537d0cb6-1ec7-4947-9237-a0688f0cdb32",
+    "parts": [ {
+      "text": "i wanna look at plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a2893e5d-f473-485f-87e1-77671126e193",
+    "parts": [ {
+      "text": "about student plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7af16257-5ff6-4351-b178-48519d1cd802",
+    "parts": [ {
+      "text": "review plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7187db45-c237-4edd-ac1b-3778a05827a8",
+    "parts": [ {
+      "text": "student plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a303a639-f4bb-4c4e-aa25-3d070e56f21a",
+    "parts": [ {
+      "text": "peace of mind"
+    }, {
+      "text": " data"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c631a3a2-7db1-4721-bd71-5f36013cefee",
+    "parts": [ {
+      "text": "package options"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1d7ddd6e-84de-416d-95df-0f2da07ee309",
+    "parts": [ {
+      "text": "build your own plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c1928cb0-41fa-4071-8210-9ced9b108b4a",
+    "parts": [ {
+      "text": "see what the packages are"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "94eabebf-fad8-4565-baa7-d729aa81c239",
+    "parts": [ {
+      "text": "i would like prices on a bundle"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1eeba582-3894-4f73-bbf8-e69f65d83710",
+    "parts": [ {
+      "text": "what's the best plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c2b3822b-4421-4109-96a2-8143cc612db3",
+    "parts": [ {
+      "text": "available telus plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "96abaed1-da68-469a-b8a7-8480fd461a96",
+    "parts": [ {
+      "text": "telus package"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3265325c-5f5f-48a7-96c6-6df2db25a1db",
+    "parts": [ {
+      "text": "student plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0ede0a2e-68d6-42fc-a03d-c9b5f5fbe610",
+    "parts": [ {
+      "text": "monthly plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8f05be5b-b442-4aa5-9e63-921fd8e38089",
+    "parts": [ {
+      "text": "quote on service"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "89cc431e-da42-4f53-a114-d1f7afa0253d",
+    "parts": [ {
+      "text": "i have been offered new rates and i just wanna speak to a representative about it"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b90c4f4d-d323-4a74-8c95-f15f0b837e5c",
+    "parts": [ {
+      "text": "package pricing"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a535bf3a-b711-4ded-b77f-97a547c23601",
+    "parts": [ {
+      "text": "a quote to get your services"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "75c4a81d-5347-44d8-a82a-f5c08ef07109",
+    "parts": [ {
+      "text": "i wanna know rate plans"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5f1f437f-55c1-4363-9d55-d4e6ce357b53",
+    "parts": [ {
+      "text": "basic rate"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d6e8128e-d8dc-49bf-ab53-977e1b00ebca",
+    "parts": [ {
+      "text": "i just wanna find out how much your plans cost"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "386b4b96-9747-4d88-aa10-2ad8da285f2d",
+    "parts": [ {
+      "text": "new rates"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5ac5c0a3-c3c4-4d8f-a6c7-3ca39abbc61e",
+    "parts": [ {
+      "text": "checking up the cost of plans plus the cost of phones"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fccc4d04-4e03-42da-88d2-283606a0a8bd",
+    "parts": [ {
+      "text": "rate plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  } ]
+}

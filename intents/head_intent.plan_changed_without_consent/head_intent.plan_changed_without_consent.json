@@ -1,0 +1,23 @@
+{
+  "name": "4a10febd-9983-49d1-ab2e-2e0efa86aae9",
+  "displayName": "head_intent.plan_changed_without_consent",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Mentions of plan being changed without their consent",
+  "numTrainingPhrases": 140
+}

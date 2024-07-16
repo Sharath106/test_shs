@@ -1,0 +1,591 @@
+{
+  "trainingPhrases": [ {
+    "id": "2f5ba5f9-d0aa-4979-a2dd-ce53058ca7af",
+    "parts": [ {
+      "text": "i'd like to change my thing to pay my bills"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aa932e35-bbdd-42e5-92e5-febf917665b2",
+    "parts": [ {
+      "text": "i wanna talk to somebody about my payment for my bills"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "07081e4f-094c-48ea-a3b5-3a9185ce106c",
+    "parts": [ {
+      "text": "about my billing payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aae5af78-baf3-4589-a695-2b194c6528d6",
+    "parts": [ {
+      "text": "i need to see about a payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1fd88718-5ed5-4b63-8407-79b8800cb31d",
+    "parts": [ {
+      "text": "my billing payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "60998375-ee04-4f3e-b35c-c5db5a7b4540",
+    "parts": [ {
+      "text": "I just want to ask about my payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3bcbcc22-7a53-4cab-bf54-38cb747ffb67",
+    "parts": [ {
+      "text": "can I ask about my payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3a9aa119-605c-4c47-bbf4-c8226672d805",
+    "parts": [ {
+      "text": "I wanted to ask you about my last payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "97b78360-fe29-4e70-b3c6-d91c0e61f6ec",
+    "parts": [ {
+      "text": "question about payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7039a454-771b-497a-8d5d-2607c5f69314",
+    "parts": [ {
+      "text": "question about my last payment "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d99df169-20cd-4044-88c1-c5819870a54f",
+    "parts": [ {
+      "text": "account payment information"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d5ec7535-9891-495c-b90b-a0c219014d34",
+    "parts": [ {
+      "text": "i'm calling about my cellphone payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "42e21402-79c0-443e-b454-94c7dd24e5eb",
+    "parts": [ {
+      "text": "looking for my bill payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7b266bdd-2926-442c-b92c-1d7759b1e0af",
+    "parts": [ {
+      "text": "calling about the payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "17bbd343-64f9-4df3-b91b-eaa343179fea",
+    "parts": [ {
+      "text": "a payment no i need to talk to somebody"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0c843cfe-b046-4c29-8f28-26d2e04e3c61",
+    "parts": [ {
+      "text": "about my recent payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d2539ec3-eff7-49fa-810f-4ed0f692d626",
+    "parts": [ {
+      "text": "about the payment update last bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a458769e-8c3e-48e2-8d1f-5bc536bde317",
+    "parts": [ {
+      "text": "questioning a bill payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1bdb5a84-dcec-475f-8cdb-d4f3fbf68461",
+    "parts": [ {
+      "text": "i need to talk to somebody about payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4be21544-4826-4b8c-8f9e-0f56d3597008",
+    "parts": [ {
+      "text": "about payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fa23de36-964a-4c23-9480-e730c3a07ee9",
+    "parts": [ {
+      "text": "in regards to payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "232c0496-3021-4d07-9e86-21eba77fc8a3",
+    "parts": [ {
+      "text": "like to speak to somebody about payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b7bed1c9-6fe1-4903-b37d-068316315f06",
+    "parts": [ {
+      "text": "payment investigation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7d488ba3-4d5b-4f4f-925a-27b2b10ea0ec",
+    "parts": [ {
+      "text": "cellphone payments"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "27b469af-7c10-4898-937e-929c207d868f",
+    "parts": [ {
+      "text": "regarding the account payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0467105f-4930-443d-84c1-b8ab825f9d73",
+    "parts": [ {
+      "text": "just wondering if payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7f0750f9-1ffe-489c-8841-51e3ad51c12d",
+    "parts": [ {
+      "text": "my payment account payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b6a65d40-cdfe-4f19-a2e5-1158f1c56323",
+    "parts": [ {
+      "text": "concern about bill payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3f19d000-4a7b-4c42-909a-dcf5c3b40ca8",
+    "parts": [ {
+      "text": "invoice payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "16301cf1-9bef-4872-a5ab-57253973e08f",
+    "parts": [ {
+      "text": "about payments for an account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "998aa78c-cabd-41eb-8f22-99c6f12820c1",
+    "parts": [ {
+      "text": "payment on my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fbd283d1-394e-488c-9cd1-1f444fd56675",
+    "parts": [ {
+      "text": "payment inquiry"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d2d09e4e-566c-4c06-a139-7b0ad7790720",
+    "parts": [ {
+      "text": "our payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "19206c1d-5611-48c5-adf1-2fdf47f641b6",
+    "parts": [ {
+      "text": "payment agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d7b5b014-6b33-4eba-9270-967b740ddc63",
+    "parts": [ {
+      "text": "payments billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d623eecb-d100-48f1-95a2-1ec73b4f9278",
+    "parts": [ {
+      "text": "inquiry about payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "925f64d0-8f4f-4227-9fe4-64aed9e665b2",
+    "parts": [ {
+      "text": "about a payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e56eb850-80ce-41fc-9508-bce790372653",
+    "parts": [ {
+      "text": "about the payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f7a6ddc1-8b8a-498b-962e-fb6effd1cb5d",
+    "parts": [ {
+      "text": "payment or option"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "109711f2-4251-47c2-b13f-ec6b6db45da9",
+    "parts": [ {
+      "text": "payments on account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1cfac8a8-8a07-47d8-a3a5-016dbd82f965",
+    "parts": [ {
+      "text": "accounting bill payments"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "43d7b829-16c2-4826-be7f-37b6ea540b54",
+    "parts": [ {
+      "text": "i wanna call about payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "597f5355-6cbc-4721-8886-20e58a35b32d",
+    "parts": [ {
+      "text": "payment amount"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5a024b8c-49af-45cf-b171-f7f1597b5b55",
+    "parts": [ {
+      "text": "current bill payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2886a62c-b729-4d8f-929a-1deeedd9b583",
+    "parts": [ {
+      "text": "i wanna talk about my payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1c840a0c-d1b5-484a-a34c-3fc073675b46",
+    "parts": [ {
+      "text": "payment cellphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bae784d2-5192-459f-9267-a54fceffc8fc",
+    "parts": [ {
+      "text": "banking information"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "802ee044-3bd7-41d4-a497-cd02c533b9a0",
+    "parts": [ {
+      "text": "question about the payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "221ae75e-7ea1-4e2a-aa44-8f34eaadbc9d",
+    "parts": [ {
+      "text": "i'm calling about payment on my bill my internet bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3b1366e6-fa9c-4bad-a928-80eb1e13b61c",
+    "parts": [ {
+      "text": "bills and payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8f3a708e-21cf-4a4b-9622-f8852d0aebf0",
+    "parts": [ {
+      "text": "payment of invoice"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7fc9aa5f-9758-4b34-86b1-44f96d573048",
+    "parts": [ {
+      "text": "payment services"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9f2606ac-beb5-4340-b429-0ece5fa99592",
+    "parts": [ {
+      "text": "bill payment options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "506e4853-05a4-4c4c-889d-32ebb6abf5c9",
+    "parts": [ {
+      "text": "i'm calling about the bill payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a6fd6f72-8954-487e-9e85-25a6783c6e0b",
+    "parts": [ {
+      "text": "help with payments"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a75f0188-a3da-47b8-a028-20422da36e1e",
+    "parts": [ {
+      "text": "payment bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f85afb06-db9f-4808-b5c6-05d8e983a675",
+    "parts": [ {
+      "text": "monthly payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "118900bd-8fa8-44c7-860c-b40177ad4681",
+    "parts": [ {
+      "text": "payment of account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9afce082-f8c3-4d54-9d1e-11941f4a63a2",
+    "parts": [ {
+      "text": "billing and payments"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d7698029-91bb-4b8c-88c0-eded5a40575d",
+    "parts": [ {
+      "text": "about a bill payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d287f882-6364-4e3c-9042-35f4da201294",
+    "parts": [ {
+      "text": "payment of bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "946e2dab-63d1-406e-a6a8-42fb500a5f84",
+    "parts": [ {
+      "text": "payment option"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b2b0ddb4-752f-4e0b-bbf2-f3a3629e7278",
+    "parts": [ {
+      "text": "a payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "016e10b4-5e37-4fd9-b507-ea6165a9cd2e",
+    "parts": [ {
+      "text": "regarding payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f9ef3ab7-7f39-40c6-a8d3-7f664df91c6a",
+    "parts": [ {
+      "text": "my bill payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "00366103-f6de-45be-8533-0c9830fb8532",
+    "parts": [ {
+      "text": "on line payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e3a43856-736b-4e21-a957-08f0ee7048c6",
+    "parts": [ {
+      "text": "visa payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "be747f48-ec9f-4dd8-9536-15f412984049",
+    "parts": [ {
+      "text": "my payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e364fa71-2bd2-41c4-ac9d-0a0f5a45c08b",
+    "parts": [ {
+      "text": "payment options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8b6d1df6-cde2-48a8-900f-026c8aedc3e6",
+    "parts": [ {
+      "text": "billing payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b4761aab-fe4f-4f80-8127-577ac2fb6402",
+    "parts": [ {
+      "text": "payment information"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "85bba8f4-dcc1-425c-8ac9-8b6f2bf767f3",
+    "parts": [ {
+      "text": "over due payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6cc56640-1ce4-4c50-a9de-8c800ec5f0c1",
+    "parts": [ {
+      "text": "account payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "380cb69d-70c5-4b8c-9125-f9352aa19414",
+    "parts": [ {
+      "text": "bill payments"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1a3fc3dd-f9b1-4321-99ea-7c64660b9151",
+    "parts": [ {
+      "text": "credit card payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1db6d0ef-8586-4297-b11b-00df5b01ad9d",
+    "parts": [ {
+      "text": "bill payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "de739d79-9a80-4e14-919c-9b771bd1f471",
+    "parts": [ {
+      "text": "payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "99556559-600e-4816-b0ce-e7aa7d776ac9",
+    "parts": [ {
+      "text": "stop payment due"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0949dd4d-e881-4dda-9802-664b1d35ccd3",
+    "parts": [ {
+      "text": "changes in my bill payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4836c8bf-3b2a-4c8c-8e09-9607cacc52d7",
+    "parts": [ {
+      "text": "my visa"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e86fe769-814f-477f-876a-fd9c2e8ccca6",
+    "parts": [ {
+      "text": "my current payment plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "610ebd67-acd9-490f-b6b5-34619f354d8c",
+    "parts": [ {
+      "text": "i need to i need a payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "446e62a4-5d20-4f9c-82cf-3067ec5c0f68",
+    "parts": [ {
+      "text": "i got a message about my payment being a problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2be1a792-111d-4683-bd71-fa4b54433c1e",
+    "parts": [ {
+      "text": "my phone payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

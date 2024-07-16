@@ -1,0 +1,654 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "add a line for black friday "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding a line with your black friday promo "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to have a second line and get your black friday deal "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Looking to add a new line with your black friday deal "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can i add a new line with your black friday offer?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add adding another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "move Luke add a new phone number to my Telus account the cost"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "yeah can I add another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need questions answered about adding another account for a child family member"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding a SIM card"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding a device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to add new line to my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to add my mom's phone to my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i add my daughter to my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add new service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to add another line to "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "get a new line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Add additional line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i talk to someone about adding a new line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to add another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to add another phone line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wanna add a line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add a phone line"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add a phone number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add a phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you add another phone to my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i activate an esim as a second line on my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "would I be able to add a second phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I go about adding another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I add an extra line?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to add another phone to my account."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want do add a line for my son under my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I add an extra person to my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Add an extra line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Would like to add a line to my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to add my son to my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Would it be possible to add another line to my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I add a line?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add my husband as new line to "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to add my mom on "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need to add my father to my plan please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you add another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need second phone number for myself"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "connect a tablet to our account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add my "
+    }, {
+      "text": "new",
+      "parameterId": "new_vs_existing_account"
+    }, {
+      "text": " ipad to "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "buy "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need to get another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "additional line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "want to add my son to our family plan please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need a "
+    }, {
+      "text": "new",
+      "parameterId": "new_vs_existing_account"
+    }, {
+      "text": " phone number"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding an phone number to "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "would like to add a tablet in "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding a mobile phone to my telus bundle"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add cellphone"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding as a mobile phone"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "new line",
+      "parameterId": "new_vs_existing_account"
+    }, {
+      "text": " "
+    }, {
+      "text": "new"
+    }, {
+      "text": " connection"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "trying to activate a fourth line on "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add a "
+    }, {
+      "text": "new device",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding equipment"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add a device"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "trying to add a track plus to my peace of mind account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "purchase a "
+    }, {
+      "text": "new line",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm inquiring about adding a phone to "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add line"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add another line"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to add another phone line"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need to add a phone"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " and a "
+    }, {
+      "text": "new line",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i may want to add another line to "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to add a phone number to "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add phone number to account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "looking to add a phone"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to add a second phone to my plan"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to "
+    }, {
+      "text": "add a new line"
+    }, {
+      "text": " to "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add a "
+    }, {
+      "text": "new line",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to "
+    }, {
+      "text": "add a line",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to add another phone to "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add a "
+    }, {
+      "text": "new line",
+      "parameterId": "new_vs_existing_account"
+    }, {
+      "text": " on "
+    }, {
+      "text": "my account",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add phone"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add phone line"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add a phone to my plan"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding a phone"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "new line"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding a line"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add a line"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to open line my cellphone"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add "
+    }, {
+      "text": "new phone"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding line to the account"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to add someone to my plan"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "adding someone to my plan"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wanting to add someone to my plan"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  } ]
+}

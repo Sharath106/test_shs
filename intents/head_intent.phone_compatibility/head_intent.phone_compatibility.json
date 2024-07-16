@@ -1,0 +1,23 @@
+{
+  "name": "660e3f56-1c4a-4ebc-9f8e-c85426c5ed0a",
+  "displayName": "head_intent.phone_compatibility",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "phone compatibility",
+  "numTrainingPhrases": 132
+}

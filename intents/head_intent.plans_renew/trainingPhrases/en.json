@@ -1,0 +1,627 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I need the lowest price for renewal of my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you know where I can go to renew a plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have an expired plan and I'm trying to renew "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My contract is up for renewal. Can you help me please?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you know if it's time for renewal already of my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was looking to renew because I think I am up for renewal"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to renew and then change plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Will I automatically be switched over to a current plan if my contract expries soon"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to renew my contract using your black friday deal?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Renew plan with the black friday promotion"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I saw your black friday deals and i'd like to renew my contract "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i renew my contract with your black friday promo?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "looking to renew my plan with your "
+    }, {
+      "text": "black friday"
+    }, {
+      "text": " offer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renew plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renew service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renew contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to "
+    }, {
+      "text": "continue my service"
+    }, {
+      "text": " with telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how can i renew my contract if it expires"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to keep my contract, how to renew it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Whenever my plan will expire, will it renew automatically?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to renew my plan that's going to expire next month, if I'm not wrong. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to renew my plan that will expire soon, if my memory is not playing trick on me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my plan will expire soon so I want to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do I qualify for the bring my "
+    }, {
+      "text": "own device"
+    }, {
+      "text": " plans when I "
+    }, {
+      "text": "renew"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was going to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " my contract maybe on "
+    }, {
+      "text": "existing line"
+    }, {
+      "text": " on "
+    }, {
+      "text": "my own phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "gonna be "
+    }, {
+      "text": "renewing"
+    }, {
+      "text": " the same plan on "
+    }, {
+      "text": "existing account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "gonna be "
+    }, {
+      "text": "renewing"
+    }, {
+      "text": " our "
+    }, {
+      "text": "existing"
+    }, {
+      "text": " plan again"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My plan is expiring this week and I wanted to talk to you about "
+    }, {
+      "text": "renewal"
+    }, {
+      "text": " on "
+    }, {
+      "text": "adding a line"
+    }, {
+      "text": " in my "
+    }, {
+      "text": "byod"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My contract expires on October 1 and I want to "
+    }, {
+      "text": "add a line"
+    }, {
+      "text": " to my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renewing"
+    }, {
+      "text": " my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plan "
+    }, {
+      "text": "renewal"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renew"
+    }, {
+      "text": " agreement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renewal"
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renew"
+    }, {
+      "text": " "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renewing"
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "internet service "
+    }, {
+      "text": "renewal"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "hi this is gladys rogers speaking and my contract is up "
+    }, {
+      "text": "tomorrow"
+    }, {
+      "text": " and i'd like to get it "
+    }, {
+      "text": "renewed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renewing"
+    }, {
+      "text": " a contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "to to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renewal"
+    }, {
+      "text": " of cellphone contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the "
+    }, {
+      "text": "renewal"
+    }, {
+      "text": " on my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renewing"
+    }, {
+      "text": " contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "want to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " the contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "phone "
+    }, {
+      "text": "renewal"
+    }, {
+      "text": " contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renewal"
+    }, {
+      "text": " contract renewal"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my contract needs to be "
+    }, {
+      "text": "renewed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renew"
+    }, {
+      "text": " my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "contract "
+    }, {
+      "text": "renewal"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "credit card "
+    }, {
+      "text": "renewal"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renew"
+    }, {
+      "text": " my student plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " my student plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "new"
+    }, {
+      "text": " "
+    }, {
+      "text": "two"
+    }, {
+      "text": " year plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my contract is done and i need to "
+    }, {
+      "text": "upgrade"
+    }, {
+      "text": " "
+    }, {
+      "text": "another contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm calling to "
+    }, {
+      "text": "upgrade"
+    }, {
+      "text": " a  contract for the phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm calling about my "
+    }, {
+      "text": "current line"
+    }, {
+      "text": " contract that i have with my phone thank you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i wanna extend my rates for another year for my "
+    }, {
+      "text": "current line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renew"
+    }, {
+      "text": " account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renew"
+    }, {
+      "text": " service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "want to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "one year "
+    }, {
+      "text": "renewal"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm calling about "
+    }, {
+      "text": "renewal"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "account "
+    }, {
+      "text": "renew"
+    }, {
+      "text": " account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renew"
+    }, {
+      "text": " my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renewing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "account "
+    }, {
+      "text": "renewal"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "renewal"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

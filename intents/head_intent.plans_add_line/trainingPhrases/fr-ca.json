@@ -1,0 +1,403 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Puis-je ajouter une nouvelle ligne avec votre offre du vendredi fou ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souhaite ajouter une nouvelle ligne avec votre offre du vendredi fou"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voudrais avoir une deuxième ligne et bénéficier de votre offre pour le vendredi fou"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter une ligne avec votre promo du vendredi fou"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter une ligne pour le vendredi fou"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin d'ajouter ma mère au forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'aimerais ajouter notre fille à notre forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter une ligne au compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter un "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais ajouter une ligne pour mon cellulaire."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter une ligne"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nouvelle ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter une ligne"
+    }, {
+      "text": " téléphonique"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter un téléphone"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter un téléphone à mon forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter une "
+    }, {
+      "text": "nouvelle ligne",
+      "parameterId": "new_vs_existing_account"
+    }, {
+      "text": " sur "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais ajouter un autre téléphone à "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais "
+    }, {
+      "text": "ajouter une ligne",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter une "
+    }, {
+      "text": "nouvelle ligne",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je dois ajouter une "
+    }, {
+      "text": "nouvelle ligne",
+      "parameterId": "new_vs_existing_account"
+    }, {
+      "text": " à "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais ajouter un deuxième téléphone à mon forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "cherche à ajouter un téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter un numéro de téléphone au compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je dois ajouter un numéro de téléphone à "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je souhaiterais peut-être ajouter une autre ligne à "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai "
+    }, {
+      "text": "besoin d'un nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " et d'une "
+    }, {
+      "text": "nouvelle ligne",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin d'ajouter un téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais ajouter une autre ligne téléphonique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter une autre ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "bonjour je me demande comment ajouter un téléphone à "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "acheter une "
+    }, {
+      "text": "nouvelle ligne",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter un appareil"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter un "
+    }, {
+      "text": "nouvel appareil",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "abonnement cellulaire pour apple watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter ma montre Apple à mon forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "iwatch et cellulaire de plus au compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "iwatch série trois ajoutée à "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    }, {
+      "text": " de téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais ajouter une montre"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux ajouter une montre sur "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'essaie d'activer une quatrième ligne sur "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nouvelle ligne",
+      "parameterId": "new_vs_existing_account"
+    }, {
+      "text": " nouvelle connexion"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajout en tant que téléphone mobile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter un téléphone portable"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter un cell à mon forfait telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'aimerais ajouter une tablette à "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter un numéro de téléphone à "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux ajouter mon fils à notre forfait familial s'il vous plaît"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ligne supplémentaire"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin d'obtenir une autre ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin de ligne pour apple watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "acheter un nouveau forfait téléphonique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter mon nouvel ipad à "
+    }, {
+      "text": "mon compte",
+      "parameterId": "new_vs_existing_account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connecter une tablette à notre compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin d'un deuxième numéro de téléphone pour moi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

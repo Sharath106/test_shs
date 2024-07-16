@@ -1,0 +1,44 @@
+{
+  "name": "d622512c-5867-465e-9d80-6c71355939ed",
+  "displayName": "head_intent.plans_available",
+  "parameters": [ {
+    "id": "plan_options",
+    "entityType": "@plan-options"
+  }, {
+    "id": "data_speed",
+    "entityType": "@data-speed"
+  }, {
+    "id": "unit-currency",
+    "entityType": "@sys.unit-currency"
+  }, {
+    "id": "currency-name",
+    "entityType": "@sys.currency-name"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer inquiring about available plans (differences between plans, the costs, etc.).",
+  "asrCorrections": [ {
+    "errorPhrase": "parfait familial",
+    "correctionPhrase": "forfait familial"
+  } ],
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 374
+}

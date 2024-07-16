@@ -1,0 +1,38 @@
+{
+  "name": "c52f9087-2945-41a6-9774-b2c1811058b8",
+  "displayName": "head_intent.plans_usage",
+  "parameters": [ {
+    "id": "online_vs_app",
+    "entityType": "@online-vs-app"
+  }, {
+    "id": "phone-number",
+    "entityType": "@sys.phone-number"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer inquiring about their usage and sharing data.",
+  "asrCorrections": [ {
+    "errorPhrase": "donner",
+    "correctionPhrase": "donnée"
+  } ],
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 349
+}

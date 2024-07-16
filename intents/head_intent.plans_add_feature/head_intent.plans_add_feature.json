@@ -1,0 +1,31 @@
+{
+  "name": "08cfb1d9-db48-476d-b07f-bb77f782c424",
+  "displayName": "head_intent.plans_add_feature",
+  "parameters": [ {
+    "id": "online_vs_app",
+    "entityType": "@online-vs-app"
+  }, {
+    "id": "feature_options",
+    "entityType": "@feature-options"
+  }, {
+    "id": "data_block",
+    "entityType": "@data-block"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  }, {
+    "key": "transactional",
+    "value": "transactional"
+  } ],
+  "description": "Customer requesting to add a feature (Fast Pass, Texting, Long Distance, Voicemail, Travel, Data block). Do not include warranties (it's extended_warranty).",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 642
+}

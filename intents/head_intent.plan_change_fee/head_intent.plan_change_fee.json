@@ -1,0 +1,20 @@
+{
+  "name": "7e820a68-18b9-4560-80d9-7364fb2df3ca",
+  "displayName": "head_intent.plan_change_fee",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Info on rate plan change fees",
+  "numTrainingPhrases": 101
+}

@@ -1,0 +1,25 @@
+{
+  "name": "eae783cb-5b68-40ec-ae31-101fad654838",
+  "displayName": "head_intent.phone_not_charging",
+  "parameters": [ {
+    "id": "number",
+    "entityType": "@sys.number"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Device issue where it's not charging",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 144
+}

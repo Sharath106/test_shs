@@ -1,0 +1,694 @@
+{
+  "trainingPhrases": [ {
+    "id": "0f520736-4631-4b88-a23b-28caf2542cfd",
+    "parts": [ {
+      "text": "how can I check my airtime usage?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e6548d51-7209-474f-868a-3e198288490c",
+    "parts": [ {
+      "text": "how many minutes do I still have?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8477691a-66d8-483a-9bf7-649c59bbf91b",
+    "parts": [ {
+      "text": "want to check on my data, to see where it is being used"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "40807dca-88b1-4e27-9a86-3bfaef9fcfa2",
+    "parts": [ {
+      "text": "where is my data being used"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e918af2b-aa0c-4789-b15c-0cca36a3d3cc",
+    "parts": [ {
+      "text": "how am I using my data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "99e50587-87d9-471a-895b-58ed170e709e",
+    "parts": [ {
+      "text": "question on my data bandwidth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "97c00a33-7450-4e91-be15-8e514ac6ee13",
+    "parts": [ {
+      "text": "view my current usage in "
+    }, {
+      "text": "my telus app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aae35a43-81d8-4541-b722-136c6a334061",
+    "parts": [ {
+      "text": "want to see my usage on the "
+    }, {
+      "text": "website"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7ce3be5b-9853-4310-9067-04f42d2864c5",
+    "parts": [ {
+      "text": "Please check how many minutes are left on the "
+    }, {
+      "text": "website"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9233c405-2d53-4128-a2bf-9797807dde0e",
+    "parts": [ {
+      "text": "view usage in the "
+    }, {
+      "text": "app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4a9cabbe-e6e6-4473-8338-fd5c1dca3a5a",
+    "parts": [ {
+      "text": "How to check my airtime "
+    }, {
+      "text": "online"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4f592bf1-6ded-4474-b5c8-974c08503f7e",
+    "parts": [ {
+      "text": "can I check airtime minutes in "
+    }, {
+      "text": "My Telus app"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c6f43a67-2bb0-47cc-9c16-d5d686537223",
+    "parts": [ {
+      "text": "check plan usage in the "
+    }, {
+      "text": "app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "06e60c18-cc6f-4582-8828-aef2107ff7c4",
+    "parts": [ {
+      "text": "How to check my usage "
+    }, {
+      "text": "online"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e794f792-efe3-4f08-87df-ec9c3e379736",
+    "parts": [ {
+      "text": "usage summary"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f47a1017-0e2c-4add-826b-34df7e3e47e5",
+    "parts": [ {
+      "text": "wanna check my usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0f7b3754-b897-4991-87f5-e4ec598ef8a1",
+    "parts": [ {
+      "text": "usage mobile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9ddf6ac5-cd50-475e-ba74-b50f3fc021fb",
+    "parts": [ {
+      "text": "my usage summary"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "38a37c20-6ef2-4a63-8a90-20ce6ee620fa",
+    "parts": [ {
+      "text": "my data usage on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3ae330ce-5cf8-4e76-ab71-75044c8936e1",
+    "parts": [ {
+      "text": "data usage on my mobility bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5b257a7b-1061-4592-8385-de5326abe55a",
+    "parts": [ {
+      "text": "my data usage on my cellphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7efd3673-e4d9-4b76-abab-fdbb99800075",
+    "parts": [ {
+      "text": "i would like to talk to somebody about the usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "44a40f9c-e7ca-4fc7-a034-ab65ff773e9b",
+    "parts": [ {
+      "text": "i don't know usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b4a7fdba-4536-4cb3-a57e-f109fe844aba",
+    "parts": [ {
+      "text": "why am i going over my data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "527f967f-aca1-4057-9b25-615d831a395e",
+    "parts": [ {
+      "text": "usage summary usage summary"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ceff4373-91ba-491a-ad95-968127052090",
+    "parts": [ {
+      "text": "calling about my usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e6931304-aa37-4160-b212-0f4502fcf3f3",
+    "parts": [ {
+      "text": "bandwidth usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c2001755-bcb6-4abe-af3d-af705e15ec9b",
+    "parts": [ {
+      "text": "my amount of usage for this month"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2bfffea8-b97a-4d72-81b2-670df207414d",
+    "parts": [ {
+      "text": "data on my phone usage on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "41f80a58-152d-4224-97c8-acc52ec35ced",
+    "parts": [ {
+      "text": "i'm calling about my usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "73f0c21b-2729-4b8e-9461-7f90e0fe0a6c",
+    "parts": [ {
+      "text": "to speak about my usage and plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a466d388-6a2f-461e-99a5-b80acb8b196a",
+    "parts": [ {
+      "text": "my cellphone usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "913b8e46-ee73-4c4e-afc3-54d9a230188c",
+    "parts": [ {
+      "text": "cellphone usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4616c244-9766-4494-a7c5-e6226df9a934",
+    "parts": [ {
+      "text": "what's my usage what's my usage now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b84252b6-8d9a-4aa8-adbf-e63f61a87be3",
+    "parts": [ {
+      "text": "why wanna know my data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8d11ce74-9f9c-4d24-9e2e-6da38268bf08",
+    "parts": [ {
+      "text": "over usage on my cellphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "60c8d1cd-5e63-4504-a152-2f916559232e",
+    "parts": [ {
+      "text": "my usage under bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cb1ac8ee-e34f-4bf7-bcc5-3ed3df184c8b",
+    "parts": [ {
+      "text": "usage on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2d193e1c-094b-44a3-8980-06bbc5b8c7cd",
+    "parts": [ {
+      "text": "i'd like to know about my data usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5fc41db3-aed4-4e81-bdfa-3757d072bd73",
+    "parts": [ {
+      "text": "i need some instructions on usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "99573ba0-133a-44c3-a16b-61aeedff0150",
+    "parts": [ {
+      "text": "how much bandwidth do i have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cb6ba545-db0a-47fd-a14e-06fb675d75cc",
+    "parts": [ {
+      "text": "i want to i wanna speak to somebody about data usage on my mobile phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d7861ef3-8719-4a6d-b47d-f4b9206b27e5",
+    "parts": [ {
+      "text": "check the minutes on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c8307fd-8bc2-43af-b0cd-37a35edee31f",
+    "parts": [ {
+      "text": "checking my minutes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66c72964-a706-4e7a-af78-d97612093ba4",
+    "parts": [ {
+      "text": "well i'd like to talk about how much you're charging me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fda36c65-90b6-446e-af7f-4074b2745c2c",
+    "parts": [ {
+      "text": "minute summary"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9ee67df6-dcf3-4baa-8dc7-6d95481fe52a",
+    "parts": [ {
+      "text": "i tried to use it yesterday and it told me that i had no minutes left on it and i haven't used it for months and month and i wanna know what's going on"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e232aac0-6763-463b-80bc-f05b1584a95d",
+    "parts": [ {
+      "text": "the amount i have on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d738c799-2354-4d61-bb0c-b5f23536390e",
+    "parts": [ {
+      "text": "cellphone minutes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dc66775b-de7c-41e2-b519-079f992d312f",
+    "parts": [ {
+      "text": "has run out of minutes and it's not supposed to"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7828f36b-3bb7-497d-8e04-72113c93dd0f",
+    "parts": [ {
+      "text": "minutes of airtime"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5936f344-46de-4735-94c0-344982b0fffd",
+    "parts": [ {
+      "text": "minutes remaining on my cellphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8960a753-c72b-4742-a41e-641411a40064",
+    "parts": [ {
+      "text": "how much time is left on the phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "72836d41-dd1c-434d-a99c-0dc31386b667",
+    "parts": [ {
+      "text": "minutes left on phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "46f9d445-899a-4c21-9689-acc02968ebf3",
+    "parts": [ {
+      "text": "i'm calling about my account i need to know how many minutes i have left on my local calling"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6f646e38-bf2f-4208-87a7-a902afb6ebcd",
+    "parts": [ {
+      "text": "remaining time"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1869b0c2-2c2d-41f9-a6bd-9c74239e99aa",
+    "parts": [ {
+      "text": "i want to know how many minutes left i have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "969c68b4-ffcb-4570-a72f-b4d3909dec48",
+    "parts": [ {
+      "text": "how many minutes i have left on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7c255904-f264-457c-8be6-f8a77f952557",
+    "parts": [ {
+      "text": "i'm trying to call to see how many minutes i have left on my monthly bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b157eae6-2ec7-4e48-ae12-5e83fa596721",
+    "parts": [ {
+      "text": "how much time i have left on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0dde84ac-5f0a-4087-a366-e719daade627",
+    "parts": [ {
+      "text": "need to know how many minutes i have left"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "98ce4398-84a9-49fe-8495-278698200c46",
+    "parts": [ {
+      "text": "i wanna know how many minutes i have left on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0f6056c4-0135-48e2-9f09-005f0766bfee",
+    "parts": [ {
+      "text": "available minutes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2c86be11-edd3-4e79-9b37-fb59a940c7e4",
+    "parts": [ {
+      "text": "available phone minutes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4bb67c0b-d0d5-42a6-86c4-f2007b470183",
+    "parts": [ {
+      "text": "minutes used"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5b029b7b-f91c-4adf-98ff-c918e8a4cedb",
+    "parts": [ {
+      "text": "how much time i have left on my card"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dc717e2b-1f8b-4c4c-8660-ee52363d895d",
+    "parts": [ {
+      "text": "cellular data usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0f9471c2-4030-46b5-9db1-d6f892505c15",
+    "parts": [ {
+      "text": "telephone usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "676abda1-1b0d-4c2e-9d2e-cbb5ffe5c39e",
+    "parts": [ {
+      "text": "how many minutes i have left"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c1a563b5-320a-44b1-b208-7226ff3a6acd",
+    "parts": [ {
+      "text": "how much time do i have on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2e46b5df-430a-4173-8bf2-638ac0244151",
+    "parts": [ {
+      "text": "what is my usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "49f331cd-4e78-4da3-a7f6-31ef663edea4",
+    "parts": [ {
+      "text": "my minutes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b7425301-57e0-4181-af91-718496771c4d",
+    "parts": [ {
+      "text": "my usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4ef9c973-e6cc-4129-b27e-7f3669259a86",
+    "parts": [ {
+      "text": "minutes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3feccd68-4574-43ed-937b-f2c4121c3d7d",
+    "parts": [ {
+      "text": "data balance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f6ccb6b3-c074-4456-84e0-2682f2b2b3aa",
+    "parts": [ {
+      "text": "wanna find out how much data i have left"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3c912af-d2f2-4798-a8ec-718b200c8c83",
+    "parts": [ {
+      "text": "need to check my data how much data i have left"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "81ddb3b8-586d-4feb-a490-3e1f6c6feeca",
+    "parts": [ {
+      "text": "i wanna know why my data was so high today i haven't left the house and i'm on wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5054e645-9f5c-48e2-89c8-290ea7cb4982",
+    "parts": [ {
+      "text": "i'm calling about data usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e4b3461e-c11f-436d-ad3f-fc4d5e337a90",
+    "parts": [ {
+      "text": "i'm trying to check my data usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f68b2f04-579d-4736-8c9b-1d05f8dbf9cf",
+    "parts": [ {
+      "text": "i've been told i have no data left and i should have data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "876db268-1665-4349-9579-e204ab0d01e6",
+    "parts": [ {
+      "text": "remaining data left"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "978335fb-4f75-4c7c-aba6-4c53fc2b5a97",
+    "parts": [ {
+      "text": "how much do i have left for data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bd6b51f8-60ae-4646-9912-5c6ec9cdf52c",
+    "parts": [ {
+      "text": "to figure out my data usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "15fd08cd-9406-40fd-86c3-e09682938a1e",
+    "parts": [ {
+      "text": "can you let me know how much data i have left for this month please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8d9786f2-4a05-4c3e-8836-a7c3621ad046",
+    "parts": [ {
+      "text": "how much data i have left"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "25108d9f-2ccb-4501-b240-9ad99601fde9",
+    "parts": [ {
+      "text": "how much data left"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cbb3c320-1d46-40b5-b135-134311de067d",
+    "parts": [ {
+      "text": "how much is in my usage please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eb0d44ff-878b-45ec-b3d5-bc9c5642b00f",
+    "parts": [ {
+      "text": "telus"
+    }, {
+      "text": " mobile for internet usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0c6c20e4-246b-4409-b5ec-14b59d22a1e2",
+    "parts": [ {
+      "text": "data usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ba1e0a34-5e1b-4555-a942-0e248e6f2597",
+    "parts": [ {
+      "text": "check data usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9025ff82-fe93-4e77-8a41-59732dfe2bd4",
+    "parts": [ {
+      "text": "internet usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "69fa6e8d-0e56-4bff-9d63-9c4b9e0d6c55",
+    "parts": [ {
+      "text": "website"
+    }, {
+      "text": " not telling me what data i have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5c2e5341-a6ab-4a15-b966-fd195919496a",
+    "parts": [ {
+      "text": "how much have i used this month"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0c07fdb0-3ab7-4a33-8441-8fa7f6da7c11",
+    "parts": [ {
+      "text": "i have a problem with the usage of my gigabyte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "ea58412b-602c-4fff-b4b7-c9b3b3864549",
+  "displayName": "head_intent.plans_change",
+  "parameters": [ {
+    "id": "online_vs_app",
+    "entityType": "@online-vs-app"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  }, {
+    "key": "transactional",
+    "value": "transactional"
+  } ],
+  "description": "Customer wanting to change their rate plan.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 405
+}

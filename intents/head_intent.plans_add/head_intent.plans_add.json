@@ -1,0 +1,20 @@
+{
+  "name": "49ad08da-19fc-4bb7-ae65-f7dfe81aaa3e",
+  "displayName": "head_intent.plans_add",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  }, {
+    "key": "transactional",
+    "value": "transactional"
+  } ],
+  "description": "Customer wanting to add a plan.",
+  "numTrainingPhrases": 160
+}

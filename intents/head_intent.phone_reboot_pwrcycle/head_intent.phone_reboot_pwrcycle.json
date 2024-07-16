@@ -1,0 +1,18 @@
+{
+  "name": "89890888-a135-4782-b7df-812784a9f250",
+  "displayName": "head_intent.phone_reboot_pwrcycle",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about how to reboot phone or to power cycle (turning the phone on/off). ",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 137
+}
