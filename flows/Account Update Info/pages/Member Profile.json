@@ -1,0 +1,109 @@
+{
+  "name": "5a10356e-7cbe-4cc5-b41f-bcb4b4be5871",
+  "displayName": "Member Profile",
+  "form": {
+    "parameters": [ {
+      "displayName": "member_profile",
+      "required": true,
+      "entityType": "@member-profile",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "[get-member-profile]" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "[API - get-member-profile]" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't understand that. Please let me know if you are the account owner or manager in order to move forward with your account update." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ee1049d8-2758-4f13-ac49-cb514240e714"
+        }, {
+          "targetFlow": "Default Start Flow",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not sure I got this. Let's start over, can you try rephrasing one more time?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "456688cf-8c6b-4478-bd65-9251c89285cd"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding, let me transfer you to somebody else for more assistance. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2f340750-7a59-4895-af94-76ac688f48c1"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Are you an account owner, manager or member?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Êtes-vous le titulaire ou un membre du compte?" ]
+      },
+      "languageCode": "fr-ca"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.member_profile = \"member\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Denied Access",
+    "name": "d9c38f96-33ab-4ca0-bd66-8d062ac04963"
+  }, {
+    "condition": "$session.params.member_profile = \"owner\" OR $session.params.member_profile = \"manager\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Owner / Manager Edits",
+    "name": "387849f4-f64d-4633-bc52-745d46cbcab5"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+    
+    },
+    "name": "e6137215-57d2-4827-a1fa-4dcfa96b92c9"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "b8e25fc7-e697-44a5-8a09-de59b3f67ec6"
+  } ]
+}

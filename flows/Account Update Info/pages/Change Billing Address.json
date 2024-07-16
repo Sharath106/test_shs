@@ -1,0 +1,193 @@
+{
+  "name": "3cad1267-4fb9-4ac9-a959-f423ca697ffe",
+  "displayName": "Change Billing Address",
+  "form": {
+    "parameters": [ {
+      "displayName": "billing_address_dtmf",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like me to send a link with more information on this to your phone ? " ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive text link say or press 9 to speak to an agent press 0. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "8ea70cbc-ce74-441c-b762-030dcf298e94"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive text link say or press 9 to speak to an agent press 0. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "1c575fe4-4c5c-471a-b216-8a69cbe438fb"
+        }, {
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "b9e2e3df-1e18-4eff-bbf4-8fde5c210a68"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+          
+          },
+          "name": "ed0353a4-7a62-4230-8131-821d02e861e7"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+          
+          },
+          "name": "76a01971-42f1-4e5a-b386-fb7ad2f1dacc"
+        }, {
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "ae7f9c66-16cb-4534-911f-829435016500"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Changing your billing address is a transaction that is also available on our website TELUS mobility or the my telus App. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billing_address",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "9cf40b2a-7ac7-44a9-b98b-d4be0e9ee44d"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay.\n\n[SMS Placeholder]\nThanks for calling TELUS regarding changing your billing address. As requested, please click on the link below that will take you there. Please do not reply to this message as it is not monitored. https://www.telus.com/sms-ivr-adr-change-mob\n\n" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "smsurlid44"
+      } ]
+    },
+    "name": "92960114-2e6e-4ca8-836b-6d4ee46ba30e"
+  }, {
+    "condition": "$session.params.billing_address_dtmf = \"9\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay.\n\n[SMS Placeholder]\nThanks for calling TELUS regarding changing your billing address. As requested, please click on the link below that will take you there. Please do not reply to this message as it is not monitored. https://www.telus.com/sms-ivr-adr-change-mob\n" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "smsurlid33"
+      } ]
+    },
+    "name": "bcff1798-5d74-49be-a165-3f560c711d5c"
+  }, {
+    "condition": "$session.params.billing_address_dtmf = \"0\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "22d63076-8c94-4d36-8059-6b6a481c09fa"
+  }, {
+    "condition": "$session.params.billing_address_dtmf = 1 OR $session.params.billing_address_dtmf = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "billing_address_dtmf",
+        "value": null
+      }, {
+        "parameter": "changebillingadd_retrycnt",
+        "value": "$sys.func.ADD($session.params.changebillingadd_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "f73e810d-ceb5-45ff-9121-4e2c5f4843fa"
+  }, {
+    "condition": "$session.params.billing_address_dtmf = 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "billing_address_dtmf",
+        "value": null
+      }, {
+        "parameter": "billingaddress_retrycnt",
+        "value": "$sys.func.ADD($session.params.billingaddress_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "cb50dfa9-b813-4faa-a7ab-1aae8fa38626"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+    
+    },
+    "name": "8861a9db-093d-4d60-bb37-a8e5ad350179"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "72e689b2-4ee0-49f2-bb9d-45e1c7fdade6"
+  } ]
+}

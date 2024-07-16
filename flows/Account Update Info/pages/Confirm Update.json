@@ -1,0 +1,49 @@
+{
+  "name": "ad23c65c-c0fa-4ebf-b838-e80fa9f42fb9",
+  "displayName": "Confirm Update",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Can I add your $session.params.update_account_info change to your account now?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I have successfully updated your account information!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "69db8ee9-e371-4af2-8ca1-14e901720924"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Anything Else",
+    "name": "8cf578a4-c5c7-4c85-a4f3-fe3904c74bfc"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+    
+    },
+    "name": "95105d5d-bd90-42fe-8006-6c66d4130b0d"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "b1cd8de7-35b4-49c0-92ef-4cb384b8be0e"
+  } ]
+}

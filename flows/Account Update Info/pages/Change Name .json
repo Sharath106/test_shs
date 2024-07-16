@@ -1,0 +1,70 @@
+{
+  "name": "7b9ae83d-c72a-40b1-acc5-58deab35bbc7",
+  "displayName": "Change Name ",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Have you already submitted a copy of your name change paperwork?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Avez-vous déjà soumis une copie de vos documents de changement de nom?" ]
+      },
+      "languageCode": "fr-ca"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Since you have already submitted the paper work then we can proceed. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Parfait! Nous pouvons procéder puisque vous avez déjà soumis le document." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "New Name ",
+    "name": "dfba1d44-ef53-4adc-a0cb-6341e9a50b69"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "In order to legally change your name, government agencies require a court order as official proof of a name change. If you wish to change your legal company name, please login to your My TELUS account and complete a Business Service Request.   " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Afin de changer légalement votre nom, les organismes gouvernementaux exigent une ordonnance du tribunal comme preuve officielle d'un changement de nom. \nSi vous souhaitez changer le nom légal de votre entreprise, veuillez ouvrir une session dans votre compte Mon Telus et remplir une demande de services Affaires." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "41d38a73-1748-4289-a159-64a5194ea480"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+    
+    },
+    "name": "1aeb07a0-b2c9-434e-ad7b-dda44c0c5aa2"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "0b911466-bba1-41e2-ae66-efec8839ebe2"
+  } ],
+  "transitionRouteGroups": [ "Contextual Intents - Account Update Info" ]
+}

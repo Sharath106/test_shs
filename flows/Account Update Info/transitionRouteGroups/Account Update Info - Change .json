@@ -1,0 +1,11 @@
+{
+  "name": "9656bfa6-e10f-4aac-830d-3178f16abc4b",
+  "displayName": "Account Update Info - Change ",
+  "transitionRoutes": [ {
+    "intent": "supplemental.switch_shipping_address",
+    "triggerFulfillment": {
+    
+    },
+    "name": "31d9d5f0-93b3-4783-9c37-1f0dc290358b"
+  } ]
+}

@@ -1,0 +1,138 @@
+{
+  "name": "3a5040f9-7735-458e-a1a1-20773ce428f9",
+  "displayName": "Change Email",
+  "form": {
+    "parameters": [ {
+      "displayName": "new_email",
+      "required": true,
+      "entityType": "@sys.email",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Veuillez saisir votre nouvelle adresse courriel afin que je puisse mettre à jour votre compte." ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Please enter your new email address, so I can update your account." ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Veuillez saisir votre nouvelle adresse e-mail afin que je puisse mettre à jour votre compte." ]
+            },
+            "languageCode": "fr"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'avais pas compris cela. Entrez votre nouvelle adresse courriel, s'il vous plaît!" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't catch that. Please enter your new email address again. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "1e419574-36dc-4ce1-a55f-5c41fd09a6ff"
+        }, {
+          "targetFlow": "Default Start Flow",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je ne comprends toujours pas. On recommence. Pouvez-vous reformuler cela pour moi?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I still don't quite understand. Let's start over, can you rephrase that again for me?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a37ba1ba-2c06-4d55-8e2d-63384db023df"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas. Laissez-moi vous mettre en communication avec un autre agent pour plus d'assistance!" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding, let me transfer you to somebody else for more assistance. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2e386110-870d-48ce-bc56-47a0ffd842de"
+        } ]
+      },
+      "redact": true,
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Merci d'avoir fourni votre nouvelle adresse courriel ; $session.params.new_email. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je rajouterai cette nouvelle information à votre compte maintenant." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Thank you for providing your new email address; $session.params.new_email. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I will add this new information to your account now." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Merci d'avoir fourni votre nouvelle adresse e-mail." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "targetPage": "Confirm Update",
+    "name": "cc2ca14c-9971-433e-bea2-3dfa005dbc2b"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+    
+    },
+    "name": "f352d899-bf7c-4821-9909-9165240aaa2d"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "01486456-e6b2-408a-a015-fa66d6200fe5"
+  } ]
+}

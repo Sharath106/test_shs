@@ -1,0 +1,139 @@
+{
+  "name": "134078bb-5171-48a0-b523-409cb3a2caa9",
+  "displayName": "Owner / Manager Edits",
+  "form": {
+    "parameters": [ {
+      "displayName": "update_account_info",
+      "required": true,
+      "entityType": "@update-account-info",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "I would be happy to assist you with updating a phone number, name change, billing address, or email address. Which would you like to update?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I missed that. Which piece of account information would you like to modify?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4b2e5b53-641a-450f-89e6-06149e2a3e6b"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I'm still not getting that. Would you like to modify your phone number, name, billing address, or email address? " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2c9ce731-5bf8-4805-aaa3-169a02d7308b"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding, let me transfer you to somebody else for more assistance. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5aff0c95-e598-42f7-931d-96417f34242b"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Since you are the owner / manager of the account, we can proceed with updating your account information. " ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "[API] Puisque vous êtes le titulaire/gestionnaire du compte, nous pouvons procéder à la mise à jour des informations de votre compte." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Comment puis-je vous aider aujourd'hui?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "[API] Puisque vous êtes le propriétaire/gestionnaire du compte, nous pouvons procéder à la mise à jour des informations de votre compte.", "Comment puis-je vous aider aujourd'hui ?" ]
+      },
+      "languageCode": "fr"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.update_account_info = \"name\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Name ",
+    "name": "921910e5-e691-4ada-b2cf-cef3acfca482"
+  }, {
+    "condition": "$session.params.update_account_info = \"email address\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Email",
+    "name": "f36caf9d-bd0f-443e-9253-a07b21e387e0"
+  }, {
+    "condition": "$session.params.update_account_info = \"billing address\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Billing Address",
+    "name": "3ff07085-5763-44bb-8f2c-c890aefef637"
+  }, {
+    "condition": "$session.params.update_account_info = \"line\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Phone Number",
+    "name": "14ef7c2b-d97d-4387-8b6c-4f70d6743882"
+  }, {
+    "condition": "$session.params.update_account_info = \"shipping address\" OR $session.params.from_flow = \"equipment_upgrades\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please enter your new shipping address so I can update your account " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7f56c2d1-412a-48b5-9d5e-9aa9d56aef92"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+    
+    },
+    "name": "d0565558-88de-4b44-80e1-30cf4edd7b2f"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "5a7cc5d6-220a-4440-a77a-cac8edd0a13b"
+  } ],
+  "transitionRouteGroups": [ "Contextual Intents - Account Update Info" ]
+}

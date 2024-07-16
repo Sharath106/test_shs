@@ -1,0 +1,74 @@
+{
+  "name": "3a662170-e777-4f70-8e08-da96ece925f3",
+  "displayName": "Denied Access",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "[API] Based on your profile as a member, you do not have access to update account information." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Please contact the owner or manager of the account for further assistance to change any account information. \n\nIs there anything else I can assist you with today?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "[API] D'après votre profil de membre, vous n'avez pas accès à la mise à jour des informations du compte." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Veuillez contacter le titulaire ou le gestionnaire du compte pour obtenir de l'aide afin de modifier les informations du compte.\n\nEst-ce que je peux vous aider avec autre chose aujourd'hui?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "[API] Sur la base de votre profil en tant que membre, vous n'avez pas accès à la mise à jour des informations de compte.", "Veuillez contacter le propriétaire ou le gestionnaire du compte pour obtenir de l'aide afin de modifier les informations du compte." ]
+      },
+      "languageCode": "fr"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Anything Else",
+    "name": "756fbc1b-682c-499f-86cf-d6ca47ec463e"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "58d75e05-7b1e-425b-8380-f72c15ba52b5"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please have the account owner contact TELUS in order to update your account information." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Veuillez s'il vous plaît demander au titulaire ou au gestionnaire du compte de contacter TELUS afin de mettre à jour les informations du compte." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "6274d5f1-3929-4fa3-a722-9129c8a68093"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "796c077e-fb47-480b-a8ba-b8b1fee9aa4f"
+  } ]
+}

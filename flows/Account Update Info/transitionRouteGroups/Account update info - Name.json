@@ -1,0 +1,90 @@
+{
+  "name": "83c35e53-79e6-452b-9485-f43f2cc38653",
+  "displayName": "Account update info - Name",
+  "transitionRoutes": [ {
+    "intent": "supplemental.change_customer_display_name",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\"Unfortunately, the Outbound Calling Name Display uses your billing account name and it cannot be customized. You can remove this feature from your account online so that only your phone number shows. \n\nOtherwise, you can also block your Outbound Calling Name Display by dialing #31# before the phone number you're trying to call. This way you can decide which calls show your name or not.\"" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Malheureusement, l'affichage du nom des appels sortants utilise le nom sur votre compte de facturation et il ne peut pas être personnalisé. Vous pouvez supprimer cette fonction de votre compte en ligne afin que seul votre numéro de téléphone s'affiche.\n\nSinon, vous pouvez également bloquer l'affichage du nom des appels sortants en composant #31# avant le numéro de téléphone que vous essayez d'appeler. De cette façon, vous pouvez décider quels appels affichent votre nom ou non." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "bf840fe7-b9ba-463e-b785-744c6b13a4b6"
+  }, {
+    "intent": "supplemental.change_name_on_account",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\"You can complete a name change via the website by sending your legal name change documents. Have you tried this yet?\n\n(YES) - In this case, let me get you to a live agent.\n(NO) - Click here to get started [https://www.telus.com/en/support/contact-us/escalations]\n1.        Log into you My TELUS account.\n2.        Fill out the form and select “Email” as the contact method.\n3.        In the “Comments” section, enter the following: “Legal name change. Please reply to this email so I can reply and attach a copy of my legal name change.”\nNote: An agent will reply within 48 hours of your request, and you will be able to attach a copy of your legal name change document.\n\"" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Vous pouvez effectuer un changement de nom via le site Internet en envoyant vos documents de changement de nom légal. Avez-vous déjà essayé?\n\n(OUI) - Dans ce cas, laissez-moi vous mettre en contact avec un agent.\n\n(NON) - Cliquez ici pour commencer.[https://www.telus.com/en/support/contact-us/escalations]\n1.        Connectez-vous à votre compte Mon TELUS\n2.        Remplissez le formulaire et sélectionnez « Courriel » comme méthode de contact\n3.        Dans la section « Commentaires », entrez ce qui suit : « Changement de nom légal. Veuillez répondre à ce courriel afin que je puisse répondre et joindre une copie de mon changement de nom légal. »\n\nRemarque : Un agent vous répondra dans les 48 heures suivant votre demande, et vous pourrez joindre une copie de votre document de changement de nom légal." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "934c124e-3441-4910-a084-0ab583f926d0"
+  }, {
+    "intent": "supplemental.change_name_on_billing",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Any changes made to your name on the account will reflect on your next bill." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Toute modification apportée à votre nom sur le compte apparaîtra sur votre prochaine facture." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "6deb0088-5c34-4d0b-9b9e-e02c27192507"
+  }, {
+    "intent": "supplemental.change_name_on_home_service",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Unfortunately, I do not have access to change your name on your Home Services account. Let me get you to an agent to complete that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Malheureusement, je n'ai pas accès à la modification de votre nom sur votre compte de services résidentiels. Laissez-moi vous mettre en contact avec un agent pour le faire." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "b8d457d7-597b-4211-86dd-ec8a0e1247d7"
+  }, {
+    "intent": "supplemental.change_other_users_names_on_account",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\"You can change the name each subscriber on your account online: \n1. Log into your My TELUS acocunt here [https://www.telus.com/my-account/profile/manage?INTCMP=Tcom_VirtualAssistant\u0026linktype=virtual_assistant]\n2. Select \"\"Change subscriber name\"\".\n3. Fill out the information, and Save your changes.\"" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Vous pouvez modifier le nom de chaque abonné sur votre compte en ligne : \n\n1. Connectez-vous à votre compte Mon TELUS ici [https://www.telus.com/my-account/profile/manage?INTCMP=Tcom_VirtualAssistant\u0026linktype=virtual_assistant]\n2. Sélectionnez « Changer le nom de l'abonné »\n3. Remplissez les informations, puis enregistrez vos modifications" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "3323f503-6bdc-4d84-90b3-7e8a95ad30ba"
+  } ]
+}
