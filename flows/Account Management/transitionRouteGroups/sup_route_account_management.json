@@ -1,0 +1,211 @@
+{
+  "name": "5a895abe-302a-483e-a79b-1ad0046dbd70",
+  "displayName": "sup_route_account_management",
+  "transitionRoutes": [ {
+    "intent": "head_intent.account_change_number",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Phone Number",
+    "name": "49cc6d5e-0039-4b7a-852e-dd851a32198f"
+  }, {
+    "intent": "head_intent.change_security_question",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Security Question",
+    "name": "c9a507b1-094b-4f8f-beb0-450d3c015a70"
+  }, {
+    "intent": "head_intent.change_pin",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change PIN",
+    "name": "26f2b8b6-5674-40a6-9253-3dc8def3847a"
+  }, {
+    "intent": "head_intent.lost_stolen_phone",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Lost and Stolen or Find Phone",
+    "name": "92d7165d-0b4d-4c75-a6b6-1e66db0176d8"
+  }, {
+    "intent": "head_intent.phone_found",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Phone Found",
+    "name": "b587cf82-51d6-4304-99d2-fc2329b0aa76"
+  }, {
+    "intent": "head_intent.notifications",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Notifications",
+    "name": "d524b08a-f239-4f88-9ec0-0a2043c32de8"
+  }, {
+    "intent": "head_intent.account_transfer_ownership",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Transfer of ownership",
+    "name": "4d99500c-728a-475c-9ca5-6dee1545001e"
+  }, {
+    "intent": "head_intent.suspend",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Suspend",
+    "name": "7e4324fd-9637-4a5e-accb-9b7d1e2275ec"
+  }, {
+    "intent": "head_intent.account_reconnect_service",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Reinstate Service",
+    "name": "5607487d-175a-4e7c-8fb0-084b8d425764"
+  }, {
+    "intent": "head_intent.vacation_disconnect_resume",
+    "triggerFulfillment": {
+    
+    },
+    "name": "739cf572-a3d2-4d5c-9872-cae08fd3a17c"
+  }, {
+    "intent": "head_intent.notifications",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Notifications",
+    "name": "0da9756c-01ae-49e6-883b-a5374a8564c3"
+  }, {
+    "intent": "head_intent.plans_add_feature",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "add_a_feature"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "1611a8b3-4999-4750-aae3-2a692f0b3817"
+  }, {
+    "intent": "head_intent.plans_remove_feature",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "remove_a_feature"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "59ed5c47-7429-4d26-ab87-453ee96347af"
+  }, {
+    "intent": "head_intent.phone_reboot_pwrcycle",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "\"\"phone_reboot\"\""
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "09d71acb-5447-400b-864a-82fc629aed27"
+  }, {
+    "intent": "head_intent.plans_change",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Test" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "rate_plan_change"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "dbcc2428-aef0-4b76-8d92-f2e8ab5df049"
+  }, {
+    "intent": "head_intent.account_update_info",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Account update info",
+    "name": "cb85a396-1a91-4d12-8ab6-6e2698604626"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, how else can I help?", "No problem, what else can I help with?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, comment puis-je vous aider?", "Pas de problème, avec quoi d'autre puis-je vous aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "8f812eee-cf3c-4d41-b49c-1965ee13275c"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great. ", "Sounds good. ", "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème.", "Génial." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "b670a67e-2637-4ec1-a110-cd45bdf8b3fc"
+  }, {
+    "intent": "head_intent.password",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "1eee39de-439c-48e0-a092-2a11a01c5b2f"
+  }, {
+    "intent": "head_intent.view_csa_contract",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "View CSA"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "2948c414-a299-42cc-a3cd-bb7de2864b8b"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "04d3b40e-d7dc-430d-a794-34d4d6aab9dc"
+  }, {
+    "intent": "head_intent.payment_make",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "33865e37-59a2-4c5d-836c-b770894d8fec"
+  }, {
+    "intent": "head_intent.troubleshoot_data_not_working",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "data_not_working"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "756b1268-b549-498f-ad6f-88bdf58abd98"
+  } ]
+}
