@@ -1,0 +1,35 @@
+{
+  "entities": [ {
+    "value": "blind",
+    "synonyms": [ "accessibilité visuelle", "aveugle", "aveugles", "basse vision", "braille", "gros caractères", "gros format", "malvoyant", "malvoyante", "ne peut pas voir", "ne vois pas", "probleme avec mes yeux", "problème avec mes yeux", "probleme de la vision", "probleme de vision", "problème de vision", "probleme de visions", "probleme de yeux", "problème de yeux", "problemes avec mes yeux", "problèmes avec mes yeux", "problemes de la vision", "problèmes de la vision", "problèmes de vision", "problemes de vue", "problèmes de vue", "problemes de yeux", "problèmes de yeux", "solution visuelle", "solutions visuelles", "trouble de la vision", "trouble visuel", "troubles de la vision", "troubles visuels", "vision", "visuel", "visuelle", "visuels" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "cognitive",
+    "synonyms": [ "alteration des fonctions cerebrales", "altération des fonctions cérébrales", "cognitif", "cognitifs", "cognitive", "déficience", "fragilite cognitiev", "fragilité cognitive", "mémoir", "memoire", "mémoire", "mobilite", "mobilité", "mobilite reduite", "mobilité réduite", "mouvement", "perception", "perte de mémoire", "pertes de mémoire", "probleme cognitif", "problème cognitif", "probleme de mobilite", "problème de mobilité", "problemes cognitifs", "problèmes cognitifs", "problemes de mobilite", "problèmes de mobilité", "solution cognitive", "solution pour mobilite reduite", "solution pour mobilité réduite", "solutions", "solutions cognitives", "solutions pour mobilite reduite", "solutions pour mobilité réduite", "trouble cognitif", "trouble de la memoire", "trouble de la mémoire", "trouble de la perception", "troubles cognitifs", "troubles de la memoire", "troubles de la mémoire", "troubles de la perception", "accessibilité cognitive" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "hearing",
+    "synonyms": [ "accessibilité auditive", "audience", "audio", "auditif", "auditifs", "auditive", "auditives", "déficience auditive", "handicap auditif", "hearing", "malentendant", "malentendante", "malentendantes", "malentendants", "oreille", "oreilles", "ouie", "ouïe", "probleme auditif", "problème auditif", "probleme avec mes oreilles", "problème avec mes oreilles", "problemes avec mes oreilles", "problèmes avec mes oreilles", "solution auditive", "solutions auditives", "sourd", "trouble auditif", "troubles audio", "troubles audios", "troubles auditifs" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "speech",
+    "synonyms": [ "defaut d'elocution", "défaut d'élocution", "desordre", "désordre", "discours", "discours", "maladie", "parlant", "parler", "parole", "paroles", "probleme d'elocution", "problème d'élocution", "solution pour la parole", "solutions pour la parole", "speech", "trouble", "trouble de la parole", "trouble de parole", "troubles de la parole" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "agent", "dtmf_digits_0", "membre de l'équipe", "opérateur" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3" ],
+    "languageCode": "fr-ca"
+  } ]
+}

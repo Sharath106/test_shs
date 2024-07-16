@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "blind",
+    "synonyms": [ "blind", "aveugle", "ne peut pas voir", "basse vision", "braille", "malvoyant" ],
+    "languageCode": "fr"
+  }, {
+    "value": "cognitive",
+    "synonyms": [ "cognitive", "cognitif", "mouvement", "mobilité" ],
+    "languageCode": "fr"
+  }, {
+    "value": "hearing",
+    "synonyms": [ "hearing", "audience", "sourd", "malentendant", "déficience auditive" ],
+    "languageCode": "fr"
+  }, {
+    "value": "speech",
+    "synonyms": [ "speech", "troubles de la parole", "discours", "discours", "parlant", "trouble de la parole", "troubles de la parole", "discours" ],
+    "languageCode": "fr"
+  } ]
+}
