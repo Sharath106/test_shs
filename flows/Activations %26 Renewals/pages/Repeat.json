@@ -1,0 +1,396 @@
+{
+  "name": "31b114e7-d747-4ae0-805e-83f5893a0d3e",
+  "displayName": "Repeat",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.repeat_counter = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": 0
+      } ]
+    },
+    "name": "8b5accab-2217-46ba-9633-1516c8895001"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e= 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": "$sys.func.ADD($session.params.repeat_counter,1)"
+      } ]
+    },
+    "name": "13e9195e-9421-4050-a90f-a75048f8d43e"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e 5",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For further assistance, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je peux vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "0aba8e99-308d-4002-9542-454d0be55368"
+  }, {
+    "condition": "$session.params.last_page = \"Apple Care plus\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Apple Care plus",
+    "name": "93389d78-7423-4f2c-bf73-6585899cf476"
+  }, {
+    "condition": "$session.params.last_page = \"Bring It Back information\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bring It Back information",
+    "name": "ee2b25a3-20b0-4764-b5f6-138467cd85e3"
+  }, {
+    "condition": "$session.params.last_page = \"Contact Webstore\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Contact Webstore",
+    "name": "f02acaf9-e57e-4d5e-89da-8835eef39f93"
+  }, {
+    "condition": "$session.params.last_page = \"Device Care Complete\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Device Care Complete",
+    "name": "0f872cc1-9b69-4281-9c75-595c991bef7e"
+  }, {
+    "condition": "$session.params.last_page = \"Legal age\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Legal age",
+    "name": "b707c63f-c115-4539-866c-6d1ff34d79c9"
+  }, {
+    "condition": "$session.params.last_page = \"New phone No contract EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New phone No contract EPP",
+    "name": "8f11d734-bcb2-417a-885f-349b023d5066"
+  }, {
+    "condition": "$session.params.last_page = \"No corporate email EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No corporate email EPP",
+    "name": "d2add883-c49a-401c-af77-428f45ebd38b"
+  }, {
+    "condition": "$session.params.last_page = \"Online purchase receipt\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Online purchase receipt",
+    "name": "c44b01fc-ffc4-4c03-8b55-07fbfd5cb72f"
+  }, {
+    "condition": "$session.params.last_page = \"Order issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Order issues",
+    "name": "41ff6e1e-9399-42b4-a226-5911ff372ac7"
+  }, {
+    "condition": "$session.params.last_page = \"Order issues EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Order issues EPP",
+    "name": "b94084cd-3fc3-4208-aad4-7d02c468e663"
+  }, {
+    "condition": "$session.params.last_page = \"Order status\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Order status",
+    "name": "8a067e71-bc01-4ed4-91ef-3cc077e32077"
+  }, {
+    "condition": "$session.params.last_page = \"Renewal\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Renewal",
+    "name": "366cb770-1fb8-4e06-956b-52850c46b0cd"
+  }, {
+    "condition": "$session.params.last_page = \"Accessories purchase\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Accessories purchase",
+    "name": "a3b32c68-10de-486a-a00a-571e1cf2f4d2"
+  }, {
+    "condition": "$session.params.last_page = \"Activate device\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Activate device",
+    "name": "472e9afa-1cfd-4e90-a28b-1e57da53db9d"
+  }, {
+    "condition": "$session.params.last_page = \"Available phones\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Available phones",
+    "name": "2068673b-4297-40fa-bd70-3150ca3696cf"
+  }, {
+    "condition": "$session.params.last_page = \"Available promotions\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Available promotions",
+    "name": "2040e996-fbbf-4498-be38-844d320a619f"
+  }, {
+    "condition": "$session.params.last_page = \"Bring it Back returns\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bring it Back returns",
+    "name": "ba2b7226-b5b9-462d-95f8-1dfd1964e377"
+  }, {
+    "condition": "$session.params.last_page = \"Certified pre owned\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Certified pre owned",
+    "name": "f9e78774-c824-40eb-8c52-b3072e243c93"
+  }, {
+    "condition": "$session.params.last_page = \"Connection fee\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Connection fee",
+    "name": "09750390-c71e-43cd-b23b-6309f01dc681"
+  }, {
+    "condition": "$session.params.last_page = \"Device Discount Balance\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Device Discount Balance",
+    "name": "f4c7f24a-5c2e-4f51-946d-8cc01f9a5001"
+  }, {
+    "condition": "$session.params.last_page = \"Device trade in\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Device trade in",
+    "name": "d599f59c-47d6-47c3-a25f-72e1c04dcaef"
+  }, {
+    "condition": "$session.params.last_page = \"Easy Payment Balance\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Easy Payment Balance",
+    "name": "40514616-1ceb-4a81-862b-df2958c7dc46"
+  }, {
+    "condition": "$session.params.last_page = \"Easy Payment Balance online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Easy Payment Balance online or app",
+    "name": "a84f06f6-d82a-4928-b598-f5b3391dd668"
+  }, {
+    "condition": "$session.params.last_page = \"Easy Payment info\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Easy Payment info",
+    "name": "dd5ed0f3-efbc-4c04-9fdc-bdd4cc0686cf"
+  }, {
+    "condition": "$session.params.last_page = \"Extended warranty\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Extended warranty",
+    "name": "ab5b45ee-bdc8-4691-9b33-3b4cd3177e2f"
+  }, {
+    "condition": "$session.params.last_page = \"How to view CSA or Contract\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "How to view CSA or Contract",
+    "name": "536de809-b4b2-4131-98a6-d8dc7dd379f6"
+  }, {
+    "condition": "$session.params.last_page = \"How to view CSA or Contract online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "How to view CSA or Contract online or app",
+    "name": "495b7a54-2fa7-4e67-9ef5-59909c21040b"
+  }, {
+    "condition": "$session.params.last_page = \"New activation\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New activation",
+    "name": "f49b9c9b-79cd-4507-a35a-1e24f547b1aa"
+  }, {
+    "condition": "$session.params.last_page = \"New activation no sim\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New activation no sim",
+    "name": "e1cfbcb6-dd77-4853-808a-09956f75b4bb"
+  }, {
+    "condition": "$session.params.last_page = \"New activation no sim online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New activation no sim online or app",
+    "name": "6a042e48-9538-411e-a5c6-7cb6759a562b"
+  }, {
+    "condition": "$session.params.last_page = \"New activation no sim second SMS attempt\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New activation no sim second SMS attempt",
+    "name": "9e88f310-442b-47fc-ba2a-05f3f88faec7"
+  }, {
+    "condition": "$session.params.last_page = \"New phone No contract\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New phone No contract",
+    "name": "1163f6ff-8823-4a16-895f-917a61d73864"
+  }, {
+    "condition": "$session.params.last_page = \"New phone or BYOD\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New phone or BYOD",
+    "name": "b5d02a76-0cdb-4801-b2b7-efbefc6d1f06"
+  }, {
+    "condition": "$session.params.last_page = \"New phone or BYOD Text\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New phone or BYOD Text",
+    "name": "db079db1-9741-4083-bb41-dead950f45b4"
+  }, {
+    "condition": "$session.params.last_page = \"Pay out device balance\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Pay out device balance",
+    "name": "d27bf4b6-339b-4a41-8c51-0f6f3c7d13a3"
+  }, {
+    "condition": "$session.params.last_page = \"Porting In\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Porting In",
+    "name": "473c2447-1709-46ba-a5b7-f3aa43e51681"
+  }, {
+    "condition": "$session.params.last_page = \"Porting process\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Porting process",
+    "name": "b9a7934f-f9d9-4bc3-a4ad-181bac9be777"
+  }, {
+    "condition": "$session.params.last_page = \"Price match\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Price match",
+    "name": "029c6171-cbca-427f-aa85-3bfa505ccd8c"
+  }, {
+    "condition": "$session.params.last_page = \"Renewal or Add a line eligibility\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Renewal or Add a line eligibility",
+    "name": "29670c27-65d8-4b95-b454-575378a7a478"
+  }, {
+    "condition": "$session.params.last_page = \"Smart watches\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Smart watches",
+    "name": "6e8c4f88-9e09-4832-a7e6-07a58ad2b6ae"
+  }, {
+    "condition": "$session.params.last_page = \"Smart watches Text\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Smart watches Text",
+    "name": "b3aba1ac-c6e6-4f9d-87bb-6386a05f1d31"
+  }, {
+    "condition": "$session.params.last_page = \"Store locator\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Store locator",
+    "name": "860d4255-cc07-410b-a27d-abf44fdb5cb1"
+  }, {
+    "condition": "$session.params.last_page = \"Tablet purchase\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tablet purchase",
+    "name": "7e415216-cdb0-44c9-bdd3-52a010590248"
+  }, {
+    "condition": "$session.params.last_page = \"When will offer expire\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "When will offer expire",
+    "name": "d291936e-c5fd-437d-92ac-23baeff76df2"
+  }, {
+    "condition": "$session.params.last_page = \"Available phones EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Available phones EPP",
+    "name": "c400aa9e-c907-450a-91c9-cad42cc5fc6b"
+  }, {
+    "condition": "$session.params.last_page = \"Available promotions EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Available promotions EPP",
+    "name": "9192e658-c0ab-436a-b6c2-30738e5510c6"
+  }, {
+    "condition": "$session.params.last_page = \"Tablet purchase EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tablet purchase EPP",
+    "name": "fd4d70b0-4a57-4d8a-abec-6bc76a168481"
+  }, {
+    "condition": "$session.params.last_page = \"Connection fee EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Connection fee EPP",
+    "name": "10344970-7cc6-48b7-aea3-5bc9e6b0d415"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hmm I didn't quite get that. Could you tell me once more what I can help you with?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Hmm, je n'ai pas bien compris. Pouvez-vous me dire une fois de plus comment je peux vous aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "7a6d2565-0f5b-4440-a2ee-e050965dc1ce"
+  } ]
+}

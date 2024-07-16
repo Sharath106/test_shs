@@ -1,0 +1,395 @@
+{
+  "name": "4b897a84-cba4-457d-aa63-ae555dd7db0e",
+  "displayName": "How to view CSA or Contract online or app",
+  "form": {
+    "parameters": [ {
+      "displayName": "online_vs_app",
+      "required": true,
+      "entityType": "@online-vs-app",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you rather My TELUS app, or online instructions?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "aa67fbd5-0855-4da0-97dd-9cea0cb299b0"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive instructions, say app, or press 1. online, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "15080967-1b83-4b31-88d9-e5c2cddf0edc"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "ea19ef78-c4af-465d-8600-0ef3be6ff4d5"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you rather My TELUS app, or online instructions?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris.", "Je suis désolé, je ne suis pas certain de comprendre.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "fa9d4d98-6564-4a1e-a53d-032fd1649902"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive instructions, say app, or press 1. online, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "78a8b89b-bdd4-4876-af1d-1ea581919a6c"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "b361f7ef-3997-44b4-8269-db98681942c9"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "How to view CSA or Contract online or app"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.viewcsa_retrycnt = null OR $session.params.viewcsa_retrycnt = 0) AND $session.params.online_vs_app = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Would you rather My TELUS app or online instructions?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.viewcsa_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Would you rather My TELUS app or online instructions?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.viewcsa_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To receive instructions, say app, or press 1. online, or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319014A"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900T0"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "b47fda11-976b-45c9-aa19-01c9b3f53a55"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319014A"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900T0"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "c4c221da-9725-419b-b91f-a8acbbf50f9d"
+  }, {
+    "condition": "$session.params.online_vs_app = \"app\" OR $session.params.online_vs_app = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319014A"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900T0"
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "e424c040-a7dd-410a-825c-12d63e6d4014"
+  }, {
+    "condition": "$session.params.online_vs_app = \"online\" OR $session.params.online_vs_app = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900FS"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900UY"
+      }, {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "online"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "167e7749-5258-413f-b901-ae2a4b2c221f"
+  }, {
+    "condition": "$session.params.online_vs_app = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, demandons à quelqu'un de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "f4811100-f9cb-489d-ba8e-502f3109bd9f"
+  }, {
+    "condition": "$session.params.viewcsa_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "6691b935-d7ea-4a7a-9fb6-a0143bcd4b65"
+  }, {
+    "condition": "$session.params.viewcsa_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "495222f8-1854-47a9-bbe0-865b163f820b"
+  }, {
+    "condition": "$session.params = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "viewcsa_retrycnt",
+        "value": "$sys.func.ADD($session.params.viewcsa_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "fd14a56c-1246-4d89-a407-1ebe924c106d"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": "$sys.func.ADD($session.params.viewcsa_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.viewcsa_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.viewcsa_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "b45bf8a3-1f37-4c46-a17b-acf30274c381"
+  } ]
+}

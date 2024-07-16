@@ -1,0 +1,127 @@
+{
+  "name": "2992723f-3402-49bf-9c9c-ffccf08a630e",
+  "displayName": "Bring It Back information",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Bring It Back information"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "our Bring it Back program"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "concernant L'Option Retour"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "Understanding how bring it back works"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "Comprendre le fonctionnement de l'option de retour"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To know more about the bring it back program, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour en savoir plus sur l'option de retour d'appareil, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "The Bring-It-Back program with mobility services allows you to lower the upfront cost of a new device, when you agree to return it at the end of your term." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "When it’s time to renew again, you can choose to either pay back the amount you received up front, or bring the device back to any TELUS store, or participating retailer or dealer." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "L'Option Retour permet de réduire le coût initial d'un nouveau téléphone lorsque vous acceptez de retourner votre téléphone à la fin du contrat." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Lorsqu’il est temps de renouveler, vous pouvez choisir de rembourser le montant que vous avez reçu à l'avance ou retourner l'appareil dans une boutique TELUS ou tout autre détaillant autorisé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900T9"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900JG"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "9b4b1133-5db4-40a8-aaf5-633b905135ba"
+  } ],
+  "transitionRouteGroups": [ "supp_routes" ]
+}

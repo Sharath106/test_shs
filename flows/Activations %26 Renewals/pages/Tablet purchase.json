@@ -1,0 +1,176 @@
+{
+  "name": "337f72aa-8619-4306-ab95-da7bd7f74082",
+  "displayName": "Tablet purchase",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Tablet purchase"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "our tablets"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "nos tablettes"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "Buying a tablet"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "Faire l'achat d'une tablette"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour acheter une tablette, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To purchase a tablet, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "TELUS offre une variété de tablettes et de forfaits pour tablette, incluant le financement avec le programme Paiements Faciles de TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS has a variety of tablets and tablet rate plans to choose from, including financing a tablet through a TELUS Easy Payment program." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.plans_available",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "available_plans"
+      }, {
+        "parameter": "tabletpurchase_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_tablet_purchase",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "d6c11a56-2685-44a7-b9c3-5d527865d7b5"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190103"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319016N"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "6fbae7bb-2653-46b7-bb8f-c9ae101dba89"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "tabletpurchase_retrycnt",
+        "value": "$sys.func.ADD($session.params.tabletpurchase_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.tabletpurchase_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.tabletpurchase_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "293739aa-387f-46b5-824f-4d5d5e8e479c"
+  } ]
+}

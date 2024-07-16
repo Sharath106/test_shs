@@ -1,0 +1,301 @@
+{
+  "name": "5641f324-e520-44da-8e67-c47eb349b6b3",
+  "displayName": "BIB_Active_Device_info",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Souhaitez-vous en savoir plus sur cet appareil ? Sinon, je peux également vous aider avec des instructions, sur la façon de retourner un appareil ou sur les nouveaux forfaits disponibles." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Would you like to know more about this device ? if not I can also help you with instruction, on how to return a device, or new plans available." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.bib_plans_offered = true OR $session.params.morethanthreemonths = true OR $session.params.offeredbibinfo = true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_vague"
+      }, {
+        "parameter": "from_flow",
+        "value": "Default Start Flow"
+      } ]
+    },
+    "targetFlow": "Plans Available",
+    "name": "c24ee4a5-3059-4d07-ac5e-dea1ccb7459b"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.bib_plans_offered = true OR $session.params.morethanthreemonths = true OR $session.params.offeredbibinfo = true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "64ddfd0d-fb31-45c9-9e4d-db62b7e138a6"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.AttemptCounter \u003c 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003eJe vois un, \u003cprosody rate=\".80\"\u003e$sys.func.SUBSTITUTE($sys.func.SUBSTITUTE($session.params.loyalty_balance[0].device_name, \"\\bAPPLE(?:\\s+(?:IX|IIX|X|13|14|15|16|17))?\\s+\\d+GB\\s+SILVER\\s+LTE\\b\", \"APPLE\"), \"Google\", \"Google\"),$session.params.active_loyalty_device_type.\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eI see \u003cprosody rate=\".80\"\u003e$sys.func.SUBSTITUTE($sys.func.SUBSTITUTE($session.params.loyalty_balance[0].device_name, \"\\bAPPLE(?:\\s+(?:IX|IIX|X|13|14|15|16|17))?\\s+\\d+GB\\s+SILVER\\s+LTE\\b\", \"APPLE\"), \"Google\", \"Google\")\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bib_active_device_explained",
+        "value": true
+      } ]
+    },
+    "name": "18bd18d9-c804-4444-b0ef-0f7c94f87a76"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.AttemptCounter \u003c 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Comment puis-je vous aider avec le programme Option Retour ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "How can I help you with about Bring it back program ?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "AttemptCounter",
+        "value": "$sys.func.ADD($session.params.AttemptCounter, 1)"
+      }, {
+        "parameter": "offeredbibinfo",
+        "value": true
+      } ]
+    },
+    "name": "ee3aa97b-bc25-442b-ade1-09e15706671c"
+  }, {
+    "intent": "head_intent.bring_it_back_returns",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bring it Back returns",
+    "name": "b6797697-890b-4629-8487-9b96b32731d0"
+  }, {
+    "intent": "head_intent.bring_it_back_amount",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bring it Back amount",
+    "name": "1b6a9083-fb19-4948-bb55-953e294392bf"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "e79a1eda-e521-4ebf-b1eb-cf8b718b18c4"
+  }, {
+    "intent": "small_talk.repeat",
+    "condition": "$session.params.AttemptCounter \u003c 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "AttemptCounter",
+        "value": "$sys.func.ADD($session.params.AttemptCounter, 1)"
+      } ]
+    },
+    "targetPage": "BIB_check_Active",
+    "name": "9456e446-d810-47a5-a303-935ce0871e48"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez patienter pendant que je vous transfère à un membre de l'équipe.\n" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please wait while I transfer you to an customer service specialist. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "3fa4b0cc-85ee-4ac7-a6a4-899f56366177"
+  }, {
+    "intent": "head_intent.plans_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "Default Start Flow"
+      } ]
+    },
+    "targetFlow": "Plans Available",
+    "name": "c1ce6a32-1952-4768-aaf8-083f10dde77c"
+  }, {
+    "condition": "$session.params.active_loyalty_month_left = 1 AND $session.params.bib_active_device_explained = true AND $session.params.bib_plans_offered = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Souhaitez-vous consulter nos nouveaux forfaits disponibles ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Would you like to checkout the new available plans?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bib_plans_offered",
+        "value": true
+      } ]
+    },
+    "name": "406ea664-106b-413e-a9a7-9fd898e27fc8"
+  }, {
+    "condition": "$session.params.active_loyalty_month_left \u003c 3 AND $session.params.bib_active_device_explained = true AND $session.params.bib_plans_offered = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Souhaitez-vous consulter nos nouveaux forfaits disponibles ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Would you like to checkout the new available plans?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "bib_plans_offered",
+        "value": true
+      } ]
+    },
+    "name": "f7fe377d-e6d1-4671-97ce-ec8b3eb389b0"
+  }, {
+    "condition": "$session.params.AttemptCounter \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "AttemptCounter",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "355c3a0a-9567-43d8-90e1-7305870217c2"
+  }, {
+    "condition": "$session.params.active_loyalty_month_left \u003e 3 AND $session.params.bib_active_device_explained = true AND $session.params.bib_plans_offered = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Puis-je vous aider autrement avec le programme Option retour ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Is there anything else I can help you with regarding the Bring-it-back program ?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "morethanthreemonths",
+        "value": true
+      } ]
+    },
+    "name": "018fa98d-eedb-4dbb-91bf-a9a3da7a6d1e"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je suis désolé, je n'ai pas entendu. Pouvez-vous répéter cela?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't catch that. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2cb3bb25-c829-4030-8c40-fb8c3db7e888"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je n'ai toujours pas compris. Pouvez-vous répéter cela directement dans le récepteur?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I still didn't get that." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "29d9ce3a-70e3-4731-b009-e1d88bf32286"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je n'ai pas bien compris. Pouvez-vous reformuler votre phrase?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn't understand that. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to know more about this device ? if not I can also help you with instruction on how to return a device or new plans available." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "3a23c1bd-fdcb-4bec-8058-326ba2108439"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne crois toujours pas avoir compris. Pouvez-vous recommencer et reformuler encore une fois?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, Would you like to know more about this device ? if not I can also help you with instruction on how to return a device or new plans available." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "23ec9028-98a6-4a14-8ce5-0dfb990c92d6"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "8617e04c-e599-4a93-bd27-4ae6cc8474ea"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "cd9bf12b-9936-4015-b1cc-645262b3bcb0"
+  } ]
+}

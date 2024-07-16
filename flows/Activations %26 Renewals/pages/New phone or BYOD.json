@@ -1,0 +1,845 @@
+{
+  "name": "ea1fb3eb-aa1a-4ede-bec3-97925be50d88",
+  "displayName": "New phone or BYOD",
+  "form": {
+    "parameters": [ {
+      "displayName": "activation_vs_renew",
+      "required": true,
+      "entityType": "@activation-vs-renew",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "($session.params.device_type = null OR $session.params.device_type = \"mobile phone\") AND $session.params.activation_vs_renew = null",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Si vous souhaitez activer une nouvelle ligne sur n'importe quel type d'appareil, dites Activer. Si vous souhaitez mettre à niveau une ligne existante, dites Mettre à niveau." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "If you are looking to activate a new line on any device type, say Activate, If you are looking to upgrade an existing line say upgrade" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Cherchez-vous à activer, ou, à renouveler un appareil?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you looking to activate, or, upgrade?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "18784351-e155-49be-b12d-18f08844d076"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour activer une nouvelle ligne, dites nouveau ou faites le 1. Pour renouveler une ligne existante, dites renouveler ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For activating a new line, say new or press 1. For upgrading an existing line, say renew or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ee0713b9-cdd2-448d-bf6e-8aeede9c5e4f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "0dcb0628-df03-41ae-abdf-405c45ab4eae"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Cherchez-vous à activer, ou, à renouveler un appareil?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you looking to activate, or, upgrade?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "0c50b0e3-695e-40d5-8110-43d8f28361a3"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour activer une nouvelle ligne, dites nouveau ou faites le 1. Pour renouveler une ligne existante, dites renouveler ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For activating a new line, say new or press 1. For upgrading an existing line, say renew or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "17a6c484-4537-442f-9430-38eb56971403"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "b1d94e4d-a405-4dc3-9f70-a849de9166e3"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "New phone or BYOD"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "activating a device"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "activer un appareil"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphonebyod_retrycnt",
+        "value": null
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "93f58a50-ca76-44b8-a465-5e6d7fd45e01"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphonebyod_retrycnt",
+        "value": null
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "3e038c9b-0c22-4378-ac5d-24e29470d1c9"
+  }, {
+    "intent": "head_intent.equipment_order",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "6539ad40-38b9-430e-9139-5369660d92b0"
+  }, {
+    "intent": "head_intent.out_of_scope_home_services",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_scope_home_services"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "cb2fc8d6-58ff-43e5-9b1f-5bc52e4ab5c7"
+  }, {
+    "intent": "head_intent.bill_amount_due",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_amount_due"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "84dead60-eece-4d00-9108-114d6c375607"
+  }, {
+    "intent": "head_intent.equipment_exchange_return",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_exchange_return"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "93d0af62-91a4-4e61-b9f1-1441a212ca85"
+  }, {
+    "intent": "head_intent.back_up_data",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "back_up_data"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "04b028b3-a850-4f7a-9c36-895a58cefaaf"
+  }, {
+    "intent": "head_intent.insert_remove_simcard",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "insert_remove_SIM"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "b7aecd79-23de-4a63-8aed-44176ae00993"
+  }, {
+    "intent": "head_intent.equipment_activate_sim",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "activate_sim"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "eea9cb3e-70ab-47ec-8e2a-09c3e7ec7b6c"
+  }, {
+    "intent": "head_intent.soft_shopper",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "soft_shopper"
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "a422d8f1-9173-46b3-8e2c-3829879ea3a7"
+  }, {
+    "intent": "head_intent.sms_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "sms_issues"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "fcfc6ff3-0fbc-4661-82a9-fc739acb7c64"
+  }, {
+    "intent": "head_intent.equipment_upgrades",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "55e2dcd5-d5a0-4827-be20-0f4339056797"
+  }, {
+    "intent": "head_intent.equipment_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_vague"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "41826026-fd42-4562-a7ee-c600dc6fab0a"
+  }, {
+    "intent": "head_intent.troubleshoot_data_not_working",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "data_not_working"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "0c9fe9e7-2d89-4ef8-b55c-667da39974e0"
+  }, {
+    "intent": "head_intent.lost_stolen_phone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "lost_stolen_phone"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "7340d5fa-8ab4-4297-a311-39de6dc123a7"
+  }, {
+    "intent": "head_intent.account_transfer_ownership",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "town"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "f9e43154-3389-4432-b674-cd4fbb27c299"
+  }, {
+    "intent": "head_intent.plans_add_line",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": "activate"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "e233688f-f69b-4312-b652-1450fe84d9cd"
+  }, {
+    "intent": "head_intent.bill_explanation",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can help answer questions about your bill.", "I can definitely help with any questions about your bill.", "I see, let's take a look at your bill." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Bill Explanation",
+    "name": "4dc5ef68-f857-43c8-ae36-1adc68aeaedb"
+  }, {
+    "intent": "head_intent.repair_process",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "repair_process"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "24b75961-590d-4c25-8d4a-59488bffbfd6"
+  }, {
+    "intent": "head_intent.bring_it_back_returns",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bring_it_back_returns"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "c8bff0b7-7d61-47b5-9e68-3779afaab24a"
+  }, {
+    "intent": "head_intent.account_fraud",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_fraud"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "15abfd96-bfee-4f68-829f-c3e2c17beaea"
+  }, {
+    "intent": "head_intent.bill_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_vague"
+      } ]
+    },
+    "targetFlow": "Bill Vague",
+    "name": "80c3ae9d-69c4-4e86-9be9-7a3a2e91bce4"
+  }, {
+    "intent": "head_intent.wireless_home_phone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "wireless_home_phone"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "6e07acf6-8a76-434c-b1c1-607a80f03aca"
+  }, {
+    "intent": "head_intent.plans_add",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "available_plans"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "cc43083e-1ca0-48b7-8ce3-019cdd29250c"
+  }, {
+    "intent": "head_intent.intl_calls",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "intl_calls"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "010f4d6f-dec0-456d-8fa8-8ed13144eaf8"
+  }, {
+    "intent": "head_intent.plans_add_feature",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_add_feature"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "6a173f67-d647-4408-8792-857ce4be6c87"
+  }, {
+    "intent": "head_intent.payment_made",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_made"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "7e98d382-4708-4851-bd52-595d857753ed"
+  }, {
+    "intent": "head_intent.add_ons_menu",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "add_ons_menu"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "17287958-3274-46cf-8a9e-a1a4063f0bab"
+  }, {
+    "intent": "head_intent.can_i_keep_plan",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "can_i_keep_plan"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "e51fc25d-023b-4032-a1fd-25ff33e7d3ad"
+  }, {
+    "intent": "head_intent.purchase_sim",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "purchase_sim"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "c8e5546f-e666-416a-aaf3-73b90e840dc4"
+  }, {
+    "intent": "head_intent.payment_make",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "38835dc6-1c37-455d-be45-a26bd63b27a6"
+  }, {
+    "intent": "head_intent.troubleshoot_calling_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "calling_issues"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "47e362df-0384-416e-9ad1-f036e034f20e"
+  }, {
+    "intent": "head_intent.plans_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_vague"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "1c9151f7-9e53-4125-9692-0b81b3bdf43f"
+  }, {
+    "intent": "head_intent.esim",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "esim"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "3c1899b4-af29-4261-8e09-5643be745da9"
+  }, {
+    "intent": "head_intent.account_change_number",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "change_phonenumber"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "68cc89b4-8692-46e1-bbea-e391c88bafd2"
+  }, {
+    "intent": "head_intent.account_recovery",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_recovery"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "c9214fd8-3b50-4df8-a619-0c45ec5ac9c3"
+  }, {
+    "intent": "head_intent.store_locator",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "store_locator"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "a822f4c7-f8c8-48c3-8c04-beccdfa2f0d8"
+  }, {
+    "intent": "head_intent.koodo_inquiries",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "koodo_inquiries"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "2e3e93de-9299-48d3-8296-28f21159970e"
+  }, {
+    "intent": "head_intent.account_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_vague"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "44b43198-a15a-425f-a233-c2181ac9b494"
+  }, {
+    "intent": "head_intent.plans_change",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "rate_plan_change"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "765c0ab3-5922-450e-8972-82f3148f70f0"
+  }, {
+    "intent": "head_intent.suspend",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "suspend"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "7a6b6fda-a2e3-46e9-9d38-237b0adc20fe"
+  }, {
+    "intent": "head_intent.tenure",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "tenure"
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "0e5338c6-0f68-46dd-834e-a3d25f53955d"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I'm happy to get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d4b6d397-60db-4b28-94c1-de048c84c6df"
+  }, {
+    "intent": "head_intent.equipment_activate_device",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "activate_device"
+      } ]
+    },
+    "targetPage": "Activate device",
+    "name": "4d8c81e1-202c-4855-af1b-7dada3a986fd"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "name": "6e2bae76-25fe-46f0-8d25-85be0a70ba32"
+  }, {
+    "condition": "$session.params.device_type = \"accessories\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphonebyod_retrycnt",
+        "value": null
+      }, {
+        "parameter": "device_type",
+        "value": null
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": null
+      } ]
+    },
+    "targetPage": "Accessories purchase",
+    "name": "6f1882f9-85ca-47f0-be51-fb081860c95a"
+  }, {
+    "condition": "$session.params.device_type = \"tablet\" AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphonebyod_retrycnt",
+        "value": null
+      }, {
+        "parameter": "device_type",
+        "value": null
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": null
+      } ]
+    },
+    "targetPage": "Tablet purchase",
+    "name": "32037f2c-a2aa-4ff0-9036-b8ad6cc29e27"
+  }, {
+    "condition": "$session.params.device_type = \"tablet\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphonebyod_retrycnt",
+        "value": null
+      }, {
+        "parameter": "device_type",
+        "value": null
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": null
+      } ]
+    },
+    "targetPage": "Tablet purchase EPP",
+    "name": "ca27505b-ebf3-4d23-9135-5295d99fd229"
+  }, {
+    "condition": "$session.params.device_type = \"smarthub\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Que vous regardiez pour un terminal intelligent ou tout autre appareil Internet mobile, je peux vous aider!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Whether you're looking for a Smart Hub, or any other mobile internet device, I can help you!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "newphonebyod_retrycnt",
+        "value": null
+      }, {
+        "parameter": "device_type",
+        "value": null
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": null
+      } ]
+    },
+    "targetPage": "New phone or BYOD Text",
+    "name": "c353101d-0744-4c7e-b318-399cd0a373d7"
+  }, {
+    "condition": "$session.params.new_or_byod_phone = \"byod\" OR $session.params.new_vs_existing-account = \"new\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "activation_vs_renew",
+        "value": "activate"
+      }, {
+        "parameter": "newphonebyod_retrycnt",
+        "value": null
+      }, {
+        "parameter": "device_type",
+        "value": null
+      } ]
+    },
+    "targetPage": "New activation",
+    "name": "475857c2-8c27-46a8-9f46-2d91c8b37f11"
+  }, {
+    "condition": "($session.params.activation_vs_renew = \"renew\" OR $session.params.activation_vs_renew = \"2\") AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphonebyod_retrycnt",
+        "value": null
+      }, {
+        "parameter": "device_type",
+        "value": null
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": null
+      } ]
+    },
+    "targetPage": "Renewal EPP",
+    "name": "8a9608e1-c5c9-4816-a1ee-6139ea8bcaff"
+  }, {
+    "condition": "($session.params.activation_vs_renew = \"renew\" OR $session.params.activation_vs_renew = \"2\") AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphonebyod_retrycnt",
+        "value": null
+      }, {
+        "parameter": "device_type",
+        "value": null
+      } ]
+    },
+    "targetPage": "Renewal",
+    "name": "e86d2c41-aa38-4a27-a845-1f805a40f934"
+  }, {
+    "condition": "($session.params.activation_vs_renew = \"activate\" OR $session.params.activation_vs_renew = \"1\") AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "device_type",
+        "value": null
+      }, {
+        "parameter": "newphonebyod_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "New activation EPP",
+    "name": "c8797def-3458-4dc4-aca7-198ae39f8a2d"
+  }, {
+    "condition": "($session.params.activation_vs_renew = \"activate\" OR $session.params.activation_vs_renew = \"1\") AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphonebyod_retrycnt",
+        "value": null
+      }, {
+        "parameter": "device_type",
+        "value": null
+      } ]
+    },
+    "targetPage": "New activation",
+    "name": "04c63b0c-6c4a-4920-bf32-df289c3e7313"
+  }, {
+    "condition": "$session.params.activation_vs_renew = null",
+    "triggerFulfillment": {
+    
+    },
+    "name": "bc236f7f-7ea3-4622-b334-6ccdd974524f"
+  }, {
+    "condition": "$session.params.activation_vs_renew = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "activation_vs_renew",
+        "value": null
+      }, {
+        "parameter": "newphonebyod_retrycnt",
+        "value": "$sys.func.ADD($session.params.newphonebyod_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "c7da2733-a553-4ec4-8ac3-52fbaeba0e24"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphonebyod_retrycnt",
+        "value": "$sys.func.ADD($session.params.newphonebyod_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.newphonebyod_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.newphonebyod_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "d2cda1f2-27dc-48f5-9e5d-d2799cfa1efe"
+  } ],
+  "transitionRouteGroups": [ "supp_routes" ]
+}

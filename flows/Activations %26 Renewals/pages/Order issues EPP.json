@@ -1,0 +1,42 @@
+{
+  "name": "41853bac-9547-4014-b69c-b5966844db35",
+  "displayName": "Order issues EPP",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cspeak\u003eIf you purchased your device online and are having issues with your order, you can call \u003cprosody rate=\"0.8\"\u003e\u003csay-as interpret-as=\"telephone\" google:style='zero-as-zero' \u003e1-844-8,8,8-4440,\u003c/say-as\u003e\u003c/prosody\u003e Monday to Friday from 9am to 5pm EST.\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "But, If you have purchased your device with one of our TELUS representatives, you need to connect with a team member." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003eSi vous avez acheté votre appareil en ligne et rencontrez des problèmes avec votre commande, veuillez contacter notre équipe de vente aux \u003cprosody rate=\"slow\"\u003e\u003csay-as interpret-as=\"telephone\"\u003e1-844-888-4440,\u003c/say-as\u003e\u003c/prosody\u003e du lundi au vendredi de 9h à 17h, heure de l'est.\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Mais, si vous avez acheté votre appareil auprès d'un de nos représentants TELUS, vous devez vous connecter avec un membre de l'équipe." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Order issues EPP"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "1fd74c49-5167-4dfb-a125-f52ee634a4e4"
+  } ]
+}

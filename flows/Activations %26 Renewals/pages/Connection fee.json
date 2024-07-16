@@ -1,0 +1,175 @@
+{
+  "name": "eef9bbb9-b436-4357-8d64-13d5345e24ad",
+  "displayName": "Connection fee",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Connection fee"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "accepted"
+    }, {
+      "parameter": "page_summary",
+      "value": "our service fees"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "nos frais de service"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "Understanding service fees"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "Comprendre les frais de service"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour en savoir plus sur les frais de service , vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To know more about the service fees, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les frais de connexion vous donnent accès à un membre de l’équipe TELUS afin que celui-ci complète votre activation ou renouvellement." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous choisissez d'activer ou de renouveler en ligne, les frais de connexion ne seront pas chargés." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "The connection fee provides access to a TELUS team member to process your activation or renewal." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you choose to activate or renew online, the connection fee will not be charged." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190141"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900DM"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "e9f9fec1-89f0-4964-b2fb-f2b5202a75cf"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "connectionfee_retrycnt",
+        "value": "$sys.func.ADD($session.params.connectionfee_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.connectionfee_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.connectionfee_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "7fad58b2-9b13-4093-b189-73a716bed977"
+  } ],
+  "transitionRouteGroups": [ "supp_routes" ]
+}

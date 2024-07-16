@@ -1,0 +1,478 @@
+{
+  "name": "788afe47-128d-4ea8-a601-724db168cb6a",
+  "displayName": "Order status",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_order_status",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information on the status of your order?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien avec plus d'informations sur l'état de votre commande?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "a25b60cc-327f-4a4c-a190-1240bfde663b"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "33e6d6e0-6750-4fd1-9892-87493d8fc3cf"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "7fe8ff6d-ba9a-4e1f-8882-50e8a89601d4"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information on the status of your order?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien avec plus d'informations sur l'état de votre commande?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "c4bc6b6c-f5c8-4c76-8aa5-242cfb8d2cb0"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "b21ed08b-5bad-43b4-bffd-0944c7fc3a59"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "b5c89f11-2188-4629-9f00-6acfa8dcdfd1"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Order status"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "checking your order status"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "vérifier l'état de votre commande"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To check your order status, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent may not be able to perform this on a customer behalf." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To help you find your order status, we are sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour vérifier l'état de votre commande, vous devez utiliser le site web de TELUS pour la résolution la plus rapide. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent peut ne pas être en mesure d'aider à faire ça au nom d'un client." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour vous aider à trouver plus d'information sur l'état d'une commande, nous vous envoyons maintenant un lien vers le site web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "An email confirmation with your order number is sent to you once you complete your order online." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "It can take up to 2 business days for the email confirmation to be processed. Make sure to check your spam emails." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Une confirmation par courriel contenant votre numéro de commande vous est envoyée une fois que vous avez finalisé votre commande en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Il peut s'écouler jusqu'à 2 jours ouvrables pour que la confirmation par courriel soit traitée. Assurez-vous de vérifier vos courriels indésirables." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Glad to help you to connect to a live agent, but waiting time applies. \n\nAs this is self serve, please check your SMS for more information." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Ask for Agent",
+    "name": "de5e6f85-fa65-48e0-a255-c1c6ad5f588f"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319006S"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900VM"
+      }, {
+        "parameter": "orderstatus_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_order_status",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "2b9d2062-e827-4a09-8ce1-42027fc537ac"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "orderstatus_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_order_status",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319006S "
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900VM"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "7589fbb5-d365-4b99-b980-9b2997db37d5"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "orderstatus_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_order_status",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "4e07fa5a-3d3e-4358-a247-edb70369ccd7"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "orderstatus_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319006S"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900VM"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "7b1da4e4-64a3-4c4a-bc71-703500aa37ad"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319006S"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900VM"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "3a1b271c-71f9-450d-a569-baddb380cd4e"
+  }, {
+    "condition": "$session.params.dtmf_order_status = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi demander à quelqu'un de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "orderstatus_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_order_status",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "7746622a-d787-45e3-99f8-5fbee630b989"
+  }, {
+    "condition": "$session.params.dtmf_order_status = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319006S"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900VM"
+      }, {
+        "parameter": "orderstatus_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_order_status",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "8dcf2dfb-a8cc-4218-a03c-70f7a64d1f74"
+  }, {
+    "condition": "$session.params.orderstatus_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "orderstatus_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "001d9a31-8b18-4742-b646-44fe7a1cc729"
+  }, {
+    "condition": "$session.params.orderstatus_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "orderstatus_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "befcc056-9411-4b99-abeb-1d18e497b912"
+  }, {
+    "condition": "$session.params.dtmf_order_status = 1 OR $session.params.dtmf_order_status = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_order_status",
+        "value": null
+      }, {
+        "parameter": "orderstatus_retrycnt",
+        "value": "$sys.func.ADD($session.params.orderstatus_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "2017cb48-929c-4122-ad44-d01e14b84134"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "orderstatus_retrycnt",
+        "value": "$sys.func.ADD($session.params.orderstatus_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.orderstatus_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.orderstatus_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "207bf482-1ae2-4d58-8387-49b6fd6352a3"
+  } ],
+  "transitionRouteGroups": [ "order_status" ]
+}

@@ -1,0 +1,160 @@
+{
+  "name": "7467dc04-d27f-4030-a07a-ee3eaa1d2ff7",
+  "displayName": "Bring it Back amount",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Bring it Back amount"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "how to view your Bring it Back amount"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "votre montant Option retour"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "Viewing your Bring it Back amount"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "Consulter le montant de votre option retour"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour voir votre montant d'Option retour, vous devez utiliser votre compte Mon TELUS. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To to view your Bring it Back amount, you must use your My TELUS app, It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez voir votre montant Option retour via l'application Mon TELUS ou en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can see your Bring it Back amount yourself through the My TELUS app or online." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000AUaJ7K8FG00SW"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000AUaJ7K8FG00TD"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "4b87d81a-792a-401a-a7c9-9b576192feca"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "bibamt_retrycnt",
+        "value": "$sys.func.ADD($session.params.bibamt_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.bibamt_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.bibamt_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "c2a46081-da0b-4910-aa30-c4a0d34670cc"
+  } ]
+}

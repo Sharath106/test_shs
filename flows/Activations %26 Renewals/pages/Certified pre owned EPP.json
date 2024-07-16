@@ -1,0 +1,39 @@
+{
+  "name": "de46b869-706c-4031-9652-556193eb852e",
+  "displayName": "Certified pre owned EPP",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "The Certified Pre-owned Device program is an exclusive online-only offer and is not available to E P P customers at this time." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Le programme d'appareils remis en marché certifiés est offert en ligne exclusivement et n'est pas disponible pour les clients P E P pour le moment." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Certified pre owned EPP"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "our certified pre-owned devices"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "nos appareils remis à neuf certifiés"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "2a1c2e31-2504-41a8-b4a4-04f0aa886f0e"
+  } ],
+  "transitionRouteGroups": [ "supp_routes" ]
+}

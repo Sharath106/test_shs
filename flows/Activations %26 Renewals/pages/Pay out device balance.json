@@ -1,0 +1,33 @@
+{
+  "name": "9894aa26-e26c-4fad-8ac7-418ef31cc3bc",
+  "displayName": "Pay out device balance",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "If you're looking to pay off your device balance, I'll need to connect you with a team member for assistance." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Si vous souhaitez payer le solde sur votre appareil, je devrai vous transférer à un membre de l'équipe pour vous assister avec cela." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Pay out device balance"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "ae10e09c-deee-41df-8046-b362239ad5a7"
+  } ],
+  "transitionRouteGroups": [ "supp_routes" ]
+}

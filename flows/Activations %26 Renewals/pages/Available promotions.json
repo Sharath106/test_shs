@@ -1,0 +1,429 @@
+{
+  "name": "39c2c476-4a5e-4197-b027-fbbf03063f4e",
+  "displayName": "Available promotions",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_available_promotions",
+      "required": true,
+      "entityType": "@dtmf-menu-9-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like me to send a text message with more information on this to your phone?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations à ce sujet sur votre téléphone?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message with more information about TELUS Deals to your phone?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur les offres de TELUS?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "5367b757-c579-41ed-ad8d-2bc1e973b00a"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "56c2eefb-f30f-42b2-92a0-b1b313eec215"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "ab8226fe-680c-43c3-9fad-c48b7a371322"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message with more information about TELUS Deals to your phone?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur les offres de TELUS?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "5c400f85-780f-4561-aca0-61903fba5b35"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "030935c5-c2e1-47db-a75c-6cc57cb57083"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "32095025-1d91-451c-87c7-891242a219ef"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "our available promotions"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "promotions disponibles"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "checking our available promotions"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "s'informer sur nos promotions disponibles"
+    }, {
+      "parameter": "bf_random",
+      "value": "$sys.func.RAND()"
+    }, {
+      "parameter": "last_page",
+      "value": "Available promotions"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "dtmf_available_promotions",
+      "value": "9"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To know about TELUS Deals, you must use your My TELUS account to get the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent may not be able to complete this on a customer behalf." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To help you find information on our offers and promotions, we are sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour en savoir plus sur nos promotions disponibles, vous devez utiliser votre compte Mon TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent peut ne pas être en mesure d'aider à faire ça au nom d'un client." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour vous aider à trouver de l'information sur nos offres et promotions, nous vous envoyons dès maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "We always have some fantastic deals ready for you. Skip the lines and access exclusive deals through My TELUS, including promotions for activating or renewing, and bundled mobile services." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Nous avons toujours des offres fantastiques prêtes pour vous. Évitez la file d'attente et accédez à des offres exclusives via Mon TELUS, y compris des promotions d'activation ou de renouvellement, et pour les services groupés mobiles." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900PW"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900JP"
+      }, {
+        "parameter": "availablepromotions_retrycnt",
+        "value": null
+      }, {
+        "parameter": " dtmf_available_promotions",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "bba545be-8251-4181-aa7b-abdc0e688898"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "availablepromotions_retrycnt",
+        "value": null
+      }, {
+        "parameter": " dtmf_available_promotions",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900PW"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900JP"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "d42a8929-015a-453b-a05e-e2a03e14ac6b"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "availablepromotions_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_available_promotions",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900PW"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900JP"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "297f538f-1cdb-4494-a5bc-16d1faf3324a"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "availablepromotions_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900PW"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900JP"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "8ecb4dfe-e514-4ac3-af62-658b0c4af2b8"
+  }, {
+    "condition": "$session.params.bf_promo_code = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "fromPage",
+        "value": "promos"
+      } ]
+    },
+    "targetPage": "Black Friday promo code offer",
+    "name": "dd654c4e-0fd0-4fb2-948f-79a450ebd0a2"
+  }, {
+    "condition": "$session.params.dtmf_available_promotions = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900PW"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900JP"
+      }, {
+        "parameter": "availablepromotions_retrycnt",
+        "value": null
+      }, {
+        "parameter": " dtmf_available_promotions",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "d74761cf-b388-4314-ac1b-8e3af6081b84"
+  }, {
+    "condition": "$session.params.dtmf_available_promotions = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "availablepromotions_retrycnt",
+        "value": null
+      }, {
+        "parameter": " dtmf_available_promotions",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "0b68acdc-339f-47fd-a459-52bf66ce7445"
+  }, {
+    "condition": "$session.params.availablepromotions_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "availablepromotions_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "b3fd12f7-8264-4d53-b241-98c161a24ff0"
+  }, {
+    "condition": "$session.params.availablepromotions_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "availablepromotions_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "7286cbf6-8356-49b5-8f99-e336a26ea1b8"
+  }, {
+    "condition": "$session.params.dtmf_available_promotions = 3 OR $session.params.dtmf_available_promotions = 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_available_promotions",
+        "value": null
+      }, {
+        "parameter": "availablepromotions_retrycnt",
+        "value": "$sys.func.ADD($session.params.availablepromotions_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "5736db09-1e36-495b-95b8-4afc938f01e3"
+  } ],
+  "transitionRouteGroups": [ "supp_routes" ]
+}

@@ -1,0 +1,454 @@
+{
+  "name": "1bf5bb17-c755-42bc-8149-0760be986b2f",
+  "displayName": "How to view CSA or Contract",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_view_csa",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text on how to view CSA contract?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte expliquant comment consulter votre entente de service?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "6d9fc280-0a20-4aa0-b633-592d5e30429c"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "f81460e2-0f83-4dde-a774-25c77c76eba3"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "445923f1-60f3-42e9-af5f-b3d4fb00a5b9"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text on how to view CSA contract?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte expliquant comment consulter votre entente de service?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ee226a84-4cea-4fd5-b4db-a932c01c34dd"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "446ae476-ec54-4269-bab3-e8093d034ebe"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "c01e269f-8ea5-4979-b3c7-fc85b7adf3f1"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "How to view CSA or Contract"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "your service agreement"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "votre contrat de service."
+    }, {
+      "parameter": "last_page_summary",
+      "value": "viewing your service agreement"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "visionner votre contrat de service"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To view the details of your service agreement and contract, you must use your My TELUS account to get the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent may not be able to complete this on a customer behalf." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To help you find the details of your service agreement and contract, we are sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour consulter les détails de votre entente de service et de votre contrat, vous devez utiliser votre compte Mon TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent peut ne pas être en mesure d'aider à faire ça au nom d'un client." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour vous aider à trouver les détails de votre entente de service et de votre contrat, nous vous envoyons dès maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can view the details of your service agreement and contract yourself through the My TELUS." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez consulter les détails de votre entente de service et votre contrat via Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_view_csa",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "How to view CSA or Contract online or app",
+    "name": "c86c360c-cdc3-4d7f-a691-7d9d065baf38"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_view_csa",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319014A"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900T0"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "c18c1bb6-db00-4fb2-a2ca-009fd9bcb2cc"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_view_csa",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319014A"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900T0"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "a4f39bd3-0cf1-45ad-8517-af1ca79e30a3"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "How to view CSA or Contract online or app",
+    "name": "16bf11f6-ddce-475b-b2a4-fb540254afcf"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319014A"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900T0"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "568b3197-9fe9-472c-a8ae-61c36fc2af3d"
+  }, {
+    "condition": "$session.params.dtmf_view_csa = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, demandons à quelqu'un de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_view_csa",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "f69ae52f-bfac-4c8e-b51f-8cf1948df04e"
+  }, {
+    "condition": "$session.params.dtmf_view_csa = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_view_csa",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "How to view CSA or Contract online or app",
+    "name": "7a6c9d27-6736-4020-91eb-bf14a39c7f73"
+  }, {
+    "condition": "$session.params.viewcsa_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "e9fe21fb-78bc-43f9-ac6d-63f8e0225bb6"
+  }, {
+    "condition": "$session.params.viewcsa_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "6fe90bca-7727-4a55-8e73-b2f579601057"
+  }, {
+    "condition": "$session.params.dtmf_view_csa = 1 OR $session.params.dtmf_view_csa = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_view_csa",
+        "value": null
+      }, {
+        "parameter": "viewcsa_retrycnt",
+        "value": "$sys.func.ADD($session.params.viewcsa_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "0e6be1c7-fc36-4161-ae8e-5d98fe0b3d3c"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "viewcsa_retrycnt",
+        "value": "$sys.func.ADD($session.params.viewcsa_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.viewcsa_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.viewcsa_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "f84c0180-9f47-4027-acf9-742f3a23ddd2"
+  } ]
+}

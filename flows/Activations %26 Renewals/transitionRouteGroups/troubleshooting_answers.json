@@ -1,0 +1,33 @@
+{
+  "name": "705eed9e-00a9-465b-8dbd-10cbb9858d44",
+  "displayName": "troubleshooting_answers",
+  "transitionRoutes": [ {
+    "intent": "small_talk.acknowledge_fixed_issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Génial!", "Super!", "Parfait!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "That's great!", "Awesome!", "Glad to hear it!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "login-problems-reasons",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "04f4d46f-1ac3-431f-b75c-fa4b50ebd356"
+  }, {
+    "intent": "small_talk.troubleshooting_still_having_issues",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "24557d93-f692-4e76-a484-922c06504710"
+  } ]
+}

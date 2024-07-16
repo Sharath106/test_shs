@@ -1,0 +1,12 @@
+{
+  "name": "a0cbec36-f179-47d8-b581-c22789c373ab",
+  "displayName": "small_talk.no_thanks",
+  "transitionRoutes": [ {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "2405f0aa-b401-4e81-95b2-7b2a9c864fcb"
+  } ]
+}

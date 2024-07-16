@@ -1,0 +1,417 @@
+{
+  "name": "e588bc3d-2a4f-4367-9c54-44e95f7102f6",
+  "displayName": "New phone or BYOD Text",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_new_phone",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ " Would you like me to send a link with more information about your phone now?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un lien avec plus d'informations sur votre téléphone maintenant?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "4bda2f6e-8985-42fe-b278-c8978d477d29"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "7b05f04a-c1d3-423e-95c2-5bdd4cfba6ac"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "54b8e503-360d-49db-b91f-23d900391a3e"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information about your phone now?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un lien avec plus d'informations sur votre téléphone maintenant?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "070746fe-b84b-4741-b409-01fd876fc72f"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "604a5a91-b305-4468-b2d8-3bb146add709"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "3cf286ba-13b1-4e9d-a2dc-6a056419cba4"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "New phone or BYOD Text"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "Smart Hubs"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": " nos forfaits et appareils Internet mobile"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.newphone_retrycnt = null OR $session.params.newphone_retrycnt = 0) AND $session.params.new_vs_existing_account = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Would you like me to send a link with more information to your phone now?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Souhaitez-vous que j'envoie un lien avec plus d'informations sur votre téléphone maintenant?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.newphone_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Would you like me to send a link with more information to your phone now?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Souhaitez-vous que j'envoie un lien avec plus d'informations sur votre téléphone maintenant?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.newphone_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900XS"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190133"
+      }, {
+        "parameter": "newphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_new_phone",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "d9b0f134-b3c3-452a-9f28-4f9351a48f53"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_new_phone",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900XS"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190133"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "74625a3b-8e21-47f2-b140-1988dff8f5ee"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_new_phone",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900XS"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190133"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "7ed032aa-78c1-491e-be17-356823841e54"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900XS"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190133"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "1cff177c-efb8-4309-a20f-9c4e513bfbb3"
+  }, {
+    "condition": "$session.params.dtmf_new_phone = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900XS"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190133"
+      }, {
+        "parameter": "newphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_new_phone",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "599da2e4-6c19-48df-8e7c-dec0647ab816"
+  }, {
+    "condition": "$session.params.dtmf_new_phone = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, demandons à quelqu'un de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "newphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_new_phone",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "f6f0c7f4-253b-42dc-854a-ba08c239f901"
+  }, {
+    "condition": "$session.params.newphone_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphone_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "c42933cb-9792-4af2-8b6e-799184af206b"
+  }, {
+    "condition": "$session.params.newphone_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "c7531a5c-1850-43b6-b837-87a5fac0e784"
+  }, {
+    "condition": "$session.params.dtmf_new-phone = 1 OR $session.params.dtmf_new-phone = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_new_phone",
+        "value": null
+      }, {
+        "parameter": "newphone_retrycnt",
+        "value": "$sys.func.ADD($session.params.newphone_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "fb506a2c-3047-4e5b-9ebf-12f3129dbe3c"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newphone_retrycnt",
+        "value": "$sys.func.ADD($session.params.newphone_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.newphone_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.newphone_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "ace9ef04-abe9-4b56-a36e-9045b69b5b4b"
+  } ]
+}

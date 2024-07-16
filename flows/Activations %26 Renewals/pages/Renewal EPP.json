@@ -1,0 +1,449 @@
+{
+  "name": "d38df458-3b92-4010-9c9a-161ebf525203",
+  "displayName": "Renewal EPP",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_renewal_epp",
+      "required": true,
+      "entityType": "@dtmf-menu-9-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un lien avec plus d'informations sur les informations de renouvellement, sur votre téléphone maintenant ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information on renewals, to your phone now?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7693dbf2-bcdc-410e-aa72-292c96eaab2a"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "6d184d22-ea5d-4a32-b57c-a1d19c2e3761"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "bf8cac6f-0d28-4b6e-b16c-f389e29874a8"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un lien avec plus d'informations sur les informations de renouvellement, sur votre téléphone maintenant ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information on renewal info, to your phone now?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7b08aa98-2f4b-4b79-be07-38d0a976d040"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "9aa443b0-9253-46ee-8d7d-c06ebbd95e34"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "2eab8170-b2eb-4a0b-820e-c4e6284091a3"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Renewal EPP"
+    }, {
+      "parameter": "page_summary",
+      "value": "renewing for a new device"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "un renouvellement avec un nouvel appareil"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.renewalepp_retrycnt = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Vous souhaitez renouveler ou remplacer votre téléphone?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "N'oubliez pas que vous devrez peut-être payer le solde restant de votre balance d'appareil actuel si vous avez toujours un contrat." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Looking to upgrade or replace your phone?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Keep in mind that you may have to pay the outstanding balance of your current device if you are still in contract." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like me to send a link with more information  to your phone now?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.renewalepp_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Souhaitez-vous que j'envoie un lien avec plus d'informations sur les informations de renouvellement, sur votre téléphone maintenant ?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like me to send a link with more information on renewal info, to your phone now?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.renewalepp_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000ACaJ2T7C2004C"
+      }, {
+        "parameter": "renewalepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_renewal_epp",
+        "value": null
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000ACaJ2T7C2004F"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "5edbe825-a0f1-49cc-9328-9223805061c2"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "renewalepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_renewal_epp",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "000ACaJ2T7C2004C"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000ACaJ2T7C2004F"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "cde6208f-0b08-4d6a-ab11-a133798e585b"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "renewalepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_renewal_epp",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "000ACaJ2T7C2004C"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000ACaJ2T7C2004F"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "03ed28b1-a7b5-4223-94e9-2f1da14a761c"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "renewalepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_template",
+        "value": "000ACaJ2T7C2004C"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000ACaJ2T7C2004F"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "994789de-3bcd-4085-ae03-830621cc008d"
+  }, {
+    "condition": "$session.params.dtmf_renewal_epp = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, demandons à quelqu'un de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "renewalepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_renewal_epp",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "f5207d27-9236-45ab-8d55-e05f9c190dc7"
+  }, {
+    "condition": "$session.params.dtmf_renewal_epp = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000ACaJ2T7C2004C"
+      }, {
+        "parameter": "renewalepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_renewal_epp",
+        "value": null
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000ACaJ2T7C2004F"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "32facd2e-23cc-4f17-96dc-a488bcb095d3"
+  }, {
+    "condition": "$session.params.renewalepp_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "renewalepp_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "6ddd194b-305f-433f-9de5-a7acdcbe19d8"
+  }, {
+    "condition": "$session.params.renewalepp_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "renewalepp_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "ea6dfec0-2f6a-4104-a944-939ef89a0c0d"
+  }, {
+    "condition": "$session.params.dtmf_renewal_epp = 1 OR $session.params.dtmf_renewal_epp = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_renewal_epp",
+        "value": null
+      }, {
+        "parameter": "renewalepp_retrycnt",
+        "value": "$sys.func.ADD($session.params.renewalepp_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "c9d2acbc-7973-401f-8908-0430ccc47189"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "renewalepp_retrycnt",
+        "value": "$sys.func.ADD($session.params.renewalepp_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.renewalepp_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.renewalepp_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "9fbef77a-e100-4975-a508-f73d6ee773ba"
+  } ],
+  "transitionRouteGroups": [ "supp_routes" ]
+}

@@ -1,0 +1,166 @@
+{
+  "name": "a49b979a-312a-4c3e-9817-0f045b35633c",
+  "displayName": "Legal age",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Legal age"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "legal age for service"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "âge légal pour le service"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "The legal age to activate a regular monthly service account is based on province and is as follows:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "19 years old, for British Columbia, New Brunswick, Newfoundland \u0026 Labrador, Nova Scotia, Northwest Territories, Nunavut and Yukon." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "18 years old, for Alberta, Quebec, Manitoba, Ontario, Saskatchewan, and Prince Edward Island." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "L’âge légale pour ouvrir un compte avec un forfait mensuel dépend de la province de résidence du client:" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Dix neuf ans pour la Colombie-Britannique, Nouveau-Brunswick, Terre-Neuve-et-Labrador, Nouvelle-Écosse, Territoires du Nord-Ouest, Nunavut et Yukon." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Dix huit ans pour l’Alberta, le Québec, le Manitoba, l’Ontario, la Saskatchewan et l’Île-du-Prince-Édouard." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "The legal age required to activate a regular monthly service account varies by province." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "In British Columbia, New Brunswick, Newfoundland \u0026 Labrador, Nova Scotia, Northwest Territories, Nunavut, and Yukon, the legal age is 19 years old." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "In Alberta, Quebec, Manitoba, Ontario, Saskatchewan, and Prince Edward Island, the legal age is 18 years old." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "L'âge légal requis pour activer un compte de service mensuel régulier varie selon la province." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "En Colombie-Britannique, au Nouveau-Brunswick, à Terre-Neuve-et-Labrador, en Nouvelle-Écosse, dans les Territoires du Nord-Ouest, au Nunavut et au Yukon, l'âge légal est de dix neuf ans." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "En Alberta, au Québec, au Manitoba, en Ontario, en Saskatchewan et à l'Île-du-Prince-Édouard, l'âge légal est de dix huit ans." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Depending on the province, there is a legal age requirement for activating a regular monthly service account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "In British Columbia, New Brunswick, Newfoundland \u0026 Labrador, Nova Scotia, Northwest Territories, Nunavut, and Yukon, the legal age is 19 years old." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "In Alberta, Quebec, Manitoba, Ontario, Saskatchewan, and Prince Edward Island, the legal age is 18 years old." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Selon la province, il existe une exigence d'âge légal pour activer un compte de service mensuel régulier." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "En Colombie-Britannique, au Nouveau-Brunswick, à Terre-Neuve-et-Labrador, en Nouvelle-Écosse, dans les Territoires du Nord-Ouest, au Nunavut et au Yukon, l'âge légal est de dix neuf ans." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "En Alberta, au Québec, au Manitoba, en Ontario, en Saskatchewan et à l'Île-du-Prince-Édouard, l'âge légal est de dix huit ans." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "6697bbe9-af08-4c11-8075-b7a3a81b62e3"
+  } ],
+  "transitionRouteGroups": [ "supp_routes" ]
+}

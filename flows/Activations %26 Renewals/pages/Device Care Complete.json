@@ -1,0 +1,127 @@
+{
+  "name": "2e631fe0-8342-47e6-92a3-0abc1d598d3a",
+  "displayName": "Device Care Complete",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Device Care Complete"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "our Device Care Warranty option"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la protection d'appareil complète de TELUS"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "Understanding TELUS device care"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "Comprendre la protection complète de TELUS"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To know more about TELUS device care complete, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour en savoir plus sur la protection complète de TELUS , vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "TELUS Device Care Complete now covers, TELUS Androids, iPhones, Certified Pre-owned, and Bring your own devices." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Device Care Complete protection includes, Accidental device damage, Lost \u0026 Stolen claims, Cracked screen repair, and Battery replacement." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "La Protection complète d'appareils couvre tous les téléphones intelligents Android, Apple, remis en marché certifiés et les appareils apportez votre propre appareil." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "La Protection complète d'appareils comprend les dommages accidentels de l'appareil, les réclamations en cas de perte ou de vol, la réparation de l'écran cassé et le remplacement de la batterie." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319011G"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900C7"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "97e2a7b5-030d-48d4-a875-777a657babea"
+  } ],
+  "transitionRouteGroups": [ "supp_routes" ]
+}

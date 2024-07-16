@@ -1,0 +1,38 @@
+{
+  "name": "581b3fc7-e63b-4ade-be26-aecb00b07d98",
+  "displayName": "Online purchase receipt",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cspeak\u003e\nOnce you've completed your purchase online, you will receive a receipt copy in your email that's setup on your TELUS mobility account.\nIf it's not showing, and you still need a copy of your receipt, you can request it by emailing us at, \n\u003cprosody rate=\".80\"\u003e\ntelus orders, @, telus.com,\n\u003c/prosody\u003e\nOr, you can also call,\n\u003cprosody rate=\".80\"\u003e\n 1-866-488,\n\u003csay-as interpret-as=\"telephone\"\u003e\n27-09.\n\u003c/say-as\u003e\n\u003c/prosody\u003e\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\nUne fois votre achat en ligne complété, vous recevrez une copie de votre reçu à votre adresse courriel qui est associée à votre compte mobile TELUS.\nSi vous avez déjà passé une commande en ligne, et avez besoin d'une copie de votre reçu, vous pouvez en faire la demande en envoyant un courriel à, \u003cbreak time=\"400ms\"/\u003e\n \u003cprosody rate=\".80\"\u003e\ncommandes telus, c,o,m,m,a,n,d,e,s,t,e,l,u,s,@,telus.com,\n\u003c/prosody\u003e\n ou en téléphonant le,\n\u003cprosody rate=\".80\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n 1-8, 6-6, 4, 8, 8, 2, 7, 0, 9.\n\u003c/say-as\u003e\n\u003c/prosody\u003e\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Online purchase receipt"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "receipt for your online purchase"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "reçu de votre achat en ligne"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "8cc8796d-9429-4e10-a5e2-f07eeeee99c2"
+  } ]
+}

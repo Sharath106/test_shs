@@ -1,0 +1,130 @@
+{
+  "name": "d58474ac-3133-4914-92ec-5d46d69bcdf6",
+  "displayName": "Bounce Back",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.last_page = \"Renewal EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Renewal EPP attempt 2",
+    "name": "3d0cade1-c816-493a-9a76-b48be36c7a37"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Bring it Back amount Online vs App\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Bring it Back amount Online vs App\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bring it Back amount Online vs App",
+    "name": "1ae6eff6-bece-4635-9c18-5390ae4d869e"
+  }, {
+    "condition": "($session.params.last_page = \"Easy Payment Balance online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Easy Payment Balance online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Easy Payment Balance online or app",
+    "name": "aa2850c5-5264-4260-b14d-e053efa49bcb"
+  }, {
+    "condition": "($session.params.last_page = \"How to view CSA or Contract online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"How to view CSA or Contract online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "How to view CSA or Contract online or app",
+    "name": "14227415-77de-40b5-b75d-4ebb1e0751b3"
+  }, {
+    "condition": "($session.params.last_page = \"New activation no sim online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"New activation no sim online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New activation no sim online or app",
+    "name": "7ebfe0c2-6cd8-4037-b990-2005c4c988cf"
+  }, {
+    "condition": "$session.params.route = \"supp_device_iphone\" AND $session.params.last_page = \"Smart watches\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, Apple watch." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, pour la montre Apple." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "smart_watches",
+        "value": "Apple"
+      } ]
+    },
+    "targetPage": "Smart watches",
+    "name": "e3021790-944b-48a7-a4d1-4f1f2d83f577"
+  }, {
+    "condition": "$session.params.route = \"supp_device_android\" AND $session.params.last_page = \"Smart watches\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, Samsung watch." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, pour la montre Samsung." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "smart_watches",
+        "value": "Samsung"
+      } ]
+    },
+    "targetPage": "Smart watches",
+    "name": "e21cadfa-e9bf-4ab4-97e7-f1dbcdcdea87"
+  }, {
+    "condition": "($session.params.last_page = \"Extended warranty\" AND $session.params.route = \"supp_device_android\") OR ($session.params.last_page = \"Apple Care plus\" AND $session.params.route = \"supp_device_android\")",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, TELUS Device Care Complete information." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, la protection d'appareil complète de TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "warranty",
+        "value": "Samsung"
+      }, {
+        "parameter": "dtmf_dcc",
+        "value": "9"
+      } ]
+    },
+    "targetPage": "Device Care Complete",
+    "name": "32ac2d0a-8af5-4b10-a13f-0440c0a5b872"
+  }, {
+    "condition": "($session.params.last_page = \"Extended warranty\" AND $session.params.route = \"supp_device_iphone\") OR ($session.params.last_page = \"Device Care Complete\" AND $session.params.route = \"supp_device_iphone\")",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, Apple Care plus information." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, Apple Care plus d'informations." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_apple_care",
+        "value": "9"
+      } ]
+    },
+    "targetPage": "Apple Care plus",
+    "name": "6830d257-ebf8-4c0e-83b5-f4a1e9bf5912"
+  } ]
+}

@@ -1,0 +1,160 @@
+{
+  "name": "74e96869-8143-4fdb-b2e7-c6e1843005bd",
+  "displayName": "Renewal EPP attempt 2",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Nous proposons également un guide amiable pour renouveler votre forfait sur notre site web pour tous les appareils. Notre priorité est de résoudre vos problèmes rapidement.\n" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Est-ce que cela vous a aidé?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "We also offer a user-friendly guide to renewing your plan on our website for all devices . Our priority is to fix your issues quickly." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Did that help you?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Renewal EPP attempt two"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "b2464f0f-0b5f-4cbe-b052-61aa7e0644dc"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "96201dc2-d867-4e39-9088-f929657effa6"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d7d62b3e-8e31-478a-85dc-501df23913b5"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que cela vous a aidé?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I did not catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did that help you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "aec59f53-25c1-4902-9c87-ebdc47b3688b"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Si cela vous a aidé, dites oui, sinon dites non." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "If that helped you, say yes, if not, say no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5a3af494-87fa-4103-a64b-3776dfab4509"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "26ba4e7b-67af-4c88-b9b2-1567ab0bf1e4"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I did not catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did that help you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5de697bb-b2f4-4853-bbdb-ca7d9dee9955"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Si cela vous a aidé, dites oui, sinon dites non." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "If that helped you, say yes, if not, say no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "106d1152-8b19-4748-b677-f927b3182a0b"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "8fe181e1-73cc-496b-8714-642cb3b47222"
+  } ]
+}

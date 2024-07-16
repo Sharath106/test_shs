@@ -1,0 +1,400 @@
+{
+  "name": "b0bb0326-578e-4c37-b1cf-985978301666",
+  "displayName": "Activate device",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_activate_device",
+      "required": true,
+      "entityType": "@dtmf-menu-1-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you need help activating your new sim card?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi.", "Désolé, je n'ai pas tout à fait compris.", "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous besoin d'aide pour activer votre nouvelle carte SIM?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "06a51eb4-aabe-4ac3-a186-1ffd04edbb4e"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you need help in activating your new sim card, say yes or press 1, to connect with a team member, say team member or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez besoin d'aide pour activer votre nouvelle carte SIM, dites oui ou faites le 1. Pour vous connecter avec un membre de l'équipe, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "9dab8ed4-0b70-4ab1-92be-cbdc55c712f7"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "10c0fbcc-a10b-4c04-8e41-ae569af9e214"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you need help activating your new sim card?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi.", "Désolé, je n'ai pas tout à fait compris.", "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous besoin d'aide pour activer votre nouvelle carte SIM?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "9ce116b6-d0c1-41fe-93f9-23547ab6fd84"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you need help in activating your new sim card, say yes or press 1, to connect with a team member, say team member or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez besoin d'aide pour activer votre nouvelle carte SIM, dites oui ou faites le 1. Pour vous connecter avec un membre de l'équipe, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "2e683a7b-04e0-47e3-b6f2-ba415c36c3eb"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "be5e7c9d-8602-417a-a130-1b03aed95150"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Activate device"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "activating a device"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "activer un appareil"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.activatedevice_retrycnt = null OR $session.params.activatedevice_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Got it, you have a new device." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Did you need help activating your new sim card?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Super, vous avez un nouvel appareil." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Avez-vous besoin d'aide pour activer votre nouvelle carte SIM?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.activatedevice_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Do you need help activating your new sim card?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Avez-vous besoin d'aide pour activer votre nouvelle carte SIM?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.activatedevice_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "If you need help in activating your new sim card, say yes or press 1, to connect with a team member, say team member or press 0." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez besoin d'aide pour activer votre nouvelle carte SIM, dites oui ou faites le 1. Pour vous connecter avec un membre de l'équipe, dites membre de l'équipe ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "activate_sim"
+      }, {
+        "parameter": "activatedevice_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_activate_device",
+        "value": null
+      } ]
+    },
+    "targetPage": "Ask for Agent",
+    "name": "2840fdd0-aa65-4705-9c64-d5959c2cf4f6"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Just to let you know, to activate your device you will first need to move your sim from your older device to the new device." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "After that, make sure to restart your device and test it by making a phone call, to make sure it's working." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pour activer votre appareil, vous devrez d’abord déplacer votre carte SIM de votre ancien appareil au nouvel appareil." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Ensuite, assurez-vous de redémarrer votre appareil et de le tester en passant un appel, pour vous assurer qu'il fonctionne." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "activatedevice_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_activate_device",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "3c6e8580-f1a0-4fa9-a36a-1592d9a6086d"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_activate_device",
+        "value": null
+      }, {
+        "parameter": "activatedevice_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "659d4e9f-a204-4e02-b9cf-be20c3e0af92"
+  }, {
+    "condition": "$session.params.dtmf_activate_device = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "activate_sim"
+      }, {
+        "parameter": "dtmf_activate_device",
+        "value": null
+      }, {
+        "parameter": "activatedevice_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "71b79e8f-2e5d-42c5-b698-f2cb512a2e6a"
+  }, {
+    "condition": "$session.params.dtmf_activate_device = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_activate_device",
+        "value": null
+      }, {
+        "parameter": "activatedevice_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "33ffeeb0-0773-4d86-a08c-bf467163c467"
+  }, {
+    "condition": "$session.params.activatedevice_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "activatedevice_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "1ced94a7-434d-4264-a6d6-39e5fcaa775b"
+  }, {
+    "condition": "$session.params.activatedevice_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "activatedevice_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "e449c256-1e93-43a0-8a3e-079161631428"
+  }, {
+    "condition": "$session.params.dtmf_activate_device = 3 OR $session.params.dtmf_activate_device = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_activate_device",
+        "value": null
+      }, {
+        "parameter": "activatedevice_retrycnt",
+        "value": "$sys.func.ADD($session.params.activatedevice_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "24b3f41d-02cf-46e4-98f1-3bd22fc67c84"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "activatedevice_retrycnt",
+        "value": "$sys.func.ADD($session.params.activatedevice_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.activatedevice_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.activatedevice_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "bc528aeb-f1e0-41b9-8dd1-6ccf7eb4bde3"
+  } ]
+}
