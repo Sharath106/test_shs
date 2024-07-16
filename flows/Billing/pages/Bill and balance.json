@@ -1,0 +1,415 @@
+{
+  "name": "bc997e23-2cdd-4941-8af9-243225ad8279",
+  "displayName": "Bill and balance",
+  "form": {
+    "parameters": [ {
+      "displayName": "phone_online_bill_balance",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to get your account balance over the phone, or, have instructions sent via text?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous continuer par téléphone, ou que j'envoi un message texte avec les instructions pour le faire par vous-même." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "105e5951-6ac3-4079-95be-3c674130533c"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To continue over the phone, say phone or press 1. text message,  or press 9. team member or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour continuer par téléphone, dites téléphone ou faites le 1. Message texte ou faites le 9. Pour un membre de l'équipe, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ebaffcc5-2938-44d1-8781-af74cab0247c"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "490c3733-049d-4688-a0bb-5654c8eb09b7"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to get your account balance over the phone, or, have instructions sent via text?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous continuer par téléphone, ou que j'envoi un message texte avec les instructions pour le faire par vous-même." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "6bc25f79-bf49-4c8b-932d-ff0bb6d2140f"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To continue over the phone, say phone or press 1. text message,  or press 9. team member or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour continuer par téléphone, dites téléphone ou faites le 1. Message texte ou faites le 9. Pour un membre de l'équipe, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ff70b582-00aa-4c37-a9a6-71c3306fe681"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "13114010-c972-4c03-8849-fc9186544cf5"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Bill and balance"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "getting your account balance"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "consulter le solde de votre compte"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "viewing your account balance"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "visionner votre solde au compte"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "sms_template",
+      "value": "0009SaHN73190034"
+    }, {
+      "parameter": "sms_template_fr",
+      "value": "0009SaHN7319009D"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on your balance, you must use your My TELUS account, It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent cannot help perform this on a customers behalf, I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur votre solde au compte, vous devez utiliser votre compte Mon TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent peut ne pas être en mesure d'aider à faire ça au nom d'un client, Je vous envoie maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "I can help you get information on your current account balance, you can view it in your my telus account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je peux vous aider à obtenir des informations sur le solde actuel de votre compte, vous pouvez le consulter dans votre compte telus." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.account_recovery",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "login-problems"
+      }, {
+        "parameter": "billbalance_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_bill_balance",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "db841e78-40b4-4119-8ca1-167a9d693cb5"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billbalance_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_bill_balance",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190034"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319009D"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "b4f45956-93d3-4aac-9892-5a4bd6ace215"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phone_online_bill_balance",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Bill and balance online or app",
+    "name": "e06d3971-0181-4260-8d34-28b511c38b7a"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billbalance_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_bill_balance",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319009D"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190034"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "7a2639eb-c5e7-45b5-b9b9-b012a2c081b2"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "phone_online_bill_balance",
+        "value": null
+      } ]
+    },
+    "targetPage": "Bill due date online or app",
+    "name": "d020c938-4d3d-432c-aebf-3f4acce28af2"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "SMS Flow",
+    "name": "6178fe84-d4da-48f2-b50a-5c386385c37a"
+  }, {
+    "condition": "$session.params.phone_online_bill_balance = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billbalance_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_bill_balance",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Bill and balance online or app",
+    "name": "7892bddb-3b64-4447-9560-7b8a1001bace"
+  }, {
+    "condition": "$session.params.phone_online_bill_balance = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "billbalance_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_bill_balance",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "900fc401-f28e-4c03-812e-29d65f69cc67"
+  }, {
+    "condition": "$session.params.phone_online_bill_balance = \"online\" OR $session.params.phone_online_bill_balance = \"2\" OR $session.params.phone_online_bill_balance = \"self-serve instructions\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billbalance_retrycnt",
+        "value": null
+      }, {
+        "parameter": "phone_online_bill_balance",
+        "value": null
+      } ]
+    },
+    "targetPage": "Bill and balance online or app",
+    "name": "34a373d7-4c64-4dd7-bb24-db5f5967eca8"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billbalance_retrycnt",
+        "value": "$sys.func.ADD($session.params.billbalance_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.billbalance_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.billbalance_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "9b7a49fe-488b-48a9-8a57-042384680448"
+  } ],
+  "transitionRouteGroups": [ "billing_supp_routes" ]
+}

@@ -1,0 +1,430 @@
+{
+  "name": "a80d21a9-614a-45d4-9921-7826917a98a0",
+  "displayName": "Soft shopper",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_soft_shopper",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like to speak to a team member?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Souhaitez-vous parler avec un membre de l'équipe?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you want to connect to a team member now?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous parler avec un membre de l'équipe maintenant?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "a83c8947-43d0-41ad-b796-194e69efe172"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you want to connect to a team member to help you, say yes or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour qu'un membre de l'équipe vous aide, dites oui ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "f09986eb-72e1-448f-b13c-4f5518ec8218"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "5e889153-0671-49e3-b1a4-d71e4190ca0f"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you want to connect to a team member now?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous parler avec un membre de l'équipe maintenant?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "023aafc0-a76b-4f99-ab59-f56ba06979f6"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you want to connect to a team member to help you, say yes or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour qu'un membre de l'équipe vous aide, dites oui ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "91e5fe10-ef62-4823-8b78-276e593565f6"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "f3968192-62da-47fb-9017-d154faf229d7"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Soft shopper"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "At TELUS we offer a variety of plans to choose from to best suit your needs." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Whether you're in a contract or month to month, I'm sure we can find the plan that works best for you." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you are interested in bringing your mobile services over from another provider to TELUS, I would need to connect you to a team member to explore your options." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Chez TELUS nous offrons une variété de forfaits pour bien répondre à vos besoins." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Que vous ayez une entente à durée déterminée ou sur une base mensuelle, nous trouverons le forfait parfait pour vous." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous voulez transférer un téléphone mobile d’un autre fournisseur à TELUS, je peux vous transférer à un membre de l’equipe pour explorer vos options." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "TELUS provides a range of plans to choose from that cater to your specific requirements." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Regardless of whether you're on a contract or a month-to-month basis, we're confident we can find the plan that best suits your needs." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you're considering switching your mobile services from another provider to TELUS, I'll need to connect you with a team member to explore your options." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS propose une gamme de forfaits parmi lesquels vous pouvez choisir en fonction de vos besoins spécifiques." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Que vous soyez sous contrat ou sur une base mensuelle, nous sommes convaincus de pouvoir trouver le forfait qui vous convient le mieux." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous envisagez de transférer vos services mobiles d'un autre fournisseur vers TELUS, je vais devoir vous mettre en relation avec un membre de l'équipe pour explorer vos options." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "At TELUS, we offer a variety of plans to select from that are customized to meet your specific needs." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Whether you're on a contract or a month-to-month basis, we're certain we can find the ideal plan for you." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you're interested in transferring your mobile services from another provider to TELUS, I'll have to refer you to a team member to explore your options." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Chez TELUS, nous offrons une variété de forfaits adaptés à vos besoins spécifiques." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Que vous soyez sous contrat ou sur une base mensuelle, nous sommes certains de pouvoir trouver le forfait idéal pour vous." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous souhaitez transférer vos services mobiles d'un autre fournisseur vers TELUS, je vais devoir vous référer à un membre de l'équipe pour explorer vos options." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "softshopper_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_soft_shopper",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "a3d481bf-889c-408e-b450-6981c692b738"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "softshopper_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_soft_shopper",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "346ca6c3-03fd-443e-9beb-0d3a7f2b10b7"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "softshopper_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_soft_shopper",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "d7fe218a-217d-4ca6-a0d6-0c766a14f287"
+  }, {
+    "intent": "head_intent.cancellation_fee",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "softshopper_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_soft_shopper",
+        "value": null
+      } ]
+    },
+    "targetPage": "Cancellation fee",
+    "name": "56ef1c9c-0d73-4e57-99ed-c3d3c2892197"
+  }, {
+    "intent": "head_intent.account_close",
+    "condition": "$session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_soft_shopper",
+        "value": null
+      }, {
+        "parameter": "softshopper_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Cancel account",
+    "name": "9209779c-92e3-42d4-974d-68d64fc17934"
+  }, {
+    "intent": "head_intent.account_close",
+    "condition": "$session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "softshopper_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_soft_shopper",
+        "value": null
+      } ]
+    },
+    "targetPage": "Cancel Account EPP",
+    "name": "4c07dda7-f035-4318-8eeb-d65920ff7bd7"
+  }, {
+    "condition": "$session.params.dtmf_soft_shopper = \"0\" OR $session.params.dtmf_soft_shopper = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "softshopper_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_soft_shopper",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "275df0a7-d6f1-404c-9118-8c930fa8ae8f"
+  }, {
+    "condition": "$session.params.dtmf_soft_shopper = 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_soft_shopper",
+        "value": null
+      }, {
+        "parameter": "softshopper_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "fb59be4a-f486-426d-a484-f579ea455c4d"
+  } ]
+}

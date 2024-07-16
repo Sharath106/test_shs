@@ -1,0 +1,203 @@
+{
+  "name": "11426713-5c13-4745-8376-4ed38c6901ee",
+  "displayName": "Churn",
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I'm happy to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Certainement, je peux vous transférer à un membre de l’equipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "fab3a48e-5e3a-41b4-bd99-b6524d7b37c0"
+  }, {
+    "condition": "$session.params.routeDetails = null AND $session.params.conversation = null AND $session.params.searchResult = null AND $session.params.user = null AND $session.params.init != null",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "init_retry",
+        "value": "churn flow"
+      } ]
+    },
+    "name": "ae0f2fd2-8a00-4fde-8e50-3af4a296239a"
+  }, {
+    "condition": "$session.params.is_repeat_prompted = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_repeat_prompted",
+        "value": null
+      } ]
+    },
+    "targetPage": "Repeat",
+    "name": "87774951-3c2d-458d-add0-298c5bd6bcfe"
+  }, {
+    "condition": "$session.params.route = \"account_close\" AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cancel account",
+    "name": "a879e6a8-c24e-491e-b7a6-da8f4f921b83"
+  }, {
+    "condition": "$session.params.route = \"soft_shopper\" AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Soft shopper",
+    "name": "d40dafec-f2d1-429a-8cd3-acb32c116de2"
+  }, {
+    "condition": "$session.params.route = \"remove_a_line\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Remove a line",
+    "name": "4e1889bb-8c17-430a-ba52-71b9d27b911f"
+  }, {
+    "condition": "$session.params.route = \"tenure\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tenure",
+    "name": "9ed208c7-ce35-43af-a411-75367b3f7b8c"
+  }, {
+    "condition": "$session.params.route = \"cancellation_fee\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cancellation fee",
+    "name": "9cd19cff-8535-4486-9551-424db46c8c8a"
+  }, {
+    "condition": "$session.params.route = \"leaving_the_country\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Leaving the country",
+    "name": "44bf5dfb-9507-497a-9298-0bbdd24d2a3f"
+  }, {
+    "condition": "$session.params.route = \"account_close\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cancel Account EPP",
+    "name": "c9bbe9f8-bfd4-423d-9a54-a5cbb87665f2"
+  }, {
+    "condition": "$session.params.route = \"soft_shopper\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Soft shopper EPP",
+    "name": "ba65e714-9fb7-4f87-9199-94a72e374ba8"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "8450d0db-5e79-491d-8ea1-970db413e340"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "3330cfb8-8237-43b6-a58c-708570f264a7"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I'm not sure I got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you mind rephrasing?", "Can you try to rephrase your question?", "Can you reword that for me?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir bien compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Seriez-vous en mesure de reformuler?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "07712cc8-2e12-419a-a5eb-2674a9fa515d"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "45654036-7812-46b4-973c-f3dfbdea27bf"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you rephrase?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "cb94bb5b-58f9-43bf-9a38-6a64e260ce17"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "a45f4d65-622f-49e4-805e-6cc0f9eb478f"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_CUSTOM",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true,
+    "speechAdaptationSettings": {
+    
+    }
+  },
+  "transitionRouteGroups": [ "Small Talk" ]
+}

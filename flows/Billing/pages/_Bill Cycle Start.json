@@ -1,0 +1,629 @@
+{
+  "name": "71daa671-b925-4f6a-816a-9fe6bcaed37d",
+  "displayName": "_Bill Cycle Start",
+  "form": {
+    "parameters": [ {
+      "displayName": "phone_number",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Ça ne semble pas être un numéro valide. Veuillez entrer votre numéro de téléphone à 10 chiffres.", "Ceci n'est pas un numéro de téléphone. Entrez un numéro valide pour continuer." ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "conditionalCases": [ {
+              "cases": [ {
+                "condition": "$session.params.phoneNumberCount \u003c 5"
+              }, {
+              
+              } ]
+            } ]
+          },
+          "name": "59bff59f-f977-4276-b2a1-2f0950a131f7"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+          
+          },
+          "name": "31109864-97f6-4e2f-9de7-d4a50e4e7e62"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "webhook": "Account Identity",
+    "tag": "get_phone_numbers",
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_Bill Cycle Start"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.no_account = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "I can't find any account associated with your profile." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je ne trouve aucun compte associé à votre profil." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.invalid_number_counter = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "I can help you get your billing cycle date." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je peux vous aider à obtenir la date de début de votre cycle de facturation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ],
+    "returnPartialResponses": true
+  },
+  "transitionRoutes": [ {
+    "intent": "supplemental.num_notonlist",
+    "condition": "$session.params.no_find_phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If your number is not on the list, and you have another My TELUS profile, please log out and start another session using correct credentials" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "no_find_phone_number",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "e945ab23-11ca-4d7a-8320-aa681296797a"
+  }, {
+    "intent": "supplemental.num_notonlist",
+    "condition": "$session.params.no_find_phone_number = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me get you to an agent in this case." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous amener à un agent dans ce cas." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "55f6a39a-3abd-4edf-b4d6-f1ea1b2b11e0"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.phone_number != null AND $session.params.phoneNumberCount != \"1\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Bill Cycle Account Validation",
+    "name": "392414e7-8924-4437-9b7d-15e5b4919600"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.phone_number != null AND $session.params.phoneNumberCount != \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phone_number",
+        "value": null
+      }, {
+        "parameter": "phone_number_counter",
+        "value": null
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "1e516915-8e65-48bf-b2a1-dae6d38e6c4a"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.phoneNumberCount = \"1\"",
+    "triggerFulfillment": {
+      "webhook": "Account Identity",
+      "tag": "selected_phone_number",
+      "setParameterActions": [ {
+        "parameter": "phone_number",
+        "value": "$session.params.filtered_phoneNumbers[0]"
+      }, {
+        "parameter": "phone_number_counter",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "_Bill Cycle Account Validation",
+    "name": "5ea34090-b274-43bb-9977-1939db18d9ac"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.phoneNumberCount = \"1\" AND $session.params.no_find_phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can't seem to find any other phone numbers associated with your profile. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you have another My TELUS profile, please log out and start a new session using the correct credentials." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne semble pas trouver d'autre numéro de téléphone associé  à votre profil." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous avez un autre profil Mon TELUS, veuillez-vous déconnecter et commencer une nouvelle session en utilisant le bon profil." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "no_find_phone_number",
+        "value": "true"
+      } ]
+    },
+    "name": "c828bd17-bc0e-484a-bf6f-8cda8bb2ceb1"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.phoneNumberCount = \"1\" AND $session.params.no_find_phone_number = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I still can't find the phone number you're inquiring about, let me get you to an agent." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne trouve toujours pas ce numéro de téléphone, je peux vous mettre en contact avec un agent." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "c2f30520-3389-4127-90ae-f26fd33f5c1b"
+  }, {
+    "condition": "$session.params.out_of_scope_ffh = \"true\" OR $session.params.filtered_phoneNumbers[0] = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing cycle date",
+    "name": "ea74d431-3b51-488b-a9f1-10fe18e1c832"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "⏳ Please wait, I am still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "⏳ Veuillez patientez, je continue de recueillir vos informations." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Account Identity",
+      "tag": "get_phone_numbers",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "returnPartialResponses": true
+    },
+    "name": "354c48ea-29f1-47d3-a3a4-7e0c081065e5"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, une erreur semble s'être produite." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Billing cycle date",
+    "name": "b3b349cc-868c-4a36-859f-2d7bbff1d802"
+  }, {
+    "condition": "($session.params.phone_number != null AND $session.params.phone_number_counter != 1) OR ($session.params.phone_number_counter = 1 AND $session.params.phoneNumberCount = 1)",
+    "triggerFulfillment": {
+      "webhook": "Account Identity",
+      "tag": "selected_phone_number",
+      "setParameterActions": [ {
+        "parameter": "phone_number_counter",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "_Bill Cycle Account Validation",
+    "name": "21458ac7-1143-4c38-a974-fb4eb3545bd0"
+  }, {
+    "condition": "$session.params.phone_number_counter != \"1\" AND $session.params.phoneNumberCount = 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Is $session.params.filtered_phoneNumbers[0] the phone number you are inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Le $session.params.filtered_phoneNumbers[0] est-il le numéro de téléphone auquel vous souhaitez vous renseigner?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "a8b1f922-0467-4073-a346-490a0e4b0699"
+  }, {
+    "condition": "$session.params.phone_number != null OR $session.params.phone_number_counter = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Is $session.params.phone_number still the phone number you're inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous toujours poursuivre avec le $session.params.phone_number ?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "fd091ce3-d8e0-4fab-a3d8-6c7770b42d92"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"2\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Vous aimeriez continuer avec quel numéro de téléphone?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            } ]
+          }
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "5262aed5-a42c-4472-9f16-a6aa8f908d1a"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"3\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Vous aimeriez continuer avec quel numéro de téléphone?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            } ]
+          }
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "439341bb-4316-4199-a397-dece83377cf1"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"4\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[3]",
+              "text": "$session.params.filtered_phoneNumbers[3]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Vous aimeriez continuer avec quel numéro de téléphone?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[3]",
+              "text": "$session.params.filtered_phoneNumbers[3]"
+            } ]
+          }
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "4a8c4e95-1846-4d43-9f05-383527b8f53e"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"5\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[3]",
+              "text": "$session.params.filtered_phoneNumbers[3]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[4]",
+              "text": "$session.params.filtered_phoneNumbers[4]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Vous aimeriez continuer avec quel numéro de téléphone?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[3]",
+              "text": "$session.params.filtered_phoneNumbers[3]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[4]",
+              "text": "$session.params.filtered_phoneNumbers[4]"
+            } ]
+          }
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "a9b7b8c9-15e3-4125-9e33-6764d412fe41"
+  }, {
+    "condition": "$session.params.phoneNumberCount \u003e \"5\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.invalid_number_counter = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "What phone number are you inquiring about?" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Votre demande est par rapport à quel numéro de téléphone?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "It looks like you have many phone numbers associated to your profile." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "What phone number are you inquiring about?" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Vous semblez avoir plusieurs numéros de téléphone associés à votre profil." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Votre demande est par rapport à quel numéro de téléphone?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "f28a13bf-6cf5-45f0-9f70-32b3bfa552fd"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Billing cycle date",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "33f21cd7-ca72-41b2-b1ff-c33bfd44e68e"
+  }, {
+    "targetPage": "Billing cycle date",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "80c84a78-c6af-4d29-99f7-0ccc0f8c1f76"
+  } ]
+}

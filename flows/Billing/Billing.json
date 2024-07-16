@@ -1,0 +1,492 @@
+{
+  "name": "2b61555a-b4a7-4b86-aad5-371d7c9d63a2",
+  "displayName": "Billing",
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "2cc69717-71e0-431d-8428-c1a1fc152e8b"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.humanagent_attempt = 0 OR $session.params.humanagent_attempt = 1 OR $session.params.humanagent_attempt = 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "humanagent_attempt",
+        "value": "$sys.func.ADD($session.params.humanagent_attempt, 1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.humanagent_attempt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "I understand your concern, I am here to help. While the wait time for our agents may be longer than usual, I'm confident that I can assist you with your request. Would you like to continue with our conversation so I can do my best to help?" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Je comprends votre inquiétude, et je suis là pour vous aider. Étant donné que le temps d'attente pour nos agents peut être plus long que d'habitude, je suis convaincu que je peux vous aider avec votre demande. Souhaitez-vous continuer notre conversation afin que je puisse faire de mon mieux pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.humanagent_attempt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "I'm here to confidently address your billing-related question with my extensive training and expertise, providing you with accurate and efficient assistance, Would you like to give me a try one more time please ?" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Je suis là pour vous aider en toute confiance et avec toutes vos questions concernant votre facturation. Voudriez-vous me donner une autre chance pour vous aider ?" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "To save you time , please tell me what specific billing queries you have." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Afin de vous faire gagner du temps, veuillez m'indiquer en détail vos questions de facturation." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "54337ba8-e467-43e3-b375-f121a8de3a23"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.humanagent_attempt = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I'm happy to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sure, laissez-moi vous mettre en contacte avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "08cf014c-664b-4d2e-beaf-c48dd8fa9eb0"
+  }, {
+    "condition": "$session.params.humanagent_attempt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "humanagent_attempt",
+        "value": 0
+      } ]
+    },
+    "name": "ad7be1ce-90da-4eed-8151-1cdcd13dd0bf"
+  }, {
+    "condition": "$session.params.routeDetails = null AND $session.params.conversation = null AND $session.params.searchResult = null AND $session.params.user = null AND $session.params.init != null",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "init_retry",
+        "value": "billing flow"
+      } ]
+    },
+    "name": "9941421e-7379-4489-b1cb-7cb0d1474db8"
+  }, {
+    "condition": "$session.params.is_repeat_prompted = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_repeat_prompted",
+        "value": null
+      } ]
+    },
+    "targetPage": "Repeat",
+    "name": "4f305382-0b75-4a34-9df0-610fccac84f5"
+  }, {
+    "condition": "$session.params.route = \"view_mobility_bill\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "View mobility bill",
+    "name": "31b4b7d2-c8d7-48f6-8824-3e0daa57b167"
+  }, {
+    "condition": "$session.params.route = \"price_increase_inquiry\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Price increase inquiry",
+    "name": "e4652c4c-0805-41b0-9e7c-2f062ff7f4a4"
+  }, {
+    "condition": "$session.params.route = \"bill_reduction_options\" AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Lower my bill",
+    "name": "e3e11dba-d6d7-4f0f-b2ec-a4eebda6c8a1"
+  }, {
+    "condition": "$session.params.route = \"credit_balance\" OR $session.params.route = \"payment_mistake\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Credit or Overpaid balance",
+    "name": "aca9ff51-419b-4f99-91ba-edd680fb9a42"
+  }, {
+    "condition": "$session.params.route = \"dispute_bill\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill dispute",
+    "name": "29d05ebe-ab7a-44b0-ba06-047715779ebe"
+  }, {
+    "condition": "$session.params.route = \"usage_overage\" AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Usage overage",
+    "name": "6019f07d-5bd3-4df4-8a6f-dc7a70cc1474"
+  }, {
+    "condition": "$session.params.route = \"bill_missing_credit\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Missing credit",
+    "name": "db21a201-6fb9-4aab-9d44-7fc44338ecc8"
+  }, {
+    "condition": "$session.params.route = \"what_uses_data\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Track what uses data",
+    "name": "c05fb098-e311-4d6a-bf0d-0b2d43ee6467"
+  }, {
+    "condition": "$session.params.route = \"local_calling\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Local calling",
+    "name": "e6a1f076-c55c-4117-9221-a4e7331187b3"
+  }, {
+    "condition": "$session.params.route = \"bill_reprint\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill reprint",
+    "name": "dac0540d-5c97-4244-83b2-26d4ffd54372"
+  }, {
+    "condition": "$session.params.route = \"bill_intl_charges\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Accidental roaming",
+    "name": "40060422-b477-4a9e-ad2f-9e27b6ab1775"
+  }, {
+    "condition": "$session.params.route = \"discounts\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Discounts",
+    "name": "9489dbbf-8115-4a12-8559-c9161844cbe5"
+  }, {
+    "condition": "$session.params.route = \"taxes\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Taxes",
+    "name": "d92540e9-099b-40c8-a0a6-c8754ddc138f"
+  }, {
+    "condition": "$session.params.route = \"partial_charges\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Partial charges",
+    "name": "541ed1ae-adcf-4565-9b4d-ef3f63cd1b4d"
+  }, {
+    "condition": "$session.params.route = \"bill_explanation\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "How to read your bill",
+    "name": "9acfb1e8-b69f-44a8-9eab-6c5eed8af1a2"
+  }, {
+    "condition": "$session.params.route = \"change_bill_cycle\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change bill cycle",
+    "name": "400c0f06-0def-4faf-ae07-6322270105d9"
+  }, {
+    "condition": "$session.params.route = \"first_bill\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "First bill explained",
+    "name": "f0693906-a4f2-4fb9-bf5f-88e1442d290d"
+  }, {
+    "condition": "$session.params.route = \"tax_exemption\" AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tax exemption",
+    "name": "e74385dc-f40d-4d18-9955-46d551db264f"
+  }, {
+    "condition": "$session.params.route = \"bill_missing_discount\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Discount expiring",
+    "name": "2e0abfb9-0f06-4c48-8b23-3e4bb59446a5"
+  }, {
+    "condition": "$session.params.route = \"collection_agency\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collection agency",
+    "name": "d8244890-2525-4cad-a222-fa5c2e540a20"
+  }, {
+    "condition": "$session.params.route = \"bill_amount_due\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Account Balance Start",
+    "name": "268336e9-e18c-4f41-9930-5927513a96ef"
+  }, {
+    "condition": "$session.params.route = \"plans_usage\" AND $session.params.acct_id_error = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can send you a text message with how to get details of your usage yourself." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je peux vous envoyer un texte expliquant comment obtenir vous-même des détails sur votre utilisation." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Usage online or app",
+    "name": "736dbe5f-579e-4487-bbda-381ec52bc771"
+  }, {
+    "condition": "$session.params.route = \"plans_usage\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Usage",
+    "name": "123a7cbd-b07b-402f-9c02-a1cff753fcc4"
+  }, {
+    "condition": "$session.params.route = \"bill_notifications\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill notifications or eBill",
+    "name": "f061476a-a4f9-4753-90ef-6178ffd83ee1"
+  }, {
+    "condition": "$session.params.route = \"bill_cycle_date\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing cycle date",
+    "name": "5492b2b0-cf9a-4375-aef6-30b5520b792d"
+  }, {
+    "condition": "$session.params.route = \"bill_due_date\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Account Balance Start",
+    "name": "ba1c6160-c81c-43c4-8338-5d8edfc44818"
+  }, {
+    "condition": "$session.params.route = \"text_record\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Text records",
+    "name": "eaa81674-8108-4f44-be53-ecc31f4c9b23"
+  }, {
+    "condition": "$session.params.route = \"data_conversion\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data conversion",
+    "name": "fa8adccc-ef12-4ca7-9156-b66e05d883c8"
+  }, {
+    "condition": "$session.params.route = \"bill_reduction_options\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Lower my bill EPP",
+    "name": "b2b0de3d-d75f-420e-9134-91ffc0d82e85"
+  }, {
+    "condition": "$session.params.route = \"tax_exemption\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tax exemption EPP",
+    "name": "d7b0ac06-2c61-4697-9348-c90252f05947"
+  }, {
+    "condition": "$session.params.route = \"supp_onlineapp\" OR $session.params.route = \"supp_device_android\" OR $session.params.route = \"supp_device_iphone\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bounce Back",
+    "name": "ad6a7029-f2c2-4634-879a-038187ba50e1"
+  }, {
+    "condition": "$session.params.route = \"collect_calls\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collect calls",
+    "name": "a392951d-2bd8-40dc-a12e-99ec5dc3d029"
+  }, {
+    "condition": "$session.params.route = \"bill_unexpected\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cancelled still getting billed",
+    "name": "7ae871b5-6ad5-4ac0-a164-5a620d179d8e"
+  }, {
+    "condition": "$session.params.route = \"bill_waive_fee\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Mobility Fees",
+    "name": "38c8379a-c2bc-4211-92a5-d539788df3c5"
+  }, {
+    "condition": "$session.params.route = \"accidental_roaming\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Accidental roaming",
+    "name": "2ef14dfc-2345-4460-8ea2-879ddb8a5c6c"
+  }, {
+    "condition": "$session.params.route = \"payment_history\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Account Balance Start",
+    "name": "bdaed32e-b5a4-4cf0-b960-27d77fba12f6"
+  }, {
+    "condition": "$session.params.route = \"account_balance\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Account Balance Start",
+    "name": "0e2a15c9-fe72-4e96-918d-8518ea5354bb"
+  }, {
+    "condition": "$session.params.route = \"usage_overage\" AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Usage Overage EPP",
+    "name": "24458968-b25a-4f04-b92c-47ff8aaf1ff0"
+  }, {
+    "condition": "$session.params.route = \"what_uses_data\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Track what uses data",
+    "name": "02f4dc0b-58ed-4356-bdb5-bc966cf6aff6"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ff2d3eb0-dd9d-4146-b858-49650b1be939"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0a86362b-e3d5-422b-b3f7-ae683d798f50"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I'm not sure I got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you mind rephrasing?", "Can you try to rephrase your question?", "Can you reword that for me?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir bien compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Seriez-vous en mesure de reformuler?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "76b807ab-70df-4bee-8758-38d0dbfc4e2a"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "794d8269-60c5-4192-891b-8a08c22bb3dc"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I'm not sure I got this one.", "I'm not sure I understand.", "Sorry, I didn't really catch that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Can you reword that for me?", "Can you try to rephrase your question?", "Do you mind rephrasing?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "108cac8d-d212-4cb4-8390-575d41bed976"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "625705f1-ef41-408d-955d-ed3b08acad26"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_CUSTOM",
+    "classificationThreshold": 0.38,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL"
+  },
+  "transitionRouteGroups": [ "Small Talk" ]
+}

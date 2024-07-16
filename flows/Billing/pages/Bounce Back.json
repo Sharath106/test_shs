@@ -1,0 +1,92 @@
+{
+  "name": "c8497d53-d61d-4931-86b9-0d1a394029d2",
+  "displayName": "Bounce Back",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "($session.params.last_page = \"Bill and balance online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Bill and balance online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill and balance online or app",
+    "name": "a5663cef-57d0-44a3-aa16-19ef070e8828"
+  }, {
+    "condition": "($session.params.last_page = \"Bill due date online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Bill due date online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill due date online or app",
+    "name": "94d92de0-467f-4158-b8f2-808a45ec1e49"
+  }, {
+    "condition": "($session.params.last_page = \"Billing cycle date online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Billing cycle date online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing cycle date online or app",
+    "name": "26bab42d-1421-403c-92cb-df0217a71c96"
+  }, {
+    "condition": "($session.params.last_page = \"Text records online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Text records online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Text records online or app",
+    "name": "e5bb23d9-dca4-4c6b-bef4-aa66bda8a77a"
+  }, {
+    "condition": "($session.params.last_page = \"Usage online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"Usage online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Usage online or app",
+    "name": "1ef5ac39-2b2a-4cad-9cd2-c04446d6f537"
+  }, {
+    "condition": "($session.params.last_page = \"View mobility bill online or app\" AND $session.params.online_vs_app = \"online\") OR ($session.params.last_page = \"View mobility bill online or app\" AND $session.params.online_vs_app = \"app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "View mobility bill online or app",
+    "name": "afc39a9d-c1a2-4511-b0e2-d37d0fc303cd"
+  }, {
+    "condition": "$session.params.last_page = \"Track what uses data\" AND $session.params.route = \"supp_device_android\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "android"
+      } ]
+    },
+    "targetPage": "Track what uses data",
+    "name": "8f5a0417-a48a-4757-a064-055f4113a842"
+  }, {
+    "condition": "$session.params.last_page = \"Track what uses data\" AND $session.params.route = \"supp_device_iphone\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "iphone"
+      } ]
+    },
+    "targetPage": "Track what uses data",
+    "name": "1065226b-1daa-4e6c-a4b8-e7f00a71c3a8"
+  } ]
+}

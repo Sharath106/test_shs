@@ -1,0 +1,373 @@
+{
+  "name": "f22749d7-0e2c-4ca1-89e7-91f7982a7d3d",
+  "displayName": "Discounts",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_discounts",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "  Are you inquiring about our current offers and promotions, or, looking for account related info?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Vous vous renseignez sur nos offres et promotions en cours, ou recherchez des informations relatives à votre compte?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "1d1a23ad-09e0-4043-81e2-716f6c094fec"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "  Are you inquiring about our current offers and promotions, or, looking for account related info?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Vous vous renseignez sur nos offres et promotions en cours, ou recherchez des informations relatives à votre compte?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "45c66a77-c304-4ce5-947d-9d81ddf35d26"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "For our current promotions, say promotions or press 1. or say account related info or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour nos promotions en cours, dites promotions ou faites le 1. Pour les informations du compte, dites informations du compte ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "c5cf9acf-d494-4f62-94c5-2b5f4dd5fcbc"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "For our current promotions, say promotions or press 1. or say account related info or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour nos promotions en cours, dites promotions ou faites le 1. Pour les informations du compte, dites informations du compte ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "cce1b915-8044-4156-95c4-f61cb9d9908a"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "5cbec74c-6f25-430e-b39c-52fb0844de8b"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "cdbdd809-7e5b-4081-9b9e-d9ddef2ac24d"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Discounts"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.discounts_retrycnt = null OR $session.params.discounts_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "At TELUS, discounts are typically provided through employee plans, TELUS rewards, current in-market promotions, or, rate plan offers." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Are you inquiring about our current offers and promotions, or, looking for account related info?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Chez TELUS, les remises sont généralement fournies par le biais de forfaits d'employés ou offertes en fonction des promotions en cours sur le marché." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous vous renseignez sur nos offres et promotions en cours, ou recherchez des informations relatives à votre compte?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.discounts_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Are you inquiring about our current offers and promotions, or, looking for account related info?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous vous renseignez sur nos offres et promotions en cours, ou recherchez des informations relatives à votre compte?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.discounts_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "For our current promotions, say promotions or press 1. or say account related info or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour nos promotions en cours, dites promotions ou faites le 1. Pour les informations du compte, dites informations du compte ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.account_activation",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "multiple_line_activation"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "eb2f3f74-d18c-4ea1-8f01-7301e46c9118"
+  }, {
+    "intent": "head_intent.plans_promotions",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "promotions"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "7c3110fe-c766-4b6a-9253-989841b3978a"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "discounts_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_discounts",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "66a503cf-7bc7-4525-9863-8a31d06bc59d"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "discounts_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_discounts",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "cb1673bb-7eff-470f-81e9-e7eb0fbe31c8"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Are you inquiring about our current offers and promotions, or, looking for account related info?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Vous vous renseignez sur nos offres et promotions en cours, ou recherchez des informations relatives à votre compte?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "7566e150-5128-47b9-befd-269695da8b82"
+  }, {
+    "condition": "$session.params.discounts_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "discounts_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "cdfd008e-4a6b-4bd6-b26f-b089dcba6277"
+  }, {
+    "condition": "$session.params.dtmf_discounts = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "promotions"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "66fefe45-688e-4b25-9b80-d102380bd34b"
+  }, {
+    "condition": "$session.params.dtmf_discounts = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "multiple_line_activation"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "c731aac9-3bb9-47d6-82f1-7c6913aa2b1d"
+  }, {
+    "condition": "$session.params.discounts_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "discounts_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "4d1a4265-aa3b-4e93-aa6b-e77e078a4c8e"
+  }, {
+    "condition": "$session.params.dtmf_discounts = 3 OR $session.params.dtmf_discounts = 9 OR $session.params.dtmf_discounts = 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_discounts",
+        "value": null
+      }, {
+        "parameter": "discounts_retrycnt",
+        "value": "$sys.func.ADD($session.params.discounts_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "10dfff0e-348f-4998-9b2d-d41f85a903b6"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "discounts_retrycnt",
+        "value": "$sys.func.ADD($session.params.discounts_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.discounts_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.discounts_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "9c626d27-903b-43bb-8734-0c0a40503e40"
+  } ]
+}

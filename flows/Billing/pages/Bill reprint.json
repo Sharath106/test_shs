@@ -1,0 +1,460 @@
+{
+  "name": "f55974e5-eefe-4ecc-8775-0bb7a890a727",
+  "displayName": "Bill reprint",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_bill_reprint",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text on how to view your bills online?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un message texte avec plus d'informations sur comment consulter vos factures en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "670a148a-bbfc-4dd2-a924-1cb339735b1a"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "d13248f1-6242-4607-a0e6-769aa191c900"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "f04096a7-1edb-438d-ac53-90da253e5a08"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text on how to view your bills online?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un message texte avec plus d'informations sur comment consulter vos factures en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "4128da0e-bbc4-4977-a51b-d645b41b2632"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ba03a76f-53d4-44a8-868a-74bad3d7b32d"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "c5d3632c-6c69-4eed-851d-88e77662b1ee"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Bill reprint"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "how to reprint your bill"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la façon de réimprimer votre facture"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "reprinting your bills"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "réimprimer vos facture"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "dtmf_bill_reprint",
+      "value": "9"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To complete an invoice reprint with the help of an agent, there may be a $$session.params.bill_reprint_fee service fee." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You are encouraged to complete this on your My TELUS account for no charge. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To help you reprint your bills, I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour faire réimprimer vos factures avec l'aide d'un agent, des frais de service de $session.params.bill_reprint_fee $ peuvent s'appliquer." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Nous vous encourageons à le faire gratuitement sur votre compte Mon TELUS. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour vous aider à réimprimer vos factures, Je vous envoie maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can easily view, download, and print up to 18 months of your previous bills over at My TELUS." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "A team member can help, but there is a charge with printing and sending another copy." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez facilement consulter, télécharger et imprimer jusqu'à 18 mois de vos factures précédentes sur votre Mon TELUS. Un membre de l’équipe peut aider, mais il y a des frais d’impression et d’envoi d’une autre copie." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900TU"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319009P"
+      }, {
+        "parameter": "billreprint_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_bill_reprint",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "20726e9f-943f-4034-ad2e-e3cfa5feb8de"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billreprint_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_bill_reprint",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900TU"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319009P"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "8432c0ed-a466-477d-9c10-9e88f19c36dd"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billreprint_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_bill_reprint",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319009P"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900TU"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "8540c9a8-874b-4f81-8785-0ab7f35ffc95"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900TU"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319009P"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "billreprint_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "e84a2f4f-4ac0-4c3e-a65d-759e743a4ab8"
+  }, {
+    "condition": "$session.params.dtmf_bill_reprint = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "billreprint_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_bill_reprint",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "8de2c453-f831-46b6-b252-d1d2622ef8ae"
+  }, {
+    "condition": "$session.params.dtmf_bill_reprint = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900TU"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319009P"
+      }, {
+        "parameter": "billreprint_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_bill_reprint",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "dc1fcf8a-9b81-425e-add6-2608e789e91b"
+  }, {
+    "condition": "$session.params.billreprint_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billreprint_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "8bc5c10d-b381-41fa-b624-5d577edbb883"
+  }, {
+    "condition": "$session.params.billreprint_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billreprint_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "d250a2fe-591b-49c2-b202-8f067e331361"
+  }, {
+    "condition": "$session.params.dtmf_bill_reprint = 1 OR $session.params.dtmf_bill_reprint = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_bill_reprint",
+        "value": null
+      }, {
+        "parameter": "billreprint_retrycnt",
+        "value": "$sys.func.ADD($session.params.billreprint_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "cef9f881-73bf-44a8-8c1c-399f1dd24215"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billreprint_retrycnt",
+        "value": "$sys.func.ADD($session.params.billreprint_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.billreprint_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.billreprint_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "ffdab15f-2872-4d2c-82ea-430dbe651529"
+  } ]
+}

@@ -1,0 +1,340 @@
+{
+  "name": "1a0aa82c-3efb-4177-a221-801b5d53f8e1",
+  "displayName": "Repeat",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.repeat_counter = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": 0
+      } ]
+    },
+    "name": "e59483d7-97e6-4727-bd4c-8c23df0f6fb8"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e= 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": "$sys.func.ADD($session.params.repeat_counter,1)"
+      } ]
+    },
+    "name": "c74fd38f-6cc5-4c0e-8f13-3d0e024b782f"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e 5",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For further assistance, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je peux vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "fee1fdbc-c5b4-4309-9ce6-48a490216e45"
+  }, {
+    "condition": "$session.params.last_page = \"Tax exemption\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tax exemption",
+    "name": "f0005023-6b34-4bf5-8aae-eb18f6ae3c23"
+  }, {
+    "condition": "$session.params.last_page = \"Bill reprint\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill reprint",
+    "name": "a02c62a1-b136-4176-b5ef-6ab7f7c0f2c0"
+  }, {
+    "condition": "$session.params.last_page = \"Change bill cycle\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change bill cycle",
+    "name": "e03cd53e-4cf3-4dd3-95d1-142a44539afb"
+  }, {
+    "condition": "$session.params.last_page = \"Data conversion\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data conversion",
+    "name": "fd25b01e-b2a2-4035-a352-96c8909164ce"
+  }, {
+    "condition": "$session.params.last_page = \"Discount expiring\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Discount expiring",
+    "name": "36d8aa47-1ef9-4673-8f69-e627ed060154"
+  }, {
+    "condition": "$session.params.last_page = \"Discounts\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Discounts",
+    "name": "fbc0d2a3-94b1-440d-b8eb-022687f63c7b"
+  }, {
+    "condition": "$session.params.last_page = \"Lower my bill\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Lower my bill",
+    "name": "35a19136-fa8a-4d71-8049-762487ea2b22"
+  }, {
+    "condition": "$session.params.last_page = \"Mobility Fees\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Mobility Fees",
+    "name": "69f66646-4744-4b1e-b937-a2a8f77dbb69"
+  }, {
+    "condition": "$session.params.last_page = \"Partial charges\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Partial charges",
+    "name": "e4214204-7809-46ea-a914-37195d3315f0"
+  }, {
+    "condition": "$session.params.last_page = \"Tax exemption EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tax exemption EPP",
+    "name": "403f48d1-05ab-47a6-8ddf-cb8020449779"
+  }, {
+    "condition": "$session.params.last_page = \"Usage\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Usage",
+    "name": "247ee929-a6ca-433d-a927-48d68924d5b1"
+  }, {
+    "condition": "$session.params.last_page = \"Usage overage\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Usage overage",
+    "name": "d4b83f93-8e14-49fa-a297-6a7c310a646a"
+  }, {
+    "condition": "$session.params.last_page = \"View mobility bill\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "View mobility bill",
+    "name": "c555d6a8-97b8-439a-b174-f936b92968e0"
+  }, {
+    "condition": "$session.params.last_page = \"Accidental roaming\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Accidental roaming",
+    "name": "2323789c-7998-4174-a1d7-fca259006072"
+  }, {
+    "condition": "$session.params.last_page = \"Bill and balance\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill and balance",
+    "name": "63e693cf-0363-41bf-bf0b-4f659cda6cb4"
+  }, {
+    "condition": "$session.params.last_page = \"Bill and balance online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill and balance online or app",
+    "name": "5dbeccab-600c-49ce-b693-3b72c16737f7"
+  }, {
+    "condition": "$session.params.last_page = \"Bill dispute\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill dispute",
+    "name": "e85670cf-8c9a-4982-a672-cef6121111f5"
+  }, {
+    "condition": "$session.params.last_page = \"Bill due date\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill due date",
+    "name": "5b5a3616-421c-4a57-8502-4838fd3beb77"
+  }, {
+    "condition": "$session.params.last_page = \"Bill due date online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill due date online or app",
+    "name": "10914dc3-d7b9-4c96-975f-ec00e3d12627"
+  }, {
+    "condition": "$session.params.last_page = \"Bill notifications or eBill\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill notifications or eBill",
+    "name": "81786ecb-09c4-4e99-a48d-d49e7a5de0cb"
+  }, {
+    "condition": "$session.params.last_page = \"Billing cycle date\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing cycle date",
+    "name": "aa1e1c88-713c-4595-8721-12cf5c6d23d7"
+  }, {
+    "condition": "$session.params.last_page = \"Billing cycle date online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing cycle date online or app",
+    "name": "86ea8d55-ac48-4758-8d49-87162c5a2227"
+  }, {
+    "condition": "$session.params.last_page = \"Cancelled still getting billed\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cancelled still getting billed",
+    "name": "a7591c5f-b156-4339-9973-a19b4205aacb"
+  }, {
+    "condition": "$session.params.last_page = \"Collect calls\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collect calls",
+    "name": "9c4eeb0c-6a89-49b8-9c3c-3ffc7f64118e"
+  }, {
+    "condition": "$session.params.last_page = \"Collection agency\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collection agency",
+    "name": "32d5d9ef-a36e-4d02-9677-42b9540ba381"
+  }, {
+    "condition": "$session.params.last_page = \"Credit or Overpaid balance\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Credit or Overpaid balance",
+    "name": "e8c69408-1943-4ef1-b5b3-e4a5fa037539"
+  }, {
+    "condition": "$session.params.last_page = \"First bill explained\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "First bill explained",
+    "name": "3f1dd15f-bf47-4ca2-9e52-797fae8e9559"
+  }, {
+    "condition": "$session.params.last_page = \"How to read your bill\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "How to read your bill",
+    "name": "eb9a18e2-1f70-41f2-a49b-3bf921e36347"
+  }, {
+    "condition": "$session.params.last_page = \"Local calling\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Local calling",
+    "name": "a8b4beef-0740-460b-94db-f758f5c2def2"
+  }, {
+    "condition": "$session.params.last_page = \"Missing credit\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Missing credit",
+    "name": "72509d96-07f7-4805-872c-f0ef0881b82c"
+  }, {
+    "condition": "$session.params.last_page = \"Payment History\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Payment History ",
+    "name": "5f4551c5-d3e2-4b50-b84b-714ac02c84e6"
+  }, {
+    "condition": "$session.params.last_page = \"Price increase inquiry\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Price increase inquiry",
+    "name": "2a97ac56-76ca-49b8-afc9-92379d4cc813"
+  }, {
+    "condition": "$session.params.last_page = \"Taxes\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Taxes",
+    "name": "a2160aa2-a210-42cb-b172-cba614c62374"
+  }, {
+    "condition": "$session.params.last_page = \"Text records\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Text records",
+    "name": "566fd0b0-b237-4502-849b-a2e3979a7009"
+  }, {
+    "condition": "$session.params.last_page = \"Text records online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Text records online or app",
+    "name": "7f983d6b-5908-46d6-ad81-77968196e2ac"
+  }, {
+    "condition": "$session.params.last_page = \"Track what uses data\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Track what uses data",
+    "name": "61e73f72-7c24-440c-b77f-ba72a3267008"
+  }, {
+    "condition": "$session.params.last_page = \"Usage online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Usage online or app",
+    "name": "f7da5d2d-41df-43bb-8b97-8c4fea53606f"
+  }, {
+    "condition": "$session.params.last_page = \"_Account Balance Final\" OR $session.params.last_page = \"_Account Balance CLP spending limit check\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Account Balance Start",
+    "name": "0ff3ce24-58b4-4fba-a1d9-8525830de45c"
+  }, {
+    "condition": "$session.params.last_page = \"View mobility bill online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "View mobility bill online or app",
+    "name": "3ce9afe4-d48c-4d9a-8f42-68ed69e76611"
+  }, {
+    "condition": "$session.params.last_page = \"Lower my bill EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Lower my bill EPP",
+    "name": "1a0fc5b0-b2c5-47b2-a78b-d784d66437fd"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hmm I didn't quite get that. Could you tell me once more what I can help you with?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Hmm je n'ai pas bien compris. Pourriez-vous me dire une fois de plus comment je peux vous aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "75c53150-1d94-4afb-bd0a-30b4efef25b7"
+  } ]
+}

@@ -1,0 +1,370 @@
+{
+  "name": "6ca5ad73-c4c3-4dfb-9f1d-069338f97c7d",
+  "displayName": "_Account Balance Overdue",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "account_balance",
+      "value": null
+    }, {
+      "parameter": "last_page",
+      "value": "_Account Balance Overdue"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.total_due = 0",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.clp_customer = \"true\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "You do not have an overdue balance at the moment. From your spending limit of $$session.params.clmSummary.creditLimitAmt, you currently do not have a balance owing on your account." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "De votre limite de crédit de $session.params.clmSummary.creditLimitAmt $, vous n'avez actuellement aucun solde dû au compte." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "You currently do not have a balance owing on your account." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Vous n'avez actuellement aucun solde dû sur votre compte." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      }, {
+        "cases": [ {
+          "condition": "$session.params.clp_customer = \"true\" AND $session.params.clp_total_balance \u003c $session.params.clmSummary.creditLimitAmt AND $session.params.clmSummary.unpaidUnbilledAmt \u003e \"0\\.00\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eThis does include \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.unpaidUnbilledAmt\u003c/prosody\u003e of unbilled charges.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Ce solde inclut $session.params.clmSummary.unpaidUnbilledAmt $ de frais non facturé." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "_Account Balance CLP spending limit check",
+    "name": "6ed71f98-664b-47db-9b89-f22fad4c2947"
+  }, {
+    "condition": "$session.params.total_due \u003c \"0\\.00\"",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.clp_customer = \"true\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eYou do not have an overdue balance at the moment. From your spending limit of, \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.creditLimitAmt\u003c/prosody\u003e, you currently have a credit balance of, \u003cprosody rate=\".80\"\u003e$$session.params.clp_total_balance\u003c/prosody\u003e on your account. This credit will be applied on your next bill once it comes out.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eVous n'avez pas de solde en retard présentement. De votre limite de crédit de, \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.creditLimitAmt $\u003c/prosody\u003e, vous avez un solde en crédit de, \u003cprosody rate=\".80\"\u003e$session.params.clp_total_balance $\u003c/prosody\u003e sur votre compte. Ce crédit sera appliqué sur votre prochaine facture une fois sortie.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eYou do not have an overdue balance at the moment. You currently have a credit balance of, \u003cprosody rate=\".80\"\u003e$$session.params.total_due\u003c/prosody\u003e on your account. This credit will be applied on your next bill once it comes out.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eVous n'avez pas de solde en retard présentement. Vous avez actuellement un solde en crédit de, \u003cprosody rate=\".80\"\u003e$session.params.total_due $\u003c/prosody\u003e sur votre compte. Ce crédit sera appliqué sur votre prochaine facture une fois sortie.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      }, {
+        "cases": [ {
+          "condition": "$session.params.clp_customer = \"true\" AND $session.params.clp_total_balance \u003c $session.params.clmSummary.creditLimitAmt AND $session.params.clmSummary.unpaidUnbilledAmt \u003e \"0\\.00\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eThis amount includes, \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.unpaidUnbilledAmt\u003c/prosody\u003e of unbilled charges.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eCe solde inclut aussi \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.unpaidUnbilledAmt $\u003c/prosody\u003e de frais non facturé.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "_Account Balance CLP spending limit check",
+    "name": "2d08e5db-6535-4408-bf44-2352925e1bda"
+  }, {
+    "condition": "$session.params.current_due_amt = \"0\\.00\"",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.clp_customer = \"true\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eFrom your spending limit of, \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.creditLimitAmt\u003c/prosody\u003e, your current total balance on the account of, \u003cprosody rate=\".80\"\u003e$$session.params.clp_total_balance\u003c/prosody\u003e is overdue.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eDe votre limite de crédit de, \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.creditLimitAmt $\u003c/prosody\u003e, votre solde actuel au compte de, \u003cprosody rate=\".80\"\u003e$session.params.clp_total_balance $\u003c/prosody\u003e est en retard. Il était dû le \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eYour current total balance of, \u003cprosody rate=\".80\"\u003e$$session.params.past_due_amt\u003c/prosody\u003e is overdue as it was due by \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eVotre solde actuel au compte de, \u003cprosody rate=\".80\"\u003e$session.params.past_due_amt $\u003c/prosody\u003e est en retard. Il était dû le \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      }, {
+        "cases": [ {
+          "condition": "$session.params.clp_customer = \"true\" AND $session.params.clp_total_balance \u003c $session.params.clmSummary.creditLimitAmt AND $session.params.clmSummary.unpaidUnbilledAmt \u003e \"0\\.00\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eThis amount includes, \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.unpaidUnbilledAmt\u003c/prosody\u003e of unbilled charges.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eCe solde inclut aussi \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.unpaidUnbilledAmt $\u003c/prosody\u003e de frais non facturé.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "_Account Balance CLP spending limit check",
+    "name": "eeb6fddc-96f8-451a-9ecb-3bcf7267e35d"
+  }, {
+    "condition": "$session.params.past_due_amt = \"0\\.00\"",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.clp_customer = \"true\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eYou do not have an overdue balance at the moment. From your spending limit of, \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.creditLimitAmt\u003c/prosody\u003e, your current total balance on the account is, \u003cprosody rate=\".80\"\u003e$$session.params.clp_total_balance\u003c/prosody\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eVous n'avez pas présentement de solde en retard. De votre limite de crédit de, \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.creditLimitAmt $\u003c/prosody\u003e, votre solde actuel au compte est de, \u003cprosody rate=\".80\"\u003e$session.params.clp_total_balance $\u003c/prosody\u003e, et il est dû le \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eYou do not have an overdue balance at the moment. Your current total balance on the account is, \u003cprosody rate=\".80\"\u003e$$session.params.total_due\u003c/prosody\u003e due on \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eVous n'avez pas présentement de solde en retard. Votre solde total actuel sur le compte est de, \u003cprosody rate=\".80\"\u003e$session.params.total_due $\u003c/prosody\u003e, et il est dû le \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      }, {
+        "cases": [ {
+          "condition": "$session.params.clp_customer = \"true\" AND $session.params.clp_total_balance \u003c $session.params.clmSummary.creditLimitAmt AND $session.params.clmSummary.unpaidUnbilledAmt \u003e \"0\\.00\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eThis amount includes \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.unpaidUnbilledAmt\u003c/prosody\u003e of unbilled charges.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eCe solde inclut aussi \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.unpaidUnbilledAmt $\u003c/prosody\u003e de frais non facturé.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "_Account Balance CLP spending limit check",
+    "name": "37b73af5-d5f0-43e8-9c6b-31f8f6c64409"
+  }, {
+    "condition": "$session.params.past_due_amt \u003e \"0\\.00\" AND $session.params.current_due_amt \u003e \"0\\.00\"",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.clp_customer = \"true\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eYour overdue balance is, \u003cprosody rate=\".80\"\u003e$$session.params.past_due_amt\u003c/prosody\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eVous avez présentement un solde en retard de, \u003cprosody rate=\".80\"\u003e$session.params.past_due_amt $\u003c/prosody\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eYour overdue balance is, \u003cprosody rate=\".80\"\u003e$$session.params.past_due_amt\u003c/prosody\u003e." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cprosody rate=\".80\"\u003e$$session.params.current_due_amt\u003c/prosody\u003e is due on \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e, which makes for a total of, \u003cprosody rate=\".80\"\u003e$$session.params.total_due\u003c/prosody\u003e due on your account.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eVous avez présentement un solde en retard de, \u003cprosody rate=\".80\"\u003e$session.params.past_due_amt $\u003c/prosody\u003e." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cprosody rate=\".80\"\u003e$session.params.current_due_amt $\u003c/prosody\u003e est dû le \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e, donc votre solde total est de, \u003cprosody rate=\".80\"\u003e$session.params.total_due $\u003c/prosody\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      }, {
+        "cases": [ {
+          "condition": "$session.params.clp_customer = \"true\" AND $session.params.clp_total_balance \u003c $session.params.clmSummary.creditLimitAmt AND $session.params.clmSummary.unpaidUnbilledAmt \u003e \"0\\.00\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003e\u003cprosody rate=\".80\"\u003e$$session.params.current_due_amt\u003c/prosody\u003e is due on \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e, and there is, \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.unpaidUnbilledAmt\u003c/prosody\u003e of unbilled charges from your current usage cycle, which makes for a total of, \u003cprosody rate=\".80\"\u003e$$session.params.clp_total_balance\u003c/prosody\u003e out of your, \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.creditLimitAmt\u003c/prosody\u003e credit limit.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003e\u003cprosody rate=\".80\"\u003e$session.params.current_due_amt $\u003c/prosody\u003e est dû le \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e, et il y a, \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.unpaidUnbilledAmt $\u003c/prosody\u003e de frais non facturé de votre cycle d'utilisation actuel, ce qui fait pour un total de, \u003cprosody rate=\".80\"\u003e$session.params.clp_total_balance $\u003c/prosody\u003e sur votre limite de crédit de, \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.creditLimitAmt $\u003c/prosody\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.clp_customer = \"true\" AND $session.params.clp_total_balance \u003c $session.params.clmSummary.creditLimitAmt AND $session.params.clmSummary.unpaidUnbilledAmt = \"0\\.00\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003e\u003cprosody rate=\".80\"\u003e$$session.params.current_due_amt\u003c/prosody\u003e is due on \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e,  which makes for a total of, \u003cprosody rate=\".80\"\u003e$$session.params.clp_total_balance\u003c/prosody\u003e out of your, \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.creditLimitAmt\u003c/prosody\u003e credit limit.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003e\u003cprosody rate=\".80\"\u003e$session.params.current_due_amt $\u003c/prosody\u003e est dû le \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.payment_due_date\u003c/say-as\u003e, ce qui fait pour un total de, \u003cprosody rate=\".80\"\u003e$session.params.clp_total_balance $\u003c/prosody\u003e sur votre limite de crédit de, \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.creditLimitAmt $\u003c/prosody\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.clp_customer = \"true\" AND $session.params.clp_total_balance \u003e= $session.params.clmSummary.creditLimitAmt",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eFrom your spending limit of, \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.creditLimitAmt\u003c/prosody\u003e, your current total balance on the account is, \u003cprosody rate=\".80\"\u003e$$session.params.clp_total_balance\u003c/prosody\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eDe votre limite de crédit de, \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.creditLimitAmt $\u003c/prosody\u003e, votre solde actuel au compte est de, \u003cprosody rate=\".80\"\u003e$session.params.clp_total_balance $\u003c/prosody\u003e.\u003c/speak\u003e" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "_Account Balance CLP spending limit check",
+    "name": "381c533a-0eb8-4897-b2f1-24394077845a"
+  } ]
+}

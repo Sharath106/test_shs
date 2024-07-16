@@ -1,0 +1,42 @@
+{
+  "name": "af831a1f-27fa-4c93-9c96-4994308806c8",
+  "displayName": "Partial charges",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cspeak\u003eAt TELUS \u003cbreak time=\"500ms\"/\u003e you are billed one month in advance. Partial charges or credits can occur when you change your plan on a day not aligned with your bill cycle date. \u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003eWhen you request an immediate change to your rate plan or services, the cost of your monthly bill is adjusted from the day of the change, \u003cbreak time=\"400ms\"/\u003e until the end of the bill cycle date and the month in advance.\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003eChez TELUS \u003cbreak time=\"500ms\"/\u003e vous êtes facturé un mois à l'avance. Des frais ou des crédits partiels peuvent survenir lorsque vous modifiez votre forfait un jour qui ne correspond pas à la date de votre cycle de facturation. \u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003eLorsque vous demandez un changement immédiat de votre forfait ou de vos services, le coût de votre facture mensuelle est ajusté à partir du jour du changement, \u003cbreak time=\"400ms\"/\u003e jusqu'à la fin de la date du cycle de facturation et le mois à l'avance.\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Partial charges"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "762a361f-6a39-479f-9507-b762ce5eba86"
+  } ]
+}

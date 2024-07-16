@@ -1,0 +1,362 @@
+{
+  "name": "ffe1388d-ac94-4f61-9869-5e2707aa2fce",
+  "displayName": "_Account Balance CLP spending limit check",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_overClpLimit",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "I didn't get that.", "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to make a payment on your account?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous faire un paiement à votre compte maintenant?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "e498493e-74e8-4255-8756-23fe690650b2"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not sure I got this. If you'd like to make a payment to your account, say yes, or press 1. If not, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai toujours pas bien compris. Pour faire un paiement, dites ou faites le 1. Sinon, le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ec353563-56e7-4828-9161-aff086b4c2c0"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "157e2f80-f59a-4655-9ed6-47d5b4d77c41"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to make a payment on your account?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi.", "Désolé, je n'ai pas tout à fait compris.", "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous faire un paiement sur votre compte maintenant?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "9764531a-a42e-4f39-a827-c9e78c02680c"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not sure I got this. If you'd like to make a payment to your account, say yes, or press 1. If not, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai toujours pas bien compris. Pour faire un paiement, dites ou faites le 1. Sinon, le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "736f66e2-1d80-4f8a-ad5b-a1dfd008d79e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "25155ccf-9aa7-4a3d-a82d-efa011208c54"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_Account Balance CLP spending limit check"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.dtmf_overClpLimit_retrycnt = null OR $session.params.dtmf_overClpLimit_retrycnt = 0"
+      }, {
+        "condition": "$session.params.dtmf_overClpLimit_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Would you like to make a payment now?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous faire un paiement sur votre compte maintenant?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.dtmf_overClpLimit_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To make a payment on your account, say yes, or press 1. If not, say no, or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour faire un paiement, dites ou faites le 1. Sinon, le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "050e68cc-90be-4c72-a9f7-58f77991f6d8"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Account Balance Final",
+    "name": "ddd7ed10-e630-4952-a8d7-2370eedde7a3"
+  }, {
+    "condition": "$session.params.from_flow = \"Collections\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Collections",
+    "name": "106a20e0-f3f3-4fd3-9e0d-54a270c8951f"
+  }, {
+    "condition": "$session.params.dtmf_overClpLimit = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "951adbe0-cc81-42e1-be59-1f47be9e704b"
+  }, {
+    "condition": "$session.params.dtmf_overClpLimit != \"1\" AND $session.params.dtmf_overClpLimit != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Account Balance Final",
+    "name": "69ce68bb-72d0-4531-beeb-8602a00e2567"
+  }, {
+    "condition": "$sys.func.MID($session.params.clp_total_balance, 3, 1) = \"\\.\" OR $sys.func.MID($session.params.clp_total_balance, 2, 1) = \"\\.\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "clp_total_balance",
+        "value": "0$session.params.clp_total_balance"
+      } ]
+    },
+    "name": "d3dcef77-276f-4192-a18a-fe8d43075eea"
+  }, {
+    "condition": "$sys.func.MID($session.params.clp_total_balance, 3, 1) != \"\\.\" AND $sys.func.MID($session.params.clp_total_balance, 2, 1) != \"\\.\" AND $sys.func.MID($session.params.clp_total_balance, 4, 1) != \"\\.\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "clmSummary.creditLimitAmt",
+        "value": "0$session.params.clmSummary.creditLimitAmt"
+      } ]
+    },
+    "name": "e2574418-a032-481f-96b6-fbcc66eb9185"
+  }, {
+    "condition": "$session.params.clp_customer = null OR $session.params.clp_total_balance \u003c $session.params.clmSummary.creditLimitAmt OR ($session.params.targetAccount.state != \"active\" AND $session.params.targetAccount.state != \"suspended\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Account Balance Final",
+    "name": "e58644cb-20b3-437c-8a37-9520529a1798"
+  }, {
+    "condition": "$session.params.clp_total_balance \u003e= $session.params.clmSummary.creditLimitAmt AND $session.params.targetAccount.state = \"suspended\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003eIn order to restore your account, a minimum payment of \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.requiredPaymentAmt\u003c/prosody\u003e is required.\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to go ahead and make a payment now?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eAfin de restaurer vos services au compte, un paiement minimum de, \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.requiredPaymentAmt $\u003c/prosody\u003e est requis.\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Aimeriez-vous faire un paiement maintenant?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "9ca7c721-a781-440e-9c1e-1da10b474a77"
+  }, {
+    "condition": "$session.params.clp_total_balance \u003e= $session.params.clmSummary.creditLimitAmt AND $session.params.targetAccount.state = \"active\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003eIn order to avoid a suspension of service, a minimum payment of \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.requiredPaymentAmt\u003c/prosody\u003e is required.\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to go ahead and make a payment now?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eAfin d'éviter une suspension de service, un paiement minimum de \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.requiredPaymentAmt $\u003c/prosody\u003e est requis.\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Aimeriez-vous faire un paiement maintenant?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "486023a3-8e09-47ab-8b9d-7719645c2fde"
+  }, {
+    "condition": "$session.params.dtmf_overClpLimit_retryCnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_overClpLimit_retryCnt",
+        "value": 0
+      } ]
+    },
+    "name": "ee427a01-5385-4022-8ec1-a0d75c6f39a9"
+  }, {
+    "condition": "$session.params.dtmf_overClpLimit_retryCnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_overClpLimit",
+        "value": null
+      }, {
+        "parameter": "dtmf_overClpLimit_retryCnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "eac94f11-68f5-48ba-b3dc-a43cfccf3533"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_overClpLimit_retryCnt",
+        "value": "$sys.func.ADD($session.params.dtmf_overClpLimit_retryCnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.dtmf_overClpLimit_retryCnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.dtmf_overClpLimit_retryCnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I'm still not getting this." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Je ne crois toujours pas avoir bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "49eff5f6-8785-421a-8b23-9d497d492719"
+  } ]
+}

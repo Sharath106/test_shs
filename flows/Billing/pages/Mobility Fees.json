@@ -1,0 +1,409 @@
+{
+  "name": "a67d5f96-2890-4998-b4b2-7815d0e54f0d",
+  "displayName": "Mobility Fees",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_mobility_fees",
+      "required": true,
+      "entityType": "@sms-or-agent",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information about mobility fees to your phone, or, Would you like to connect with a team member now?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur les frais de mobilité, ou souhaitez-vous communiquer avec un membre de l’équipe maintenant?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "5e7d4d27-87cb-4d85-a4bd-5ee68c19d58d"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "1db43c06-a628-4f6b-8cfb-02b039100317"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "da391b6b-2532-4c5e-b54b-3837961bc11a"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information about mobility fees to your phone, or, Would you like to connect with a team member now?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur les frais de mobilité, ou souhaitez-vous communiquer avec un membre de l’équipe maintenant?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "b7acf1d7-5519-4e78-9998-c6e121b9a897"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "8181ae28-4b8a-41cf-a1c4-72e8b91faeab"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "738aff16-93dc-4e6b-bd9a-a995c38b8de7"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Mobility Fees"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "mobility service fees"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "les frais de service de mobilité"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding mobility service fees"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "comprendre les frais des services de mobilité"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on mobility service fees, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur nos frais de services mobiles, vous devez utiliser votre compte Mon TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "I can help you learn more about mobility service fees, that can include, device setup, rate plan change, late payments and more." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je peux vous aider à vous renseigner sur les frais de services de mobilité qui peuvent inclure la configuration de l'appareil, le changement de forfait, les retards de paiement et bien plus encore." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900T3"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900MF"
+      }, {
+        "parameter": "mobilityfees_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_mobility_fees",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "e4d38a96-de33-40d6-9d85-432cf61d50f0"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mobilityfees_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_mobility_fees",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900T3"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900MF"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "1cc0c8e7-d4af-4f2e-8eee-8af0d81b7028"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mobilityfees_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_mobility_fees",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900MF"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900T3"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "8fcc0b8c-66c5-4eae-a78a-6208d4cd2ad0"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_mobility_fees",
+        "value": null
+      }, {
+        "parameter": "mobilityfees_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "adf3e208-1084-4f07-a6c0-2efba827e3ee"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mobilityfees_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900T3"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900MF"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "c2058adb-7fbd-489f-b1a1-b452fc381767"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900T3"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900MF"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "832366a9-75a3-4c9e-a5cd-9fd159128394"
+  }, {
+    "condition": "$session.params.dtmf_mobility_fees = \"0\" OR $session.params.dtmf_mobility_fees = \"agent\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "mobilityfees_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_mobility_fees",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "68ea69a1-f8fe-4c58-aaf3-b935396a943a"
+  }, {
+    "condition": "$session.params.mobilityfees_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mobilityfees_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "c4b88940-8736-42fa-a5e7-b683e9f954be"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mobilityfees_retrycnt",
+        "value": "$sys.func.ADD($session.params.mobilityfees_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.mobilityfees_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.mobilityfees_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "6166eaad-de8f-4f85-aca2-50ff09477596"
+  } ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "a322ac2e-19e4-471f-9857-8ee18c4d21ea",
+  "displayName": "Discount expiring",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "If you were provided a discount, or a discounted rate, it may have an expiry date.\nThe expiry date of any discounted feature can typically be found on your full invoice." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Si vous avez reçu un rabais ou une fonction à prix réduit, il y a peut-être une date d’expiration.\nLa date d’expiration d’une fonction à prix réduit est habituellement inscrite sur la facture sur la copie physique ou PDF en ligne." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Discount expiring"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": null
+    }, {
+      "parameter": "ss_mandatory_intent",
+      "value": "true"
+    }, {
+      "parameter": "sms_sent_check",
+      "value": null
+    }, {
+      "parameter": "async_no_mand_sms",
+      "value": null
+    }, {
+      "parameter": "async_agent_count",
+      "value": null
+    }, {
+      "parameter": "from_page",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "22b9b710-8253-464c-a980-d54cb2c13771"
+  } ]
+}

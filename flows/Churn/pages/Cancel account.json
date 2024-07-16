@@ -1,0 +1,42 @@
+{
+  "name": "7ac9912f-61a3-4531-8acf-9ce0b45ad718",
+  "displayName": "Cancel account",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Sorry to hear you're thinking of cancelling an account or service with us." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "I'll need to get you to a team member for more assistance in this case." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Je suis désolé d’apprendre que vous voulez annuler votre compte ou vos services." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "J'aurai besoin de vous diriger vers un membre de l'équipe pour plus d'assistance dans ce cas." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Cancel account"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent Churn",
+    "name": "f6f032ae-72fc-48e3-8be4-6e9621cb6468"
+  } ]
+}

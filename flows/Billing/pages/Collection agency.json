@@ -1,0 +1,32 @@
+{
+  "name": "100d1580-7351-4551-9e7d-6a25795f1b70",
+  "displayName": "Collection agency",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "For inquiries regarding collection agencies, I'll need to get you to a team member." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Pour les demandes de renseignements concernant les agences de recouvrement, je devrai vous amener à un membre de l'équipe." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Collection agency"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent Billing",
+    "name": "32dfa55d-5ca6-412b-acc6-041001a13a97"
+  } ]
+}

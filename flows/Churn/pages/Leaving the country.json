@@ -1,0 +1,420 @@
+{
+  "name": "281e446e-f822-46ff-98e5-51a96440cc29",
+  "displayName": "Leaving the country",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_leaving_the_country",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-3-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous déverrouiller votre téléphone, placer votre compte en suspension temporaire ou annuler votre compte?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to Unlock your phone, put your account on hold, or Cancel the account?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4fa77810-83c9-4eb4-a3be-8c21307c1539"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour plus d'informations, dites déverrouiller mon téléphone ou faites le 1. Compte en suspension temporaire ou faites le 2. Annuler mon compte ou faites le 3. Membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For more information, say unlock my phone or press 1, account hold or press 2, cancel my account or press 3, team member or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "6b9fb815-946c-4523-9d1d-da3a620ce5d3"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "29ebc47f-a1a6-461b-a344-2ce3219fda26"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous déverrouiller votre téléphone, placer votre compte en suspension temporaire ou annuler votre compte?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to Unlock your phone, put your account on hold, or Cancel the account?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d20d93dc-dc49-4c32-a869-e77ab525c74e"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour plus d'informations, dites déverrouiller mon téléphone ou faites le 1. Compte en suspension temporaire ou faites le 2. Annuler mon compte ou faites le 3. Membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For more information, say unlock my phone or press 1, account on hold or press 2, cancel my account or press 3, team member or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "6b7b7b4f-85eb-48e9-8c72-a372ee5362c3"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "13b12f71-3269-47fd-af62-089fc9428cb2"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Leaving the country"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.leavingthecountry_retrycnt = null OR $session.params.leavingthecountry_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous quittez le pays, aimeriez-vous déverrouiller votre téléphone, placer votre compte en suspension temporaire ou annuler votre compte?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you're leaving the country, would you like to Unlock your phone, put your account on hold, or Cancel the account?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.leavingthecountry_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous déverrouiller votre téléphone, placer votre compte en suspension temporaire ou annuler votre compte?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like to Unlock your phone, put your account on hold, or Cancel the account?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.leavingthecountry_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour plus d'informations, dites déverrouiller mon téléphone ou faites le 1. Compte en suspension temporaire ou faites le 2. Annuler mon compte ou faites le 3. Membre de l'équipe ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "For more information, say unlock my phone or press 1, account hold or press 2, cancel my account or press 3, team member or press 0." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.equipment_unlock_device",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_unlock_device"
+      }, {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_leaving_the_country",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "b85a40ff-9053-459f-9d56-d8508357b1e9"
+  }, {
+    "intent": "head_intent.suspend",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "suspend"
+      }, {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_leaving_the_country",
+        "value": null
+      }, {
+        "parameter": "suspend_account",
+        "value": "vacation disconnect"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "d55d53a6-38e6-43b7-95ed-d1fd5d55e968"
+  }, {
+    "intent": "head_intent.account_close",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_leaving_the_country",
+        "value": null
+      } ]
+    },
+    "targetPage": "Cancel account",
+    "name": "48b160a5-d9b7-438d-81af-98ae74b51741"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_leaving_the_country",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "7e09a249-39e8-4a19-971b-771823a0524c"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_leaving_the_country",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "d43b4a5d-43a1-4b63-a0db-65c781f40cce"
+  }, {
+    "condition": "$session.params.dtmf_leaving_the_country = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_unlock_device"
+      }, {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_leaving_the_country",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "e4f52fb8-54e9-4f9a-a75f-601dfba0112b"
+  }, {
+    "condition": "$session.params.dtmf_leaving_the_country = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "suspend"
+      }, {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_leaving_the_country",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "afd8f695-693c-4eeb-8fa2-cbe2258a6b1d"
+  }, {
+    "condition": "$session.params.dtmf_leaving_the_country = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_leaving_the_country",
+        "value": null
+      } ]
+    },
+    "targetPage": "Cancel account",
+    "name": "35cc68ef-c1cd-4bc4-bd3d-35d9dc3d9521"
+  }, {
+    "condition": "$session.params.dtmf_leaving_the_country = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_leaving_the_country",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d6493579-6357-47fe-a89d-d4a8f2d475cd"
+  }, {
+    "condition": "$session.params.leavingthecountry_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "8ef81280-d6f0-4c05-9b8e-f8dadf0c0140"
+  }, {
+    "condition": "$session.params.leavingthecountry_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "80edf94b-e80c-40b1-9128-254993ff81ce"
+  }, {
+    "condition": "$session.params.dtmf_leaving_the_country = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "$session.params.dtmf_leaving_the_country",
+        "value": null
+      }, {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": "$sys.func.ADD($session.params.leavingthecountry_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "42f9d71a-a4c9-4abd-9ae9-1f33038121ef"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "leavingthecountry_retrycnt",
+        "value": "$sys.func.ADD($session.params.leavingthecountry_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.leavingthecountry_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.leavingthecountry_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "58f4717d-16e0-4f6b-b173-6a57e9a97c7e"
+  } ]
+}

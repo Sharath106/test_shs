@@ -1,0 +1,42 @@
+{
+  "name": "5ba2f60b-51e4-4a1d-8603-ff16598490fa",
+  "displayName": "Price increase inquiry",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "TELUS aims to give you the best value for your rate plans and features. Though, at times a price increase is required to help maintain and expand our high quality nationwide network." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Our wide variety of plans offer flexibility, calling features and value to meet your budget needs." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "TELUS fait de son mieux pour vous donner le plus de valeur possible pour votre forfait et vos options. Mais, des augmentations de prix sont parfois nécessaires pour maintenir et d’étendre notre réseau de haute qualité." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Nos choix de forfaits offrent une grande variété de flexibilité et d'économies pour votre budget." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Price increase inquiry"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "65fcbbfb-3f65-43d2-833f-f303a7e23ce4"
+  } ]
+}

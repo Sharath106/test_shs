@@ -1,0 +1,31 @@
+{
+  "name": "4c4d0d30-29c3-4fa6-9fb4-2b65bb666ae0",
+  "displayName": "End Page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "from_flow",
+      "value": "Billing"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "What else can I help you with?", "How else can I help? " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Comment puis-je vous aider autrement?", "Que puis-je faire d'autre pour aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "f98f93fc-d5b6-4b76-96d0-77580e0ccf98"
+  } ]
+}

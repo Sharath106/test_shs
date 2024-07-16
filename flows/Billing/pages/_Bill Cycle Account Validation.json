@@ -1,0 +1,250 @@
+{
+  "name": "84e08368-937b-4a27-82ca-5ea3c42d837e",
+  "displayName": "_Bill Cycle Account Validation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_Bill Cycle Account Validation"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.subscriber_info[0].sub_status = null AND $session.params.invalid_number_counter = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "This still doesn't look like a phone number that's associated to your account." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me get you to an agent for more assistance." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Ça ne ressemble toujours pas à un numéro de téléphone associé à votre compte." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "7644d8a5-8129-4db7-8294-2289e62525c0"
+  }, {
+    "condition": "$session.params.subscriber_info[0].sub_status = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "It looks like this number is not associated to your profile. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you're inquiring about a phone number from another profile, please log out and try again." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Il semble que ce numéro ne soit pas associé à votre profil." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous avez des questions sur un numéro de téléphone d'un autre profil, veuillez vous déconnecter et commencer une nouvelle session." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "phone_number",
+        "value": null
+      }, {
+        "parameter": "invalid_number_counter",
+        "value": "1"
+      }, {
+        "parameter": "phone_number_counter",
+        "value": null
+      }, {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      } ]
+    },
+    "targetPage": "_Bill Cycle Start",
+    "name": "7b10f0cd-9aa6-41d2-8c0b-d7733868848f"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "⏳ Please wait, I am still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "⏳ Veuillez patientez, je continue de recueillir vos informations." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Account Identity",
+      "tag": "selected_phone_number",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "returnPartialResponses": true
+    },
+    "targetPage": "Current Page",
+    "name": "0731d9e2-647a-4a46-9c15-0e01e4dec700"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, une erreur semble s'être produite." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Billing cycle date",
+    "name": "8c018e58-a667-43b8-ac37-f80bb54e35ab"
+  }, {
+    "condition": "$session.params.subscriber_info[0].accountTypeCd = \"B\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_scope_business"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "bf1b4d19-92ec-4420-9867-c9d490c24414"
+  }, {
+    "condition": "$session.params.subscriber_info[0].accountTypeCd = \"C\" AND $session.params.subscriber_info[0].accountSubTypeCd != \"I\" AND $session.params.subscriber_info[0].accountSubTypeCd != \"E\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_scope_corporate"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "79e8ada9-ec5b-4ff9-8916-3f3c7ac6b72d"
+  }, {
+    "condition": "$session.params.subscriber_info[0].accountTypeCd = \"I\" AND ($session.params.subscriber_info[0].accountSubTypeCd = \"B\" OR $session.params.subscriber_info[0].accountSubTypeCd = \"Q\" OR $session.params.subscriber_info[0].accountSubTypeCd = \"Y\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_scope_prepaid"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "70850656-0441-43e0-a35b-37fab0bdfdf0"
+  }, {
+    "condition": "$session.params.subscriber_info[0].accountTypeCd = \"I\" AND $session.params.subscriber_info[0].accountSubTypeCd = \"R\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Bill Cycle Date",
+    "name": "269359a6-fd59-49fb-8163-6b51fde1f7e8"
+  }, {
+    "condition": "$session.params.subscriber_info[0].accountTypeCd = \"C\" AND ($session.params.subscriber_info[0].accountSubTypeCd = \"E\" OR $session.params.subscriber_info[0].accountSubTypeCd = \"I\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Bill Cycle Date",
+    "name": "4297d3da-a9ca-412d-8954-c9debe892a76"
+  }, {
+    "condition": "$session.params.subscriber_info[0].accountTypeCd = \"I\" AND $session.params.subscriber_info[0].accountSubTypeCd = \"E\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Bill Cycle Date",
+    "name": "e9a904ca-608c-48cf-8bde-b43cfdd3ce00"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing cycle date",
+    "name": "c6915fc7-0074-4461-a432-ac70c14da8ce"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Billing cycle date",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "7fbd65e6-9642-42b1-a936-2bb5c598d22a"
+  }, {
+    "targetPage": "Billing cycle date",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "ee13a85d-2d7c-4d62-b0c2-7253358a5e52"
+  } ]
+}

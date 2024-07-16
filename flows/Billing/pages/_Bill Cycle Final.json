@@ -1,0 +1,126 @@
+{
+  "name": "a0a23866-a459-4aca-afa4-d5c2b6a47dc8",
+  "displayName": "_Bill Cycle Final",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Bill explain",
+    "tag": "selected_bill",
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_Bill Cycle Final"
+    }, {
+      "parameter": "bill_period",
+      "value": "0"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null OR $session.params.api_delay = \"false\" OR $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "⏳ Please wait, I am still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "⏳ Veuillez patienter, je travaille toujours sur votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": 1
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "returnPartialResponses": true
+    },
+    "targetPage": "Current Page",
+    "name": "27bcbe6b-24c6-4e80-bb57-f2241467e632"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Billing cycle date",
+    "name": "0c790635-4bc8-4c3f-9796-329cfe4bbd17"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your bill cycle started on **$sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleStartDt, \"MMMM d, yyyy\", \"en\")** and ends on **$sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleEndDt, \"MMMM d, yyyy\", \"en\")**." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Votre cycle de facturation a commencé le **$sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleStartDt, \"d MMMM yyyy\", \"fr\")** et se termine **$sys.func.FORMAT_DATE($session.params.bill_summary.billSummary.nextBillCycleEndDt, \"d MMMM yyyy\", \"fr\")**." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "transaction",
+        "value": "bill cycle"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "b489f6e8-2b7d-4e44-9514-5acca03f739e"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Billing cycle date",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "063aa233-ff9f-4a5a-bcdb-61649ab9ae6a"
+  }, {
+    "targetPage": "Billing cycle date",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "9d1b82ce-df8e-44f6-a80d-99ebf3a19ad7"
+  } ]
+}

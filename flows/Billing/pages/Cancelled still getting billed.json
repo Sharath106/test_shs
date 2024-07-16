@@ -1,0 +1,32 @@
+{
+  "name": "b1889bd5-535e-4ade-88c7-5836332552f9",
+  "displayName": "Cancelled still getting billed",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Je vais vous mettre en communication avec un membre de l’équipe pour qu’il puisse trouver une solution à votre problème." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Let me get you to a team member to ensure everything is reviewed properly." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Cancelled still getting billed"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent Billing",
+    "name": "b5d19ca3-4324-40d0-9b83-97f7fa714824"
+  } ]
+}

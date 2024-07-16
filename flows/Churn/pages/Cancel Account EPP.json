@@ -1,0 +1,42 @@
+{
+  "name": "0df154ac-ce7d-4200-8f1a-2cb97d203fa7",
+  "displayName": "Cancel Account EPP",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Sorry to hear you're thinking of cancelling your account or service with us." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "I'll need to get you to a team member for more assistance in this case." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Je suis désolé d’apprendre que vous voulez annuler votre compte ou vos services avec nous." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "J'aurai besoin de vous diriger vers un membre de l'équipe pour plus d'assistance dans ce cas." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Cancel Account EPP"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent Churn",
+    "name": "74872f1c-582b-4f13-b504-33ab2aa09661"
+  } ]
+}

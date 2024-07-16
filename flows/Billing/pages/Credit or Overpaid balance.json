@@ -1,0 +1,282 @@
+{
+  "name": "a718c2fe-88da-4536-9785-72122bff91da",
+  "displayName": "Credit or Overpaid balance",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_credit_overpaid_balance",
+      "required": true,
+      "entityType": "@credit-overpaid-balance",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Credit or negative balances may occur due to billing adjustments or overpayment. If you have pre-authorized payments set up on your account, you will only be charged if you have a balance owing." ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Credit balances are automatically applied towards your next bill if you choose to keep it as is." ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Are you looking to request a refund on a credit balance?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Un solde en crédit ou négatif peut survenir en raison d’ajustements de facturation ou d’un trop-payé. Si vous avez configuré des paiements préautorisés sur votre compte, vous ne serez facturé que si vous avez un solde dû." ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Les soldes créditeurs sont automatiquement appliqués à votre prochaine facture si vous choisissez de la conserver telle quelle." ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Souhatiez-vous demander un remboursement pour un solde en crédit?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you looking to request a refund on a credit balance?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhatiez-vous demander un remboursement pour un solde en crédit?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "d004d092-e809-49ca-b855-245c70a27926"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you want to request a refund of a credit balance, say yes or press 1, or, you can say no or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous souhaitez demander le remboursement d'un solde en crédit, dites oui,  ou faites le 1, sinon, dites non, ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "34a5c575-e7c2-4b62-8eb0-18af5425e7f5"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "04dd6c00-ac10-496b-a8d2-343cdb06dd42"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you looking to request a refund on a credit balance?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhatiez-vous demander un remboursement pour un solde en crédit?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "a574324e-3782-4422-8496-1182881af392"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you want to request a refund of a credit balance, say yes or press 1, or, you can say no or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous souhaitez demander le remboursement d'un solde en crédit, dites oui,  ou faites le 1, sinon, dites non, ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "b07add3c-7d99-42a1-a949-cf1dacbea507"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "e461a35d-6a26-4b47-9af8-760cef72e09b"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Credit or Overpaid balance"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got it. Let me connect you with a team member to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en contact avec un membre de l'équipe. " ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "creditoverpaidbalance_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_credit_overpaid_balance",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "c2722db6-948f-4de1-b9e9-cdeea3782eb8"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "creditoverpaidbalance_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_credit_overpaid_balance",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "4522b540-b421-43f7-abd3-eb5bedd2af77"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "creditoverpaidbalance_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_credit_overpaid_balance",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "07ae1c6d-45fc-41cb-a11b-67b2292adea5"
+  }, {
+    "condition": "$session.params.account_status = \"active\" OR $session.params.account_status = \"suspended\" OR $session.params.dtmf_credit_overpaid_balance = \"1\" OR $session.params.dtmf_credit_overpaid_balance = \"active\" OR $session.params.dtmf_credit_overpaid_balance = \"suspended\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got it. Let me connect you with a team member to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en contact avec un membre de l'équipe. " ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "creditoverpaidbalance_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_credit_overpaid_balance",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e6cf23f8-c5db-4504-848c-8a694abfea98"
+  }, {
+    "condition": "$session.params.account_status = \"cancelled\" OR $session.params.dtmf_credit_overpaid_balance = \"2\" OR $session.params.dtmf_credit_overpaid_balance = \"cancelled\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "creditoverpaidbalance_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_credit_overpaid_balance",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "2bd8c0b1-3f05-43f6-b610-ee482d9ef4af"
+  } ]
+}

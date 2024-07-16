@@ -1,0 +1,439 @@
+{
+  "name": "6d90514a-eef2-4b31-9578-fef72921c15e",
+  "displayName": "Accidental roaming",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_accidental_roaming",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text to your phone with more information about how to avoid Accidental roaming charges when travelling near the US border?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur l'itinérance accidentelle?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "59915ac0-3d39-48e2-865d-1c0528d0dc51"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "d78c1813-97e8-4299-b80f-14753cad0468"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "f9d2e692-5596-458a-a702-e9651f95e60a"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text to your phone with more information about how to avoid Accidental roaming charges when travelling near the US border?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur l'itinérance accidentelle?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ad604b56-7efe-4570-9033-6374e3e5ddc8"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "efbe5b29-ba55-4a7b-a92a-b0cdcd1373bf"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "d1a8e5e0-e546-4fbf-a4aa-4d725d33b241"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Accidental roaming"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "accidental roaming"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "l'itinérance accidentelle"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding accidental roaming"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "Comprendre l'itinérance accidentelle"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on accidental roaming, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur l'itinérance accidentelle, vous devez utiliser votre compte Mon TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Nous vous envoyons maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Accidental roaming may occur if you live in close proximity to the US border where TELUS may not have strong coverage." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "L’itinérance accidentelle peut survenir si vous vous trouvez à proximité de la frontière américaine où la couverture de TELUS est faible." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900WU"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319007B"
+      }, {
+        "parameter": "accidentalroaming_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_accidental_roaming",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "74b7cb62-3e4b-47ee-b9d1-d219b1a70d8a"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "accidentalroaming_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_accidental_roaming",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900WU"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319007B"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "4c2e43e8-60b6-484e-b21c-3ab75631d140"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "accidentalroaming_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_accidental_roaming",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900WU"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319007B"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "594cc5ed-94d8-4b06-94ea-49c82bc884df"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900WU"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319007B"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "accidentalroaming_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_accidental_roaming",
+        "value": null
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "55a91168-0345-4982-843e-36ce6f4da702"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900WU"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319007B"
+      }, {
+        "parameter": "accidentalroaming_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_accidental_roaming",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "86d989a5-2590-4efd-b01e-a7e9b023383c"
+  }, {
+    "condition": "$session.params.dtmf_accidental_roaming = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "accidentalroaming_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_accidental_roaming",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "05ab214a-9205-4f45-a204-94d76e130f1f"
+  }, {
+    "condition": "$session.params.accidentalroaming_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "accidentalroaming_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "5b29ac56-5921-43a0-a290-d8cb255df15d"
+  }, {
+    "condition": "$session.params.accidentalroaming_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "accidentalroaming_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "4826ca07-eb06-491d-a569-c0f6e05424ab"
+  }, {
+    "condition": "$session.params.dtmf_accidental_roaming = 1 OR $session.params.dtmf_accidental_roaming = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I'm Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_accidental_roaming",
+        "value": null
+      }, {
+        "parameter": "accidentalroaming_retrycnt",
+        "value": "$sys.func.ADD($session.params.accidentalroaming_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "695f043f-c614-45a1-9804-4116be091791"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "accidentalroaming_retrycnt",
+        "value": "$sys.func.ADD($session.params.accidentalroaming_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.accidentalroaming_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.accidentalroaming_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "63452ca8-b151-41c0-8fd8-8ab271de4c48"
+  } ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "14cfe112-8891-43d6-b2e2-e67821dd308a",
+  "displayName": "Collect calls",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "TELUS ne permet pas les appels à frais virés à des téléphones mobiles.\nMais,  les clients de TELUS peuvent accepter des appels à frais virés provenant de fournisseurs étrangers parce que ceux-ci ne peuvent pas tous reconnaître les numéros de téléphone mobile de TELUS." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "At TELUS, we don't allow collect calls to cellular phones.\nHowever, you may be able to accept a collect call from overseas because not all overseas operators can identify TELUS cellular numbers." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Collect calls"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "259730d8-7c12-4cf7-8e0f-509d4ae919cd"
+  } ]
+}

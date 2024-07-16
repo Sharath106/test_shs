@@ -1,0 +1,569 @@
+{
+  "name": "bcfa60a2-8fee-4ce4-a0c1-21f1ad57e745",
+  "displayName": "Anything Else",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "billvague anything else"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.billvagueanythingelse_retrycnt = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Avez-vous d'autres questions par rapport à votre facture aujourd'hui?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Do you have any other questions about your bill today?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.billvagueanythingelse_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Est-ce que je peux vous aider avec d'autres questions par rapport à votre facturation?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Can I help you with any other billing question?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.billvagueanythingelse_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Puis-je vous aider autrement aujourd'hui?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Can I help you with anything else today?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.bill_vague",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Comment puis-je vous assister avec votre facture aujourd'hui? " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Par exemple, vous pouvez dire \"expliquer mes frais de facturation\", \"vérifier les taux de dépassement\" ou \"voir ma facture\"." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "How can I assist you with your billing today? " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "For example, you can say things like \"explain my billing charges\", \"check overedge rates\" or \"view my bill\"." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      } ]
+    },
+    "targetPage": "Start Page",
+    "name": "fcd6bc49-1017-417d-b62a-12b086d071e3"
+  }, {
+    "intent": "head_intent.bill_explanation",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      }, {
+        "parameter": "route",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "billvagueanythingelse_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Bill Explanation",
+    "name": "21a74576-3b7e-4fbe-9fa1-c4828c59c336"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_requested_count \u003c= 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vous pouvez choisir de parler à un agent, mais des délais d'attente s'appliqueront. En revanche, je peux tenter de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Qu'aimeriez-vous faire?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "You can choose to speak to a live agent but waiting times will apply. I can try to help you instead." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "What would you like to do?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "agent_requested_count",
+        "value": "$sys.func.ADD($session.params.agent_requested_count ,1)"
+      } ]
+    },
+    "name": "313b2185-11de-4a00-868d-61ec24c9dba1"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      } ]
+    },
+    "targetPage": "Disambiguation",
+    "name": "fb3b6db4-0b3a-475e-8160-0e1ddcf91cfd"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "9b84c349-c76a-4644-b580-86c9eefd1ed1"
+  }, {
+    "intent": "small_talk.good_bye",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Au revoir. Merci d'avoir discuté avec moi!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Bonne fin de journée!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Goodbye. Thank you for calling!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Enjoy the rest of your day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "0fe0b78e-1343-4c16-9c81-49b88151bc8f"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_requested_count \u003e= 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous transférer à un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, let me transfer you to our team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9232b1ef-f18d-490e-a7fe-8e5f314312be"
+  }, {
+    "intent": "head_intent.first_bill",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "first_bill"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "1b1f892f-0985-400a-8248-ac802dcee807"
+  }, {
+    "intent": "small_talk.swear_hate_words",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je suis désolée que vous ressentez ceci." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Veuillez me donner une autre chance avec une nouvelle question." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry you feel that way." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please give me another chance with a new question." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "20c3804d-df35-4298-8488-648254f9db22"
+  }, {
+    "intent": "head_intent.bill_amount_due",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_amount_due"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "0dbf183f-5fa3-4e8c-bfbd-3506c6852326"
+  }, {
+    "intent": "head_intent.troubleshoot_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "troubleshoot_vague"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "006dfbc0-3f73-4cb7-8e39-9d4ee04abba3"
+  }, {
+    "intent": "head_intent.plans_add_line",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": "activate"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "07e2cbca-b269-4a5f-9ad9-fbd35614c2e5"
+  }, {
+    "intent": "head_intent.calls_from_telus",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "calls_from_telus"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "b591e828-1a2e-47ae-84cf-16335297f00d"
+  }, {
+    "intent": "head_intent.data_conversion",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "data_conversion"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "6c209709-63b7-4df7-83e3-66a115fc1d43"
+  }, {
+    "intent": "head_intent.bill_waive_fee",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_waive_fee"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "cdf815cf-7333-4936-89d9-9c3b61772348"
+  }, {
+    "intent": "head_intent.payment_make",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "f98ad73a-846f-4491-9844-7ce508322d81"
+  }, {
+    "intent": "head_intent.equipment_order_status",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "order_status"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "ee22394f-29f9-46b3-b684-4776063d6c59"
+  }, {
+    "intent": "head_intent.plans_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_vague"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "a028d736-cb4c-4a01-86cc-35fde329045f"
+  }, {
+    "intent": "small_talk.need_help",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Que puis-je faire pour vous ?", "Comment pourrais-je vous aider ?", "Comment puis-je vous aider ?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "7e9f47e3-857e-43fc-ac93-bc456f36f3c5"
+  }, {
+    "intent": "head_intent.accidental_roaming",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "accidental_roaming"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "683452ec-19c4-4b31-b3e0-76abfe4821d5"
+  }, {
+    "intent": "head_intent.equipment_order",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "3a319126-f5c6-4445-ae10-43da71ddc3cd"
+  }, {
+    "intent": "head_intent.bill_paper_billing",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_notifications"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "e4dcb890-d821-4ff9-8929-b51a9671dbc0"
+  }, {
+    "condition": "$session.params.billvagueanythingelse_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billvagueanythingelse_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "229e2ec7-16f0-4aff-af92-2cf6118c51d0"
+  }, {
+    "condition": "$session.params.billvagueanythingelse_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billvagueanythingelse_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "252bb4d6-d404-4490-875c-a33b57defd37"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je n'ai pas compris.", "Désolé, je ne pense pas avoir bien compris.", "Désolé, je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Puis-je vous avec une autre question relative à la facturation?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn't catch that.", "I'm sorry, I didn't understand that.", "Sorry, I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Can I help you with any other billing question?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "933c9287-e143-4d41-90a1-3fb0ed7aa4f2"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne crois toujours pas avoir compris.", "Je ne comprends toujours pas bien.", "Je n'ai toujours pas bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Puis-je vous aider avec autre chose aujourd'hui?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I still didn't get that.", "I still didn't understand.", "I'm still not sure I got this." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Can I help you with anything else today?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      } ]
+    },
+    "name": "16da553e-99a4-4d27-bc80-3d321bca1b83"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne vous ai pas entendu.", "Désolé, je n'ai pas entendu.", "Désolé, je n'ai pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que je peux vous aider avec une autre question relative à la facturation?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry, I didn't hear you.", "Sorry, I didn't hear that.", "Sorry, I didn't catch that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ " Can I help you with any other billing question?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "8688e362-01f8-4c65-ab26-41d51a991db9"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je n'ai toujours pas compris.", "Je ne t'ai toujours pas entendu.", "Je n'ai toujours pas bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Puis-je vous aider avec autre chose aujourd'hui?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I still didn't get that.", "I still don't hear you.", "I still didn't catch that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Can I help you with anything else today?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "cd6399e1-9e74-4607-9645-10608ec89dbd"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "e61361c3-a5be-412b-a64e-9d1e3648ad46"
+  }, {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "billvagueanythingelse_retrycnt",
+        "value": "$sys.func.ADD($session.params.billvagueanythingelse_retrycnt ,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.billvagueanythingelse_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.billvagueanythingelse_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "eb88ae4e-fc1c-4a7d-850c-d3be3b87803f"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "5e95b872-da1f-4115-b487-156ec1b30cbe"
+  } ],
+  "transitionRouteGroups": [ "Credit / Waive fee", "General follow-ups", "To bill explanation flow" ]
+}

@@ -1,0 +1,439 @@
+{
+  "name": "0e318e2f-008f-4c50-a29c-291508f9cf65",
+  "displayName": "First bill explained",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_first_bill_explained",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message to your phone with more information about understanding your first Mobility bill?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur l'explication de la première facture?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "650ab363-0447-4578-9995-260224793cb2"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "b8fda76f-ff85-4cee-9638-04f0e16df742"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "62106640-7657-4805-a2d6-3626362168fb"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message to your phone with more information about understanding your first Mobility bill?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur l'explication de la première facture?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "33c95105-4c95-4662-bf5a-cc5a81036707"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "7f894187-6e60-43fa-8275-b7e4e8c71605"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "95de5986-2d39-43ef-b424-f4836f2a1854"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "First bill explained"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "understanding your first bill"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la compréhension de votre première facture"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding your first bill"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "comprendre votre première facture"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on understanding your first bill, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur votre première facture, vous devez utiliser votre compte Mon TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Nous vous envoyons maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Your first TELUS bill will be somewhat different from future bills." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Votre première facture TELUS sera quelque peu différente des factures suivantes." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900PT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190078"
+      }, {
+        "parameter": "firstbillexplained_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_first_bill_explained",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "c0526425-f081-4eaf-855d-a934e529c233"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "firstbillexplained_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_first_bill_explained",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900PT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190078"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "6ceb1601-2a5e-4448-ad57-35553a85e6e3"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "firstbillexplained_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_first_bill_explained",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190078"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900PT"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "494e5c07-9df0-4437-bee4-f19e91fbf2b1"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900PT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190078"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "firstbillexplained_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "bb505ee4-ed4a-46cc-bd29-1c3bd52017ae"
+  }, {
+    "intent": "head_intent.bill_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_vague"
+      } ]
+    },
+    "targetFlow": "Bill Vague",
+    "name": "2632d053-8f4b-45c2-a14e-08601eb9a0ba"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900PT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190078"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "ef005f37-af4d-439d-b0c8-4df4838bb43c"
+  }, {
+    "condition": "$session.params.dtmf_first_bill_explained = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "firstbillexplained_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_first_bill_explained",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "3dbe5961-fdea-48b5-a91d-7e32c070fecf"
+  }, {
+    "condition": "$session.params.firstbillexplained_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "firstbillexplained_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "3fc21af5-21ba-4a15-89c0-fdaad86f0d92"
+  }, {
+    "condition": "$session.params.firstbillexplained_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "firstbillexplained_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "f2ed6d75-098e-4f55-b374-08c911a51be3"
+  }, {
+    "condition": "$session.params.dtmf_first_bill_explained = 1 OR $session.params.dtmf_first_bill_explained = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_first_bill_explained",
+        "value": null
+      }, {
+        "parameter": "firstbillexplained_retrycnt",
+        "value": "$sys.func.ADD($session.params.firstbillexplained_retrycnt,1)"
+      } ]
+    },
+    "name": "ca7d2fc9-c78e-478a-88be-b46919a76f10"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "firstbillexplained_retrycnt",
+        "value": "$sys.func.ADD($session.params.firstbillexplained_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.firstbillexplained_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.firstbillexplained_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "a998af3b-c398-4602-a686-6b5058336e1e"
+  } ]
+}

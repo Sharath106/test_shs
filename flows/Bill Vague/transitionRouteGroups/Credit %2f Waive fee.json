@@ -1,0 +1,193 @@
+{
+  "name": "cfd462ae-a609-4431-b090-e7d94c4a0635",
+  "displayName": "Credit / Waive fee",
+  "transitionRoutes": [ {
+    "intent": "supplemental.apply_credit",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "21589db0-19f4-4815-ac23-0a4c78a32abd"
+  }, {
+    "intent": "supplemental.apply_credit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me transfer you to an agent to assist you.", "Let me get you to an agent to assist you.", "Let me connect you with an agent to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en communication avec un agent pour vous aider.", "Laissez-moi vous trouver un agent pour vous aider.", "Laissez-moi vous mettre en communication avec un agent pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "apply_credit"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      }, {
+        "parameter": "billvaguedisambiguation_retrycnt",
+        "value": null
+      }, {
+        "parameter": "billvagueanythingelse_retrycnt ",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e9aea9fa-2da3-49aa-a888-dffdd4cac741"
+  }, {
+    "intent": "supplemental.credit_amount_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "credit_amount_vague"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      }, {
+        "parameter": "route",
+        "value": "credit_balance"
+      }, {
+        "parameter": "billvaguedisambiguation_retrycnt",
+        "value": null
+      }, {
+        "parameter": "billvagueanythingelse_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "02a9d1f9-b3f3-4b9d-8621-adbfcfb9d6da"
+  }, {
+    "intent": "supplemental.explain_credit_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "explain_credit_vague"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      }, {
+        "parameter": "route",
+        "value": "credit_balance"
+      }, {
+        "parameter": "billvaguedisambiguation_retrycnt",
+        "value": null
+      }, {
+        "parameter": "billvagueanythingelse_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "9308718f-b443-4a9e-8eeb-006ffe2c2b99"
+  }, {
+    "intent": "supplemental.reflects_when_vague",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The credit or discount can be applied either immediately to your account, or on your next billing statement.\n\nYou can view your updated balance through the My TELUS app or online." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Le crédit ou la remise peuvent être appliqués à votre compte immédiatement ou sur votre prochaine facture.\n\nVous pouvez consulter votre solde mis à jour dans l'application Mon TELUS ou en ligne." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "reflects_when_vague"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      }, {
+        "parameter": "billvaguedisambiguation_retrycnt",
+        "value": null
+      }, {
+        "parameter": "billvagueanythingelse_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "ee5cdf03-08fc-46bb-8116-21109a2b907a"
+  }, {
+    "intent": "supplemental.waive_airtime_charge",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "381c7f25-4032-46f5-beda-588be3d4b971"
+  }, {
+    "intent": "supplemental.waive_airtime_charge",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me transfer you to an agent to assist you.", "Let me get you to an agent to assist you.", "Let me connect you with an agent to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous transférer à un agent pour vous aider.", "Laissez-moi vous trouver un agent pour vous aider.", "Laissez-moi vous connecter avec un agent pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "waive_airtime_charge"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      }, {
+        "parameter": "billvaguedisambiguation_retrycnt",
+        "value": null
+      }, {
+        "parameter": "billvagueanythingelse_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "ad2bb1b9-ce01-4ca1-b261-9247631fd32f"
+  }, {
+    "intent": "supplemental.waive_late_charge",
+    "condition": "$session.params.async_intent_list : $session.params.last_page AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d05b5558-d5f5-4cb3-b8f6-252fb5031169"
+  }, {
+    "intent": "supplemental.waive_late_charge",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me transfer you to an agent to assist you.", "Let me get you to an agent to assist you.", "Let me connect you with an agent to further assist you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en communication avec un agent pour vous aider.", "Laissez-moi vous trouver un agent pour vous aider.", "Laissez-moi vous mettre en communication avec un agent pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "waive_late_charge"
+      }, {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      }, {
+        "parameter": "billvaguedisambiguation_retrycnt",
+        "value": null
+      }, {
+        "parameter": "billvagueanythingelse_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "39f0accf-fe05-4c2b-a285-024ee559a784"
+  } ]
+}

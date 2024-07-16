@@ -1,0 +1,133 @@
+{
+  "name": "bd827d6a-ce5a-4f05-be6f-b75440673a23",
+  "displayName": "Equipment intents",
+  "transitionRoutes": [ {
+    "intent": "head_intent.equipment_upgrades",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can certainly help you with that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vérifier pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      }, {
+        "parameter": "last_ci",
+        "value": "equipment_upgrades"
+      }, {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "9b8d48f6-01c6-4e46-9455-24be2a0e772d"
+  }, {
+    "intent": "head_intent.equipment_order_status",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can certainly help you with that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vérifier pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      }, {
+        "parameter": "last_ci",
+        "value": "equipment_order_status"
+      }, {
+        "parameter": "route",
+        "value": "order_issues"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "269a5fcd-bbe7-4071-b0ca-5094593b0fc3"
+  }, {
+    "intent": "head_intent.equipment_trade_in",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can certainly help you with that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vérifier pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      }, {
+        "parameter": "last_ci",
+        "value": "equipment_trade_in"
+      }, {
+        "parameter": "route",
+        "value": "trade-in"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "311cfa53-ebfe-45d5-9a12-286cf751536d"
+  }, {
+    "intent": "head_intent.equipment_order",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can certainly help you with that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vérifier pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_vague"
+      }, {
+        "parameter": "last_ci",
+        "value": "equipment_order"
+      }, {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "97691cfc-593d-4cd7-b09b-901eee0031fc"
+  }, {
+    "intent": "head_intent.equipment_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_vague"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "0bd31ed0-7c3c-4159-a31d-114fcd188208"
+  }, {
+    "intent": "head_intent.equipment_exchange_return",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_exchange_return"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "aea13129-551f-413a-9d4c-5b657385c330"
+  } ]
+}

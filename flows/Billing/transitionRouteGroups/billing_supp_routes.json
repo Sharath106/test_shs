@@ -1,0 +1,192 @@
+{
+  "name": "2ca12a9b-94aa-49dc-9881-1138cc46f27f",
+  "displayName": "billing_supp_routes",
+  "transitionRoutes": [ {
+    "intent": "head_intent.what_uses_data",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Track what uses data",
+    "name": "e38ccc3b-3f8c-41f2-a1c1-1d1a16fc8ebe"
+  }, {
+    "intent": "head_intent.local_calling",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Local calling",
+    "name": "3d8c2150-addd-4405-a22b-c8aab36cd6c2"
+  }, {
+    "intent": "head_intent.bill_reduction_options",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Lower my bill",
+    "name": "9ecb42f2-6482-4fa9-8856-c9ee5a06db1e"
+  }, {
+    "intent": "head_intent.bill_missing_credit",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Missing credit",
+    "name": "7a7b12d9-7a4f-4b24-af94-5db2d9cf92f9"
+  }, {
+    "intent": "head_intent.usage_overage",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Usage overage",
+    "name": "d9a8899e-fe7d-47e6-9444-f52ade362f6b"
+  }, {
+    "intent": "head_intent.payment_mistake",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Credit or Overpaid balance",
+    "name": "d4351ab4-2f3e-431d-bf56-3fde3a8407c1"
+  }, {
+    "intent": "head_intent.bill_reprint",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill reprint",
+    "name": "6ef7967e-a87f-4d27-92d5-ce61e38140cc"
+  }, {
+    "intent": "head_intent.partial_charges",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Partial charges",
+    "name": "0d24709f-75c9-405c-a3a2-087a41ae43bf"
+  }, {
+    "intent": "head_intent.bill_due_date",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_due_date"
+      } ]
+    },
+    "targetPage": "_Account Balance Start",
+    "name": "501f621f-774f-43b0-b962-22acb58c01da"
+  }, {
+    "intent": "head_intent.first_bill",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "First bill explained",
+    "name": "547176e5-3cda-4aee-9fc2-f1d30070354e"
+  }, {
+    "intent": "head_intent.taxes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Taxes",
+    "name": "7fe15a09-0751-4833-abc0-6aca2b7ef430"
+  }, {
+    "intent": "head_intent.tax_exemption",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tax exemption",
+    "name": "56a9e67f-4879-455d-9569-396e0bd470c0"
+  }, {
+    "intent": "head_intent.collection_agency",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collection agency",
+    "name": "cbb9aa4e-1943-44c9-a01a-79185794a6f7"
+  }, {
+    "intent": "head_intent.bill_missing_discount",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Discount expiring",
+    "name": "3c90c703-cf46-4bcc-9010-da0d27fea459"
+  }, {
+    "intent": "head_intent.discounts",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Discounts",
+    "name": "1bf88b03-52b5-49de-9ff9-9322dcf70375"
+  }, {
+    "intent": "head_intent.bill_amount_due",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Account Balance Start",
+    "name": "cd55db50-ea9a-4352-932f-7bcfd70f2112"
+  }, {
+    "intent": "head_intent.bill_paper_billing",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill notifications or eBill",
+    "name": "e8a03c43-df52-4ee2-8e0b-5a1826ed2c4c"
+  }, {
+    "intent": "head_intent.bill_paper_billing",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bill notifications or eBill",
+    "name": "1a04e82e-0f66-4d4f-8027-b2292751c0c7"
+  }, {
+    "intent": "head_intent.bill_explanation",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "How to read your bill",
+    "name": "cccd29d0-f3b1-4d93-b415-95ea7300b9dd"
+  }, {
+    "intent": "head_intent.accidental_roaming",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Accidental roaming",
+    "name": "00fde4ba-3cdc-4c3b-9aff-7caa8a50d05b"
+  }, {
+    "intent": "head_intent.bill_view",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "View mobility bill",
+    "name": "6aa04606-6bdd-4709-8341-925b4aa27a67"
+  }, {
+    "intent": "head_intent.payment_arrangements",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangements"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "0d6e4f3b-c9b1-4081-8b27-479614de6afc"
+  }, {
+    "intent": "head_intent.account_recovery",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_recovery"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "3fcfd565-c535-470d-bb18-5321364baf9e"
+  }, {
+    "intent": "head_intent.bill_cycle_date",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing cycle date",
+    "name": "8d1577f9-9922-4599-811a-c69987475080"
+  }, {
+    "intent": "head_intent.bill_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_vague"
+      } ]
+    },
+    "targetFlow": "Bill Vague",
+    "name": "e68f4351-4440-43c0-8b46-7fc1c3eafa81"
+  } ]
+}

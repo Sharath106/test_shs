@@ -1,0 +1,23 @@
+{
+  "name": "4c142b52-ae48-4c62-ad0d-ab3f9cca37c4",
+  "displayName": "acct_balance_questions",
+  "transitionRoutes": [ {
+    "intent": "head_intent.bill_view",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Once your billing cycle ends, it can take up to 5 days in order to view your new bill online." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c623e71b-df68-4fb4-a1d9-709e055f3f4f"
+  }, {
+    "intent": "head_intent.bill_cycle_date",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing cycle date",
+    "name": "e864f88a-642b-49cd-80b4-c690a3bda9b2"
+  } ]
+}

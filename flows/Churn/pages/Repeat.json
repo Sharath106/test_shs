@@ -1,0 +1,109 @@
+{
+  "name": "5cf7bf30-0e13-4c04-b415-5086a1603510",
+  "displayName": "Repeat",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.repeat_counter = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": 0
+      } ]
+    },
+    "name": "c985d5e7-17d1-4007-a072-12b4d7bf1450"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e= 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": "$sys.func.ADD($session.params.repeat_counter,1)"
+      } ]
+    },
+    "name": "513723bf-eb36-4ad6-b63f-2c943d0b31ac"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e 5",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For further assistance, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je peux vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "af844e32-3ed4-4484-97d4-fca688c23398"
+  }, {
+    "condition": "$session.params.last_page = \"Cancel account\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cancel account",
+    "name": "e60bae59-9176-4608-903c-75202ed87359"
+  }, {
+    "condition": "$session.params.last_page = \"Cancellation fee\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cancellation fee",
+    "name": "9665553a-735e-485e-a6cb-c9641b6540bd"
+  }, {
+    "condition": "$session.params.last_page = \"Leaving the country\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Leaving the country",
+    "name": "dd046800-59d1-4770-977f-990ea57cf900"
+  }, {
+    "condition": "$session.params.last_page = \"Remove a line\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Remove a line",
+    "name": "666cfc2b-b3b2-4913-92cb-b3129d6a82a1"
+  }, {
+    "condition": "$session.params.last_page = \"Soft shopper\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Soft shopper",
+    "name": "4d15323d-d1a9-4643-9153-3aad402375da"
+  }, {
+    "condition": "$session.params.last_page = \"Tenure\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Tenure",
+    "name": "2381d903-0164-4b91-a202-3de88ccf3737"
+  }, {
+    "condition": "$session.params.last_page = \"Soft shopper EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Soft shopper EPP",
+    "name": "9d2e9a4f-994c-4058-9866-1bb8ab9927b4"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hmm I didn't quite get that. Could you tell me once more what I can help you with?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Hmm, je n'ai pas bien compris. Pouvez-vous me dire une fois de plus comment je peux vous aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "247f1628-c2ab-4904-a3b6-639e04c96818"
+  } ]
+}

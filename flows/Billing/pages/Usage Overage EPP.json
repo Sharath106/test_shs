@@ -1,0 +1,377 @@
+{
+  "name": "dde71ce9-7890-4af0-8920-c6aafbb6b382",
+  "displayName": "Usage Overage EPP",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_usage_overage",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message with more information about pay-per-use rates, or, get you to a team member?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "cf8c7e01-7d86-4720-bb3d-b08a2645b8cb"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "0e567713-1d42-4fd1-b50a-e13b85ee24c7"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "22d49f9c-3abe-4769-a80d-d5c9c587d799"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message with more information about pay-per-use rates, or, get you to a team member?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "c1b4e93a-0a63-47a6-8dbc-a7fe6b36a270"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "5617f354-7b4b-460a-843c-5c2d82c54bca"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "eed8744c-5b95-40ce-83bc-74595474e4d6"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 10
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You may incur overedge charges if you go over the allotted data, or airtime in your plan. This also applies to international, long distance, or roaming usage." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ " Overedge charges may vary if you have an expired plan.\n  When roaming outside of Canada without any travel option, pay-per-use rates will apply." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Vous pourriez encourir des frais de dépassement si vous dépassez les données ou le temps d'appel alloués dans votre forfait. Cela s'applique également à l'utilisation internationale, longue distance ou en itinérance.\nLes frais de dépassement peuvent varier si vous avez un forfait expiré.\nLorsque vous êtes en itinérance en dehors du Canada sans option de voyage, des tarifs à l'utilisation s'appliqueront." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Usage Overage EPP"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding pay per use rates"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "comprendre les tarifs à l'utilisation"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900P8"
+      }, {
+        "parameter": "usageoverageepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_usage_overage",
+        "value": null
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900QF"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "5e2ce8a8-2bd3-46af-905e-0d5dc34bd9d6"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "usageoverageepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_usage_overage",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "397e39bd-c98b-48dc-88c8-c924c2528d22"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "usageoverageepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_usage_overage",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "04bf8cee-87d0-4056-a2d9-b110b9d32843"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "usageoverageepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_usage_overage",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "282b186e-5529-49df-9548-30e51d66eb1d"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900P8"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900QF"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "f3085ed1-5551-48c3-9137-aa741d4dab96"
+  }, {
+    "condition": "$session.params.dtmf_usage_overage = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "usageoverageepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_usage_overage",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "8d89da5f-c9cc-4128-b36e-c4dd8db50db9"
+  }, {
+    "condition": "$session.params.dtmf_usage_overage = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900P8"
+      }, {
+        "parameter": "usageoverageepp_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_usage_overage",
+        "value": null
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900QF"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "19a6dcd0-4358-4cbd-8f4b-3acb7b1a98c0"
+  }, {
+    "condition": "$session.params.usageoverageepp_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "usageoverageepp_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "edcf247d-f95a-4741-a8b1-5ad268e83fa0"
+  }, {
+    "condition": "$session.params.usageoverageepp_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "usageoverageepp_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "2b58c39d-3114-4f6e-8144-d21429c8eb2b"
+  }, {
+    "condition": "$session.params.dtmf_usage_overage = 1 OR $session.params.dtmf_usage_overage = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_usage_overage",
+        "value": null
+      }, {
+        "parameter": "usageoverageepp_retrycnt",
+        "value": "$sys.func.ADD($session.params.usageoverageepp_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "c25bb2dd-e15d-4af0-9ca9-353e11c1863a"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "usageoverageepp_retrycnt",
+        "value": "$sys.func.ADD($session.params.usageoverageepp_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.usageoverage_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.usageoverage_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "3deeb273-a355-485c-b3dc-b0d406fe5616"
+  } ]
+}

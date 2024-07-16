@@ -1,0 +1,80 @@
+{
+  "name": "18fd1255-11e3-43f4-ac51-64922206524b",
+  "displayName": "BillVague_GetBillinfo",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Bill explain",
+    "tag": "get_bill_info",
+    "setParameterActions": [ {
+      "parameter": "bill_period",
+      "value": "0"
+    }, {
+      "parameter": "last_page",
+      "value": "BillVague_GetBillinfo"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.number_of_bills = 2",
+    "triggerFulfillment": {
+      "webhook": "Bill explain",
+      "tag": "selected_bill"
+    },
+    "name": "bdb4fa3b-9347-45df-ad96-1049e916c8cf"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = false AND $session.params.error_retry != 1",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": 1
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "ebc83421-d6fc-4aca-bc86-e9bf0bdc754b"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      }, {
+        "parameter": "getbillinfoerror",
+        "value": true
+      } ]
+    },
+    "targetPage": "Disambiguation",
+    "name": "3a4ba574-e1a6-4569-b179-4369cf6bd3a2"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "BillVague_Billinfo",
+    "name": "5f38384b-eaee-4a17-9e3f-5ca4c96bba01"
+  } ]
+}
