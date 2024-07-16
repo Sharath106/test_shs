@@ -1,0 +1,198 @@
+{
+  "name": "07003f8c-9d06-47b1-8b62-b56c67b26f9d",
+  "displayName": "_RaP 7 Finish",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RaP 7 Finish"
+    }, {
+      "parameter": "intent",
+      "value": "acctmgmt"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande. \nLaissez-moi vous mettre en communication avec un agent pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request, I will need to get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "4edfef42-ce8e-495d-9dfd-2fd22654d264"
+  }, {
+    "condition": "$session.params.pn_confirm_status != 0 AND $session.params.pn_confirm_status != 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Dans la plupart des cas, je peux signaler un paiement pour vous. Mais après avoir examiné votre compte, je pense qu'il serait préférable de vous mettre en communication avec notre équipe du soutien pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "In many circumstances I can report payments for you, but after reviewing your account, I think it is best I get you over to our support team to help." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "09f9e7ae-1ba2-4110-a4dd-c534ef16375d"
+  }, {
+    "condition": "$session.params.suspend_reason = \"SNP\" AND $session.params.data_issues = \"report a payment\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Votre compte est maintenant sécurisé et devrait être réactivé sous peu. Veuillez redémarrer votre téléphone et tester vos données." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Your account has now been secured and should be resumed shortly. Please powercycle your phone and test your data. " ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "data_not_working"
+      }, {
+        "parameter": "data_issues",
+        "value": "report a payment"
+      }, {
+        "parameter": "transaction",
+        "value": "report a payment"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "a4ea7194-9587-45ac-85b1-08d86d50c3ad"
+  }, {
+    "condition": "$session.params.suspend_reason = \"SNP\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Votre compte est maintenant sécurisé et devrait être réactivé dans l'heure qui suit. Dans le cas contraire, veuillez redémarrer votre téléphone et tester vos données." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Des frais de rebranchement seront appliqués sur votre prochaine facture." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Your account has now been secured and should be resumed within the hour. Please power cycle your phone if it is not. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "A reconnection fee will be applied to your next invoice." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "transaction",
+        "value": "report a payment"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "51351f46-58c3-46c8-97de-34c9f5c8e03d"
+  }, {
+    "condition": "$session.params.suspend_reason != \"SNP\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Parfait, j'ai bien noté le paiement sur votre compte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Un courriel de confirmation sera envoyé sous peu." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Signaler un paiement ou faire des ententes de paiement protège votre compte contre la suspension, mais ne prévient pas les frais de retard ou les rapports de crédit lorsque nous attendons les paiements." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Perfect, I have noted the payment on your account. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "A confirmation email will be sent shortly." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Reporting a payment or making arrangements protects the account from suspension but may not stop late payment fees or credit reporting while we wait for the payments." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "transaction",
+        "value": "report a payment"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "c1ebbe76-626f-40b2-aaf2-152d2caab9dd"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "isWebhookError",
+        "value": true
+      } ]
+    },
+    "name": "e6f2c7fd-94bc-4068-9b1a-412fd28f2cea"
+  }, {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "isWebhookError",
+        "value": true
+      } ]
+    },
+    "name": "4f2c2ff3-235a-48fd-b1d6-111bd53e869a"
+  } ]
+}

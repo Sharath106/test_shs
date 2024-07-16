@@ -1,0 +1,276 @@
+{
+  "name": "4a689cd8-28bc-46a7-99ab-9dae7bf0ec73",
+  "displayName": "_PN 11 Payment Make Online or App",
+  "form": {
+    "parameters": [ {
+      "displayName": "online_vs_app_payment_make",
+      "required": true,
+      "entityType": "@online-vs-app",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Préférez-vous l'application Mon TELUS ou des instructions en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Do you prefer the My TELUS app, or online instructions?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            }
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas entendu.", "Pardon, je n'ai pas compris.", "Désolé, je ne vous ai pas entendu." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous l'application Mon TELUS ou des instructions en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you prefer My TELUS app or online instructions?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "57a6447a-f13e-402e-9ba2-70a4c7181bd8"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je n'entends toujours pas.", "Je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un texto pour les instructions sur l'application Mon TELUS, appuyez sur un. Pour les instructions en ligne, appuyez sur deux." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I still didn't hear you.", "I still didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To receive a text message for the My Telus app, press one, for online, press two." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7c860eac-c543-4b54-ba16-8ddcb1c97fbb"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai toujours pas compris. Laissez-moi vous mettre en contact avec un membre de l'équipe qui pourra vous aider." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I still didn't get that. Let me get you over to a team member who can help you. " ]
+              },
+              "languageCode": "en"
+            } ],
+            "advancedSettings": {
+              "playbackInterruptionSettings": {
+              
+              }
+            }
+          },
+          "name": "21c3a25d-1658-4fcb-8e16-6c4e5eeac270"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris.", "Pardon, je ne comprends pas.", "Désolé, je n'ai pas entendu." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous avoir des instructions pour l'application Mon TELUS ou en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I didn't get that.", "Sorry , I didn't understand that.", "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you prefer My TELUS app or online instructions?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "9f452d41-f0d4-48f2-86a4-9a830515b948"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai toujours pas compris.", "Pardon, je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un texto pour les instructions sur l'application Mon TELUS, appuyez sur un. Pour les instructions en ligne, appuyez sur deux." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I still didn't get that.", "I still didn't hear you." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To receive a text message for the My Telus app, press one, for online, press two." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "af221388-f65c-4409-9cc0-e11b89945c94"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai toujours pas compris. Laissez-moi vous mettre en contact avec un membre de l'équipe qui pourra vous aider." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I still didn't get that. Let me get you over to a team member who can help you. " ]
+              },
+              "languageCode": "en"
+            } ],
+            "advancedSettings": {
+              "playbackInterruptionSettings": {
+              
+              }
+            }
+          },
+          "name": "c4bbc74d-23d7-4d64-8e7a-c1e647b78720"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 5
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PN 11 Payment Make Online or App"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "supplemental.overthephone",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez patienter un moment pendant que je vous transfère vers notre système de traitement de paiement sécurisé." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please wait a moment while I transfer you to our secure payment processing system." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_payment_bot",
+        "value": true
+      }, {
+        "parameter": "handoff_type",
+        "value": "payment_bot"
+      }, {
+        "parameter": "last_page",
+        "value": "make payment"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "16361cae-d86f-45c2-b42d-ad8116168168"
+  }, {
+    "condition": "$session.params.online_vs_app_payment_make = \"app\" OR $session.params.online_vs_app_payment_make = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190128"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319002C"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "71f1f26c-a96b-4779-82b8-849f1b410a85"
+  }, {
+    "condition": "$session.params.online_vs_app_payment_make = \"online\" OR $session.params.online_vs_app_payment_make = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190128"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319002C"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "9e8443cb-d231-459a-8e69-1a722024fedd"
+  }, {
+    "condition": "$session.params.online_vs_app_payment_make = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous transférer à quelqu'un qui pourra vous assister." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "online_vs_app_payment_make",
+        "value": null
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        }
+      }
+    },
+    "targetFlow": "Universal handoff",
+    "name": "19894358-f05c-4d80-8a28-1aba9f0d91d8"
+  } ]
+}

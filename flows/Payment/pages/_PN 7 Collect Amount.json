@@ -1,0 +1,362 @@
+{
+  "name": "d7ec870c-e8e5-41b1-a3ab-9d6531abbb0b",
+  "displayName": "_PN 7 Collect Amount",
+  "form": {
+    "parameters": [ {
+      "displayName": "pay_now_amount",
+      "required": true,
+      "entityType": "@sys.unit-currency",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn't understand that.", "I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What amount would you like to pay?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris.", "Pardon, je ne comprends pas.", "Désolé, je ne comprends pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel montant souhaitez-vous payer?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "157d3234-dec8-4564-a707-4bc7d8493d3c"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I still didn't get that.", "I still didn't hear you." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What amount would you like to pay? You can say something like thirty dollars and twenty cents." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai toujours pas compris", "Pardon, je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel montant souhaitez-vous payer. Vous pouvez également utiliser le clavier pour inscrire le montant." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "7053b5a0-c6f8-432e-91c6-8eb0cd40c33c"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I still didn't get that. Let me get you over to a team member who can help you. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai toujours pas compris. Laissez-moi vous mettre en contact avec un membre de l'équipe pour mieux vous assister." ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "advancedSettings": {
+              "playbackInterruptionSettings": {
+              
+              }
+            }
+          },
+          "name": "a2099495-011c-49ff-9725-91b7590a16db"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn't get that.", "I didn't understand that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What amount would you like to pay?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas entendu.", "Pardon, je n'ai pas compris.", "Désolé, je ne vous entends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel montant souhaitez-vous payer?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "bd6b482f-45d4-49a3-81da-49171fd798ac"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I still didn't hear you.", "I still didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What amount would you like to pay? You can say something like thirty dollars and twenty cents." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'entends toujours pas.", "Je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel montant souhaitez-vous payer? Vous pouvez également utiliser le clavier pour inscrire le montant." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "6d9bc13a-eadb-4af0-b01a-c9f9e1c2bdc2"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I still didn't get that. Let me get you over to a team member who can help you. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai toujours pas compris. Laissez-moi vous mettre en contact avec un membre de l'équipe pour vous assister." ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "advancedSettings": {
+              "playbackInterruptionSettings": {
+              
+              }
+            }
+          },
+          "name": "939b6903-a6fe-45be-9cd3-6ce462e8c324"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PN 7 Collect Amount"
+    }, {
+      "parameter": "pay_now_amount",
+      "value": null
+    }, {
+      "parameter": "payment_amount",
+      "value": null
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.under_payment_counter \u003e 3 OR $session.params.over_payment_counter \u003e 3"
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "What amount would you like to pay?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Quel montant souhaitez-vous payer?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.is_transaction_question = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem!", "Ok!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Ok!", "Pas de problème!" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_transaction_question",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "e386450b-fe3b-4ae0-aaa3-f4c14fff6966"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.is_transaction_question = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, to continue making a payment, can you tell me the amount you would like to pay?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, pour continuer à effectuer un paiement, pouvez-vous me dire le montant que vous souhaitez payer?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_transaction_question",
+        "value": null
+      } ]
+    },
+    "name": "9bf29074-0715-48cc-921d-c75062cd3a20"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I understand your intention to pay." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "What amount would you like to pay?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, je comprends que vous désirez payer." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Quel montant souhaitez-vous payer?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "user_intention",
+        "value": "pay the amount"
+      } ]
+    },
+    "name": "8e270c5c-26b9-4310-9201-e49fbb5860d1"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Would you like to cancel the transaction?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Aimeriez-vous annuler la transaction?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_transaction_question",
+        "value": true
+      } ]
+    },
+    "name": "be5f7f63-cefc-457a-9c5a-796390fa1f0a"
+  }, {
+    "intent": "small_talk.pay_full_amount",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure.", "Okay." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eYou selected the option to pay \u003csay-as interpret-as=\"currency\" language='en-US'\u003e$\n$session.params.total_due\u003c/say-as\u003e.\u003c/speak\u003e", "\u003cspeak\u003eYou chose to proceed with a payment of \u003csay-as interpret-as=\"currency\" language='en-US'\u003e$\n$session.params.total_due\u003c/say-as\u003e.\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr.", "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVous avez choisi l'option de payer \u003csay-as interpret-as=\"currency\" language='fr'\u003e$$session.params.total_due\u003c/say-as\u003e.\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVous avez décidé de procéder avec un montant de \u003csay-as interpret-as=\"currency\" language='fr'\u003e$\n$session.params.total_due\u003c/say-as\u003e.\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "pay_now_amount",
+        "value": "$session.params.total_due"
+      } ]
+    },
+    "targetPage": "_PN 6 Over Payment Check",
+    "name": "a5fa2f98-47fa-4a46-8d94-eb301c52100a"
+  }, {
+    "condition": "$session.params.pay_now_amount.amount \u003c= 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand your intention to pay. You can pay any sum more than zero." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je comprends votre intention de payer. Vous pouvez payer n’importe quelle somme supérieure à zéro." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "pay_now_amount",
+        "value": null
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "2aa47e75-d7b2-4912-9970-0dfdcd219a7a"
+  }, {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "payment_amount",
+        "value": "$sys.func.TO_NUMBER($session.params.pay_now_amount.amount)"
+      }, {
+        "parameter": "pay_now_amount",
+        "value": "$sys.func.TO_NUMBER($session.params.pay_now_amount.amount)"
+      } ]
+    },
+    "targetPage": "_PN Confirm Amt",
+    "name": "d8014c9c-a646-427b-9e12-de043264a2f3"
+  } ]
+}

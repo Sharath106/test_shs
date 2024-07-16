@@ -1,0 +1,102 @@
+{
+  "name": "d38b1ace-eabd-4637-9a03-fcb32af6de93",
+  "displayName": "_PN 12 PAP Setup Check",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Payment",
+    "tag": "retrieve_payment_method",
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PN 12 PAP Setup Check"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please wait, I'm still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Veuillez patienter pendant que je traite votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Payment",
+      "tag": "retrieve_payment_method",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "returnPartialResponses": true
+    },
+    "name": "e41513dd-5295-45e0-b8ae-0fd84542e0d4"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Webhook Error Redirect",
+    "name": "3c8681e2-5053-4d40-b24e-0aa08e5931fc"
+  }, {
+    "condition": "$session.params.payment_method != \"telusBankAccountDebit\" AND $session.params.payment_method != \"telusTokenizedCard\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_PN 13 Propose PAP Setup",
+    "name": "c3d29236-3e8c-4b26-a213-4bab47f91294"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "f18f7949-7442-4a36-9384-7c76b9b325a9"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+    
+    },
+    "name": "57d6a038-f9f8-4882-9a1d-c26e260052b3"
+  }, {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+    
+    },
+    "name": "1a3c45d4-60cd-4f6b-835d-979edaee4797"
+  } ]
+}

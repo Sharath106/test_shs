@@ -1,0 +1,60 @@
+{
+  "name": "0a658455-83ec-4f66-a110-640b56707835",
+  "displayName": "_RaP 1 Start ",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RaP 1 Start"
+    }, {
+      "parameter": "phone_number",
+      "value": "$session.params.user.stn"
+    }, {
+      "parameter": "ban",
+      "value": "$session.params.user.ban"
+    }, {
+      "parameter": "language",
+      "value": "$sys.func.LOWER($request.language)"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    },
+    "returnPartialResponses": true
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.acct_id_error = \"true\" OR $session.params.pin_verification = \"blocked\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Report a Payment",
+    "name": "86a6cd1d-35b3-4f69-b041-a84fe1641fb4"
+  }, {
+    "condition": "$session.params.user = null OR $session.params.phone_number = null OR $session.params.ban = null OR $session.params.isTrustedUser = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "In many circumstances I can report payments for you, but after reviewing your account, I think it is best I get you over to our support team to help." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Dans la plupart des cas, vous pourriez signaler un paiement. Mais suite à la révision de votre compte, il serait préférable de vous mettre en communication avec notre équipe du soutien." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "234257ec-a4aa-4db2-9c90-8db1c8c2c59d"
+  }, {
+    "condition": "$session.params.phone_number != null AND $session.params.ban != null AND $session.params.isTrustedUser != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RaP 2 Validate Account",
+    "name": "a6219363-54a2-4185-9fd0-8cb74dd9e595"
+  } ]
+}

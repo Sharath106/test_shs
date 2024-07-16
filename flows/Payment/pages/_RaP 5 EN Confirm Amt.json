@@ -1,0 +1,201 @@
+{
+  "name": "70cdfda7-77ec-4be8-9809-8c3500ef4665",
+  "displayName": "_RaP 5 EN Confirm Amt",
+  "form": {
+    "parameters": [ {
+      "displayName": "reported_amount",
+      "required": true,
+      "entityType": "@amountdigit",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is the amount that you are reporting a payment for?", "What amount would you like to report a payment for?", "What amount are you reporting a payment for?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Quel est le montant du paiement que vous souhaitez signaler?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't hear that. What is the amount that you are trying to report a payment for?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien entendu ce que vous avez dit. Quel est le montant du paiement que vous souhaitez signaler?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "19875d2f-f015-43a8-94e0-a29bb7f644d3"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I still didn't hear that. What is the amount that you are trying to report a payment for?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai toujours pas bien entendu ce que vous avez dit. Quel est le montant du paiement que vous souhaitez signaler?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "2cf985cf-f864-4f4c-bdf3-9191f2e3e2f3"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I still didn't get that. Let me get you over to a team member who can help you. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n’ai toujours pas bien compris. Laissez-moi vous mettre en relation avec un membre de l’équipe." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "226f3e1f-f606-4d4f-899d-2b991a6b2475"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't understand that. What is the amount that you are reporting for?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n’ai pas compris ce que vous venez de dire. Quel est le montant du paiement que vous souhaitez signaler?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "d81a0aea-bcd1-456e-99c4-a41480608bc1"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not sure I got that. Could you rephrase? What is the amount that you are trying to report a payment for?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne suis toujours pas sûr d' avoir bien compris. Pourriez-vous reformuler? Quel est le montant du paiement que vous souhaitez signaler?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "8707b184-5979-47e0-a33a-deb13a50ab27"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding. Let me get you over to a team member who can help you." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas. Laissez-moi vous mettre en relation avec un membre de l’équipe." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ad654aaa-19b8-4188-bf0e-0ee2bec4a677"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cprosody rate=\"slow\"\u003e \u003cspeak\u003e\u003cs\u003e Your past due balance is $session.params.total_due dollars. \u003c/s\u003e\u003c/speak\u003e \u003c/prosody\u003e\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cprosody rate=\"slow\"\u003e \u003cspeak\u003e\u003cs\u003e Votre solde en souffrance est de $session.params.total_due dollars. \u003c/s\u003e\u003c/speak\u003e \u003c/prosody\u003e\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RaP 5 EN Confirm Amt"
+    }, {
+      "parameter": "dtmf_rap_confirm_full_amt",
+      "value": null
+    }, {
+      "parameter": "dtmf_rap_confirm_full_amt_no_match",
+      "value": null
+    }, {
+      "parameter": "reported_amount",
+      "value": null
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.payment_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_issues"
+      } ]
+    },
+    "targetPage": "Payment issues",
+    "name": "a3c76a25-8a77-410a-8d9f-003ce90d3084"
+  }, {
+    "intent": "head_intent.payment_arrangements",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      } ]
+    },
+    "targetPage": "_PARRS 1 Start",
+    "name": "6abcb083-f778-4e10-9876-ea479a90aec2"
+  }, {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "reported_amount",
+        "value": "$sys.func.TO_NUMBER($session.params.reported_amount.amount)"
+      } ]
+    },
+    "name": "4642dfc3-f7f9-4848-828a-5be5d2fc3a08"
+  }, {
+    "condition": "$session.params.reported_amount \u003e= $session.params.total_due",
+    "triggerFulfillment": {
+      "webhook": "Report Payment",
+      "tag": "full_amount_confirmed"
+    },
+    "targetPage": "_RaP 7 Finish",
+    "name": "aeb679ce-3bac-4fe5-b7fb-e146aa00eabe"
+  }, {
+    "condition": "$session.params.reported_amount \u003c $session.params.total_due",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RaP 6 Request PARRS",
+    "name": "586096db-8c60-49ce-ab59-a307e0ff73dd"
+  } ]
+}

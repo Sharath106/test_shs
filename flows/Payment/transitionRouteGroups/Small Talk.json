@@ -1,0 +1,115 @@
+{
+  "name": "a7cf3ae6-2297-4442-bdb1-2db8910db7b8",
+  "displayName": "Small Talk",
+  "transitionRoutes": [ {
+    "intent": "small_talk.good_bye",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "b7aecc3e-5bb8-4f91-a794-bc058465110a"
+  }, {
+    "intent": "small_talk.let_me_think",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem, take your time.", "Of course, take your time.", "Sure, I can wait." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème, prenez votre temps.", "Absolument, je vous attends.", "Bien sûr, je peux patienter." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "02a7672e-a4bc-4340-9cb0-b3d0a72e8891"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem.", "Ok." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème.", "Certainement." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "0f3cae11-4c8c-4e30-a920-2f758ba1ffb3"
+  }, {
+    "intent": "small_talk.no_more_questions",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "e785ba3b-cebd-406d-a35f-54336dbe9aae"
+  }, {
+    "intent": "small_talk.swear_hate_words",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry you feel that way." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please give me another chance with a new question." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je suis désolé." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Veuillez me donner une autre chance avec une nouvelle question." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "f7df5029-cda9-4a37-a2f5-5cd8cd44ad89"
+  }, {
+    "intent": "small_talk.thank_you",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem.", "My pleasure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Ça me fait plaisir!", "Avec plaisir!", "Pas de problème!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "589aa3e7-c02b-4496-ba0f-f919becc0eb6"
+  }, {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Repeat Prompt",
+    "name": "89f808a7-7f5d-4e30-b839-ebe84e29447f"
+  }, {
+    "intent": "small_talk.go_back",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "6a4759d3-812f-4a0d-8fbb-56bae1cea90e"
+  } ]
+}

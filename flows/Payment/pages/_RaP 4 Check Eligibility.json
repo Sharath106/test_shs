@@ -1,0 +1,238 @@
+{
+  "name": "25afe129-26d1-44d7-a7d4-bc8dc7507e8f",
+  "displayName": "_RaP 4 Check Eligibility",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Report Payment",
+    "tag": "check_eligibility",
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RaP 4 Check Eligibility"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez patienter pendant que j'accède à vos informations." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please wait, I am still working on your request." ]
+        },
+        "languageCode": "en"
+      } ],
+      "webhook": "Report Payment",
+      "tag": "check_eligibility",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_reponse",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "returnPartialResponses": true
+    },
+    "name": "92331718-1e7d-430b-b37f-88130416cd0b"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Webhook Error Redirect",
+    "name": "9986df22-b698-40a1-8a04-ea3e4693274a"
+  }, {
+    "condition": "$session.params.pn_status = \"0\" AND ($session.params.language = \"en-us\" OR $session.params.language = \"en\")",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je peux vous aider à signaler un paiement." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can definitely help you report a payment." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "_RaP 5 EN Confirm Amt",
+    "name": "90a63006-8422-4704-b517-01bfd96947fc"
+  }, {
+    "condition": "$session.params.pn_status = \"0\" AND $session.params.language = \"fr-ca\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je peux vous aider à signaler un paiement." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "_RaP 5 FR Confirm Amt",
+    "name": "2d602c6a-947b-40bd-9523-a288fe449d88"
+  }, {
+    "condition": "$session.params.pn_status = \"1000\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Report a Payment",
+    "name": "e37ecd08-3cb7-43db-b9eb-c4589c0bdfa3"
+  }, {
+    "condition": "$session.params.pn_status = \"1002\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Après avoir consulté votre compte, il semblerait que vous ayez déjà conclu une entente de paiement." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je ne suis donc pas en mesure de signaler un paiement pour le moment." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous avez signalé un paiement partiel et que vous avez besoin de nous notifier du montant restant, je vous suggère de vous adresser à un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Upon review of your account, it appears you have an existing payment arrangement in place." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "As such, I'm unable to report a payment at this time." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you reported a partial payment and need to report the remaining amount, I would suggest speaking to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "fbcc106a-f027-48b9-b499-260aae2d8a99"
+  }, {
+    "condition": "$session.params.pn_status = \"1015\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Après avoir consulté votre compte, il semblerait que vous ayez déjà signalé un paiement. Le système n'est pas en mesure d'accepter plusieurs déclarations de paiement. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous avez déclaré un paiement partiel et que vous devez signaler un paiement pour le solde restant, je vous suggère de parler à un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Upon review of your account, it appears you have already reported a payment. The system is unable to accept multiple reported payments." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you reported a partial payment and need to report a payment for the remaining balance, I would suggest speaking to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "75bc4d33-06cb-4ace-b5c1-17745b6e3f3f"
+  }, {
+    "condition": "$session.params.pn_status != \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Dans la plupart des cas, je peux signaler les paiements et vous aider à sécuriser votre compte, mais après avoir vérifié votre compte, je vous suggère de parler à un membre de l'équipe pour obtenir de l'aide à ce sujet." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "In many circumstances I can report payments and assist in securing your account, but  after reviewing your account, I would suggest speaking to a team member for additional support." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "058a9889-da5d-400c-a2ec-c5ca99630ec2"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "isWebhookError",
+        "value": true
+      } ]
+    },
+    "name": "8c9ced14-7885-4441-873b-ad41968f13f2"
+  }, {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "isWebhookError",
+        "value": true
+      } ]
+    },
+    "name": "b79d0143-f485-4d09-b5f3-1ec473f98fcf"
+  } ]
+}

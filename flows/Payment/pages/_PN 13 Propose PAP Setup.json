@@ -1,0 +1,201 @@
+{
+  "name": "a36e4d03-d3b8-48e5-b19d-5b64d7624bea",
+  "displayName": "_PN 13 Propose PAP Setup",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I notice you aren't currently using our automatic payment feature. I would advise to set up this feature to avoid late payment charges." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Would you like to go ahead?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "J'ai remarqué que vous n'utilisez pas notre option de paiement automatique. Je vous conseille fortement d'activer cette option afin d'éviter des frais de retard de paiement." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Voulez-vous activer cette option?" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PN 13 Propose PAP Setup"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "pre-authorized_payments"
+      } ]
+    },
+    "targetPage": "Pre auth Set up",
+    "name": "40b03448-c55c-4e6f-869f-eddcefc2a217"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "no problem!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "a507f9d8-688c-42e8-b6d6-646c95a7a25c"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry , I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to setup automatic payment feature on your account?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je suis désolé, je n'ai pas compris.", "Désolé, je n'ai pas entendu.", "Désolé, je n'ai pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voulez-vous activer l'option de paiement automatique sur votre compte?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "1f51d91c-30e3-4fc7-af03-058aa9223ee8"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I still didn't hear you.", "I still didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to setup automatic payment feature on your account?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je n'ai toujours pas compris.", "Je n'ai pas bien entendu ce que vous avez dit." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voulez-vous activer l'option de paiement automatique sur votre compte?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "e2f298e1-a3e5-4bc0-82a6-ce68f2411c63"
+  }, {
+    "targetFlow": "Universal handoff",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I still didn't get that. Let me get you over to a team member who can help you. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne comprends toujours pas. Je vais vous transférer à un agent qui pourra vous assister." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "ad7c74c8-ea3e-45a6-b62a-2ed731ee9ae5"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry , I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to setup automatic payment feature on your account?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je suis désolé, je n'ai pas compris.", "Désolé, je n'ai pas entendu.", "Désolé, je n'ai pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voulez-vous activer l'option de paiement automatique sur votre compte?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "122538c3-5f13-42d8-bba5-b504759eeae4"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I still didn't hear you.", "I still didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to setup automatic payment feature on your account?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je n'ai toujours pas compris.", "Je n'ai pas bien entendu ce que vous avez dit." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voulez-vous activer l'option de paiement automatique sur votre compte?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "c98d70ce-4670-43e9-bc2b-cdf27b5b442e"
+  }, {
+    "targetFlow": "Universal handoff",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I still didn't get that. Let me get you over to a team member who can help you. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne comprends toujours pas. Je vais vous transférer à un agent pour de l'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "213a9c6f-c859-4c85-9881-3201dbb05458"
+  } ]
+}

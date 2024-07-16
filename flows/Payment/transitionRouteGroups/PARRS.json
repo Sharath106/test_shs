@@ -1,0 +1,100 @@
+{
+  "name": "316cca3c-16d8-494c-8561-7cefd033f5dd",
+  "displayName": "PARRS",
+  "transitionRoutes": [ {
+    "intent": "head_intent.reconnection_fee",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lorsqu'un compte est suspendu pour non-paiement, TELUS applique automatiquement des frais de rebranchement uniques une fois que le compte est rétabli." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pour éviter ces frais, TELUS offre plusieurs façons de payer votre facture à temps, y compris les paiements préautorisés." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "When an account is suspended for non-payment, TELUS automatically applies an one-time reconnection fee once the account is restored." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "To avoid this fee, TELUS offers a number of convenient ways to pay your bill on time including Pre-Authorized payments." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "d9dd5e5b-6ee4-411b-952b-d035ec7af58c"
+  }, {
+    "intent": "head_intent.late_payments",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Si nous ne recevons pas le paiement d'un montant dû à la date de paiement requise indiquée sur votre facture, cela sera considéré comme un paiement en retard." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "If payment of an amount due is not received by us by the required payment date specified on your bill, it will be considered a late payment amount. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "d44922bc-18e2-4208-ae4a-1de7b3d55d94"
+  }, {
+    "intent": "supplemental.parrs_credit_reporting",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Avec ou sans ententes de paiement, TELUS continue toujours de rendre des comptes aux agences de crédit." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "TELUS still reports to credit agencies as we would without the arrangements." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "f5e75f56-beb2-47d6-b3af-28bd0a62d0ea"
+  }, {
+    "intent": "supplemental.parrs_other_options",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Après avoir examiné votre compte, voici les meilleures options que j'ai pour vous.", "J'ai examiné votre compte et voici les 3 meilleures options que j'ai pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "After a review of your account, I believe these are the best options for you.", "I reviewed your account and these 3 options are the best for you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "d716de7e-8575-4d8b-be68-1dbce401b8cf"
+  }, {
+    "intent": "supplemental.parrs_restore_service",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Une fois que votre entente de paiement est confirmée, votre service peut prendre jusqu'à 1 heure avant d'être rétabli." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Once your payment arrangement is confirmed it will take up to 1 hour for your service to be restored." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "b8d7b2e9-43c5-466f-a089-f1aaca9fd021"
+  } ]
+}

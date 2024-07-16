@@ -1,0 +1,372 @@
+{
+  "name": "3bb4ce3c-a260-4112-904a-bebe42bd4bd0",
+  "displayName": "_RaP 6 Request PARRS",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_rap_request_parrs",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "$session.params.dtmf_rap_request_parrs_no_match != \"1\"",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Would you like to set up a payment arrangement?" ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Souhaitez-vous mettre en place une entente de paiement?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+            
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't hear that. Would you like to set up a payment arrangement? Please say yes or no." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je n'ai pas entendu. Souhaitez-vous mettre en place un arrangement de paiement? Veuillez s'il vous plaît dire oui ou non." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "0f1a9421-2cf4-4e87-8048-56087803f842"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I still didn't hear that. To set up a payment arrangement, press 1, to ask another question, press 2, to speak to a team member, press 0. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai toujours pas entendu.", "Désolé, je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour mettre en place un arrangement de paiement, veuillez appuyez sur le 1, pour poser une autre question, appuyez sur le 2, pour parler à un membre de l'équipe, appuyez sur le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "c09bdebb-fc9a-4eb5-a881-aae016533c9e"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I still didn't hear that. Let me get you over to a team member who can help. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas. Laissez-moi vous mettre en communication avec un membre de l'équipe pour mieux vous aider." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "3e4267fb-6fff-43ca-99b2-b7c78a97b754"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I couldn't catch that. Would you like to set up a payment arrangement? Please say yes or no." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, mais je n'ai pas compris. Souhaitez-vous mettre en place un arrangement de paiement? Veuillez s'il vous plaît dire oui ou non." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "61739729-7cb5-4c07-82f6-fc8db0c8d1f6"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding. To set up a payment arrangement, press 1, to ask another question, press 2, to speak to a team member, press 0. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai toujours pas compris.", "Désolé, je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour mettre en place un arrangement de paiement, veuillez appuyez sur le 1, pour poser une autre question, appuyez sur le 2, pour parler à un membre de l'équipe, appuyez sur le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "0d88ad49-9eec-41b4-914e-adf375017647"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding. Let me connect you to a team member who can help you." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas. Laissez-moi vous mettre en communication avec un membre de l'équipe pour mieux vous aider." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "8b377897-d7bd-46c3-baba-68c5dcf046cb"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 5
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "At this time, we can only report payments for the full outstanding balance." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "À l'heure actuelle, nous ne pouvons signaler que les paiements correspondants à la totalité du solde impayé." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RaP 6 Request PARRS"
+    }, {
+      "parameter": "dtmf_rap_request_parrs",
+      "value": null
+    }, {
+      "parameter": "dtmf_rap_request_parrs_no_match",
+      "value": null
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      } ]
+    },
+    "targetPage": "_PARRS 1 Start",
+    "name": "de98692b-ed09-4f82-adb1-a50ed5b7edae"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "3398b41d-f5c1-4002-bb07-c9b011a50e85"
+  }, {
+    "intent": "head_intent.payment_made",
+    "condition": "$session.params.last_page != \"_RaP 5 EN Confirm Amt\" OR $session.params.last_page != \"_RaP 5 FR Confirm Amt\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RaP 5 EN Confirm Amt",
+    "name": "2aaae42b-c262-4313-af03-27ba250a2f05"
+  }, {
+    "condition": "$session.params.dtmf_rap_request_parrs = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me get you over to a team member who can help." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en communication avec un membre de l'équipe pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6e48aeeb-4de4-4420-8683-8c2173d9a03c"
+  }, {
+    "condition": "$session.params.dtmf_rap_request_parrs = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      } ]
+    },
+    "targetPage": "_PARRS 1 Start",
+    "name": "0e510700-d64b-44d1-924f-00312a9a89c2"
+  }, {
+    "condition": "$session.params.dtmf_rap_request_parrs = \"2\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "451a8c94-f547-4d7e-906f-11525b8d3e66"
+  }, {
+    "condition": "$session.params.dtmf_rap_request_parrs \u003e= \"3\" AND $session.params.dtmf_rap_request_parrs_no_match = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm still not understanding. Let me transfer you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne comprends toujours pas.", "Je n'ai toujours pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en communication avec un membre de l'équipe pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_rap_request_parrs_no_match",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "748efc2d-971a-4c10-80f1-476777097d86"
+  }, {
+    "condition": "$session.params.dtmf_rap_request_parrs \u003e= \"3\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm still not understanding. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to set up a payment arrangement?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne comprends toujours pas.", "Je n'ai toujours pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous mettre en place une entente de paiement? " ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_rap_request_parrs_no_match",
+        "value": "1"
+      }, {
+        "parameter": "dtmf_rap_request_parrs",
+        "value": null
+      } ]
+    },
+    "name": "4583c100-e086-4923-a80f-e0599c1c4f28"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't hear that. Would you like to set up a payment arrangement? Please say yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6054b328-6fef-47d9-854e-78d05fb5b730"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I still didn't hear that. To set up a payment arrangement, press 1, to ask another question, press 2, to speak to a team member, press 0. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "8473b4f0-043d-4374-9c51-e489a9f2113f"
+  }, {
+    "targetFlow": "Universal handoff",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I still didn't hear that. Let me get you over to a team member who can help. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "abe896ba-2859-4300-ae3e-0ab0f459f332"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I couldn't catch that. Would you like to set up a payment arrangement? Please say yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "4cc5096b-2cc9-40fb-9991-eca6c2a8fe62"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm still not understanding. To set up a payment arrangement, press 1, to ask another question, press 2, to speak to a team member, press 0. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9fee32ce-5b59-4e02-9a79-88e215a8b89a"
+  }, {
+    "targetFlow": "Universal handoff",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm still not understanding. Let me connect you to a team member who can help you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "8d8a559a-e3d9-4df8-bc22-d08b7b575652"
+  } ]
+}

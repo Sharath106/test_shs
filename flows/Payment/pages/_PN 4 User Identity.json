@@ -1,0 +1,62 @@
+{
+  "name": "768c6285-a633-4818-bd48-b7ade6e1fbbb",
+  "displayName": "_PN 4 User Identity",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_PN 4 User Identity"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.targetPath = \"cc_pay_success\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "targetPath",
+        "value": null
+      } ]
+    },
+    "targetPage": "_PN 12 PAP Setup Check",
+    "name": "b0f3fa0d-6c4f-427d-8349-cbce9d26834e"
+  }, {
+    "condition": "$session.params.targetPath = \"cc_pay_back_end_failure\" OR $session.params.targetPath = \"cc_pay_card_rejected\" OR $session.params.targetPath = \"cc_pay_user_cancel\" OR $session.params.targetPath = \"cc_pay_user_error\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "targetPath",
+        "value": null
+      } ]
+    },
+    "targetPage": "One time Payment",
+    "name": "d41ff2ba-50ac-4608-a635-1836e3fe4700"
+  }, {
+    "condition": "$session.params.searchResult.idStatus = \"identified\" AND $session.params.route = \"payment_make\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_PN 5 Amount Check",
+    "name": "4283099c-885d-43a2-a52e-f3d224e6f141"
+  }, {
+    "condition": "$session.params.searchResult.idStatus != \"identified\" AND $session.params.route = \"payment_make\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "One time Payment",
+    "name": "ff9587f7-b335-4463-b9e0-9bded7957e88"
+  }, {
+    "condition": "$session.params.searchResult.idStatus = \"identified\" AND $session.params.route = \"pay_otheracct\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_PN 10 Set Params",
+    "name": "f475d505-5ad2-45e3-97e9-df2c659617e7"
+  }, {
+    "condition": "$session.params.searchResult.idStatus != \"identified\" AND $session.params.route = \"pay_otheracct\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_PN 9 Recollect PN confirmation",
+    "name": "26b602ff-ef3c-4f9d-9df2-74960a702bff"
+  } ]
+}

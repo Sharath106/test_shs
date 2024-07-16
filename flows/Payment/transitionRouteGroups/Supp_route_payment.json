@@ -1,0 +1,74 @@
+{
+  "name": "9cfe54f8-5a51-4dd9-a79f-3ebfd730ff57",
+  "displayName": "Supp_route_payment",
+  "transitionRoutes": [ {
+    "intent": "head_intent.payment_make",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetPage": "_PN 1 Start",
+    "name": "fcce9836-d312-46c2-9c6a-338d643d1c39"
+  }, {
+    "intent": "head_intent.pay_otheracct",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Pay Another Account",
+    "name": "7e6b9e93-3c02-4c9e-9475-3481ad3b3d59"
+  }, {
+    "intent": "head_intent.payment_posting_time",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Payment Posting Time",
+    "name": "a07fe3ac-4fd2-44d8-a82f-e4caaf3657b0"
+  }, {
+    "intent": "head_intent.preauthorized_payment_update",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Pre auth Update Info",
+    "name": "ef824d44-e0c6-4ee6-9fb4-4f32665e1975"
+  }, {
+    "intent": "head_intent.payment_arrangements",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Payment Arrangement",
+    "name": "1512fd58-7576-4c7d-8d8b-794879638934"
+  }, {
+    "intent": "head_intent.payment_made",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Report a Payment",
+    "name": "340fd04e-8fa9-49ba-9ea6-c9385a2776e6"
+  }, {
+    "intent": "small_talk.no_more_questions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème. " ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "3157b129-17d1-4f7e-9913-70a585e6f40e"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "3cdebed7-e4d6-4f47-8a88-3a0089483aae"
+  } ]
+}

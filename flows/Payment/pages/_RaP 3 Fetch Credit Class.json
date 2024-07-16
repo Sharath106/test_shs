@@ -1,0 +1,145 @@
+{
+  "name": "56db2529-f680-4a1d-9483-be873f1a51fb",
+  "displayName": "_RaP 3 Fetch Credit Class",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Report Payment",
+    "tag": "report_payment",
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RaP 3 Fetch Credit Class"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != '1'",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ " Please wait, I am still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Veuillez patienter pendant que j'accède à vos informations." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Report Payment",
+      "tag": "report_payment",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "returnPartialResponses": true
+    },
+    "name": "acc68549-2967-490f-8610-7f5469968fcd"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_reponse",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Webhook Error Redirect",
+    "name": "ba97a130-d2a6-4848-b481-1f2330cc759c"
+  }, {
+    "condition": "$session.params.credit_class = X OR $session.params.credit_class = L OR $session.params.credit_class = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "In many circumstances I can report payments for you, but after reviewing your account, I think it is best I get you over to our support team to help." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Dans la plupart des cas, je peux signaler un paiement pour vous. Mais après avoir examiné votre compte, je pense qu'il serait préférable de vous mettre en communication avec notre équipe du soutien pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "212f8287-1792-460c-8003-174be1c877a1"
+  }, {
+    "condition": "$session.params.credit_class != \"X\" AND $session.params.credit_class != \"L\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RaP 4 Check Eligibility",
+    "name": "0cb9f931-99d9-45c7-a6a2-400cc35e9f97"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "isWebhookError",
+        "value": true
+      } ]
+    },
+    "name": "f46b131c-bdbf-4348-84f5-2d30998eb9db"
+  }, {
+    "targetPage": "Webhook Error Redirect",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "isWebhookError",
+        "value": true
+      } ]
+    },
+    "name": "51d92d77-3067-4c93-bac6-a8ef585ab9b4"
+  } ]
+}

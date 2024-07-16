@@ -1,0 +1,504 @@
+{
+  "name": "8508d63d-972f-4edc-aaba-725a7bfec36e",
+  "displayName": "_PN Collect Amt DTMF",
+  "form": {
+    "parameters": [ {
+      "displayName": "pay_now_amount_dtmf",
+      "required": true,
+      "entityType": "@dtmf-amount",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "$session.params.dtmf_amount_counter = 0",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Using the dial pad, please enter the full amount you wish to pay, including both the dollars and cents." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "À l'aide du clavier numérique, veuillez saisir le montant total que vous souhaitez payer, y compris les dollars et les cents." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.dtmf_amount_counter = 1",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Using the dial pad, enter the full amount you wish to pay by pressing the pound key between the dollars and the cents. Please make sure you enter the full amount, including the zeros." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "À l'aide du clavier numérique, entrez le montant total que vous souhaitez payer en appuyant sur la touche dièse entre les dollars et les cents. Veuillez vous assurer de saisir le montant total, y compris les zéros." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.dtmf_amount_counter = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Using the dial pad, enter the full amount you wish to pay by pressing the pound key between the dollars and the cents. Please make sure you enter the full amount, including the zeros. For example, for an amount of thirty dollars and twenty cents, you can press three zero pound two zero." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "À l'aide du clavier numérique, entrez le montant total que vous souhaitez payer en appuyant sur la touche dièse entre les dollars et les cents. Veuillez vous assurer de saisir le montant total, y compris les zéros. Par exemple, pour un montant de trente dollars et vingt cents, vous pouvez appuyer sur trois zéro dièse deux zéro." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn't get that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai pas compris.", "Je n'ai pas bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "conditionalCases": [ {
+              "cases": [ {
+                "condition": "$session.params.dtmf_amount_counter = 0",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, please enter the full amount you wish to pay, including both the dollars and cents." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, veuillez saisir le montant total que vous souhaitez payer, y compris les dollars et les cents." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.dtmf_amount_counter = 1",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, enter the full amount you wish to pay by pressing the pound key between the dollars and the cents. Please make sure you enter the full amount, including the zeros." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, entrez le montant total que vous souhaitez payer en appuyant sur la touche dièse entre les dollars et les cents. Veuillez vous assurer de saisir le montant total, y compris les zéros." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.dtmf_amount_counter = 2",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, enter the full amount you wish to pay by pressing the pound key between the dollars and the cents. Please make sure you enter the full amount, including the zeros. For example, for an amount of thirty dollars and twenty cents, you can press three zero pound two zero." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, entrez le montant total que vous souhaitez payer en appuyant sur la touche dièse entre les dollars et les cents. Veuillez vous assurer de saisir le montant total, y compris les zéros. Par exemple, pour un montant de trente dollars et vingt cents, vous pouvez appuyer sur trois zéro dièse deux zéro." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              } ]
+            } ]
+          },
+          "name": "a37daa78-7610-441d-be5e-856666f3bde5"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I still didn't get that.", "I still didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai pas compris.", "Je n'ai pas bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "conditionalCases": [ {
+              "cases": [ {
+                "condition": "$session.params.dtmf_amount_counter = 0",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, please enter the full amount you wish to pay, including both the dollars and cents." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, veuillez saisir le montant total que vous souhaitez payer, y compris les dollars et les cents." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.dtmf_amount_counter = 1",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, enter the full amount you wish to pay by pressing the pound key between the dollars and the cents. Please make sure you enter the full amount, including the zeros." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, entrez le montant total que vous souhaitez payer en appuyant sur la touche dièse entre les dollars et les cents. Veuillez vous assurer de saisir le montant total, y compris les zéros." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.dtmf_amount_counter = 2",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, enter the full amount you wish to pay by pressing the pound key between the dollars and the cents. Please make sure you enter the full amount, including the zeros. For example, for an amount of thirty dollars and twenty cents, you can press three zero pound two zero." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, entrez le montant total que vous souhaitez payer en appuyant sur la touche dièse entre les dollars et les cents. Veuillez vous assurer de saisir le montant total, y compris les zéros. Par exemple, pour un montant de trente dollars et vingt cents, vous pouvez appuyer sur trois zéro dièse deux zéro." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              } ]
+            } ]
+          },
+          "name": "3f18b9c0-3ba9-4b9f-ad46-93fef6803b66"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I still didn't get that. Let me get you over to a team member who can help you. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai toujours pas compris. Laissez-moi vous mettre en contact avec un membre de l'équipe qui pourra vous aider." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "1889862f-407d-4e47-abed-d88457e1cafe"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn't hear that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai pas entendu.", "Je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "conditionalCases": [ {
+              "cases": [ {
+                "condition": "$session.params.dtmf_amount_counter = 0",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, please enter the full amount you wish to pay, including both the dollars and cents." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, veuillez saisir le montant total que vous souhaitez payer, y compris les dollars et les cents." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.dtmf_amount_counter = 1",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, enter the full amount you wish to pay by pressing the pound key between the dollars and the cents. Please make sure you enter the full amount, including the zeros." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, entrez le montant total que vous souhaitez payer en appuyant sur la touche dièse entre les dollars et les cents. Veuillez vous assurer de saisir le montant total, y compris les zéros." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.dtmf_amount_counter = 2",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, enter the full amount you wish to pay by pressing the pound key between the dollars and the cents. Please make sure you enter the full amount, including the zeros. For example, for an amount of thirty dollars and twenty cents, you can press three zero pound two zero." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, entrez le montant total que vous souhaitez payer en appuyant sur la touche dièse entre les dollars et les cents. Veuillez vous assurer de saisir le montant total, y compris les zéros. Par exemple, pour un montant de trente dollars et vingt cents, vous pouvez appuyer sur trois zéro dièse deux zéro." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              } ]
+            } ]
+          },
+          "name": "eb76d20d-edad-42fa-817d-d3f88c496e99"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I still didn't catch that.", "I still didn't hear that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai toujours pas bien entendu.", "Je n'ai toujours pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "conditionalCases": [ {
+              "cases": [ {
+                "condition": "$session.params.dtmf_amount_counter = 0",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, please enter the full amount you wish to pay, including both the dollars and cents." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, veuillez saisir le montant total que vous souhaitez payer, y compris les dollars et les cents." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.dtmf_amount_counter = 1",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, enter the full amount you wish to pay by pressing the pound key between the dollars and the cents. Please make sure you enter the full amount, including the zeros." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, entrez le montant total que vous souhaitez payer en appuyant sur la touche dièse entre les dollars et les cents. Veuillez vous assurer de saisir le montant total, y compris les zéros." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              }, {
+                "condition": "$session.params.dtmf_amount_counter = 2",
+                "caseContent": [ {
+                  "message": {
+                    "text": {
+                      "text": [ "Using the dial pad, enter the full amount you wish to pay by pressing the pound key between the dollars and the cents. Please make sure you enter the full amount, including the zeros. For example, for an amount of thirty dollars and twenty cents, you can press three zero pound two zero." ]
+                    },
+                    "languageCode": "en"
+                  }
+                }, {
+                  "message": {
+                    "text": {
+                      "text": [ "À l'aide du clavier numérique, entrez le montant total que vous souhaitez payer en appuyant sur la touche dièse entre les dollars et les cents. Veuillez vous assurer de saisir le montant total, y compris les zéros. Par exemple, pour un montant de trente dollars et vingt cents, vous pouvez appuyer sur trois zéro dièse deux zéro." ]
+                    },
+                    "languageCode": "fr-ca"
+                  }
+                } ]
+              } ]
+            } ]
+          },
+          "name": "2fe7fbf1-c871-4c4a-b014-f2a5e83cc379"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I still didn't hear that. Let me get you over to a team member who can help you. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai toujours pas compris. Laissez-moi vous mettre en contact avec un membre de l'équipe qui pourra vous aider." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "c479f050-8292-438e-ad8f-85c1a9c22d12"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 9,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 5
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "is_amount_dtmf",
+      "value": "true"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.CONTAIN($sys.func.SPLIT($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf), \"\"), \"#\") = true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pay_now_amount",
+        "value": "$sys.func.TO_NUMBER($sys.func.SUBSTITUTE($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf), \"#\", \".\"))"
+      } ]
+    },
+    "targetPage": "_PN Confirm Amt",
+    "name": "a208a2b2-bb93-4506-9432-905337fed46a"
+  }, {
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.LEN($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf)) \u003c= 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_amount_counter",
+        "value": "$sys.func.ADD($session.params.dtmf_amount_counter, 1)"
+      }, {
+        "parameter": "pay_now_amount_dtmf",
+        "value": null
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "85e4b379-3b38-43bc-b0b4-58718258f3a6"
+  }, {
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.LEN($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf)) = 3",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "amount_dollars",
+        "value": "$sys.func.MID($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf), 1, 1)"
+      }, {
+        "parameter": "amount_cents",
+        "value": "$sys.func.MID($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf), 2, 2)"
+      }, {
+        "parameter": "pay_now_amount",
+        "value": "$sys.func.TO_NUMBER($sys.func.CONCATENATE(amount_dollars, \".\", amount_cents))"
+      } ]
+    },
+    "targetPage": "_PN Confirm Amt",
+    "name": "5d905ab9-80fb-4c4b-984e-201208b86ef5"
+  }, {
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.LEN($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf)) = 4",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "amount_dollars",
+        "value": "$sys.func.MID($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf), 1, 2)"
+      }, {
+        "parameter": "amount_cents",
+        "value": "$sys.func.MID($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf), 3, 2)"
+      }, {
+        "parameter": "pay_now_amount",
+        "value": "$sys.func.TO_NUMBER($sys.func.CONCATENATE(amount_dollars, \".\", amount_cents))"
+      } ]
+    },
+    "targetPage": "_PN Confirm Amt",
+    "name": "d5d0cec0-cb06-47eb-88c8-fec34304af94"
+  }, {
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.LEN($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf)) = 5",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "amount_dollars",
+        "value": "$sys.func.MID($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf), 1, 3)"
+      }, {
+        "parameter": "amount_cents",
+        "value": "$sys.func.MID($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf), 4, 2)"
+      }, {
+        "parameter": "pay_now_amount",
+        "value": "$sys.func.TO_NUMBER($sys.func.CONCATENATE(amount_dollars, \".\", amount_cents))"
+      } ]
+    },
+    "targetPage": "_PN Confirm Amt",
+    "name": "dee2638a-0d5f-47fe-aabd-a56c6fc0d978"
+  }, {
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.LEN($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf)) = 6",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "amount_dollars",
+        "value": "$sys.func.MID($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf), 1, 4)"
+      }, {
+        "parameter": "amount_cents",
+        "value": "$sys.func.MID($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf), 5, 2)"
+      }, {
+        "parameter": "pay_now_amount",
+        "value": "$sys.func.TO_NUMBER($sys.func.CONCATENATE(amount_dollars, \".\", amount_cents))"
+      } ]
+    },
+    "targetPage": "_PN Confirm Amt",
+    "name": "fbb2abb3-e490-4400-a9fd-de4a623c0e6e"
+  }, {
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.LEN($sys.func.TO_TEXT($session.params.pay_now_amount_dtmf)) \u003e= 7",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_amount_counter",
+        "value": "$sys.func.ADD($session.params.dtmf_amount_counter, 1)"
+      }, {
+        "parameter": "pay_now_amount_dtmf",
+        "value": null
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "e5318c63-d71f-48e4-a29f-85768b956ac6"
+  } ]
+}
