@@ -1,0 +1,41 @@
+{
+  "name": "990adc9e-6935-4d81-ac34-e2ffc0dd26d5",
+  "displayName": "Current Plan",
+  "transitionRoutes": [ {
+    "intent": "supplemental.confirm_price",
+    "triggerFulfillment": {
+    
+    },
+    "name": "a5d8300a-5729-46af-9b92-9ade43645c13"
+  }, {
+    "intent": "supplemental.plan_details2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "da6c720b-b969-45bc-8a8a-76a3d5aa342c"
+  }, {
+    "intent": "supplemental.confirm_plan_taxes2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "b7cff6bd-66e4-4ace-a75e-4fb8698ce5d9"
+  }, {
+    "intent": "supplemental.billing_cycle_start2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "33fee6f6-00ed-452c-acf6-d367d10ef862"
+  }, {
+    "intent": "supplemental.confirm_next_bill",
+    "triggerFulfillment": {
+    
+    },
+    "name": "3bb73bbd-2b5b-4bba-a99d-d098e77804b7"
+  }, {
+    "intent": "supplemental.current_plan_breakdown2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "6c62a8fc-f636-4d37-84bc-64697cd3ee39"
+  } ]
+}

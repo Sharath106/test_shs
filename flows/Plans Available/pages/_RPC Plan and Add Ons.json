@@ -1,0 +1,99 @@
+{
+  "name": "2ef2b519-4a28-45b3-a6e1-73f13ad01472",
+  "displayName": "_RPC Plan and Add Ons",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cspeak\u003e\u003cprosody rate=\"95%\"\u003e$request.generative.selected_plan_summary pour \u003csay-as interpret-as=\"currency\" language='fr-CA'\u003e$$session.params.selected_plan_details.chargeAmount\u003c/say-as\u003e par mois.\u003c/prosody\u003e\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\u003cprosody rate=\"85%\"\u003e$request.generative.selected_plan_summary for \u003csay-as interpret-as=\"currency\" language='en-US'\u003e$$session.params.selected_plan_details.chargeAmount\u003c/say-as\u003e per month.\u003c/prosody\u003e\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "rate_plan_code",
+      "value": "$session.params.selected_plan_details.serviceCode"
+    }, {
+      "parameter": "last_page",
+      "value": "_RPC Plan and Add Ons"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    },
+    "generators": [ {
+      "generator": "projects/cdo-ccai-lab-f7edc3/locations/northamerica-northeast1/agents/0a9ec792-2a11-4b74-bcd9-9d10c2051cd2/generators/c2e70dc3-9223-4c8e-9cd0-b8943b94fe3e",
+      "inputParameters": [ {
+        "key": "selected_plan_name",
+        "value": "$session.params.selected_plan_name"
+      }, {
+        "key": "serviceDescription",
+        "value": "$session.params.selected_plan_details.serviceDescription"
+      } ],
+      "outputParameter": "$request.generative.selected_plan_summary"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.rate_plan_code = \"PPM25G85\" OR $session.params.rate_plan_code = \"PMUL20Q70\" OR $session.params.rate_plan_code = \"PMUL25Q65\" OR $session.params.rate_plan_code = \"PMUL25GSM\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ce forfait comprend aussi la messagerie vocale 25." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "This plan also includes voicemail 25." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0233a2e0-322b-4d0f-8932-c3f973c7ee61"
+  }, {
+    "condition": "$session.params.rate_plan_code = \"PPM40G90\" OR $session.params.rate_plan_code = \"PMUL45GQC\" OR $session.params.rate_plan_code = \"PMUL45GSM\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ce forfait comprend aussi les messages textes internationaux illimités et la messagerie vocale visuelle 25." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "This plan also includes unlimited international messaging and visual voicemail 25." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "62a76900-99b4-447b-882e-02583c658d1e"
+  }, {
+    "condition": "$session.params.rate_plan_code = \"POM50G100\" OR $session.params.rate_plan_code = \"PPM50G90Q\" OR $session.params.rate_plan_code = \"PSKUNW50G\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ce forfait comprend les données, appels et textos illimités aux États-Unis, les textos internationaux illimités et la messagerie vocale visuelle 25." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "This plan also includes unlimited data, talk and text in the United States, unlimited international messaging and visual voicemail 25." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7ba801f6-9624-4e7a-aa9b-383623933f4b"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RPC 1 PN Check",
+    "name": "3f70cd6f-b44e-479a-82b6-66c2d9ff92ad"
+  } ]
+}

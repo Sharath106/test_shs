@@ -1,0 +1,243 @@
+{
+  "name": "ab2897cf-f684-460a-9cf6-480c2c29eb34",
+  "displayName": "Plans Available",
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "77f00866-2cd5-48fa-bc3d-005ac4d9005f"
+  }, {
+    "condition": "$session.params.routeDetails = null AND $session.params.conversation = null AND $session.params.searchResult = null AND $session.params.user = null AND $session.params.init != null",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "init_retry",
+        "value": "plans available"
+      } ]
+    },
+    "name": "d221b991-9f39-4bcd-9f99-f8f9c04a534c"
+  }, {
+    "condition": "$session.params.qatest = true AND $session.params.expected_flow = \"bill_explanation\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "bill_explanation"
+      } ]
+    },
+    "name": "d73d2881-e97f-43a6-940a-838be0760ec6"
+  }, {
+    "condition": "$session.params.is_repeat_prompted = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_repeat_prompted",
+        "value": null
+      } ]
+    },
+    "targetPage": "Repeat",
+    "name": "4c30df3f-a627-4e5e-9ed6-450081b8065d"
+  }, {
+    "condition": "$session.params.from_flow = \"bill_explanation\" AND $session.params.route = \"aam_plans_available\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intent",
+        "value": "acctmgmt"
+      }, {
+        "parameter": "counter",
+        "value": 0
+      } ]
+    },
+    "targetPage": "LP Preset Parameters",
+    "name": "704bb701-84b6-4333-9e69-eaf6ee280721"
+  }, {
+    "condition": "$session.params.from_flow = \"Default Start Flow\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phone_number",
+        "value": "$session.params.user.utn"
+      } ]
+    },
+    "targetPage": "DSF \u003e PA Eligibility Check",
+    "name": "7fc73af3-e054-40a9-91b4-571b071ab7fd"
+  }, {
+    "condition": "$session.params.route = \"aam_plans_available\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's check plan options.", "Let's explore plan options." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Regardons les forfaits disponibles. ", "Jetons un coup d'oeil aux forfaits disponibles." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "intent",
+        "value": "acctmgmt"
+      }, {
+        "parameter": "counter",
+        "value": 0
+      }, {
+        "parameter": "phone_number",
+        "value": "$session.params.user.utn"
+      } ]
+    },
+    "targetPage": "LP Preset Parameters",
+    "name": "06dc6c63-deb9-471c-8fc1-28db897869be"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je n'ai pas compris. Pouvez-vous répéter?", "Je ne comprends pas ce que vous avez dit. Pouvez-vous répéter?", "Désolé, pourriez-vous répéter?", "Désolé, pouvez-vous répéter?", "Pouvez-vous répéter?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler votre phrase?", "Désolé, pouvez-vous répéter?", "Pouvez-vous répéter?", "Pouvez-vous répéter?", "Pouvez-vous répéter encore une fois?", "Je ne comprends pas. Pouvez-vous répéter?", "Je n'ai pas compris, pouvez-vous répéter?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je n'ai pas compris. Pouvez-vous le répéter ?", "J'ai raté ce que vous avez dit. Qu'est ce que c'était ?", "Excusez-moi, pouvez-vous vous répéter ?", "Excusez-moi, pouvez-vous vous répéter ?", "Pouvez-vous répéter ça ?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler votre phrase ?", "Désolé, je n'ai pas compris ?", "Encore une fois ?", "Comment ?", "Dites-moi ça encore une fois ?", "Je n'ai pas compris. Pouvez-vous vous répéter ?", "Je n'ai pas compris, encore une fois ?" ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "name": "7ca07cae-7b57-4432-aa57-fe897778cdba"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je n'ai pas compris. Pouvez-vous répéter?", "Je ne comprends pas ce que vous avez dit. Pouvez-vous répéter?", "Désolé, pourriez-vous répéter?", "Désolé, pouvez-vous répéter?", "Pouvez-vous répéter?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler votre phrase?", "Désolé, pouvez-vous répéter?", "Pouvez-vous répéter?", "Pouvez-vous répéter?", "Pouvez-vous répéter encore une fois?", "Je ne comprends pas. Pouvez-vous répéter?", "Je n'ai pas compris, pouvez-vous répéter?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je n'ai pas compris. Pouvez-vous le répéter ?", "J'ai raté ce que vous avez dit. Qu'est ce que c'était ?", "Excusez-moi, pouvez-vous vous répéter ?", "Excusez-moi, pouvez-vous vous répéter ?", "Pouvez-vous répéter ça ?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler votre phrase ?", "Désolé, je n'ai pas compris ?", "Encore une fois ?", "Comment ?", "Dites-moi ça encore une fois ?", "Je n'ai pas compris. Pouvez-vous vous répéter ?", "Je n'ai pas compris, encore une fois ?" ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "name": "1e20c781-1c38-4a6b-a760-3f0cce891920"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you mind rephrasing?", "Can you try to rephrase?", "Can you reword that for me?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne pense pas avoir compris.", "Je n'ai pas vraiment compris.", "Je ne pense pas comprendre." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Pouvez-vous reformuler votre phrase pour moi?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "dfead892-77af-447f-82ee-408307e39f68"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "f08e1574-642c-4164-b3f4-e2ed3e81a508"
+  }, {
+    "targetPage": "Is EPP Check",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "165dd566-6150-4ba8-b9db-e2c4bf55a33b"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I did not catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Can you try to rephrase your question?", "Can you reword that for me?", "Do you mind rephrasing?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir bien compris.", "Je ne crois pas avoir bien saisi.", "Désolé, je n'ai pas tout à fait compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Seriez-vous en mesure de reformuler?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "5dd35b30-eef7-49df-b484-ff50656eb3ba"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "d4e89dae-f880-48ce-836a-7896496dfa82"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_CUSTOM",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true,
+    "playbackInterruptionSettings": {
+      "allowPlaybackInterruption": true
+    }
+  },
+  "transitionRouteGroups": [ "Small Talk - General" ]
+}

@@ -1,0 +1,168 @@
+{
+  "name": "1d630c67-0ba9-46fc-9b23-2714ae34c19d",
+  "displayName": "Repeat",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.repeat_counter = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": 0
+      } ]
+    },
+    "name": "8e051925-fe99-4f34-94d2-7de1feae6c03"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e= 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": "$sys.func.ADD($session.params.repeat_counter,1)"
+      } ]
+    },
+    "name": "77c2e49f-23a6-441d-b917-9ea54d0ee070"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e 5",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For further assistance, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je peux vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "10bd82ff-e663-465f-a1ae-28e061f3277a"
+  }, {
+    "condition": "$session.params.last_page = \"PN \\\u003e Filter\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "PN Filter",
+    "name": "61677491-6d58-4cbd-bc2c-cdf55b82bf2d"
+  }, {
+    "condition": "$session.params.last_page = \"PN \\\u003e Select\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "PN Select",
+    "name": "8eb86e57-135e-4729-a4fc-aeb202773945"
+  }, {
+    "condition": "$session.params.last_page = \"Plans Disambiguation\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_filter_question_asked",
+        "value": null
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "081b5abd-f564-4628-818e-fd3cef448766"
+  }, {
+    "condition": "$session.params.last_page = \"Select Filtered Plan\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "filtered_plan_showed_counter",
+        "value": "$sys.func.TO_NUMBER($sys.func.MINUS($session.params.filtered_plan_showed_counter,1))"
+      } ]
+    },
+    "targetPage": "Select Filtered Plan",
+    "name": "4deb6fd7-b9e2-4eb2-8a40-305355ba2332"
+  }, {
+    "condition": "$session.params.last_page = \"Select Available Plan\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "plan_showed_counter",
+        "value": "$sys.func.TO_NUMBER($sys.func.MINUS($session.params.plan_showed_counter,1))"
+      } ]
+    },
+    "targetPage": "Select Available Plan",
+    "name": "2e7f432f-1731-4d77-8da6-6dc7b115c569"
+  }, {
+    "condition": "$session.params.last_page = \"Ask Canada-US\" AND ($session.params.filtered_plan_showed_counter = null AND $session.params.plan_showed_counter = null)",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Is Current Plan Showed",
+    "name": "f36b794b-1578-44da-9267-e64ee6df1645",
+    "description": "If needed reset the param called is_current_plan_showed to null to display the current plan"
+  }, {
+    "condition": "$session.params.last_page = \"Confirm Selected Plan\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "6dc937a4-f32b-4c01-96a3-3e743d55e997"
+  }, {
+    "condition": "$session.params.last_page = \"Check Another Plan\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Check Another Plan",
+    "name": "3a9426cd-bbe1-4c1a-9805-6372fbb8c3a2"
+  }, {
+    "condition": "$session.params.last_page = \"Ask Canada-US\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask Canada_US",
+    "name": "03e8d6c6-1cce-41eb-947a-46d43d4449f6"
+  }, {
+    "condition": "$session.params.last_page = \"Ask Reset Filters\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Check If Multiple Filters",
+    "name": "5f8573c4-cd6c-42f5-b883-610c58171221"
+  }, {
+    "condition": "$session.params.last_page = \"How to Change Plan\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "How to Change Plan",
+    "name": "844f3f1b-4ece-4f4b-8ddf-5fd34d8dbc6f"
+  }, {
+    "condition": "$session.params.last_page = \"Select Online or App\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Select Online or App",
+    "name": "00ad22bb-8300-4a96-9c1e-240e767c8bc0"
+  }, {
+    "condition": "$session.params.last_page = \"Agent Handoff Redirect\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Would you like a team member to assist you?", "Would you like support from a team member?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous qu’un membre de l’équipe vous assiste?", "Aimeriez-vous l'aide d’un membre de l’équipe?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "cccbcb5b-5048-40d7-ba7c-33daf8ed00c5"
+  }, {
+    "condition": "$session.params.last_page = \"_RPC Proration\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RPC Proration",
+    "name": "a0b2845e-b358-483d-b411-d689a680d514"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Previous Page",
+    "name": "2dc2f1d5-79b5-45ec-95ee-235f67d206bd"
+  } ]
+}

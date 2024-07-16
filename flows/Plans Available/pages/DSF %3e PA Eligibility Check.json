@@ -1,0 +1,63 @@
+{
+  "name": "43c62e9e-6345-4f25-8728-8e8a1e0c0d6f",
+  "displayName": "DSF \u003e PA Eligibility Check",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "randomized_number",
+        "value": "$sys.func.RAND()"
+      } ]
+    },
+    "name": "d590b386-a07d-40f2-b9ee-a4de014a9864"
+  }, {
+    "condition": "$session.params.randomized_number \u003e 0.4",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "available_plans"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "6dae9ef9-5901-43da-ab87-acbd2a913b75"
+  }, {
+    "condition": "($session.params.phone_number = \"6042023795\" AND $session.params.user.ban = \"36763126\") OR ($session.params.phone_number = \"7092229047\" AND $session.params.user.ban = \"35787863\") OR ($session.params.phone_number = \"6138075373\" AND $session.params.user.ban = \"35405039\") OR ($session.params.phone_number = \"5879992792\" AND $session.params.user.ban = \"34574514\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": null
+      }, {
+        "parameter": "route",
+        "value": "aam_plans_available"
+      } ]
+    },
+    "targetPage": "Start Page",
+    "name": "b8e3b30e-66fa-4aaa-9d3f-c4af99f137fa"
+  }, {
+    "condition": "$session.params.user.utn != null AND $session.params.user.ban != null AND $session.params.isTrustedUser = true AND $session.params.acct_id_error != true AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "aam_plans_available"
+      }, {
+        "parameter": "from_flow",
+        "value": null
+      } ]
+    },
+    "targetPage": "Start Page",
+    "name": "1eea363d-5188-47e1-9ec0-54003e2ca612"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "available_plans"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "c17bc33c-17c2-4e60-85c0-40cce901dc02"
+  } ]
+}

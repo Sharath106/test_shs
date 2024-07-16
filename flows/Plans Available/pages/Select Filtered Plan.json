@@ -1,0 +1,288 @@
+{
+  "name": "d5b5e7cf-389e-4dea-b8b3-2a598982d0a9",
+  "displayName": "Select Filtered Plan",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Select Filtered Plan"
+    }, {
+      "parameter": "is_filtered_plan_selected",
+      "value": null
+    }, {
+      "parameter": "selected_plan",
+      "value": null
+    }, {
+      "parameter": "is_available_plan_selected",
+      "value": null
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.i_dont_know",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désirez-vous de l'assistance d'un membre de l'équipe?", "Souhaitez-vous le soutien d'un membre de l'équipe?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Would you like a team member to assist you?", "Would you like support from a team member?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "650f859a-b5fe-4aab-b289-fed95bd3e17e"
+  }, {
+    "intent": "small_talk.let_me_think",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pas de problème. Prenez votre temps." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem! Please take your time." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_intent",
+        "value": "let me think"
+      } ]
+    },
+    "name": "d337d9cb-3f3c-4920-8a55-edc072879ce9"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "J'ai compris.", "OK.", "Très bien." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Got it. ", "Alright.", "Ok." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_numbered_plan_displayed",
+        "value": null
+      } ]
+    },
+    "targetPage": "Check Another Plan",
+    "name": "aef6795f-fbc0-4dd1-9452-3dffc8830440"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_filtered_plan_selected",
+        "value": "true"
+      }, {
+        "parameter": "selected_plan",
+        "value": "$sys.func.CONCATENATE(\"Plan selected \", \"$session.params.filtered_plan_showed_counter\")"
+      }, {
+        "parameter": "filtered_plan_showed_index",
+        "value": "$sys.func.TO_NUMBER($sys.func.MINUS($session.params.filtered_plan_showed_counter, 1))"
+      }, {
+        "parameter": "is_numbered_plan_displayed",
+        "value": null
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "a3afa51f-79da-4297-b7be-de145ae01fb2"
+  }, {
+    "intent": "supplemental.select_specified_plan",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_numbered_plan_displayed",
+        "value": true
+      } ]
+    },
+    "targetPage": "Select Specified Plan",
+    "name": "f965713a-1595-40ce-a619-1755bb23d3a4"
+  }, {
+    "intent": "supplemental.choose_another_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sûr.", "Absolument.", "Définitivement." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure!", "Absolutely!", "Definitely!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_filter_reset",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Check If Multiple Filters",
+    "name": "3e72015f-4ec1-405a-a420-dc15f0c97197"
+  }, {
+    "condition": "($session.params.count_filtered_plans = 0 OR $session.params.count_filtered_plans = null) AND $session.params.is_filtered_plan_selected = null",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.from_bill_explanation != \"general\" AND $session.params.from_bill_explanation != null",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Nous ne proposons actuellement aucun forfait qui vous aiderait spécifiquement à éviter de futurs frais de facture, mais examinons plutôt tous les forfaits disponibles." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "We don't currently have plans that would specifically help you avoid future bill charges, but let's have a look at all available plans instead." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Nous n'avons pas actuellement de forfaits correspondant à votre demande, mais jetons plutôt un coup d'oeil à tous les forfaits disponibles." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "We don't currently have plans that specifically match your request, but let's have a look at all available plans instead." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "Select Available Plan",
+    "name": "5777ce96-8ecb-4991-98ee-aac196bef006"
+  }, {
+    "condition": "$session.params.filtered_plan_showed_counter \u003e= $session.params.count_filtered_plans",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Nous n'avons actuellement pas d'autres options de forfait disponibles pour vous." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous transférer à un membre de l'équipe pour vous aider.", "Je devrai vous transférer vers un membre de l’équipe pour vous assister." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "We don't currently have more rate plan options available for you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I will have to get a team member to assist you.", "I will need to transfer you to a team member to help you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "e690ede8-4a7f-4273-8ac1-59d8b9297e3e"
+  }, {
+    "condition": "$session.params.filtered_plan_showed_counter = 0 OR $session.params.filtered_plan_showed_counter = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "filtered_plan_showed_counter",
+        "value": 0
+      } ]
+    },
+    "name": "21f083d1-60cb-4d1a-8586-abbf07395a5d"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.filtered_plan_list, $session.params.filtered_plan_showed_counter)"
+      }, {
+        "parameter": "selected_plan_name_split",
+        "value": "$sys.func.SPLIT($session.params.selected_plan_details.serviceDescription, \"-\")"
+      }, {
+        "parameter": "selected_plan_name",
+        "value": "$session.params.selected_plan_name_split[0]"
+      } ]
+    },
+    "name": "a1688efd-7172-413b-bc63-643c9607dbd3"
+  }, {
+    "condition": "$session.params.is_numbered_plan_displayed != true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "plan_type_sequence",
+        "value": "$sys.func.APPEND($session.params.plan_type_sequence, \"f\")"
+      }, {
+        "parameter": "plan_number_sequence",
+        "value": "$sys.func.APPEND($session.params.plan_number_sequence, $session.params.filtered_plan_showed_counter)"
+      } ]
+    },
+    "name": "1f3b9599-45fa-4391-9ba4-0425bc93fc49"
+  }, {
+    "condition": "$session.params.last_intent != \"let me think\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Voici le plan tarifaire disponible." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=\"95%\"\u003e$request.generative.generated_ava_fil_plan_description pour \u003csay-as interpret-as=\"currency\" language='fr-CA'\u003e$$session.params.selected_plan_details.chargeAmount\u003c/say-as\u003e par mois.\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Here is the available rate plan." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cprosody rate=\"85%\"\u003e$request.generative.generated_ava_fil_plan_description for \u003csay-as interpret-as=\"currency\" language='en-US'\u003e$$session.params.selected_plan_details.chargeAmount\u003c/say-as\u003e per month.\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/cdo-ccai-lab-f7edc3/locations/northamerica-northeast1/agents/0a9ec792-2a11-4b74-bcd9-9d10c2051cd2/generators/69091487-0a08-4e4e-abff-9b762f5727f6",
+        "inputParameters": [ {
+          "key": "selected_plan_name",
+          "value": "$session.params.selected_plan_name"
+        }, {
+          "key": "serviceDescription",
+          "value": "$session.params.selected_plan_details.serviceDescription"
+        } ],
+        "outputParameter": "$request.generative.generated_ava_fil_plan_description"
+      } ]
+    },
+    "name": "7ec6f7d8-f4a2-407b-9805-a36ce50fcb13"
+  }, {
+    "condition": "$session.params.count_filtered_plans \u003e= $session.params.filtered_plan_showed_counter",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "filtered_plan_showed_counter",
+        "value": "$sys.func.ADD($session.params.filtered_plan_showed_counter, 1)"
+      } ]
+    },
+    "name": "64f50359-9e64-49ed-ad0e-dd706689b968"
+  } ],
+  "transitionRouteGroups": [ "FAQs" ]
+}

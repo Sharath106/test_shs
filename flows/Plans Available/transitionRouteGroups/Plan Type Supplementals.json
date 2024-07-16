@@ -1,0 +1,163 @@
+{
+  "name": "3ac93fb8-2ce9-4b61-9569-4e52b9eea233",
+  "displayName": "Plan Type Supplementals",
+  "transitionRoutes": [ {
+    "intent": "supplemental.share_data_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's explore shareable plan options for you.", "Let's go over shareable plan options.", "Let's check shareable plan options." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_data_shared_plan",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "08aeffd3-d93d-4f7f-9a2f-8ff2a6f050e1"
+  }, {
+    "intent": "supplemental.less_data_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's explore plan options with less data for you.", "Let's go over plan options with less data.", "Let's check plan options with less data." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_less_data_plan",
+        "value": "true"
+      }, {
+        "parameter": "is_more_data_plan",
+        "value": "false"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "35b58db2-1a25-4fcc-a98c-e250c9dfbb47"
+  }, {
+    "intent": "supplemental.unlimited_talk_and_text",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's explore unlimited plan options for you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_unlimited_plan",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "7aaec84f-d9ff-4638-919b-3050de89bf91"
+  }, {
+    "intent": "supplemental.family_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's explore our available family plans for you.", "Let's go over our available family plans.", "Let's check our available family plans." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_combo_plan",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "bde3d180-b6ae-4e66-81d3-cefc25bb6da9"
+  }, {
+    "intent": "supplemental.more_data_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's explore plan options with more data for you.", "Let's go over plan options with more data.", "Let's check plan options with more data." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_more_data_plan",
+        "value": "true"
+      }, {
+        "parameter": "is_less_data_plan",
+        "value": "false"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "f494b78e-043e-4d3c-b102-33526454cc85"
+  }, {
+    "intent": "supplemental.long_distance_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's explore long distance plan options for you.", "Let's go over long distance plan options.", "Let's check long distance plan options." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_can_long_dist_plan",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "398aaa16-ccfa-4577-a3cc-c4644247f6a1"
+  }, {
+    "intent": "small_talk.all_of_them",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure.", "Definitely.", "Absolutely." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let's have a look at all the plan options.", "Let's go over all the current plan options.", "Let's explore all the plan options." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_all_plans",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "d90ac4a1-edb5-4bb3-b348-884fb730e9d1"
+  }, {
+    "intent": "head_intent.plans_available",
+    "condition": "$session.params.data_speed = \"5G\" OR $session.params.data_speed = \"5G\\+\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's explore $session.params.data_speed plan options.", "Let's go over $session.params.data_speed plan options.", "Let's check $session.params.data_speed plan options." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "6f302a31-3570-4172-aa28-450d075daccd"
+  }, {
+    "intent": "head_intent.plans_available",
+    "condition": "$session.params.data_speed = null OR $session.params.data_speed = \"3G\" OR $session.params.data_speed = \"4G\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure.", "Definitely.", "Absolutely." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let's explore the plans options.", "Let's go over the current plan options.", "Let's check the plan options." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_all_of_them",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "80f82b63-564f-4997-93c7-aac6f32aba30"
+  } ]
+}

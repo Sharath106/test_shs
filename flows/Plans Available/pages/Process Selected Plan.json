@@ -1,0 +1,161 @@
+{
+  "name": "5c084130-563a-4512-a9ac-ec60c48c942e",
+  "displayName": "Process Selected Plan",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Process Selected Plan"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.selected_plan = \"Plan 1 selected\" AND $session.params.is_filtered_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.filtered_plan_list, 0)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "31a72fb6-6339-44be-9aef-6606b9b4e84e"
+  }, {
+    "condition": "$session.params.selected_plan = \"Plan 2 selected\" AND $session.params.is_filtered_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.filtered_plan_list, 1)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "6b584d7e-7dc8-4f55-9986-8cbc40927f4d"
+  }, {
+    "condition": "$session.params.selected_plan = \"Plan 3 selected\" AND $session.params.is_filtered_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.filtered_plan_list, 2)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "6c0ee93d-a537-4499-b6f2-0d76064e545b"
+  }, {
+    "condition": "$session.params.selected_plan = \"Plan 4 selected\" AND $session.params.is_filtered_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.filtered_plan_list, 3)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "5b2a2698-2618-4bf2-9422-7a6334a73b3e"
+  }, {
+    "condition": "$session.params.selected_plan = \"Plan 5 selected\" AND $session.params.is_filtered_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.filtered_plan_list, 4)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "5a840230-3b53-4e04-8789-625d7fba3003"
+  }, {
+    "condition": "$session.params.selected_plan = \"Plan 6 selected\" AND $session.params.is_filtered_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.filtered_plan_list, 5)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "e4fe7f9e-be75-4cb7-89ae-db02f20a67f5"
+  }, {
+    "condition": "$session.params.selected_plan = \"Plan 1 selected\" AND $session.params.is_available_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.available_plans_list, 0)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "6ef9ec31-6a3c-4cb0-87f6-6933e4c33019"
+  }, {
+    "condition": "$session.params.selected_plan = \"Plan 2 selected\" AND $session.params.is_available_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.available_plans_list, 1)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "ace6e629-4715-4c75-a46d-4f1ee3704ee9"
+  }, {
+    "condition": "$session.params.selected_plan = \"Plan 3 selected\" AND $session.params.is_available_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.available_plans_list, 2)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "79d2a119-f598-444c-92c5-f4c977d489ee"
+  }, {
+    "condition": "$session.params.selected_plan = \"Plan 4 selected\" AND $session.params.is_available_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.available_plans_list, 3)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "01fd1dea-ace4-48ce-b504-2ac18d566bad"
+  }, {
+    "condition": "$session.params.selected_plan = \"Plan 5 selected\" AND $session.params.is_available_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.available_plans_list, 4)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "34e92216-034b-43c1-a69b-4b0ba6022bf6"
+  }, {
+    "condition": "$session.params.selected_plan = \"Plan 6 selected\" AND $session.params.is_available_plan_selected = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_details",
+        "value": "$sys.func.GET($session.params.available_plans_list, 5)"
+      } ]
+    },
+    "targetPage": "_RPC Plan and Add Ons",
+    "name": "575ba4e1-96d9-4433-8f0c-98d0affa5617"
+  }, {
+    "condition": "$session.params.selected_plan = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I am not able to process your plan selection at this time." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like a team member to assist you?", "Would you like support from a team member?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne suis pas en mesure de traiter votre sélection de forfait pour le moment." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous qu'un membre de l'équipe vous assiste?", "Aimeriez-vous le soutien d'un membre de l'équipe?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "2c2640ed-6d50-4355-87df-8765f8a77982"
+  } ]
+}

@@ -1,0 +1,87 @@
+{
+  "name": "9d531fa1-5b75-4cb3-8018-50da5e70fee3",
+  "displayName": "Apply Plan Filters _Single_",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Apply Plan Filters [Single]"
+    }, {
+      "parameter": "is_current_plan_showed",
+      "value": "true"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.is_more_data_plan = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Fetch Filtered Plans",
+    "name": "bb4d3b43-300c-4e62-bdf9-6489aa679b61"
+  }, {
+    "condition": "$session.params.is_less_data_plan = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Fetch Filtered Plans",
+    "name": "88133a4d-351d-410c-9fdf-5e771a6d076e"
+  }, {
+    "condition": "$session.params.is_can_us_plan = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Fetch Filtered Plans",
+    "name": "e1ff21a0-3244-4287-b6be-402e0ecd2429"
+  }, {
+    "condition": "$session.params.is_cheaper_plan = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Fetch Filtered Plans",
+    "name": "7512cc0e-e5ed-4296-a6e6-5012fc8a8e81"
+  }, {
+    "condition": "$session.params.is_unlimited_plan = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Fetch Filtered Plans",
+    "name": "2eafb51b-d49d-47ad-80a1-2b5e8cab9f83"
+  }, {
+    "condition": "$session.params.is_data_shared_plan = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Fetch Filtered Plans",
+    "name": "8902d1ad-19fc-46f6-81a1-208b482a0f55"
+  }, {
+    "condition": "$session.params.is_combo_plan = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Fetch Filtered Plans",
+    "name": "7c230043-3f64-41e1-a820-361461fa7475"
+  }, {
+    "condition": "$session.params.is_can_long_dist_plan = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask Canada_US",
+    "name": "fac39db3-72e6-41a5-9765-406c9679bdd2"
+  }, {
+    "condition": "$session.params.current_plan_details.isCanUsPlan = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask Canada_US",
+    "name": "43d5b6c7-cfe8-4a81-9093-768b66015cc6"
+  }, {
+    "condition": "$session.params.current_plan_details.isCanUsPlan = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask Canada_US",
+    "name": "3d22ebee-363c-4e88-84de-4f1c9a209f84"
+  } ]
+}

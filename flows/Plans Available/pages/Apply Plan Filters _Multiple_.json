@@ -1,0 +1,28 @@
+{
+  "name": "a49df65d-e8f6-45c1-9c4f-80e02ad341bc",
+  "displayName": "Apply Plan Filters _Multiple_",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Apply Plan Filters [Multiple]"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.is_all_plans = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Select Available Plan",
+    "name": "eb645303-ce35-47d7-8011-43316c028b43"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask Canada_US",
+    "name": "de994bdd-210b-4831-ba14-b8fd771f2c2a"
+  } ]
+}

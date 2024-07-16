@@ -1,0 +1,132 @@
+{
+  "name": "53fb34e5-9a0b-4990-a20c-eaad2fc6bed5",
+  "displayName": "Fetch Current Plan",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Plans Available",
+    "tag": "get_current_plan_details",
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Fetch Current Plan"
+    }, {
+      "parameter": "ban",
+      "value": "$session.params.user.ban"
+    }, {
+      "parameter": "can_us_filter_en",
+      "value": [ "CAN-US", "Canada-US", "Canada-to-US", "-U.S." ]
+    }, {
+      "parameter": "can_us_filter_fr",
+      "value": [ "-U" ]
+    }, {
+      "parameter": "data_speed_filter",
+      "value": [ "4G ", "5G ", "5G+ " ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.qatest = true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      } ]
+    },
+    "name": "070dcf8c-2ab4-434a-8844-a1eba5f0d3fd"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please wait, I'm still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Veuillez patienter, je travaille toujours sur votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Plans Available",
+      "tag": "get_current_plan_details",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": 1
+      } ]
+    },
+    "name": "e3def9b7-7956-4593-82af-369c21302d8d"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": null
+      } ]
+    },
+    "targetPage": "How to Change Plan",
+    "name": "2e83b6b2-b43d-4773-a997-6e3e827f8c82"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "count_available_plans",
+        "value": "$sys.func.COUNT($session.params.available_plans_list)"
+      } ]
+    },
+    "targetPage": "Current Plan Breakdown",
+    "name": "e6784c41-1c5e-4d7c-a29c-661f6f74295e"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Is EPP Check",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "f34a8668-9a83-453a-9684-cc92c1ba2720"
+  } ]
+}

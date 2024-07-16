@@ -1,0 +1,59 @@
+{
+  "name": "cba48d75-4aaa-4499-a570-35433fe93b4f",
+  "displayName": "Small Talk - Plan Selection",
+  "transitionRoutes": [ {
+    "intent": "supplemental.choose_another_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure.", "Absolutely.", "Definitely." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Certainement.", "Absolument.", "Parfait." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_filters_reset",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "LP Preset Parameters",
+    "name": "f64c5559-2af8-48dd-8eed-5dc17505b3c6"
+  }, {
+    "intent": "small_talk.i_dont_know",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Would you like a team member to assist you?", "Would you like support from a team member?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désirez-vous qu'un membre de l'équipe vous assiste?", "Aimeriez-vous le soutien d'un membre de l'équipe?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "2c49f5cf-5503-478a-a06a-73db89dbf3d1"
+  }, {
+    "intent": "small_talk.let_me_think",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem! Please take your time.", "No worries! You can answer whenever you're ready." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Aucun problème. Veuillez prendre votre temps.", "Pas de problème. Vous me donnerez la réponse lorsque vous l'aurez." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "259c7d24-933b-41ad-bf44-a8177bf676aa"
+  } ]
+}

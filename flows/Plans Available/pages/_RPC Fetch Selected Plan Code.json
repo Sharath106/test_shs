@@ -1,0 +1,110 @@
+{
+  "name": "cac0d843-d9b7-48ee-960a-f7f0506a2c01",
+  "displayName": "_RPC Fetch Selected Plan Code",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "rate_plan_code",
+      "value": "$session.params.selected_plan_details.serviceCode"
+    }, {
+      "parameter": "last_page",
+      "value": "_RPC Fetch Selected Plan Code"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please wait, I'm still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Veuillez patienter, je travaille toujours sur votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      } ]
+    },
+    "name": "39197d26-4e97-4f03-b95f-fc05de5a17fd"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm having issues with your request. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai quelques difficultés avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": null
+      } ]
+    },
+    "targetPage": "Is EPP Check",
+    "name": "5b567e14-f091-43c7-bf5d-710bcfef3a5b"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "error_retry",
+        "value": null
+      } ]
+    },
+    "targetPage": "_RPC Proration",
+    "name": "e6d5bc06-a913-4470-837b-b919e107b200"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Is EPP Check",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I'm having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai quelques difficultés avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "9b025b11-a712-4180-b13e-87c8d3825e35"
+  } ]
+}

@@ -1,0 +1,71 @@
+{
+  "name": "5451fb85-2d4a-4cc4-b386-836b05d50bbd",
+  "displayName": "_RPC 1 PN Check",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "intent",
+      "value": "acctmgmt"
+    }, {
+      "parameter": "last_page",
+      "value": "#RPC \u003e 1. PN Check"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.phone_number != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RPC 2 Fetch RPC Initial",
+    "name": "0d1ede5b-e3a2-4460-a695-7ba7ee8e9039"
+  }, {
+    "condition": "$session.params.phone_number = null AND $sys.func.COUNT($session.params.subscriber_info) = 1",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phone_number",
+        "value": "$session.params.subscriber_info[0].phoneNumber"
+      } ]
+    },
+    "targetPage": "_RPC 2 Fetch RPC Initial",
+    "name": "77bf005c-7781-4d7f-bec0-0578badf6aac"
+  }, {
+    "condition": "$session.params.phone_number = null AND $sys.func.COUNT($session.params.subscriber_info) != 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can't make any changes to your rate plan. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I'll have to get you to a team member to review this further." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to be transferred now?", "Do you want to be connected to someone now?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne peux pas apporter de modifications à votre forfait." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je devrai vous mettre en communication avec un membre de l'équipe pour vérifier cela de plus près." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaiteriez-vous être mis en communication maintenant?", "Voulez-vous être mis en contact avec quelqu'un maintenant?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "215e9931-26da-47a8-896b-af6e6232b30d"
+  } ]
+}

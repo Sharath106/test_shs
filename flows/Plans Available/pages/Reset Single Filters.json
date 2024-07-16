@@ -1,0 +1,111 @@
+{
+  "name": "9e0b8f59-8308-4b45-8867-8dacab48b245",
+  "displayName": "Reset Single Filters",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Reset Single Parameter"
+    }, {
+      "parameter": "is_cheaper_plan",
+      "value": "false"
+    }, {
+      "parameter": "is_less_data_plan",
+      "value": "false"
+    }, {
+      "parameter": "is_more_data_plan",
+      "value": "false"
+    }, {
+      "parameter": "is_can_us_plan",
+      "value": "false"
+    }, {
+      "parameter": "is_can_long_dist_plan",
+      "value": "false"
+    }, {
+      "parameter": "is_unlimited_plan",
+      "value": "false"
+    }, {
+      "parameter": "is_data_shared_plan",
+      "value": "false"
+    }, {
+      "parameter": "is_combo_plan",
+      "value": "false"
+    }, {
+      "parameter": "is_all_plans",
+      "value": "false"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.last_ci = \"cheaper_plan\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_cheaper_plan",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "59188ad5-298c-4bb9-8d09-439acde6b5c2"
+  }, {
+    "condition": "$session.params.last_ci = \"share_data_plan\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_data_shared_plan",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "e748fe38-7bfc-41e0-bd44-27b6041cd5d4"
+  }, {
+    "condition": "$session.params.last_ci = \"unlimited_talk_and_text\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_unlimited_plan",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "80c5d5ea-05a7-41e5-b3f0-3dee16bcd531"
+  }, {
+    "condition": "$session.params.last_ci = \"less_data_plan\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_less_data_plan",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "db9e5cf7-2051-4495-b3d7-f1f68c5eb964"
+  }, {
+    "condition": "$session.params.last_ci = \"family_plan\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_combo_plan",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "52e32484-6850-4513-ac67-f16f26fc0c4f"
+  }, {
+    "condition": "$session.params.last_ci = \"long_distance_plan\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_can_long_dist_plan",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "ff0dbc08-b7c2-44f6-9bf2-98a4bd3481b5"
+  }, {
+    "condition": "$session.params.last_ci = \"more_data_plan\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_more_data_plan",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "a7c66726-4100-4aad-a20c-1a6d35dc022d"
+  } ]
+}

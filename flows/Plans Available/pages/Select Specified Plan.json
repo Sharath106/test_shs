@@ -1,0 +1,66 @@
+{
+  "name": "43ef174d-36b7-471c-a0a2-20afa8088292",
+  "displayName": "Select Specified Plan",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$sys.func.TO_NUMBER($session.params.select-plan-number) \u003e $sys.func.COUNT($session.params.plan_number_sequence)",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "another_plan_number",
+        "value": null
+      } ]
+    },
+    "targetPage": "Ask Plan Number",
+    "name": "c3b085f4-bc15-4762-8be2-a29cbc703e39"
+  }, {
+    "condition": "$session.params.select-plan-number = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "another_plan_number",
+        "value": null
+      } ]
+    },
+    "targetPage": "Ask Plan Number",
+    "name": "32165d54-c2a6-4d67-b655-3911f740f60b"
+  }, {
+    "condition": "$session.params.select-plan-number != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "selected_plan_number",
+        "value": "$sys.func.MINUS($sys.func.TO_NUMBER($session.params.select-plan-number), 1)"
+      }, {
+        "parameter": "number_from_plan_number_sequence",
+        "value": "$sys.func.GET($session.params.plan_number_sequence, $session.params.selected_plan_number)"
+      }, {
+        "parameter": "plan_from_plan_type_sequence",
+        "value": "$sys.func.GET($session.params.plan_type_sequence, $session.params.selected_plan_number)"
+      } ]
+    },
+    "name": "d3c3237d-3873-4228-ac9c-485493c63449"
+  }, {
+    "condition": "$session.params.plan_from_plan_type_sequence = \"a\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "plan_showed_counter",
+        "value": "$sys.func.TO_NUMBER($session.params.number_from_plan_number_sequence)"
+      } ]
+    },
+    "targetPage": "Select Available Plan",
+    "name": "2af7a23b-9bb0-4e55-a6f6-8b2954b87205"
+  }, {
+    "condition": "$session.params.plan_from_plan_type_sequence = \"f\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "filtered_plan_showed_counter",
+        "value": "$sys.func.TO_NUMBER($session.params.number_from_plan_number_sequence)"
+      } ]
+    },
+    "targetPage": "Select Filtered Plan",
+    "name": "ff9ec5bf-60a3-4daa-83ff-3ea78928b5b7"
+  } ]
+}

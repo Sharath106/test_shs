@@ -1,0 +1,375 @@
+{
+  "name": "0a23a7a4-d7ed-49c5-a832-142b57dffb23",
+  "displayName": "Ask Reset Filters",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_ask_reset_filters",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je ne pense pas avoir compris.", "Je n'ai pas compris.", "Je ne crois pas avoir bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous réinitialiser ces options ?", "Souhaitez-vous choisir d'autre options ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to reset these options?", "Would you like to choose other options?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "baa395cc-1b86-451c-8b85-49df8c552e4f"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je ne pense toujours pas comprendre.", "Je ne comprends toujours pas. ", "Je n'ai toujours pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour réinitialiser ces options, dites ou appuyez sur 1, pour choisir un autre forfait, dites ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm still not sure I got this.", "I still don't quite understand.", "I still didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To reset these options, say or press 1, to choose another plan, say or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f1497d5f-909e-470f-982b-8c83fe7a7ef3"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas.", "Malheureusement, je n'ai toujours pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Permettez-moi de vous transférer à quelqu'un d'autre pour plus d'assistance. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding.", "Unfortunately, I still can't understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Let me transfer you to somebody else for more assistance." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "9d168a3d-678f-4c5b-81dd-8866e85998c3"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je ne comprends toujours pas. ", "Je n'ai pas compris.", "Je ne semble toujours pas comprendre." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous réinitialiser ces options ?", "Souhaitez-vous choisir d'autres options ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to reset these options?", "Would you like to choose other options?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "03626b14-f890-4ab5-99a1-c5ed7ccf8852"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je ne crois toujours pas avoir compris.", "Je ne comprends toujours pas. ", "Je n'ai toujours pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour réinitialiser ces options, dites ou appuyez sur 1, pour choisir un autre forfait, dites ou appuyez sur 2. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm still not sure I got this.", "I still don't quite understand.", "I still didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To reset these options, say or press 1, to choose another plan, say or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "202ea713-ac5e-45a5-aad0-c6a22d6d8f91"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai toujours pas compris.", "Malheureusement, je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Permettez-moi de vous mettre en communication avec quelqu'un d'autre pour plus d'assistance. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding.", "Unfortunately, I still can't understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Let me transfer you to somebody else for more assistance." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "0c13f6bd-2076-4be9-b6fd-4cf20b933e60"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 10
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Ask Reset Filters"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "C'est fait.", "Très bien.", "J'ai compris.", "OK." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Done.", "Sounds good.", "Got it.", "Ok." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_filters_reset",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "LP Preset Parameters",
+    "name": "0c7b6d5c-5baa-4a72-8c9b-0c1d500cfc5a"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$sys.func.COUNT($session.params.filters_used) \u003c 3 AND $session.params.is_route_group_filter = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Très bien.", "OK.", "Pas de problème.", "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sounds good.", "Ok.", "No worries.", "Sure." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "9f8cdf8e-d350-4dfd-a825-770176aa4d72"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$sys.func.COUNT($session.params.filters_used) \u003c 3 AND $session.params.is_route_group_filter = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Très bien.", "OK.", "D'accord.", "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sounds good.", "Ok.", "Sure.", "No worries." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_route_group_filter",
+        "value": null
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "7922efb4-8419-458f-9595-6856309d4903"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$sys.func.COUNT($session.params.filters_used) = 3 AND $session.params.is_route_group_filter = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pas de problème.", "Aucun souci. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Regardons ces forfaits une deuxième fois.", "Regardons à nouveau les forfaits avec ces options.", "Vérifions à nouveau les forfaits qui correspondent à ces options. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No worries.", "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let's explore these plans one more time.", "Let's check plans with these options again.", "Let's review one more time the plans matching those options." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "217fdcb5-2d35-41fc-8517-d4a3a5cc3d17"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Aimeriez-vous qu'un membre de l'équipe vous assiste?", "Voudriez-vous de l'assistance de la part d'un membre de l'équipe?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Would you like a team member to assist you?", "Would you like support from a team member?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "d0833d47-b67a-4c97-94a7-33eb3a49d7b4"
+  }, {
+    "condition": "$session.params.dtmf_ask_reset_filters = 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "C'est fait.", "Très bien.", "J'ai compris.", "OK." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Done.", "Sounds good.", "Got it.", "Ok." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_filters_reset",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "LP Preset Parameters",
+    "name": "16d16661-d888-48e7-8f62-8ffedd297239"
+  }, {
+    "condition": "$session.params.dtmf_ask_reset_filters = 2 AND $sys.func.COUNT($session.params.filters_used) \u003c 3 AND $session.params.is_route_group_filter = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "OK.", "Très bien.", "Pas de problème.", "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sounds good.", "Ok.", "No worries.", "sure." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "574b97d1-8b1c-4301-b4db-661770ce11aa"
+  }, {
+    "condition": "$session.params.dtmf_ask_reset_filters = 2 AND $sys.func.COUNT($session.params.filters_used) \u003c 3 AND $session.params.is_route_group_filter = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Très bien.", "OK.", "D'accord.", "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sounds good.", "Ok.", "Sure.", "No worries." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_route_group_filter",
+        "value": null
+      } ]
+    },
+    "targetPage": "Validate Eligibility",
+    "name": "49071fcc-5b81-4f5d-82c4-57f70e6289f4"
+  }, {
+    "condition": "$session.params.dtmf_ask_reset_filters = 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Aimeriez-vous qu'un membre de l'équipe vous assiste?", "Voudriez-vous de l'assistance de la part d'un membre de l'équipe?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Would you like a team member to assist you?", "Would you like support from a team member?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "20883289-108a-4902-ac23-3a3da0634319"
+  } ],
+  "transitionRouteGroups": [ "Small Talk - Plan Selection", "FAQs" ]
+}

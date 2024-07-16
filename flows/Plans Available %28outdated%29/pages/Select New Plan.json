@@ -1,0 +1,18 @@
+{
+  "name": "40c7c727-694b-49e0-a584-c1abaf030490",
+  "displayName": "Select New Plan",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirm New Plan",
+    "name": "7aeadb02-c941-4ead-a44e-12b9067f05cc"
+  } ]
+}

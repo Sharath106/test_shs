@@ -1,0 +1,256 @@
+{
+  "name": "8004cdef-8de8-4c87-a066-8e10d590ea1f",
+  "displayName": "How to Change Plan",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_how_to_change_plan",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Vous pouvez modifier votre forfait par l'entremise de l'application Mon Telus ou en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Souhaitez-vous recevoir un message texte contenant plus d'informations sur la manière à procéder ?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "You can change your rate plan through the My TELUS app or online." ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Would you like to receive a text message with more information about how to do that?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris.", "Désolé, je ne semble pas avoir compris.", "Je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous recevoir un message texte avec plus d'informations concernant les étapes à suivre pour changer votre forfait ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text message with more information about how to change your plan?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4f43d7a0-622f-4da5-a74a-22a865f170aa"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites ou appuyez sur 9. Pour avoir l'assistance d'un membre de l'équipe, dites ou appuyez sur 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say or press 9. For a team member to help you, say or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "9dfcf7c4-09b7-4b74-ac6d-c40db832dffd"
+        }, {
+          "targetPage": "Agent Handoff Redirect",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous souhaitez parler avec un membre de l'équipe, dites ou appuyez sur 0, pour une autre demande, dites ou appuyez sur 1." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you want to speak to a team member, say or press 0, for another inquiry, say or press 1." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5eeb5876-d182-440a-8e6e-9739089bba12"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris.", "Désolé, je ne semble pas avoir compris.", "Je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous recevoir un message texte avec plus d'informations concernant les étapes à suivre pour changer votre forfait ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text message with more information about how to change your plan?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2ac46d17-c33f-4cfb-8d7e-ce4d1ae4add5"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites ou appuyez sur 9. Pour avoir de l'assistance d'un membre de l'équipe, dites ou appuyez sur 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say or press 9. For a team member to help you, say or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "0680420e-12bc-4122-a53b-2c41544a1551"
+        }, {
+          "targetPage": "Agent Handoff Redirect",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous souhaitez parler avec un membre de l'équipe, dites ou appuyez sur 0, pour une autre demande, dites ou appuyez sur 1." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you want to speak to a team member, say or press 0, for another inquiry, say or press 1." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "70ca7895-2bf8-4c2c-862f-ed81cb18b8fa"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 10
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "How to Change Plan"
+    }, {
+      "parameter": "dtmf_how_to_change_plan",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Select Online or App",
+    "name": "7b7c7505-1e2b-4424-a43f-c5b6de0c1f5d"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_pa",
+        "value": null
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "4aa4d822-0f46-444f-a11c-4514851dba95"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord!", "Aucun problème!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous changez d'avis, vous pouvez toujours modifier votre forfait via l'application Mon TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem!", "Ok!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you change your mind, You can always change your rate plan through the My TELUS app." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "864c96f1-a366-4448-b040-e7b950ff0a54"
+  }, {
+    "condition": "$session.params.dtmf_how_to_change_plan = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rpc_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_rpc",
+        "value": null
+      } ]
+    },
+    "targetPage": "Select Online or App",
+    "name": "734e62f2-863c-412e-b16c-c01937073c78"
+  }, {
+    "condition": "$session.params.dtmf_how_to_change_plan = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en communication avec quelqu'un qui pourra vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "rpc_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_rpc",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "abae35ca-8510-4989-9d50-27ba9c2d38bf"
+  } ]
+}

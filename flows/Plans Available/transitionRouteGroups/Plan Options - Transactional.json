@@ -1,0 +1,610 @@
+{
+  "name": "11687503-6d17-48f6-be96-4833c3fa593c",
+  "displayName": "Plan Options - Transactional",
+  "transitionRoutes": [ {
+    "intent": "supplemental.cheaper_plan",
+    "condition": "$session.params.loop_counter \u003e= 6",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, you have exceeded the limits of retries." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me quickly connect you with a team member to help you out." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, vous avez dépassé votre limite de tentatives." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_auto",
+        "value": "$params.session.last_page"
+      } ]
+    },
+    "name": "d7d90288-9a6f-4706-b60e-c985d1307755"
+  }, {
+    "intent": "supplemental.more_data_plan",
+    "condition": "$session.params.loop_counter \u003e= 6",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, you have exceeded the limits of retries." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me quickly connect you with a team member to help you out." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, vous avez dépassé votre limite de tentatives." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_auto",
+        "value": "$params.session.last_page"
+      } ]
+    },
+    "name": "2b618bca-c79d-42a4-ae0f-ba3df3825eaf"
+  }, {
+    "intent": "supplemental.less_data_plan",
+    "condition": "$session.params.loop_counter \u003e= 6",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, you have exceeded the limits of retries." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me quickly connect you with a team member to help you out." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, vous avez dépassé votre limite de tentatives." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_auto",
+        "value": "$params.session.last_page"
+      } ]
+    },
+    "name": "d0dd6139-18b8-4d5f-98da-fc3be6716ba3"
+  }, {
+    "intent": "supplemental.unlimited_talk_and_text",
+    "condition": "$session.params.loop_counter \u003e= 6",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, you have exceeded the limits of retries." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me quickly connect you with a team member to help you out." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, vous avez dépassé votre limite de tentatives." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_auto",
+        "value": "$params.session.last_page"
+      } ]
+    },
+    "name": "f2f62b75-b3fd-487a-88b5-ecc2118dbaa2"
+  }, {
+    "intent": "supplemental.family_plan",
+    "condition": "$session.params.loop_counter \u003e= 6",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, you have exceeded the limits of retries." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me quickly connect you with a team member to help you out." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, vous avez dépassé votre limite de tentatives." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_auto",
+        "value": "$params.session.last_page"
+      } ]
+    },
+    "name": "f41319cc-879c-4805-a777-ae6468cadb26"
+  }, {
+    "intent": "supplemental.share_data_plan",
+    "condition": "$session.params.loop_counter \u003e= 6",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, you have exceeded the limits of retries." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me quickly connect you with a team member to help you out." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, vous avez dépassé votre limite de tentatives." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_auto",
+        "value": "$params.session.last_page"
+      } ]
+    },
+    "name": "eacc5f11-794a-4b7c-8514-dfce80b468b8"
+  }, {
+    "intent": "supplemental.long_distance_plan",
+    "condition": "$session.params.loop_counter \u003e= 6",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, you have exceeded the limits of retries." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me quickly connect you with a team member to help you out." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, vous avez dépassé votre limite de tentatives." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_auto",
+        "value": "$params.session.last_page"
+      } ]
+    },
+    "name": "af9b6848-1f47-45fd-b10b-3110ed749dc0"
+  }, {
+    "intent": "small_talk.all_of_them",
+    "condition": "$session.params.loop_counter \u003e= 6",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, you have exceeded the limits of retries." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me quickly connect you with a team member to help you out." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, vous avez dépassé votre limite de tentatives." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_auto",
+        "value": "$params.session.last_page"
+      } ]
+    },
+    "name": "da8fcb4d-2d19-4510-8d00-d8cc1a8df707"
+  }, {
+    "intent": "head_intent.plans_available",
+    "condition": "$session.params.loop_counter \u003e= 6 AND ($session.params.data_speed = \"5G\" OR $session.params.data_speed = \"5G\\+\")",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, you have exceeded the limits of retries." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me quickly connect you with a team member to help you out." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, vous avez dépassé votre limite de tentatives." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_auto",
+        "value": "$params.session.last_page"
+      } ]
+    },
+    "name": "e6071648-527e-4a0f-b114-fc1d6d3f8299"
+  }, {
+    "intent": "head_intent.plans_available",
+    "condition": "$session.params.loop_counter \u003e= 6 AND ($session.params.data_speed = \"4G\" OR $session.params.data_speed = null OR $session.params.data_speed = \"3G\")",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, you have exceeded the limits of retries." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me quickly connect you with a team member to help you out." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, vous avez dépassé votre limite de tentatives." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_auto",
+        "value": "$params.session.last_page"
+      } ]
+    },
+    "name": "b25c076b-823a-48f8-864a-0a85ccbd649f"
+  }, {
+    "intent": "supplemental.cheaper_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's talk about cheaper plan options for you.", "Let's chat about cheaper plan options.", "Let's discuss about cheaper plan options." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Explorons les options de forfaits plus abordables.", "Discutons des options de forfaits plus abordables.", "Examinons les options de forfaits plus abordables." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_cheaper_plan",
+        "value": "true"
+      }, {
+        "parameter": "last_ci",
+        "value": "cheaper_plan"
+      }, {
+        "parameter": "is_route_group_filter",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "e9abd717-f422-41d2-a253-dbced58277f1"
+  }, {
+    "intent": "supplemental.more_data_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's talk about plan options with more data for you.", "Let's chat about plan options with more data.", "Let's discuss about plan options with more data." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please note that for our unlimited plans, you'll still be able to use your data after reaching the marketed amount at no extra cost, but at a reduced speed." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Explorons les options de forfaits avec plus de données.", "Discutons des options de forfaits avec plus de données.", "Examinons les options de forfaits avec plus de données." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Veuillez noter que pour nos forfaits illimités, vous pourrez toujours utiliser vos données après avoir atteint la limite établie sans frais supplémentaires, mais à une vitesse réduite." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_more_data_plan",
+        "value": "true"
+      }, {
+        "parameter": "last_ci",
+        "value": "more_data_plan"
+      }, {
+        "parameter": "is_less_data_plan",
+        "value": "false"
+      }, {
+        "parameter": "is_route_group_filter",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "d9af851d-4d22-49ff-be83-3470d8631746"
+  }, {
+    "intent": "supplemental.less_data_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's talk about plan options with less data for you.", "Let's chat about plan options with less data.", "Let's discuss about plan options with less data." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Explorons les options de forfaits avec moins de données pour vous.", "Discutons des options de forfaits avec moins de données.", "Examinons les options de forfaits avec moins de données." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_less_data_plan",
+        "value": "true"
+      }, {
+        "parameter": "last_ci",
+        "value": "less_data_plan"
+      }, {
+        "parameter": "is_more_data_plan",
+        "value": "false"
+      }, {
+        "parameter": "is_route_group_filter",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "b39be53b-4441-4fa8-a0cd-372b55db2b79"
+  }, {
+    "intent": "supplemental.unlimited_talk_and_text",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's talk about unlimited plan options for you.", "Let's chat about plan options with less data.", "Let's discuss about plan options with less data." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Explorons les options de forfaits illimités pour vous.", "Discutons des options de forfaits illimités avec moins de données.", "Examinons les options de forfaits illimités avec moins de données." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_unlimited_plan",
+        "value": "true"
+      }, {
+        "parameter": "last_ci",
+        "value": "unlimited_talk_and_text"
+      }, {
+        "parameter": "is_route_group_filter",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "afb64e7a-5b2c-4969-b68b-01395c3d29f0"
+  }, {
+    "intent": "supplemental.family_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's chat about available family plans for you.", "Let's have a look at our available family plans.", "Let's discuss about our available family plans." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "[Learn more about how to save with family plans](https://www.telus.com/en/mobility/plans/family)" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Explorons les forfaits familiaux disponibles pour vous.", "Discutons des options de forfaits familiaux disponibles.", "Examinons les options de forfaits familiaux disponibles." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "[Pour en savoir plus sur la façon d'économiser avec les forfaits familiaux](https://www.telus.com/fr/mobility/plans/family)" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_combo_plan",
+        "value": "true"
+      }, {
+        "parameter": "last_ci",
+        "value": "family_plan"
+      }, {
+        "parameter": "is_route_group_filter",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "7acfc5b4-de38-4f9e-8203-7766854b0a0f"
+  }, {
+    "intent": "supplemental.share_data_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's talk about shareable plan options for you.", "Let's chat about shareable plan options.", "Let's discuss about shareable plan options." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Explorons les options de forfaits à partager pour vous.", "Discutons des options de forfaits à partager.", "Examinons les options de forfaits à partager." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_data_share_plan",
+        "value": "true"
+      }, {
+        "parameter": "last_ci",
+        "value": "share_data_plan"
+      }, {
+        "parameter": "is_route_group_filter",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "1957e6a1-7a30-493b-aa8c-477c4a356fa9"
+  }, {
+    "intent": "supplemental.long_distance_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's talk about long distance plan options for you.", "Let's chat about long distance plan options.", "Let's discuss about long distance plan options." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Explorons les options de forfaits interurbains pour vous.", "Discutons des options de forfaits interurbains.", "Examinons les options de forfaits interurbains." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "is_can_long_dist_plan",
+        "value": "true"
+      }, {
+        "parameter": "last_ci",
+        "value": "long_distance_plan"
+      }, {
+        "parameter": "is_route_group_filter",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "ce0fe3ea-041f-4a20-abae-5015cb893806"
+  }, {
+    "intent": "small_talk.all_of_them",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Definitely.", "Absolutely.", "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let's talk about the plan options.", "Let's chat about the plan options.", "Let's discuss about about the plan options." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Certainement.", "Absolument.", "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Explorons toutes nos options de forfaits.", "Passons en revue toutes les options de forfaits actuels.", "Examinons toutes les options de forfaits disponibles." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_ci",
+        "value": "all_of_them"
+      }, {
+        "parameter": "is_route_group_filter",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "022a7330-f83c-4ed8-a12f-0a2f81db0169"
+  }, {
+    "intent": "head_intent.plans_available",
+    "condition": "$session.params.data_speed = \"5G\" OR $session.params.data_speed = \"5G\\+\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's talk about $session.params.data_speed plan options for you.", "Let's chat about $session.params.data_speed plan options.", "Let's discuss about $session.params.data_speed plan options." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Explorons ensemble les options de forfaits $session.params.data_speed.", "Discutons des options de forfaits $session.params.data_speed.", "Examinons les options de forfaits $session.params.data_speed." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "a4e9aff2-66e8-40ca-805a-2adcf1c304b6"
+  }, {
+    "intent": "head_intent.plans_available",
+    "condition": "$session.params.data_speed = null OR $session.params.data_speed = \"3G\" OR $session.params.data_speed = \"4G\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure.", "Definitely.", "Absolutely." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let's talk about the plan options for you.", "Let's chat about the current plan options.", "Let's discuss about the plan options." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord.", "Parfait.", "Absolument." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Explorons ensemble toutes les options de forfaits.", "Allons examiner toutes les options de forfaits que nous avons présentement. ", "Allons découvrir toutes les options de forfaits. " ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "37be8430-2a51-4242-84e6-e71386baa920"
+  } ]
+}

@@ -1,0 +1,314 @@
+{
+  "name": "f2c81e2a-f491-4775-afec-9cbe7e45384c",
+  "displayName": "PN Filter",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Account Identity",
+    "tag": "get_phone_numbers",
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "PN \u003e Filter"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Plans Disambiguation",
+    "name": "3410382d-1016-448a-b77f-3f48ac61e536"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phone_number",
+        "value": null
+      } ]
+    },
+    "targetPage": "PN Select",
+    "name": "7ade751e-305b-4f41-97c5-557bb807d3f2"
+  }, {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Repeat",
+    "name": "5af692d0-04be-4219-87b4-a07663c444ba"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en communication avec un membre de l'équipe pour vous aider avec votre changement de forfait.", "Permettez-moi de vous mettre en communication avec un agent qui pourra vous assister avec votre changement de forfait. ", "Laissez-moi vous mettre en communication avec un membre de l'équipe pour de l'aide supplémentaire afin de changer votre forfait." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let me transfer you to a team member to help you with the plan change.", "Let me get you to a team member to assist you with the plan change.", "Let me connect you with a team member to further assist you with the plan change." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "plans_available"
+      }, {
+        "parameter": "handoff_requested",
+        "value": "$params.session.last_page"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "543305dc-09ea-4337-a2c9-7ac5cfeadcd6"
+  }, {
+    "condition": "$session.params.phone_number = null OR $session.params.phone_number = \"\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne trouve aucun numéro de téléphone associé à votre compte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous être connecté à un membre de l’équipe pour examiner cela plus en détail?", "Souhaitez-vous vérifier cela avec un membre de l’équipe?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can't find any phone numbers associated with your account. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you want to be connected to a team member to review this further?", "Would you like to review this further with a team member?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "ce0b4069-6af9-4650-94a0-dd00f0fe4712"
+  }, {
+    "condition": "$session.params.phone_number != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003eVotre question est-elle en lien avec le numéro de téléphone \u003csay-as interpret-as=\"telephone\"\u003e$session.params.phone_number\u003c/say-as\u003e?\u003c/speak\u003e", "\u003cspeak\u003eRecherchez-vous un nouveau forfait pour le numéro de téléphone \u003csay-as interpret-as=\"telephone\"\u003e$session.params.phone_number\u003c/say-as\u003e ? \u003c/speak\u003e", "\u003cspeak\u003eRecherchez-vous des forfaits pour le numéro de téléphone \u003csay-as interpret-as=\"telephone\"\u003e$session.params.phone_number\u003c/say-as\u003e?\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eAre you inquiring about the \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.phone_number\u003c/say-as\u003e phone number?\u003c/speak\u003e", "\u003cspeak\u003eAre you looking for a new plan for the \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.phone_number\u003c/say-as\u003e phone number?\u003c/speak\u003e", "\u003cspeak\u003eAre you searching plans for the \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.phone_number\u003c/say-as\u003e phone number\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "plan_type_sequence",
+        "value": [ ]
+      }, {
+        "parameter": "plan_number_sequence",
+        "value": [ ]
+      } ]
+    },
+    "name": "30666561-3a13-40ac-b811-c1d2473bc577"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Is EPP Check",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je rencontre un problème avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "plans_available"
+      } ]
+    },
+    "name": "6418f8dd-b01b-4916-b891-df069e113d48"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne crois pas avoir compris.", "Je n'ai pas vraiment compris.", "Je ne pense pas bien saisir." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVotre question est-elle en lien avec le numéro de téléphone \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.phone_number ?\u003c/say-as\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eAre you inquiring about the \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.phone_number phone number?\u003c/say-as\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0f715778-0370-445b-ba53-db07aca65500"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne pense toujours pas avoir compris.", "Je ne comprends toujours pas très bien.", "Je n'ai toujours pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVotre question est-elle en lien avec le numéro de téléphone \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.phone_number ?\u003c/say-as\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Merci de répondre par oui ou par non.", "S'il vous plaît, répondre oui ou non." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm still not sure I got this.", "I still don't quite understand.", "I still didn't catch that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eAre you inquiring about the \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.phone_number phone number?\u003c/say-as\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please answer by yes or no.", "Please say yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "999a1fce-348b-463a-8bf0-6c347a871bcc"
+  }, {
+    "targetPage": "Agent Handoff Redirect",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne comprends toujours pas.", "Malheureusement, je n'arrive toujours pas à comprendre." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous qu’un membre de l’équipe vous assiste?", "Aimeriez-vous le soutien d’un membre de l’équipe?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I'm still not understanding.", "Unfortunately, I still can't understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like a team member to assist you?", "Would you like support from a team member?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d225a3f4-f201-4930-9823-12b9b1fb57e1"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne crois pas comprendre.", "Je n'ai pas vraiment compris.", " Je ne pense pas bien saisir." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVotre question est-elle en lien avec le numéro de téléphone \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.phone_number ?\u003c/say-as\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eAre you inquiring about the \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.phone_number phone number?\u003c/say-as\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "35eb93cb-3e9d-419b-9e5b-fcf66d9bebe7"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne comprends toujours pas.", "Je ne comprends toujours pas très bien.", "Je n'ai toujours pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVotre question est-elle en lien avec le numéro de téléphone \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.phone_number ?\u003c/say-as\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Merci de répondre par oui ou par non.", "S'il vous plaît, répondre oui ou non." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm still not sure I got this.", "I still don't quite understand.", "I still didn't catch that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eAre you inquiring about the \u003csay-as interpret-as='telephone' google:style='zero-as-zero'\u003e$session.params.phone_number phone number?\u003c/say-as\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please answer by yes or no.", "Please say yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "891cd2d8-ea99-40de-bcad-b2c98b8343c7"
+  }, {
+    "targetPage": "Agent Handoff Redirect",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne comprends toujours pas.", "Malheureusement, je n'arrive toujours pas à comprendre." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous qu’un membre de l’équipe vous assiste?", "Aimeriez-vous l'aide d’un membre de l’équipe?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I'm still not understanding.", "Unfortunately, I still can't understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like a team member to assist you?", "Would you like support from a team member?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c904ad69-155e-4141-b27f-742f3af04f55"
+  } ]
+}

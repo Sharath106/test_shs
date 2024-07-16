@@ -1,0 +1,202 @@
+{
+  "name": "ffc96bfa-1b55-4aea-ba21-d30c33e29bba",
+  "displayName": "_RPC 8 Eligibility",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RPC 8 Eligibility"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$sys.func.LOWER($session.params.rate_plan_name) : \"tablette\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"montre\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"voiture\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"traceur\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"terminal intelligent\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"téléphonie résidentielle mobile\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"HV\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"internet mobile\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"voix\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"internet sans fil résidentiel\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm unable to change your plan at this time." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I'll need to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to speak to someone now?", "Would you like to review this further?", "Do you want to be connected to someone now?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne suis pas en mesure de changer votre forfait présentement." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous mettre en communication avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Aimeriez-vous parler à quelqu'un maintenant?", "Voudriez-vous vérifier cela de plus près?", "Voulez-vous être mis en contact avec quelqu'un maintenant?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ss_attempt_counter",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "69c56378-8ab2-4d54-b77f-a2d571ed953f"
+  }, {
+    "condition": "$sys.func.LOWER($session.params.rate_plan_name) : \"tablet\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"watch\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"drive\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"track\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"wireless home internet\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"whp\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"whsia\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"mobile internet\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"voice\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"wireless home phone\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm unable to change your plan at this time." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I'll need to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to speak to someone now?", "Would you like to review this further?", "Do you want to be connected to someone now?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne suis pas en mesure de changer votre forfait en ce moment." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous mettre en contact avec un membre de l’équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Aimeriez-vous parler à quelqu'un maintenant?", "Voudriez-vous vérifier cela de plus près?", "Voulez-vous être mis en contact avec quelqu'un maintenant?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ss_attempt_counter",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "1f0728f2-62d2-4fa4-91b2-8873281fb74e"
+  }, {
+    "condition": "$session.params.rate_plan_change_eligible = \"false\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I noticed you've made some recent changes to your plan or account already." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "You'll have to wait until your next billing cycle to update your plan." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you require assistance, I'll need to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to speak to someone now?", "Would you like to review this further?", "Do you want to be connected to someone now?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "J'ai remarqué que vous avez récemment apporté des changements à votre forfait ou à votre compte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Vous devrez attendre jusqu'à votre prochain cycle de facturation pour mettre à jour votre forfait." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous avez besoin d'aide, je devrai vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Aimeriez-vous parler à quelqu'un maintenant?", "Voudriez-vous vérifier cela de plus près?", "Voulez-vous être mis en contact avec quelqu'un maintenant?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ss_attempt_counter",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "da8062db-c60c-430c-9941-3262f083e515"
+  }, {
+    "condition": "$session.params.rate_plan_change_eligible = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirm Selected Plan",
+    "name": "10875c3c-2b9f-4fd3-97c4-4d68fc66460e"
+  }, {
+    "condition": "$session.params.service_eligibility_code != \"200\" OR $session.params.service_eligibility_code = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "At this time, I'm unable to change the plan on this line." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I can transfer you to a team member if you'd still like to proceed." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to speak to someone now?", "Would you like to review this further?", "Do you want to be connected to someone now?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "En ce moment, je ne peux pas modifier le forfait sur cette ligne." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je peux vous mettre en communication avec un membre de l'équipe si vous souhaitez toujours continuer." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voudriez-vous parler avec quelqu'un maintenant?", "Voudriez-vous vérifier cela de plus près?", "Voulez-vous être mis en communication avec quelqu'un maintenant?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ss_attempt_counter",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "Agent Handoff Redirect",
+    "name": "43c816a1-6c9c-4afc-b558-c635538a371a"
+  }, {
+    "condition": "$session.params.service_eligibility_code = \"200\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirm Selected Plan",
+    "name": "4d52287b-00b4-41d8-85d4-26e7ea09f638"
+  } ]
+}

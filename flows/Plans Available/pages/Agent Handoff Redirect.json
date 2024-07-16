@@ -1,0 +1,274 @@
+{
+  "name": "d204db3f-0566-4811-b6f9-d233f61a019a",
+  "displayName": "Agent Handoff Redirect",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_agent_handoff_redirect",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like a team member to assist you?", "Would you like support from a team member?", "Would you like to speak to a team member?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris.", "Je n'ai pas vraiment compris.", "Je ne comprends pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous qu'un membre de l'équipe vous assiste?", "Avez-vous besoin du soutien d'un membre de l'équipe?", "Souhaitez-vous parler à un membre de l'équipe?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "7c47ec99-58e3-4e1c-9560-dd21ea8790e6"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not sure I got this.", "I still don't quite understand.", "I still didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To return to the main menu, say or press 1, to speak to a team member, say or press 0.", "To return to the main menu, say or press 1, to get assistance from a team member, say or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai toujours pas compris.", "Je ne pense toujours pas avoir compris.", "Je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour revenir au menu principal, dites ou appuyez sur 1, pour parler à un membre de l'équipe, dites ou appuyez sur 0.", "Pour revenir au menu principal, dites ou appuyez sur 1, pour obtenir l'aide d'un membre de l'équipe, dites ou appuyez sur 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "cba91bf9-0d43-422e-ab37-627737fb1cc3"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Unfortunately, I still can't understand.", "Sorry, I'm still not understanding." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Let me transfer you to a team member to assist you.", "Let me connect you with a team member to further assist you.", "Let me transfer you to a team member to help you." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas.", "Désolé, je n'ai toujours pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Laissez-moi vous transférer à un membre de l'équipe pour vous aider.", "Permettez-moi de vous mettre en contact avec un membre de l'équipe pour vous aider davantage.", "Laissez-moi vous transférer à un membre de l'équipe pour vous assister." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "1535135b-8dc9-4c32-a5b6-a228632e56ef"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm not sure I got this one.", "I didn't really catch that.", "I'm not sure I understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like a team member to assist you?", "Would you like support from a team member?", "Would you like to speak to a team member?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris.", "Je ne comprends pas.", "Je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous qu'un membre de l'équipe vous assiste?", "Avez-vous besoin du soutien d'un membre de l'équipe?", "Souhaitez-vous parler à un membre de l'équipe?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "74a96105-1084-483e-b2ad-ce5d80183541"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm still not sure I got this.", "I still don't quite understand.", "I still didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To return to the main menu, say or press 1, to speak to a team member, say or press 0.", "To return to the main menu, say or press 1, to get assistance from a team member, say or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai toujours pas compris.", "Je ne pense toujours pas avoir compris.", "Je ne comprends toujours pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pour revenir au menu principal, dites ou appuyez sur 1, pour parler à un membre de l'équipe, dites ou appuyez sur 0.", "Pour revenir au menu principal, dites ou appuyez sur 1, pour obtenir l'aide d'un membre de l'équipe, dites ou appuyez sur 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ad29f342-e5c8-48d4-b99f-f186a47dc490"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I'm still not understanding.", "Unfortunately, I still can't understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Let me transfer you to a team member to assist you.", "Let me connect you with a team member to further assist you.", "Let me transfer you to a team member to help you." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas.", "Désolé, je n'ai toujours pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Laissez-moi vous transférer à un membre de l'équipe pour vous aider.", "Permettez-moi de vous mettre en contact avec un membre de l'équipe pour vous aider davantage.", "Laissez-moi vous transférer à un membre de l'équipe pour vous assister." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "465e0af7-c955-4c8f-b654-480ad20d05d8"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 10
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Agent Handoff Redirect"
+    }, {
+      "parameter": "dtmf_agent_handoff_redirect",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got it.", "Ok.", "Alright." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "J'ai compris!", "OK!", "Parfait!" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "plans_available"
+      }, {
+        "parameter": "handoff_intended",
+        "value": "Agent Handoff Redirect"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "fc5214ff-0294-458a-ae42-b2a3fef67688"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got it.", "No worries.", "Ok. ", "Alright." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je comprends.", "Pas de problème.", "OK.", "Parfait." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "af3bdf3e-f58c-4049-8f47-36f56f896af1"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me transfer you to a team member to assist you.", "Let me connect you with a team member to further assist you.", "Let me transfer you to a team member to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Permettez-moi de vous mettre en communication avec un membre de l'équipe pour vous aider.", "Permettez-moi de vous mettre en contact avec un membre de l'équipe pour de l'aide supplémentaire.", "Permettez-moi de vous mettre en communication avec un membre de l'équipe qui pourra vous aider davantage." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "from_flow",
+        "value": "plans_available"
+      }, {
+        "parameter": "handoff_requested",
+        "value": "Agent Handoff Redirect"
+      } ]
+    },
+    "name": "a6f66211-e71b-4a04-af7c-f9f06e1220ae"
+  }, {
+    "condition": "$session.params.dtmf_agent_handoff_redirect = 1",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Check Another Plan",
+    "name": "273e561d-5393-4bf6-9a37-daf1ce73e339"
+  }, {
+    "condition": "$session.params.dtmf_agent_handoff_redirect = 0",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "585453e1-d564-4dcd-afc6-830fe2b1d6cb"
+  } ],
+  "transitionRouteGroups": [ "Plan Options - Transactional", "Plan Options - Informational" ]
+}
