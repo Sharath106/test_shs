@@ -1,0 +1,185 @@
+{
+  "trainingPhrases": [ {
+    "id": "b7952afb-5526-4733-a2f7-9bd410cd9804",
+    "parts": [ {
+      "text": "hi there"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ca1be3ad-c035-422b-83b3-f8bc9c3cfc69",
+    "parts": [ {
+      "text": "hey hey"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b1c063f0-85ed-4cd7-8524-a25e8460adb3",
+    "parts": [ {
+      "text": "pre warm"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "55e4eea9-0e78-44a2-b7d1-013654391d64",
+    "parts": [ {
+      "text": "Morning!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9aea3180-d99a-460d-b136-b43028a044c3",
+    "parts": [ {
+      "text": "Evening!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b512f2fc-ed85-4cf0-87de-78bd6c32b3c9",
+    "parts": [ {
+      "text": "Hi how's it going"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ceac2295-f594-48d4-a0cb-ce3bd0475466",
+    "parts": [ {
+      "text": "Hello there"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "de93f081-7acd-435c-ba0e-4c1e0f491bee",
+    "parts": [ {
+      "text": "Hello!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3c4babde-88fc-480f-b0ba-80b84dee5392",
+    "parts": [ {
+      "text": "Good afternoon"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "77043fed-3de6-45cc-b0aa-e3cca246a1fc",
+    "parts": [ {
+      "text": "Good evening"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a2ecfaa5-f9a6-463e-aad2-a05e6d63a4ae",
+    "parts": [ {
+      "text": "good morning"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1640019d-dc4b-4273-8667-b9858301d6fe",
+    "parts": [ {
+      "text": "just going to say hi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e28f4eec-95de-4e96-be9a-e4d2ded87be9",
+    "parts": [ {
+      "text": "heya"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "115c3a33-c5ce-4fe5-874f-c11a62ac142a",
+    "parts": [ {
+      "text": "hello hi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "74b973f5-a32b-406e-aa56-2d9ec233c818",
+    "parts": [ {
+      "text": "howdy"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a1060e1a-3297-4904-b983-91894330eafe",
+    "parts": [ {
+      "text": "hey there"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "400d9191-3e81-478c-bfd9-dc92066ccf24",
+    "parts": [ {
+      "text": "greetings"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "274b5ff0-1e79-47a7-a5df-2f6e219fbb0f",
+    "parts": [ {
+      "text": "hey"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "965dd0bf-623e-495d-b604-9df06b28e17b",
+    "parts": [ {
+      "text": "long time no see"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "37a84e57-b00a-469e-b96d-f9e2c9d0d3d4",
+    "parts": [ {
+      "text": "hello"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "814d9558-13dc-48ab-a883-3abda0320e82",
+    "parts": [ {
+      "text": "lovely day isn't it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "313dd7d6-bae1-4e26-8d30-89996515f5d4",
+    "parts": [ {
+      "text": "I greet you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7a23f1b4-fe4b-423d-80c5-139742377712",
+    "parts": [ {
+      "text": "hello again"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fb1151c4-ba50-42c7-aea7-0626b1b4e50e",
+    "parts": [ {
+      "text": "hi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d1d73ecb-d0b2-44c6-ba5a-04df4c5f0a3d",
+    "parts": [ {
+      "text": "hello there"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d055c8ab-bec4-42d0-9b08-231a7e7cdcff",
+    "parts": [ {
+      "text": "good day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

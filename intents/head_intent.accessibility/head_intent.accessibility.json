@@ -1,0 +1,28 @@
+{
+  "name": "776c1a82-9675-40cc-b1e8-91b87f19071f",
+  "displayName": "head_intent.accessibility",
+  "parameters": [ {
+    "id": "accessibility",
+    "entityType": "@accessibility"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Accessibility options ",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 196
+}

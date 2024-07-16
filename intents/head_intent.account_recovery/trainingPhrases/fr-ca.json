@@ -1,0 +1,754 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "approbation",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " d'un compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "common obtenir "
+    }, {
+      "text": "approbation",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " du compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai un compte que je n'ai pas utilisé depuis un moment et j'ai besoin qu'on m'aide pour y accéder."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'ai pas utilisé mon compte depuis longtemps et j'ai besoin d'aide pour m'y connecter."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Qui peut "
+    }, {
+      "text": "approuver",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " l'accès à mon compte ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je "
+    }, {
+      "text": "n'arrive pas à me connecter"
+    }, {
+      "text": ", comment faire "
+    }, {
+      "text": "approuver",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " mon accès"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne suis pas capable d'ouvrir "
+    }, {
+      "text": "une"
+    }, {
+      "text": " sessions, mon compte doit être "
+    }, {
+      "text": "activé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de connexion, mon compte n'est "
+    }, {
+      "text": "pas enregistré",
+      "parameterId": "login_problems_reasons"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible de me connecter si mon compte n'est "
+    }, {
+      "text": "pas activé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne peux pas me connecter car mon compte n'est "
+    }, {
+      "text": "pas activé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment retrouver mon "
+    }, {
+      "text": "nom d'utilisateur",
+      "parameterId": "login_problems_reasons",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'ai plus mon "
+    }, {
+      "text": "username"
+    }, {
+      "text": " pour me connecter en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nom d'utilisateur",
+      "parameterId": "login_problems_reasons",
+      "auto": true
+    }, {
+      "text": " oublié"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne peux plus me connecter, j'ai oublié mon "
+    }, {
+      "text": "nom d'utilisateur",
+      "parameterId": "login_problems_reasons",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quel est mon "
+    }, {
+      "text": "nom d'utilisateur",
+      "parameterId": "login_problems_reasons",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-vous changer mon "
+    }, {
+      "text": "nom d'utilisateur",
+      "parameterId": "login_problems_reasons",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il est dit que mon accès n'est pas "
+    }, {
+      "text": "approuvé",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": ", pouvez-vous m'aider ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne suis pas capable de me connecter, qui peut "
+    }, {
+      "text": "approuver",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " ma demande"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne suis pas en mesure de me connecter car on doit "
+    }, {
+      "text": "approuver",
+      "parameterId": "login_problems_reasons",
+      "auto": true
+    }, {
+      "text": " ma demande"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne peux pas me connecter en ligne car c'est en attente d'"
+    }, {
+      "text": "approbation",
+      "parameterId": "login_problems_reasons"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de connexion, comment je fais pour "
+    }, {
+      "text": "approuver",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " ma demande"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'attends encore que mon compte soit "
+    }, {
+      "text": "approuvé",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " sinon je "
+    }, {
+      "text": "ne peux pas me connecter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne peux pas me connecter, mon compte doit être "
+    }, {
+      "text": "approuvé",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " encore"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de connexion, je ne suis pas "
+    }, {
+      "text": "enregistrer",
+      "parameterId": "login_problems_reasons"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne suis pas capable de me connecté car mon compte n'est pas "
+    }, {
+      "text": "enregistrer",
+      "parameterId": "login_problems_reasons"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Difficultés d'"
+    }, {
+      "text": "enregistrement",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " du compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible d'accéder à mon compte"
+    } ],
+    "repeatCount": 2,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible de me connecter à mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je "
+    }, {
+      "text": "n'arrive pas à me connecter"
+    }, {
+      "text": " en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne suis pas capable de me connecter à mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "incapable de me connecter en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problèmes de connexion pour mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de connexion à mon telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pas capable de me connecter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je "
+    }, {
+      "text": "n'arrive pas à me connecter"
+    }, {
+      "text": " à mon compte Telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il y a eu trop de tentative de connexion à mon compte et j'ai reçu un courriel qui dit qu'il est maintenant barré"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai reçu un courriel qui dit que mon compte est barré"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai fait trop de tentatives de connexions ratées et maintenant mon compte est barré"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Trop de tentatives sur mon compte et il est maintenant bloqué"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il y a eu plusieurs tentatives de connexion sur mon compte et j'ai besoin d'aide pour le déverrouiller"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon compte est inaccessible en ce moment, j'aimerais de l'aide pour le débloquer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je crois que mon compte est barré parce qu'il est inaccessible"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Le compte est inaccessible, c'est impossible de se connecter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Le compte semble être barré"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de récupérer un compte barré"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais reconnecter à mon compte barré"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment reconnecter à un compte verrouillé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment je fais pour me reconnecter si mon compte est bloqué"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment je fais pour débarrer mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Débarrer le compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il y a un verrou sur mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais enlever le verrou sur notre compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire pour se débarrasser du verrou sur mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il y a eu trop de connexions ratées sur mon compte et il est maintenant barré"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais déverrouiller un compte après trop de connexions ratées"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pendant combien de temps pourrai-je accéder à mon compte en ligne, "
+    }, {
+      "text": "une"
+    }, {
+      "text": " fois qu'il aura "
+    }, {
+      "text": "été"
+    }, {
+      "text": " "
+    }, {
+      "text": "annulé",
+      "parameterId": "login_problems_reasons",
+      "auto": true
+    }, {
+      "text": " ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'ai pas accès à mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "il me dit que mon compte en ligne n'est "
+    }, {
+      "text": "pas actif",
+      "parameterId": "login_problems_reasons",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "il me dit que le compte telus n'est "
+    }, {
+      "text": "pas actif",
+      "parameterId": "login_problems_reasons",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne peux pas accéder à mon "
+    }, {
+      "text": "compte verrouillé",
+      "parameterId": "login_problems_reasons",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "impossible d'ouvrir mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ce "
+    }, {
+      "text": "compte n'existe pas"
+    }, {
+      "text": " ce "
+    }, {
+      "text": "numéro n'existe pas"
+    }, {
+      "text": ", aide"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai un message que vous ne pouvez pas accéder à mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pourquoi je "
+    }, {
+      "text": "ne peux pas ouvrir mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quelqu'un a essayé d'accéder à mon compte et il a été "
+    }, {
+      "text": "gelé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin d'informations sur nos comptes, un de nos comptes a été "
+    }, {
+      "text": "gelé"
+    }, {
+      "text": " et je n'arrive pas à y accéder en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux savoir comment puis-je me connecter à mon application dans mon système parce que vous avez dit  que vous avez "
+    }, {
+      "text": "verrouillé",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " mon telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "déverrouiller",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " mon application"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai "
+    }, {
+      "text": "oublié mon courriel",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " pour accéder à mon compte telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je "
+    }, {
+      "text": "ne trouve pas mon adresse e-mail",
+      "parameterId": "login_problems_reasons"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "déverrouiller mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "compte bloqué"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon compte est "
+    }, {
+      "text": "bloqué",
+      "parameterId": "login_problems_reasons"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux "
+    }, {
+      "text": "débloquer mon compte",
+      "parameterId": "login_problems_reasons"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'essaie d'accéder à mon compte sur telus.com"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin d'accéder à mon compte en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon compte telus est "
+    }, {
+      "text": "verrouillé",
+      "parameterId": "login_problems_reasons"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "débloquer",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " un compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "accès au compte en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "compte verrouillé"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "tentative d'accès au compte en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin de mes identifiants de connexion"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je "
+    }, {
+      "text": "n'arrive pas à accéder à mon compte telus"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin d'entrer dans le compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je suis "
+    }, {
+      "text": "bloqué",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " sur tout mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai de la "
+    }, {
+      "text": "difficulté à accéder à mon compte telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "bonjour, je n'ai "
+    }, {
+      "text": "plus accès à mon compte de messagerie Web"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai été "
+    }, {
+      "text": "verrouillé",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " hors de mes e-mails"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "verrouillé",
+      "parameterId": "login_problems_reasons"
+    }, {
+      "text": " de mon compte telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'appelle pour essayer d'accéder à mon compte et il semble que j'ai tout oublié"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je "
+    }, {
+      "text": "n'ai plus accès à mon compte telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

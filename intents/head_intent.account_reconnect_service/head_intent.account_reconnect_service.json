@@ -1,0 +1,23 @@
+{
+  "name": "c386f6e1-73ac-4f43-ad26-e3182b0feea5",
+  "displayName": "head_intent.account_reconnect_service",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer inquiring about having services reconnected because they were suspended or blocked (not including made a payment).",
+  "numTrainingPhrases": 382
+}

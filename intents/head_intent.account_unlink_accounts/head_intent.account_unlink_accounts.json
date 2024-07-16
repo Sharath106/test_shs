@@ -1,0 +1,25 @@
+{
+  "name": "78979ec0-1b19-492a-8a29-1be43d45ff70",
+  "displayName": "head_intent.account_unlink_accounts",
+  "parameters": [ {
+    "id": "online_vs_app",
+    "entityType": "@online-vs-app"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer inquiring about unlinking accounts.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 189
+}

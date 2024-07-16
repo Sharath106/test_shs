@@ -1,0 +1,731 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "je suis "
+    }, {
+      "text": "aveugle",
+      "parameterId": "accessibility"
+    }, {
+      "text": ", que fait telus pour m'aider? j"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Y a-t-il des options d'accessibilité pour les personnes malvoyantes?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon "
+    }, {
+      "text": "discours",
+      "parameterId": "accessibility"
+    }, {
+      "text": " n'est pas bon. Puis-je toujours utiliser vos services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quels services d'aide proposez-vous? Il s'agit des handicapés."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis "
+    }, {
+      "text": "malvoyante"
+    }, {
+      "text": ". Pouvez-vous m'aider avec l'écran de mon cellulaire?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je suis "
+    }, {
+      "text": "malvoyant",
+      "parameterId": "accessibility"
+    }, {
+      "text": " et j'ai besoin d'aide avec mes factures"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis partiellement "
+    }, {
+      "text": "aveugle",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quels services offrez-vous à une personne "
+    }, {
+      "text": "aveugle",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous envoyer ma facture en "
+    }, {
+      "text": "braille",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comme aidez-vous avez les gens qui souffrent de perte de "
+    }, {
+      "text": "mémoire"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "difficultés "
+    }, {
+      "text": "cognitive",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "trouble de "
+    }, {
+      "text": "mémoire",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "plusieurs pertes de "
+    }, {
+      "text": "mémoire"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souffre de problèmes de perte de "
+    }, {
+      "text": "mémoire"
+    }, {
+      "text": " et j'ai des difficultés à gérer mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Facture pour personne "
+    }, {
+      "text": "malvoyante",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est possible d'avoir une facture spécialisée si je suis "
+    }, {
+      "text": "malvoyant",
+      "parameterId": "accessibility"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin que ma facture soit ajustée pour personne "
+    }, {
+      "text": "malvoyante",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne vois pas très bien les détails de ma facture car la police est trop petite"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Les caractères de ma facture sont petits et je ne "
+    }, {
+      "text": "vois pas"
+    }, {
+      "text": " très bien"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quel genre de services vous offrez aux personnes handicapées?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis handicapée et j'aimerais "
+    }, {
+      "text": "parler",
+      "parameterId": "accessibility"
+    }, {
+      "text": " de vos services d'aide"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Vous adaptez vos services pour les personnes handicapées?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est possible d'agrandir la police vu que je suis "
+    }, {
+      "text": "malvoyante",
+      "parameterId": "accessibility"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais agrandir la police sur ma facture vu que je suis "
+    }, {
+      "text": "malvoyant",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quels services offrez-vous aux "
+    }, {
+      "text": "malentendants",
+      "parameterId": "accessibility"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quelles sont les adaptations de service que vous faites pour les personnes "
+    }, {
+      "text": "malentendantes",
+      "parameterId": "accessibility"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Services pour "
+    }, {
+      "text": "malentendants",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est possible d'avoir de plus grands caractères sur ma facture?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je vois mal et j'aimerais de plus grands caractères sur ma facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai des problèmes "
+    }, {
+      "text": "d'élocution"
+    }, {
+      "text": ", est-ce que vous avez des services reliés à ce problème?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Services pour ceux avec problèmes d'"
+    }, {
+      "text": "élocution"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon "
+    }, {
+      "text": "élocution"
+    }, {
+      "text": " n'est pas toujours claire donc j'aimerais savoir si vous avez des services adaptés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne suis pas certaine de pouvoir utiliser vos services parce que j'ai un "
+    }, {
+      "text": "trouble de la parole",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Offrez-vous des services adaptés aux "
+    }, {
+      "text": "troubles de la parole",
+      "parameterId": "accessibility"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Question sur les services offerts aux personnes avec un "
+    }, {
+      "text": "trouble de la parole",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Services adaptés aux gens qui ont un problème de "
+    }, {
+      "text": "discours",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Avez-vous des services pour moi si j'ai un problème de "
+    }, {
+      "text": "discours",
+      "parameterId": "accessibility"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Services pour les gens avec problèmes "
+    }, {
+      "text": "d'audition"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai des problèmes "
+    }, {
+      "text": "d'audition"
+    }, {
+      "text": ", est-ce que vous offrez des services pour moi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quels sont les services que je peux utiliser si mon audition est altérée?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je peux vérifier avec vous si je suis éligible au service de relais de Telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais obtenir vos services de relais."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Offrez-vous encore le service de relais Telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Peux-tu me dire en quoi consiste le service de relais de Telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Expliquez-moi le service de relais de Telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Plus d'info sur le service de relais de Telus s'il vous plaît."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous me dire comment faire des appels PSI?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire des appels PSI?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Appel PSI"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Les appels PSI, c'est possible avec Telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais être capable de faire des appels PSI svp"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Offrez-vous le service d'appel PSI?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux pouvoir faire des appels PSI"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me renseigne sur les services offerts pour personne "
+    }, {
+      "text": "aveugle",
+      "parameterId": "accessibility"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Offrez-vous des services pour les "
+    }, {
+      "text": "aveugles",
+      "parameterId": "accessibility"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis "
+    }, {
+      "text": "aveugle",
+      "parameterId": "accessibility"
+    }, {
+      "text": " et j'ai besoin de votre aide."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Avez-vous des services pour personne "
+    }, {
+      "text": "aveugle",
+      "parameterId": "accessibility"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'suis à "
+    }, {
+      "text": "mobilité",
+      "parameterId": "accessibility"
+    }, {
+      "text": " réduite."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'veux une facture avec "
+    }, {
+      "text": "gros caractères"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai un trouble de "
+    }, {
+      "text": "vision",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "difficultées "
+    }, {
+      "text": "auditives",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai des problèmes "
+    }, {
+      "text": "auditifs",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "trouble de la vision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "service d'accessibilité pour personne "
+    }, {
+      "text": "aveugle",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "personne "
+    }, {
+      "text": "malvoyante",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "aveugle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "braille"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "reçevoir ma facture en "
+    }, {
+      "text": "braille",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "facturation "
+    }, {
+      "text": "gros format"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "facture à "
+    }, {
+      "text": "gros caractères"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "aide pour personne "
+    }, {
+      "text": "aveugle",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "service pour déficience "
+    }, {
+      "text": "cognitive",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "service d'accessibilité pour un "
+    }, {
+      "text": "trouble de parole",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "trouble de la parole"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "aide pour déficience "
+    }, {
+      "text": "auditive",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment aider une personne avec "
+    }, {
+      "text": "déficience"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "service pour "
+    }, {
+      "text": "malentendant",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "personne "
+    }, {
+      "text": "malentendante",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je suis "
+    }, {
+      "text": "sourd",
+      "parameterId": "accessibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "service pour personne avec "
+    }, {
+      "text": "un"
+    }, {
+      "text": " handicap"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "service pour handicapé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quels services d'accessibilité offrez-vous"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai "
+    }, {
+      "text": "un"
+    }, {
+      "text": " handicap"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Services d'aide pour les handicaper"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Services d'accessibilité"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Handicap"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Accessibilité"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Service de relais"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

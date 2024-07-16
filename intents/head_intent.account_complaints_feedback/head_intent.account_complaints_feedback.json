@@ -1,0 +1,24 @@
+{
+  "name": "00955ae8-1230-4a35-a5d0-8c3401508b20",
+  "displayName": "head_intent.account_complaints_feedback",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customers wanting to leave feedback or file complaints.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 255
+}

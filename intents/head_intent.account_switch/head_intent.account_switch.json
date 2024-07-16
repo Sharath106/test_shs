@@ -1,0 +1,20 @@
+{
+  "name": "c0750bd6-c412-410e-a1e5-e337180723d0",
+  "displayName": "head_intent.account_switch",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customers inquiring about switching to different account types.",
+  "numTrainingPhrases": 97
+}

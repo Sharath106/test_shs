@@ -1,0 +1,80 @@
+{
+  "trainingPhrases": [ {
+    "id": "50bd8112-2774-4d9d-bb93-7a41b0a64a29",
+    "parts": [ {
+      "text": "switch personal account to business"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "015c6131-fa35-44ea-9f75-7e156b63e5d1",
+    "parts": [ {
+      "text": "i would like to convert a business line to a residential line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "61f389ed-7409-4a3d-8437-647cec2efc47",
+    "parts": [ {
+      "text": "switching from corporate to consumer account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e3f20e4-7e63-4bb5-9a4d-efb96789dd83",
+    "parts": [ {
+      "text": "change my plan for home phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7812f125-4b2b-4b5e-9853-316c011b506d",
+    "parts": [ {
+      "text": "changing from a consumer plan to a business plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d9c95469-9491-431b-ade2-f75392e6c3bb",
+    "parts": [ {
+      "text": "i would like permission to convert to corporate plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "02746f0f-76ef-47ef-9f3e-326c83246b5f",
+    "parts": [ {
+      "text": "i need to switch accounts"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "18c5c46f-6619-496c-ad3b-3ef747796923",
+    "parts": [ {
+      "text": "need to switch account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9dcecdc0-6666-4c9f-a023-f9e9f51054c2",
+    "parts": [ {
+      "text": "switching account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b74cee7-a811-40b2-8e17-00ef6733012e",
+    "parts": [ {
+      "text": "to changing account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5af16e1d-4626-4ee4-b451-5a416a7a5a9d",
+    "parts": [ {
+      "text": "switch account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

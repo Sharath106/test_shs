@@ -1,0 +1,1298 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "getting call from unknown number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it's an unknown number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to block "
+    }, {
+      "text": "spam",
+      "parameterId": "account_blocks",
+      "auto": true
+    }, {
+      "text": " on my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block "
+    }, {
+      "text": "someone",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " from calling me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block "
+    }, {
+      "text": "someone",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " from my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block my "
+    }, {
+      "text": "data",
+      "parameterId": "account_blocks",
+      "auto": true
+    }, {
+      "text": " until the next cycle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to block "
+    }, {
+      "text": "data",
+      "parameterId": "account_blocks",
+      "auto": true
+    }, {
+      "text": " until the next cycle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how can i stop "
+    }, {
+      "text": "data usage",
+      "parameterId": "account_blocks",
+      "auto": true
+    }, {
+      "text": " automatically"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "enough with these "
+    }, {
+      "text": "scam"
+    }, {
+      "text": " calls, how do I block them?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block "
+    }, {
+      "text": "scam"
+    }, {
+      "text": " calls please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I stop "
+    }, {
+      "text": "scam"
+    }, {
+      "text": " callers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "stop "
+    }, {
+      "text": "scam"
+    }, {
+      "text": " callers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i stop "
+    }, {
+      "text": "data usage",
+      "parameterId": "account_blocks",
+      "auto": true
+    }, {
+      "text": " automatically before going over"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do I "
+    }, {
+      "text": "block a caller",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " who is harrassing me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to restrict "
+    }, {
+      "text": "international"
+    }, {
+      "text": " calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to add "
+    }, {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add "
+    }, {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you please block one "
+    }, {
+      "text": "number",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " for me, the caller is bothering me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block "
+    }, {
+      "text": "scams",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i have heard that telus can put like a block on the phone to eliminate "
+    }, {
+      "text": "spam calls",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " and marketing calls is that true"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to block "
+    }, {
+      "text": "spam callers",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "control "
+    }, {
+      "text": "data limit",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "cap "
+    }, {
+      "text": "data usage",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "set a "
+    }, {
+      "text": "data limit",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to limit my "
+    }, {
+      "text": "data usage",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block unsolicited calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to add a specific "
+    }, {
+      "text": "phone number",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " to the black list so they don't call me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block "
+    }, {
+      "text": "porting",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "port",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " protection"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Please block "
+    }, {
+      "text": "porting",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I block all "
+    }, {
+      "text": "spam",
+      "parameterId": "account_blocks"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just want to make sure that a specific "
+    }, {
+      "text": "person",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " has been blocked from contacting me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block my "
+    }, {
+      "text": "ex",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " from sending me messages"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can I block a "
+    }, {
+      "text": "person",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " from calling me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "prevent "
+    }, {
+      "text": "someone",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " from contacting me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "stop "
+    }, {
+      "text": "someone",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " from calling me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need help blocking "
+    }, {
+      "text": "someone",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block "
+    }, {
+      "text": "someone",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " from contacting me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block "
+    }, {
+      "text": "person",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " from calling me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block "
+    }, {
+      "text": "someone",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I block "
+    }, {
+      "text": "someone",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I block "
+    }, {
+      "text": "someone",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " from calling me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "manage "
+    }, {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to see if i can get "
+    }, {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " for my home phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "blocked "
+    }, {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to add "
+    }, {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to start using "
+    }, {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "information on "
+    }, {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "enable "
+    }, {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "setting up "
+    }, {
+      "text": "call control",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add "
+    }, {
+      "text": "call control"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "call control feature"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "turn on "
+    }, {
+      "text": "call control"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "call control"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "blocking our "
+    }, {
+      "text": "data",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " for both my kids' cellphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "bogus calls bad calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "calls that i don't want to receive"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "issue with unknown number calling"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i get rid of nuisance calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am calling about a problem with automatic robo calls on my telephone they started at six in the morning and periodically come up again and again"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i got a funny phone call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i wanna report a nuisance call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "harassment calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "spam",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " calling"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm getting "
+    }, {
+      "text": "prank",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " phone calls from new jersey"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm being pestered by phone calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i wonder who i should call because we always get a phone call, nobody answers, five times a day and more"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am calling about a scam caller i believe it was a fraudulent representation of telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "somebody keeps calling here but when i answer they hang up it happened about twelve times"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "we keep having scam calls calling, i'd like to speak to somebody please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "nuisance "
+    }, {
+      "text": "phone calls",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm calling about a phone number that keeps calling us and i'd like to know what you can do about it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "harassing calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "unwanted",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " phone calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i wanted to get some help regarding two "
+    }, {
+      "text": "phone calls",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " that i'm getting on my number that shouldn't be there"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm getting phone calls that are "
+    }, {
+      "text": "scams",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " and want them to stop"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "spam calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm receiving "
+    }, {
+      "text": "spam",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " phone calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "robocalls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "unknown calls coming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need some help to stop somebody from calling me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am getting a bad "
+    }, {
+      "text": "phone call",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " a phone call i don't want"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "today i'm having problems with "
+    }, {
+      "text": "unwanted",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "annoyance calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to report a number that keeps calling us"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "to block "
+    }, {
+      "text": "long distance",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want some telephone blocking capability"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "to block "
+    }, {
+      "text": "a number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "blocking a call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wish to block a "
+    }, {
+      "text": "phone number",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to block a call nuisance call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to block a couple of nuisance "
+    }, {
+      "text": "numbers"
+    }, {
+      "text": " please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to block a "
+    }, {
+      "text": "number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to block a "
+    }, {
+      "text": "number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to block a "
+    }, {
+      "text": "phone number",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block "
+    }, {
+      "text": "spam calls",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to set up phone blocking in my cellphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm calling about trying to block our number from a "
+    }, {
+      "text": "number",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " that keeps calling us"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "getting a "
+    }, {
+      "text": "cell number"
+    }, {
+      "text": " blocked on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to block a "
+    }, {
+      "text": "number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to block a "
+    }, {
+      "text": "number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i wanted to block a call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how can i block calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to block somebody's "
+    }, {
+      "text": "number"
+    }, {
+      "text": " please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "call block"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to block a call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to block some "
+    }, {
+      "text": "phone calls",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "want to know how to block a "
+    }, {
+      "text": "number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "setting up call blocking"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block a fax number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to block some incoming "
+    }, {
+      "text": "numbers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to know how to block a "
+    }, {
+      "text": "person",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " not just through voicemail but just incoming call blocking"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i block "
+    }, {
+      "text": "phone call",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "blocking "
+    }, {
+      "text": "long distance",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to stop calls coming in"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block "
+    }, {
+      "text": "phone numbers",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "we need to block a customer from calling"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "telephone support for a blocked call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i block outgoing "
+    }, {
+      "text": "international"
+    }, {
+      "text": " calls on my iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "information regarding blocking "
+    }, {
+      "text": "phone calls",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm calling because we want to block a call from Jamaica. I don't want them calling us anymore."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i was calling to see if i could block a certain "
+    }, {
+      "text": "phone number",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to get information about blocking some "
+    }, {
+      "text": "prank",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "put a block on a phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to block a "
+    }, {
+      "text": "phone number",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "blocking "
+    }, {
+      "text": "phone numbers",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block caller"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to be able to block a number within the last hour they have called here eight times so either can i block it or can you block it for me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to block a nuisance call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like a telephone "
+    }, {
+      "text": "number"
+    }, {
+      "text": " blocked"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to get some "
+    }, {
+      "text": "numbers"
+    }, {
+      "text": " blocked"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "blocking calls annoying calls from"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to block a couple of marketing "
+    }, {
+      "text": "numbers"
+    }, {
+      "text": " that are coming in on our phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help with call blocking"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i have a phone number blocked that i don't want blocked and i don't know how to unblock it please help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need help blocking a scam caller on my cell"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block a "
+    }, {
+      "text": "number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "block a call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "nuisance calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "blocking calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "call blocking"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "spam"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to get rid of nuisance callers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "unwanted",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " telephone calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "about stopping "
+    }, {
+      "text": "unwanted",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "weird calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm getting these weird "
+    }, {
+      "text": "phone calls",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "stop customer service "
+    }, {
+      "text": "phone calls",
+      "parameterId": "account_blocks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "prank",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to report "
+    }, {
+      "text": "unwanted",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "unwanted",
+      "parameterId": "account_blocks"
+    }, {
+      "text": " calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

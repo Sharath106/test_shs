@@ -1,0 +1,24 @@
+{
+  "name": "5afbf41c-85e1-4861-b6db-ae900622f247",
+  "displayName": "head_intent.account_authorization",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer inquiring about adding/removing an authorization, admin or manager on account.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 160
+}

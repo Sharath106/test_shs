@@ -1,0 +1,94 @@
+{
+  "trainingPhrases": [ {
+    "id": "79ce0ada-9da8-4e71-a76a-3e7977780e3f",
+    "parts": [ {
+      "text": "salutations"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "4401e999-1138-4080-97aa-d595cc19bb97",
+    "parts": [ {
+      "text": "rebonjour"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "0dea89b4-d381-4573-90ed-6cc1992d12c3",
+    "parts": [ {
+      "text": "bonjour à toi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "7f268fb7-e27e-42c6-8bd0-4e52fcadb771",
+    "parts": [ {
+      "text": "re bonjour"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "5c54782f-4243-4668-bc53-79d80c51796f",
+    "parts": [ {
+      "text": "allo"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "b0e63f1d-891a-4835-b8c4-7c914d64e43d",
+    "parts": [ {
+      "text": "coucou"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "2f9f5ba2-6df5-4feb-aea6-f1b4eab4c25d",
+    "parts": [ {
+      "text": "hey"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "168dccaa-fc9f-480a-956a-baf052243c83",
+    "parts": [ {
+      "text": "hé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "6a8e694a-83fe-48c6-80ee-010d2db4248d",
+    "parts": [ {
+      "text": "resalut"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "7fd5d70c-9665-46f6-905a-1cfad6ab1adf",
+    "parts": [ {
+      "text": "salut"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "0a750d9d-e1a9-4fdb-8bc3-008583ac804f",
+    "parts": [ {
+      "text": "re salut"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "94172dd5-5a10-48be-b966-6788026a3354",
+    "parts": [ {
+      "text": "salut à tous"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  }, {
+    "id": "1accd6d1-253d-4046-8109-73f02a8f6d63",
+    "parts": [ {
+      "text": "bonjour"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr"
+  } ]
+}

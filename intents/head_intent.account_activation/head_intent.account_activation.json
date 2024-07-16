@@ -1,0 +1,28 @@
+{
+  "name": "52e36c3e-1803-4c7e-b57a-3464010c56d7",
+  "displayName": "head_intent.account_activation",
+  "parameters": [ {
+    "id": "new_account_type",
+    "entityType": "@new-account-type"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "The client wants to know where and how to activate/open a new account (includes issues with account activation).",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 332
+}

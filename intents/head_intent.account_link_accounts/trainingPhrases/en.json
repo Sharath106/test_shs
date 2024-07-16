@@ -1,0 +1,354 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "joining bills"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to hook my Mobility to my home services",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I link both my accounts together under the same biil",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to link my mobility account with my wifes internet account. It wont let me because my mobility plan is I think a coorporate account because I am RCMP",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm unable to link my account they told me to contact you do to this i'm trying to link my account "
+    }, {
+      "text": "online",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "trying to link my accounts together "
+    }, {
+      "text": "online",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have two Telus accounts and would like to link them together"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like all my accounts linked together"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": " connect my accounts together, please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Would it be possible to connect all my accounts together?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "link all my accounts together using "
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "combine both accounts together"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I link both accounts under the same bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "link my accounts into one bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "link all my accounts under the same bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to know how to link my home and satellite bill to my mobility and telus internet bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to combine several telus accounts in to one so they all come together they're not all separate they all have different account numbers"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm trying to link my internet account to my telus telus account so i can look at the bills for internet"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am trying to link an account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to link my mobility account with my home account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm trying to link accounts"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need account related assistance i want to merge my accounts using "
+    }, {
+      "text": "application",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my business account is supposed to be linked to my personal account on line"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "linking my account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm looking to link two accounts together"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "okay i m unable to link my account on line i have a smartphone a smart security and i want to put it on "
+    }, {
+      "text": "my telus"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm trying to link my account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "combine two accounts"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i wanna linked in account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "trying to link my account using "
+    }, {
+      "text": "t.com"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "hi i wanted to know about the mobility linked sorry home service link account to the mobility and if i can get the benefits or not"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "link the service"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to merge my account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "link two telus account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to add my home to my business account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i wanna merge two accounts the smart hub and the cellphone bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "link account mobile and home"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "account could not be linked"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm trying to merge my telus accounts"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i have two open accounts and i want to merge them through my TELUS "
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm trying to link an account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm unable to link my account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to set up all my accounts link them "
+    }, {
+      "text": "on line"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "link services"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i have two accounts open and i would like to merge them using the "
+    }, {
+      "text": "app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "combine accounts"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "link a service"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "link account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "link my account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to link an account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to merge my account"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "link an account "
+    }, {
+      "text": "online",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to add this account to "
+    }, {
+      "text": "my telus app",
+      "parameterId": "online_vs_app"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  } ]
+}

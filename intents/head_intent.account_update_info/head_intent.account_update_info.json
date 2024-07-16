@@ -1,0 +1,33 @@
+{
+  "name": "f48dc5e4-a048-4078-a83e-2d7dc453773e",
+  "displayName": "head_intent.account_update_info",
+  "parameters": [ {
+    "id": "update_account_info",
+    "entityType": "@update-account-info"
+  }, {
+    "id": "online_vs_app",
+    "entityType": "@online-vs-app"
+  }, {
+    "id": "location",
+    "entityType": "@sys.location"
+  }, {
+    "id": "number",
+    "entityType": "@sys.number"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  }, {
+    "key": "transactional",
+    "value": "transactional"
+  } ],
+  "description": "Inquiries about updating information in customer's account.",
+  "numTrainingPhrases": 562
+}

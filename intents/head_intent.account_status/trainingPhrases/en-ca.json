@@ -1,0 +1,192 @@
+{
+  "trainingPhrases": [ {
+    "id": "bef9e893-5ac1-4e91-a68c-a860a701264b",
+    "parts": [ {
+      "text": "my service has been disconnected"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a0648234-19c2-44ec-bd05-7da5be53020e",
+    "parts": [ {
+      "text": "disconnected service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3285b563-511e-471b-b110-ba0ede1e8118",
+    "parts": [ {
+      "text": "Is my account suspended?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0e52b8fa-9eac-4913-bed0-2626712bbd1d",
+    "parts": [ {
+      "text": "my account is suspended and I don't know why "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b123f36e-2a34-49b0-b4f6-e130c06275c5",
+    "parts": [ {
+      "text": "I would like to know why my account is suspended"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "10fad159-8839-4d08-a139-a51305badb6a",
+    "parts": [ {
+      "text": "Can you tell me why my account is suspended"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4355b9a8-ed4a-49ad-b979-a0715c90ffd2",
+    "parts": [ {
+      "text": "for some reason my account has been suspended"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e135bdc4-3cb8-4c9e-8026-da947baa0d36",
+    "parts": [ {
+      "text": "it seems my account has been suspended"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4ba9c043-a329-4878-9fdd-51ca6f85bfe0",
+    "parts": [ {
+      "text": "I looked at my account and it said it's suspended. Why is that?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b8337726-b2ec-4dfe-97f4-003cd89c0369",
+    "parts": [ {
+      "text": "It said my account is suspended. Why?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3ad3087-5e3e-44d5-b1e9-e8aa467efff5",
+    "parts": [ {
+      "text": "well these people this person says that my account will be shutdown if it's not paid by before the seventeen"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a92fcd84-8519-4ee4-af7f-4c6e2def739a",
+    "parts": [ {
+      "text": "you gave me a disconnection notice"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6f10d87e-0d3f-4b55-a9c5-a693692b8dd3",
+    "parts": [ {
+      "text": "my service was suspended i'm waiting for it to get turned back on it's been hours and hours"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b73eee2f-15d7-4e9e-bd81-0dd0a65db2b6",
+    "parts": [ {
+      "text": "why is my account suspended"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6c2e45ee-57aa-4428-afe6-751521e0ca8d",
+    "parts": [ {
+      "text": "account suspended why"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3ddbcbe7-2186-4e16-941e-aba4de7f5d59",
+    "parts": [ {
+      "text": "like to know why my service been suspended"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "45760ab5-d40c-4a52-b8b2-2b949abac75c",
+    "parts": [ {
+      "text": "urgent notice for closed account"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a3086a78-e51f-4cf2-849b-2095b23e6151",
+    "parts": [ {
+      "text": "has my account been cancelled"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3ae58c9b-5c52-4602-891a-950c01badee1",
+    "parts": [ {
+      "text": "i want to make sure my account hasn't been cancelled"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7c04c68e-2ebc-41cc-bbfa-93abe31d3eaf",
+    "parts": [ {
+      "text": "closed account"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "87c940af-211a-4f9e-9660-509c9ab3eecf",
+    "parts": [ {
+      "text": "on my computer there is a email that says that our account is on hold"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "005259cf-c62a-4614-96ce-a85d90b21610",
+    "parts": [ {
+      "text": "my cancelled account is not cancelled"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1003600d-15d0-4963-8359-24d8454f2f42",
+    "parts": [ {
+      "text": "i'm getting an email that says my account is on hold"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "28af44bc-8867-4c23-b8e3-dff800ed0ae2",
+    "parts": [ {
+      "text": "i have an email that says my account is on hold and i'd like to talk someone in accounts to straighten it out please"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6c24a24b-4d5a-4aa9-9e88-18e0c6079604",
+    "parts": [ {
+      "text": "connection fee find out why i'm cutoff"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0cf0652d-8ec0-4377-ad88-473133ee5d7b",
+    "parts": [ {
+      "text": "is my phone cutoff"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  }, {
+    "id": "27aa81d9-66ff-4151-83c7-6b60b0dc6bb1",
+    "parts": [ {
+      "text": "i want to ensure that one of the phones on my account has been cutoff"
+    } ],
+    "repeatCount": 19,
+    "languageCode": "en-ca"
+  } ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "369398e9-7eb1-494d-8325-fb768464d2a3",
+  "displayName": "head_intent.account_link_accounts",
+  "parameters": [ {
+    "id": "online_vs_app",
+    "entityType": "@online-vs-app"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customers inquiring about linking their accounts together (eg. mobility \u0026 home services / consumer \u0026 business accounts).",
+  "numTrainingPhrases": 147
+}

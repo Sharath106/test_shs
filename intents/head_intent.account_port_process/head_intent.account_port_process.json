@@ -1,0 +1,31 @@
+{
+  "name": "0308cf76-5600-499d-a3ad-4fb04bfdafa8",
+  "displayName": "head_intent.account_port_process",
+  "parameters": [ {
+    "id": "porting",
+    "entityType": "@porting"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer inquiring about porting/transferring in a number from another carrier (port in/out).",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 309
+}

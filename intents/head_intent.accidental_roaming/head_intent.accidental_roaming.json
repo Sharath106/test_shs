@@ -1,0 +1,24 @@
+{
+  "name": "a97b43dd-1e19-4575-9313-5843396845c8",
+  "displayName": "head_intent.accidental_roaming",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "When a client is close to border and picks up US towers.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 284
+}

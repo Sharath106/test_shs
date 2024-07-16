@@ -1,0 +1,427 @@
+{
+  "trainingPhrases": [ {
+    "id": "17cc8fa8-e2f5-4334-994e-a62173401b6d",
+    "parts": [ {
+      "text": "Want to "
+    }, {
+      "text": "port out"
+    }, {
+      "text": " a number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d1162620-1042-484f-afdb-d88bd74ecc57",
+    "parts": [ {
+      "text": "I would like to "
+    }, {
+      "text": "port in"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f46afa62-ffed-460a-9370-1f8560d94966",
+    "parts": [ {
+      "text": "port a number "
+    }, {
+      "text": "to Telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3deefe32-5645-4e81-a70e-352b86dfdfea",
+    "parts": [ {
+      "text": "I want to port my phone number "
+    }, {
+      "text": "to telus"
+    }, {
+      "text": ". "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f225a448-10f9-460a-90ce-800b19f375c3",
+    "parts": [ {
+      "text": "move the number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "16f59aca-054d-4aa7-916f-d88149126401",
+    "parts": [ {
+      "text": "porting a phone over"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "339ae580-2b4b-477f-ae13-ab178165b475",
+    "parts": [ {
+      "text": "porting a telephone number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c8e3384a-920c-4af2-844b-d6504c0a9104",
+    "parts": [ {
+      "text": "port "
+    }, {
+      "text": "out"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ba03b82e-da6c-4136-8a4b-9a1f8b5b5db7",
+    "parts": [ {
+      "text": "how can i port my old number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "37e8f937-c20d-4408-937c-aa29017940f9",
+    "parts": [ {
+      "text": "porting my phone number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c1be86b9-3ce0-49c1-8119-6770fb3a26f7",
+    "parts": [ {
+      "text": "number porting request"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0d53b421-0e6f-4c50-94e8-032db91a4d44",
+    "parts": [ {
+      "text": "port in"
+    }, {
+      "text": " a phone number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ed796362-20b0-45c8-8b07-162440c903f7",
+    "parts": [ {
+      "text": "porting was done too early"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "29dbf202-4fdf-4d45-9709-2bae4428b205",
+    "parts": [ {
+      "text": "my phone number was not ported and want to talk to a representative"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0b4c4a25-36d0-46d6-b0cb-86aaca6f3e4a",
+    "parts": [ {
+      "text": "porting "
+    }, {
+      "text": "out"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "081d2543-eb5d-480c-a470-4a54eea1fea0",
+    "parts": [ {
+      "text": "porting a phone number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b6cf7175-3be9-496e-b709-77b628aa7c99",
+    "parts": [ {
+      "text": "porting department"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "428a64f4-f0c7-4339-916e-d94794329284",
+    "parts": [ {
+      "text": "porting a number "
+    }, {
+      "text": "to telus"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a84836ab-42ef-49f9-93fa-31daedd0bcbb",
+    "parts": [ {
+      "text": "number "
+    }, {
+      "text": "port out"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "af69e72b-c048-499d-b59b-2535147260e3",
+    "parts": [ {
+      "text": "number port over"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4637d443-fe5b-47d9-a4fa-28ba62eaf518",
+    "parts": [ {
+      "text": "porting my number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f2e155e8-bc50-45d6-9c07-d1ae6fdd50ca",
+    "parts": [ {
+      "text": "port phone number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "47e436d4-c672-46d3-8a50-b13d5d59c890",
+    "parts": [ {
+      "text": "porting"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d8aa2b7e-0572-4086-9898-d3993c53cd5b",
+    "parts": [ {
+      "text": "port number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6522e844-b081-4281-8a0f-b1996fd0923a",
+    "parts": [ {
+      "text": "port"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6a4d9945-9c4a-42d3-9717-929762ae7ceb",
+    "parts": [ {
+      "text": "porting number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a90071f8-ec38-42be-b1ad-1c220fd922da",
+    "parts": [ {
+      "text": "transferring the phone and the my tv i'm moving"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1bd424ad-f892-4e1c-ad5d-0ff06d2228c4",
+    "parts": [ {
+      "text": "i want to transfer my telephone i'm moving"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0f60066d-f904-4540-b390-0f48702aef57",
+    "parts": [ {
+      "text": "i need to talk to somebody about transferring a number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2d7da005-e2d2-4633-8a17-5ca0173d6045",
+    "parts": [ {
+      "text": "i wanna switch from shaw "
+    }, {
+      "text": "to telus"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fba6c61b-9cc6-4b73-8bfe-836758ca466f",
+    "parts": [ {
+      "text": "yeah i need to transfer a line"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c4d27810-f450-471e-8406-7595862c92d3",
+    "parts": [ {
+      "text": "transfer telephone number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "57a18d9f-5377-4584-9c67-2ddced0efd35",
+    "parts": [ {
+      "text": "transfer a phone number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0495da95-da3a-484b-9579-eac742b1f1ec",
+    "parts": [ {
+      "text": "transfer number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "443a56cf-e1b4-4b79-b823-45b0171caa6b",
+    "parts": [ {
+      "text": "confirm transfer phone number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "08e01598-08f4-43dd-9b74-4fc529d9388c",
+    "parts": [ {
+      "text": "transfer my old phone number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "339fdd5b-9d14-438c-845e-816980f37339",
+    "parts": [ {
+      "text": "i need some information about how to transfer my phone number business is being sold here"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "07d4a918-90f5-41e2-9e81-9ed31894906e",
+    "parts": [ {
+      "text": "phone or number transfer"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dbd6a7f2-5dae-4c66-9029-3fa31f61eaa5",
+    "parts": [ {
+      "text": "transfer a telephone number"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2428ac2d-ccd0-47b0-80c7-bd39f50cfe3c",
+    "parts": [ {
+      "text": "transferring phone lines"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ce61f4b1-5db9-4cb9-9312-7bafc4bcd987",
+    "parts": [ {
+      "text": "telephone transfer"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fc60b794-e91c-4459-baff-fde2591a36ba",
+    "parts": [ {
+      "text": "transferring a phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "666996d5-dd1a-42f1-ba05-211d070c50d6",
+    "parts": [ {
+      "text": "transferring of phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1f3a9510-08ae-4a99-9b60-3f7e6793a75b",
+    "parts": [ {
+      "text": "phone transfer phone transfer"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "70e8fc99-9ec0-43be-a44c-d885b8f21173",
+    "parts": [ {
+      "text": "calling about phone transfer"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3cb9adff-b6f8-4981-8766-d03506c81a17",
+    "parts": [ {
+      "text": "transfer services"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1bcb5087-b1e9-44e8-a64c-464b0ba17f9b",
+    "parts": [ {
+      "text": "transfer line"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "36929aa3-264c-4703-bd53-1f8019d0d97f",
+    "parts": [ {
+      "text": "transferring service"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "93f67193-772d-45ee-9075-8e69dd1e5a6d",
+    "parts": [ {
+      "text": "service transfer"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4975ba04-da21-4bef-97de-3f22da14b4f1",
+    "parts": [ {
+      "text": "transferring services"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "146f6557-2d40-438e-8a9a-2c99c005a932",
+    "parts": [ {
+      "text": "phone transfer"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0976db94-988b-419d-9f60-5fc4a00ce0c7",
+    "parts": [ {
+      "text": "transfer phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "483eca06-04dc-4e9d-ab12-f10672f7324f",
+    "parts": [ {
+      "text": "transfer service"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fd8ad0a4-e227-4cbb-abff-78816618e218",
+    "parts": [ {
+      "text": "i would like to inquire about prices for changing over from shaw "
+    }, {
+      "text": "to telus"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6f8fd1cf-4afa-47bf-b321-7e3193252fed",
+    "parts": [ {
+      "text": "i would like to know the cost involved in switching my phone "
+    }, {
+      "text": "to telus"
+    }, {
+      "text": " services"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "876c8a26-3e97-41c5-95a6-3e269a381275",
+    "parts": [ {
+      "text": "switching from shaw "
+    }, {
+      "text": "to telus"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  } ]
+}
