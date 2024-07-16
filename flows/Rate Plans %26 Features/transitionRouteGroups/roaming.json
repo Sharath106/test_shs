@@ -1,0 +1,98 @@
+{
+  "name": "9f483f09-0778-40c5-abf3-e12270a51679",
+  "displayName": "roaming",
+  "transitionRoutes": [ {
+    "intent": "head_intent.call_canada_from_roaming",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Call Canada from abroad",
+    "name": "8d37b1af-4c14-46ce-ad7e-eb29da14d656"
+  }, {
+    "intent": "head_intent.check_if_easy_roam_active",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Is Easy Roam active",
+    "name": "fddadab1-3ad8-4269-b149-90ae2ba76d07"
+  }, {
+    "intent": "head_intent.plans_easy_roam_activation_timing",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Easy Roam active date",
+    "name": "d139d3d6-9640-4d7d-a6f3-adce088345e6"
+  }, {
+    "intent": "head_intent.everything_roaming",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Everything Roaming",
+    "name": "43e1f425-f280-4a5a-90c0-55b99aa3fd52"
+  }, {
+    "intent": "head_intent.roaming_billing_info",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing while roaming",
+    "name": "eb290fbb-ad50-4cec-bfad-7b20e7bc5bbb"
+  }, {
+    "intent": "head_intent.roaming_coverage",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Roaming Coverage",
+    "name": "473e3365-85e0-4adf-8b5e-86be19416af9"
+  }, {
+    "intent": "head_intent.roaming_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "roaming_issues"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "0cce1be3-107c-49c1-ade0-3b06a06e7d04"
+  }, {
+    "intent": "head_intent.cruise",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cruise",
+    "name": "f4627518-2884-46cb-828e-8a62a8df8b22"
+  }, {
+    "intent": "small_talk.no_more_questions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Génial.", "Super." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great.", "Sounds good." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "ea6431f2-721c-41f1-82eb-a3e6788c0bf5"
+  }, {
+    "intent": "head_intent.use_device_abroad",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Using your device abroad",
+    "name": "1d03524d-9d7f-474a-a699-815394c2e923"
+  }, {
+    "intent": "head_intent.usage_overage",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "usage_overage"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "d798a0c9-a711-40a0-8083-a99a80e209ba"
+  } ]
+}

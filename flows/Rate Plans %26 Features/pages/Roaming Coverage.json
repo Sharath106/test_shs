@@ -1,0 +1,278 @@
+{
+  "name": "ab90edc5-b129-4f99-8d69-c482d02bcbb4",
+  "displayName": "Roaming Coverage",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_coverage",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Vous vous renseignez sur la couverture au Canada?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Are you inquiring about coverage in Canada?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "  Vous vous renseignez sur la couverture au Canada?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you inquiring about coverage in Canada?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f78d76c1-44d9-485e-800a-2d5e4283fc53"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour la couverture au Canada, dites oui ou faites le 1. Pour la couverture à l'extérieur du Canada, dites non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For coverage in Canada, say yes or press one, for coverage outside of Canada, say no or press two." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "9e050105-3232-45b2-956d-2fcf33004bab"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1438f19e-72dc-4d96-867a-3824dd650fa1"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ " Vous vous renseignez sur la couverture au Canada?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you inquiring about coverage in Canada?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d1c139eb-d557-48a8-92f0-0077c378ef05"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour la couverture au Canada, dites oui ou faites le 1. Pour la couverture à l'extérieur du Canada, dites non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For coverage in Canada, say yes or press one, for coverage outside of Canada, say no or press two." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a6ba846b-ad94-4ecc-b546-4aaa3809d5cf"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "3846ec6c-c5f7-4b4b-9299-134f550747f7"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Roaming Coverage"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "coverage_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_coverage",
+        "value": null
+      } ]
+    },
+    "targetPage": "Travelling in Canada",
+    "name": "1f7a7b25-7251-49b3-99e6-fb39df84b738"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "coverage_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_coverage",
+        "value": null
+      } ]
+    },
+    "targetPage": "Roaming Coverage text",
+    "name": "3552260a-903a-4b6c-8012-a1dfd642b9c0"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "coverage_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_coverage",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "b82b69c4-e2a2-4867-aa83-3871a4069a7b"
+  }, {
+    "intent": "head_intent.roaming_coverage",
+    "condition": "$intent.params.country = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Are you inquiring about coverage in Canada?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "28102d6e-24db-4790-9747-559b6460848b"
+  }, {
+    "condition": "$session.params.dtmf_coverage = \"1\" OR $session.params.country = \"Canada\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "coverage_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_coverage",
+        "value": null
+      } ]
+    },
+    "targetPage": "Travelling in Canada",
+    "name": "29592498-9d3d-434f-b348-4ed54b591a19"
+  }, {
+    "condition": "$session.params.dtmf_coverage = \"2\" OR $session.params.country = \"other country\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lorsque vous voyagez à l'extérieur du Canada, la couverture du réseau mobile, la disponibilité du service ainsi que la vitesse des données peuvent varier en fonction de la couverture réseau de nos partenaires d'itinérance dans votre destination de voyage." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Mobile network coverage, service availability, and data speed can vary based on our roaming partners’ network coverage in your travel destination." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "coverage_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_coverage",
+        "value": null
+      } ]
+    },
+    "targetPage": "Roaming Coverage text",
+    "name": "41335334-c333-4495-98df-47de3f5004b9"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "coverage_retrycnt",
+        "value": "$sys.func.ADD($session.params.coverage_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.coverage_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.coverage_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne comprends pas." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "9d2b5e4b-0d8b-4c67-b593-5cf0755a2adf"
+  } ]
+}

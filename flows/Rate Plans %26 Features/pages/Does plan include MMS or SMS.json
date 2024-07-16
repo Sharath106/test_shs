@@ -1,0 +1,42 @@
+{
+  "name": "7b912ce5-0f27-4e86-8e4a-d5212dd086e2",
+  "displayName": "Does plan include MMS or SMS",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "All current plans include both text messaging and picture messaging." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Picture messaging does require data to be enabled on the phone, however you do not need to have a data package." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Les forfaits actuels comprennent tous la messagerie texte et photo." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Pour utiliser la messagerie photo, les données doivent être activées sur le téléphone, mais il n’est pas nécessaire d’avoir un lot de données." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Does plan include MMS or SMS"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "3f41d5d9-312a-46b0-a9ca-c8ad18053805"
+  } ]
+}

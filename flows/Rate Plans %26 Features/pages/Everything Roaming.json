@@ -1,0 +1,219 @@
+{
+  "name": "8fa56dc2-079f-42a2-8fc6-ff6803c0aa0b",
+  "displayName": "Everything Roaming",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Everything Roaming"
+    }, {
+      "parameter": "feature_options",
+      "value": "easy roam"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "page_summary",
+      "value": "roaming"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "l'itinérance"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "finding information on roaming"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "trouver de l'information sur l'itinérance"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.targetAccount.isSelfServeMandatory = \"true\" AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour obtenir de l'information sur l'itinérance, vous devez utiliser votre compte Mon TELUS. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent n'est pas en mesure d'aider à faire ça au nom d'un client." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To get information on roaming, you must use your My TELUS account, It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent cannot help perform this on a customer behalf." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour obtenir de l'information sur l'itinérance, vous devez utiliser votre compte Mon TELUS. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent peut ne pas être en mesure d'aider à faire ça au nom d'un client." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To get information on roaming, you must use your My TELUS account, It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent may not be able to help perform this on a customer behalf." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Voyagez connecté vous permet d'utiliser votre forfait canadien tout en voyageant vers plus de 190 pays." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si le pays dans lequel vous vous rendez ne figure pas dans la liste, cela signifie malheureusement que nous n'avons pas de titre de transport couvrant votre destination." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous ai envoyé un message texte avec plus d’informations sur la façon de le faire vous-même." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Easy Roam lets you use your Canadian rate plan while travelling in over 190 countries." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you do not see the country you're travelling too listed, unfortunately no travel pass will cover your destination." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.routeDetails.province = \"ON\" AND $session.params.sal_testing = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "everything_roaming"
+      }, {
+        "parameter": "on_poc",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "fcf012bd-ea2d-4809-91cd-8fa44179bed6"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900BF"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900SB"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "9f9fcbc4-4a53-417a-aafe-9ed0319b286e"
+  } ]
+}

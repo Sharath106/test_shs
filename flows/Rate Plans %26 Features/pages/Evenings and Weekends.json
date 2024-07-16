@@ -1,0 +1,159 @@
+{
+  "name": "32b12c88-7283-493c-b8eb-5ce358059b96",
+  "displayName": "Evenings and Weekends",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Evenings and Weekends"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "La plupart de nos forfaits comprennent les appels illimités partout au Canada." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez un forfait avec un temps d'antenne limité, il y a de fortes chances que vous ayez des appels illimités les soirs et les fins de semaine incluse dans votre forfait." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Veuillez noter, les soirées commencent à dix-huit heures  et se terminent à sept heures le lendemain." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "The majority of our current plans include unlimited calling Canada wide at any time." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you have a plan with limited airtime, there's a good chance that you have unlimited evenings and weekends calling included in your plan." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Please note, evenings begin at 6pm, and end at 7am the following day." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "La plupart de nos forfaits actuels offrent des appels illimités à travers le Canada en tout temps." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez un forfait avec une durée limitée d'appels, il y a de fortes chances que votre forfait inclue des appels illimités en soirée et les fins de semaine." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Il est important de garder à l'esprit que les soirées commencent à dix-huit heures et se terminent à sept heures le lendemain matin." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Most of our current plans offer unlimited calling across Canada at any time." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you have a plan with limited airtime, there's a high likelihood that your plan includes unlimited evenings and weekends calling." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "It's important to keep in mind that evenings start at 6 pm and end at 7 am the following day." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les appels illimités à travers le Canada en tout temps sont inclus dans la majorité de nos forfaits actuels." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si votre forfait a une durée limitée d'appels, il y a de bonnes chances qu'il inclue des appels illimités en soirée et les fins de semaine." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Veuillez noter que les soirées commencent à dix-huit heures  et se terminent à sept heures le lendemain matin." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Unlimited calling across Canada at any time is included in the majority of our current plans." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If your plan has limited airtime, there's a good chance that it includes unlimited evenings and weekends calling." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Please remember that evenings begin at 6 pm and conclude at 7 am the next day." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "c239a69f-82c2-424e-ae79-f45ca410a267"
+  } ]
+}

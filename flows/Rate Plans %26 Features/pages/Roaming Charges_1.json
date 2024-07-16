@@ -1,0 +1,16 @@
+{
+  "name": "f934866f-425f-47a2-a9f0-0c710238f91f",
+  "displayName": "Roaming Charges_1",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "webhook": "Bill explain",
+      "tag": "get_bill_info"
+    },
+    "targetPage": "Roaming Charges_2",
+    "name": "6bab0642-c643-4622-956b-9dc5bf77a581"
+  } ]
+}

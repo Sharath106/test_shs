@@ -1,0 +1,127 @@
+{
+  "name": "4cc481b9-e571-474e-b35b-e650e136926c",
+  "displayName": "Stream plus",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Stream plus"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "managing the stream plus feature"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "gérer l'option en continu plus"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour configurer en continu plus, vous devez utiliser votre compte Mon TELUS pour la résolution la plus rapide. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent peut ne pas être en mesure d'aider à faire ça au nom d'un client." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To set up stream plus, you must use your My TELUS account for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent may not be able to help perform this on a customer behalf." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Profitez de Netflix, Disney+, Amazon Prime et les films et séries de TELUS avec nos à-côtés exclusifs En Continu+ de base ou En Continu plus supérieur. Vous pouvez l'ajouter à un forfait mobilité ou l'obtenir à partir de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Enjoy Netflix , Disney plus, Amazon Prime and TELUS films and series with our exclusive Stream plus Basic or Premium add-on. You can add it to a Mobility plan, or get it from your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900T6"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900MC"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "1b1c9498-b58d-4535-9883-44271113d801"
+  }, {
+    "condition": "$session.params.streamplus_troub = \"login issue\" OR $session.params.streamplus_troub = \"add account\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "streamplus_issues"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "6ba25581-be8a-4aa6-8169-326b9f247c75"
+  } ]
+}

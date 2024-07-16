@@ -1,0 +1,328 @@
+{
+  "name": "156e081b-19a0-429c-a147-35ca617cf696",
+  "displayName": "Increase airtime minutes",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_inc_airtime_mins",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "All of our current plans include unlimited calling." ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "If you currently don't see an option to add more minutes, you may already have an updated plan." ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Would you like to look into some options, and change your rate plan?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Tous nos forfaits actuels incluent les appels illimités." ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Si vous ne voyez pas d'option pour ajouter plus de minutes, vous avez peut-être déjà un forfait actuels." ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Souhaitez-vous examiner certaines options et modifier votre forfait?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you want to look into changing your plan?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous examiner certaines options et modifier votre forfait?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ce3a0a31-f724-4a2e-96bd-2b3a3eaa4491"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ " For increasing airtime minutes get help from a team member, say team member, or press 0" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour augmenter les minutes de temps d'antenne et obtenir de l'aide d'un membre de l'équipe, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "1f8a5466-7ce5-4d5e-b847-a3d5657a98ad"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "63ba2934-4a5b-4075-ab22-5a48b7e751eb"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you want to look into changing your plan?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous examiner certaines options et modifier votre forfait?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "c6c399ea-9d22-4b50-99a6-bc875e7f618b"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ " For increasing airtime minutes get help from team member, say team member, or press 0" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour augmenter les minutes de temps d'antenne et obtenir de l'aide d'un membre de l'équipe, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "396923ea-2e4d-40f6-a09d-a9119fd6c102"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "6e3a0bc9-2e58-4a98-8c2b-c6cab36ac4df"
+        } ]
+      },
+      "defaultValue": "null",
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Increase airtime minutes"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "incairtime_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_inc_airtime_mins",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "2c51b337-578c-4e06-9711-3805aae1563f"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "incairtime_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_inc_airtime_mins",
+        "value": null
+      } ]
+    },
+    "targetPage": "Rate plan change",
+    "name": "10e217be-7b99-498c-a23c-29ee6c8f6874"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_inc_airtime_mins",
+        "value": null
+      }, {
+        "parameter": "incairtime_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "4173357f-cae8-4934-82be-640ad26385a0"
+  }, {
+    "condition": "$session.params.incairtime_retrycnt = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi demander à quelqu'un de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "incairtime_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_inc_airtime_mins",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "f87fdf8e-3d46-4f51-aed2-ce709d0250a8"
+  }, {
+    "condition": "$session.params.incairtime_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "incairtime_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "4bb79e77-cc60-4505-9208-20f47a3cd847"
+  }, {
+    "condition": "$session.params.incairtime_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "incairtime_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "4a726274-fe58-4029-9d38-7694da4c8261"
+  }, {
+    "condition": "$session.params.dtmf_inc_airtime_mins = 1 OR $session.params.dtmf_inc_airtime_mins = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_inc_airtime_mins",
+        "value": null
+      }, {
+        "parameter": "incairtime_retrycnt",
+        "value": "$sys.func.ADD($session.params.incairtime_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "d16ab251-98db-4beb-99cf-ed02574a5268"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "incairtime_retrycnt",
+        "value": "$sys.func.ADD($session.params.incairtime_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.incairtime_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.incairtime_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "a03c32fb-bcb7-49c7-80f3-aea3ae462542"
+  } ]
+}

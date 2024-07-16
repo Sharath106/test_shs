@@ -1,0 +1,38 @@
+{
+  "name": "3ca851c9-183f-47a2-8842-eaacd26edeb6",
+  "displayName": "Rate_Plans_Auth_Validation",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing while roaming",
+    "name": "cc1ce68c-fc6a-4f17-ba57-8a055f73e34d"
+  }, {
+    "condition": "$session.params.isTrustedUser != true AND $session.params.acct_id_error != true AND $session.params.user.auth_status != true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "roaming_billing_info"
+      } ]
+    },
+    "name": "e0c241f8-ae5b-46a7-9db1-4502bd4398fd"
+  }, {
+    "condition": "$session.params.acct_id_error = true OR $session.params.acct_id_error = info",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing while roaming",
+    "name": "aa593ff3-25a5-437e-88e0-4f535ec8974d"
+  }, {
+    "condition": "$session.params.acct_id_error != true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Roaming Charges_1",
+    "name": "cf8ac1fd-a9a6-4356-a259-ee9dbc726b85"
+  } ]
+}

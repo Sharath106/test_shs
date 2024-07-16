@@ -1,0 +1,42 @@
+{
+  "name": "24523b8a-a29e-4383-92ed-9137913e8028",
+  "displayName": "Rate plan change fees",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You can change your rate plan online for free, once per bill cycle." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "But, if you change your rate plan in a TELUS store, or by phone with a team member, a $15 charge may apply." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Vous pouvez modifier votre forfait en ligne gratuitement trois fois par cycle de facturation." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Mais, si vous changez de forfait dans une boutique TELUS ou par téléphone avec un membre de l'équipe, des frais de 15 $ s'appliqueront." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Rate plan change fees"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "0cd6737d-9f86-4fbb-8c6c-a621b72ef955"
+  } ]
+}

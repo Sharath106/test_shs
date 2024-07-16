@@ -1,0 +1,42 @@
+{
+  "name": "43eff5dc-644d-4823-b4de-ae70c2068494",
+  "displayName": "Favorite numbers EPP",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Favourite Number features are no longer being offered since we now offer unlimited calling options." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "If you have a Favourite Numbers plan, you will need to speak with a team member." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Les fonctions Numéros préférés ne sont plus offertes car nous offrons des options d'appel illimitées." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Si vous avez un forfait avec Numéros préférés, vous devrez parler avec un membre de l'équipe." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Favorite numbers EPP"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "c454b4b2-d31d-4c85-abe3-57ec57902313"
+  } ]
+}

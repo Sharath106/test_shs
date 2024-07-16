@@ -1,0 +1,187 @@
+{
+  "name": "1e3353c6-96e7-456f-83ee-c9027e980541",
+  "displayName": "Rate plan change issues",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Rate plan change issues"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez de la difficulté à modifier votre forfait, confirmez les points suivants: Premièrement, confirmez que le numéro sur lequel vous tentez de changer le forfait pour, n'a pas d'option de données qu'il partage avec d'autres abonnés." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Deuxièmement, si les données principales sont sur la ligne que vous essayez de changer, vous ne serez pas en mesure de modifier votre forfait en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Troisièmement, confirmez que vous n'avez pas de solde d'appareil. Pour plus d'assistance, je peux vous transférer à un membre de l'équipe pour vous aider." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you are facing issues in changing your plan, confirm the following points:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "First, the number you are trying to change the plan on, doesn't have a data plan sharing with the other lines." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Second, if the main data is on the line you are trying to change, you will not be able to change your plan online." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Third, make sure that you do not have a device balance." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "For more assistance, I can get you to a team member to help." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour résoudre les problèmes lors du changement de votre forfait, assurez-vous que le numéro sur lequel vous essayez de changer le forfait n'a pas de partage de forfait de données avec d'autres lignes." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si les données principales sont sur la ligne que vous essayez de changer, vous ne pourrez pas modifier votre forfait en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "De plus, assurez-vous de ne pas avoir de solde de téléphone à régler." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour plus d'assistance, je peux vous transférer à un membre de l'équipe pour vous aider." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To resolve issues while changing your plan, ensure that the number you are trying to change the plan on doesn't have a data plan sharing with other lines." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If the primary data is on the line you're attempting to change, you won't be able to change your plan online." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Additionally, make sure you don't have a device balance." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you need further assistance, I can connect you with a team member." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous rencontrez des difficultés lors du changement de votre forfait, assurez-vous que le numéro sur lequel vous essayez de changer le forfait n'a pas de partage de forfait de données avec d'autres lignes." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Il ne sera pas possible de changer votre forfait en ligne si les données principales se trouvent sur la ligne que vous essayez de modifier. Assurez-vous également de ne pas avoir de solde de téléphone à régler." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour plus d'assistance, je peux vous transférer à un membre de l'équipe pour vous aider." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you encounter difficulties while changing your plan, ensure that the number you're attempting to change the plan on doesn't have a data plan shared with other lines." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Changing your plan online won't be possible if the primary data is on the line you're trying to change." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Also, make sure you don't have any device balance. If you require additional assistance, I can refer you to a team member." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "5b1777eb-a9af-4be7-b4d7-769a9fb3b8c3"
+  } ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "93e92f22-4075-4bf0-b111-c90dd497502d",
+  "displayName": "Tiered Discount EPP",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Our new unlimited plans are discounted by the E P P exclusive discount." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "The discounts are applied to every unlimited plan subscriber on the account, with up to 30% off each line." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Every additional unlimited plan line on the account is eligible for the same discount." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Nos forfaits Illimités bénéficient du rabais exclusif P E P." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Le rabais est appliqué à chaque abonné ayant un forfait Illimité sur le compte, avec jusqu'à 30 % de réduction sur chaque ligne." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Chaque ligne avec un forfait Illimité supplémentaire sur le compte est admissible pour le même rabais." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Tiered Discount EPP"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "de3f45e4-8a16-4830-8407-183334729e4e"
+  } ]
+}

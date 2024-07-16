@@ -1,0 +1,42 @@
+{
+  "name": "74bdc96c-d9a4-420f-9821-b31a4b332d82",
+  "displayName": "Roaming support for other account types ",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Easy Roam is available for many customers, however some types of accounts are not eligible." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "For example, prepaid accounts are not currently able to roam outside of Canada, and corporate, or business accounts have different options." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Seuls les clients possédant un forfait mensuel peuvent utiliser leur appareil à l'étranger." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Si vous êtes un abonné du service prépayé et que vous souhaitez utiliser votre appareil en itinérance, vous devez passer à un forfait mensuel." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Roaming support for other account types"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "9889bdd7-862d-43c4-9027-cca0b1f964dc"
+  } ]
+}

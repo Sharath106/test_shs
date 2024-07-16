@@ -1,0 +1,186 @@
+{
+  "name": "1f020349-4b35-4374-9c00-1d9f59d4e14a",
+  "displayName": "_RPC Picked plan Included add ons",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Great.", "Sounds good.", "Perfect." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Super.", "Parfait.", "D'accord." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RPC Picked plan Included add ons"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "⏳ Please wait, I am still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "⏳ Veuillez patienter, je travaille toujours sur votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Rate Plan Change",
+      "tag": "selected_plan_code",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": 1
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "returnPartialResponses": true
+    },
+    "name": "97258615-594e-4773-8d19-0f83d3f460ab"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Rate plan change",
+    "name": "f1536f68-19c4-47ac-ad6a-6dd0ac47dfcf"
+  }, {
+    "condition": "$session.params.rate_plan_code = PPM25G85 OR $session.params.rate_plan_code = PMUL20Q70 OR $session.params.rate_plan_code = PMUL25Q65 OR $session.params.rate_plan_code = PMUL25GSM",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Also includes:\n◾ Voicemail 25" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Comprend également:\n◾ Messagerie vocale 25" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "_RPC Selected plan proration",
+    "name": "2c33554b-4549-45ca-8c62-e22d198a88ea"
+  }, {
+    "condition": "$session.params.rate_plan_code = PPM40G90 OR $session.params.rate_plan_code = PMUL45GQC OR $session.params.rate_plan_code = PMUL45GSM",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Also includes:\n◾ Unlimited international messaging \n◾ Visual Voicemail 25" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Comprend également:\n◾ Messagerie internationale illimitée\n◾ Messagerie vocale visuelle 25" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "_RPC Selected plan proration",
+    "name": "0c62d9d3-af73-436d-bf66-fe3fc2f7d611"
+  }, {
+    "condition": "$session.params.rate_plan_code = POM50G100 OR $session.params.rate_plan_code = PPM50G90Q OR $session.params.rate_plan_code = PSKUNW50G",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Also includes:\n◾ Unlimited data, talk \u0026 text in the US\n◾ Unlimited international messaging \n◾ Visual Voicemail 25" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Comprend également:\n◾ Données, appels et SMS illimités aux États-Unis\n◾ Messagerie internationale illimitée\n◾ Messagerie vocale visuelle 25" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "_RPC Selected plan proration",
+    "name": "5cf6fa73-a49b-46a7-99b1-dea3d97e1d1d"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RPC Selected plan proration",
+    "name": "3a8c8552-d70a-4360-a444-2c81eead925e"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Rate plan change",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "01f753d6-3937-450e-b2af-127ba1073179"
+  }, {
+    "targetPage": "Rate plan change",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "1ced9c4b-07d7-4197-9058-29b20bbbdfe5"
+  } ]
+}

@@ -1,0 +1,140 @@
+{
+  "name": "e21e0d1f-7743-45d5-9443-b9fed4e8c562",
+  "displayName": "International calling from Canada",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "international calling from Canada"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "international calling add-ons"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "l'option d'appels interurbains"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding long distance rates"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "apprendre à propos des frais interrurbains"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can make International calls by dialing, zero, one, one, plus the country code, plus the area code, plus the local number." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To get information on long distance rates, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez faire des appels à l’étranger en composant le 0, 1, 1, + le code de pays + l'indicatif régional + le numéro local." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information à propos des frais interrurbains, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne. Je vous envoie maintenant un lien vers le site Web. Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can make International calls by dialing, zero, one, one, plus the country code, plus the area code, plus the local number." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can also use these steps while traveling outside of Canada from most destinations." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can get information on long distance rates on our website." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez faire des appels à l’étranger en composant le 0, 1, 1, + le code de pays + l'indicatif régional + le numéro local." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez aussi suivre ces étapes pour la plupart des destinations lorsque vous voyagez à l’étranger." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez obtenir des informations sur les tarifs d'appels interrurbains sur notre site web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900BR"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900SQ"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "4b6ec99f-59c5-4ae7-b153-20857636acf5"
+  } ]
+}

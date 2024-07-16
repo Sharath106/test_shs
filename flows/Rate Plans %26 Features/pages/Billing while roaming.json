@@ -1,0 +1,79 @@
+{
+  "name": "f87696fd-0e56-408c-a6f3-4414dfd7b084",
+  "displayName": "Billing while roaming",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Pour de l'information afin de comprendre votre facture lorsque vous êtes en itinérance, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "To get information on understanding your bill while roaming, you must use the TELUS website for the fastest resolution." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "It's easy to use and allows you to avoid waiting on the line." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Billing while roaming"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "billing while roaming"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la facturation en itinérance"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding your bill while roaming"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "comprendre votre facture lorsque vous êtes en itinérance"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900SE"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900TR"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "ed4dcdcd-9be8-4bf2-ad98-334d6b543f3a"
+  } ]
+}

@@ -1,0 +1,362 @@
+{
+  "name": "3391e037-644f-4e88-b2f7-d37d139eaf58",
+  "displayName": "New account activation type",
+  "form": {
+    "parameters": [ {
+      "displayName": "new_account_type",
+      "required": true,
+      "entityType": "@new-account-type",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Are you looking to set up a new service? Or do you need help with setting up your My TELUS account.", "Awesome! Can you let me know if you are looking to set up a new service or if you need help with your My Telus account?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Cherchez-vous à activer de nouveaux services? Ou avez-vous besoin d'aide pour configurer votre compte Mon TELUS en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't catch that. ", "I'm sorry, I didn't understand that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Did you want to get a new device or set up a My TELUS account?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Cherchez-vous à acheter un nouvel appareil, ou à créer un compte Mon TELUS?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "371622c4-a770-449b-aa2d-5e8f6f3e9117"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To get new devices say multiple lines, or press 1,  My TELUS account, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour regarder les options pour un nouvel appareil, dites lignes multiples ou faites le 1. Pour créez un compte Mon TELUS, dites comptes mon telus ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "1334f021-cb52-4fc2-aef4-5cb25653191c"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1beb2740-b748-457e-9807-48a432bb3e7d"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't catch that. ", "Sorry, I didn’t understand that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Did you want to get a new device or set up a My TELUS account?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Cherchez-vous à acheter un nouvel appareil, ou à créer un compte Mon TELUS?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "c233c0c7-70b3-4878-be3e-eb25f28587ad"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To get new devices say multiple lines, or press 1,  My TELUS account, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour regarder les options pour un nouvel appareil, dites lignes multiples ou faites le 1. Pour créez un compte Mon TELUS, dites comptes mon telus ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ae8e0c17-1487-4c31-bb1a-775f46ef42f8"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "efffd1d4-f68c-4394-af11-46858013c2cf"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "New account activation type"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.equipment_order",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      }, {
+        "parameter": "newtype_retrycnt",
+        "value": null
+      }, {
+        "parameter": "new_account_type",
+        "value": null
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": "activate"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "4a08726c-12fb-447c-8b83-acc92fc62be0"
+  }, {
+    "intent": "head_intent.equipment_activate_sim",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "activate_sim"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "dfbd1e1f-2016-47a6-8f7a-9c83d7cc9cd3"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "new_account_type",
+        "value": null
+      }, {
+        "parameter": "newtype_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "18dfd587-d438-41dc-b98b-eacf2dad1c48"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "new_account_type",
+        "value": null
+      }, {
+        "parameter": "newtype_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "d37b1ed8-b2ec-4d6c-b9f0-f3206200e462"
+  }, {
+    "intent": "head_intent.account_change_number",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "change_phonenumber"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "f6496553-8f72-4d06-a4aa-2dc2e18cd6c0"
+  }, {
+    "intent": "head_intent.account_port_process",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "porting_process"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "6d835ca2-90b4-4af7-ac35-1bd0d655f035"
+  }, {
+    "intent": "head_intent.account_reconnect_service",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "suspend_re-instate_service"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "7d0a6a2b-73c8-4451-91b7-9b65d2014487"
+  }, {
+    "intent": "head_intent.equipment_activate_device",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "activate_device"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "68c4f28c-fa05-455d-9f53-ebea3a65d0de"
+  }, {
+    "intent": "head_intent.setup_newphone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "setup_newphone"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "89591065-26a1-4807-a97b-476922e6560e"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "small_talk_yes",
+        "value": 1
+      } ]
+    },
+    "name": "54079623-b033-4df2-baf4-62f84983aa73"
+  }, {
+    "condition": "$session.params.new_account_type = \"service\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      }, {
+        "parameter": "newtype_retrycnt",
+        "value": null
+      }, {
+        "parameter": "new_account_type",
+        "value": null
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": "activate"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "e47ce73b-489d-49ef-908d-8e3f8d539347"
+  }, {
+    "condition": "$session.params.new_account_type = \"online\" OR $session.params.new_account_type = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "self_serve_registration"
+      }, {
+        "parameter": "newtype_retrycnt",
+        "value": null
+      }, {
+        "parameter": "new_account_type",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "6b16a1f3-0b79-494b-b07c-8ea152389313"
+  }, {
+    "condition": "($session.params.new_account_type = \"family plan\" OR $session.params.new_account_type = \"1\") AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newtype_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Multiple Line Activation",
+    "name": "30500710-bf98-470e-a982-0c79ec26d8ae"
+  }, {
+    "condition": "($session.params.new_account_type = \"family plan\" OR $session.params.new_account_type = \"1\") AND $session.params.isEPP = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newtype_retrycnt",
+        "value": null
+      }, {
+        "parameter": "new_account_type",
+        "value": null
+      } ]
+    },
+    "targetPage": "Multiple Line Activation EPP",
+    "name": "f3f096b0-e55f-4c4b-8985-1c86a57c8bcf"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "newtype_retrycnt",
+        "value": "$sys.func.ADD($session.params.newtype_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.newtype_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.newtype_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "9514500a-5f12-432f-a5a1-02c0088cc716"
+  } ]
+}

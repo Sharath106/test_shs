@@ -1,0 +1,39 @@
+{
+  "name": "87106070-ca0c-4680-a99a-08d3719bf622",
+  "displayName": "Roaming Charges",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "route",
+      "value": "roaming_charges"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.country = \"Test\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$sys.func.SUBSTITUTE($session.params.subscriber_summary.serviceSummary.changeItemSummaryList[0].changeItemDetailList[0].billChangeItemDisplayTxt, \"INTL?\", \"International\") charges are $$session.params.subscriber_summary.serviceSummary.changeItemSummaryList[0].changeItemDetailList[0].billChangeItemAmt." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Les frais d' $sys.func.SUBSTITUTE($session.params.subscriber_summary.serviceSummary.changeItemSummaryList[0].changeItemDetailList[0].billChangeItemDisplayTxt, \"INTL?\", \"internationale\") sont de $session.params.subscriber_summary.serviceSummary.changeItemSummaryList[0].changeItemDetailList[0].billChangeItemAmt $.\n" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Bill explain",
+      "tag": "compare_bills"
+    },
+    "name": "bc0adb09-d942-4415-9412-2f9e52a7ed30"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing while roaming",
+    "name": "f4959f05-f343-4583-bd0b-e2cab1660fae"
+  } ]
+}

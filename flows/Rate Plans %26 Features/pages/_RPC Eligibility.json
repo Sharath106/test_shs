@@ -1,0 +1,267 @@
+{
+  "name": "89b65506-6d50-4960-9e6e-217d38245f4b",
+  "displayName": "_RPC Eligibility",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Rate Plan Change",
+    "tag": "rate_plan_change",
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RPC Eligibility"
+    }, {
+      "parameter": "ban",
+      "value": "$session.params.subscriber_info[0].ban"
+    } ],
+    "returnPartialResponses": true
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "⏳ Please wait, I am still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "⏳ Veuillez patienter, je travaille toujours sur votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "returnPartialResponses": true
+    },
+    "targetPage": "Current Page",
+    "name": "e699a80e-a02f-4a2a-a10c-cdf77d81bfe6"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Rate plan change",
+    "name": "dee9d7a8-9d8f-43f7-9fde-34d15a8411b8"
+  }, {
+    "condition": "$sys.func.LOWER($session.params.rate_plan_name) : \"tablette\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"montre\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"voiture\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"traceur\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"terminal intelligent\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"téléphonie résidentielle mobile\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"HV\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"internet mobile\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"voix\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"internet sans fil résidentiel\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We are unable to change your rate plan via self-serve at this time." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I will need to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Nous ne sommes pas en mesure de modifier votre forfait via le libre-service pour le moment." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous mettre en contact avec un agent." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ss_attempt_counter",
+        "value": "1"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e575f54b-32df-45ba-ba79-bad439a7ae09"
+  }, {
+    "condition": "$sys.func.LOWER($session.params.rate_plan_name) : \"tablet\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"watch\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"drive\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"track\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"wireless home internet\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"whp\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"whsia\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"mobile internet\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"voice\" OR $sys.func.LOWER($session.params.rate_plan_name) : \"wireless home phone\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We are unable to change your rate plan via self-serve at this time." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I will need to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Nous ne sommes pas en mesure de modifier votre plan tarifaire via le libre-service pour le moment." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je vais devoir vous amener à un agent." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ss_attempt_counter",
+        "value": "1"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "3ad4f3b0-991a-42cc-9553-1158a7ad6b9c"
+  }, {
+    "condition": "$session.params.rate_plan_change_eligible = false",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We noticed you've made some recent changes to your plan or account." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "As a result, we cannot make any changes at this time. You can change your plan on your next bill cycle." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you require assistance, I will need to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Des changements ont déjà été apportés à votre forfait ou à votre compte au cours du cycle de facturation actuel." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Vous pourrez changer de forfait lors de votre prochain cycle de facturation." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous avez besoin d'aide, je devrai vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ss_attempt_counter",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "8966eef6-a4a8-4689-b15d-063577e9e54d"
+  }, {
+    "condition": "$session.params.service_eligibity_code != \"200\" OR $session.params.service_eligibity_code = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "At this time, I'm unable to change the rate plan on this line. I can transfer you to an agent if you would still like to proceed." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pour le moment, je ne peux pas modifier le forfait sur cette ligne. Je peux vous transférer à un agent si vous souhaitez continuer." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ss_attempt_counter",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "99ea8278-b9c9-4bda-9992-3078ebd549ad"
+  }, {
+    "condition": "$session.params.service_eligibity_code = \"200\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your current plan is $session.params.rate_plan_name for $$session.params.rate_plan_charge per month." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Votre forfait actuel est $session.params.rate_plan_name pour $$session.params.rate_plan_charge par mois." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ss_attempt_counter",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "_RPC Determine plan filter",
+    "name": "25564a7f-01a8-4fce-80d6-d9937eb1f41e"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Rate plan change",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "ee3cf86b-12fe-474e-999e-b1d32ad15458"
+  }, {
+    "targetPage": "Rate plan change",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "1b1cd3bd-6516-4518-81db-fa565af41a70"
+  } ]
+}

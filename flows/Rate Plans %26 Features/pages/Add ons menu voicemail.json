@@ -1,0 +1,250 @@
+{
+  "name": "ad131743-b8de-4687-9968-4bac1dc6e6a3",
+  "displayName": "Add ons menu voicemail",
+  "form": {
+    "parameters": [ {
+      "displayName": "voicemail",
+      "required": true,
+      "entityType": "@voicemail",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like to know more about our visual voicemail, voicemail to text, or instant voicemail?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ " Souhaitez-vous en savoir plus sur, la Messagerie vocale visuelle, la Messagerie vocale texte, ou la Messagerie vocale instantanée?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that. ", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to know more about, Visual Voicemail, Voicemail to text, or Instant Voicemail?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous en savoir plus sur, la Messagerie vocale visuelle, la Messagerie vocale texte, ou la Messagerie vocale instantanée?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "71832704-aba2-4e1f-87d3-41528c9148c2"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "For more information,  say visual voicemail, or press 1, Voicemail to text, or press 2, Instant Voicemail, or press 3." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour plus d'informations, dites messagerie vocale visuelle, ou faites le 1. Messagerie vocale texte, ou faites le 2. Messagerie vocale instantanée, ou faites le 3." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "018159a5-8edd-4eb7-9f47-33c30cec5798"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "9b17d4ac-d573-4919-a96c-a4a45e861aad"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Would you like to know more about, Visual Voicemail, Voicemail to text, or Instant Voicemail?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous en savoir plus sur, la Messagerie vocale visuelle, la Messagerie vocale texte, ou la Messagerie vocale instantanée?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "0c616697-c1ac-4562-b218-b0c99fb944db"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "For more information,  say visual voicemail, or press 1, Voicemail to text, or press 2, Instant Voicemail, or press 3." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour plus d'informations, dites messagerie vocale visuelle, ou faites le 1. Messagerie vocale texte, ou faites le 2. Messagerie vocale instantanée, ou faites le 3." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "509cddad-b42f-4793-90ae-595ca32595fc"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "7bc537c0-6cc4-4d42-b08a-fa41e63cd2b8"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Add ons menu voicemail"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "voicemail_retrycnt",
+        "value": null
+      }, {
+        "parameter": "voicemail",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "ba1417e1-c387-4c89-a55b-d8fef8b6dd1c"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "voicemail_retrycnt",
+        "value": null
+      }, {
+        "parameter": "voicemail",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "d3620473-797e-4819-ad9e-a2c7ba1b4dc2"
+  }, {
+    "condition": "$session.params.voicemail = \"vvm\" OR $session.params.voicemail = \"1\" OR $session.params.feature_add_ons = \"vvm\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "voicemail_retrycnt",
+        "value": null
+      }, {
+        "parameter": "voicemail",
+        "value": null
+      } ]
+    },
+    "targetPage": "Visual Voicemail",
+    "name": "d1d70517-3770-4151-9954-cc25c14d9604"
+  }, {
+    "condition": "$session.params.voicemail = \"instant\" OR $session.params.voicemail = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "voicemail_retrycnt",
+        "value": null
+      }, {
+        "parameter": "voicemail ",
+        "value": null
+      } ]
+    },
+    "targetPage": "Instant voicemail",
+    "name": "9c6efec1-1753-4f78-95e2-1f6eb077cd91"
+  }, {
+    "condition": "$session.params.voicemail = \"v2t\" OR $session.params.voicemail = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "voicemail_retrycnt",
+        "value": null
+      }, {
+        "parameter": "voicemail",
+        "value": null
+      } ]
+    },
+    "targetPage": "Voicemail to text",
+    "name": "04d2b799-f1c2-4b84-a192-803064e43206"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "voicemail_retrycnt",
+        "value": "$sys.func.ADD($session.params.voicemail_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.voicemail_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.voicemail_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "abe03cac-fb58-4976-8e4d-e29048fb4ef1"
+  } ]
+}

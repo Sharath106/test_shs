@@ -1,0 +1,105 @@
+{
+  "name": "87ce9cfc-3b82-4d0d-a0da-72f3412201b1",
+  "displayName": "Visual Voicemail",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Visual Voicemail"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "visual voicemail"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la messagerie vocale visuelle"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding how to use visual voicemail"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "apprendre comment fonctionne la messagerie vocale visuelle"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur la messagerie vocale visuelle, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne. Je vous envoie maintenant un lien vers le site Web. Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To get information on visual voicemail, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "La messagerie vocale visuelle vous permet de gérer vos messages vocaux en les affichant sous forme de liste sur votre téléphone. Vous n’avez qu’appuyé sur un message pour l’écouter." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez obtenir plus d'informations sur la messagerie vocale visuelle sur notre page d'assistance." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Visual Voicemail lets you manage your voicemails, by reviewing them in a list on your phone. You can listen to any message by simply tapping on it. You can get more information on visual voicemail from our support page." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319014D"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900NK"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "139130dd-678e-4636-a4e5-52c915f7f63c"
+  } ]
+}

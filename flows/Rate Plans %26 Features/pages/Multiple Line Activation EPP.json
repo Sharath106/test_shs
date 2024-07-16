@@ -1,0 +1,117 @@
+{
+  "name": "84974311-b871-4c02-bda0-5d0752478ee2",
+  "displayName": "Multiple Line Activation EPP",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Multiple Line Activation EPP"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Le Rabais famille TELUS est un programme simple et enrichissant qui encourage les clients à ajouter plusieurs lignes à leur compte consommateur, grâce à des généreux rabais sur les forfaits." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Les comptes P E P corporatifs et la responsabilité individuelle ne sont pas admissibles." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS Family Discount is a simple and rewarding program which encourages customers to add multiple lines to their consumer account, through generous rate plan discounts." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Corporate E P P and Individual Liability accounts such as the one you have are not eligible." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Le Rabais famille TELUS est un programme simple et gratifiant qui offre des réductions généreuses sur les forfaits aux clients qui ajoutent plusieurs lignes à leur compte consommateur." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cependant, les comptes P E P corporatifs et la responsabilité individuelle, comme celui que vous avez, ne sont pas admissibles." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS Family Discount is a straightforward and gratifying program that offers generous rate plan discounts to customers who add multiple lines to their consumer account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "However, Corporate E P P and Individual Liability accounts, like the one you have, are not eligible." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Le programme Le Rabais famille TELUS offre des réductions généreuses sur les forfaits aux clients qui ajoutent plusieurs lignes à leur compte consommateur, en en faisant ainsi un programme simple et gratifiant." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Malheureusement, les comptes P E P corporatifs et la responsabilité individuelle, comme celui que vous avez, ne sont pas admissibles." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "The TELUS Family Discount program offers generous rate plan discounts to customers who add multiple lines to their consumer account, making it a simple and rewarding program." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Unfortunately, accounts like Corporate E P P and Individual Liability accounts, such as the one you have, are not eligible." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "9dbfd7c0-d118-49da-b3b6-1b70449aa568"
+  } ]
+}

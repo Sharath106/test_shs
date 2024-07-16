@@ -1,0 +1,707 @@
+{
+  "name": "4a2c98d3-35f4-4172-b568-68ef598a34b2",
+  "displayName": "Add a feature ",
+  "form": {
+    "parameters": [ {
+      "displayName": "feature_options",
+      "required": true,
+      "entityType": "@feature-options",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What feature can I help you with?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avec quelle fonctionnalité puis-je vous aider?" ]
+              },
+              "languageCode": "fr-ca"
+            } ],
+            "setParameterActions": [ {
+              "parameter": "feature_option_any",
+              "value": "true"
+            }, {
+              "parameter": "addfeature_retrycnt",
+              "value": -1
+            } ]
+          },
+          "name": "b7aa9c92-434e-4397-b5df-fb24ad5462fa"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To get help from a team member for adding a feature, say team member or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour obtenir de l'aide d'un membre de l'équipe avec l'ajout d'une fonctionnalité, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "db389fb9-a28d-4b38-97a0-1fc4e347bcdf"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "e08c23b0-fe4e-4ed1-838b-69869b2711dc"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What feature can I help you with?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avec quelle fonctionnalité puis-je vous aider?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "7536d53e-656d-4eda-91a1-71d9cfbb4428"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To get help from a team member for adding a feature, say team member or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour obtenir de l'aide d'un membre de l'équipe avec l'ajout d'une fonctionnalité, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "aacb06cb-9d5d-4fb0-8cb7-c9b738025232"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1c26ccae-5ea0-4767-aefa-b77f1c173aee"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Add a feature"
+    }, {
+      "parameter": "page_summary",
+      "value": "adding a feature"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "ajouter une fonctionnalité"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.feature_options = null AND ($session.params.addfeature_retrycnt = null OR $session.params.addfeature_retrycnt = 0)",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "What feature can I help you with?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Avec quelle fonctionnalité puis-je vous aider?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.addfeature_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "What feature can I help you with?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Avec quelle fonctionnalité puis-je vous aider?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.addfeature_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get help from a team member for adding a feature, say team member or press 0." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour obtenir de l'aide d'un membre de l'équipe avec l'ajout d'une fonctionnalité, dites membre de l'équipe ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "feature_options",
+        "value": null
+      }, {
+        "parameter": "addfeature_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "36d0d0e6-a9b2-48d7-9a5f-873027865517"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "feature_options",
+        "value": null
+      }, {
+        "parameter": "addfeature_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "8ac967e7-45aa-4bc4-99dd-59a1199c5cd2"
+  }, {
+    "intent": "head_intent.plans_add_feature",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_add_feature"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "74a5a369-733b-4775-b051-1790d96410e5"
+  }, {
+    "intent": "head_intent.payment_arrangements",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "087683c0-6a5a-4e2e-9fee-bb172d95a483"
+  }, {
+    "intent": "head_intent.use_device_abroad",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "use_device_abroad"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "87912f09-a3e2-41ed-8c11-5acd41911879"
+  }, {
+    "intent": "head_intent.equipment_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_vague"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "6da2e562-73a5-42ef-937d-659c6bd09a86"
+  }, {
+    "intent": "head_intent.plans_add",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "available_plans"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "a4aba9ab-26ff-4ac2-bcfe-563b71c38093"
+  }, {
+    "intent": "head_intent.out_of_scope_prepaid",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_scope_prepaid"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "fcbe37b6-5559-4a84-b076-5b76f4d05486"
+  }, {
+    "intent": "head_intent.usage_overage",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "usage_overage"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "9d5656b8-a2f3-4f07-92b0-2030f62d0967"
+  }, {
+    "intent": "head_intent.enable_disable_data",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "enable_disable_data"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "6ea9c39d-b6f4-4462-9041-a84da6ec7f7a"
+  }, {
+    "intent": "head_intent.out_of_scope_home_services",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_scope_home_services"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "3fcd1747-e35d-480b-a8cd-b159afd9c7b0"
+  }, {
+    "intent": "head_intent.plans_usage",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_usage"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "f5d0167a-2285-463c-aa7d-585526a9b016"
+  }, {
+    "intent": "head_intent.add_ons_menu",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "add_ons_menu"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "e98e8c44-170c-4a70-8b5e-425c76b35483"
+  }, {
+    "intent": "head_intent.troubleshoot_data_not_working",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "data_not_working"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "ba4a1fa2-daca-4c59-889e-f87209d4985d"
+  }, {
+    "intent": "head_intent.plans_current_details",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "current_plan"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "30c6b763-8700-4cd6-903d-749a34051a42"
+  }, {
+    "intent": "head_intent.plans_remove_feature",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_remove_feature"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "e6745cc5-a69e-4485-a662-0df886a0461c"
+  }, {
+    "intent": "head_intent.troubleshoot_vague",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "fc5c9cc5-4b22-42b1-91e9-fd53467a9f36"
+  }, {
+    "intent": "head_intent.bill_explanation",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can help answer questions about your bill.", "I can definitely help with any questions about your bill.", "I see, let's take a look at your bill." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_explanation"
+      } ]
+    },
+    "targetFlow": "Bill Explanation",
+    "name": "2cb534f8-d97a-4383-8a4e-e8291ef9ac1d"
+  }, {
+    "intent": "head_intent.troubleshoot_phone_not_working",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "phone_not_working"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "8fd63072-302e-45c3-80cb-34e38464cc38"
+  }, {
+    "intent": "head_intent.equipment_upgrades",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "fcc03588-8cc9-45f4-ace6-fbc4620b641b"
+  }, {
+    "intent": "head_intent.watch",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "watch"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "6e8161ae-b861-418d-946d-5c12b6f95f05"
+  }, {
+    "intent": "head_intent.plans_add_line",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": "activate"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "20960b4b-66a9-4260-a382-04651fbdb1b7"
+  }, {
+    "intent": "head_intent.bring_it_back_returns",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bring_it_back_returns"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "7b2c51a2-be41-410c-bf88-56c3c78b41a7"
+  }, {
+    "condition": "$session.params.feature_options = \"apple\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je peux vous donner de l'information sur Apple Care." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "extended_warranty"
+      }, {
+        "parameter": "warranty",
+        "value": "Apple Care+"
+      }, {
+        "parameter": "feature_options",
+        "value": null
+      }, {
+        "parameter": "addfeature_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "260223f3-5d9b-4846-b744-629bc62b64d8"
+  }, {
+    "condition": "$session.params.feature_options = \"device complete\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "warranty",
+        "value": "device complete"
+      }, {
+        "parameter": "route",
+        "value": "extended_warranty"
+      }, {
+        "parameter": "feature_options",
+        "value": null
+      }, {
+        "parameter": "addfeature_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "eaf983da-cdf2-4d8e-ab3a-44885643ac65"
+  }, {
+    "condition": "$session.params.feature_options = \"warranty\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "extended_warranty"
+      }, {
+        "parameter": "feature_options",
+        "value": null
+      }, {
+        "parameter": "addfeature_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "05c7fa18-6353-45b2-bd72-e096198618a1"
+  }, {
+    "condition": "$session.params.feature_options = \"smart hub\" AND $session.params.feature_options = \"top up\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We have two types of top ups for smart hubs:" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "First, a one time non share top up which is good for 30 days from when added, and will automatically be removed after 30 days." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Second, a recurring non-share top up will automatically be re-added at the beginning of every bill cycle, until you remove it." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Prorated charges will occur when added or removed for the recurring non-share top up only." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "addfeature_retrycnt",
+        "value": null
+      }, {
+        "parameter": "feature_options",
+        "value": null
+      } ]
+    },
+    "targetPage": "Add a feature text",
+    "name": "4e3a21c5-6a2e-437b-8cab-3c7d61d64a36"
+  }, {
+    "condition": "$session.params.feature_options = \"top up\" AND $session.params.acct_id_error = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can give you information about adding a top up or fast pass. Data top-ups, or Fast Passes are a one-time charge, and automatically falls off at the end of your billing cycle.You can see pricing and manage your data-top up over at My TELUS. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I can send you a text with more information on how to do this yourself." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je peux vous donner des informations sur l'ajout d'une réapprovisionnement de données ou Passe Express. Les réapprovisionnements de données ou Passes Express sont des frais uniques et se retirent automatiquement à la fin du cycle de facturation. Vous pouvez voir les prix et gérer votre réapprovisionnement de données sur Mon TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je peux vous envoyer un texte avec plus d'informations sur la façon de le faire vous-même." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Add a feature online or app",
+    "name": "175fb2df-5499-4a17-912e-2eb8329cdf51"
+  }, {
+    "condition": "$session.params.feature_options = \"data block\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "feature_options",
+        "value": null
+      }, {
+        "parameter": "add_feature_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Block data",
+    "name": "837ceb6e-40d7-48ff-aca7-c3a3707cb3c7"
+  }, {
+    "condition": "$session.params.feature_options = \"top up\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "addfeature_retrycnt",
+        "value": null
+      }, {
+        "parameter": "feature_options",
+        "value": null
+      } ]
+    },
+    "targetPage": "Data top up or Fast pass",
+    "name": "814f5b76-3b26-4e94-8959-85affef9848c"
+  }, {
+    "condition": "$session.params.feature_options = \"easy roam\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "feature_options",
+        "value": null
+      }, {
+        "parameter": "addfeature_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Add Easy Roam",
+    "name": "4ec83ce5-366a-4372-9d69-581f0c859be8"
+  }, {
+    "condition": "$session.params.feature_options = \"air time\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Increase airtime minutes",
+    "name": "1ca99486-0f1c-47cb-97b6-aa7e2f42f7a9"
+  }, {
+    "condition": "$session.params.feature_option_any = \"true\" OR $session.params.feature_options != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "addfeature_retrycnt",
+        "value": null
+      }, {
+        "parameter": "feature_options",
+        "value": null
+      } ]
+    },
+    "targetPage": "Add a feature text",
+    "name": "be7b0119-7c92-4c47-8e82-97c3b09968a7"
+  }, {
+    "condition": "$session.params.feature_options = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "addfeature_retrycnt",
+        "value": null
+      }, {
+        "parameter": "feature_options",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "436f42c8-bd04-43b5-a076-b080813bc66d"
+  }, {
+    "condition": "$session.params.addfeature_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "addfeature_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "2177879f-2b29-4bc5-a0ff-58554220f0f8"
+  }, {
+    "condition": "$session.params.addfeature_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "addfeature_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "c83dd7e5-6aa2-4726-bfc0-de181c64e4a5"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "addfeature_retrycnt",
+        "value": "$sys.func.ADD($session.params.addfeature_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.addfeature_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.addfeature_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "c9ee0738-3ebd-44ad-a95d-d6df6d0622a0"
+  } ]
+}

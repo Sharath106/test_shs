@@ -1,0 +1,146 @@
+{
+  "name": "b69d5240-cbc2-43bd-beaa-af5aacec40ae",
+  "displayName": "_BF plan change start",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Account Identity",
+    "tag": "device_balance_info",
+    "setParameterActions": [ {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "phone_number",
+      "value": "$session.params.user.utn"
+    }, {
+      "parameter": "ban",
+      "value": "$session.params.user.ban"
+    }, {
+      "parameter": "last_page",
+      "value": "_BF plan change start"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\" AND $session.params.balanceInfoList = null",
+    "triggerFulfillment": {
+      "webhook": "Account Identity",
+      "tag": "device_balance_info",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      } ],
+      "returnPartialResponses": true
+    },
+    "name": "bae777e3-a89e-4881-b34f-c8b11754395a"
+  }, {
+    "condition": "$session.params.balanceInfoList[0].contractStartTs != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "contract_day",
+        "value": "$sys.func.TO_NUMBER($session.params.balanceInfoList[0].contractStartTs.day)"
+      }, {
+        "parameter": "contract_month",
+        "value": "$sys.func.TO_NUMBER($session.params.balanceInfoList[0].contractStartTs.month)"
+      }, {
+        "parameter": "contract_year",
+        "value": "$sys.func.TO_NUMBER($session.params.balanceInfoList[0].contractStartTs.year)"
+      }, {
+        "parameter": "jsonContract",
+        "value": "{ \"day\": $session.params.contract_day, \"year\": $session.params.contract_year, \"month\": $session.params.contract_month }"
+      }, {
+        "parameter": "contractDate",
+        "value": "$sys.func.TO_OBJECT($session.params.jsonContract)"
+      } ]
+    },
+    "name": "e34ad131-4239-4b55-afd4-8d7ca7cebd6c"
+  }, {
+    "condition": "$session.params.route = \"rate_plan_change\" AND $session.params.balanceInfoList[0].contractStartTs = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Rate plan change",
+    "name": "3c18baba-1bc2-4001-8ac9-95ee65b1fb23"
+  }, {
+    "condition": "$session.params.route = \"rate_plan_change_issues\" AND $session.params.balanceInfoList[0].contractStartTs = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Rate plan change issues",
+    "name": "ea6b96a6-a672-41a1-b14a-5ba292cf38b9"
+  }, {
+    "condition": "$session.params.route = \"rate_plan_change\" AND $sys.func.IS_PAST_DATE($sys.func.ADD_DATE($session.params.contractDate, 16, \"DAYS\")) = false AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I notice you've recently purchased or upgraded your device. If you're looking for a rate plan or offer change, you can request this online at telus.com. Please note, you must meet the specific eligibility requirements of the offer you are requesting and you must be within your return period. I will send you a text with more information on how to request this new offer." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je vois que vous avez récemment acheté ou renouveler votre appareil. Si vous voulez changer de forfait ou d'offre, vous pouvez en faire la demande en ligne à telus.com. Notez que vous devez répondre aux conditions d'éligibilité spécifiques à l'offre que vous demandez et vous devez être dans votre période de retour. Je vais vous envoyer un texte avec plus d'informations sur la façon de demander cette nouvelle offre." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000BAaJM29TN0104"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000BAaJM29TN0107"
+      }, {
+        "parameter": "mandatory_ss",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "e306c293-e2ab-434a-8311-2dba281d391b"
+  }, {
+    "condition": "$session.params.route = \"rate_plan_change_issues\" AND $sys.func.IS_PAST_DATE($sys.func.ADD_DATE($session.params.contractDate, 16, \"DAYS\")) = false AND $session.params.isEPP = \"false\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I notice you've recently purchased or upgraded your device. If you're looking for a rate plan or offer change, you can request this online at telus.com. Please note, you must meet the specific eligibility requirements of the offer you are requesting and you must be within your return period. I will send you a text with more information on how to request this new offer." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je remarque que vous avez récemment acheté ou renouveler votre appareil. Si vous voulez changer de forfait ou d'offre, vous pouvez en faire la demande en ligne à telus.com. Notez que vous devez répondre aux conditions d'éligibilité spécifiques à l'offre que vous demandez et vous devez être dans votre période de retour. Je vais vous envoyer un texte avec plus d'informations sur la façon de demander cette nouvelle offre." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000BAaJM29TN0104"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000BAaJM29TN0107"
+      }, {
+        "parameter": "mandatory_ss",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "3110e178-c3df-4069-86eb-0988d3969960"
+  }, {
+    "condition": "$session.params.route = \"rate_plan_change\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Rate plan change",
+    "name": "69f555f9-58a7-4b10-8a3c-8b93946169ac"
+  }, {
+    "condition": "$session.params.route = \"rate_plan_change_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Rate plan change issues",
+    "name": "fb6cf099-97c9-4c52-9914-fb6baeeb28dc"
+  } ]
+}

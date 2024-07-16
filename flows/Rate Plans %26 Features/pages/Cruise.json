@@ -1,0 +1,112 @@
+{
+  "name": "32c05d2e-3835-4c68-88fa-ad3c302f7675",
+  "displayName": "Cruise",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Cruise"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "roaming while on a cruise ship"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "l'itinérance en croisière"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding how to use your phone while on a cruise ship"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "comprendre comment fonctionne l'itinérance en croisière"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on using your phone while on a cruise ship, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur comment utiliser votre téléphone lorsque vous êtes en croisière, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne. Je vous envoie maintenant un lien vers le site Web. Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Easy Roam and Travel passes are not available for use on cruise ships, or other satellite locations." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To help protect against unexpected charges while on a cruise, TELUS blocks your data, but calling and text messaging will cause for pay-per-use charges." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Il n’est pas possible d’utiliser l’option Voyagez connecté sur les navires de croisière ou tout endroit où seul le service par satellite est offert." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour vous protéger contre les frais imprévus lors d'une croisière, TELUS bloque vos données, mais les appels et la messagerie texte entraîneront des frais à l'utilisation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319013R"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900EJ"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "48acb3f4-564c-43c0-9d56-a271942e7d23"
+  } ]
+}

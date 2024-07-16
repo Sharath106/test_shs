@@ -1,0 +1,136 @@
+{
+  "name": "3b9f24d6-f5d2-4796-8e82-05783a5e2370",
+  "displayName": "_RPC SNP",
+  "form": {
+    "parameters": [ {
+      "displayName": "payment_due_date",
+      "required": true,
+      "entityType": "@sys.date",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RPC SNP"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.snp_counter = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "f08ef05d-a2c2-463a-ae8d-e261c106bfb3"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.snp_counter = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Would you like to make a payment arrangement?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous prendre une entente de paiement dans ce cas?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "snp_counter",
+        "value": "2"
+      } ]
+    },
+    "name": "eaaba376-0b5e-4941-a3b5-9aef66eeaff7"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.snp_counter = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "6a35a8f8-8994-40d0-97a1-3e7728596216"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.snp_counter = \"2\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "fdb5d1b0-6ba6-4bb1-8d91-7074b41ed8f1"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "⏳ Please wait, I am still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "⏳ Veuillez patientez, je continue de recueillir vos informations." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Rate Plan Change",
+      "tag": "get_paymentDueDt",
+      "returnPartialResponses": true
+    },
+    "targetPage": "Current Page",
+    "name": "3acb6f4d-3bde-47b4-a48e-b3b456312e34"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "b9f911bb-e204-417d-b783-317a7268813e"
+  }, {
+    "condition": "$session.params.current_balance != null AND $session.params.snp_counter = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your current balance is $$session.params.current_balance and it is due on $sys.func.FORMAT_DATE($session.params.payment_due_date, \"MMMM d, yyyy\", \"en\")." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to make a one time payment to restore your account?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Votre solde actuel est de $session.params.current_balance $ et doit être payé le $sys.func.FORMAT_DATE($session.params.payment_due_date, \"d MMMM yyyy\", \"fr\")." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Souhaitez-vous faire un paiement unique afin de restaurer vos services?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "snp_counter",
+        "value": "1"
+      } ]
+    },
+    "name": "eee43cd4-4165-4069-8954-22986fbc72e3"
+  } ]
+}

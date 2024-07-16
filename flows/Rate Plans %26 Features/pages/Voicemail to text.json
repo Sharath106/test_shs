@@ -1,0 +1,159 @@
+{
+  "name": "ad8e56c5-d557-4c92-b5cc-2727a5e94506",
+  "displayName": "Voicemail to text",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Voicemail to text"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "La Messagerie vocale texte de TELUS convertit les messages vocaux en texte et les envoie directement à n’importe quel appareil mobile sous forme de courriels, de textos ou les deux." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez aussi choisir de les recevoir sous forme de fichiers audio en format .WAV joints aux courriels." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour configurer votre messagerie vocale texte de TELUS, je devrai vous transférer à un membre de l'équipe." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS Voicemail to Text, converts voicemail messages into text and sends them directly to any mobile device through email, text message or both." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You also have the option to receive the voice message in an audio clip, on your email." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To setup your Voicemail to Text, I'll need to get you to a team member." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "La Messagerie vocale texte de TELUS est un service qui transcrit les messages vocaux en texte et les envoie à n'importe quel appareil mobile par courrier électronique, message texte, ou les deux." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez également recevoir le message vocal sous forme de fichiers audio en format .WAV joints aux courriels." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour configurer votre Messagerie vocale texte, je vais devoir vous mettre en relation avec un membre de notre équipe." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS Voicemail to Text is a service that transcribes voicemail messages into text and forwards them to any mobile device via email, text message, or both." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can also receive the voice message as an audio clip in your email." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To set up your Voicemail to Text, I'll need to connect you with a team member." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "La Messagerie vocale texte de TELUS est un service qui convertit les messages vocaux en texte et les envoie à n'importe quel appareil mobile par courrier électronique, message texte, ou les deux." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez également recevoir le message vocal forme de fichiers audio en format .WAV joints aux courriels." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour configurer votre Messagerie vocale texte, je vais devoir vous référer à un membre de notre équipe." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS Voicemail to Text is a service that converts voicemail messages into text and sends them to any mobile device through email, text message, or both." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can also receive the voice message as an audio clip via email." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To configure your Voicemail to Text, I'll have to refer you to a team member." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "3b98746a-8073-4b96-876d-baef1db30316"
+  } ]
+}

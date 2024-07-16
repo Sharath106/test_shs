@@ -1,0 +1,101 @@
+{
+  "name": "571fd6ca-fc7a-42c8-8ce8-9e52d395f0ab",
+  "displayName": "Remove a feature",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Remove a feature"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "removing an add-on"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la suppression d'une option"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "removing an add-on"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "la suppression d'une option téléphonique"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To manage your add-ons, you must use your My TELUS app, It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent cannot help perform this on a customer behalf, I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour faire la gestion de vos options téléphoniques, vous devez utiliser l'application Mon TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne. Je vous envoie maintenant un lien vers l'application Mon TELUS. Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can remove a feature in your My TELUS app, with the exception of extended warranty, which will need to be removed by a team member." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez supprimer une fonctionnalité de votre compte Mon Telus à l'exception de la garantie prolongée, qui doit être retirée par un membre de l'équipe." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900SH"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319008U"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "36936460-7dd2-47de-8eef-77414ad17eaa"
+  } ]
+}

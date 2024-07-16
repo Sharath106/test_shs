@@ -1,0 +1,106 @@
+{
+  "name": "6d694110-8311-4733-a132-36b4905a0bf6",
+  "displayName": "Other mobility plans",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Other mobility plans"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "viewing our current rate plans"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "voir nos forfaits courants"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour voir nos forfaits courants, vous devez utiliser l'application Mon TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne. Je vous envoie maintenant un lien vers l'application Mon TELUS. Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To view our current rate plans, you must use your My TELUS app, It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent cannot help perform this on a customer behalf, I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Chez TELUS, nous comprenons que chaque client a des besoins uniques, c’est pourquoi nous offrons une variété d’options de forfait adaptées à chaque client." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez éviter la file d'attente pendant cette période occupée et accéder à des offres exclusives lorsque vous modifiez votre forfait sur Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "At TELUS, we understand that each customer has unique needs, which is why we offer a variety of plan options that are tailored to suit every customer." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can skip the lines this busy season and access exclusive deals when you change your rate plan over at My TELUS." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900UK"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190109"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "8dbab8ce-7f26-46f1-8582-d9c46526613e"
+  } ]
+}

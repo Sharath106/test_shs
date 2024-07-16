@@ -1,0 +1,112 @@
+{
+  "name": "06d1bd45-043f-4bf2-9bce-3136f5a14ba4",
+  "displayName": "Senior special plans",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Senior special plans"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "options for seniors"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "les options pour aînés"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "learning about options for seniors"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "voir les options pour aînés"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on TELUS Wise and Mobility for Good for seniors programs, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur TELUS averti et Mobilité pour l'avenir pour les ainés, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne. Je vous envoie maintenant un lien vers le site Web. Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "TELUS values all of our customers and we work hard to ensure you receive the best service possible." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS Wise workshops are designed to help seniors, who already uses the internet to learn more about online safety." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS apprécie tous nos clients et nous travaillons fort pour vous assurer le meilleur service possible." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Les ateliers TELUS Averti sont conçus pour les personnes âgées qui utilisent déjà l'internet et qui veulent en apprendre d'avantage sur la sécurité entourant l’utilisation d’internet et les téléphones intelligents." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319011D"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900DQ"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "d4069816-c678-4e85-b19c-cf7978f68e42"
+  } ]
+}

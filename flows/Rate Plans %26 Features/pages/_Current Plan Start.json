@@ -1,0 +1,623 @@
+{
+  "name": "b2bb13d2-aafa-40ab-90db-f54d4aba2ee1",
+  "displayName": "_Current Plan Start",
+  "form": {
+    "parameters": [ {
+      "displayName": "phone_number",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Hmm, that doesn't look like a phone number. Please enter a valid phone number or choose from the list above to continue.", "This doesn't seem like it's a valid number. Please enter your 10 digit phone number or select it from the list." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ab07176a-fb1f-4580-943b-d5be283628c9"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+          
+          },
+          "name": "f38cdebd-788f-472b-beb5-b933f3c0203f"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "webhook": "Account Identity",
+    "tag": "get_phone_numbers",
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_Current Plan Start"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.no_account = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "I can't find any accounts associated to your profile." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je ne trouve aucun compte associé à votre profil." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.invalid_number_counter = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "I can help get the details of your plan." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je peux vous aider à obtenir les détails de votre plan." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ],
+    "returnPartialResponses": true
+  },
+  "transitionRoutes": [ {
+    "intent": "supplemental.num_notonlist",
+    "condition": "$session.params.no_find_phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If your number is not on the list, and you have another My TELUS profile, please log out and start another session using correct credentials" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "no_find_phone_number",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "ed6b5455-3907-41e7-aaee-43b05cab1b8e"
+  }, {
+    "intent": "supplemental.num_notonlist",
+    "condition": "$session.params.no_find_phone_number = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me get you to an agent in this case." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "b2bf2c78-3fa2-4c0e-b908-5e0c12285e08"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.phone_number != null AND $session.params != \"1\"",
+    "triggerFulfillment": {
+    
+    },
+    "name": "786b2396-7005-4de2-9d08-0bb1e7632469"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.phone_number != null AND $session.params.phoneNumberCount != \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phone_number",
+        "value": null
+      }, {
+        "parameter": "phone_number_counter",
+        "value": null
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "ffd9e80c-1221-440d-99c4-e58c46270d85"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.phoneNumberCount = \"1\"",
+    "triggerFulfillment": {
+      "webhook": "Account Identity",
+      "tag": "selected_phone_number",
+      "setParameterActions": [ {
+        "parameter": "phone_number",
+        "value": "$session.params.filtered_phoneNumbers[0]"
+      }, {
+        "parameter": "phone_number_counter",
+        "value": "1"
+      } ]
+    },
+    "name": "86c16fa9-ef1e-4875-95fb-9716310a72e3"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.phoneNumberCount = \"1\" AND $session.params.no_find_phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can't seem to find any other phone numbers associated with your profile. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you have another My TELUS profile, please log out and start a new session using the correct credentials." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "no_find_phone_number",
+        "value": "true"
+      } ]
+    },
+    "name": "8e46b518-0c3c-467f-b132-6736021876b9"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.phoneNumberCount = \"1\" AND $session.params.no_find_phone_number = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I still can't find the phone number you're inquiring about, let me get you to an agent." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "ccacc68e-d87a-40c9-bb12-df0fcba06dbb"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "⏳ Please wait, I am still working on your request." ]
+        },
+        "languageCode": "en"
+      } ],
+      "webhook": "Account Identity",
+      "tag": "get_phone_numbers",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "returnPartialResponses": true
+    },
+    "name": "73e604e0-b8a2-449f-b42e-8c031f928fa3"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Current plan",
+    "name": "9c265bdb-6f02-4f74-aee4-32306c0bc363"
+  }, {
+    "condition": "$session.params.phone_number_counter != \"1\" AND $session.params.phoneNumberCount = 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Is $session.params.filtered_phoneNumbers[0] the phone number you're inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Le $session.params.filtered_phoneNumbers[0] est-il le numéro de téléphone auquel vous souhaitez vous renseigner?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "392a0f12-1149-4625-8947-c5388ee9b110"
+  }, {
+    "condition": "($session.params.phone_number != null AND $session.params.phone_number_counter != 1) OR ($session.params.phone_number_counter = 1 AND $session.params.phoneNumberCount = 1)",
+    "triggerFulfillment": {
+      "webhook": "Account Identity",
+      "tag": "selected_phone_number",
+      "setParameterActions": [ {
+        "parameter": "phone_number_counter",
+        "value": "1"
+      } ]
+    },
+    "name": "bdc2da4f-34be-4b1f-91c3-79e9bfc3a9fb"
+  }, {
+    "condition": "$session.params.phone_number != null OR $session.params.phone_number_counter = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Is $session.params.phone_number still the phone number you're inquiring about?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7bf53d21-adf3-4146-b9ce-7860e736e5ee"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"2\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "173f1ace-1aab-4644-9661-49ee9c233cc5"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"3\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a8118f94-a8c8-40e1-902c-5fe757a977d2"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"4\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[3]",
+              "text": "$session.params.filtered_phoneNumbers[3]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c6bd9030-0991-4cdb-b015-6b11ca081f32"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"5\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[3]",
+              "text": "$session.params.filtered_phoneNumbers[3]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[4]",
+              "text": "$session.params.filtered_phoneNumbers[4]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "662b8b97-7db3-40e6-abba-6b9b8a2ad937"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"6\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[3]",
+              "text": "$session.params.filtered_phoneNumbers[3]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[4]",
+              "text": "$session.params.filtered_phoneNumbers[4]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[5]",
+              "text": "$session.params.filtered_phoneNumbers[5]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "3bf03427-4dfe-4b19-80bd-86bd8d1fbee0"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"7\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[3]",
+              "text": "$session.params.filtered_phoneNumbers[3]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[4]",
+              "text": "$session.params.filtered_phoneNumbers[4]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[5]",
+              "text": "$session.params.filtered_phoneNumbers[5]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[6]",
+              "text": "$session.params.filtered_phoneNumbers[6]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1303257c-51ea-4e4e-9941-1dd1b3370d04"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"8\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[3]",
+              "text": "$session.params.filtered_phoneNumbers[3]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[4]",
+              "text": "$session.params.filtered_phoneNumbers[4]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[5]",
+              "text": "$session.params.filtered_phoneNumbers[5]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[6]",
+              "text": "$session.params.filtered_phoneNumbers[6]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[7]",
+              "text": "$session.params.filtered_phoneNumbers[7]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "de23d007-d957-403d-b470-20fb21fb6963"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"9\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[3]",
+              "text": "$session.params.filtered_phoneNumbers[3]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[4]",
+              "text": "$session.params.filtered_phoneNumbers[4]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[5]",
+              "text": "$session.params.filtered_phoneNumbers[5]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[6]",
+              "text": "$session.params.filtered_phoneNumbers[6]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[7]",
+              "text": "$session.params.filtered_phoneNumbers[7]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[8]",
+              "text": "$session.params.filtered_phoneNumbers[8]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1cbf7e3d-1561-4991-abc6-9ee667b3c50e"
+  }, {
+    "condition": "$session.params.phoneNumberCount = \"10\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quickReplies": {
+            "replies": [ {
+              "responsePayload": "$session.params.filtered_phoneNumbers[0]",
+              "text": "$session.params.filtered_phoneNumbers[0]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[1]",
+              "text": "$session.params.filtered_phoneNumbers[1]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[2]",
+              "text": "$session.params.filtered_phoneNumbers[2]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[3]",
+              "text": "$session.params.filtered_phoneNumbers[3]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[4]",
+              "text": "$session.params.filtered_phoneNumbers[4]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[5]",
+              "text": "$session.params.filtered_phoneNumbers[5]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[6]",
+              "text": "$session.params.filtered_phoneNumbers[6]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[7]",
+              "text": "$session.params.filtered_phoneNumbers[7]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[8]",
+              "text": "$session.params.filtered_phoneNumbers[8]"
+            }, {
+              "responsePayload": "$session.params.filtered_phoneNumbers[9]",
+              "text": "$session.params.filtered_phoneNumbers[9]"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "61f6dba7-fd02-467c-b35b-02e6784eb560"
+  }, {
+    "condition": "$session.params.phoneNumberCount \u003e \"10\" AND $session.params.phone_number = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "It looks like you have many phone numbers associated to your profile." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "What phone number are you inquiring about?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "510038d3-af2c-42f0-8f7c-d72375887b77"
+  } ]
+}

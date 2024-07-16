@@ -1,0 +1,110 @@
+{
+  "name": "ddef9488-2a4a-4d90-833e-8aa28f605b67",
+  "displayName": "Restrict international calls",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Restrict international calls"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour le moment, nous ne pouvons bloquer les appels interurbains que pour les pays en dehors des États-Unis. Si vous souhaitez désactiver la possibilité d'appeler les pays nécessitant un opérateur international, je peux vous transférer à un membre de l'équipe." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "At this time, we are only able to block long distance calls for countries outside of the United States." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you would like to disable the ability to call to countries that require an international operator, a team member would be happy to help further." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Actuellement, nous ne pouvons bloquer que les appels interurbains vers des pays autres que les États-Unis." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous souhaitez désactiver la possibilité d'appeler des pays qui nécessitent un opérateur international, un membre de notre équipe se fera un plaisir de vous aider davantage." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Currently, we can only block long-distance calls for countries other than the United States." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you want to disable the ability to call countries that require an international operator, a team member will be pleased to assist you further." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "À l'heure actuelle, nous ne pouvons empêcher que les appels interurbains vers des pays autres que les États-Unis." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous souhaitez désactiver la capacité d'appeler des pays qui nécessitent un opérateur international, un membre de notre équipe peut vous fournir une assistance supplémentaire." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "At present, we can only prevent long-distance calls to countries other than the United States." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you wish to disable the capability to call countries that necessitate an international operator, a team member can provide further assistance." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "d642ebfa-ab04-4fd7-b159-874eee6d8c67"
+  } ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "b7938c10-37e6-4d78-a8e7-f08336ad11ab",
+  "displayName": "Roaming Charges_3",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Les frais $sys.func.SUBSTITUTE($session.params.subscriber_summary.serviceSummary.changeItemSummaryList[0].changeItemDetailList[0].billChangeItemDisplayTxt, \"INTL?\", \"International\") sont de $session.params.subscriber_summary.serviceSummary.changeItemSummaryList[0].changeItemDetailList[0].billChangeItemAmt $." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "$sys.func.SUBSTITUTE($session.params.subscriber_summary.serviceSummary.changeItemSummaryList[0].changeItemDetailList[0].billChangeItemDisplayTxt, \"INTL?\", \"International\") charges are $$session.params.subscriber_summary.serviceSummary.changeItemSummaryList[0].changeItemDetailList[0].billChangeItemAmt." ]
+        },
+        "languageCode": "en"
+      } ],
+      "webhook": "Bill explain",
+      "tag": "compare_bills"
+    },
+    "targetPage": "Roaming Charges",
+    "name": "ece1091a-3b35-4953-9791-1bf4f38fabc9"
+  } ]
+}

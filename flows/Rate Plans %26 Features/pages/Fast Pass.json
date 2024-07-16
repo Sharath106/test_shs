@@ -1,0 +1,159 @@
+{
+  "name": "420e1112-7c3f-49a0-bd5e-fd727ed2b604",
+  "displayName": "Fast Pass",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Fast Pass"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez besoin de données haute vitesse supplémentaires jusqu'à la fin de votre cycle de facturation, vous pouvez opter pour une passe Express. Cette option est disponible pour nos forfaits qui comprennent des données illimitées." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Une passe Express comprend trois Go de données haute vitesse et est facturée une seule fois. Elle sera automatiquement supprimée à la fin de votre cycle de facturation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez ajouter jusqu'à dix passes Express par cycle de facturation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you need additional high speed data until the end of your billing cycle, Fast Pass is available for our plans that include unlimited data." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "A Fast Pass includes 3GB of high speed data. It is a one-time charge and will automatically be removed at the end of your billing cycle." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can add up to 10 Fast Passes per billing cycle." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez besoin de données haute vitesse supplémentaires jusqu'à la fin de votre cycle de facturation, une passe Express est disponible pour nos forfaits qui incluent des données illimitées." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Une passe Express comprend trois Go de données haute vitesse et est facturée une seule fois. Elle sera automatiquement supprimée à la fin de votre cycle de facturation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez ajouter jusqu'à dix passes Express par cycle de facturation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you require extra high-speed data until the end of your billing cycle, Fast Pass is available for our plans that come with unlimited data." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "A Fast Pass includes 3GB of high-speed data and is a one-time charge that will be automatically removed at the end of your billing cycle." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can add up to 10 Fast Passes per billing cycle." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour les forfaits qui incluent des données illimitées, une passe Express est disponible si vous avez besoin de données haute vitesse supplémentaires jusqu'à la fin de votre cycle de facturation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Une passe Express offre trois Go de données haute vitesse et est facturée une seule fois. Elle sera automatiquement supprimée à la fin de votre cycle de facturation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez ajouter jusqu'à dix passes Express par cycle de facturation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "For plans that come with unlimited data, Fast Pass is available if you need additional high-speed data until the end of your billing cycle." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "A Fast Pass offers 3GB of high-speed data and is a one-time charge that will be automatically removed at the end of your billing cycle." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can add up to 10 Fast Passes per billing cycle." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "de1da050-6b71-4808-b998-5a75c7bb0809"
+  } ]
+}

@@ -1,0 +1,140 @@
+{
+  "name": "daa72f39-855f-445a-856a-0c7049df7dd8",
+  "displayName": "International text messaging",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "International text messaging"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "international texting add-ons"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "l'option messagerie texte à l'étranger"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "managing your texting add-ons"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "la gestion de votre option de messagerie texte"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can send international text messages by adding, zero,one,one, plus the country code, plus the area code, plus the local number." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To manage your texting add-ons, you must use your My TELUS app, It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent cannot help perform this on a customer behalf, I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez envoyer des messages texte internationaux en ajoutant le zéro, un, un, plus le code du pays avant l’indicatif régional plus le numéro local." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour faire la gestion de votre option de messagerie texte, vous devez utiliser l'application Mon TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne. Je vous envoie maintenant un lien vers l'application Mon TELUS. Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can send international text messages by adding, zero,one,one, plus the country code, plus the area code, plus the local number." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To send a text to a US or Caribbean number, or while travelling outside Canada, you can message them the same way you would a Canadian number." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can manage your texting add-ons in the My TELUS app." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez envoyer des messages texte internationaux en ajoutant le zéro, un, un, plus le code du pays avant l’indicatif régional plus le numéro local." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour envoyer un message texte à un numéro aux États-Unis ou dans les Caraïbes, ou si vous voyagez à l'extérieur du Canada, vous n'avez qu'à faire comme à l'habitude, comme si c'était un numéro de téléphone canadien." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez faire la gestion de votre option de messagerie texte sur l'application Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900JA"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900YM"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "c01085d6-7ec6-4983-9995-70a235319989"
+  } ]
+}

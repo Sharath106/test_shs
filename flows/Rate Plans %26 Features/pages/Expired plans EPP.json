@@ -1,0 +1,159 @@
+{
+  "name": "a5464d4d-0a66-48ab-a4c6-bf5696206e0b",
+  "displayName": "Expired plans EPP",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Expired plans EPP"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Lorsqu'il est fait référence à un forfait, les termes, ancien, ou, expiré, sont les termes privilégiés pour indiquer que TELUS n'offre plus ce forfait." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous pensez renouveler votre contrat, votre forfait actuel peut ne pas être compatible avec la tarification du contrat pour l'appareil que vous choisissez." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Dans certains cas, il peut être préférable d'acheter l'appareil sans financement si vous souhaitez conserver votre forfait." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "When referring to a rate plan, the term, legacy, or, expired, are the preferred terms to indicate that TELUS is no longer offering that rate plan." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you are planning to renew your contract, your current plan may not be compatible with contract pricing for the device you choose." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "In some cases it may be best to purchase the device outright if you wish to keep your current plan." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Lorsqu'il s'agit de parler d'un forfait tarifaire, il est préférable d'utiliser les termes; hérité, ou, expiré, pour indiquer que TELUS ne propose plus ce plan tarifaire." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous envisagez de renouveler votre contrat, votre plan actuel peut ne pas être compatible avec l'appareil que vous choisissez au tarif du contrat." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Dans certains cas, il peut être préférable d'acheter l'appareil en totalité si vous souhaitez conserver votre plan actuel." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "When referring to a rate plan, it's preferred to use the terms legacy or expired to indicate that TELUS no longer offers that rate plan." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you're planning to renew your contract, your current plan may not be compatible with the device you choose at contract pricing." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "In some cases, it may be best to purchase the device outright if you wish to retain your current plan." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les termes; hérité, ou, expiré, sont les termes préférés à utiliser lorsqu'il s'agit d'un forfait tarifaire que TELUS ne propose plus." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous envisagez de renouveler votre contrat, votre plan actuel peut ne pas être compatible avec l'appareil que vous choisissez au tarif du contrat." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Dans certaines circonstances, il peut être préférable d'acheter l'appareil en totalité si vous souhaitez conserver votre plan actuel." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "The terms legacy or expired are the preferred terms to use when referring to a rate plan that TELUS no longer offers." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you're considering renewing your contract, your current plan may not be compatible with the device you choose at contract pricing." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "In certain circumstances, it may be preferable to purchase the device outright if you want to keep your current plan." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "16104ae7-c612-4d99-9b27-844cf996e932"
+  } ]
+}

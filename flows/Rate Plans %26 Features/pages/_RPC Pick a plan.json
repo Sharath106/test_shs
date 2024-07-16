@@ -1,0 +1,1066 @@
+{
+  "name": "37ae63d9-c9c0-45be-a519-037a40f08b92",
+  "displayName": "_RPC Pick a plan",
+  "form": {
+    "parameters": [ {
+      "displayName": "rate_plan_code",
+      "required": true,
+      "entityType": "@rate-plan-code",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Select one of the options above." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris. ", "Désolé, je n'ai pas tout à fait compris. ", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Lequel souhaitez-vous dans la liste ci-dessous ?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "281fcf11-db0a-4e37-8872-5dc1aae9fcf9"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+          
+          },
+          "name": "88025c4d-d0c0-4f45-a9f9-441124421914"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RPC Pick a plan"
+    }, {
+      "parameter": "rate_plan_count",
+      "value": "$sys.func.COUNT($session.params.filtered_plans)"
+    }, {
+      "parameter": "environment",
+      "value": "it04"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RPC Selected plan Info No",
+    "name": "0df87e8d-76da-4228-a23d-482f3ffb34be"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "webhook": "Rate Plan Change",
+      "tag": "selected_plan_code",
+      "setParameterActions": [ {
+        "parameter": "rate_plan_code",
+        "value": "$session.params.filtered_plans[0].serviceCode"
+      } ]
+    },
+    "targetPage": "_RPC Picked plan Included add ons",
+    "name": "b1635923-11e7-4efb-9766-d43846867220"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RPC Selected plan Info No",
+    "name": "772b556d-f54e-413f-87e6-dac1de18a328"
+  }, {
+    "intent": "supplemental.confirm_current_plan_amount",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You current plan is **$$session.params.rate_plan_charge** per month." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Votre forfait actuel est de **$session.params.rate_plan_charge $** par mois." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "question-asked",
+        "value": "true"
+      } ]
+    },
+    "name": "e9352ee1-bc50-45b9-8955-f646f4a2d2e3"
+  }, {
+    "intent": "head_intent.plans_current_details",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "question-asked",
+        "value": "true"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.rate_plan_name : \"nationwide\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Your current plan includes **unlimited nationwide** talk \u0026 text." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Votre forfait actuel inclut les **appels et textos illimités au Canada**." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.rate_plan_name : \"US \"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Your current plan includes **unlimited Canada - U.S.** talk \u0026 text." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Votre forfait actuel inclut les **appels et textos illimités au Canada et aux États-Unis**." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      }, {
+        "cases": [ {
+          "condition": "$session.params.rate_plan_name : \"10GB\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "It also includes **10 GB** of data." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Il inclut aussi **10 Go** de données." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.rate_plan_name : \"5GB\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "It also includes **5 GB** of data." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Il inclut aussi **5 Go** de données." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.rate_plan_name : \"15GB\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "It also includes **15 GB** of data." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Il inclut aussi **15 Go** de données." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.rate_plan_name : \"20GB\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "It also includes **20 GB** of data." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Il inclut aussi **20 Go** de données." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.rate_plan_name : \"25GB\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "It also includes **25 GB** of data." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Il inclut aussi **25 Go** de données." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.rate_plan_name : \"30GB\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "It also includes **30 GB** of data." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Il inclut aussi **30 Go** de données." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.rate_plan_name : \"50GB\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "It also includes **50 GB** of data." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Il inclut aussi **50 Go** de données." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      }, {
+        "cases": [ {
+          "condition": "rate_plan_code = null",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "[Review your complete plan details here](https://telus.com/my-account/plans/select?INTCMP=Tcom_VirtualAssistant\u0026linktype=virtual_assistant)" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "[Voyez plus de détails de votre forfait ici](https://telus.com/my-account/plans/select?INTCMP=Tcom_VirtualAssistant\u0026linktype=virtual_assistant)" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "[Review your complete plan details here](https://telus.com/my-account/plans/select?INTCMP=Tcom_VirtualAssistant\u0026linktype=virtual_assistant)" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "[Voyez plus de détails de votre forfait ici](https://telus.com/my-account/plans/select?INTCMP=Tcom_VirtualAssistant\u0026linktype=virtual_assistant)" ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "b2a2463b-cfaf-44d7-b523-f9bf6a6438d5"
+  }, {
+    "intent": "head_intent.out_of_scope_prepaid",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If you're looking to migrate your account to get Prepaid services, I'll need to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "For information around our available Prepaid plans and how you can activate new Prepaid services, visit [telus.com/prepaid](https://www.telus.com/mobility/prepaid)" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Si vous aimeriez transférer votre compte vers nos services Prépayés, je devrai vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pour plus d'information sur nos forfaits prépayés ainsi que la procédure à suivre pour une nouvelle activation, visitez le [telus.com/prepaid](https://www.telus.com/mobility/prepaid)" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "0c15fca3-c595-4d40-92f2-19d2b25d0468"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "⏳ Please wait, I am still working on your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "⏳ Veuillez patienter, je travaille toujours sur votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Rate Plan Change",
+      "tag": "return_plan_filter",
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": 1
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ],
+      "returnPartialResponses": true
+    },
+    "targetPage": "Current Page",
+    "name": "1c4ee590-1bc5-4956-9e97-45ad7f6b1034"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Rate plan change",
+    "name": "689eb624-591c-4666-ad67-10abd1b75416"
+  }, {
+    "condition": "$session.params.rate_plan_code = \"Plan 1 selected\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rate_plan_code",
+        "value": "$session.params.filtered_plans[0].serviceCode"
+      } ]
+    },
+    "name": "3b5cc971-6df1-4813-aa7b-dea8f4515789"
+  }, {
+    "condition": "$session.params.rate_plan_code = \"Plan 2 selected\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rate_plan_code",
+        "value": "$session.params.filtered_plans[1].serviceCode"
+      } ]
+    },
+    "name": "08bf94a3-27bd-4a3d-8f42-e43ba2800432"
+  }, {
+    "condition": "$session.params.rate_plan_code = \"Plan 3 selected\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rate_plan_code",
+        "value": "$session.params.filtered_plans[2].serviceCode"
+      } ]
+    },
+    "name": "bc4e3d32-5230-420d-adc2-e0c80f907c82"
+  }, {
+    "condition": "$session.params.rate_plan_code = \"Plan 4 selected\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rate_plan_code",
+        "value": "$session.params.filtered_plans[3].serviceCode"
+      } ]
+    },
+    "name": "291600e9-0956-44cf-931a-1c49538eaf51"
+  }, {
+    "condition": "$session.params.rate_plan_code = \"Plan 5 selected\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rate_plan_code",
+        "value": "$session.params.filtered_plans[4].serviceCode"
+      } ]
+    },
+    "name": "d57de0aa-36e9-403d-94eb-428fa1cc942d"
+  }, {
+    "condition": "$session.params.rate_plan_code = \"Plan 6 selected\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rate_plan_selected",
+        "value": "$session.params.filtered_plans[5].serviceCode"
+      } ]
+    },
+    "name": "8d86b829-7269-4da2-87e2-caf9cb07d38e"
+  }, {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "webhook": "Rate Plan Change",
+      "tag": "selected_plan_code"
+    },
+    "targetPage": "_RPC Picked plan Included add ons",
+    "name": "8d6f8441-1a08-4b38-b7a7-962a6ddb3e9a"
+  }, {
+    "condition": "$session.params.rate_plan_count = 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We don't have any plan options at this time for you. I will need to get you to an agent. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Nous n'avons pas d'options de forfait pour le moment pour vous. Je vais devoir vous mettre en contact avec un agent." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "1e0438c8-f708-4b1c-b5f4-c2e1b150ee26"
+  }, {
+    "condition": "$session.params.rate_plan_count = 1 AND $session.params.question-asked = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 1 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[0].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Premier forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[0].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "6d547ec4-c829-423a-b4c1-133ded801679"
+  }, {
+    "condition": "$session.params.rate_plan_count = 2 AND $session.params.question-asked = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 1 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[0].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 2 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[1].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[1].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Premier forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[0].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Deuxième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[1].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[1].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "3da713b4-73a3-4581-ac0b-dc47521c615c"
+  }, {
+    "condition": "$session.params.rate_plan_count = 3 AND $session.params.question-asked = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 1 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[0].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 2 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[1].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[1].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 3 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[2].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[2].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Premier forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[0].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Deuxième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[1].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[1].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Troisième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[2].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[2].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "71514734-edaf-45b7-81e1-d449d71a4eda"
+  }, {
+    "condition": "$session.params.rate_plan_count = 4 AND $session.params.question-asked = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 1 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[0].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 2 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[1].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[1].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 3 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[2].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[2].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 4 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[3].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[3].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Premier forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[0].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Deuxième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[1].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[1].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Troisième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[2].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[2].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Quatrième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[3].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[3].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "98c5bfbf-fdb2-4e46-93e6-7b425955aaa6"
+  }, {
+    "condition": "$session.params.rate_plan_count = 5 AND $session.params.question-asked = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 1 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[0].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 2 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[1].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[1].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 3 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[2].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[2].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 4 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[3].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[3].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 5 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[4].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[4].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Premier forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[0].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Deuxième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[1].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[1].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Troisième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[2].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[2].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Quatrième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[3].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[3].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Cinquième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[4].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[4].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "1f66cc93-d606-4811-b437-14b12b5c73e1"
+  }, {
+    "condition": "$session.params.rate_plan_count = 6 AND $session.params.question-asked = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 1 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[0].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 2 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[1].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[1].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 3 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[2].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[2].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 4 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[3].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[3].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 5 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[4].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[4].serviceDescription"
+            }, {
+              "accessibilityText": "Includes:",
+              "buttons": [ {
+                "responsePayload": "Plan 6 selected",
+                "text": "Select this plan for $$session.params.filtered_plans[5].chargeAmount monthly"
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "imageUri": "https://i.postimg.cc/y8ndGmkw/rpcnewen.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[5].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "catalog": {
+            "items": [ {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Premier forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[0].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[0].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Deuxième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[1].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[1].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Troisième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[2].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[2].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Quatrième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[3].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[3].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Cinquième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[4].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[4].serviceDescription"
+            }, {
+              "accessibilityText": "Comprend :",
+              "buttons": [ {
+                "responsePayload": "Sixième forfait sélectionné",
+                "text": "Choisir ce forfait pour $session.params.filtered_plans[5].chargeAmount $ mensuellement "
+              } ],
+              "imageThumbnailUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "imageUri": "https://i.postimg.cc/BbpbYf8D/rpcnewfr.png",
+              "subtitle": "",
+              "title": "$session.params.filtered_plans[5].serviceDescription"
+            } ]
+          }
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "d7472beb-638c-4420-9197-90d1a422aa48"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Rate plan change",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "6ed4c933-3c0d-4444-9143-1e749b2f055d"
+  }, {
+    "targetPage": "Rate plan change",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "d4741ad9-95a8-43dc-a979-5adaf84927a7"
+  } ]
+}

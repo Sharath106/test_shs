@@ -1,0 +1,76 @@
+{
+  "name": "774555f6-3031-4d45-8359-94821c0ec06b",
+  "displayName": "Data top up or Fast pass",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Data top up or Fast pass"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$sys.func.ADD($session.params.targetAccount.suspendedSubscriberCt, $session.params.targetAccount.activeSubscriberCt) = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "I can help you top-up your data for the month." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je peux vous aider à ré-approvisionner vos données pour le mois." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "I can give you information about adding a top up or fast pass. Data top-ups, or Fast Passes are a one-time charge, and automatically falls off at the end of your billing cycle.You can see pricing and manage your data-top up over at My TELUS." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je peux vous donner des informations sur le réapprovisionnement de données ou la Passe Express. Les réapprovisionnements de données ou Passes Express sont des frais uniques et se retirent automatiquement à la fin du cycle de facturation. Vous pouvez voir les prix et gérer votre réapprovisionnement de données sur Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$sys.func.ADD($session.params.targetAccount.suspendedSubscriberCt, $session.params.targetAccount.activeSubscriberCt) = 1",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "self_serve"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "02c42336-81b0-4277-a00e-63f963ad7ad0"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900M3"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319003A"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "4fee3884-8f85-4fb3-a45b-c2c9fa20b3c2"
+  } ]
+}

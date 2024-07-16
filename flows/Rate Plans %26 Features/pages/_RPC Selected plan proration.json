@@ -1,0 +1,102 @@
+{
+  "name": "ada12ae1-daba-4311-b6a3-d3d0ec8efa22",
+  "displayName": "_RPC Selected plan proration",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "On your next bill you will see a credit of **$$session.params.partial_credit** from your old plan and a charge of **$$session.params.partial_charge** for the new plan starting today, along with the regular monthly cost of the new plan. " ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Would you like to go ahead and change your plan today?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Sur votre prochaine facture, vous verrez un crédit de **$session.params.partial_credit $** de votre ancien forfait et des frais de **$session.params.partial_charge $** pour le nouveau forfait à compter d'aujourd'hui, ainsi que le coût mensuel régulier du nouveau forfait." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Souhaitez-vous aller de l'avant et modifier votre forfait aujourd'hui?" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_RPC Selected plan proration"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rate_plan_change_start_date",
+        "value": "TODAY"
+      } ]
+    },
+    "targetPage": "_RPC Complete plan change",
+    "name": "ec1a7b19-b141-43c4-9fc0-d28007496cad"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_RPC Selected plan Info No",
+    "name": "b8a8eb5f-6c06-4c07-964c-0d341065f72c"
+  }, {
+    "intent": "supplemental.choose_another_plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "canus_vs_can",
+        "value": null
+      }, {
+        "parameter": "rate_plan_code",
+        "value": null
+      } ]
+    },
+    "targetPage": "_RPC Determine plan filter",
+    "name": "2644a07a-78ce-4606-9ff4-bae1a5dcbebc"
+  }, {
+    "intent": "supplemental.plan_effective_date",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "A rate plan change will take effect immediately. Make sure you restart your phone for the changes to take effect." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like to proceed with the changes?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Un changement de forfait prend effet immédiatement. Assurez-vous de redémarrer votre téléphone pour que le changement prenne effet." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Aimeriez-vous procéder avec le changement?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "93ea6a04-8883-407b-afbd-23845cae9765"
+  } ]
+}

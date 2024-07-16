@@ -1,0 +1,117 @@
+{
+  "name": "aea84c23-20dc-4379-a296-83b51053148f",
+  "displayName": "Expired plans",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Expired plans"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Quand on parle d’un forfait, le terme expiré ou ancien indique que TELUS n’offre plus ce forfait." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez actuellement un forfait ancien, vous pouvez le conserver tant que vous ne signez pas une nouvelle entente, parce que acheter un nouvel appareil nécessitera un forfait actuel." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If your plan includes the term legacy or expired, this is to indicate that TELUS is no longer offering this as an active rate plan." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Legacy or expired plans can be kept on a month-to-month basis, but when starting a new term, your upgrade will require a current plan." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si votre forfait inclut les termes hérité, ou expiré, cela signifie que TELUS ne l'offre plus en tant que plan tarifaire actif." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Bien que les plans: hérités, ou, expirés, puissent être conservés sur une base mensuelle, vous aurez besoin d'un forfait actuel pour une mise à niveau lorsque vous commencez un nouveau terme." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If your plan includes the term legacy or expired, this means that TELUS no longer offers it as an active rate plan." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Although legacy or expired plans can be retained on a month-to-month basis, you will need a current plan for an upgrade when starting a new term." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les forfait qui contiennent les termes; hérité, ou, expiré,  indiquent que TELUS ne les offre plus en tant que plans tarifaires actifs." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Bien que les forfait; hérités, ou, expirés, puissent être maintenus sur une base mensuelle, vous aurez besoin d'un forfait actuel pour une mise à niveau lorsque vous commencez un nouveau terme." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Plans that contain the terms legacy or expired indicate that TELUS no longer offers them as active rate plans." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "While legacy or expired plans can be maintained on a month-to-month basis, you will require a current plan for an upgrade when beginning a new term." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "60fe0a18-9625-4a70-b257-2f736794c407"
+  } ]
+}

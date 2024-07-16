@@ -1,0 +1,508 @@
+{
+  "name": "9070e55a-5c75-4d74-90f2-a91bf6c4b1d7",
+  "displayName": "Repeat",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.repeat_counter = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": 0
+      } ]
+    },
+    "name": "091a87c6-3088-477e-8c5d-f28c99cb0523"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e= 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": "$sys.func.ADD($session.params.repeat_counter,1)"
+      } ]
+    },
+    "name": "c507e896-50e2-4782-953c-502ce4b3860e"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e 5",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For further assistance, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je peux vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "de3cd6e3-23a3-46fe-9364-a852cd5af928"
+  }, {
+    "condition": "$session.params.last_page = \"Data top-up or Fast pass\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data top up or Fast pass",
+    "name": "5fb2ce2b-f5a5-4898-b71c-cf038e7e66f5"
+  }, {
+    "condition": "$session.params.last_page = \"Available plans none fit my needs\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Available plans none fit my needs",
+    "name": "2d09e74b-36be-4ed9-a5ec-82842135e128"
+  }, {
+    "condition": "$session.params.last_page = \"Billing while roaming\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Billing while roaming",
+    "name": "3b97da35-ca36-4689-a54e-917ca2eeeb19"
+  }, {
+    "condition": "$session.params.last_page = \"Can I keep my plan\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Can I keep my plan",
+    "name": "58a3b9d5-325a-40b2-83d6-04108abd701c"
+  }, {
+    "condition": "$session.params.last_page = \"Cruise\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cruise",
+    "name": "35295bc1-5e0a-4746-8cd7-21ac759aa35e"
+  }, {
+    "condition": "$session.params.last_page = \"Data flex\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data flex",
+    "name": "dfcb37a3-d7ea-4a3f-bb29-074edb0bb5e8"
+  }, {
+    "condition": "$session.params.last_page = \"Easy Roam active date\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Easy Roam active date",
+    "name": "189b4375-f3ee-4471-b1f0-3af104e5f53f"
+  }, {
+    "condition": "$session.params.last_page = \"EPP plans\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "EPP plans",
+    "name": "ee0b4ea0-c2f0-470a-925f-732157dba6a5"
+  }, {
+    "condition": "$session.params.last_page = \"Evenings and Weekends\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Evenings and Weekends",
+    "name": "dc368f64-1bf1-4250-b718-6cc88dd3d15a"
+  }, {
+    "condition": "$session.params.last_page = \"Everything Roaming\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Everything Roaming",
+    "name": "6b007584-5908-4778-9712-38d55f381830"
+  }, {
+    "condition": "$session.params.last_page = \"Expired plans\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Expired plans",
+    "name": "ed7538b1-3b96-443e-96ac-cc9935234865"
+  }, {
+    "condition": "$session.params.last_page = \"Fast Pass\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Fast Pass",
+    "name": "3475c936-1227-45aa-a3a8-bb7c5ea8f85f"
+  }, {
+    "condition": "$session.params.last_page = \"Favorite numbers\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Favorite numbers",
+    "name": "5345256d-93b5-4286-b08a-1b398f0b99a1"
+  }, {
+    "condition": "$session.params.last_page = \"Incoming international calls\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Incoming international calls",
+    "name": "fb0c5edb-4f82-4434-a4e4-71ffdb186637"
+  }, {
+    "condition": "$session.params.last_page = \"international calling from Canada\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "International calling from Canada",
+    "name": "14e44a27-2be1-4462-8ca4-f42d64c0638b"
+  }, {
+    "condition": "$session.params.last_page = \"International text messaging\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "International text messaging",
+    "name": "cb635246-3f13-4cb6-aaae-075e746f7e87"
+  }, {
+    "condition": "$session.params.last_page = \"Is Easy Roam active\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Is Easy Roam active",
+    "name": "dc4a586b-a1b2-4761-9316-a4a77375845d"
+  }, {
+    "condition": "$session.params.last_page = \"Multiple Line Activation\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Multiple Line Activation",
+    "name": "cc91994e-4d35-4da0-a11e-40efa57fbe4f"
+  }, {
+    "condition": "$session.params.last_page = \"Plan changed without consent\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Plan changed without consent",
+    "name": "a2a3861d-adda-409d-8963-5e20c0f0dc34"
+  }, {
+    "condition": "$session.params.last_page = \"Rate plan change issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Rate plan change issues",
+    "name": "04dfef3a-b21d-4de7-875b-1bf8e0803aca"
+  }, {
+    "condition": "$session.params.last_page = \"Remove a feature\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Remove a feature",
+    "name": "ab9f009b-3c42-4bbc-824e-72f4e86410be"
+  }, {
+    "condition": "$session.params.last_page = \"Restrict international calls\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Restrict international calls",
+    "name": "61713aaa-d63d-4e8e-ae68-6bfff27777ad"
+  }, {
+    "condition": "$session.params.last_page = \"Return from a trip\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Return from a trip",
+    "name": "52f9a399-5c8b-47bc-ac20-7dca8e401599"
+  }, {
+    "condition": "$session.params.last_page = \"Senior special plans\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Senior special plans",
+    "name": "f583663f-5f89-4326-8cbf-ba9a68e428f5"
+  }, {
+    "condition": "$session.params.last_page = \"Stream plus\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Stream plus",
+    "name": "dd9d0874-248d-4db2-a507-1166bc31d2c8"
+  }, {
+    "condition": "$session.params.last_page = \"Travelling in Canada\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Travelling in Canada",
+    "name": "ad9ab6fd-888b-48a4-933e-e665a972c534"
+  }, {
+    "condition": "$session.params.last_page = \"Voicemail to text\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Voicemail to text",
+    "name": "141d7ee0-eb83-48dc-9f8f-79f802849074"
+  }, {
+    "condition": "$session.params.last_page = \"Roaming Coverage\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Roaming Coverage",
+    "name": "bc8ac8d5-0519-46b2-9660-8a7ba7e51f12"
+  }, {
+    "condition": "$session.params.last_page = \"Roaming Coverage text\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Roaming Coverage text",
+    "name": "a1ae9553-1fde-4aaa-bdd8-fe14e99e9a7e"
+  }, {
+    "condition": "$session.params.last_page = \"Add a feature\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Add a feature ",
+    "name": "7c845720-9d24-4eb0-b75b-94eb46bc2511"
+  }, {
+    "condition": "$session.params.last_page = \"Add a feature online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Add a feature online or app",
+    "name": "b0c24a59-6140-4e9b-a11c-b21417c3e985"
+  }, {
+    "condition": "$session.params.last_page = \"Add a feature text\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Add a feature text",
+    "name": "116f56a7-627f-4479-a9ba-e98750e7ad2d"
+  }, {
+    "condition": "$session.params.last_page = \"Add Easy Roam\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Add Easy Roam",
+    "name": "c1450ee3-d495-499d-9c86-6076b9e4e246"
+  }, {
+    "condition": "$session.params.last_page = \"Add ons menu\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Add ons menu",
+    "name": "653ed820-dc33-496e-9a7c-0744627521f8"
+  }, {
+    "condition": "$session.params.last_page = \"Add ons menu voicemail\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Add ons menu voicemail",
+    "name": "e614e9b5-c7e5-42dc-a697-e2d390e32732"
+  }, {
+    "condition": "$session.params.last_page = \"Available plans\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Available plans",
+    "name": "fccd9de3-ba24-45ba-b6a8-866ad0f14b17"
+  }, {
+    "condition": "$session.params.last_page = \"Block data\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Block data",
+    "name": "754458f6-03e8-46f7-b710-a6c165125113"
+  }, {
+    "condition": "$session.params.last_page = \"Block data Ongoing\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Block data Ongoing",
+    "name": "39ba8b05-2cce-464e-963a-fa4c7937c9d3"
+  }, {
+    "condition": "$session.params.last_page = \"Block data Temporary\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Block data Temporary",
+    "name": "b0dcaba0-2222-47f5-8494-895f1b70fa36"
+  }, {
+    "condition": "$session.params.last_page = \"Call Canada from abroad\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Call Canada from abroad",
+    "name": "ce358071-946f-47b2-a8ed-42e205018eed"
+  }, {
+    "condition": "$session.params.last_page = \"Call control\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Call control",
+    "name": "a9488dd4-2dcc-4fd1-96d3-4878103d09ac"
+  }, {
+    "condition": "$session.params.last_page = \"CAN US plans\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CAN US plans",
+    "name": "1efb1e14-cd0e-4134-a6e2-3e290a1536b0"
+  }, {
+    "condition": "$session.params.last_page = \"Current plan\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current plan",
+    "name": "2f9c7c95-4fcd-4432-9e15-d6bbcbb47f7b"
+  }, {
+    "condition": "$session.params.last_page = \"Disable voicemail\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Disable voicemail",
+    "name": "ec45a350-92b3-4ec8-a88e-bd8f5c660759"
+  }, {
+    "condition": "$session.params.last_page = \"Does plan include MMS or SMS\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Does plan include MMS or SMS",
+    "name": "cea7bc79-0f3a-420c-ba7c-8f1b5bc3c177"
+  }, {
+    "condition": "$session.params.last_page = \"Increase airtime minutes\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Increase airtime minutes",
+    "name": "ad8b8d9e-9363-4574-b54c-0ad744b3ea60"
+  }, {
+    "condition": "$session.params.last_page = \"Instant voicemail\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Instant voicemail",
+    "name": "be59fbc1-9275-42f5-ba19-7c1503027dcd"
+  }, {
+    "condition": "$session.params.last_page = \"New account activation type\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New account activation type",
+    "name": "3a82198d-73e0-4a6d-aa41-202d7cd33a5b"
+  }, {
+    "condition": "$session.params.last_page = \"Outbound call display\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Outbound call display",
+    "name": "1fb3e442-032b-431c-b836-83985a6f7674"
+  }, {
+    "condition": "$session.params.last_page = \"Rate plan change\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Rate plan change",
+    "name": "a3268a1b-a757-4fdb-ae52-fff9cd8ec6d9"
+  }, {
+    "condition": "$session.params.last_page = \"Rate plan change fees\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Rate plan change fees",
+    "name": "8da2835a-0676-4ff6-992a-35171f368e77"
+  }, {
+    "condition": "$session.params.last_page = \"Regional plans PQ or SK or MB\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Regional plans PQ or SK or MB",
+    "name": "14680059-d791-49e0-8d97-a7b8d2ffedd6"
+  }, {
+    "condition": "$session.params.last_page = \"Roaming Coverage\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Roaming Coverage",
+    "name": "ec3094c6-ebf9-4e0f-a558-e2145368dd45"
+  }, {
+    "condition": "$session.params.last_page = \"Roaming coverage \\\u003e text\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Roaming Coverage text",
+    "name": "2b1ffb8a-8996-4c50-9588-365755bce63d"
+  }, {
+    "condition": "$session.params.last_page = \"Roaming support for other account types\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Roaming support for other account types ",
+    "name": "5b65fe4d-2dc0-493d-a40a-7895517fa1b8"
+  }, {
+    "condition": "$session.params.last_page = \"Toll Free Numbers\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Toll Free Numbers",
+    "name": "876a258a-08a3-4ce6-9e90-4b04b1887f6a"
+  }, {
+    "condition": "$session.params.last_page = \"Unlimited plans\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Unlimited plans",
+    "name": "710404d3-00a2-45fb-ba48-551ce6b2eb11"
+  }, {
+    "condition": "$session.params.last_page = \"Using your device abroad\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Using your device abroad",
+    "name": "8e1412bf-a872-41cc-acd0-3ac45b110d65"
+  }, {
+    "condition": "$session.params.last_page = \"Visual Voicemail\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Visual Voicemail",
+    "name": "d8775ba0-3cbe-4515-a1eb-252e59a538f9"
+  }, {
+    "condition": "$session.params.last_page = \"CAN US plans EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CAN US plans EPP",
+    "name": "de18cb4f-1187-4a22-8b8f-97d8289e89ac"
+  }, {
+    "condition": "$session.params.last_page = \"Expired plans EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Expired plans EPP",
+    "name": "4d0820f1-c020-410f-a723-27fd673376cb"
+  }, {
+    "condition": "$session.params.last_page = \"Fast Pass EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Fast Pass EPP",
+    "name": "7ac6f290-adb3-4964-9326-95b19120069d"
+  }, {
+    "condition": "$session.params.last_page = \"Multiple Line Activation EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Multiple Line Activation EPP",
+    "name": "d9d4b0a7-038c-4765-942d-d10afa6041df"
+  }, {
+    "condition": "$session.params.last_page = \"Rate plan change fees EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Rate plan change fees EPP",
+    "name": "7a92057e-2d28-4a56-817f-6e506ad202e1"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hmm I didn't quite get that. Could you tell me once more what I can help you with?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Hmm, je n'ai pas bien compris. Pouvez-vous me dire une fois de plus comment je peux vous aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "0336702e-7603-423b-bcdf-ee53f409eb77"
+  } ]
+}
