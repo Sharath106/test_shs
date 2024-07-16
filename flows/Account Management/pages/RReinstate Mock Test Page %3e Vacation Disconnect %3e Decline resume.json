@@ -1,0 +1,28 @@
+{
+  "name": "602e81c3-f963-490c-a7d1-db1dcfe3edd8",
+  "displayName": "RReinstate Mock Test Page \u003e Vacation Disconnect \u003e Decline resume",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Your service will automatically resume on the scheduled resume date." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Make sure you reboot your device for the service to work again." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "17bc34be-1139-483e-8750-7d1937adf471"
+  } ]
+}

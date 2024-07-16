@@ -1,0 +1,379 @@
+{
+  "name": "ca67f279-abe0-4318-a9dd-0dad35d05a37",
+  "displayName": "Donate your phone",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_donate_phone",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like me to send a text with more information?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text with more information?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "6d4e0a00-8bbc-4b65-9ec0-072a31142e46"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "364cd2a8-6da7-4b74-afbb-eacf7e1c7162"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "472f9fe1-7bea-4b78-8bf2-5cdb3ca430ea"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text with more information?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "35d15090-990c-43a4-b189-b30057233c07"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "36c69985-fee3-40be-80b6-f8c718b7d696"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "8643f012-f44b-4f38-955a-7aa95caa565f"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Donate your phone"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "donating your phone"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "le don de votre téléphone"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding how to donate your phone"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "Comprendre comment faire un don de votre téléphone"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on donating your device, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur notre programme Mobilité pour l'avenir, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "If you have pre-used phones or tablets, you can donate them at your local TELUS store." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "We can upcycle your device to get it into the hands of those who need it most through our Mobility for Good program, or, we’ll safely recycle it to keep it out of landfills." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez des téléphones ou des tablettes qui traînent, vous pouvez les donner à votre magasin TELUS local." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Nous pouvons recycler votre appareil pour le mettre entre les mains de ceux qui en ont le plus besoin grâce à notre programme Mobilité pour l'avenir, ou, si votre appareil est désuet, nous le recyclerons en toute sécurité." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190042"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319012T"
+      }, {
+        "parameter": "donateyourphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_donate_phone",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "5a408226-92a3-46bf-bb5e-f4c5d334c2ba"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "donateyourphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_donate_phone",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190042"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319012T"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "45f7ecf7-e101-41cd-83b9-d78749e0358b"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "donateyourphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_donate_phone",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190042"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319012T"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "af5be212-1518-4ff0-a654-48ee2c2c6c71"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190042"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319012T"
+      }, {
+        "parameter": "sms_status_flow",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "8e5e3f3b-8de2-4044-977c-bf1e01d3633e"
+  }, {
+    "condition": "$session.params.dtmf_donate_phone = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190042"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319012T"
+      }, {
+        "parameter": "donateyourphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_donate_phone",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "05df424d-31dc-4c68-bb3c-c7af7f586115"
+  }, {
+    "condition": "$session.params.dtmf_donate_phone = \"0\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "donateyourphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_donate_phone",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e0aa77eb-e95e-4865-a73f-9ab1b12d9355"
+  }, {
+    "condition": "$session.params.dtmf_donate_phone = 1 OR $session.params.dtmf_donate_phone = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_donate_phone",
+        "value": null
+      }, {
+        "parameter": "donateyourphone_retrycnt",
+        "value": "$sys.func.ADD($session.params.donateyourphone_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "943db676-772a-4621-a7c5-04e513327d4d"
+  } ]
+}

@@ -1,0 +1,126 @@
+{
+  "name": "05aaf952-91f5-4c16-a911-062a98ee8ed6",
+  "displayName": "_Account Status SNP",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Souhaitez-vous effectuer un paiement unique ?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Would you like to make a one time payment?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_Account Status SNP"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.snp_counter = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "02a44fa9-7762-48ca-827f-80cddf243802"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.snp_counter = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Souhaitez-vous prendre une entente de paiement dans ce cas?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Would you like to make a payment arrangement?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "snp_counter",
+        "value": true
+      } ]
+    },
+    "name": "6b4114ed-a87d-45c8-b68d-75d21b718548"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.snp_counter = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "600fc55a-e37a-4668-93c5-0916d1015e27"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.snp_counter = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "a47d591a-90d8-4fd1-a600-d966c0cece76"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voulez-vous effectuer un paiement unique ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you want to make a one time payment?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7b7edc65-75fb-42ad-83ef-53b295e2d56d"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Si vous souhaitez effectuer un paiement unique, dites \"oui\", sinon dites \"non\"." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "If you wish to make a one time payment, please say \"yes\", otherwise say \"no\"." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0f5e629c-91d9-4167-a3f1-6660d709b113"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "c50cb3d1-e022-4c56-bdf2-b88b2c39cb59"
+  } ]
+}

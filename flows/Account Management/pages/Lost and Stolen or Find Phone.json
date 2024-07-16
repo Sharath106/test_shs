@@ -1,0 +1,330 @@
+{
+  "name": "547262df-dfd2-44f5-9c5d-9dadc3a00419",
+  "displayName": "Lost and Stolen or Find Phone",
+  "form": {
+    "parameters": [ {
+      "displayName": "lost_phone",
+      "required": true,
+      "entityType": "@phone-or-online",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Perdre un téléphone ou un autre appareil peut certainement être une expérience stressante. La majorité des téléphones ont un service de localisation qui peut vous permettre de le retrouver. Si vous ne le retrouvez pas, je peux vous aider à suspendre vos services. " ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Aimeriez-vous procéder?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Losing a phone or device can definitely be a tough experience to go through. Most phones have Location services enabled which may allow you to find it. If you can't find your device, I can help suspend your services. " ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Would you like to go ahead and do that?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous procéder à la suspension de vos services?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to go ahead and suspend your service?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "41683044-f232-484b-84aa-4803c65e9efb"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour procéder à la suspension de vos services, dites oui, ou faites le 1. Autrement, dites non, ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To go ahead and suspend your service, say yes, or press 1. no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "8114c66e-0060-4772-b819-af19ff39e48c"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "b2358d79-88e1-4484-bb39-79d6fba2fba3"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous procéder à la suspension de vos services?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to go ahead and suspend your service?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "fcf346c5-8de3-4989-a7e8-3280ca58f618"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour procéder à la suspension de vos services, dites oui, ou faites le 1. Autrement, dites non, ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To go ahead and suspend your service, say yes, or press 1. no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "e6ba4c87-cefc-4598-8afd-0cf374fbe9bc"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "3790f8ee-540f-4537-8d94-a8c0e17799cd"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Lost and Stolen or Find Phone"
+    }, {
+      "parameter": "page_summary",
+      "value": "managing your device"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la gestion de votre appareil"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "managing your device"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "la gestion de votre appareil"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.account_activation",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      }, {
+        "parameter": "activation-vs-renew",
+        "value": "renew"
+      }, {
+        "parameter": "lost_phone",
+        "value": null
+      }, {
+        "parameter": "loststolenfindphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "cf046139-7d3c-420a-8fec-57ea21b27aa6"
+  }, {
+    "intent": "head_intent.phone_found",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "lost_phone",
+        "value": null
+      }, {
+        "parameter": "loststolenfindphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Phone Found",
+    "name": "b37b1ef6-049f-402a-beee-ab48f8125cf8"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "lost_phone",
+        "value": null
+      }, {
+        "parameter": "loststolenfindphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "handoff_type",
+        "value": "self_serve"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "1c98c594-4c79-4660-b1c5-c298f226e081"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loststolenfindphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "lost_phone",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "56455bd6-f7fa-45f8-8af8-27e9f76ef8ee"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loststolenfindphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "lost_phone",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900KT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900GW"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "3fe0e0a8-76d6-430c-a342-6ac74cb8c3f7"
+  }, {
+    "intent": "head_intent.find_my_phone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loststolenfindphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Find my phone",
+    "name": "a0814a3a-0bee-4840-82da-8cea2f226a1a"
+  }, {
+    "condition": "$session.params.lost_phone = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "lost_phone",
+        "value": null
+      }, {
+        "parameter": "loststolenfindphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "496c91c2-1d74-4734-8eaa-db02de403864"
+  }, {
+    "condition": "$session.params.lost_phone = \"phone\" OR $session.params.lost_phone = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "lost_phone",
+        "value": null
+      }, {
+        "parameter": "loststolenfindphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "handoff_type",
+        "value": "self_serve"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6b40160d-e1e1-490b-9df8-89489d3cf400"
+  }, {
+    "condition": "$session.params.lost_phone = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous amener à un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "a5807535-a848-4a28-95e7-0b2cd9eff72d"
+  }, {
+    "condition": "$session.params.lost_phone = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "lost_phone",
+        "value": null
+      }, {
+        "parameter": "loststolenfindphone_retrycnt",
+        "value": "$sys.func.ADD($session.params.loststolenfindphone_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "9a36fdb2-75a5-486c-ac02-4fa90b0fa405"
+  } ]
+}

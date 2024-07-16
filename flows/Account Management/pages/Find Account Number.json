@@ -1,0 +1,455 @@
+{
+  "name": "fd3d962a-58e1-4ab7-b40b-fe7015b3291c",
+  "displayName": "Find Account Number",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_find_account_number",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like a text on how to do that?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte sur la façon de le faire?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "8da68e51-63a6-474c-90e6-d270c416da42"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "e52f1bfa-8a53-4bd1-a11d-366f64d2a467"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "d79f7c22-9d37-475b-bad9-092ff6fca9cb"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry,  I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like a text on how to do that?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte sur la façon de le faire?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "b49ec2e4-c276-4e52-b5b0-ccd65050f7f1"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "f5d7e71a-4f1d-4f2a-bbbd-aa86f828f579"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "25dd6f85-24c0-42dc-8ddc-dbac8201b21e"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Find Account Number"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "finding your account number"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la recherche de votre numéro de compte"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "finding your account number"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "trouver votre numéro de compte"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get your account number, you must use your My TELUS account to get the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent may not be able to complete this on a customer behalf." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour obtenir votre numéro de compte, vous devez utiliser votre compte Mon TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent peut ne pas être en mesure d'aider à faire ça au nom d'un client." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can easily locate your account number through My TELUS." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez trouver votre numéro de compte dans l'application Mon TELUS ou en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findacctnum_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_find_account_number",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Find account number online or app",
+    "name": "ec59c9a9-75be-434a-8658-926ccb3c198a"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findacctnum_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_find_account_number",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900FG"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319012B"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "30a7f388-fc42-4cdb-ba33-5df5d266992b"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findacctnum_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_find_account_number",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900FG"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319012B"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "710b8d73-210e-4ec4-be22-9d98d3a1345c"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findacctnum_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Find account number online or app",
+    "name": "f44c1a4f-2efc-4157-8721-70cdd75a50ea"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900FG"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319012B"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "e07b992a-1cba-49b1-9f1a-7c7b180f8b18"
+  }, {
+    "condition": "$session.params.dtmf_find_account_number = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findacctnum_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_find_account_number",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Find account number online or app",
+    "name": "e631be95-1b61-4ede-8a86-6b03d8d17280"
+  }, {
+    "condition": "$session.params.dtmf_find_account_number = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "findacctnum_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_find_account_number",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d2b2ea1c-7d3c-4879-a9ad-cf093f14dff7"
+  }, {
+    "condition": "$session.params.findacctnum_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findacctnum_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "dfd5c1e0-f6c5-48f5-bbb7-0887a61afce9"
+  }, {
+    "condition": "$session.params.findacctnum_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findacctnum_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "bd287483-4d0f-417a-9f7e-2c38c785e6cf"
+  }, {
+    "condition": "$session.params.dtmf_find_account_number = 1 OR $session.params.dtmf_find_account_number = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_find",
+        "value": null
+      }, {
+        "parameter": "findacctnum_retrycnt",
+        "value": "$sys.func.ADD($session.params.findacctnum_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "9b3d890b-a91c-4fe6-8760-174a2606a7a2"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findacctnum_retrycnt",
+        "value": "$sys.func.ADD($session.params.findacctnum_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.findacctnum_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.findacctnum_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "8d7a41f5-60b9-4030-80c9-f33a302762db"
+  } ],
+  "transitionRouteGroups": [ "Vague intents" ]
+}

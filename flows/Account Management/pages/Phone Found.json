@@ -1,0 +1,445 @@
+{
+  "name": "f0947c07-33d1-4333-97db-2b9dfe85105e",
+  "displayName": "Phone Found",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_phone_found",
+      "required": true,
+      "entityType": "@dtmf-menu-9-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text to your phone on how you can restore your service?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec les étapes pour restaurer votre service?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "cb74bb7a-d317-4edd-ba54-f2c1d765a158"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "8e96d702-53d2-40b5-a631-fbff0928755c"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "87ec4a17-2a3c-4a6c-a896-ec329e647812"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text to your phone on how you can restore your service?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec les étapes pour restaurer votre service?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "69065ed3-94c2-4925-9cc8-ceb203ee08be"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "c8048864-ac0f-4055-a0a6-85a0e445dff2"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "3c096504-e5b0-460b-a415-024028547863"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Phone Found"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "how to resume your service after you found your phone"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la reprise de votre service après avoir retrouvé votre téléphone"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "resuming your service after you found your phone"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "rétablir votre service après avoir retrouvé votre téléphone"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on how to resume your service after you found your phone, you must use your My TELUS account, It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent cannot help perform this on a customer behalf, I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour obtenir de l'information sur  la façon de rétablir votre service après avoir retrouvé votre téléphone, vous devez utiliser le site Web de TELUS. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent n'est pas en mesure d'aider à faire ça au nom d'un client. Je vous envoie maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Glad to hear you found your phone!" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If your services were suspended, you can restore them online through self-serve. Your service will restore within 15 minutes." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ravi d'apprendre que vous avez retrouvé votre téléphone!" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si votre service a été suspendu, vous pouvez le restaurer en ligne via le libre-service. Ça ne prendra que 15 minutes afin de le restaurer." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phonefound_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_phone_found",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Phone Found online or app",
+    "name": "57d6a5c8-f185-4705-8eb0-67c512819c2c"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phonefound_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_phone_found",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900MR"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319009K"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "db0bd923-3352-4790-a405-10403e8700ab"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phonefound_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_phone_found",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900MR"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319009K"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "19072f69-8a63-4e55-bfe3-20210ad94146"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900MR"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319009K"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "0254d5ae-352f-4489-ae90-03a39d3f7a67"
+  }, {
+    "condition": "$session.params.dtmf_phone_found = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phonefound_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_phone_found",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Phone Found online or app",
+    "name": "218b3ccb-a7bb-4922-be68-828ab86a1b70"
+  }, {
+    "condition": "$session.params.dtmf_phone_found = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, demandons à quelqu'un de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "phonefound_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_phone_found",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "60cbaf8f-fe66-40c6-b94d-739a52a4e8cb"
+  }, {
+    "condition": "$session.params.phonefound_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phonefound_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "3d513c12-4dc4-4e39-880e-0877d524b6f2"
+  }, {
+    "condition": "$session.params.phonefound_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phonefound_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "0f82eb98-85f5-4273-a16c-e3196e4369f8"
+  }, {
+    "condition": "$session.params.dtmf_phone_found = 1 OR $session.params.dtmf_phone_found = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_phone_found",
+        "value": null
+      }, {
+        "parameter": "phonefound_retrycnt",
+        "value": "$sys.func.ADD($session.params.phonefound_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "92f745f3-9ebb-49fa-a2a0-7de3c1014c72"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phonefound_retrycnt",
+        "value": "$sys.func.ADD($session.params.phonefound_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.phonefound_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.phonefound_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "112bb398-949b-4094-8a7f-3f1d3b4593e2"
+  } ],
+  "transitionRouteGroups": [ "sup_route_account_management" ]
+}

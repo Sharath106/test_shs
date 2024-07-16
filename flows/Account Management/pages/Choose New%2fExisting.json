@@ -1,0 +1,178 @@
+{
+  "name": "5ff7191d-19e5-4e24-89ea-36b65897b098",
+  "displayName": "Choose New/Existing",
+  "form": {
+    "parameters": [ {
+      "displayName": "new_vs_existing_account",
+      "required": true,
+      "entityType": "@new-vs-existing-account",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "En lien avec l'activation de votre carte SIM, est-ce pour une une nouvelle ligne ou plutôt une ligne existante ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "For information on activating sim, help me understand if it's for a new line or an existing line." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c9ad5599-61c4-457f-b38b-be803d7fcb2f"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour plus d'informations, dites nouvelle ligne ou appuyez sur 1, ligne existante ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For more information, say new line or press 1, existing line or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7b510fc0-7376-4b5f-bf99-708cc13e6d25"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "4a85cae9-d1f7-409b-af1c-e08bace8b982"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "En lien avec l'activation de votre carte SIM, est-ce pour une une nouvelle ligne ou plutôt une ligne existante ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "For information on activating sim, help me understand if it's for a new line or an existing line." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "03a885b1-e652-4e5a-80eb-7a3df923b757"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour plus d'informations, dites nouvelle ligne ou appuyez sur 1, ligne existante ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For more information, say new line or press 1, existing line or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "cc766439-403c-4b0f-8601-f2b2af9ee0e2"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "cebbdabc-c4a0-43d0-8306-b4b8ba45fe87"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "S'agit-il d'une nouvelle ligne ou d'une ligne existante ?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Are you enquiring about a new line or an existing line?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "3c48c4d5-90bc-48e6-8938-da0c58750c8a"
+  }, {
+    "condition": "$session.params.new_vs_existing_account = \"1\" OR $session.params.new_vs_existing_account = \"new\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour activer une nouvelle ligne, je peux vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "For activating  a new line, I can get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Ask for Agent",
+    "name": "0b69dd41-e393-44a7-b655-eebaf9790489"
+  }, {
+    "condition": "$session.params.new_vs_existing_account = \"2\" OR $session.params.new_vs_existing_account = \"existing\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Activate SIM",
+    "name": "38daf580-4273-4d3f-8c5a-4a000f652a7f"
+  } ]
+}

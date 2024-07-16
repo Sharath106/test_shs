@@ -1,0 +1,38 @@
+{
+  "name": "452627be-8705-4108-956d-005f1467210b",
+  "displayName": "Account Status",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "To check the status of your account, let me get you to a team member to get all the information you need." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Pour vérifier l'état de votre compte, laissez-moi vous mettre en contact avec un membre de l'équipe pour obtenir toutes les informations dont vous avez besoin." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Account Status"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "checking the status of your account"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "vérifier l'état de votre compte"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "86537e69-f2f4-4295-a854-b4d468624d75"
+  } ]
+}

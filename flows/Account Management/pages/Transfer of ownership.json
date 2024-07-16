@@ -1,0 +1,477 @@
+{
+  "name": "e32aa19c-91a7-4ff4-a84c-85ef3defbde6",
+  "displayName": "Transfer of ownership",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_transfer_ownership",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur le transfert de propriété de vos services mobiles ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message with more information about transferring ownership of your mobility services to your phone?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "457877b0-1c7f-4402-998f-1cdacac7be22"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "767e6f2b-f548-4065-a329-6eb3865c2e7e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "eea96b35-2da0-41b5-b7e3-e862a405dcf6"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur le transfert de propriété de vos services mobiles ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message with more information about transferring ownership of your mobility services to your phone?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "aa9f4747-8262-449b-bb05-5b2f3a1f4ce3"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "1574eda3-ee81-4b0f-87b4-00d853578472"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "d6b1fa93-1293-4f81-85a5-96c233fac2ce"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Transfer of ownership"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    }, {
+      "parameter": "page_summary",
+      "value": "transferring ownership of mobility services"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "transfert de propriété des services de mobilité"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "transferring ownership of your mobility services"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "transférer la responsabilité de vos services mobiles"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour initier un transfert de responsabilité du compte, vous devez utiliser le site web de TELUS pour la résolution la plus rapide. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent peut ne pas être en mesure d'aider à faire ça au nom d'un client." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour vous aider à trouver comment initier le transfert de responsabilité, nous vous envoyons maintenant un lien vers le site web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To initiate the transfer or ownership process, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent may not be able to help perform this on a customer behalf." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To help you find how to start the process, we are sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour commencer le processus de transfert de responsabilité de vos services mobilité, la première étape consiste à remplir notre formulaire en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To start the process of transferring ownership of your mobility services, the first step is to fill out our online form." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "callback"
+      }, {
+        "parameter": "transferofownership_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "000B3aJBMB0Q005G"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000B3aJBMB0Q005K"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "dtmf_transfer_ownership",
+        "value": null
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "571e2912-a5c7-417a-85fd-07db48ac169f"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "transferofownership_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_transfer_ownership",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "000B3aJBMB0Q005G"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000B3aJBMB0Q005K"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "8a0c5d89-0ed5-4ada-a315-bb96fe8889dd"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transferofownership_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "000B3aJBMB0Q005G"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000B3aJBMB0Q005K"
+      }, {
+        "parameter": "dtmf_transfer_ownership",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "d88a682b-27d3-4e98-ace9-04db3df17984"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000B3aJBMB0Q005G"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000B3aJBMB0Q005K"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "transferofownership_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "913fa076-5334-40cb-b910-b2ac4c7591fd"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000B3aJBMB0Q005G"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000B3aJBMB0Q005K"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "54a793a6-95aa-4770-8c90-c9f078626e8f"
+  }, {
+    "condition": "$session.params.dtmf_transfer_ownership = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "transferofownership_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_transfer_ownership",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "304527a5-d980-4f43-9ef4-2def4a52c0d9"
+  }, {
+    "condition": "$session.params.dtmf_transfer_ownership = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000B3aJBMB0Q005G"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000B3aJBMB0Q005K"
+      }, {
+        "parameter": "transferofownership_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_transfer_ownership",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "9f1a1c0f-6e5b-4c23-b3a1-dcbba7449fc1"
+  }, {
+    "condition": "$session.params.transferofownership_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transferofownership_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "d8a967de-e1e8-4691-bb2b-3dfe502bf077"
+  }, {
+    "condition": "$session.params.transferofownership_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transferofownership_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "651c0c09-46d2-410a-a0f6-ed543908980f"
+  }, {
+    "condition": "$session.params.dtmf_transfer_ownership = 1 OR $session.params.dtmf_transfer_ownership = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_transfer_ownership",
+        "value": null
+      }, {
+        "parameter": "transferofownership_retrycnt",
+        "value": "$sys.func.ADD($session.params.transferofownership_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "f05e282d-ca27-4ad2-a871-916e1b3846be"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transferofownership_retrycnt",
+        "value": "$sys.func.ADD($session.params.transferofownership_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.transferofownership_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.transferofownership_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "cad245d2-6f0b-4948-b9ca-fe122fba73a4"
+  } ]
+}

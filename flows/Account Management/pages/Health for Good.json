@@ -1,0 +1,447 @@
+{
+  "name": "5bb60f97-192a-435a-89f1-62b6de828ad6",
+  "displayName": "Health for Good",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_health_for_good",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry,  I didn't understand that.", "Sorry I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like a text with more information on our health for good program?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations? sur le programme TELUS Santé pour l'avenir?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "013a3cbe-a36c-49d2-b615-82b4ad53178f"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ec7f0e0f-7c6d-4167-b251-94abe32919df"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "c6a857d0-b8e3-4083-b483-5a5caff8334c"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry I didn't understand that.", "I'm sorry,  I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like a text with more information on our health for good program?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations? sur le programme TELUS Santé pour l'avenir?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "bafa36be-b9c2-4a4e-a65c-536a2ddcd5f5"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "c2e56c22-43f6-4d2f-885c-3c64d9880438"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "5668dc20-406d-4ecd-a147-b313b20b6055"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Health for Good"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "our TELUS Health for Good program"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "notre programme TELUS Santé"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "reviewing our TELUS Health for Good program"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "réviser notre du programme TELUS Santé pour l'avenir"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on our health for good program, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur le programme TELUS Santé pour l'avenir, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Our Health for Good program has Mobile Health Clinics in 13 communities across Canada." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "They help bring care to our streets, and supporting those who need it most." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Notre programme TELUS Santé pour l'avenir propose des cliniques de santé mobiles dans 13 communautés à travers le Canada." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ils apportent des soins empreints de compassion dans nos rues et soutiennent ceux qui en ont le plus besoin." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900JS"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900H3"
+      }, {
+        "parameter": "healthforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_health_for_good",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "e5457cd0-cf31-4f41-8731-c63530b8737b"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "healthforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_health_for_good",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900JS"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900H3"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "bd8a9b7c-51e7-4f01-9e19-6974837d07ba"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "healthforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_health_for_good",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900JS"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900H3"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "12cc30ca-4e45-4a2a-a9a7-64998e98a69e"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900JS"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900H3"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "07e7b110-30e1-4fac-b1e8-799f98191fe0"
+  }, {
+    "condition": "$session.params.dtmf_health_for_good = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "healthforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_health_for_good",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9bde2009-57c7-49e1-a0e1-8bfac3bf0034"
+  }, {
+    "condition": "$session.params.dtmf_health_for_good = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900JS"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900H3"
+      }, {
+        "parameter": "healthforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_health_for_good",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "4564a4f5-c4f1-4264-a369-3e9a9d2d62da"
+  }, {
+    "condition": "$session.params.healthforgood_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "healthforgood_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "b31f9ab4-0efd-49f2-ac69-6c7317e7d9d5"
+  }, {
+    "condition": "$session.params.healthforgood_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "healthforgood_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "501e2e5d-8fa2-4052-82d6-218c88c47d86"
+  }, {
+    "condition": "$session.params.dtmf_health_for_good = 1 OR $session.params.dtmf_health_for_good = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_health_for_good",
+        "value": null
+      }, {
+        "parameter": "healthforgood_retrycnt",
+        "value": "$sys.func.ADD($session.params.$session.params.healthforgood_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "377b8e07-c5a9-4d93-98fd-328c5c14b481"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "healthforgood_retrycnt",
+        "value": "$sys.func.ADD($session.params.healthforgood_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.healthforgood_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.healthforgood_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "7ede1f62-6df0-4a7b-8337-bb498734203a"
+  } ]
+}

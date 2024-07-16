@@ -1,0 +1,547 @@
+{
+  "name": "84ce5a93-c0cc-4cd7-858b-ad713cb59f39",
+  "displayName": "Secure Account",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_secureaccount",
+      "required": true,
+      "entityType": "@dtmf-menu-9-1",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un message texte avec plus d'informations sur la sécurité du compte?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text to your phone with more information about account security?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b36a53ba-5a9a-4a14-9d7f-6f7a226704d3"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir des instructions par message texte, dites oui ou faites le 9. Membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "3d03465e-d5f5-4f02-8f66-ecb54f59226e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "9efb02e4-1701-4349-9851-8fbdb683bc2e"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un message texte avec plus d'informations sur la sécurité du compte?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text to your phone with more information about account security?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "07b4bf98-56f4-485c-9701-554cfa03d91f"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir des instructions par message texte, dites oui ou faites le 9. Membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7afc6d80-5b3c-4832-95ae-36f19c9632c4"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "991f88d7-f499-4b23-a2f9-1b3ada965bca"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Secure Account"
+    }, {
+      "parameter": "page_summary",
+      "value": "how to protect yourself from fraud"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la protection contre la fraude"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding how to protect from fraud"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "comprendre comment vous protéger contre la fraude"
+    }, {
+      "parameter": "sms_ask",
+      "value": "1"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur comment vous protéger contre la fraude, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To get information on how to protect yourself from fraud, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "TELUS propose des mesures de sécurité telles que des alertes de sécurité, l'authentification à deux facteurs et d'autres ressources pour aider les clients à sécuriser leurs comptes." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS provides securty measures like,, security alerts,, two-factor authentication,, and other resources to help customers secure their accounts." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319010F"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900U7"
+      }, {
+        "parameter": "secureaccount_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_secureaccount",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "8674e752-d43e-4558-8a4a-a661cf8eb8ee"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "secureaccount_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_secureaccount",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319010F"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900U7"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "563d6d66-e714-46c7-9831-dc40166749df"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.sms_ask = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Nous accordons la priorité à la sécurité des comptes de nos clients. Nous avons mis en place diverses mesures pour assurer la sécurité et la protection de votre compte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je peux vous envoyer un message texte avec ces informations maintenant ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "We prioritize the security of our customers accounts. We have implemented various measures to ensure the safety and protection of your account." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like me to send a text message with that information?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "secureaccount_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_secureaccount",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319010F"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900U7"
+      }, {
+        "parameter": "sms_ask",
+        "value": "2"
+      } ]
+    },
+    "name": "de87d54b-8aaf-42df-b40d-05b6b00b2d8f"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.sms_ask = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_ask",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "6b809015-3b69-461b-89af-f6d3eeeb3a86"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.sms_ask = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Nous accordons la priorité à la sécurité des comptes de nos clients. Nous avons mis en place diverses mesures pour assurer la sécurité et la protection de votre compte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je peux vous envoyer un message texte avec ces informations maintenant ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "We prioritize the security of our customers accounts. We have implemented various measures to ensure the safety and protection of your account." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Would you like me to send a text message with that information?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "secureaccount_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_secureaccount",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319010F"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900U7"
+      }, {
+        "parameter": "sms_ask",
+        "value": "2"
+      } ]
+    },
+    "name": "289761c6-589e-47e7-b4cb-17598038639f"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.sms_ask = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay, let me get a team member to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_ask",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "8b88774f-752a-478d-bfaa-9a2d96eba7bc"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319010F"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900U7"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "a5af88df-a4ee-4950-af41-d6ae17e87b5a"
+  }, {
+    "condition": "$session.params.dtmf_secureaccount = \"9\" OR $session.params.dtmf_secureaccount = \"sms\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319010F"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900U7"
+      }, {
+        "parameter": "secureaccount_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_secureaccount",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "00ab0548-ee0d-4464-b544-d579a2e88f75"
+  }, {
+    "condition": "$session.params.dtmf_secureaccount = \"0\" OR $session.params.dtmf_secureaccount = \"agent\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi trouver un membre de l'équipe pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay, let me get a team member to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "secureaccount_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_secureaccount",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d1115748-4f7c-4178-8852-8a0d2de41434"
+  }, {
+    "condition": "$session.params.secureaccount_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "secureaccount_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "0135de3e-13bf-4574-8e5a-fdd6ddda819e"
+  }, {
+    "condition": "$session.params.secureaccount_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "secureaccount_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "dc7d5c9c-b14b-483d-8313-bbaae7d0c600"
+  }, {
+    "condition": "$session.params.dtmf_secureaccount = 1 OR $session.params.dtmf_secureaccount = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_secureaccount",
+        "value": null
+      }, {
+        "parameter": "secureaccount_retrycnt",
+        "value": "$sys.func.ADD($session.params.secureaccount_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "368d906a-14b7-4e7d-a2c8-470771a7c46a"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "secureaccount_retrycnt",
+        "value": "$sys.func.ADD($session.params.secureaccount_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.secureaccount_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.secureaccount_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "06c91a75-931f-47df-97e5-fc231b9f18f9"
+  } ]
+}

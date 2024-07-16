@@ -1,0 +1,35 @@
+{
+  "name": "0d6c2421-4e24-419b-a3a6-1c4a5a2333be",
+  "displayName": "Change PIN attempt 2",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Une fois connecté à votre compte Telus, accédez à Mon profil, puis choisissez Réinitialiser le NIP. Suivez les instructions à l'écran." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Once you log into your Telus account, navigate to \"My Profile,\" then choose Reset PIN . Follow the on-screen prompts." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Change PIN attempt two"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "5d26c999-f8c6-46d5-9b4b-fe6bd99c3f35"
+  } ]
+}

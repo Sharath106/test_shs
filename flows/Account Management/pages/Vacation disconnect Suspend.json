@@ -1,0 +1,434 @@
+{
+  "name": "c2f54075-b8d8-49dd-9470-705751fb94fc",
+  "displayName": "Vacation disconnect Suspend",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_vacation_disconnect_suspend",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand that.", "Sorry I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message to your phone with more information about vacation suspension?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que je vous envoie un message texte avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "dfd7b2d0-3804-446c-952c-fec043556a96"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "be387efe-0c7e-4757-a03e-72649270be51"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "72261518-ddf7-45f9-8544-c2ee29f54475"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm Sorry, I didn't understand that.", "Sorry I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message to your phone with more information about vacation suspension?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que je vous envoie un message texte avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "36873a5f-dafc-4813-8e51-50ff415d5b01"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "866ce31e-54e2-42b2-8313-2e4d29b3b840"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "afa9adea-ef66-4514-8f5d-2a3e712e7822"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Vacation disconnect Suspend"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "vacation suspension"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la suspension des vacances"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "vacation suspension"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "réviser nos options sur la suspension des vacances"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on a vacation suspension, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur la suspension des vacances, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "The best way to get started in setting your account up for vacation suspension is online through your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "La meilleure façon de commencer à configurer votre compte pour la suspension des vacances est en ligne via votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "vacation_disconnect_suspend_dtmf",
+        "value": null
+      }, {
+        "parameter": "vacationdisconnectsuspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "000A0aHT5CEW01CN"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000A0aHT5CEW01CT"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "7d3d5aa0-a8bb-443a-8331-34323dca1d38"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "vacationdisconnectsuspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_vacation_disconnect_suspend",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "000A0aHT5CEW01CN"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000A0aHT5CEW01CT"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "c2c0bcda-f573-4e54-8e74-6de08e2cf17e"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "vacationdisconnectsuspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_vacation_disconnect_suspend",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "000A0aHT5CEW01CN"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000A0aHT5CEW01CT"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "a752cebd-97de-4c9b-9560-f2b7a9911f0b"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000A0aHT5CEW01CN"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000A0aHT5CEW01CT"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "9b549228-b6c1-444c-9d20-c6b9e5eaabef"
+  }, {
+    "condition": "$session.params.dtmf_vacation_disconnect_suspend = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "vacationdisconnectsuspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_vacation_disconnect_suspend",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "42f177c5-c758-4acf-a301-905139c1a07d"
+  }, {
+    "condition": "$session.params.dtmf_vacation_disconnect_suspend = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000A0aHT5CEW01CN"
+      }, {
+        "parameter": "vacationdisconnectsuspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000A0aHT5CEW01CT"
+      }, {
+        "parameter": "dtmf_vacation_disconnect_suspend",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "cbb69ebb-deb3-43c5-b8a3-b817096f93ce"
+  }, {
+    "condition": "$session.params.vacationdisconnectsuspend_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "vacationdisconnectsuspend_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "77f46ffb-b717-4933-b22f-0c5dcb4990e0"
+  }, {
+    "condition": "$session.params.vacationdisconnectsuspend_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "vacationdisconnectsuspend_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "69184077-4b1b-4726-b6c0-b26f00a7380b"
+  }, {
+    "condition": "$session.params.dtmf_vacation_disconnect_suspend = 1 OR $session.params.dtmf_vacation_disconnect_suspend = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_vacation_disconnect_suspend",
+        "value": null
+      }, {
+        "parameter": "vacationdisconnectsuspend_retrycnt",
+        "value": "$sys.func.ADD($session.params.vacationdisconnectsuspend_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "a20d9b23-8139-4cd1-b255-7467f2a65f43"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "vacationdisconnectsuspend_retrycnt",
+        "value": "$sys.func.ADD($session.params.vacationdisconnectsuspend_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.vacationdisconnectsuspend_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.vacationdisconnectsuspend_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "812249b3-d5bd-46d9-8d56-bde296bb178d"
+  } ]
+}

@@ -1,0 +1,557 @@
+{
+  "name": "42095592-5445-4290-87ae-8399b2ab2b3c",
+  "displayName": "Repeat",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.repeat_counter = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": 0
+      } ]
+    },
+    "name": "6ef0e7f0-4e6e-43a6-af2c-7e895ad00f10"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e= 0",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "repeat_counter",
+        "value": "$sys.func.ADD($session.params.repeat_counter,1)"
+      } ]
+    },
+    "name": "942e7b10-7736-407e-8441-5f5fa59f076d"
+  }, {
+    "condition": "$session.params.repeat_counter \u003e 5",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For further assistance, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je peux vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "a33ee71a-c427-4977-9c49-ef9fef0fed9a"
+  }, {
+    "condition": "$session.params.last_page = \"Accessibility\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Accessibility",
+    "name": "8b1fcc18-66fe-4393-85b7-d6259cfcde93"
+  }, {
+    "condition": "$session.params.last_page = \"Android device manager\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Android device manager",
+    "name": "05f47a71-bb73-48c3-b577-ebb3cda0ca67"
+  }, {
+    "condition": "$session.params.last_page = \"Change Account type\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Account type",
+    "name": "e95acc44-3336-4e77-83d8-b917ba8f2e1b"
+  }, {
+    "condition": "$session.params.last_page = \"Data limits\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data Limits",
+    "name": "c21b0590-d80c-40fd-9820-ad806f097cfc"
+  }, {
+    "condition": "$session.params.last_page = \"Data Notifications\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data Notifications",
+    "name": "8943b0a2-f0f3-4e16-aa17-9d50724ec4c7"
+  }, {
+    "condition": "$session.params.last_page = \"Do not call list\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Do not call list",
+    "name": "9c2da354-024b-475f-9694-7f21d2d8e4aa"
+  }, {
+    "condition": "$session.params.last_page = \"Find my iphone\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Find my iphone",
+    "name": "916dca34-277b-4113-a6f2-6c0f0b96ab4f"
+  }, {
+    "condition": "$session.params.last_page = \"Lost and Stolen or Find Phone\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Lost and Stolen or Find Phone",
+    "name": "73674b6e-e3d8-4ece-820f-dd1ca9ce2de0"
+  }, {
+    "condition": "$session.params.last_page = \"Referral program EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Referral program EPP",
+    "name": "da85cf6b-69f4-437a-85f4-06b16dcfc7af"
+  }, {
+    "condition": "$session.params.last_page = \"Reinstate Service\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Reinstate Service",
+    "name": "f7556952-12b2-47c2-a5ca-086e106d4584"
+  }, {
+    "condition": "$session.params.last_page = \"Security Fraud\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Security Fraud",
+    "name": "ae564103-f74d-4e5f-89c4-8a3fb09d3c2f"
+  }, {
+    "condition": "$session.params.last_page = \"TELUS Rewards EPP\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Rewards EPP",
+    "name": "60e49556-2925-44d5-8193-ede3fbdde5ec"
+  }, {
+    "condition": "$session.params.last_page = \"2factorauthentication\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "2 Factor Authentication",
+    "name": "4f0950cd-52a9-40c4-8cc9-bcba58f2d9ea"
+  }, {
+    "condition": "$session.params.last_page = \"2 Factor Authentication online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "2 Factor Authentication online or app",
+    "name": "99529849-ef05-4593-8f36-38bd6f5bf0ad"
+  }, {
+    "condition": "$session.params.last_page = \"Account name change\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Account name change",
+    "name": "2d97bbe2-b654-44a3-9254-1bea2562561b"
+  }, {
+    "condition": "$session.params.last_page = \"Account Status\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Account Status",
+    "name": "211479ac-e7a7-4174-b612-7c3711b213c9"
+  }, {
+    "condition": "$session.params.last_page = \"Account update info\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Account update info",
+    "name": "e904f60e-f055-4324-85dd-b92d223d4d5d"
+  }, {
+    "condition": "$session.params.last_page = \"Activate SIM\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Activate SIM",
+    "name": "a9756e8e-7cf2-4fd8-bdcc-4b972af98945"
+  }, {
+    "condition": "$session.params.last_page = \"Activate Sim online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Activate Sim online or app",
+    "name": "adf9f30d-4c0d-4d9c-ac7d-ff33f0a95e4c"
+  }, {
+    "condition": "$session.params.last_page = \"Alert Ready\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Alert Ready",
+    "name": "5632ebe4-7a4a-44bb-93fe-d1e050b25e73"
+  }, {
+    "condition": "$session.params.last_page = \"Calls from TELUS\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Calls from TELUS",
+    "name": "b643f0eb-f5dc-44c4-9e8d-779f0369a035"
+  }, {
+    "condition": "$session.params.last_page = \"Cannot Renew Contract\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cannot Renew Contract",
+    "name": "592267e4-8243-45ee-926b-de2b53ed95cb"
+  }, {
+    "condition": "$session.params.last_page = \"Change Bill Address\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Bill Address",
+    "name": "cbcc3b7c-f95e-4b48-8d88-2fe559ce6b96"
+  }, {
+    "condition": "$session.params.last_page = \"Change Bill Address online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Bill Address online or app",
+    "name": "0f305eaa-e797-4805-83cf-565b5a0841a9"
+  }, {
+    "condition": "$session.params.last_page = \"Change Email Address\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Email Address",
+    "name": "d4cf6ea7-ddbe-4be1-8d47-3912bf898561"
+  }, {
+    "condition": "$session.params.last_page = \"Change Email Address online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Email Address online or app",
+    "name": "b763458c-e4d3-42f3-8efc-fb7ca98f1ed8"
+  }, {
+    "condition": "$session.params.last_page = \"Change Phone Number\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Phone Number",
+    "name": "e3dcf61a-8087-4ead-b55f-041d94518455"
+  }, {
+    "condition": "$session.params.last_page = \"Change Phone Number SMS\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Phone Number SMS",
+    "name": "21eb2607-6d85-4c10-b383-90065ff7664c"
+  }, {
+    "condition": "$session.params.last_page = \"Change PIN\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change PIN",
+    "name": "62c1f256-6a1c-4a10-bb62-42754823ce91"
+  }, {
+    "condition": "$session.params.last_page = \"Change Security Question\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Security Question",
+    "name": "d849409f-36ad-42bb-80bb-07f0b04dcfe2"
+  }, {
+    "condition": "$session.params.last_page = \"Chinese support\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Chinese support",
+    "name": "9605c396-d44c-4f99-a57f-124f231ad3ea"
+  }, {
+    "condition": "$session.params.last_page = \"Consumer Health Product\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Consumer Health Product",
+    "name": "a18431b5-d480-445e-9d4c-a140f32a6c1f"
+  }, {
+    "condition": "$session.params.last_page = \"Data Limits online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data Limits online or app",
+    "name": "130e85c7-d5de-40fa-9e5c-c26b427a2617"
+  }, {
+    "condition": "$session.params.last_page = \"Deceased customer\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Deceased customer",
+    "name": "02bf4db4-6092-4db5-9fe1-7617416ff928"
+  }, {
+    "condition": "$session.params.last_page = \"Donate your phone\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Donate your phone",
+    "name": "51b9ba95-6300-4638-8622-ace7ef58fe2d"
+  }, {
+    "condition": "$session.params.last_page = \"Enable or disable data\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Enable or disable data",
+    "name": "cf3832e6-31ce-4cc8-a9bf-04c7880fff50"
+  }, {
+    "condition": "$session.params.last_page = \"Enable or disable data online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Enable or disable data online or app",
+    "name": "5955de08-c51b-4693-a0b2-41b021a89780"
+  }, {
+    "condition": "$session.params.last_page = \"Cognitive Solutions\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cognitive Solutions",
+    "name": "90771311-a799-445d-8ead-12f5cdaf039d"
+  }, {
+    "condition": "$session.params.last_page = \"Escalations\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Escalations",
+    "name": "4750a326-6272-47e2-a184-e89de58b9acb"
+  }, {
+    "condition": "$session.params.last_page = \"find account number\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Find Account Number",
+    "name": "e7f32e61-e864-42f1-a7d4-290630236035"
+  }, {
+    "condition": "$session.params.last_page = \"Find account number online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Find account number online or app",
+    "name": "09ff023f-9c3d-44cd-b834-8832f783e38c"
+  }, {
+    "condition": "$session.params.last_page = \"Find my phone\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Find my phone",
+    "name": "8de8d821-c9d4-4961-baf5-a2651ca5db7f"
+  }, {
+    "condition": "$session.params.last_page = \"Forgot PIN\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Forgot PIN",
+    "name": "b3512740-e3d1-4502-8f1f-f4c8fdb777ad"
+  }, {
+    "condition": "$session.params.last_page = \"Health for Good\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Health for Good",
+    "name": "f41c2a1a-98b8-432f-94e2-ff033e94e472"
+  }, {
+    "condition": "$session.params.last_page = \"hearing impaired\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Hearing impaired",
+    "name": "5d0deb7d-a9cb-41ab-abb4-ee3f73d76edc"
+  }, {
+    "condition": "$session.params.last_page = \"Internet for Good\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Internet for Good",
+    "name": "3951e7cb-92e1-4e18-8e45-4378b5161d90"
+  }, {
+    "condition": "$session.params.last_page = \"Lost and Stolen or Find Phone online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Lost and Stolen or Find Phone online or app",
+    "name": "76c72f7f-871d-41a5-bbd7-3dc9107defaa"
+  }, {
+    "condition": "$session.params.last_page = \"Marketing\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Marketing",
+    "name": "c9f5b9c1-48a7-4852-a250-dda50b559b7e"
+  }, {
+    "condition": "$session.params.last_page = \"Mobility for Good\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Mobility for Good",
+    "name": "88948e79-77dc-40a9-ad8a-9d7459df5cee"
+  }, {
+    "condition": "$session.params.last_page = \"Notifications\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Notifications",
+    "name": "387e8a30-2f0e-4159-84a1-a699156593f1"
+  }, {
+    "condition": "$session.params.last_page = \"Out of scope Corp\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Out of scope Corp",
+    "name": "ce2da7dc-5ef5-4f61-8498-d25c74caa3c9"
+  }, {
+    "condition": "$session.params.last_page = \"Phone Found\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Phone Found",
+    "name": "979908d2-3d2e-496f-969e-e54f02a73c09"
+  }, {
+    "condition": "$session.params.last_page = \"Phone Found online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Phone Found online or app",
+    "name": "19ed0f7c-a7eb-4d5e-8410-ec43ffabb773"
+  }, {
+    "condition": "$session.params.last_page = \"Privacy Request Center\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Privacy Request Center",
+    "name": "38bc51ae-4028-42d3-8266-1819de92a4e2"
+  }, {
+    "condition": "$session.params.last_page = \"Referral Program\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Referral Program",
+    "name": "36473322-d295-4c6f-9ce5-1ac4779e0667"
+  }, {
+    "condition": "$session.params.last_page = \"Suspend\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Suspend",
+    "name": "58b26452-d107-4d82-bf03-9a9114173812"
+  }, {
+    "condition": "$session.params.last_page = \"Suspend Account\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Suspend Account",
+    "name": "af07314d-0f2b-4a2f-a73a-ba319d3db031"
+  }, {
+    "condition": "$session.params.last_page = \"TELUS EverSafe\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS EverSafe",
+    "name": "4f22c23c-356a-4320-ba4f-5d367df96803"
+  }, {
+    "condition": "$session.params.last_page = \"TELUS Future Friendly foundation\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Future Friendly foundation",
+    "name": "af56cd59-a35a-4fb1-961b-d552152bc3e5"
+  }, {
+    "condition": "$session.params.last_page = \"TELUS Giving Back\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Giving Back",
+    "name": "89a3e383-af31-4b2d-b3c5-0119f498842c"
+  }, {
+    "condition": "$session.params.last_page = \"TELUS Rewards\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Rewards ",
+    "name": "86691197-dbbf-46c4-87b1-5e9d1b5ba674"
+  }, {
+    "condition": "$session.params.last_page = \"TELUS Rewards online or app\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Rewards online or app",
+    "name": "0f13a1d3-97d6-4e86-ae9f-f2dfd3f536bb"
+  }, {
+    "condition": "$session.params.last_page = \"TELUS Social Impact\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Social Impact",
+    "name": "b90c8d2f-7991-4c43-8eaa-20cbe2e03c24"
+  }, {
+    "condition": "$session.params.last_page = \"Timing of account changes\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Timing of account changes",
+    "name": "7d70717c-6bc3-47f8-8bd3-cd9e9d11bb64"
+  }, {
+    "condition": "$session.params.last_page = \"Transfer of ownership\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Transfer of ownership",
+    "name": "dbe14132-df92-465b-bf26-fe89a38530b4"
+  }, {
+    "condition": "$session.params.last_page = \"Vacation disconnect Suspend\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Vacation disconnect Suspend",
+    "name": "04a7a34b-8f66-413c-b21e-434cdd48f9e7"
+  }, {
+    "condition": "$session.params.last_page = \"vision impaired\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Vision Impaired",
+    "name": "a34329d8-4e7c-4df8-ab4b-80f7c05d7f78"
+  }, {
+    "condition": "$session.params.last_page = \"Why 2 account numbers\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Why 2 account numbers",
+    "name": "b6e3e4a1-a4d9-4c8d-870d-2eb2df6b8c62"
+  }, {
+    "condition": "$session.params.last_page = \"Change address Error\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Address Error",
+    "name": "3f051f14-e984-4bf5-8f6a-183481ddd22b"
+  }, {
+    "condition": "$session.params.last_page = \"touTV extra package\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "touTV extra package",
+    "name": "80d92ba0-9c80-4696-b551-1d4b63f9a870"
+  }, {
+    "condition": "$session.params.last_page = \"Secure Account\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Secure Account",
+    "name": "f6dabf68-89ec-4665-9797-23cbef78d88f"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hmm I didn't quite get that. Could you tell me once more what I can help you with?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Hmm, je n'ai pas bien compris. Pouvez-vous me dire une fois de plus comment je peux vous aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "4b334096-7617-4a51-8f98-a98e25f0d5e8"
+  } ]
+}

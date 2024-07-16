@@ -1,0 +1,441 @@
+{
+  "name": "5dad5f4f-812d-48ac-bf25-dbe4d101041f",
+  "displayName": "TELUS Rewards ",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_telus_rewards",
+      "required": true,
+      "entityType": "@dtmf-menu-9-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message to your phone with more information about TELUS Rewards?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous recevoir un lien sur votre téléphone avec plus d'informations sur les Récompenses TELUS?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "77f8a139-4848-4588-abf1-660ff9b8a92e"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "f308f597-5bfb-48a9-95d4-c48f3b0a91f0"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "aef19b28-d96a-443a-b5ae-5f5cfc4c00d1"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry,  I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message to your phone with more information about TELUS Rewards?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi.", "Désolé, je n'ai pas tout à fait compris.", "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous recevoir un lien sur votre téléphone avec plus d'informations sur les Récompenses TELUS?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "66846595-9c14-41f8-95ed-616e7516c953"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "967bc670-d042-463d-90c2-097e3860985a"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "a594e860-a10e-4fc7-ae80-33eee669330a"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "TELUS Rewards"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "our TELUS Rewards program"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "notre programme Récompenses TELUS"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "our TELUS Rewards program"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "réclamer et visionner vos récompenses TELUS"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on our TELUS Rewards program, you must use your My TELUS account, It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent cannot help perform this on a customer behalf, I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour obtenir de l'information sur les Récompenses TELUS, vous devez utiliser votre compte Mon TELUS. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent n'est pas en mesure d'aider à faire ça au nom d'un client. Je vous envoie maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "TELUS Rewards is a free program, that allows you to earn points for the TELUS bills you're already paying." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can redeem your TELUS Rewards through the My TELUS app." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Les Récompenses TELUS vous permettent d'accumuler des points pour vos factures TELUS que vous payez déjà." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez réclamer vos récompenses TELUS via l'application Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.telus_rewards",
+    "triggerFulfillment": {
+    
+    },
+    "name": "fa0c3156-3896-43c0-a48a-56771dee4a85"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rewards_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_rewards",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "TELUS Rewards online or app",
+    "name": "ace202a0-0b5e-45ee-be83-bb37b5b1f388"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rewards_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_rewards",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900CY"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900M9"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "b08dd30c-708e-495e-9a5d-2258ff14298e"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rewards_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_rewards",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900CY"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900M9"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "c48c3ab6-7dea-4960-95af-10314ffa70a4"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900CY"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900M9"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "118beb5d-cc21-484c-8c08-af94516d16d0"
+  }, {
+    "condition": "$session.params.dtmf_telus_rewards = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rewards_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_rewards",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "TELUS Rewards online or app",
+    "name": "01d9d924-935f-462f-a6aa-30ff3759263c"
+  }, {
+    "condition": "$session.params.dtmf_telus_rewards = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "rewards_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_rewards",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "a4f1c13a-d062-4c28-a980-14af355b700e"
+  }, {
+    "condition": "$session.params.rewards_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rewards_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "9343375e-1d46-4b94-a940-7b2302ee3706"
+  }, {
+    "condition": "$session.params.rewards_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rewards_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "612424df-7b0e-42c6-ab0b-5aafab978275"
+  }, {
+    "condition": "$session.params.dtmf_telus_rewards = 1 OR $session.params.dtmf_telus_rewards = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_telus_rewards",
+        "value": null
+      }, {
+        "parameter": "rewards_retrycnt",
+        "value": "$sys.func.ADD($session.params.rewards_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "0eb6b9ab-34bd-486c-957b-e7b53730b8a5"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "rewards_retrycnt",
+        "value": "$sys.func.ADD($session.params.rewards_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.rewards_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.rewards_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "72e184aa-96a0-4458-a18e-a07aa2a78544"
+  } ]
+}

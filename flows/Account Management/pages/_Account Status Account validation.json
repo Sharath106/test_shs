@@ -1,0 +1,555 @@
+{
+  "name": "f20bc801-3739-4b88-8e4b-ea0a562fa5a0",
+  "displayName": "_Account Status Account validation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Rate Plan Change",
+    "tag": "rate_plan_change_initial",
+    "setParameterActions": [ {
+      "parameter": "ban",
+      "value": "$session.params.subscriber_info[0].ban"
+    }, {
+      "parameter": "last_page",
+      "value": "_Account Status Account validation"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.subscriber_info[0].sub_status = null AND $session.params.invalid_number_counter = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Cela ne ressemble toujours pas à un numéro de téléphone associé à votre compte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un agent pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "This still doesn't look like a phone number that's associated to your account." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me get you to an agent for more assistance." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "1dbd3072-8d5b-423f-9c0d-dfde6fb90e2e"
+  }, {
+    "condition": "$session.params.subscriber_info[0].sub_status = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Il semble que ce numéro ne soit pas associé à votre profil ou ne soit plus actif sur ce profil." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous demandez un numéro de téléphone d'un autre profil, veuillez vous déconnecter et réessayer." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "It looks like this number is not associated to your profile or no longer active on this profile. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you're inquiring about a phone number from another profile, please log out and try again." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "phone_number",
+        "value": null
+      }, {
+        "parameter": "invalid_number_counter",
+        "value": "1"
+      }, {
+        "parameter": "phone_number_counter",
+        "value": null
+      }, {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": null
+      } ]
+    },
+    "targetPage": "_Account Status Start",
+    "name": "f1cc8759-365a-45b0-8ab2-71c39cc2985a"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.api_delay = \"false\" AND $session.params.error_retry != \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "⏳ Veuillez patientez, je continue de recueillir vos informations." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "⏳ Please wait, I am still working on your request." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": "1"
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "1b7d7120-7dd9-49c1-a0de-9a26ebc7d962"
+  }, {
+    "condition": "($session.params.error_code != null AND $session.params.error_retry = \"1\") OR ($session.params.api_delay = \"true\" AND $session.params.error_code != null)",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, une erreur semble s'être produite." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      }, {
+        "parameter": "error_retry",
+        "value": null
+      }, {
+        "parameter": "api_delay",
+        "value": null
+      }, {
+        "parameter": "error_full_response",
+        "value": null
+      }, {
+        "parameter": "error_api_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Account Status",
+    "name": "398648d2-bf2b-4ea6-8b58-4a176d3de5fb"
+  }, {
+    "condition": "$session.params.subscriber_info[0].roleTxt != \"Account Owner\" AND $session.params.subscriber_info[0].roleTxt != \"Account Manager\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Afin de vérifier l'état du compte, vous devez demander au propriétaire ou au responsable du compte de se connecter." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "In order to check the status of the account, you will need to have ask the account owner or manager to sign in." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "42cabcdd-8cd4-4546-9fde-8bdb6fa6b45a"
+  }, {
+    "condition": "$session.params.subscriber_info[0].accountTypeCd = \"B\"",
+    "triggerFulfillment": {
+    
+    },
+    "name": "e541222d-4099-4010-8e72-c1ec32782286"
+  }, {
+    "condition": "$session.params.subscriber_info[0].accountTypeCd = \"C\" AND $session.params.subscriber_info[0].accountSubTypeCd != \"I\" AND $session.params.subscriber_info[0].accountSubTypeCd != \"E\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Out of scope Corp",
+    "name": "d94bb2ae-13cf-4af8-868f-4d215099fb14"
+  }, {
+    "condition": "$session.params.subscriber_info[0].accountTypeCd = \"I\" AND ($session.params.subscriber_info[0].accountSubTypeCd = \"B\" OR $session.params.subscriber_info[0].accountSubTypeCd = \"Q\" OR $session.params.subscriber_info[0].accountSubTypeCd = \"Y\")",
+    "triggerFulfillment": {
+    
+    },
+    "name": "0675201c-2f5b-4d9e-8c2a-7d8e5aa49904"
+  }, {
+    "condition": "($session.params.subscriber_info[0].ban_status = \"S\" AND $session.params.suspend_reason = \"VADR\") OR ($session.params.subscriber_info[0].ban_status = \"S\" AND $session.params.suspend_reason = \"CVAD\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transaction",
+        "value": "account status"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.account_status = \"cancelled\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte n'est pas présentement annulé, il est en **suspension temporaire de voyage**. Si vous aimeriez réactiver vos services, je devrai vous mettre en contact avec un membre de l'équipe." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is not currently $session.params.account_status, it is **suspended for Vacation Disconnect**. If you're looking to resume your services, I'll need to get you to a team member." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.account_status = \"active\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte n'est pas présentement actif, il est en **suspension temporaire de voyage**. Si vous aimeriez réactiver vos services, je devrai vous mettre en contact avec un membre de l'équipe." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is not currently $session.params.account_status, it is **suspended for Vacation Disconnect**. If you're looking to resume your services, I'll need to get you to a team member." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.account_status = \"suspended\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte est en effet présentement en **suspension temporaire de voyage**. Si vous aimeriez réactiver vos services, je devrai vous mettre en contact avec un membre de l'équipe." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "It does look like your account is **suspended for Vacation Disconnect**. If you're looking to resume your services, I'll need to get you to a team member." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte est présentement en **suspension temporaire de voyage**. Si vous aimeriez réactiver vos services, je devrai vous mettre en contact avec un membre de l'équipe." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is **suspended for Vacation Disconnect**. If you're looking to resume your services, I'll need to get you to a team member." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "3cd570c7-ea38-41ca-b2d4-ea7c29763c70"
+  }, {
+    "condition": "$session.params.subscriber_info[0].ban_status = \"S\" AND $session.params.suspend_reason = \"SNP\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transaction",
+        "value": "account status"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.account_status = \"cancelled\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte n'est présentement pas annulé, il est **suspendu pour non-paiement**." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is not currently $session.params.account_status, it is **suspended for non-payment**." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.account_status = \"active\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte n'est présentement pas actif, il est **suspendu pour non-paiement**." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is not currently $session.params.account_status, it is **suspended for non-payment**." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.account_status = \"suspended\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte est en effet présentement **suspendu pour non-paiement**." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "It does look like your account is **suspended for non-payment**." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte est présentement **suspendu pour non-paiement**." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is **suspended for non-payment**." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "_Account Status SNP",
+    "name": "563eeb92-690b-457d-ab81-bda6b6df7a98"
+  }, {
+    "condition": "$session.params.subscriber_info[0].ban_status = \"S\" AND $session.params.subscriber_info[0].ban_status != \"SNP\" AND $session.params.subscriber_info[0].ban_status != \"VADR\" AND $session.params.subscriber_info[0].ban_status != \"CVAD\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transaction",
+        "value": "account status"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.account_status = \"cancelled\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte n'est pas présentement annulé, il est **suspendu**. Si vous aimeriez restaurer vos services, je devrai vous mettre en contact avec un membre de l'équipe." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is not currently $session.params.account_status, it is **suspended**. If you're looking to resume your services, I'll need to get you to a team member." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.account_status = \"active\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte n'est pas présentement actif, il est **suspendu**. Si vous aimeriez restaurer vos services, je devrai vous mettre en contact avec un membre de l'équipe." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is not currently $session.params.account_status, it is **suspended**. If you're looking to resume your services, I'll need to get you to a team member." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.account_status = \"suspended\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte est en effet présentement **suspendu**. Si vous aimeriez restaurer vos services, je devrai vous mettre en contact avec un membre de l'équipe." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "It does look like your account is currently **suspended**. If you're looking to resume your services, I'll need to get you to a team member." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte est en effet présentement **suspendu**. Si vous aimeriez restaurer vos services, je devrai vous mettre en contact avec un membre de l'équipe." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is currently **suspended**. If you're looking to resume your services, I'll need to get you to a team member." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "5c41a234-c4b0-4abd-8f72-7a8a467cfe16"
+  }, {
+    "condition": "$session.params.subscriber_info[0].ban_status = \"O\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transaction",
+        "value": "account status"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.account_status = \"cancelled\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte n'est pas présentement annulé, il est **actif**." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is not currently $session.params.account_status, it is **active**." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.account_status = \"suspended\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte n'est pas présentement suspendu, il est **actif**." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is not currently $session.params.account_status, it is **active**." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.account_status = \"active\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte est en effet présentement **actif**." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "It does look like your account is currently **active**." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Votre compte est présentement **actif**." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your account is currently **active**." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "5c0a31b1-5a63-42d5-9e48-37eb56c2546e"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Account Status",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "49ece948-a83e-4edf-a7e1-9f78746d160b"
+  }, {
+    "targetPage": "Account Status",
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with your request." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ef4297a9-8751-424a-8020-a3deb36afbed"
+  } ]
+}

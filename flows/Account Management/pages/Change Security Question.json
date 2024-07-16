@@ -1,0 +1,39 @@
+{
+  "name": "e802247a-f96b-4d0c-9002-80398afb0b15",
+  "displayName": "Change Security Question",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "To update your TELUS security question, I'll have to connect you to a team member." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Pour modifier votre question de sécurité TELUS, je dois vous mettre en contact avec un membre de l'équipe." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Change Security Question"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "changing your security questions"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "modifier vos questions de sécurité"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "6c8c2d06-fe73-406b-8d96-6b3d2b71c0d5"
+  } ],
+  "transitionRouteGroups": [ "sup_route_account_management" ]
+}

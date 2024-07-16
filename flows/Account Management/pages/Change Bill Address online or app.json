@@ -1,0 +1,395 @@
+{
+  "name": "1ba52f4f-2adf-43f6-b9b1-27ef4e4acb41",
+  "displayName": "Change Bill Address online or app",
+  "form": {
+    "parameters": [ {
+      "displayName": "online_vs_app",
+      "required": true,
+      "entityType": "@online-vs-app",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ " Would you prefer getting steps through the MyTELUS app, or, on our website?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi.", "Désolé, je n'ai pas tout à fait compris.", "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous l'appli Mon TELUS, ou, les instructions en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "095e9102-7f74-43b8-bd44-350d26e28f2c"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive instructions, say app, or press 1. online, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "d4248d98-64c8-4606-b0d2-813984f350e7"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "b41d4866-189d-46aa-ac54-7aa6ba7a94f3"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ " Would you prefer getting steps through the MyTELUS app, or, on our website?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi.", "Désolé, je n'ai pas tout à fait compris.", "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous l'appli Mon TELUS, ou, les instructions en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "0ce9229b-ecdb-4f5c-bcb4-c90351f27a69"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive instructions, say app, or press 1. online, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "9ae70085-8677-44ea-bb47-e2d2eba2cc3f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1a6795d5-11c5-46e4-bbad-96df7f383c0b"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Change Bill Address online or app"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.changebilladdress_retrycnt = null OR $session.params.changebilladdress_retrycnt = 0) AND $session.params.online_vs_app = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Would you prefer getting steps through the MyTELUS app, or, on our website?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Préférez-vous l'appli Mon TELUS, ou, les instructions en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.changebilladdress_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Would you prefer getting steps through the MyTELUS app, or, on our website?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Préférez-vous l'appli Mon TELUS, ou, les instructions en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.changebilladdress_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To receive instructions, say app, or press 1. online, or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "changebilladdress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190155"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900WJ"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_flow_optioon",
+        "value": "app"
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "972a9ea4-1bb5-45a9-b0dd-754148c96821"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "changebilladdress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190155"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900WJ"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "da211e6b-a256-48e7-a730-1b62b82f541d"
+  }, {
+    "condition": "$session.params.online_vs_app = \"app\" OR $session.params.online_vs_app = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190155"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900WJ"
+      }, {
+        "parameter": "changebilladdress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "5c3749fe-ebf2-44dc-a098-2670427dd0de"
+  }, {
+    "condition": "$session.params.online_vs_app = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, demandons à quelqu'un de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "changebilladdress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "ac03aae7-9952-44f9-83e4-3c91ac7fff58"
+  }, {
+    "condition": "$session.params.online_vs_app = \"online\" OR $session.params.online_vs_app = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319013X"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900W6"
+      }, {
+        "parameter": "changebilladdress_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "online"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "c8d7ac2d-2ad2-4988-bfcd-42bbaa61f4f4"
+  }, {
+    "condition": "$session.params.changebilladdress_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "changebilladdress_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "bd1b6ea0-1315-47a2-86d3-8fd608326ba7"
+  }, {
+    "condition": "$session.params.changebilladdress_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "changebilladdress_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "9f2b3f4f-0a3a-427e-8567-4c4929bf0403"
+  }, {
+    "condition": "$session.params.online_vs_app = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "changebilladdress_retrycnt",
+        "value": "$sys.func.ADD($session.params.changebilladdress_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "059b3642-414a-4e79-ae3d-c129e39942b2"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "changebilladdress_retrycnt",
+        "value": "$sys.func.ADD($session.params.changebilladdress_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.changebilladdress_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.changebilladdress_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "1c708bbb-1563-4548-a420-f8084b82ba84"
+  } ]
+}

@@ -1,0 +1,391 @@
+{
+  "name": "e6149c5b-df9c-4e73-af2c-9285a9da2eb8",
+  "displayName": "Internet for Good",
+  "form": {
+    "parameters": [ {
+      "displayName": "internet_for_good_dtmf",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like me to send a text with more information?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry,  I didn't understand that.", "Sorry,  I didn't catch that.", "I didn't do that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ " Would you like me to send a text with more information?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "41ff5a21-7b58-4f01-8f82-f17bba3f61fd"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "bba7a58c-67aa-4bce-aa4c-c4c4d471a3a2"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "a6b45e1e-7aff-4585-94f6-af5962be0e4b"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry , I didn't understand that.", "Sorry , I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ " Would you like me to send a text with more information?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "7f967d13-e148-4a6a-abf0-5387486d155e"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "27ea4dd6-8a6a-428b-b5f3-00977e457c37"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "4c22a4b8-263f-46f2-9b83-c0fbda1c988f"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Internet for Good"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "our Internet for Good program"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "notre programme Internet pour l'avenir"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "reviewing our Internet for Good program"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "réviser notre notre programme Internet pour l'avenir"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on our Internet for Good program, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur notre programme Internet pour l'avenir, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Today, having access to reliable internet is essential, but for many, it can still be a struggle." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "At TELUS, we help connect those in need through our Internet for Good program where we provide high-speed internet at a low-cost to keep those connected." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Avoir accès à un Internet fiable est essentiel dans le monde interconnecté d'aujourd'hui." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Chez TELUS, nous aidons à connecter ceux qui en ont besoin grâce à notre programme Internet pour l'avenir, qui leur offre un accès Internet haut débit à faible coût afin qu'ils puissent rester connectés." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190015"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900E9"
+      }, {
+        "parameter": "internetforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "internet_for_good_dtmf",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "4629776d-da0a-4e14-beff-7acc3e9401bc"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "internetforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "internet_for_good_dtmf",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190015"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900E9"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "508c603f-a891-4116-8f72-b7483df1cd5c"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "internetforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "internet_for_good_dtmf",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190015"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900E9"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "87607c64-db35-46e2-8433-848b38568add"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I'm happy to get you to a live agent." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "2bc33f1e-75d7-48d4-98d7-237674d85b6a"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190015"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900E9"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "dea39673-b6e6-4940-83b0-5f11be674ab1"
+  }, {
+    "condition": "$session.params.internet_for_good_dtmf = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN73190015"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900E9"
+      }, {
+        "parameter": "internetforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "internet_for_good_dtmf",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "56c10d25-5042-4e0b-9ac6-d73957e205db"
+  }, {
+    "condition": "$session.params.internet_for_good_dtmf = \"0\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "internetforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "internet_for_good_dtmf",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "df7fc93a-aea8-4bc6-9d8c-2f432d34560c"
+  }, {
+    "condition": "$session.params.internet_for_good_dtmf = 1 OR $session.params.internet_for_good_dtmf = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "internet_for_good_dtmf",
+        "value": null
+      }, {
+        "parameter": "internetforgood_retrycnt",
+        "value": "$sys.func.ADD($session.params.$session.params.internetforgood_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "c43c181a-c554-492a-89ec-0a50d1a2c515"
+  } ]
+}

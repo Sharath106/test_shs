@@ -1,0 +1,33 @@
+{
+  "name": "84676f5a-34f0-435a-b784-a765fe567694",
+  "displayName": "Forgot PIN",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Vous avez oublié votre NIP de sécurité au compte? Pas de problème." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Forgot your account PIN? No worries." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Forgot PIN"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change PIN",
+    "name": "dacfd234-1be2-4e53-b3a1-6d14a97c3ba6"
+  } ],
+  "transitionRouteGroups": [ "sup_route_account_management" ]
+}

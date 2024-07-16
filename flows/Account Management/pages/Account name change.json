@@ -1,0 +1,38 @@
+{
+  "name": "4c17fe7e-b289-4e9e-8253-dad5928e2d2d",
+  "displayName": "Account name change",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "For name changes, let me get you to a team member to make sure your account is updated properly." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Pour les changements de nom, laissez-moi vous mettre en contact avec un membre de l'équipe pour m'assurer que votre compte est correctement mis à jour." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Account name change"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "changing your name on your account"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "changer votre nom sur votre compte"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "ea05dad1-621a-4044-8590-38d09efdeab8"
+  } ]
+}

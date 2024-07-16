@@ -1,0 +1,37 @@
+{
+  "name": "eae29379-4560-4180-b48b-06761ed896f7",
+  "displayName": "End page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Est-ce qu'il y a autre chose sur lequel je peux vous aider?", "Puis-je vous aider avec autre chose?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Is there anything else I can help you with?", "Can I assist you with anything else?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Comment puis-je vous aider autrement?", "Que puis-je faire d'autre pour vous aider?" ]
+      },
+      "languageCode": "fr"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "from_flow",
+      "value": "AccountManagement"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "021464d1-d282-4827-ad91-6bc1b27b8a68"
+  } ]
+}

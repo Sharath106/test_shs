@@ -1,0 +1,427 @@
+{
+  "name": "ff814cda-125d-420d-a71c-880c181493d2",
+  "displayName": "Suspend",
+  "form": {
+    "parameters": [ {
+      "displayName": "suspend_account",
+      "required": true,
+      "entityType": "@suspend-account",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I'm not sure I've got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What would you like to know around suspended accounts?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Que souhaitez-vous savoir sur les comptes suspendus?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "6e91f9c8-d5da-4286-b8d0-82b81aa1f328"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To get help say team member,  or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour obtenir de l'aide dites membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "b356d243-4550-41af-9b8e-27f71bf5bec0"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "521ee4c1-fd6e-4fd8-8c24-596a3494ac01"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I'm not sure I've got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What would you like to know around suspended accounts?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Que souhaitez-vous savoir sur les comptes suspendus?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "c4663313-6b9f-47de-9d86-bb4286358824"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To get help say team member,  or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour obtenir de l'aide dites membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "503883e3-536d-4a3c-93bd-700e1b27e4aa"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "624a7615-4645-4ac9-8e71-d7dfa1937a9d"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Suspend"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "suspending your service"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "suspendre votre service"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.suspend_retrycnt = null OR $session.params.suspend_retrycnt = 0) AND $session.params.suspend_account = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Suspending a line will block all access to our network, including calls, text and data." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "While the line is suspended, you will still be responsible for the monthly charges for that line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "What would you like to know about suspended accounts?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "La suspension d’une ligne bloquera tout accès à notre réseau, y compris les appels, les textos et les données." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Au cours d'une suspension, vous devez continuer à payer les frais mensuels associés à la ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Que souhaitez-vous savoir sur les comptes suspendus?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.suspend_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "What would you like to know around suspended accounts?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Que souhaitez-vous savoir sur les comptes suspendus?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.suspend_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get help say team member,  or press 0." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour obtenir de l'aide dites membre de l'équipe, ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.lost_stolen_phone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "suspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "suspend_account",
+        "value": null
+      } ]
+    },
+    "targetPage": "Lost and Stolen or Find Phone",
+    "name": "51b08284-9398-409a-a590-5a3a5c0a3238"
+  }, {
+    "intent": "head_intent.suspend",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Suspend Account",
+    "name": "a3382638-039f-4a8d-946c-2bc9b3febd67"
+  }, {
+    "intent": "head_intent.account_reconnect_service",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "suspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "suspend_account",
+        "value": null
+      } ]
+    },
+    "targetPage": "Reinstate Service",
+    "name": "7f3ce06e-eda9-4497-aeda-448adc3fd139"
+  }, {
+    "intent": "head_intent.everything_roaming",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "suspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "suspend_account",
+        "value": null
+      }, {
+        "parameter": "route",
+        "value": "everything_roaming"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "2a187916-fba0-4410-9443-4cfdcb13fd4a"
+  }, {
+    "intent": "head_intent.account_close",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "cancel_account"
+      }, {
+        "parameter": "suspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "suspend_account",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "0c1449d8-fc68-4e63-b0b5-6154c302c854"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "suspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "suspend_account",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "f9d9280f-91a8-47a7-8e15-c563d11f0dcb"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "suspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "suspend_account",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "40f8aa01-c0b0-4ccb-9f46-ea6428ad8e7b"
+  }, {
+    "condition": "$session.params.suspend_account = \"vacation disconnect\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "suspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "suspend_account",
+        "value": null
+      } ]
+    },
+    "targetPage": "Vacation disconnect Suspend",
+    "name": "ee55d0aa-5dc5-40c7-b70d-d9afb3bf2dd9"
+  }, {
+    "condition": "$session.params.suspend_account = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "suspend_retrycnt",
+        "value": null
+      }, {
+        "parameter": "suspend_account",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "5cb727e6-6b8f-47a2-b3cd-d167cc87fc98"
+  }, {
+    "condition": "$session.params.suspend_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "suspend_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "103c0a72-c796-493c-884d-c3ad6cc39c2c"
+  }, {
+    "condition": "$session.params.suspend_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "suspend_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "7b6d6258-0e91-4186-84a1-142da9b94264"
+  }, {
+    "condition": "$session.params.suspend_account = \"account\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Suspending a line will block all access to our network, including calls, text and data. While the line is suspended, you will still be responsible for the monthly charges for that line." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "La suspension d’une ligne bloquera tout accès à notre réseau, y compris les appels, les textos et les données. Au cours d'une suspension, vous devez continuer à payer les frais mensuels associés à la ligne." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Suspend Account",
+    "name": "7331b5b5-23f1-419c-a0cc-14da9bc78417"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "suspend_retrycnt",
+        "value": "$sys.func.ADD($session.params.suspend_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.suspend_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.suspend_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "35c91daf-9493-4609-a69d-8d8cfb985aaf"
+  } ]
+}

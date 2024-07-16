@@ -1,0 +1,38 @@
+{
+  "name": "64dd19d5-32df-43d9-808e-9d42e8a90be1",
+  "displayName": "Cannot Renew Contract",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "There may be a few reasons that your service agreement can't be renewed. Let me get you to a team member for additional support." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Il peut y avoir plusieurs raisons pour lesquelles votre contrat de service ne peut pas être renouvelé. Laissez-moi vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Cannot Renew Contract"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "not being able to renew your contract"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "ne pas pouvoir renouveler votre contrat"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "609fbd1f-df76-4579-be25-3569cf8f410c"
+  } ]
+}

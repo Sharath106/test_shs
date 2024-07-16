@@ -1,0 +1,350 @@
+{
+  "name": "791591a2-4bb6-46c9-97f8-7852e9282a16",
+  "displayName": "Find my phone",
+  "form": {
+    "parameters": [ {
+      "displayName": "iphone_vs_android",
+      "required": true,
+      "entityType": "@iphone-vs-android",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you looking to find an iPhone, or Android device?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Cherchez-vous à trouver un iPhone ou un Android?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ad7d7d16-b998-4cf3-ad6c-a2c36e17e1de"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2. For getting support say team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2. Pour qu'un membre de l'équipe vous aide, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "5a61c5a3-b295-437e-b003-05e47bb1965e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "63ccdf8f-811c-4d32-88be-3f90cffcc54b"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you looking to find an iPhone, or Android device?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Cherchez-vous à trouver un iPhone ou un Android?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "d594f28b-0d77-4888-83cb-01fad59e7055"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2. For getting support say team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2. Pour qu'un membre de l'équipe vous aide, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "1120fa7b-bd49-43e7-8c70-11ed20356d66"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "4deb721b-98f9-4d38-96e0-544530ef1eea"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Find my phone"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "locating your phone"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "localiser votre téléphone"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.findmyphone_retrycnt = null OR $session.params.findmyphone_retrycnt = 0) AND $session.params.iphone_vs_android = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To help support you better, are you looking to find your iPhone, or Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour mieux vous aider, cherchez-vous à trouver votre iPhone ou votre appareil Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.findmyphone_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Are you looking to find an iPhone, or Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cherchez-vous à trouver un iPhone ou un Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.findmyphone_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2. For getting support say team member, or press 0." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2. Pour qu'un membre de l'équipe vous aide, dites membre de l'équipe ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findmyphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "21069f68-517c-4cf0-8b40-e9a5070c8ffe"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findmyphone_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "35dc2925-f359-461f-aeae-21991ac4aba1"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findmyphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Find my iphone",
+    "name": "68b180b4-39a3-4c84-8f49-c2dbca3ce65b"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findmyphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Android device manager",
+    "name": "ca490c4e-122a-4c4a-b32b-989bb9574b7a"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "findmyphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "2301420d-b7ea-427b-bca1-f773e81c53e4"
+  }, {
+    "condition": "$session.params.findmyphone_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findmyphone_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "d867664c-fd2e-4e3e-bfbb-aab368733517"
+  }, {
+    "condition": "$session.params.findmyphone_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findmyphone_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "e3492e91-7188-42af-82ef-794aa892d912"
+  }, {
+    "condition": "$session.params.iphone_vs_android = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "findmyphone_retrycnt",
+        "value": "$sys.func.ADD($session.params.$session.params.findmyphone_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "71e501e2-5438-417b-baed-3972f16d00b6"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "findmyphone_retrycnt",
+        "value": "$sys.func.ADD($session.params.findmyphone_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.findmyphone_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.findmyphone_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "5c5778c6-b96a-44db-ab3b-faf0452109eb"
+  } ]
+}

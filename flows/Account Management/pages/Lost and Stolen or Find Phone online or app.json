@@ -1,0 +1,409 @@
+{
+  "name": "4078944c-98e4-42d1-8735-768e41bd8d06",
+  "displayName": "Lost and Stolen or Find Phone online or app",
+  "form": {
+    "parameters": [ {
+      "displayName": "online_vs_app",
+      "required": true,
+      "entityType": "@online-vs-app",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you prefer going through the MyTELUS app, or, on our website?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "2b2351ee-8d07-4af6-a76d-3bf943628d8f"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive instructions, say app, or press 1. online, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "83512c92-a8fb-4e6b-81af-bba3e188764d"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "284d2822-cc83-4a9b-af6a-b91d42fb843f"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you prefer going through the MyTELUS app, or, on our website?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi.", "Désolé, je n'ai pas tout à fait compris.", "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "5c9ac086-bc62-423e-b5de-486869969de6"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive instructions, say app, or press 1. online, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "9f885926-6394-4090-9f64-a18b0a1eda07"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "17b2dd11-f3b0-47e7-ae94-74fd21f40fe8"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Lost and Stolen or Find Phone online or app"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.loststolemsusres_retrycnt = null OR $session.params.loststolemsusres_retrycnt = 0) AND $session.params.online_vs_app = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Would you prefer going through the MyTELUS app, or, on our website?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.loststolemsusres_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Would you prefer going through the MyTELUS app, or, on our website?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Préférez-vous l'appli Mon TELUS ou les instructions en ligne?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.loststolemsusres_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To receive instructions, say app, or press 1. online, or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour recevoir les instructions, dites application ou faites le 1. En ligne ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loststolemsusres_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900KT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900GW"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "de548e81-a1b1-4e1a-8891-811a502731c5"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loststolemsusres_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900KT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900GW"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "fde591cd-85e4-4cc2-ad35-d9e735cb7477"
+  }, {
+    "intent": "head_intent.find_my_phone",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Find my phone",
+    "name": "ae8b5aed-67ed-49b3-955d-1f6f85ea024c"
+  }, {
+    "intent": "head_intent.phone_found",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Phone Found",
+    "name": "eb056869-65e7-4f91-bd79-f1638f67633e"
+  }, {
+    "condition": "$session.params.online_vs_app = \"app\" OR $session.params.online_vs_app = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900KT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900GW"
+      }, {
+        "parameter": "loststolemsusres_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "61326c87-2d2a-4d6b-a0b5-7159e34a4f44"
+  }, {
+    "condition": "$session.params.online_vs_app = \"online\" OR $session.params.online_vs_app = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900PQ"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900CS"
+      }, {
+        "parameter": "loststolemsusres_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "online"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "5e48f7f4-8ee9-4336-bcda-9c38e944386d"
+  }, {
+    "condition": "$session.params.online_vs_app = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, demandons à quelqu'un de vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "loststolemsusres_retrycnt",
+        "value": null
+      }, {
+        "parameter": "online_vs_app",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "b828602f-6651-4df4-b62a-65c953706150"
+  }, {
+    "condition": "$session.params.loststolemsusres_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loststolemsusres_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "09276613-a28a-47a1-a487-50278ab598cd"
+  }, {
+    "condition": "$session.params.loststolemsusres_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loststolemsusres_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "772ce5c2-3c45-4819-8d33-4d8756b47443"
+  }, {
+    "condition": "$session.params.online_vs_app = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "online_vs_app",
+        "value": null
+      }, {
+        "parameter": "loststolemsusres_retrycnt",
+        "value": "$sys.func.ADD($session.params.loststolemsusres_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "6abcf42a-040a-428b-a396-dad8db4d8bfa"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loststolemsusres_retrycnt",
+        "value": "$sys.func.ADD($session.params.loststolemsusres_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.loststolemsusres_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.loststolemsusres_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "756e8766-3d5f-4215-b2eb-60f00b3d4609"
+  } ]
+}

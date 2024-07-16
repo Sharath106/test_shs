@@ -1,0 +1,524 @@
+{
+  "name": "13f28472-8476-4528-bb6c-06e724f9d589",
+  "displayName": "TELUS Social Impact",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_telus_social_impact",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand that. ", "Sorry I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message with more information about the Connecting for Good programs?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Je ne crois pas avoir bien saisi. ", "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que je vous envoie un message texte avec plus d'informations sur les programmes Connectés pour l'avenir?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "171537f3-52d4-4442-9e59-281264856ea0"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry I didn't get that can you try it again" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ac8b9f57-f4ed-4d7c-a5e3-d287fd5384c8"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "00a46b2b-f023-40b4-b1c0-eae293c83b28"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Would you like me to send a text message with more information about the Connecting for Good programs?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que je vous envoie un message texte avec plus d'informations sur les programmes Connectés pour l'avenir?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "eb98d496-212d-4543-87db-086d852108cc"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "eb8398b8-6638-4e9e-b1ac-bece864ced9c"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "b0d42c19-2981-4a39-a8b4-3b30c559cc69"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "TELUS Social Impact"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "what we are doing for our Social Impact"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "ce que nous faisons dans le cadre de nos programmes Connectés pour l'avenir"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding what we are doing for our social impact"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "Comprendre ce que nous faisons pour notre programme Connectés pour l'avenir"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on what we are doing for our social impact, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur les programmes Connectés pour l'avenir, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "At TELUS, you’re part of the network that gives back." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "We’re constantly expanding our Connecting for Good programs, to benefit communities across Canada." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Chez TELUS, vous faites partie du réseau qui redonne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Nous élargissons constamment nos programmes Connectés pour l'avenir, au profit des communautés à travers le Canada." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.donate_your_phone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_social_impact",
+        "value": null
+      } ]
+    },
+    "targetPage": "Donate your phone",
+    "name": "5fb90908-75f3-4397-a32f-0603d56aa168"
+  }, {
+    "intent": "head_intent.internet_for_good",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_social_impact",
+        "value": null
+      } ]
+    },
+    "targetPage": "Internet for Good",
+    "name": "820e47fe-fe4f-4082-ad7b-01325940c996"
+  }, {
+    "intent": "head_intent.health_for_good",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_social_impact",
+        "value": null
+      } ]
+    },
+    "targetPage": "Health for Good",
+    "name": "9701acf2-f628-4119-92a5-e2ed3d2b3328"
+  }, {
+    "intent": "head_intent.future_friendly_foundation",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_social_impact",
+        "value": null
+      } ]
+    },
+    "targetPage": "TELUS Future Friendly foundation",
+    "name": "f1bb76bf-8e69-4356-9cde-35881f0afef7"
+  }, {
+    "intent": "head_intent.mobility_for_good",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_social_impact",
+        "value": null
+      } ]
+    },
+    "targetPage": "Mobility for Good",
+    "name": "5466899f-867b-4139-ad1c-83b6713205f7"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319012W"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190163"
+      }, {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_social_impact",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "b6bf3230-9627-417a-a433-7cf409a9bf57"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_social_impact",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319012W"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190163"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "94e0dc04-a299-4b24-a3f7-edfc62f10514"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_social_impact",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319012W"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190163"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "524f02b2-2bc5-4bfc-847b-874421f5322c"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I'm happy to get you to a live agent." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d60ffd2e-a8df-4480-9b63-04550e151b34"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319012W"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190163"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "659ce70e-5183-417e-aa5c-1efb5b8774f9"
+  }, {
+    "condition": "$session.params.dtmf_telus_social_impact = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319012W"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190163"
+      }, {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_social_impact",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "eef6ae41-c20a-46f9-83f3-306b4e3d7896"
+  }, {
+    "condition": "$session.params.dtmf_telus_social_impact = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_telus_social_impact",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "8720bf63-3b68-4c9c-be6b-a9d3de30d537"
+  }, {
+    "condition": "$session.params.telussocialimpact_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "5f6bd21c-7c4d-495d-bb86-aae0a49376c3"
+  }, {
+    "condition": "$session.params.telussocialimpact_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "95a36b2e-5a4f-4c52-acb6-c0529a645f71"
+  }, {
+    "condition": "$session.params.dtmf_telus_social_impact = 1 OR $session.params.dtmf_telus_social_impact = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_telus_social_impact",
+        "value": null
+      }, {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": "$sys.func.ADD($session.params.telussocialimpact_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "816fc9c3-b2e5-4f54-82b4-862601f16df6"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "telussocialimpact_retrycnt",
+        "value": "$sys.func.ADD($session.params.telussocialimpact_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.telussocialimpact_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.telussocialimpact_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "8ea1eb31-1c17-4f9e-b411-c6552d1c1c0b"
+  } ]
+}

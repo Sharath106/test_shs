@@ -1,0 +1,32 @@
+{
+  "name": "8b18e246-8671-41d3-9514-4e2ceabcee73",
+  "displayName": "Out of scope Corp",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I'm not quite ready to support Corporate related inquiries. For now, I can only support you with your regular consumer account." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Je ne suis pas tout à fait prêt à soutenir les demandes de renseignements liés aux comptes corporatifs. Pour l'instant, je peux vous aider uniquement avec les comptes pour consommateurs réguliers." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Out of scope Corp"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "f0dcb834-7633-4f14-b2c2-fb4d4a0c9727"
+  } ]
+}

@@ -1,0 +1,418 @@
+{
+  "name": "a3de5dda-c2e6-4504-88f2-d9605258793c",
+  "displayName": "Android device manager",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_andrdevmgr",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Were you able to locate your phone through that?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Avez-vous pu localiser votre téléphone grâce à cela?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Were you able to locate your phone through that?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous pu localiser votre téléphone grâce à cela?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "b583e004-13f8-42f5-8567-d457731c796c"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you're able to recover your phone, say yes or press 1. If you are not able to find your phone, say no or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous parvenez à récupérer votre téléphone, dites oui ou faites le 1. Si vous ne trouvez pas votre téléphone, dites non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "f48cd63d-7b0a-4986-9757-52d096ea2ee7"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "032e6ca5-accd-48f5-a1c6-58cf537bad90"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Were you able to locate your phone through that?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous pu localiser votre téléphone grâce à cela?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "3be511a7-b88d-4261-9a5a-4b9346b1ee76"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you're able to recover your phone, say yes or press 1. If you are not able to find your phone, say no or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous parvenez à récupérer votre téléphone, dites oui ou faites le 1. Si vous ne trouvez pas votre téléphone, dites non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ef7369d8-45fe-4f88-824b-e805ba51697f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "327ad5bd-e4c6-416c-b851-a88f4431fea1"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Android device manager"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "\"Find My Device\" is a feature by Google to help locate your phone." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If it's enabled, you can track your phone in case it becomes lost, or stolen." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You'll have to use your Gmail account, and it comes with the option for your phone to ring up to 5 minutes, even on silent mode." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Localiser mon appareil est un service fourni par Google pour localiser votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "S'il est activé, vous pouvez suivre votre téléphone en cas de perte ou de vol." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous devez avoir créé un compte Gmail et vous aurez aussi la possibilité de faire sonner votre téléphone pendant un maximum de cinq minutes même si la sonnerie était coupée." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Google's \"Find My Device\" is a tool designed to assist in locating a lost or stolen phone." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Once activated, users can track the location of their device using their associated Gmail account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Additionally, the feature includes the option to make the phone ring for up to 5 minutes, even if it's on silent mode." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Localiser mon appareil de Google est un outil conçu pour aider à localiser un téléphone perdu ou volé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Une fois activé, les utilisateurs peuvent suivre l'emplacement de leur appareil en utilisant leur compte Gmail associé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "De plus, cette fonctionnalité permet de faire sonner le téléphone pendant cinq minutes, même s'il est en mode silencieux." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Google offers a feature called \"Find My Device\" which is intended to help users locate their lost or stolen phone." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "By enabling this feature, users can track their phone's location using their Gmail account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Moreover, the feature allows the phone to ring for up to 5 minutes, even when it's on silent mode." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Google propose une fonctionnalité appelée Localiser mon appareil qui permet aux utilisateurs de retrouver leur téléphone perdu ou volé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "En activant cette fonctionnalité, les utilisateurs peuvent suivre la localisation de leur téléphone en utilisant leur compte Gmail." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "De plus, cette fonctionnalité permet de faire sonner le téléphone pendant cinq minutes, même s'il est en mode silencieux." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great!", "I glad to hear it.", "Awesome." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Super!", "Ravi de l'apprendre.", "Génial!" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page_summary",
+        "value": "the phone you found"
+      }, {
+        "parameter": "last_page_summaryfr",
+        "value": "le téléphone que tu as trouvé"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "471aeedf-7aea-425d-adbf-8087d8bf8349"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry to hear it.", "Sorry about that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let's make sure to suspend your services to avoid anyone else using them." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je suis désolé de l'entendre.", "Désolé pour ça." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Assurons-nous de suspendre vos services pour éviter que quiconque ne les utilise." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "loststolenfindphone_retrycnt",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "Lost and Stolen or Find Phone",
+    "name": "cd437435-c51c-445f-9c10-37f4327e3ce3"
+  }, {
+    "intent": "supplemental.device_iphone",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "iphone"
+      } ]
+    },
+    "targetPage": "Find my phone",
+    "name": "f38a927a-d1d6-4686-9a42-bed7c61a8d57"
+  }, {
+    "condition": "$session.params.dtmf_andrdevmgr = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Super!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "9da2b24f-38fc-4153-86b6-6c76d0d8fb50"
+  }, {
+    "condition": "$session.params.dtmf_andrdevmgr = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For now, let's make sure to suspend your services to avoid anyone else using them." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pour l'instant, assurons-nous de suspendre vos services pour éviter que quelqu'un d'autre ne les utilise." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "loststolenfindphone_retrycnt",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "Lost and Stolen or Find Phone",
+    "name": "96a327fb-7c34-4cd8-a049-654f0830ad91"
+  }, {
+    "condition": "$session.params.dtmf_andrdevmgr = 3 OR $session.params.dtmf_andrdevmgr = 9 OR $session.params.dtmf_andrdevmgr = 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_andrdevmgr",
+        "value": null
+      }, {
+        "parameter": "andrdevmgr_retrycnt",
+        "value": "$sys.func.ADD($session.params.andrdevmgr_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "953b5e0e-d067-4af2-bfb1-269acda6c760"
+  } ]
+}

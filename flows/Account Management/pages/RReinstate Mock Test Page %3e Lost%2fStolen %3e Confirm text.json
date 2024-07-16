@@ -1,0 +1,15 @@
+{
+  "name": "5ef4ea05-e98b-4d57-adcf-88094d973d65",
+  "displayName": "RReinstate Mock Test Page \u003e Lost/Stolen \u003e Confirm text",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Would you like me to send a text to your phone on how you can restore your service?" ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

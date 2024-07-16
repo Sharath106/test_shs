@@ -1,0 +1,42 @@
+{
+  "name": "369a7b30-615c-4dc4-b330-3d737213a606",
+  "displayName": "Deceased customer",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Vous devez vivre une période très difficile. Voyons comment traiter votre demande le plus rapidement possible." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Je vais vous transférer à un membre de l'équipe pour vous aider avec la gestion du dossier." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "This time must be very difficult for you, let’s get your request taken care of as quickly as possible." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Let me get you to a team member to help you take care of settling the account or changing ownership of services." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Deceased customer"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "71fb0348-660f-4678-b4bc-2ee9214cf527"
+  } ]
+}

@@ -1,0 +1,137 @@
+{
+  "name": "80a51e97-d61e-4a82-8795-02816df2bab5",
+  "displayName": "Calls from TELUS",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Calls from TELUS"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "calls you received from TELUS"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "appels que vous avez reçus de TELUS"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You may receive a call from TELUS for a variety of reasons." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "This can include a follow up on your account, or simply to ensure any previous issues or concerns have been resolved." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "In most cases, we'd also leave a voicemail if we couldn't get a hold of you." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez recevoir un appel de TELUS pour diverses raisons." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Cela peut inclure pour faire un suivi ou pour vérifier si vos problèmes ont été réglés." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "La plupart du temps, nous laissons un message vocal lorsqu’il n’y a pas de réponse." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "TELUS may contact you for various reasons, such as following up on your account or ensuring that previous issues or concerns have been addressed." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If unable to reach you, a voicemail message would typically be left." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS peut vous contacter pour diverses raisons, telles que le suivi de votre compte ou s'assurer que les problèmes ou préoccupations précédents ont été traités." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si nous ne parvenons pas à vous joindre, un message vocal est généralement laissé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "A call from TELUS may be made for a range of reasons, including account follow-ups or to confirm that any past issues or concerns have been dealt with." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If the call goes unanswered, a voicemail message is usually left." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "TELUS peut vous appeler pour différentes raisons, notamment pour le suivi de votre compte ou pour confirmer que les problèmes ou préoccupations passés ont été résolus." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si l'appel reste sans réponse, un message vocal est généralement laissé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "a3307fa6-77cd-4c60-9b5f-35b4b75c5fbd"
+  } ]
+}

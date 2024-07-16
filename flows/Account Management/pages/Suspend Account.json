@@ -1,0 +1,32 @@
+{
+  "name": "3cba000b-8f6a-47a7-82a4-091949217382",
+  "displayName": "Suspend Account",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Pour suspendre votre ligne, je devrai vous transférer à un membre de l'équipe pour plus d'assistance." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "To suspend your line, I'll need to get you to a team member." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Suspend Account"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "182bafea-e92e-4642-8457-8cb7af98c08b"
+  } ]
+}

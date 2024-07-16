@@ -1,0 +1,376 @@
+{
+  "name": "2f6aadb1-69e1-48cc-8ffe-1520b0160375",
+  "displayName": "Mobility for Good",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_mobility_for_good",
+      "required": true,
+      "entityType": "@dtmf-menu-9-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like me to send a text with more information?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry I didn't quite get that.", "Sorry I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to text with more information?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "e0dd8317-79ab-4ea2-b232-0beff97d2eba"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "324e307c-ee3f-4d35-87cd-147ab970b3c3"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1ea4b18b-6b42-431f-b1d3-7e72511826ee"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn't catch that.", "Sorry I didn't catch that.", "I'm sorry,  I didn't understand that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to text with more information?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "a89fb794-4169-415c-94ca-b011ce28e260"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "3da37d28-8c03-4b3e-94a1-77febaf50d55"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "3c5f1731-1ec9-48a4-9ff4-9a72f618b4ae"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Mobility for Good"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "our mobility for good program"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "notre programme Mobilité pour l'avenir"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "understanding our mobility for good program"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "comprendre notre programme Mobilité pour l'avenir"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on our mobility for good program, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur notre programme Mobilité pour l'avenir, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "At TELUS, we have a Mobility for Good program which supports vulnerable community members with subsidized smartphones and plans, helping them stay connected to vital support networks and what matters most." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Chez TELUS, nous avons un programme Mobilité pour l'avenir qui nous permet de soutenir les membres vulnérables de la communauté avec des téléphones intelligents et des forfaits subventionnés, leur donnant ainsi une meilleure chance de prospérer et de rester connectés aux réseaux de soutien essentiels et à ce qui compte le plus." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900N7"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900B9"
+      }, {
+        "parameter": "mobilityforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_mobility_for_good",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "06ff6e96-c844-4b97-8090-b120f63003b0"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mobilityforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_mobility_for_good",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900N7"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900B9"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "36293866-638e-4796-b63b-822c8e8b7394"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mobilityforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_mobility_for_good",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900N7"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900B9"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "bad7f42c-53b7-4207-a971-24f835485c68"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900N7"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900B9"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "faba4aeb-c7b2-4e2d-816d-52a402130928"
+  }, {
+    "condition": "$session.params.dtmf_mobility_for_good = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "mobilityforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_mobility_for_good",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "3429e02d-399d-4609-9389-ab1c706d65f9"
+  }, {
+    "condition": "$session.params.dtmf_mobility_for_good = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900N7"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900B9"
+      }, {
+        "parameter": "dtmf_mobility_for_good",
+        "value": null
+      }, {
+        "parameter": "mobilityforgood_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "7273ad57-2976-494a-8515-3c2171cee7ee"
+  }, {
+    "condition": "$session.params.dtmf_mobility_for_good = 1 OR $session.params.dtmf_mobility_for_good = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_mobility_for_good",
+        "value": null
+      }, {
+        "parameter": "mobilityforgood_retrycnt",
+        "value": "$sys.func.ADD($session.params.mobilityforgood_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "11245cd5-ced3-4ba4-8e0e-750675b287d1"
+  } ]
+}

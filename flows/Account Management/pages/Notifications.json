@@ -1,0 +1,378 @@
+{
+  "name": "fb7a3c4f-fd41-42e2-a82b-f3d354f64d47",
+  "displayName": "Notifications",
+  "form": {
+    "parameters": [ {
+      "displayName": "data_vs_bill",
+      "required": true,
+      "entityType": "@data-vs-bill",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "For example, are you inquiring about data, billing, or, phone notifications?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris. ", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Par example, aimeriez-vous en savoir plus sur les notifications de données, de facturation ou de votre téléphone?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "73c73cdd-d051-46dd-b3ac-c251cbb8672f"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "For more information on notifications, say data, or press 1, billing,  or press 2, and phone,  or press 3." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour plus d'informations sur les notifications, dites données ou faites le 1. Facturation, ou faites le 2. Téléphone, ou faites le 3." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "2a813fb6-4a2d-4f8c-babc-1d3a024042da"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "640a004d-a3d6-437e-bc87-b05b929eb2f1"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "For example, are you inquiring about data, billing, or, phone notifications?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Par example, aimeriez-vous en savoir plus sur les notifications de données, de facturation ou de votre téléphone?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "22054af2-7484-46e0-89db-af4682334236"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "For more information on notifications, say data, or press 1, billing,  or press 2, and phone,  or press 3." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour plus d'informations sur les notifications, dites données ou faites le 1. Facturation, ou faites le 2. Téléphone, ou faites le 3." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "dce4afde-1e67-44cb-acf6-6488d549275c"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "216ee742-540b-4769-b333-bd44d8aa44f3"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Notifications"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "your notificaitons"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "vos notifications"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.notifications_retrycnt = null OR $session.params.notifications_retrycnt = 0) AND $session.params.data_vs_bill = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Just to make sure, what type of notifications are you inquiring about?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Afin de confirmer, vous aimeriez en savoir plus sur quelle type de notification?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.notifications_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "For example, are you inquiring about data, billing, or, phone notifications?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Par example, aimeriez-vous en savoir plus sur les notifications de données, de facturation ou de votre téléphone?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.notifications_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "For more information on notifications, say data, or press 1, billing,  or press 2, and phone,  or press 3." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour plus d'informations sur les notifications, dites données ou faites le 1. Facturation, ou faites le 2. Téléphone, ou faites le 3." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "notifications_retrycnt",
+        "value": null
+      }, {
+        "parameter": "data_vs_bill",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "7d7ac32a-1cec-4239-917a-51035ab4e0de"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "notifications_retrycnt",
+        "value": null
+      }, {
+        "parameter": "data_vs_bill",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "8abe0e2e-70cf-49cc-b3a6-58fac678d454"
+  }, {
+    "condition": "$session.params.data_vs_bill = \"data\" OR $session.params.data_vs_bill = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "notifications_retrycnt",
+        "value": null
+      }, {
+        "parameter": "data_vs_bill",
+        "value": null
+      } ]
+    },
+    "targetPage": "Data Notifications",
+    "name": "c6c01649-1380-4c83-a954-4869ee68c6fd"
+  }, {
+    "condition": "$session.params.data_vs_bill = \"bill\" OR $session.params.data_vs_bill = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_notifications"
+      }, {
+        "parameter": "notifications_retrycnt",
+        "value": null
+      }, {
+        "parameter": "data_vs_bill",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "5f685975-8950-4918-82ed-247bd420e054"
+  }, {
+    "condition": "$session.params.data_vs_bill = \"phone\" OR $session.params.data_vs_bill = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "change_notifsound"
+      }, {
+        "parameter": "notifications_retrycnt",
+        "value": null
+      }, {
+        "parameter": "data_vs_bill",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "118bf6a8-bd4d-45a6-807c-85d630b0d53a"
+  }, {
+    "condition": "$session.params.data_vs_bill = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "notifications_retrycnt",
+        "value": null
+      }, {
+        "parameter": "data_vs_bill",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e72a62c2-456c-4274-9a88-fb8be6499b14"
+  }, {
+    "condition": "$session.params.notifications_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "notifications_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "f9a0caa4-fb76-4977-a066-1ae493b7ee21"
+  }, {
+    "condition": "$session.params.notifications_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "notifications_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "38ce99db-7f21-450b-984d-630dae39bdc4"
+  }, {
+    "condition": "$session.params.data_vs_bill = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "data_vs_bill",
+        "value": null
+      }, {
+        "parameter": "notifications_retrycnt",
+        "value": "$sys.func.ADD($session.params.notifications_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "cc9ff270-14df-4b41-a23a-1acf34cf5e5d"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "notifications_retrycnt",
+        "value": "$sys.func.ADD($session.params.notifications_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.notifications_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.notifications_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "56157a42-9de5-4f6e-a43a-04d2a4e922d9"
+  } ]
+}

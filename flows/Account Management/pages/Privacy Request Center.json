@@ -1,0 +1,390 @@
+{
+  "name": "589d6a0b-80c1-4862-ac4c-c7cf966a24fc",
+  "displayName": "Privacy Request Center",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_privacy_request_center",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like me to send a link with more information on this to your phone?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ " Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry,  I didn't understand that.", "Sorry I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information about our Privacy Policy to your phone?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations sur notre politique de confidentialité?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "7b388fe6-e572-418e-8ec9-e220e621ce1a"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "78d05493-4546-4968-9f66-65429892b9fd"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "08be782a-7548-462f-a546-1ac9fb636435"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry I didn't understand that.", "I'm sorry,  I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information about our Privacy Policy to your phone?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations sur notre politique de confidentialité?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "23a41019-7350-4b52-8c9d-b078026f2556"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "fb2cbedb-1006-48f0-88cf-617c3c519d5a"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1e0bd307-acec-4c3e-a843-d760c910cd19"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Privacy Request Center"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "our privacy policy"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "notre politique de confidentialité"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "reviewing our privacy policy"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "comprendre notre politique de confidentialité"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on our privacy policy, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur notre politique de confidentialité, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "At TELUS, we know your privacy matters to you. Earning and maintaining your trust matters to us." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Our TELUS Privacy Request Centre, manages access to sensitive account information, and interactions with TELUS." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Chez TELUS, nous savons que votre vie privée est importante pour vous. Gagner et maintenir votre confiance nous importe." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Le Centre de demande de confidentialité de TELUS gère l'accès aux informations de compte sensible et les interactions avec TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900TF"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319001Q"
+      }, {
+        "parameter": "privacyrequestcenter_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_privacy_request_center",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "d29fe9f5-f659-4134-ae17-04e2ddbd1f29"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "privacyrequestcenter_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_privacy_request_center",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900TF"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319001Q"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "cf4c7236-5eeb-44c6-8d0a-188cca535ae5"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "privacyrequestcenter_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_privacy_request_center",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900TF"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319001Q"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "b822e749-0d14-485a-a90b-e8580965284f"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900TF"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319001Q"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "0557c3aa-a5ed-429f-9145-ad30c1ee07ae"
+  }, {
+    "condition": "$session.params.dtmf_privacy_request_center = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "privacyrequestcenter_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_privacy_request_center",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "1db13474-2190-43f3-9a7c-9caaeb29f297"
+  }, {
+    "condition": "$session.params.dtmf_privacy_request_center = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900TF"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319001Q"
+      }, {
+        "parameter": "privacyrequestcenter_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_privacy_request_center",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "dc5d857c-a335-441a-8525-f244a1885adb"
+  }, {
+    "condition": "$session.params.dtmf_privacy_request_center = 1 OR $session.params.dtmf_privacy_request_center = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_privacy_request_center",
+        "value": null
+      }, {
+        "parameter": "privacyrequestcenter_retrycnt",
+        "value": "$sys.func.ADD($session.params.privacyrequestcenter_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "65379acd-3c0b-4aa4-90e5-80d04e9fdae6"
+  } ]
+}

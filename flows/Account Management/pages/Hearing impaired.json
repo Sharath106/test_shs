@@ -1,0 +1,432 @@
+{
+  "name": "6e0a814e-351e-443d-9b7b-9c557f94c300",
+  "displayName": "Hearing impaired",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_hearing_impaired",
+      "required": true,
+      "entityType": "@dtmf-menu-9-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry,  I didn't understand that.", "Sorry I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text with more information?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "89d3583a-91d3-492f-86ef-ceeab7f0d7c5"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "0ce2326b-b12f-44f5-91b9-5bd69efd6543"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "abf2cccc-2789-4058-9be1-160b17ee8e17"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry I didn't understand that.", "I'm sorry,  I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text with more information?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "004b793e-7fca-4f41-9069-d9edc1e8c295"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "6ad0f52f-529b-4294-a6e4-94bfc4832f9f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "f245e96d-e1a2-421f-b5ae-f3ef59045793"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Hearing impaired"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "options for the Deaf, the deafened, and the hard of hearing"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "les options pour les sourds, les malentendants et les personnes ayant une déficience auditive"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "options for the Deaf, the deafened, and the hard of hearing"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "La recherche d'option sur le Service de Relais TELUS"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on options for the Deaf, the deafened, and the hard of hearing, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur le Service de Relais TELUS, vous devez utiliser le site Web de TELUS  pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "We offer TELUS Relay Service which is available 24 7." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "We also sell many devices that are hearing aid-compatible." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Nous offrons le Service de Relais TELUS qui est disponible en tout temps, 7 jours par semaine." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Nous vendons plusieurs appareils compatibles avec les appareils auditifs." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900VT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900GE"
+      }, {
+        "parameter": "hearingimpaired_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_gearing_impaired",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "8d683ae4-90b2-475d-97ee-319cc4a64cf3"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "hearingimpaired_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_gearing_impaired",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900VT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900GE"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "759f2a93-a5a2-454b-9ffd-9185bf735680"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "hearingimpaired_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_gearing_impaired",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900VT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900GE"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "a965ecc5-37c9-45be-b172-2b8227dd4ff6"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900VT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900GE"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "cd509cb9-46d1-4761-9c27-e59fb3a6a249"
+  }, {
+    "condition": "$session.params.dtmf_hearing_impaired = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "hearingimpaired_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_gearing_impaired",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e61f247e-fb66-4d66-b80a-9cdd1c7ceeee"
+  }, {
+    "condition": "$session.params.dtmf_hearing_impaired = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900VT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900GE"
+      }, {
+        "parameter": "hearingimpaired_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_gearing_impaired",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "0b248a4e-2676-4708-92dd-8de5f74f2e9d"
+  }, {
+    "condition": "$session.params.hearingimpaired_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "hearingimpaired_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "e4b37dc3-691a-47cb-aa60-bf910bdae61c"
+  }, {
+    "condition": "$session.params.hearingimpaired_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "hearingimpaired_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "6e2a65d5-2d8c-421d-83bf-a91587b71492"
+  }, {
+    "condition": "$session.params.dtmf_health_for_good = 1 OR $session.params.dtmf_health_for_good = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I'm Sorry, I didn’t understand that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_gearing_impaired",
+        "value": null
+      }, {
+        "parameter": "gearingimpaired_retrycnt",
+        "value": "$sys.func.ADD($session.params.$session.params.gearingimpaired_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "bb852702-c5ce-46bb-97b6-532e906051f6"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "hearingimpaired_retrycnt",
+        "value": "$sys.func.ADD($session.params.hearingimpaired_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.hearingimpaired_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.hearingimpaired_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "ac3afc37-f634-4122-98b4-0ba0cb056c68"
+  } ]
+}

@@ -1,0 +1,92 @@
+{
+  "name": "f18b17cd-4fed-40c1-b865-14f7e0777781",
+  "displayName": "Bounce Back",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"2 Factor Authentication online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"2 Factor Authentication online or app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "2 Factor Authentication online or app",
+    "name": "47593dbf-6a03-4000-8f29-fbfbefe63794"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Activate Sim online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Activate Sim online or app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Activate Sim online or app",
+    "name": "69dd0c71-b789-4e6c-8736-a120f41495cc"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Change Bill Address online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Change Bill Address online or app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Bill Address online or app",
+    "name": "e200bdba-fbd7-472f-aeb7-61d8bed3d7fa"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Change Email Address online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Change Email Address online or app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Email Address online or app",
+    "name": "9193e740-d6b8-4455-9836-855c35e09a12"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Data Limits online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Data Limits online or app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data Limits online or app",
+    "name": "8c01ddd2-2e70-44af-94bd-b000860e76bb"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Enable or disable data online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Enable or disable data online or app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Enable or disable data online or app",
+    "name": "f12299ef-ee17-46f9-b0a7-e8ad1b341768"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Find account number online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Find account number online or app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Find account number online or app",
+    "name": "7a653209-771c-481a-b9ce-7b3605ab22a8"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Lost and Stolen or Find Phone online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Lost and Stolen or Find Phone online or app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Lost and Stolen or Find Phone online or app",
+    "name": "2b6e0143-564f-4d82-8f00-b587e23bf9e3"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"Phone Found online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"Phone Found online or app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Phone Found online or app",
+    "name": "83256294-de7e-4066-bad5-e06ed83dcde9"
+  }, {
+    "condition": "($session.params.online_vs_app = \"app\" AND $session.params.last_page = \"TELUS Rewards online or app\") OR ($session.params.online_vs_app = \"online\" AND $session.params.last_page = \"TELUS Rewards online or app\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Rewards online or app",
+    "name": "d035fa67-f876-4f9f-93c8-4337da517aab"
+  }, {
+    "condition": "$session.params.last_page = \"Change PIN\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change PIN attempt 2",
+    "name": "8504dcdf-30c2-410d-88bc-8aeb966fb71d"
+  }, {
+    "condition": "$session.params.last_page = \"Change Bill Address\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Bill Address attempt 2",
+    "name": "04a72a8a-2886-4761-a1b5-ea2cac918b76"
+  } ]
+}

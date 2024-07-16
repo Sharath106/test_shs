@@ -1,0 +1,58 @@
+{
+  "name": "a3dccebe-e011-4d8c-9419-2344b6a11f66",
+  "displayName": "Consumer Health Product",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Si votre demande concerne nos produits de Santé pour Consommateurs, vous pouvez contacter les équipes suivantes pour obtenir de l'aide :" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\nPour Alerte médicale de TELUS Santé, notre système d'alerte médicale personnel, vous pouvez composer,\n\u003cprosody rate=\"slow\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n1- 8 5 5 - 9 0 9 - 2 2 5 0.\n\u003c/say-as\u003e\n\u003c/prosody\u003e\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\nPour Mes soins TELUS Santé, notre application d'assistance virtuelle, vous pouvez appeler,\n\u003cprosody rate=\"slow\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n1 - 8 5 5 - 5 7 7 - 8 8 3 8\n\u003c/say-as\u003e\n\u003c/prosody\u003e\n\u003cbreak time=\"400ms\"/\u003e \nou, \n\u003cprosody rate=\"slow\"\u003e\nenvoyez-nous un courriel,\nà MesSoins,\n@telus,\n.com.\n\u003c/prosody\u003e\n\u003cbreak time=\"400ms\"/\u003e \n\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "If you're looking for information about our Consumer Health products, you can contact the following teams for more support:" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\nFor TELUS Health Medical Alert, our personal medical alert system, you can dial,\n\u003cprosody rate=\"slow\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n1-855-909-22,50.\n\u003c/say-as\u003e\n\u003c/prosody\u003e\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\nFor TELUS Health MyCare, our virtual care app, \nyou can call,\n\u003cprosody rate=\"slow\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n1-855-577-8838\n\u003c/say-as\u003e\n\u003c/prosody\u003e\n\u003cbreak time=\"400ms\"/\u003e \nor, \n\u003cprosody rate=\"slow\"\u003e\nemail us,\nat MyCare,\n@telus,\n.com.\n\u003c/prosody\u003e\n\u003cbreak time=\"400ms\"/\u003e \n\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Consumer Health Product"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "our consumer health products"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "nos produits de santé grand public"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "b29af254-6871-4c5a-9879-05c8c264b755"
+  } ]
+}

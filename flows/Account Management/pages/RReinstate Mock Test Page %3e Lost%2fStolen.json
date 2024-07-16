@@ -1,0 +1,33 @@
+{
+  "name": "4511cd6b-6579-44a5-8d49-2fd3b2b91fce",
+  "displayName": "RReinstate Mock Test Page \u003e Lost/Stolen",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Did you find your phone?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Glad to hear you found it!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "You can restore your service online through self-serve. Your service will restore within 15 minutes." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "RReinstate Mock Test Page \u003e Lost/Stolen \u003e Confirm text",
+    "name": "e0de4784-1489-412d-ab3c-68668f61630a"
+  } ]
+}

@@ -1,0 +1,110 @@
+{
+  "name": "c7e283a4-1970-4f42-b8e7-bff4a7f87d45",
+  "displayName": "RReinstate Mock Test Page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "TEST that you have reached here." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "webhook": "Identify Customer",
+      "tag": "retrieve_account"
+    },
+    "name": "668d12bb-e494-4e5e-9667-9158418d24bd"
+  }, {
+    "condition": "($session.params.isTrustedUser = \"false\" OR $session.params.isTrustedUser = null) AND ($session.params.user.auth_status = \"false\" OR $session.params.user.auth_status = null)",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sal_testing_rein",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Account Identification",
+    "name": "4d3cb324-bcd9-4cbd-b059-132a64253c4f"
+  }, {
+    "condition": "$session.params.isTrustedUser = \"true\" OR $session.params.user.auth_status = \"true\"",
+    "triggerFulfillment": {
+      "webhook": "Identify Customer",
+      "tag": "retrieve_product_sub",
+      "setParameterActions": [ {
+        "parameter": "productSubscriberSearchValue",
+        "value": "$session.params.searchResult.searchValue"
+      }, {
+        "parameter": "environment",
+        "value": "it04"
+      } ]
+    },
+    "name": "02791b08-8326-4f49-a26c-fa0f4b6562f2"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.error_code != 200",
+    "triggerFulfillment": {
+      "webhook": "Identify Customer",
+      "tag": "retrieve_product_sub",
+      "setParameterActions": [ {
+        "parameter": "productSubscriberSearchValue",
+        "value": "$session.params.searchResult.searchValue"
+      }, {
+        "parameter": "environment",
+        "value": "it04"
+      } ]
+    },
+    "name": "32e42366-cbb4-419b-9963-4a84222ef94a"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.error_code != 200",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RReinstate Mock Test Page \u003e API Error",
+    "name": "b9705cab-b4af-4b9b-9f40-14946bce195f"
+  }, {
+    "condition": "$session.params.listOfProductSubscribers[0].statusCd != \"suspended\" OR $session.params.listOfProductSubscribers[0].statusCd = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RReinstate Mock Test Page \u003e Regular content (Generic message)",
+    "name": "a31b986b-f27a-4867-9934-604e9af4551e"
+  }, {
+    "condition": "$session.params.listOfProductSubscribers[0].statusCd = \"suspended\" AND $session.params.listOfProductSubscribers[0].activityReasonCd = \"LST\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RReinstate Mock Test Page \u003e Lost/Stolen",
+    "name": "183c5ccd-30d8-4356-94ae-a9144a08b51e"
+  }, {
+    "condition": "$session.params.listOfProductSubscribers[0].statusCd = \"suspended\" AND $session.params.listOfProductSubscribers[0].statusCd = \"STL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RReinstate Mock Test Page \u003e Lost/Stolen",
+    "name": "64c48879-a6b6-46b1-8046-4a96b9307e2c"
+  }, {
+    "condition": "$session.params.listOfProductSubscribers[0].statusCd = \"suspended\" AND ($session.params.listOfProductSubscribers[0].activityReasonCd = \"CVAD\" OR $session.params.listOfProductSubscribers[0].activityReasonCd = \"Consumer VAD\" OR $session.params.listOfProductSubscribers[0].activityReasonCd = \"VAD\" OR $session.params.listOfProductSubscribers[0].activityReasonCd = \"BVAD\")",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RReinstate Mock Test Page \u003e Vacation Disconnect",
+    "name": "e5e70166-073f-46fa-917a-efc5cf18c287"
+  }, {
+    "condition": "$session.params.listOfProductSubscribers[0].statusCd = \"suspended\" AND $session.params.listOfProductSubscribers[0].activityReasonCd = \"CRQ\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RReinstate Mock Test Page \u003e Per Customer Request",
+    "name": "2f7329ec-8ad9-4a42-b378-754a40612455"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RReinstate Mock Test Page \u003e Regular content (Generic message)",
+    "name": "fe00863d-0598-4a39-abf8-5ea2050ea04d"
+  } ]
+}

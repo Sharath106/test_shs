@@ -1,0 +1,405 @@
+{
+  "name": "f033ddbf-1691-4f1a-a52c-fa275a1c0dbf",
+  "displayName": "Cognitive Solutions",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_cognitive_solutions",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations sur les solutions cognitives?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry I didn't quite get that.", "Sorry I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information on cognitive solutions to your phone?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f0357dc3-3c11-4d16-9a81-ff4fb860e281"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "3292efa2-9812-4920-b229-723fa60c0f03"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "622ff268-dade-4889-a593-9879a01bec3d"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations sur les solutions cognitives?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I didn't catch that.", "Sorry I didn't catch that.", "I'm sorry,  I didn't understand that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information on cognitive solutions to your phone?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4bb52953-4717-4106-adbf-08efadaca030"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "291b1fe8-9592-4803-b41a-58a2ba935ec1"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "818768a1-1a15-45ef-baae-3686338c83b0"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Cognitive Solutions"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "our cognitive device options"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "nos options de dispositifs cognitifs"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "looking for cognitive device options"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "voir les options de dispositifs cognitifs"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour obtenir des informations sur nos options de dispositifs cognitifs., vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To get information on our cognitive device options, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Nos appareils offrent plusieurs fonctions comme des fonctions de commandes vocales, le texte prédictif, des rappels de message texte et encore plus." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Our devices offer voice commands, predictive text, short message reminders and more." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900VH"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319010J"
+      }, {
+        "parameter": "cognitivesolutions_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_cognitive_solutions",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "0832fb6a-0569-407f-9ae6-16e0952f8130"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_cognitive_solutions",
+        "value": null
+      }, {
+        "parameter": "cognitivesolutions_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900VH"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319010J"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "3e9b0d93-65b8-4a7a-a51e-68b34e03802d"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "cognitivesolutions_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900VH"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319010J"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "fef643a2-828c-49a3-98b7-b7dd6925b62c"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "407594ef-bded-426a-b236-6f2d250f82dd"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "cognitivesolutions_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_cognitive_solutions",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900VH"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319010J"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "41007787-5ae2-4b2a-850a-2242a5cfcee8"
+  }, {
+    "condition": "$session.params.dtmf_cognitive_solutions = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "cognitivesolutions_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_cognitive_solutions",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "c4d90bf6-67df-4621-b70d-dd5d7523feed"
+  }, {
+    "condition": "$session.params.dtmf_cognitive_solutions = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900VH"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN7319010J"
+      }, {
+        "parameter": "dtmf_cognitive_solutions",
+        "value": null
+      }, {
+        "parameter": "cognitivesolutions_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "146b9b7b-dfe6-47fa-8a3a-00ae74069191"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "cognitivesolutions_retrycnt",
+        "value": "$sys.func.ADD($session.params.cognitivesolutions_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.cognitivesolutions_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.cognitivesolutions_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "6b086c72-e0a8-4807-9b99-3b2c434e5725"
+  } ]
+}

@@ -1,0 +1,207 @@
+{
+  "name": "3205c74d-63f4-48b1-8caf-a0c5fb738093",
+  "displayName": "Change Account type",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Change Account type"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "changing your account type"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "changer votre type de compte"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "For account type changes, an account owner must authorize this kind of change." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You'll be able to keep the same phone number, but a new plan must be selected for the updated account type, and all previous benefits and discounts will be removed." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Also, your current plan will determine if your current device balance has to be paid off in full before the change can take place." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Let me get you to a team member for further support." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Afin de modifier votre type de compte, le titulaire principal du compte doit autoriser la demande." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Bien que vous conserviez le même numéro de téléphone, tous les avantages et remises seront supprimés et vous devrez également sélectionner un forfait sur le marché pour le type de compte que vous changez." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "En plus, votre forfait actuel déterminera si le solde actuel de votre appareil doit être remboursé en totalité avant que le changement puisse avoir lieu." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je peux vous mettre en contact avec un membre de l'équipe pour plus d'information." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Changing account types requires the account owner's approval, and a new plan must be selected for the updated account type." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "While the phone number can remain the same, all previous discounts and benefits will be lost." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "The current plan will also determine whether the outstanding device balance must be paid in full before the change can be made." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I'll connect you with a team member for further assistance." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour changer de type de compte, l'approbation du propriétaire du compte est requise et un nouveau plan doit être sélectionné pour le type de compte mis à jour." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Bien que le numéro de téléphone puisse rester le même, toutes les réductions et avantages précédents seront perdus." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Le plan actuel déterminera également si le solde restant sur l'appareil doit être payé intégralement avant que le changement puisse être effectué." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vais vous mettre en contact avec un membre de notre équipe pour une assistance supplémentaire." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To change account types, the account owner must authorize the change and select a new plan for the updated account type." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "While the phone number can be retained, all prior benefits and discounts will be forfeited." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "The current plan will also determine whether the outstanding device balance must be paid in full before the change can be made." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Allow me to transfer you to a team member for further assistance." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour changer de type de compte, le propriétaire du compte doit autoriser le changement et sélectionner un nouveau plan pour le type de compte mis à jour." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Bien que le numéro de téléphone puisse être conservé, tous les avantages et réductions précédents seront perdus." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Le plan actuel déterminera également si le solde restant sur l'appareil doit être payé intégralement avant que le changement puisse être effectué." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Permettez-moi de vous transférer à un membre de notre équipe pour une assistance supplémentaire." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "18d6d5a8-8b2e-47b4-a486-3acc24fa020f"
+  } ]
+}

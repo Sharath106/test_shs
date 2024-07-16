@@ -1,0 +1,32 @@
+{
+  "name": "7a372ee7-8936-4108-868f-51ccdef47256",
+  "displayName": "Escalations",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "If you've been trying to resolve an issue, but it remains unresolved, let me get you to a team member for more assistance." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Si vous avez un problème pour lequel nous ne trouvons pas de solution, je peux vous mettre en contact avec un membre de l'équipe pour plus d'aide." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Escalations"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "dc7f6c46-f7a4-496f-85b4-06ac715cae25"
+  } ]
+}

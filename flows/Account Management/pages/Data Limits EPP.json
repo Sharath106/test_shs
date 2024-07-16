@@ -1,0 +1,88 @@
+{
+  "name": "55fee480-eebf-4de2-8e2e-11cee2d53619",
+  "displayName": "Data Limits EPP",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Pour définir les limites de données, nous avons une fonctionnalité appelée la Protection contre le dépassement." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "La Protection contre le dépassement permet d'empêcher des frais d'utilisation excédentaire de données sur une ligne lorsque le lot partageable est épuisé." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ " L'accès aux données partageables des utilisateurs sera désactivé jusqu'à la prochaine date de début du cycle de facturation." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Vous pouvez bloquer manuellement vos données, gérer les notifications et surveiller votre utilisation via  Mon TELUS en ligne." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Permettez-moi d'envoyer un texte rapide avec plus de détails." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "For setting data limits, we provide a feature called overedge protection." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Overedge Protection allows you to prevent extra data charges when the shared data allotment has been used by other people on your account." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Access to shared data will be turned off until the next start date of your bill. You can manually block your data, manage notifications, and monitor your usage through My TELUS." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Let me send you a quick text with more details." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Data Limits EPP"
+    }, {
+      "parameter": "page_summary",
+      "value": "setting up data limits"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la configuration des limites de données"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900NY"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900AW"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "online"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "abad3122-6dab-4e0d-92d3-476af7ad391c"
+  } ]
+}

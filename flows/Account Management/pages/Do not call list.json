@@ -1,0 +1,366 @@
+{
+  "name": "8b6301bf-6fd6-44f3-a100-19ae605aab77",
+  "displayName": "Do not call list",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_do_not_call_list",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like me to text a link with more information?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "  Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry I didn't quite get that.", "Sorry I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to text a link with more information?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "aeff1fe6-2471-4c60-9520-a4736e5ef41c"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "a08ef661-5c0e-482a-9705-8a6f27b69928"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "3b5dec03-73a7-4e31-b6d4-02406e806f49"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn't catch that.", "Sorry I didn't catch that.", "I'm sorry,  I didn't understand that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to text a link with more information?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un lien à votre téléphone avec plus d'informations?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "a525ca98-0ff7-427f-9e08-58dfc5558c06"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "b7e14d1f-aa18-468e-b530-0700648d9d3a"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "8d20feeb-bb9d-4f1d-ae16-4e4700ad0bda"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Do not call list"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "using the do not call list"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "la liste nationale de numéros de télécommunication exclus"
+    }, {
+      "parameter": "page_summary",
+      "value": "the do not call list"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "utiliser la liste nationale de numéros de télécommunication exclus"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on the do not call list, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur la liste nationale de numéros de télécommunication exclus, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can register your phone number on the National Do Not Call List. This helps prevent calls from telemarketers when registered." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I would also suggest looking into our Call Control feature to prevent spam and auto-dialers from calling you." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez inscrire votre numéro de téléphone sur la liste nationale de numéros de télécommunication exclus. Ce site permet aux utilisateurs inscrits de ne plus recevoir d’appels de télémarketing." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je suggérerais également d'examiner notre fonction de contrôle des appels pour empêcher le spam et les numéroteurs automatiques de vous appeler." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900CK"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190061"
+      }, {
+        "parameter": "donotcalllist_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_do_not_call_list",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "9f6aa186-e4b4-445d-baa0-c28739859c87"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "donotcalllist_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_do_not_call_list",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900CK"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190061"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "be4b1514-c0e6-409d-9e0f-b20e58c4f742"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "donotcalllist_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_do_not_call_list",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900CK"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190061"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "bfedf72d-29e3-4315-92b5-b451be7fe2cf"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900CK"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190061"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "ff2be412-598c-4281-b88e-2f9b1bb2ddbd"
+  }, {
+    "condition": "$session.params.dtmf_do_not_call_list = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "donotcalllist_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_do_not_call_list",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9d02f699-c181-4116-98c5-b4524d29b85b"
+  }, {
+    "condition": "$session.params.dtmf_do_not_call_list = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900CK"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190061"
+      }, {
+        "parameter": "donotcalllist_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_do_not_call_list",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "d0ff255d-4236-4abc-8677-0945fee0d0ff"
+  } ]
+}

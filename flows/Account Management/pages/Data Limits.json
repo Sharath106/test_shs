@@ -1,0 +1,414 @@
+{
+  "name": "f2a490b1-cdd9-4fe8-a512-32bd837d4e99",
+  "displayName": "Data Limits",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_data_limits",
+      "required": true,
+      "entityType": "@dtmf-menu-9-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like me to send a text on how to do that?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ " Aimeriez-vous que je vous envoie un message texte expliquant comment le faire?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text on how to do that?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que je vous envoie un message texte expliquant comment le faire?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "36e89d3d-dd3f-4716-9180-29b63187e476"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "9303612f-bbc9-481f-a90c-57b8ceea4dd1"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "875d3c11-d2e1-4bf4-9e18-df145d5c195d"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry,  I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text on how to do that?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que je vous envoie un message texte expliquant comment le faire?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "0b9fa86b-f419-49bc-b000-f153be6adf2d"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "2dbfca69-9ff9-4e0c-9e9f-0dfb62303f90"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "9f9aba12-6c98-4b03-bfd6-10b06a04f83f"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Data Limits"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "setting up data limits"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "la configuration des limites de données"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "setting up data limits"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "définir les limites de données"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "To get information on setting up data limits, you must use your My TELUS account, It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "An agent cannot help perform this on a customer behalf, I am sending you a link to My TELUS now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour obtenir des informations sur comment définir les limites de données, vous devez utiliser votre compte Mon TELUS. Il est facile à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Un agent n'est pas en mesure d'aider à faire cela au nom d'un client. Je vous envoie maintenant un lien vers Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire avec l'assistant virtuel de votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "For setting data limits, we provide a feature called overedge protection." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Overedge Protection allows you to prevent extra data charges when the shared data allotment has been used by other people on your account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Access to shared data will be turned off until the next start date of your bill." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "You can manually block your data, manage notifications, and monitor your usage through My TELUS." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour définir les limites de données, nous avons une fonctionnalité appelée la Protection contre le dépassement." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "La Protection contre le dépassement permet d'empêcher des frais d'utilisation excédentaire de données sur une ligne lorsque le lot partageable est épuisé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "L'accès aux données partageables des utilisateurs sera désactivé jusqu'à la prochaine date de début du cycle de facturation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez bloquer manuellement vos données, gérer les notifications et surveiller votre utilisation via l'application Mon TELUS ou en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "datalimits_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_data_limits",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Data Limits online or app",
+    "name": "27a33d06-98c8-4de4-9a87-0eb88afcabe6"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "datalimits_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_data_limits",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900M6"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900K2"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "73cbb6cf-f4a2-47a3-bf59-1e47d4d7b106"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "datalimits_retrycnt",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Data Limits online or app",
+    "name": "1ac790cb-ce7b-41a8-8c1e-2f9973589c38"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900M6"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900K2"
+      }, {
+        "parameter": "sms_flow_option",
+        "value": "app"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "22a3fb93-605f-433e-9873-6b3a597a802e"
+  }, {
+    "condition": "$session.params.dtmf_data_limits = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "datalimits_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_data_limits",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetPage": "Data Limits online or app",
+    "name": "b5b5bd30-d9e8-4722-99bf-4a57d5f0e185"
+  }, {
+    "condition": "$session.params.dtmf_data_limits = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "datalimits_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_data_limits",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "30ab2fd7-3e93-4b5c-ac37-30d61dcf1c41"
+  }, {
+    "condition": "$session.params.dtmf_data_limits = 1 OR $session.params.dtmf_data_limits = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_data_limits",
+        "value": null
+      }, {
+        "parameter": "datalimits_retrycnt",
+        "value": "$sys.func.ADD($session.params.datalimits_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "0a1b052a-c8f8-4f32-ae18-819f7d3c41d6"
+  } ]
+}

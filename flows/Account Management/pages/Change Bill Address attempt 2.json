@@ -1,0 +1,35 @@
+{
+  "name": "53cfd316-e481-49f1-a0c3-3ffdc7294f5a",
+  "displayName": "Change Bill Address attempt 2",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Dans l'application Mon TELUS, vous pouvez sélectionner le menu, puis passer à « Mon profil » où vous pourrez modifier vos coordonnées." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "In the  My TELUS app you can select the menu, then proceed to \"My profile\" where you can edit your address by clicking on the pencil icon next to it." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Change Bill Address attempt two"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "65c66a23-1d1c-45b9-8061-c1bfbd0b458e"
+  } ]
+}

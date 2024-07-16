@@ -1,0 +1,165 @@
+{
+  "name": "573c5e1f-350d-497f-b933-66b718367690",
+  "displayName": "Marketing",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Marketing"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "our marketing communications"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "nos communications marketing"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You always have the option to change your preferred method of communication regarding TELUS products that you may be interested in." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To completely remove all communication whether it be text, email, or, phone calls, Let me know so I can get you to a team member." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Please note that it could take up to 14 days for changes to process." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez toujours changer votre mode de communication préféré au sujet des produits de TELUS qui pourraient vous intéresser." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour arrêter complètement toutes les communications par message texte, par courriel, ou, par téléphone, je devrai vous mettre en contact avec un membre de l'équipe." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Veuillez noter que les changements peuvent prendre jusqu’à quatorze jours avant d’entrer en vigueur." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You have the flexibility to modify your preferred mode of communication for TELUS products that may interest you." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you wish to eliminate all forms of communication, such as text, email, or phone calls, please let me know so that I can connect you with a team member." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "It's important to note that changes may take up to 14 days to take effect." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous avez la flexibilité de modifier votre mode de communication préféré pour les produits TELUS qui pourraient vous intéresser." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous souhaitez éliminer toutes les formes de communication, telles que les textos, les courriels ou les appels téléphoniques, veuillez me le faire savoir afin que je puisse vous mettre en contact avec un membre de notre équipe." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Il est important de noter que les changements peuvent prendre jusqu'à quatorze jours pour prendre effet." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You have the option to adjust your preferred communication method for TELUS products that may pique your interest." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you want to eliminate all communication, including text, email, or phone calls, please inform me so that I can transfer you to a team member." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Please keep in mind that it may take up to 14 days for the changes to be implemented." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous avez la possibilité d'ajuster votre méthode de communication préférée pour les produits TELUS qui pourraient vous intéresser." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous souhaitez éliminer toute forme de communication, y compris les textos, les courriels ou les appels téléphoniques, veuillez m'en informer afin que je puisse vous transférer à un membre de notre équipe." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Veuillez noter que les modifications peuvent prendre jusqu'à quatorze jours pour être mises en œuvre." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "af47dc86-5219-4328-90b9-ca045526fe45"
+  } ]
+}
