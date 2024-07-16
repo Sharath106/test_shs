@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "3G",
+    "synonyms": [ "3G", "donnee 3G", "donnée 3G", "donnees 3G", "données 3G", "forfait 3G", "reseau 3G", "réseau 3G", "vitesse 3G", "vitesse de donnees 3G", "vitesse de données 3G", "vitesse des donnees 3G", "vitesse des données 3G" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "4G",
+    "synonyms": [ "4G", "4G LTE", "donnee 4G", "donnée 4G", "donnees 4G", "données 4G", "forfait 4G", "plan 4G", "reseau 4G", "réseau 4G", "vitesse 4G", "vitesse de donnees 4G", "vitesse de données 4G", "vitesse des donnees 4G", "vitesse des données 4G", "LTE" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "5G",
+    "synonyms": [ "5G", "5G LTE", "donnee 5G", "donnée 5G", "donnees 5G", "données 5G", "forfait 5G", "plan 5G", "reseau 5G", "réseau 5G", "vitesse 5G", "vitesse de donnees 5G", "vitesse de données 5G", "vitesse des donnees 5G", "vitesse des données 5G" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "5G+",
+    "synonyms": [ "5G plus", "5G+", "5G+ LTE", "donnee 5G+", "donnée 5G+", "donnees 5G+", "données 5G+", "forfait 5G plus", "forfait 5G+", "meilleure vitesse", "meilleure vitesse de donnees", "meilleure vitesse de données", "meilleure vitesse des donnees", "meilleure vitesse des données", "plan 5G+", "reseau 5G+", "réseau 5G+", "vitesse 5G+", "vitesse de donnees 5G+", "vitesse de données 5G+", "vitesse des donnees 5G+", "vitesse des données 5G+", "vitesse la plus rapide", "vitesse la plus vite" ],
+    "languageCode": "fr-ca"
+  } ]
+}

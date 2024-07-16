@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "accessories",
+    "synonyms": [ "accessoire", "accessoires", "air pods", "airbuds", "airpods", "Beats", "chargeur", "chargeurs", "conférencier", "d'accessoires", "écouteurs", "écran", "étui", "étuis", "fitbit", "fitbits", "peu en forme", "protecteurs", "protecteurs d'écran" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "mobile phone",
+    "synonyms": [ "android", "appareil mobile", "cell", "cellulaire", "google", "huawei", "iphone", "lg", "mobile", "mobile phone", "portable", "samsung", "téléphone" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "smarthub",
+    "synonyms": [ "clé internet", "hub", "Internet mobile", "smarthub", "terminal", "terminal intelligent", "terminal intelligent", "terminal internet" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "tablet",
+    "synonyms": [ "ipad", "iPad", "ipads", "iPads", "tab", "tablet", "tablette", "tablettes" ],
+    "languageCode": "fr-ca"
+  } ]
+}

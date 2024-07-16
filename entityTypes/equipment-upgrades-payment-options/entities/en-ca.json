@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "pay0upfront",
+    "synonyms": [ "pay 0", "pay 0 upfront", "pay zero", "pay zero upfront", "pay0upfront", "zero", "zero upfront", "0" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "lowermonthly",
+    "synonyms": [ "less monthly bill", "low monthly", "low monthly bill", "lower monthly", "lower monthly bill ", "lowermonthly" ],
+    "languageCode": "en-ca"
+  } ]
+}

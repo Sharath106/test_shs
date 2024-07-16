@@ -1,0 +1,39 @@
+{
+  "entities": [ {
+    "value": "home internet services",
+    "synonyms": [ "filaire", "fournisseur a domicile", "fournisseur à domicile", "fournisseur de services residentiels", "fournisseur de services résidentiels", "home internet services", "internet à la maison", "Internet residentiel", "Internet résidentiel", "résidentiel", "routeur domestique", "services internet a domicile", "services internet à domicile", "services internet residentiels", "services internet résidentiels", "wi fi", "wi-fi", "wi-fi residentiel", "wi-fi résidentiel", "Wifi", "Wifi", "Wifi", "wifi domestique" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "hotspot hub",
+    "synonyms": [ "hot spot", "hotspot", "hotspot hub", "partage de connexion", "point d'acces", "point d'accès", "point d'accès mobile", "point d'access mobile" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "mobile internet key",
+    "synonyms": [ "cle", "clé", "cle internet", "clé internet", "cle internet mobile", "clé internet mobile", "cle USB", "clé USB", "internet usb", "mobile internet key", "USB" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "mobile phone",
+    "synonyms": [ "BLACKBERRY BOLD", "cell", "cellulaire", "google", "huawei", "iphone", "lg", "LG", "mobile", "mobile phone", "motorola", "pixel", "samsung", "telephone", "téléphone", "telephone cellulaire", "téléphone cellulaire", "telephone portable", "téléphone portable" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "smart hub",
+    "synonyms": [ "hub", "smart hub", "terminal", "terminal intelligent" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "4",
+    "synonyms": [ "dtmf_digits_4" ],
+    "languageCode": "fr-ca"
+  } ]
+}

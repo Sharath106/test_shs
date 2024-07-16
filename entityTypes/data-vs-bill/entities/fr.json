@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "bill",
+    "synonyms": [ "bill", "notifications de factures", "facture", "facture d'achat", "facture", "facturation en itinérance", "option 4", "4" ],
+    "languageCode": "fr"
+  }, {
+    "value": "data",
+    "synonyms": [ "data", "notifications de données", "données", "données", "bloc de données" ],
+    "languageCode": "fr"
+  } ]
+}

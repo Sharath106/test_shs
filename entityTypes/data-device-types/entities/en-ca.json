@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "mobile phone",
+    "synonyms": [ "BLACKBERRY BOLD", "cell", "cell phone", "cellphone", "google", "huawei", "iphone", "mobile", "mobile device", "mobile phone", "motorola", "phone", "pixel", "samsung" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "smart hub",
+    "synonyms": [ "hub", "smart hub", "smart terminal", "smarthub", "terminal" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "mobile internet key",
+    "synonyms": [ "internet key", "internet usb", "key", "mobile internet key", "usb", "usb key" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "hotspot hub",
+    "synonyms": [ "hot spot", "hotspot", "hotspot hub" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "home internet services",
+    "synonyms": [ "home internet", "home internet services", "home provider", "home router", "home services internet", "home wi-fi", "residential internet", "wi fi ", "wi-fi", "wifi" ],
+    "languageCode": "en-ca"
+  } ]
+}

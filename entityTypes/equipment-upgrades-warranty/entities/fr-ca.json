@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "Apple Care+",
+    "synonyms": [ "apple", "apple care", "apple care plus", "Apple Care+", "applecare", "applecare +", "applecare+", "garantie apple", "garantie iphone", "iphone", "iPhone", "IPhone" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Device Care Complete",
+    "synonyms": [ "compl", "complete d'appareils", "complète d'appareils", "complete d'appareils telus", "complète d'appareils Telus", "PCA", "protection complete", "Protection complète", "protection complete d'appareils", "Protection Complete d'Appareils", "Protection Complete d'Appareils de telus", "protection complète d’appareils", "Protection Complète d’Appareils", "Protection Complète d’Appareils de telus", "protection d'appareils", "Protection d’Appareils" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "No added protection",
+    "synonyms": [ "aucun", "aucune protection requise", "je ne veux pas", "non", "pas besoin", "pas de protection", "pas de protection ajoutee", "Pas de protection ajoutee", "pas de protection ajoutée", "Pas de protection ajoutée", "pas requis", "aucune" ],
+    "languageCode": "fr-ca"
+  } ]
+}

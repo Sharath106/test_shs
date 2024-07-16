@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "ongoing",
+    "synonyms": [ "en cours", "indefiniment", "indéfiniment", "permanent", "permanente", "pour de bon", "pour toujours", "toujours" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "temporary",
+    "synonyms": [ "ce mois-ci", "jusqu'au mois prochain", "jusqu'au prochain cycle", "pour l'instant", "pour le mois", "pour le moment", "temporaire", "temporairement" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2" ],
+    "languageCode": "fr-ca"
+  } ]
+}

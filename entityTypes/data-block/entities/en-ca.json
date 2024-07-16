@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "ongoing",
+    "synonyms": [ "always", "forever", "indefinitely", "ongoing" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "temporary",
+    "synonyms": [ "for now", "for the cycle", "for the moment", "for the month", "temp", "temporarily", "temporary", "until next cycle", "until next month" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "1", "dtmf_digits_one", "one" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "2", "two", "dtmf_digits_two" ],
+    "languageCode": "en-ca"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "ongoing",
+    "synonyms": [ "ongoing", "en cours", "toujours", "indéfiniment", "pour toujours" ],
+    "languageCode": "fr"
+  }, {
+    "value": "temporary",
+    "synonyms": [ "temporary", "temporaire", "temporairement", "pour le mois", "pour le vélo", "jusqu'au mois prochain", "jusqu'au prochain cycle", "température", "pour l'instant", "pour le moment" ],
+    "languageCode": "fr"
+  } ]
+}

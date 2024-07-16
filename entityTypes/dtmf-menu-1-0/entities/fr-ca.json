@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "dtmf_digits_0" ],
+    "languageCode": "fr-ca"
+  } ]
+}

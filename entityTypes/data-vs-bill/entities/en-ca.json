@@ -1,0 +1,35 @@
+{
+  "entities": [ {
+    "value": "data",
+    "synonyms": [ "data" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "bill",
+    "synonyms": [ "bill", "invoice" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "phone",
+    "synonyms": [ "android", "device", "iphone", "mobile phone", "phone", "pixel", "ring tone", "ringtone", "sounds" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "0",
+    "synonyms": [ "agent", "dtmf_digits_0", "operator", "zero" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1", "one" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2", "two" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3", "three" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "9",
+    "synonyms": [ "dtmf_digits_9", "nine", "send SMS", "sms", "sms link" ],
+    "languageCode": "en-ca"
+  } ]
+}

@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "set limit",
+    "synonyms": [ "data limits", "limits", "set data limit", "set limit" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "match",
+    "synonyms": [ "bill", "cycle", "match", "match bill", "match bill cycle", "match cycle" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "disable",
+    "synonyms": [ "disable", "disable data", "turn off data" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "1",
+    "synonyms": [ "dtmf_digits_1", "one" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "2",
+    "synonyms": [ "dtmf_digits_2", "two" ],
+    "languageCode": "en-ca"
+  }, {
+    "value": "3",
+    "synonyms": [ "dtmf_digits_3", "three" ],
+    "languageCode": "en-ca"
+  } ]
+}

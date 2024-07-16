@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "Basic",
+    "synonyms": [ "Basic" ],
+    "languageCode": "en"
+  }, {
+    "value": "Complete",
+    "synonyms": [ "Complete" ],
+    "languageCode": "en"
+  }, {
+    "value": "Standard",
+    "synonyms": [ "Standard" ],
+    "languageCode": "en"
+  }, {
+    "value": "Ultimate",
+    "synonyms": [ "Ultimate" ],
+    "languageCode": "en"
+  }, {
+    "value": "None",
+    "synonyms": [ "no", "none", "None", "nope", "not required", "note required", "nothing" ],
+    "languageCode": "en"
+  } ]
+}

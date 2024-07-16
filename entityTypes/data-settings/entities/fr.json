@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "disable",
+    "synonyms": [ "disable", "désactiver", "désactiver les données", "désactiver les données" ],
+    "languageCode": "fr"
+  }, {
+    "value": "match",
+    "synonyms": [ "match", "rencontre", "correspondre au cycle de facturation", "facture de correspondance", "cycle de match", "facture", "cycle" ],
+    "languageCode": "fr"
+  }, {
+    "value": "set limit",
+    "synonyms": [ "set limit", "fixer la limite", "définir la limite de données", "limites", "limites de données" ],
+    "languageCode": "fr"
+  } ]
+}

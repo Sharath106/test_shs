@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "Device",
+    "synonyms": [ "1", "appareil", "couleur", "fabricant", "marque", "modele", "modèle", "premier", "stockage", "telephone", "téléphone", "telephone intelligent", "téléphone intelligent", "un" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Payment",
+    "synonyms": [ "2", "deux", "deuxieme", "deuxième", "Option retour", "options de paiement", "paiement", "Paiements faciles" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Plan",
+    "synonyms": [ "3", "forfait", "Forfait", "trois", "troisieme", "troisième" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "Warranty",
+    "synonyms": [ "4", "garantie", "Garantie", "Quatre", "quatrieme", "quatrième" ],
+    "languageCode": "fr-ca"
+  }, {
+    "value": "AddOns",
+    "synonyms": [ "5", "cinq", "cinquième", "en continu", "EnContinu", "EnContinu +", "EnContinu+", "option", "options", "Options", "protection numerique", "protection numérique", "protection numerique de TELUS", "protection numérique de TELUS", "cinquieme" ],
+    "languageCode": "fr-ca"
+  } ]
+}

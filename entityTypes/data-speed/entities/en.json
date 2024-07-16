@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "3G",
+    "synonyms": [ "3G", "3G data", "3G data speed", "3G network", "3G plan", "3G speed" ],
+    "languageCode": "en"
+  }, {
+    "value": "4G",
+    "synonyms": [ "4G", "4G data", "4G data speed", "4G network", "4G plan", "4G speed", "LTE", "4G LTE" ],
+    "languageCode": "en"
+  }, {
+    "value": "5G",
+    "synonyms": [ "5G", "5G data", "5G data speed", "5G LTE", "5G network", "5G plan", "5G speed" ],
+    "languageCode": "en"
+  }, {
+    "value": "5G+",
+    "synonyms": [ "5G plus", "5G plus plan", "5G+", "5G+ data", "5G+ data speed", "5G+ LTE", "5G+ network", "5G+ plan", "5G+ speed", "best data speed", "best speed", "fastest speed" ],
+    "languageCode": "en"
+  } ]
+}
