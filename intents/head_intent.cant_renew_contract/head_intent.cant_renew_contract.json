@@ -1,0 +1,28 @@
+{
+  "name": "2f007111-037b-495a-a82f-09c9f3e14da4",
+  "displayName": "head_intent.cant_renew_contract",
+  "parameters": [ {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Unable to renew their contract online",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 164
+}

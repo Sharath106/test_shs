@@ -1,0 +1,353 @@
+{
+  "trainingPhrases": [ {
+    "id": "35eaea7d-3e8a-4610-a013-3f5c291d9c92",
+    "parts": [ {
+      "text": "Cancellation fee"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f32bd26d-fac4-4a83-a849-58b257e8877f",
+    "parts": [ {
+      "text": "can you confirm what the fee is for cancelling my contract early?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a87c73bd-8dee-4665-8960-a0d5169248fb",
+    "parts": [ {
+      "text": "price to cancel my agreement "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fc3b3a71-e4a9-438d-8ee2-494f3e0cc093",
+    "parts": [ {
+      "text": "can you tell me how much is the cancellation fee?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5a5f0355-10a1-4aff-b337-47ef729d3d9c",
+    "parts": [ {
+      "text": "will there be cancellation fees?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "49d9991c-c3ad-4f95-8e37-4855feacbbc2",
+    "parts": [ {
+      "text": "how much does the cancellation fee come up to?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6918e4ca-52be-423d-9f97-084529904aad",
+    "parts": [ {
+      "text": "is there a fee to cancel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "87eeb468-cdd8-4300-a0ca-f5e8285dc9ff",
+    "parts": [ {
+      "text": "how much to cancel contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "46294a53-34c9-468b-bf55-344d9a236f89",
+    "parts": [ {
+      "text": "fee to cancel my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5fc97259-b1b5-4b40-9955-ef8aadcf932c",
+    "parts": [ {
+      "text": "what does it cost to cancel a contract?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b8418c2b-4868-41e9-a2ea-5088c69240f9",
+    "parts": [ {
+      "text": "telus cancellation policy"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "25eee441-e899-4e4b-8f30-b32b008c3bc4",
+    "parts": [ {
+      "text": "fee to break my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e263f769-37e4-4a00-bbc0-fd0661304abc",
+    "parts": [ {
+      "text": "what are service cancellation fees"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "86016e7d-7829-4332-9380-2f8579e38bbd",
+    "parts": [ {
+      "text": "how much to cancel my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "befdaa7a-0f8a-4f62-9cd3-73c96195d8a3",
+    "parts": [ {
+      "text": "costs to cancel phone contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "124620d6-40d8-4548-99e3-95ec8311d35c",
+    "parts": [ {
+      "text": "penalty fees to cancel my contract"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5aeb0b21-1a08-4f34-a557-abec3d414f0d",
+    "parts": [ {
+      "text": "i want to cancel contract, is there a fee"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dd7a08e1-2a03-4d9a-86bb-4abe45c11e3e",
+    "parts": [ {
+      "text": "how much does it cost to cancel agreement "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5f4d9086-ae18-4c64-8115-7c8d243d5a74",
+    "parts": [ {
+      "text": "Wanna cancel my current contract. How much?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cbc7976f-0f6c-47aa-a5aa-28590293ef20",
+    "parts": [ {
+      "text": "What's the cost associated with cancelling a contract?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "122b9d78-55cc-4045-b0fb-fc40c3291bb0",
+    "parts": [ {
+      "text": "Help me with cancelation fee please. How much will I pay?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c52a390f-6013-4b20-ae08-8ebcd5b38227",
+    "parts": [ {
+      "text": "Wanna cancel my contract, how much?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2259deae-0194-46d8-9064-0cfb6de33e9b",
+    "parts": [ {
+      "text": "Price for cancelling contract early"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e2988ef0-e7fe-4589-aa59-2f93449a0710",
+    "parts": [ {
+      "text": "How much to cancel my contract with 6 months left?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cc4dcbbc-3a4c-400b-ae61-9cdb38793329",
+    "parts": [ {
+      "text": "Will I have to pay for the plan cancellation and if so, how much?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "497393c2-9a90-45f5-8d03-70e385d10244",
+    "parts": [ {
+      "text": "Not too sure about the price of cancellation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2a07140b-f37c-4dfb-ba98-74ae7fa0870b",
+    "parts": [ {
+      "text": "Will I be charged something to cancel my plan? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db7bfc4b-67dc-4970-8619-be70dd2853c4",
+    "parts": [ {
+      "text": "Tell me how much to pay to cancel please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0d3342fa-73e7-419b-ab17-b7f2937b0ae5",
+    "parts": [ {
+      "text": "Son's plan isn't up quite yet but I wanted to cancel, how much will it cost me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1fbdd531-4dc7-40a6-84a3-e4d0cd11fc3a",
+    "parts": [ {
+      "text": "How much if I want to cancel right now?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "18acc102-4d2a-4164-b701-919ba5120ba0",
+    "parts": [ {
+      "text": "I see that there is a cancellation fee on my account after doing an upgrade."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aee51730-a07a-4b60-8215-2c7b6b6be2f9",
+    "parts": [ {
+      "text": "Is there a cancellation fees?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d8c688af-5d64-46b0-80a9-aa1c1b202872",
+    "parts": [ {
+      "text": "will be charged for leaving my plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6c639d93-be97-4473-a9ad-7b2edf979b8b",
+    "parts": [ {
+      "text": "Is there anyway to cancel a service without being charged?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9369d6a4-7d2d-4384-86c9-671d1fe80d4f",
+    "parts": [ {
+      "text": "Why do I see a cancellation fee on my account after I upgraded?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "857fecba-e277-41fd-a594-409afd7ee899",
+    "parts": [ {
+      "text": "I did an upgrade and now I have a cancellation fee on my account, I don't understand why?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bee91f76-dbef-4d83-88d5-6fde79168a26",
+    "parts": [ {
+      "text": "Am I going to be charged if I leave my plan early?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "35c5ccf8-babc-492c-9ee9-1cb6878187f2",
+    "parts": [ {
+      "text": "If I leave my plan earlier than agreed, am I going to have to pay fees?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5f68e337-bdc1-4719-a590-a485542abd83",
+    "parts": [ {
+      "text": "If I decide to leave TELUS earlier than planned, how much fee would I have to pay?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9ac2d94b-0ac1-4460-bcfa-122025de424f",
+    "parts": [ {
+      "text": "I'm planning on leaving TELUS earlier than stated in my contract, can you tell me if there is any fee I'd have to pay."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "98d93014-fc50-4941-bf30-3d76f5050fba",
+    "parts": [ {
+      "text": "Any way to cancel without having to pay fees?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3a824b2-a519-441d-a3ff-39776ee97f0b",
+    "parts": [ {
+      "text": "Is it possible to cancel and not get charged for it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f0442d18-03df-47d9-9c27-a421ed89beee",
+    "parts": [ {
+      "text": "If I cancel now, is there any way to not have to pay?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "530f58d2-db0b-400a-b61a-fdabe6bd1c07",
+    "parts": [ {
+      "text": "Just want to know if there's a way to avoid being charged if I cancel my contract earlier?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2ba6e9e3-6391-4154-923d-bd46dd80efc2",
+    "parts": [ {
+      "text": "Wondering what the cancellation fee is."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "239376db-01ea-4929-a739-b8f58b49039a",
+    "parts": [ {
+      "text": "Please tell me how much is the cancellation fee?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "98a05c9a-2187-4cbc-b23d-b4111441d555",
+    "parts": [ {
+      "text": "Just wanna know about the cancellation fee."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "952be360-e3aa-42b3-835c-38eae5a14ae0",
+    "parts": [ {
+      "text": "Can you please provide me with the cancellation fee?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0ebb4b36-f5e0-44b6-b141-2020f2d1f8d7",
+    "parts": [ {
+      "text": "Can't find anywhere what the cancellation fee is."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "38ada32d-c484-4842-bd78-d43644952c38",
+    "parts": [ {
+      "text": "I was told there wouldn't be any cancellation fee!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

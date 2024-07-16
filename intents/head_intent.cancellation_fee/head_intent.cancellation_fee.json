@@ -1,0 +1,30 @@
+{
+  "name": "d942bca3-c7e8-4ef9-a65e-d5b444e576f9",
+  "displayName": "head_intent.cancellation_fee",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Question about cancellation fees",
+  "asrCorrections": [ {
+    "errorPhrase": "le frère",
+    "correctionPhrase": "le frais"
+  }, {
+    "errorPhrase": "le ferai",
+    "correctionPhrase": "le frais"
+  }, {
+    "errorPhrase": "ferai",
+    "correctionPhrase": "frais"
+  } ],
+  "numTrainingPhrases": 156
+}

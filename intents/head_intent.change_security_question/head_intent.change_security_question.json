@@ -1,0 +1,23 @@
+{
+  "name": "825a329d-7c1e-4cda-bf46-ee2cfaa0a5d9",
+  "displayName": "head_intent.change_security_question",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about changing security questions.",
+  "numTrainingPhrases": 131
+}

@@ -1,0 +1,24 @@
+{
+  "name": "39c79689-38af-4c41-b94e-7f66bd8cd42e",
+  "displayName": "head_intent.bluetooth_issues",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer having issues with bluetooth.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 143
+}

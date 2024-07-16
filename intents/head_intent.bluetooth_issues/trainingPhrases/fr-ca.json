@@ -1,0 +1,275 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "besoin d'aide pour faire la connexion d'appareils"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment faire la connexion de 2 appareils"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connexion entre produits"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon appareil semble avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " problème de Bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'arrive pas à connecter mes haut-parleurs Bluetooth à mon téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Impossible de connecter mon enceinte Bluetooth à mon cell?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourquoi est-ce que le Bluetooth n'apparaît pas sur mon cell?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon téléphone ne détecte pas le Bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "c'est comme si mon téléphone ne voyait pas mes écouteurs bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je suis incapable de me connecter en bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "réinitialiser mon bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème blue tooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon bluetooth est brisé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai acheté des Écouteurs mais le bluetooth ne marche pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne vois pas mon appareil sur la liste bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne vois pas mon speaker bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-vous faire quelque chose avec les problèmes bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment faire pour régler les problèmes de connexions bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-vous m'aider si j'ai des problèmes bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mes écouteurs ne veulent pas se connecter en bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon téléphone ne trouve pas les appareils bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne suis pas capable de me connecter au bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment connecter le bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "bluetooth "
+    }, {
+      "text": "se déconnecte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon bluetooth "
+    }, {
+      "text": "ne"
+    }, {
+      "text": " se "
+    }, {
+      "text": "connecte pas"
+    }, {
+      "text": " "
+    }, {
+      "text": "à"
+    }, {
+      "text": " ma voiture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ne"
+    }, {
+      "text": " reconnait pas "
+    }, {
+      "text": "l"
+    }, {
+      "text": "'"
+    }, {
+      "text": "appareil"
+    }, {
+      "text": " bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "téléphone ne"
+    }, {
+      "text": " voit pas "
+    }, {
+      "text": "l"
+    }, {
+      "text": "'"
+    }, {
+      "text": "appareil"
+    }, {
+      "text": " bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "écouteurs"
+    }, {
+      "text": " "
+    }, {
+      "text": "sans fil"
+    }, {
+      "text": " "
+    }, {
+      "text": "ne"
+    }, {
+      "text": " se "
+    }, {
+      "text": "connecte pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Impossible de"
+    }, {
+      "text": " synchroniser le bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connexion"
+    }, {
+      "text": " bluetooth "
+    }, {
+      "text": "ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "le bluetooth "
+    }, {
+      "text": "ne"
+    }, {
+      "text": " "
+    }, {
+      "text": "marche"
+    }, {
+      "text": " pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Incapable de"
+    }, {
+      "text": " me connecter au bluetooth\r "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Problèmes"
+    }, {
+      "text": " "
+    }, {
+      "text": "avec le"
+    }, {
+      "text": " Bluetooth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

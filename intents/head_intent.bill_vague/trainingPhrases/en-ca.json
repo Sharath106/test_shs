@@ -1,0 +1,2978 @@
+{
+  "trainingPhrases": [ {
+    "id": "9fe128f0-1c51-446f-acbf-6fca072f9a60",
+    "parts": [ {
+      "text": "invoice statements"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "722dcdbd-d641-4d55-8818-a19e9ac59e4a",
+    "parts": [ {
+      "text": "invoices statements"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5974a116-86f1-4e64-96af-0a672b0e5cde",
+    "parts": [ {
+      "text": "invoice problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6b755fd7-895c-45eb-aee2-fd1bf6462799",
+    "parts": [ {
+      "text": "i need some adjustments on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e8621bdd-80ac-4b2e-8ea7-c8ab5dd98c56",
+    "parts": [ {
+      "text": "changing my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "290d955c-c5e8-4a1b-9550-aba5f107a27a",
+    "parts": [ {
+      "text": "invoice adjustment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "02239034-b042-433c-ae2a-b3f21b5c2045",
+    "parts": [ {
+      "text": "change to my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d803eb8d-c787-4aa4-9b77-385fac93957f",
+    "parts": [ {
+      "text": "changes to my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e87fe350-44d7-49f8-9366-eae307c47aa3",
+    "parts": [ {
+      "text": "billing question changes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "155e5b9f-dcaf-4516-b1a9-513f5b6be3af",
+    "parts": [ {
+      "text": "when change my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "af0f2b1d-e475-4862-9a37-8e88bfcf37da",
+    "parts": [ {
+      "text": "account billing adjustment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c33110a8-2df4-4adf-a9e0-1ad0d1e6fa26",
+    "parts": [ {
+      "text": "changing bill on mobile device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8a4751c0-35c6-4677-b41d-274922f96563",
+    "parts": [ {
+      "text": "update a bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3e5c8048-7f81-49d8-85ce-282249c9108f",
+    "parts": [ {
+      "text": "adjust my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ea3d7eb9-2dbd-4976-bda7-12b6412f2bb8",
+    "parts": [ {
+      "text": "i need to change the billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "43e0df05-d0e7-4832-a9cb-cc6fe095c086",
+    "parts": [ {
+      "text": "i would like to adjust my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0bcfb859-9ab4-4755-9c7b-fde73c54ffe7",
+    "parts": [ {
+      "text": "adjustment to the phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4893109c-cadd-4032-92fa-bcfb8ba22639",
+    "parts": [ {
+      "text": "yes i would like to change our billing please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cf2a831c-f5d4-430f-bfc9-250c00396c88",
+    "parts": [ {
+      "text": "my bill i want to make some changes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1fcc8ac4-ceb9-4657-9b90-b485a82e5819",
+    "parts": [ {
+      "text": "a change to my telus bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "519b353a-d95f-4388-af37-3dc846bb1f40",
+    "parts": [ {
+      "text": "i'd like to change my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e5bf4d16-f5d5-4272-979e-7c5e50d86778",
+    "parts": [ {
+      "text": "an adjustment on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2fef538a-4b05-41a3-b9cf-9a85f1ab0661",
+    "parts": [ {
+      "text": "my telus bill here i want to change"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4beb52b1-276a-434b-a6a7-a48d44929ce9",
+    "parts": [ {
+      "text": "adjustment to my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "37b0b5a1-7255-4ed4-95ed-1e5311c12e6c",
+    "parts": [ {
+      "text": "if i can change my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f4531070-69eb-4668-b623-b947cf9b5865",
+    "parts": [ {
+      "text": "adjust billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a3122398-1ef5-430d-9fde-0474660cf403",
+    "parts": [ {
+      "text": "correct my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5d935358-bde5-4ef0-ba52-86423a97bf5f",
+    "parts": [ {
+      "text": "making bill changes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "40282c69-a999-4952-83ed-c90db2b2e947",
+    "parts": [ {
+      "text": "changes in my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c57a019e-d98f-471f-acf4-c2bc9ca99dd1",
+    "parts": [ {
+      "text": "making changes to my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "27032536-d4c9-4a9d-98ae-57ec7b884275",
+    "parts": [ {
+      "text": "update billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e5a7b421-57b2-43e9-93b3-719fb5f93bcc",
+    "parts": [ {
+      "text": "i would like to have my phone bill updated"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0305c613-bb92-4431-afcc-a94daea9ea95",
+    "parts": [ {
+      "text": "change my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "be152d13-0bbf-4288-81f4-504a3e3b4630",
+    "parts": [ {
+      "text": "i want to change my my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a4b4e580-1197-433d-8453-5abd08f622e8",
+    "parts": [ {
+      "text": "billing on account changes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "befa367b-c444-42ae-9601-434f95ccc460",
+    "parts": [ {
+      "text": "change a billing information"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a6bbc52f-bddf-4801-82dd-943ad769c2aa",
+    "parts": [ {
+      "text": "bill changes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "90591f98-8471-434c-9926-a46f04c4bd97",
+    "parts": [ {
+      "text": "i would like to make some changes to my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7a1caede-d10a-4358-b84a-265aaacb62bc",
+    "parts": [ {
+      "text": "billing adjustment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "764c0e8e-8a01-4eb6-b6ec-f18133f37647",
+    "parts": [ {
+      "text": "i wanna change my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "65b65e8f-5bb7-4dd2-b214-e351c1139a4c",
+    "parts": [ {
+      "text": "to correct my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8fba1452-8aa2-432e-9ba3-66d2a3283cbc",
+    "parts": [ {
+      "text": "yeah so i was just wanting to put the change my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2e27781c-6287-4bb7-a454-f3c483edeae7",
+    "parts": [ {
+      "text": "changing billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ba2507b4-7b54-47ba-adff-a16ff07e5708",
+    "parts": [ {
+      "text": "i would like to make a change to my billing statement for my mobile phone please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a6912be9-2a76-434b-83eb-9e426ddea31d",
+    "parts": [ {
+      "text": "accounting changes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db3167d0-37ea-4973-9810-327812f897a5",
+    "parts": [ {
+      "text": "accounting change"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ec50a2b3-3c63-4ed2-a486-768bac5af739",
+    "parts": [ {
+      "text": "bill update"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "19d8e356-f6d8-41bf-a185-f250413245ff",
+    "parts": [ {
+      "text": "i need to change my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4c35e184-ad10-453f-b117-60a3f1b9385e",
+    "parts": [ {
+      "text": "billing update"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aab98e0b-4aa9-432a-9d53-393fb1c83928",
+    "parts": [ {
+      "text": "change in billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2c07816c-f4af-4bfc-83aa-41dc681ec076",
+    "parts": [ {
+      "text": "change billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "29fe9456-4c50-4314-ab3b-2061369eaba2",
+    "parts": [ {
+      "text": "billing technician"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e3b6cfdb-d606-42e9-af83-1670f5232437",
+    "parts": [ {
+      "text": "my monthly statement my monthly bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dd164de8-1770-43a6-b500-944d992a7529",
+    "parts": [ {
+      "text": "statement statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6559ce4e-8c44-4f92-b0e8-8efdb9ebf39e",
+    "parts": [ {
+      "text": "previous statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5a485ef7-407d-49f3-bc57-fad9dce36621",
+    "parts": [ {
+      "text": "my statement bill statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "116b699e-85df-41d6-8a72-61740e4fbbf7",
+    "parts": [ {
+      "text": "the bill statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1f2d8794-3c5c-48fe-9f47-4c5a04e041d9",
+    "parts": [ {
+      "text": "check my statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66255984-92cf-4a41-b694-03f781be7cb6",
+    "parts": [ {
+      "text": "my chat statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aef1378c-7dd4-4844-a5a0-29b669b22279",
+    "parts": [ {
+      "text": "my billing statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "11d7477e-e685-41f3-af7c-8a7df2fa5c71",
+    "parts": [ {
+      "text": "i want to inquire about statements"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fab18d48-78e8-47cc-91fa-e59e24edc696",
+    "parts": [ {
+      "text": "statement of the accounts please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1a78d164-6a56-4692-8dc4-2262bafbb923",
+    "parts": [ {
+      "text": "about my bill billing statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "31e490b0-bfa4-4e03-947a-8427c5ac2334",
+    "parts": [ {
+      "text": "billing statement"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "21598f02-cd1d-4095-ad43-0e4c54677d1f",
+    "parts": [ {
+      "text": "question about statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aa8258be-948c-4978-9539-58e65b5aeb6b",
+    "parts": [ {
+      "text": "calling about statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "93b3661b-7e3a-4648-8489-806dafc6821a",
+    "parts": [ {
+      "text": "last statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e43fd953-c902-4b32-80e3-ac58cb08cc38",
+    "parts": [ {
+      "text": "i would like to talk to someone regarding my statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "334a32d1-347d-4cb9-aa4d-3d16c04151e7",
+    "parts": [ {
+      "text": "i'm calling regarding my statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a023b34d-a266-43c7-aed4-35ba6ad5a530",
+    "parts": [ {
+      "text": "question about my invoice"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "90d0542e-7ebc-4586-adef-ed06e1def407",
+    "parts": [ {
+      "text": "my last statement my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "453a8178-8c9e-40a0-87de-d131db58d6b9",
+    "parts": [ {
+      "text": "just a recent statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3759873c-d6d0-4e54-ab66-82b477698e59",
+    "parts": [ {
+      "text": "a credit on my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "91201e3e-845a-40ab-bc7f-a9408354d362",
+    "parts": [ {
+      "text": "credit on account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c4886862-b57a-4707-a773-b6e7e040a849",
+    "parts": [ {
+      "text": "about a credit on my husband's account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4fbc9175-94f1-46cb-b870-13291d283201",
+    "parts": [ {
+      "text": "i need to talk to your credit department or your accounting department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3d0e392c-afea-4463-83cd-64b909020839",
+    "parts": [ {
+      "text": "a credit on my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "90413c47-850c-4c07-8908-d4fd1406e4dd",
+    "parts": [ {
+      "text": "statements"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "339b6b68-6f6d-485e-95fe-fa37180836a9",
+    "parts": [ {
+      "text": "statement billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b3f8a029-c108-4345-a6bf-7e33b99a2a7d",
+    "parts": [ {
+      "text": "my last statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "753d207a-7b02-4c08-b236-98fe16e1f01e",
+    "parts": [ {
+      "text": "my telus statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2785383a-533e-454c-9596-2b61eeb4d5eb",
+    "parts": [ {
+      "text": "bill statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3f81b437-4eb3-4f71-aa60-c7b48a15c9bc",
+    "parts": [ {
+      "text": "my statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f396ee18-f77d-439e-8837-a747f2efdb20",
+    "parts": [ {
+      "text": "account statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e7b9ad5e-29c7-41a0-b6cf-228fcc9922f0",
+    "parts": [ {
+      "text": "statement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f906668c-bb69-41b8-af47-4e6dd012c2c7",
+    "parts": [ {
+      "text": "i want to talk to somebody there concerning my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7a645211-5cec-46d1-8b33-128f697af392",
+    "parts": [ {
+      "text": "i need to i need help with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2519dbd1-98c0-4d0b-a9b7-7202f8140f38",
+    "parts": [ {
+      "text": "i need to talk to somebody about my billing of my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "58aa86e2-e948-46a9-b418-3f2ea3fb6087",
+    "parts": [ {
+      "text": "my bill i'd like to discuss it with somebody"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9361746d-c2ce-47ba-ae5e-4d6cc220929d",
+    "parts": [ {
+      "text": "i have a question about the billing on my last statement if i could talk to somebody from customer loyalty perhaps"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "67880416-9c4b-48dc-89e7-b902dc546f44",
+    "parts": [ {
+      "text": "hi i'd like to speak to representative about my bill please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bb6586e1-f277-43a1-9f6e-e9460424185d",
+    "parts": [ {
+      "text": "i need someone that bills for the account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a26db281-b766-4028-a9ce-6d1cab066f89",
+    "parts": [ {
+      "text": "i need to talk someone about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9531ab4f-d653-4783-a3a0-6c2330209110",
+    "parts": [ {
+      "text": "talk about a bill i got"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b76489e7-797b-48e2-8fa7-5e81cdab0ae0",
+    "parts": [ {
+      "text": "our telus bill i just want to discuss the telus bill with them"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "72d5ed32-0a75-4a6b-9cf5-35f2d1557f7f",
+    "parts": [ {
+      "text": "i want to talk to the customer service to deal with the the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "33006e27-43e0-43f1-b2df-a8a63fab6cca",
+    "parts": [ {
+      "text": "speak to billing agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9e43ffdd-8051-430f-b5ac-b2a84abc59ec",
+    "parts": [ {
+      "text": "i would like to speak to someone concerning my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ea8036de-aa72-4ea1-b1d1-3991026dac2f",
+    "parts": [ {
+      "text": "i would like to talk with some person from billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3032c8d3-cf0d-4c59-b8bb-16098c095b54",
+    "parts": [ {
+      "text": "well actually i need some help about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "895b7e18-8344-4896-9bcd-d3ac68c26f8b",
+    "parts": [ {
+      "text": "i need to speak to somebody about the billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4689d048-e1ab-4f0a-99a5-aec408d677d1",
+    "parts": [ {
+      "text": "i need help with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7effd6f6-c33d-427d-80f4-84dfe3832229",
+    "parts": [ {
+      "text": "need to talk to somebody in billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d7283a41-f68b-49fe-92fd-3bdea45643f3",
+    "parts": [ {
+      "text": "i need to talk to somebody about my bill"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "842a5db1-e7a9-49df-888e-673893841542",
+    "parts": [ {
+      "text": "billing issues i want to talk to customer service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "465e77b2-c965-4e14-8742-e2262d8637df",
+    "parts": [ {
+      "text": "my bill i want to speak to an agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b753f7cb-c791-467a-9565-8f5b5ce67afe",
+    "parts": [ {
+      "text": "i need to speak with someone about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ae4ff8a2-e592-438b-8bad-0063bc49fbed",
+    "parts": [ {
+      "text": "we i'm wanting to talk to somebody about the bill the telus bill that's come"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e15ac666-b05f-4726-b669-aa677f6f7028",
+    "parts": [ {
+      "text": "i'd like to talk to somebody about our bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "24e3321d-d5d2-42ca-8f59-9337c78c1391",
+    "parts": [ {
+      "text": "discuss invoice"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b03cbbc0-e978-4b2c-b452-eab963449b4d",
+    "parts": [ {
+      "text": "speak to a representative about my mobility billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4d766bd8-697e-44c8-94c1-d0317e4e3be7",
+    "parts": [ {
+      "text": "wanna talk to about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e91b734d-af04-4495-8140-7695db45909d",
+    "parts": [ {
+      "text": "i wanna talk about my bill"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en-ca"
+  }, {
+    "id": "57ee389c-c07d-413f-953f-7b87997a44c0",
+    "parts": [ {
+      "text": "could i could i talk to somebody there with my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "50b8ebea-9de9-4a8d-be5e-5f32a98f4667",
+    "parts": [ {
+      "text": "i need some help with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f263b299-65e9-4d22-b1ac-888a914761c6",
+    "parts": [ {
+      "text": "billing speak to a representative"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f452de6e-f922-4b45-916a-447cbc3c7dd0",
+    "parts": [ {
+      "text": "i wanna talk to someone in billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eeace81c-1dce-427a-912d-e5e35a9a494c",
+    "parts": [ {
+      "text": "billing speak to an agent please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a29ed70c-63b5-4e19-9640-6c42ad93a5ad",
+    "parts": [ {
+      "text": "wanna talk about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3cc68a93-3602-4b8b-803e-ca8859b4b09c",
+    "parts": [ {
+      "text": "i need to speak to a representative regarding my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fe219c0b-c3e3-4809-b685-5e83c81dfd90",
+    "parts": [ {
+      "text": "i'm talking i'm inquiring my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "91a42b81-0047-4659-9931-f86214d55522",
+    "parts": [ {
+      "text": "need to talk to billing agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b04d4d86-bf11-4d27-a8d6-897be50294b9",
+    "parts": [ {
+      "text": "i would like to speak with an agent regarding my monthly bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6b114382-fbe4-4d5c-a035-b780692c7fa1",
+    "parts": [ {
+      "text": "i need help with billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "222706a0-d063-4523-8992-1201d855deaf",
+    "parts": [ {
+      "text": "i want to talk to about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ea6b2b4d-7d7f-45c4-bcd7-fa547a891f1e",
+    "parts": [ {
+      "text": "i wanna talk to someone about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4397255a-5798-454c-ba09-1ce548f7e457",
+    "parts": [ {
+      "text": "i want talk to someone about my my telus bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "79df31f1-1a15-4dbb-adf1-69b0c12ac824",
+    "parts": [ {
+      "text": "agent billing billing billing agent billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c9f6eb8-ec16-42be-bbda-1de3200e0468",
+    "parts": [ {
+      "text": "i'd like to speak to someone at billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66ec1581-bc24-4b51-b062-245a29bcfc27",
+    "parts": [ {
+      "text": "i'm calling about my billing i would like to talk to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "834d0f70-0a76-457f-a40c-67aafc231d45",
+    "parts": [ {
+      "text": "my bills i wanna talk about my bill to somebody"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8bd5b2f0-7249-423f-a877-67b3089ea7a7",
+    "parts": [ {
+      "text": "i'd like to speak to the billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4a2773b0-c172-4411-8595-78379d80d8cf",
+    "parts": [ {
+      "text": "i need to talk about a bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9e4f8576-61bc-48ea-8394-fe9f731235af",
+    "parts": [ {
+      "text": "my phone bill i'd like to talk to somebody about my charges on my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1e5f2024-c2d4-43cc-9a08-a8afe4ce5d28",
+    "parts": [ {
+      "text": "talk to somebody about getting a bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "63bba31a-18ee-419a-959b-3d921756deff",
+    "parts": [ {
+      "text": "like to talk to someone about my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c0247394-7c6a-4f22-921e-a11a59b56d81",
+    "parts": [ {
+      "text": "i wanna talk to a person about my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6563a15f-c63f-4e2b-9c37-efe2a9f2ba83",
+    "parts": [ {
+      "text": "i need information i want to talk to somebody about my billing please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e4045bb0-bdfa-4917-9ef5-c6f0048b1b0f",
+    "parts": [ {
+      "text": "i would like to look talking about my bill and my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "06d58c73-44ba-43f2-abea-d3fc7821dc90",
+    "parts": [ {
+      "text": "i would like to speak to someone about my telus bill please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ebb1de87-47f6-40ea-b556-9c7b1422bd35",
+    "parts": [ {
+      "text": "i would like to discuss my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "37069acc-c455-4ca1-8cd3-5ed34b7a8116",
+    "parts": [ {
+      "text": "i have a billing issue i'd like to speak to someone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "375986d3-12bb-4387-ac4b-37a9e5992c24",
+    "parts": [ {
+      "text": "talk to somebody about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bacee5e2-c19f-4edf-87ec-0ee18ab04402",
+    "parts": [ {
+      "text": "speak to somebody in billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "68cff85d-ad5f-4bb7-a69c-be4dbea9da5c",
+    "parts": [ {
+      "text": "i wanna talk about my bill my telus bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3395cff9-de61-4e94-a6e3-da766cff247b",
+    "parts": [ {
+      "text": "i want to i just wanna talk to them about my bill it isn't right"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b3ed5cbf-3f19-43a2-9b37-44dd1ee389d3",
+    "parts": [ {
+      "text": "i want to talk about my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d70f330c-ce1a-44f5-8791-f4a885b763cc",
+    "parts": [ {
+      "text": "i would like to speak to someone about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7ecad41b-eb89-41d9-95ad-29711ba3e99a",
+    "parts": [ {
+      "text": "looking for assistance on bills"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3e06387b-6e9a-4ee0-9e8a-4ce12907df38",
+    "parts": [ {
+      "text": "i need to talk to somebody in billing please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7d2bef00-c642-46bb-965e-9263a547a95f",
+    "parts": [ {
+      "text": "i need to speak to somebody in billing please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a8482f74-dfe3-4f40-b2af-0cb29dd0b932",
+    "parts": [ {
+      "text": "looking to speak to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "02913247-d25c-4d44-842e-3009944431f9",
+    "parts": [ {
+      "text": "like to speak to billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ae2b70e8-782d-479d-aee2-530a5686eb00",
+    "parts": [ {
+      "text": "discussion about bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8f832cb8-ad8f-4626-83f1-5a5fb07113c9",
+    "parts": [ {
+      "text": "speaking with a customer representative for my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f8e77d89-2187-4b6c-9a47-14dbb3e7b128",
+    "parts": [ {
+      "text": "i would like to speak to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "18667c90-d8a7-470c-a4c1-c714000f069c",
+    "parts": [ {
+      "text": "need to talk to somebody about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "279200d0-64c9-4e8e-b4f4-36a52016b276",
+    "parts": [ {
+      "text": "i need to speak to someone about my bill on my visa"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6490c9b1-4925-4040-b449-d37917e228b3",
+    "parts": [ {
+      "text": "i i need to talk to somebody about my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aa767415-a39c-4a02-9497-ccae05665d7b",
+    "parts": [ {
+      "text": "i'd like to speak to an agent please regarding billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0457ce13-6c0f-4570-8c53-c4a6d176ba31",
+    "parts": [ {
+      "text": "can i get the billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bfa8a07c-695c-4a6d-96c5-f5f609d2b5f4",
+    "parts": [ {
+      "text": "i want i want to talk about my invoice"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "188e0ba6-54e4-44f2-bae6-55def750e960",
+    "parts": [ {
+      "text": "i'd like to speak to somebody about my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "96efbce4-c20b-4be9-b99a-eaa3efbb3503",
+    "parts": [ {
+      "text": "i'd like to speak with someone about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "147a4e7b-3488-49e4-9fc0-4b9f11c6e798",
+    "parts": [ {
+      "text": "speak to someone about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8ea6aff9-84a2-41ae-bc1b-925a4034fd96",
+    "parts": [ {
+      "text": "need to discuss my account billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5996b20e-35b5-4542-b11b-704a5b733371",
+    "parts": [ {
+      "text": "account i want to talk to somebody regarding my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "15deb7bf-409a-4670-979c-739c6477c183",
+    "parts": [ {
+      "text": "need to talk to someone about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "228bce81-aaa4-481d-83de-aa427a26ee31",
+    "parts": [ {
+      "text": "just wanna talk about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0a2cfb93-0e15-4b17-8c47-ec5d2ba76deb",
+    "parts": [ {
+      "text": "i want to speak to a sales agent about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "74ac6583-6d4e-4d04-951f-f28e479e8a2e",
+    "parts": [ {
+      "text": "representative about my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e7b99bd9-77ff-484e-9e9f-509e8c740524",
+    "parts": [ {
+      "text": "i need representative on my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "682a538a-6af4-499b-a4fa-628ec0fe4b88",
+    "parts": [ {
+      "text": "i want to talk my billing one"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d122aa06-e153-4e75-85ee-5f1e15d15557",
+    "parts": [ {
+      "text": "can i talk to a customer service about billing about the bill "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "537f3bc3-e0e2-47cc-846a-57a27416ee12",
+    "parts": [ {
+      "text": "would like to talk about my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "af90056f-55bf-4c51-8c80-3135ec5d020f",
+    "parts": [ {
+      "text": "i would like to talk to a billing representative"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dbb52a16-5778-4f58-864d-2853c12c8fcf",
+    "parts": [ {
+      "text": "to discuss my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fc227f7b-8aec-44d4-8a99-6ee0dc47f91e",
+    "parts": [ {
+      "text": "hi i'd like to discuss my telephone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6115d133-eb4f-45b4-9095-4efcd291fc22",
+    "parts": [ {
+      "text": "help with a bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "efaafc10-8b2f-4672-8400-79a053e198aa",
+    "parts": [ {
+      "text": "just connect me to your sales agent for my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6054ee48-6815-4e34-b398-24ec37a265e8",
+    "parts": [ {
+      "text": "i wanna discuss my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7e9564be-693e-4211-8cf8-90729509c308",
+    "parts": [ {
+      "text": "i need to speak to a rep a billing rep"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4ca59a81-702b-4686-9cf7-091e8b601449",
+    "parts": [ {
+      "text": "i would like to talk to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "43513c9a-cb5e-4a1c-ae70-f5d086752845",
+    "parts": [ {
+      "text": "customer service on my cell bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "18a6b96a-aba6-434b-95c0-e2c48441b175",
+    "parts": [ {
+      "text": "i would like to speak to an agent regarding notifications that i'm receiving regarding my telus bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7d220a85-08aa-48aa-ad1f-b1825c7a28b2",
+    "parts": [ {
+      "text": "billing agent hello billing agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b51e2d3-9d59-48a1-883d-786112552bdc",
+    "parts": [ {
+      "text": "customer representative billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e30f6dcd-e054-47a4-b9b7-90139f41a7c0",
+    "parts": [ {
+      "text": "i would like a billing agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "71abccb3-8da0-4643-9ecb-44fd0acf198d",
+    "parts": [ {
+      "text": "like to talk to representative about my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "67873efe-2d99-4cfe-9b4a-5ab1036f8a3a",
+    "parts": [ {
+      "text": "i'd like to speak to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3fa450a5-4cde-43f1-84bb-f867527b58e6",
+    "parts": [ {
+      "text": "an i'd like to get an agent please a billing agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "97123448-c7bf-40c3-880d-edb4888ffbb9",
+    "parts": [ {
+      "text": "i wanna discuss a bill my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4e77e83f-033d-4c4e-b8ca-03ca4eac4006",
+    "parts": [ {
+      "text": "i wanna talk to some regarding my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b38ba95a-5e0b-4873-bb1d-5f36905f2f69",
+    "parts": [ {
+      "text": "yes i would like to talk about the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "33bbccae-0dea-4f8e-85e1-ea8f15c7bde0",
+    "parts": [ {
+      "text": "hi i would like to talk to somebody regarding my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0872a390-8dbb-428f-bdd4-db5cb1ff5ea0",
+    "parts": [ {
+      "text": "speak to an agent about my billing information"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3a341db6-8618-4844-a5c8-3fe9e59406a5",
+    "parts": [ {
+      "text": "hello i'm looking for someone to help out with a bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "74f2ed31-a528-41cd-a7f2-229e1f28bbb4",
+    "parts": [ {
+      "text": "i need to talk to somebody about my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "df5c8b4a-6bfb-4bae-a6df-e7004dfe699a",
+    "parts": [ {
+      "text": "i'd like to speak to an agent about the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d65ccedd-8f02-458c-b82a-c3713a0e890f",
+    "parts": [ {
+      "text": "i want to talk to an operator over my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9a242442-b307-43c0-b5d7-cd8867867f81",
+    "parts": [ {
+      "text": "speak to a representative in billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f04e6af4-f575-4dd8-b88c-19eca453ce44",
+    "parts": [ {
+      "text": "i'd like to talk about my bill"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ca8c9d91-0277-467e-a3f1-687d9593b358",
+    "parts": [ {
+      "text": "i'd like to see speak to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f9da7add-8728-45cf-a67a-6301b1c57513",
+    "parts": [ {
+      "text": "just wanna discuss the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5cfa9e63-3f11-4299-9a31-c776fc975adf",
+    "parts": [ {
+      "text": "billing i wanna speak to an agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "172d8bd9-dfca-4bea-9028-3442e8cfe0c3",
+    "parts": [ {
+      "text": "can i have the billing department please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ed861adf-1d29-4f92-8a6f-5f9cf00f6892",
+    "parts": [ {
+      "text": "agent billing agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "53b83783-d6cf-4d4f-af3c-c7c4e8a24b57",
+    "parts": [ {
+      "text": "i would like to talk to somebody about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8407d76f-ee01-4370-80ab-ab630e6ecf11",
+    "parts": [ {
+      "text": "i want to discuss the new bill i just got in the mail today"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "75473f8a-0228-4796-97e2-21e4c38218a5",
+    "parts": [ {
+      "text": "talk to an agent about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "680eae22-a85d-41b8-a480-7c32a57bc0b5",
+    "parts": [ {
+      "text": "i need some help with my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8be93741-56fa-4823-9e13-22d83ce7892d",
+    "parts": [ {
+      "text": "i'd like to get in touch with billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fb8c99e4-fa21-4ccc-8096-a82ec15be8ed",
+    "parts": [ {
+      "text": "i need to talk to somebody about my bills"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c514f6f7-12c2-48f3-b516-d7eefe278933",
+    "parts": [ {
+      "text": "hi i wanna speak to somebody in billing please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "463369f6-1134-493f-9dfb-e846d13ad7f7",
+    "parts": [ {
+      "text": "i need to have somebody to talk about my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d402966f-ea20-4514-95ff-4128f8847179",
+    "parts": [ {
+      "text": "i wanna speak to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fac5c09e-f92c-4148-bbac-70afc6cb65b6",
+    "parts": [ {
+      "text": "i like to speak to the representative please about my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "49b929ad-70e9-4c4d-853a-bdcfd80eeaa7",
+    "parts": [ {
+      "text": "my telus phone bill i'd like to discuss that"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bdc2ba74-a23e-4279-89e5-fd8b3640a4f2",
+    "parts": [ {
+      "text": "i would like to talk to someone about my telus bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1dcff75b-76ce-4333-a894-ce3a46f0fdff",
+    "parts": [ {
+      "text": "discuss my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fc51e7d5-1b36-471e-bc0c-3f767d1fd27b",
+    "parts": [ {
+      "text": "i need to talk to somebody about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "505d3732-86eb-46eb-bbe6-a6c2caf607fd",
+    "parts": [ {
+      "text": "i need to speak to an agent about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ea4e5c6e-3b29-4390-aa8c-766057ea7e71",
+    "parts": [ {
+      "text": "i need to talk about my one of my bills from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4664198b-92e8-4167-9de1-c7580b9c4625",
+    "parts": [ {
+      "text": "i would like to speak to a technician or whomever's i don't know somebody billing i don't know"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "44302f2e-ebe8-4eb6-b1e2-8bf2d1f5efa0",
+    "parts": [ {
+      "text": "i would like to talk to somebody about our monthly bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1a3b05d5-8710-4b06-9ffe-9dfae86fc3c2",
+    "parts": [ {
+      "text": "i would like to speak to somebody about my bill i just got in"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "503db904-4ee9-477b-9a44-26b4ee036054",
+    "parts": [ {
+      "text": "i'm just calling about my bill just take me to a billing agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "604be7b1-39d3-4393-a841-3fc4b7260c58",
+    "parts": [ {
+      "text": "i'd like to talk to someone about my telephone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b75073a3-43e2-4d50-bff1-01d0d2d6a818",
+    "parts": [ {
+      "text": "i need the billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ceb29cf6-b23f-4f7d-b7e8-d29d729d67cc",
+    "parts": [ {
+      "text": "i'd like to speak to somebody about my personal account billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5197d3ef-82e1-48fe-981b-e9d6d34efa99",
+    "parts": [ {
+      "text": "i just wanna talk to an agent about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d3bf8de5-7b04-44b2-b33c-54f16828f5ef",
+    "parts": [ {
+      "text": "billing human customer support"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0674a17b-5dd4-4b65-a14d-79a697753f9f",
+    "parts": [ {
+      "text": "talking about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3744b828-3ea9-462b-bea9-a5ed222ad2ab",
+    "parts": [ {
+      "text": "i'd like to speak to a person about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7b2de2ce-b1f0-44e4-a464-f6d6c020ff61",
+    "parts": [ {
+      "text": "i'm talking about bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eb90df97-567d-4738-a812-1611d5497b40",
+    "parts": [ {
+      "text": "like store talk to somebody about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b2938235-534d-4d28-9f3d-74a585f32d8d",
+    "parts": [ {
+      "text": "i need to talk to someone about my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "41a0517e-16a7-45fc-a335-565398da7de8",
+    "parts": [ {
+      "text": "not looking for going no billing customer service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ee88597c-2cb0-45e3-b6c5-00e494db45e4",
+    "parts": [ {
+      "text": "i've got multiple things to talk about one is my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f5b67d4d-4a34-41b1-9fec-8678f2f97c29",
+    "parts": [ {
+      "text": "billing customer service "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8678a002-d5db-4c17-8ad3-c0665c514c3e",
+    "parts": [ {
+      "text": "i would like to have an inquiry with the billing of of my services"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1274ca1b-caef-4358-a3ce-e1d45b9babe3",
+    "parts": [ {
+      "text": "a billing agent please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "40830602-7faf-4237-9387-bc6a13102bc1",
+    "parts": [ {
+      "text": "i want to talk to somebody about the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f504e0ec-3289-4c98-aaa3-aade2891a5eb",
+    "parts": [ {
+      "text": "i called wanna speak to advisor about my billing issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8fc9d598-b155-4ba9-8edb-2dfb6d1c768b",
+    "parts": [ {
+      "text": "i'd like to speak to somebody regards to billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f199336c-9d24-43d4-bfab-03dac6ba4099",
+    "parts": [ {
+      "text": "i would like to talk with some someone about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3025bf5e-94e8-40b7-85dc-1cef056fa103",
+    "parts": [ {
+      "text": "i need help i want to i want to ask some questions about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4236d3d1-1089-44ba-8740-a18504860c1c",
+    "parts": [ {
+      "text": "i i need to speak to someone about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0f8abe8f-19a5-41fb-ac2b-4a16950024a2",
+    "parts": [ {
+      "text": "i want to talk to someone about my bill billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0bde6840-0fe4-483c-902b-9493e1f1f8e7",
+    "parts": [ {
+      "text": "i just wanted to talk customer service about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cc0fb89d-d86b-4f04-8d23-1b24ba78e406",
+    "parts": [ {
+      "text": "i hope i just worry about my bill and it's three hundred and just wanted to talk to someone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f0d188e0-e33a-4b9b-a58c-429a4783fe71",
+    "parts": [ {
+      "text": "i wanna talk about my bills"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "00f45cf7-12d3-4f4b-9919-0e0fe14b90c0",
+    "parts": [ {
+      "text": "like to talk to somebody about my billing my bill got a billing problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bfde7224-4dd3-45a6-9c68-7ac86d203c86",
+    "parts": [ {
+      "text": "i just need to discuss about my bills and services that i'm getting from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1fd923a7-27a9-435f-9c1e-910855c8c031",
+    "parts": [ {
+      "text": "speak to an operator about a billing issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b7d07150-8969-4a4c-a944-9a2c2f1d8d8d",
+    "parts": [ {
+      "text": "billing associate"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "738c0588-cb4c-4d0e-b3cd-282b98418fa6",
+    "parts": [ {
+      "text": "i'd like to talk about my bill please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66013e6a-c44e-4999-82bd-135e089c7150",
+    "parts": [ {
+      "text": "help with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "437b7871-e4c8-454a-a268-9b7fca294ddb",
+    "parts": [ {
+      "text": "i'd like to speak to someone about a billing problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6b679b5f-a332-45bc-b657-0869e21ee9ad",
+    "parts": [ {
+      "text": "i would like to discuss billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f8f6e5a5-7406-469f-b5d2-548f000a889d",
+    "parts": [ {
+      "text": "wanna speak to somebody in billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5e774c9f-1e6c-4838-81c3-fb3d4881d4fc",
+    "parts": [ {
+      "text": "i wanna talk to an agent about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "490fad73-8697-4b3c-b8d9-12bdbf56d5a6",
+    "parts": [ {
+      "text": "i want to talk to about my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fc70fcfc-a40f-4c8e-ab4f-513344666571",
+    "parts": [ {
+      "text": "hello it's about my bill i wanna talk to one person please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "89fe2d4b-2ef8-42ed-b083-1321fee26255",
+    "parts": [ {
+      "text": "i want to speak to an associate regarding my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "78aa345b-6c0e-49f0-8007-93d3201219de",
+    "parts": [ {
+      "text": "i'm looking to talk to someone about my monthly bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "423a0351-44a0-4c1a-bde4-d39a8b305396",
+    "parts": [ {
+      "text": "billing department please"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ee03da92-5dad-44c7-887c-fdcf7942da52",
+    "parts": [ {
+      "text": "billing i would like to talk to a representative"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3037e72-c317-42ca-854b-4f4cb6ed43b3",
+    "parts": [ {
+      "text": "i would like to know if i can get help with a bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0aa7345d-c628-44fb-a642-bf7ef637535e",
+    "parts": [ {
+      "text": "i would like to discuss with you about my bill "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c1ae3a1-4fac-4917-8741-2cfa502b20ac",
+    "parts": [ {
+      "text": "i would like to talk to the account billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4b73386e-3186-4d19-8ee2-9a354384ec45",
+    "parts": [ {
+      "text": "i need to discuss some my bill with someone please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f383d445-0c0e-4e73-98b1-fe588fa03c76",
+    "parts": [ {
+      "text": "my mobility bill can i speak to representative please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ae70ccdd-cc7e-4afb-9f31-c22fc87f0dc1",
+    "parts": [ {
+      "text": "i'd like to speak to somebody about my telus bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d0f1ce4a-72d8-4c99-be40-040f3ff4b9f2",
+    "parts": [ {
+      "text": "i need talk about with somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c684dea-cfa7-4848-9f5e-546c855dc60f",
+    "parts": [ {
+      "text": "i want to talk with someone about the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "803e9d03-55be-45f2-8e22-869b3cac728a",
+    "parts": [ {
+      "text": "talk about to talk about my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d3a72c6f-3688-4183-9472-560cbc500d69",
+    "parts": [ {
+      "text": "an agent about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "93409e8a-53c2-4d07-9608-91687bec2dab",
+    "parts": [ {
+      "text": "i'd like to discuss billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "da0e78ac-e496-4b35-92d9-a038c4aa343c",
+    "parts": [ {
+      "text": "representative in billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f4fbe6cb-8405-48a4-97ec-e9feae4a20b6",
+    "parts": [ {
+      "text": "i want to speak to somebody about my bill "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b6893dcf-0da0-44ea-a9a7-701099f8de05",
+    "parts": [ {
+      "text": "i need a billing person please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a5be7add-244f-418f-bf3a-b51c66b08952",
+    "parts": [ {
+      "text": "i have received four different notices from telus about various things in the billing area and i just wanted to talk to somebody about it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "afd05056-9a64-4dec-83b4-2530b17adceb",
+    "parts": [ {
+      "text": "phone bill can i talk to a representative"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4b0be8fc-1462-44ba-8e8c-8fccb43c37d4",
+    "parts": [ {
+      "text": "i wanna talk talk about my bill but i wanna talk to a person"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7c8ba462-f744-4cd4-96f4-5a6fa11e88a1",
+    "parts": [ {
+      "text": "billing billing representative"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7621d91b-6820-418d-b187-fb462ab18064",
+    "parts": [ {
+      "text": "can i speak with somebody it's about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7873edcd-b5fe-4b92-910e-657679bdaac8",
+    "parts": [ {
+      "text": "i'm talking about my telephone bill to clarify it please thank you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8a430424-6916-45df-a8a0-4f8f7a39f303",
+    "parts": [ {
+      "text": "problem with my internet billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "015e0a0c-465c-4180-92dc-da31bc7b3d18",
+    "parts": [ {
+      "text": "billing issues agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fd5b27ef-95e0-48c1-89a7-6867736a545a",
+    "parts": [ {
+      "text": "i wanna an agent because i have a problem with my telus bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "348087da-876a-4dce-9578-0700a6005a74",
+    "parts": [ {
+      "text": "issue with bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ee82cfa5-93b0-4400-8b3d-cffdfd730235",
+    "parts": [ {
+      "text": "have a problem with my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e4de17b0-0cb7-43ba-8f8b-8336024bf3ef",
+    "parts": [ {
+      "text": "a problem with my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c2fb58d4-afc1-4bf7-a407-657022ddec3e",
+    "parts": [ {
+      "text": "i have a issue regarding my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a82fa1b0-9f59-4e3b-99d6-7d3cc00ecaee",
+    "parts": [ {
+      "text": "having trouble with my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2f41e005-6d0e-49d9-842d-e60472bb142c",
+    "parts": [ {
+      "text": "didn't think gonna get anybody right away i just have a problem with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5b52dd61-00eb-4671-abd7-15abd810d843",
+    "parts": [ {
+      "text": "yes i got a bill problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bb45822d-957e-4932-b9d5-5f4372b2c70f",
+    "parts": [ {
+      "text": "complain about the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "689492cd-2d04-4318-b463-5b57f06c3e6c",
+    "parts": [ {
+      "text": "there's a billing problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3afde57e-ac04-4540-9c3f-658424eea946",
+    "parts": [ {
+      "text": "having trouble with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e27c81aa-5fb2-44da-b4be-fb2ae1e9ccba",
+    "parts": [ {
+      "text": "issues with invoicing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "57b6f384-ebbb-4ff3-8644-9ff8bab2b785",
+    "parts": [ {
+      "text": "a problem with my telephone bill my telus bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1a53225b-a474-4b3d-9a6c-c244b035b7ef",
+    "parts": [ {
+      "text": "i wanna talk to somebody about my telus bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "59f227a7-075c-4481-ab9c-d5481d1dba06",
+    "parts": [ {
+      "text": "i have a problem with billing "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1c6f5fbf-827c-4fe5-8e4b-48e27aa0a038",
+    "parts": [ {
+      "text": "i i'm having trouble with my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4b9231f7-ca0a-42e6-8bc8-70594c0aa09f",
+    "parts": [ {
+      "text": "a problem with my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2d176cfa-7264-478e-945f-1ff59631b3f2",
+    "parts": [ {
+      "text": "problem billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a749a9a9-a72c-4c17-9c1a-f06f6e4e58a3",
+    "parts": [ {
+      "text": "some issues regarding my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "615a20c7-baf7-416c-96fd-60d894a46613",
+    "parts": [ {
+      "text": "my bill problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b78fb1d5-230a-48bd-8ce8-202ba66fb4fb",
+    "parts": [ {
+      "text": "problem on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "10b16c11-1d73-4d44-91e2-8bafe2a43555",
+    "parts": [ {
+      "text": "issues with my telus bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6a034845-3682-4e3c-a190-2efddfa4aeea",
+    "parts": [ {
+      "text": "yes i'd like someone to fix my bill here"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4fa86174-4435-48fc-b16c-8cf1668f5a49",
+    "parts": [ {
+      "text": "ma'am billing issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1d3922f6-c203-4567-a1cf-c13598c805fe",
+    "parts": [ {
+      "text": "i have billing issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0226407a-dbac-4a51-9a16-23946e3d5828",
+    "parts": [ {
+      "text": "i have a problem with my bill i need to speak "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c855c21a-cc6a-4006-97e4-52c9eec0dec0",
+    "parts": [ {
+      "text": "this is regarding billing problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fadb6db5-2b3b-459e-84e5-b3012b441c4d",
+    "parts": [ {
+      "text": "billing issues billing issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1c8c3b81-8e3a-4e1c-9d5f-05e00605eccf",
+    "parts": [ {
+      "text": "i'm having issues with my billing so i need to speak to someone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cdc320a9-0196-4df8-a9da-8ace7db192fa",
+    "parts": [ {
+      "text": "a problem with billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7c55acfc-1fb7-47b6-9ea7-b79a74c6720e",
+    "parts": [ {
+      "text": "i got a problem with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a637163f-0d3c-4735-9016-d0200c914501",
+    "parts": [ {
+      "text": "invoicing issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c3ca2046-7474-4fc9-a1d6-4a29083c7061",
+    "parts": [ {
+      "text": "issue on bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f93376a7-c127-4d42-b447-b1df255f782e",
+    "parts": [ {
+      "text": "i am confused with my billing "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c191395a-1212-47ee-8740-ad4caa7bfa19",
+    "parts": [ {
+      "text": "problems with bill question"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "91f1362f-e757-43cc-9272-f9d1ee3c2496",
+    "parts": [ {
+      "text": "i've got a billing issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3dd1e61-ed91-43d5-83d5-ff49603930b5",
+    "parts": [ {
+      "text": "having trouble with billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ed508e48-4d98-4c52-972f-664a9616145e",
+    "parts": [ {
+      "text": "billing issues i guess i don't know"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "da2571c3-b1ea-439c-be9f-e6a6113fa508",
+    "parts": [ {
+      "text": "i'm calling about my bill if you could please let me talk to somebody"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d2efc0ae-1fbb-49b4-b0a4-6fe5ee04b07d",
+    "parts": [ {
+      "text": "my billing problems"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3e35fb26-8ace-4d3f-bcb9-89e94a1004ca",
+    "parts": [ {
+      "text": "a problems with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2d90ccb1-e91d-4209-8630-29663429e26f",
+    "parts": [ {
+      "text": "invoice problems"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d4dfaa02-9770-416a-9b1a-a98c31a1651e",
+    "parts": [ {
+      "text": "i have some billing issues i would like to know about "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "401e7619-39a4-42e5-b86b-9231ec4a14b2",
+    "parts": [ {
+      "text": "something's wrong with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b902108b-de9a-4e02-8348-9e7634acb948",
+    "parts": [ {
+      "text": "an issue with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "86c0f57d-12d6-42db-9bba-d956ff81adb7",
+    "parts": [ {
+      "text": "regarding my bill issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "303135c7-7885-43cc-9d5f-37afc87ef1be",
+    "parts": [ {
+      "text": "there's a problem with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "71bf9738-880d-4d19-8a59-8fe91919bdc9",
+    "parts": [ {
+      "text": "there's something wrong with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c99f27cc-91ef-40a2-a5ad-c476028d9beb",
+    "parts": [ {
+      "text": "billing issues"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ac8fa44d-c9b1-4116-a3b5-4b99d7b754c9",
+    "parts": [ {
+      "text": "problem with bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "14753ed3-34c5-4442-bb6a-a782a1f8c4e8",
+    "parts": [ {
+      "text": "i have a billing problem and i want to talk with a representative"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e0640351-30e7-4769-b542-d7d7b90dcbdf",
+    "parts": [ {
+      "text": "have a problem with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e4bf083-bb45-4881-b64c-75f20b6fb8cb",
+    "parts": [ {
+      "text": "not happy with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c2064b7f-e1cd-4dcf-8d56-b1b7f5ace8b9",
+    "parts": [ {
+      "text": "we've got trouble with our bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d32e859e-49d4-4185-829c-da0cd8c53452",
+    "parts": [ {
+      "text": "i'm checking out billing problems"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5359a279-0567-4204-b932-4ffa1d5893d6",
+    "parts": [ {
+      "text": "i just want to know billing issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "58269d28-bd3d-4bea-a04b-e7bd91f7c413",
+    "parts": [ {
+      "text": "i have a problem with my billing"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "86dc3ca1-f12b-4c03-b681-d49d3f340a3a",
+    "parts": [ {
+      "text": "fix my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "69585f11-2f78-47ab-9db2-1496b75ced50",
+    "parts": [ {
+      "text": "i'm having issues with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e3ce3284-b541-433f-ad85-29bfba0761f8",
+    "parts": [ {
+      "text": "i wanted to check on my billing information i think i've got a problem with that"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0a086512-f4d5-456b-9922-65167fd09ac3",
+    "parts": [ {
+      "text": "about the bill problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "858d619c-4daa-4a58-87a6-f8c0fa474d50",
+    "parts": [ {
+      "text": "an issue with my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8946f722-fcca-4611-88c7-99c2aae0c3b2",
+    "parts": [ {
+      "text": "account billing issues agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6f870ced-8ba3-4009-a083-979039176293",
+    "parts": [ {
+      "text": "account billing issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e9d1c759-a3ea-4dc7-b25d-5146d2a1a014",
+    "parts": [ {
+      "text": "calling about a billing problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "35df7774-2d07-4bdc-87a7-e181bed51499",
+    "parts": [ {
+      "text": "my bill has problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dae79cc7-5489-4336-9830-fecd86967e10",
+    "parts": [ {
+      "text": "you can help me with my bill maybe i've had a problem for a long time with the telephone bill on my on my billing from telus and it's still not right so"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "501aa9d3-c944-4e30-aec2-e3f5d20bbfd7",
+    "parts": [ {
+      "text": "customer service for the billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "68dc5d13-fcf0-4217-ae26-68d430efc19c",
+    "parts": [ {
+      "text": "i would like to speak to somebody about my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ddbfc1ad-3d2b-46b8-bd5c-bde3b28eb988",
+    "parts": [ {
+      "text": "i'd like to have somebody check my billing for my telephone please for my telus account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8ace8b20-f3bb-45a8-bae8-8b90c931909c",
+    "parts": [ {
+      "text": "want to talk to somebody about our invoice please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9e490519-cb28-4aaf-ab05-94c2d0936221",
+    "parts": [ {
+      "text": "could i have the billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7c26f0ab-6f9a-4e44-a7fd-a807d9c47e89",
+    "parts": [ {
+      "text": "i'd like to contact the billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "23aefdbd-b8a3-494b-a36b-0aac3aef82a6",
+    "parts": [ {
+      "text": "i want to speak to somebody in accounting"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d332ae82-c3c6-4105-bb9d-37ccc4861834",
+    "parts": [ {
+      "text": "i need to the billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d30743eb-0349-4bfd-8b02-d5964dcbbe02",
+    "parts": [ {
+      "text": "billing billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c55151a3-adca-4e4d-a1e8-41212d5fdc38",
+    "parts": [ {
+      "text": "i want to be connected to the billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d88a02eb-de39-4ca1-9654-ff43f41907df",
+    "parts": [ {
+      "text": "i'd like to speak to someone in billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a5ab5428-b47c-40ef-b9c5-8ba3060ae549",
+    "parts": [ {
+      "text": "i want to talk to regarding my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2e72d022-78d1-41fa-8dd7-ab6c9892acf3",
+    "parts": [ {
+      "text": "i'd like to speak to someone about my my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6bd8aa51-17ef-4b94-b509-bd0a3d8191a2",
+    "parts": [ {
+      "text": "i would like to be connected with the billing department please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1c33b281-8b5b-41ab-9d6b-133dfbec23b2",
+    "parts": [ {
+      "text": "speak to regarding billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9f8d8c2a-cfb2-4995-8dc5-059779733b95",
+    "parts": [ {
+      "text": "need to speak to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f64f9c87-f158-4280-830c-dc6ec17bc6bb",
+    "parts": [ {
+      "text": "billing help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "52868e66-804a-40b5-8f7b-d917a5c2222a",
+    "parts": [ {
+      "text": "i need to talk about my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "df3fc914-0cac-42e9-b342-a0210bab3684",
+    "parts": [ {
+      "text": "i need to talk to billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "481453dd-735c-4f06-85b9-b9659137b211",
+    "parts": [ {
+      "text": "i need help with my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "25e4f9e0-f9a8-4072-9b7c-6e896e87262a",
+    "parts": [ {
+      "text": "i need to talk to somebody in billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e899c5aa-2050-4328-9153-6703478819d8",
+    "parts": [ {
+      "text": "i want to talk to someone about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a4a59788-ca87-444d-b152-5f9d6596b68c",
+    "parts": [ {
+      "text": "i'd like to talk to someone about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "85566198-7119-424c-ad1f-33cb31eb0cb0",
+    "parts": [ {
+      "text": "billing and customer service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "89aa1cce-65fd-49fc-aece-ef749b054c66",
+    "parts": [ {
+      "text": "i'd like to speak to someone about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "49a80a99-bd25-4154-85bc-8d89a372d1ab",
+    "parts": [ {
+      "text": "i need to talk to someone about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a5bd8c51-cd9d-4a1f-b4e2-42ffa527efb5",
+    "parts": [ {
+      "text": "i need to speak to an agent in billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2a66b316-7e8e-4452-8b92-a6a8ded3bd01",
+    "parts": [ {
+      "text": "i need to talk to someone about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "99341de1-1d50-4b9e-97da-2a90720351b7",
+    "parts": [ {
+      "text": "i'm looking for someone to talk to about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bd18d6d6-a8bb-4ce8-bc44-e74793dc5071",
+    "parts": [ {
+      "text": "talk to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8f3dabfa-d94a-4c04-9d8a-3544f1c4b99e",
+    "parts": [ {
+      "text": "i need to speak to the billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "76b4dad6-f984-4706-8b29-bea27a68012d",
+    "parts": [ {
+      "text": "i want to talk to a representative about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8737e580-0868-4184-a33a-2d92616ab8d2",
+    "parts": [ {
+      "text": "speak to a representative about billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fc25d42d-c90f-413e-bb60-1322e2b6d029",
+    "parts": [ {
+      "text": "i want to talk about the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c3d33a0-7df2-4d7a-8998-7d817e41660b",
+    "parts": [ {
+      "text": "bill department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "35796b83-4d18-4b8c-8150-77402f3110df",
+    "parts": [ {
+      "text": "i want to talk about my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9cd1da6e-0dab-4100-961c-e18efa3a14c9",
+    "parts": [ {
+      "text": "i want to speak to someone about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "942e956b-b33d-4f75-a08f-2f452087ef8f",
+    "parts": [ {
+      "text": "i need to discuss the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9b77f684-0929-4d35-af4f-669bb22090f0",
+    "parts": [ {
+      "text": "i wanna talk to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f8af7dae-9a06-4824-9191-7673907ab0fb",
+    "parts": [ {
+      "text": "having problem with our billings"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4b372c22-b41e-4bd6-a94c-8f7fc4397210",
+    "parts": [ {
+      "text": "i have problems with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "94d26981-42d1-44f1-a604-580fabb53299",
+    "parts": [ {
+      "text": "i have a billing issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "44d50590-2a26-42bc-9ebf-931cd626fef1",
+    "parts": [ {
+      "text": "issues with billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b50f6ba0-3c3e-4bcc-a706-55e477aa1786",
+    "parts": [ {
+      "text": "problem with my billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "80e83e43-e41e-4eb2-a2b9-6a316fd3fbca",
+    "parts": [ {
+      "text": "bill issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bb23f447-23aa-4630-94ed-75b19b1d4df3",
+    "parts": [ {
+      "text": "i'd like to speak about my phone bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "688ca881-56f7-4ef9-b615-e80e6825a88a",
+    "parts": [ {
+      "text": "i want to talk about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "babea2db-e966-4eb6-805e-eed3dbe69b5d",
+    "parts": [ {
+      "text": "i need to speak to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d1781b96-809b-4915-b208-846277bbb05f",
+    "parts": [ {
+      "text": "i'd like to talk to someone about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ce2a46ee-dbee-4f3f-906b-e171d72ac3f9",
+    "parts": [ {
+      "text": "problem with the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "618545d8-0e72-4ed5-b841-c149661b3a86",
+    "parts": [ {
+      "text": "problems with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "12e10c2b-3ced-41b9-9db1-e417d4a0f6ed",
+    "parts": [ {
+      "text": "a billing problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7ce3ee16-53da-49e8-873d-c432381ded15",
+    "parts": [ {
+      "text": "i have a billing problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3a2c2e70-d7d8-4b5b-b712-9d99827894aa",
+    "parts": [ {
+      "text": "problem with billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9a97982d-51fb-4d62-8ba3-7f4bc758c68c",
+    "parts": [ {
+      "text": "discuss bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "91d68046-f724-4886-9a21-710c2ffa531b",
+    "parts": [ {
+      "text": "a billing issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2fdece37-3db0-4c05-b98f-0d3b5745f4f3",
+    "parts": [ {
+      "text": "i want to talk to somebody about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2bb31aae-91a3-448c-bc4a-514469be695b",
+    "parts": [ {
+      "text": "agent billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fea4881b-7980-4086-918a-7ff42e4fa8a3",
+    "parts": [ {
+      "text": "bill problems"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1a5b950c-6b8d-4f73-80a7-e1d0436296ae",
+    "parts": [ {
+      "text": "i wanna discuss my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "083b1b51-930e-4092-8ef0-60b904c7cedf",
+    "parts": [ {
+      "text": "i have a problem with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ba818ccb-1376-466e-932e-1a46c161e5fa",
+    "parts": [ {
+      "text": "problem with my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "28972e13-e24d-4e3d-a168-f0a2b8ef57c0",
+    "parts": [ {
+      "text": "customer service billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7e37fbe9-69df-4e47-8e98-5da8b6e56cd2",
+    "parts": [ {
+      "text": "bill issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8c9e8c68-1aa2-4158-96a0-3fea387460f3",
+    "parts": [ {
+      "text": "talk about my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d44104e3-1aa7-4a72-b950-2ab96b07c354",
+    "parts": [ {
+      "text": "billing department"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d15978cc-35c4-4f60-94a2-b6647b649df8",
+    "parts": [ {
+      "text": "billing problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f8d67bf7-5a36-4a6a-8992-460f215b71ce",
+    "parts": [ {
+      "text": "billing agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

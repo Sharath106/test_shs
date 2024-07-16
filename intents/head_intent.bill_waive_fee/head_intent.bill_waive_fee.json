@@ -1,0 +1,27 @@
+{
+  "name": "3424c331-641b-4eb8-a8c7-913d7d5c78bd",
+  "displayName": "head_intent.bill_waive_fee",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer asking waiving fees ",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 416
+}

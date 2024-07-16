@@ -1,0 +1,360 @@
+{
+  "trainingPhrases": [ {
+    "id": "b095f0c7-5ef9-4da9-8fff-6d95f50ac45c",
+    "parts": [ {
+      "text": "I want to change my bill cycle date."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cce5177a-e1e4-447a-abe6-e7de04509fc5",
+    "parts": [ {
+      "text": "I need to change my bill cycle."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c4ae8ebf-85e2-4edd-a72a-2a843d87d9e5",
+    "parts": [ {
+      "text": "Change my bill cycle."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "62224c55-d005-4021-a644-9cc7b95d1060",
+    "parts": [ {
+      "text": "Help me change my bill cycle please!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a017f4d0-fda3-424a-9022-06f3475e7ce6",
+    "parts": [ {
+      "text": "This bill cycle doesn't work me."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d8307d88-4a00-4748-b2b7-70fbd03b2efa",
+    "parts": [ {
+      "text": "Need you to change my billing date."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "363c9fdf-e525-4435-9012-18a2e50e6623",
+    "parts": [ {
+      "text": "Can you please help me change my payment date?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ac2ab2bf-3970-4a6c-bc8f-7a7e1951614c",
+    "parts": [ {
+      "text": "Need to change due date later."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f65c7056-ac68-4189-8a27-95558d27b3fa",
+    "parts": [ {
+      "text": "Looking for a bill cycle date change."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b3774119-bea6-4331-9910-ea9addf6684e",
+    "parts": [ {
+      "text": "I want to change the date I'm billed please."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2dd24646-6233-4010-8756-1fd4224917c1",
+    "parts": [ {
+      "text": "Need my billing date moved to another day."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b7701526-0e61-4867-991c-13e37cb1cac1",
+    "parts": [ {
+      "text": "I need to change when my bill is due."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a24d88ed-adfe-45b3-84c3-a61ab37ddd57",
+    "parts": [ {
+      "text": "Is it possible to change the date I receive my bill?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "adb293b1-87f6-4a45-8b9d-fed64a4a364b",
+    "parts": [ {
+      "text": "I want to choose my payment date."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "65c1cd48-e03d-413c-936d-8f7afa82ac2a",
+    "parts": [ {
+      "text": "Can you please change the billing date for later?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d81dde8f-a3e5-4ca7-8a76-a3d0ff7135ae",
+    "parts": [ {
+      "text": "Bill cycle change."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "22113896-5e92-44de-9d19-d979c597d804",
+    "parts": [ {
+      "text": "Can I change my billing date?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "927b6e48-4f26-44f2-8508-7b319fdf7b0c",
+    "parts": [ {
+      "text": "I absolutely need to change the date of my billing cycle."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "188fa384-38a5-4daa-a845-dc25b168004e",
+    "parts": [ {
+      "text": "Could you please change the date I need to pay?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "005c86ec-88da-4ef7-969a-8d064d164584",
+    "parts": [ {
+      "text": "The date I need to pay my bill is not in sync with my paychecks so I'd like to change it."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c300d443-2310-4866-8d24-f25d8b362bc1",
+    "parts": [ {
+      "text": "Modify billing cycle date please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "169591c8-c09d-440f-ac4e-96c0f3177c99",
+    "parts": [ {
+      "text": "I want to change the date when I need to pay my bill."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "526fbe9c-d6fe-45a7-a479-1c3020e590b0",
+    "parts": [ {
+      "text": "Just change my billing date please and this won't be an issue anymore."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "46af8d8e-6c79-46bd-9d23-98c273d2be9e",
+    "parts": [ {
+      "text": "Want to modify my billing payment dates."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e2e437ca-aa48-4081-84b9-a61f64fc3850",
+    "parts": [ {
+      "text": "I know this might be a little late but I'd like to change my due date to the 17th of the month"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "08a58f1b-3d58-41ba-bf0e-32803b8986ea",
+    "parts": [ {
+      "text": "I would like to change the due date for my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bd1ba934-5bd7-4b08-a1ac-b197c9c9c3e2",
+    "parts": [ {
+      "text": "How can I change my bill due date to the 4th"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "52874344-6beb-478b-9dd9-256e3531b0b4",
+    "parts": [ {
+      "text": "can I change my due date to the 14th of every month"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eac98224-c6f9-46b4-bf9f-a7fd2204a1ca",
+    "parts": [ {
+      "text": "I want to have my bill due date changed to the 25th of the month please."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c48e14c5-b1d4-4f67-bd78-9b7bd68a9b4b",
+    "parts": [ {
+      "text": "I am looking to change my bill cycle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7e6b4801-8fb1-4976-b3a1-6db0e40be299",
+    "parts": [ {
+      "text": "I was wondering if it was possible to change my bill due date as my pay periods have changed."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e692c6af-eaa7-4f20-9391-e24f2367918a",
+    "parts": [ {
+      "text": "I am wondering if it is possible to adjust my billing cycle slightly? I have bi-weekly debits set up, but something has gone awry over time so that I'm paying a little bit late after my due date."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "325f1323-368d-4b81-af40-e86889be074b",
+    "parts": [ {
+      "text": "I'd like to push the end of my billing cycle."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2e541e23-0155-459f-8529-31effab04ffd",
+    "parts": [ {
+      "text": "Is it possible to push the end of a bill cycle?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0caae57c-32f3-41a9-ab95-8cea1dcff6da",
+    "parts": [ {
+      "text": "Can I push the due date of my billing cycle to later?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "081a14cc-0bc8-47d2-a088-987d17f8329f",
+    "parts": [ {
+      "text": "My billing cycle needs to be changed."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "777b8764-aa0a-4b4e-bb43-de747a21c42b",
+    "parts": [ {
+      "text": "Can I have the date when I receive my bills moved"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "396876b5-acc1-4d49-9767-7ef54e8e4ecf",
+    "parts": [ {
+      "text": "I'd like to change the date of when I receive my bills, please."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "762fa625-a94e-40a0-81fb-c9d365f1b5e9",
+    "parts": [ {
+      "text": "Could I change the date of when I receive my bills?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1c02da2e-da78-42a1-8d49-0e58c5615458",
+    "parts": [ {
+      "text": "Need to change the date of receiving my bills."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2cb1e8cc-2fde-48fe-8680-42dc03656b89",
+    "parts": [ {
+      "text": "Do you know perhaps if it's possible to change the date of receiving bills?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6607ef38-2574-449c-8b84-6bd94b268b6b",
+    "parts": [ {
+      "text": "It would help me tremendously if you could help me to change the date when I will receive all my next bills."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7ced9d74-176f-4441-aa8e-fbbb774f9a96",
+    "parts": [ {
+      "text": "I receive my paychecks only once a month so I would like to match that date with your bill date, guys."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3118d020-c343-4e7d-8c07-14c184198ef1",
+    "parts": [ {
+      "text": "I don't want to pay my bills on the 10th of the month anymore, 20th would work better for me, can we change that"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cafb5a80-9c13-4596-acf6-0eab9e43c4f7",
+    "parts": [ {
+      "text": "I can't pay my bill monthly on the 10th but the 21st would work for me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3589e4e7-8e9b-4230-abf0-7c6590a7f016",
+    "parts": [ {
+      "text": "If you put all my future bills on the 15th, it would make it so much easier for me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ca2ec2ea-4267-4269-aafe-c421ded2359f",
+    "parts": [ {
+      "text": "I think it will only work if we move my bill cycle to be on the 5th of each month"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "20cf92ae-144c-4ad0-9be5-0d16c3b35968",
+    "parts": [ {
+      "text": "I would like the billing cycle to end a bit earlier, is that doable?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "babef0b4-bd75-4e08-8429-8143e13df543",
+    "parts": [ {
+      "text": "getting my cellphone and home phone on the same date to be paid"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ddac1580-a530-47b4-8b6c-402693cd55af",
+    "parts": [ {
+      "text": "billing date on my account changes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ddd1197f-2910-4b77-a684-305404bf7698",
+    "parts": [ {
+      "text": "change payment date"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

@@ -1,0 +1,857 @@
+{
+  "trainingPhrases": [ {
+    "id": "1335e6c6-ab79-4e66-a079-f20a8cf09dc8",
+    "parts": [ {
+      "text": "we are getting unsolicited calls from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4a493cdb-1ede-4269-a369-967d106564d7",
+    "parts": [ {
+      "text": "to stop receiving phone calls from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3ccb1ff8-bb81-49a7-a61d-0455e01904ce",
+    "parts": [ {
+      "text": "i just missed the call from telus and i waited an hour"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8873cc1e-8775-4679-b7f1-f8da1b2f62be",
+    "parts": [ {
+      "text": "received a missed call from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c852d859-945f-41e1-8d37-9d16e4ee9be7",
+    "parts": [ {
+      "text": "somebody called me i want to talk to however called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "910d19a6-e7a9-48d5-86d0-ab375a5b0e23",
+    "parts": [ {
+      "text": "hello you called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8f90ecd1-d79f-4465-9554-ed9d3b8c5a01",
+    "parts": [ {
+      "text": "i'm just missed the phone call from you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8607d1d8-5cb8-4342-a204-18fdb748cdbb",
+    "parts": [ {
+      "text": "i keep getting a phone call from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "daab1b40-c25b-4cf8-be89-03912f0b2e83",
+    "parts": [ {
+      "text": "telus has been calling and i don't know why"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "767bc599-45d1-4a08-bee1-283b1842976a",
+    "parts": [ {
+      "text": "somebody just called on my number i have see id that's why i call back"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d61eb024-53ac-409c-a2b9-e48c0a51bf2f",
+    "parts": [ {
+      "text": "i received a call from this number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8398ef7b-f248-4235-be39-697f2917ea74",
+    "parts": [ {
+      "text": "somebody from telus called me and we got disconnected"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "050fbc15-2014-47cc-8ae7-d4160a3e98ea",
+    "parts": [ {
+      "text": "i am returning your call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4a279960-fb26-437c-a2c1-f9ad9d7f7e4b",
+    "parts": [ {
+      "text": "hello i'm just returning your call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c5dd78ff-340a-45e9-995e-106bd0797249",
+    "parts": [ {
+      "text": "returning telus call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "59152df6-ef55-4329-9924-aec319cbad7b",
+    "parts": [ {
+      "text": "your offices called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "900cafd3-cb81-44cd-9ff9-febb3f1948f9",
+    "parts": [ {
+      "text": "follow up on previous call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "818f85c9-2589-413b-9e40-e98e6ac5a699",
+    "parts": [ {
+      "text": "you called"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bef39ee8-c4b5-41cd-a3a2-1afa4ca85401",
+    "parts": [ {
+      "text": "i'm returning a call from six eleven pm on october first"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0debae32-bac5-4d56-a0a3-cb282f88675a",
+    "parts": [ {
+      "text": "you called me earlier i'm returning the call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f6ac019b-b780-4c0f-b6bc-2f57d647fc0a",
+    "parts": [ {
+      "text": "returning phone call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3225a8eb-85c2-46d1-90c4-75a67b3e0a8e",
+    "parts": [ {
+      "text": "we're calling about a call that was made from adt to us while we were out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "048539d4-fef3-4978-932b-937eab006ddd",
+    "parts": [ {
+      "text": "yeah you called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ad5e70f2-a265-4aa6-a84c-59ffe0a7464d",
+    "parts": [ {
+      "text": "returning a phone call that was given to me this morning"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "97ecffc4-8673-439f-9e2e-f2d02ecb8c40",
+    "parts": [ {
+      "text": "just returning a call that i just got from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "269a41d8-e1dd-4200-9eb1-66d91da99c36",
+    "parts": [ {
+      "text": "i have received the call from you guys"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b28c80c3-9a35-4267-8a0a-edb4b0167f86",
+    "parts": [ {
+      "text": "we had a call from somebody who said they were from adt and were wanting to upgrade our system and i'm not sure this was a legitimate call or not we could not understand the person that was making it very well"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d904c4d4-55ef-43a9-bebe-ebe5361b913a",
+    "parts": [ {
+      "text": "somebody just called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0ea74925-7835-4df0-b0f1-b2f130b2ce30",
+    "parts": [ {
+      "text": "you guys called me can you call back"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c15524a8-d506-4b0a-bdeb-e264ebf69fed",
+    "parts": [ {
+      "text": "somebody called me but i don't know what number to call back"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f62ffb62-7e1b-433a-af9c-15e31b0a82cc",
+    "parts": [ {
+      "text": "just somebody keeps calling me from this phone number and i'm just trying to figure out why"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a8947747-4f89-4aa7-a60f-0df8b3fada0a",
+    "parts": [ {
+      "text": "you guys keep calling me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2444730a-ea13-4525-8a74-310663f03cca",
+    "parts": [ {
+      "text": "you called me and i'm just returning the call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "caa84290-19e2-42ad-b487-43356fd24041",
+    "parts": [ {
+      "text": "i got a call earlier and i wasn't home i'm just returning the call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "16ecb00f-b03e-4586-b0f9-7fb6f5e6cd01",
+    "parts": [ {
+      "text": "you just called me i didn't answer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "603ce9b0-87ec-483d-850a-b887789e0b7b",
+    "parts": [ {
+      "text": "i'm calling about a phone call i received from a telus representative"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6a47bb2a-e2fb-4c96-a346-b5a0ccfb4756",
+    "parts": [ {
+      "text": "you guys keep calling me and i wanna know why"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dfcebf19-709f-454e-a44e-266823ab9030",
+    "parts": [ {
+      "text": "well someone called me from your department there and i don't know what it's all about"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "909db8e6-cfae-4fa8-8dce-558d31827d56",
+    "parts": [ {
+      "text": "i received a call from telus and i was not able to answer the phone in time can you find out who was calling"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a87b75db-f444-4279-a024-aa4b33e380fa",
+    "parts": [ {
+      "text": "telus has been calling me for the past three days i'm just returning a call and i don't know who or what or why"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d256208c-f86e-4c67-9b7b-ed34f373d972",
+    "parts": [ {
+      "text": "you guys called me so i'm just trying to return the call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "efa4b5ee-73ee-45f7-b9a1-6f5f8ecf9ceb",
+    "parts": [ {
+      "text": "i just received a message on our computer to phone you so i'm doing that"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "08be7ae5-a44a-43d5-b987-25468174bcc2",
+    "parts": [ {
+      "text": "i don't know you phone me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a7556134-1d68-4901-ae2c-7dfcb4e6b90d",
+    "parts": [ {
+      "text": "calling back cuz you phoned me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8a71fbed-668e-4ed6-b688-ed047a097259",
+    "parts": [ {
+      "text": "i received a call from you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "df0212d4-8192-4401-9330-cdeecd6c0bcb",
+    "parts": [ {
+      "text": "you guys you guys called me i'm returning your call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "422e93c4-6bce-4064-b48a-34194e651073",
+    "parts": [ {
+      "text": "i missed a phone call from you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1e8ff731-1047-4dd8-9ac5-cd68095fa0dd",
+    "parts": [ {
+      "text": "my i got a call from somebody"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "613a8c57-8f89-404c-a8dd-4bbe89a88bfb",
+    "parts": [ {
+      "text": "i'm calling about call you just made this morning and we weren't in"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a817b9aa-ccd1-4b9e-a26b-dc762f08eb18",
+    "parts": [ {
+      "text": "i received a phone call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ddc12985-18f2-4fa8-bc2a-0cf328f03121",
+    "parts": [ {
+      "text": "yes hello someone just telephoned me and then hung up from this telephone number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d2712fdf-629b-4f22-84e3-fd4c246f024f",
+    "parts": [ {
+      "text": "you had called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d8add78a-395d-429b-8756-aae5509c4a2f",
+    "parts": [ {
+      "text": "looking for a phone number that called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cfdf215b-7779-4529-b86e-f56a1d626185",
+    "parts": [ {
+      "text": "somebody called here about two or three times and then when i talk to somebody finally they said to call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "03033bb7-f76b-4884-acce-67c3de0165f2",
+    "parts": [ {
+      "text": "i got a missed call from you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "48d0432c-737c-4ad8-aee6-4f7e06dc6a69",
+    "parts": [ {
+      "text": "i i called because i think someone called here i just answering the call that's all"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a8bf213a-2d20-40cd-950c-19b10fcc9678",
+    "parts": [ {
+      "text": "returning telus phone call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dda025e9-5dc0-49e4-b75d-9700bc1a789a",
+    "parts": [ {
+      "text": "you guys just called me twice i'm just returning the phone call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e22694ea-c462-4bf5-a3be-fc0d3c51712e",
+    "parts": [ {
+      "text": "i'm returning a call that you made to me about three times but when i answer nobody answers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "982c8f2d-7a69-4f43-a0fe-e7453cce2872",
+    "parts": [ {
+      "text": "someone just called about my account and hung up from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f84484ef-d6ab-4bf9-a1cc-919689bde033",
+    "parts": [ {
+      "text": "i'm returning a call you guys just phoned me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0c5dbc50-1c7f-4e50-8fad-68572973f5ed",
+    "parts": [ {
+      "text": "need to know why you people have been calling me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9dd59dd2-f0c2-4ad8-b3d0-57bbac58b3b3",
+    "parts": [ {
+      "text": "telus called me so i'm taking the chance to talk to customer service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4fd6d9f9-09ed-474e-89be-9b7ab2d29024",
+    "parts": [ {
+      "text": "i'm returning a call you made to me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "af393fdf-40b4-4eed-9430-4e827d7c2055",
+    "parts": [ {
+      "text": "i've returned the call from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2b294f05-b76a-497b-8e33-b2263d334f37",
+    "parts": [ {
+      "text": "you just called me and hung up"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ce8896d0-dc77-4c40-8fa8-095412ae15b9",
+    "parts": [ {
+      "text": "i'm not sure you called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "91426e92-8a21-45a4-b838-994b32be25ff",
+    "parts": [ {
+      "text": "i'm replying to a call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "26ac2f1b-71f6-4697-a222-17f266002520",
+    "parts": [ {
+      "text": "returning the call back"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d8ae347b-dca3-416c-885d-e209a5f91614",
+    "parts": [ {
+      "text": "i got a phone call from you guys"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bf39f8f1-0281-4531-91f5-43465cfa1381",
+    "parts": [ {
+      "text": "i got a phone call from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3c8e1077-5d9e-4403-99d3-5ddcfc41f04e",
+    "parts": [ {
+      "text": "you called me i'm calling back"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2c87ea27-98d7-4ed0-8ea4-301dae2adec6",
+    "parts": [ {
+      "text": "i just got a i just got a call here from this number just returning it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "39e539cf-93e6-48f6-b695-be36b8cdcf0c",
+    "parts": [ {
+      "text": "i'm i'm returning telus call me so i'm returning the call that what i should say"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a11e6bbc-5f47-48c2-b358-d197c405576d",
+    "parts": [ {
+      "text": "i'm returning the call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3332692b-8b02-4f49-9a54-56c3b6aaa13b",
+    "parts": [ {
+      "text": "you called me today"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "26a55733-0a44-4e04-a979-9633aa689faf",
+    "parts": [ {
+      "text": "i just received a call from from telus and i wish to speak to someone about it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3d4cae36-8383-43bd-a21f-fe6fd2b03cab",
+    "parts": [ {
+      "text": "i am looking i just got a call from telus and i'm returning a call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3950e415-5657-40c2-8048-92bdf31a00b6",
+    "parts": [ {
+      "text": "miss your call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "946a21de-8649-4e2e-8322-376a68bda6d6",
+    "parts": [ {
+      "text": "i'm returning your phone call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bfde9efb-b957-41d1-8c54-481b80145cc2",
+    "parts": [ {
+      "text": "i'm returning your call you called my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f32f14da-4780-41f3-8727-8df8e81e2e29",
+    "parts": [ {
+      "text": "keep getting call from this number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c6e71dab-aa09-4a85-ac6a-463409452e61",
+    "parts": [ {
+      "text": "i'm calling about the continuous calls i received from telus and they don't leave an answer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a92f85bf-d489-49d2-8b07-7b63775e8e11",
+    "parts": [ {
+      "text": "responding to a call from you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "80cb4f21-63ab-427b-b590-30e756fb6276",
+    "parts": [ {
+      "text": "returning an incoming call from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cae66c7a-6e16-415f-825b-ddb15d041cc7",
+    "parts": [ {
+      "text": "i'm calling in reference to a call i just received from you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "16a6f8e7-97f9-4586-a622-4674cef44c7d",
+    "parts": [ {
+      "text": "you had called me yesterday"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4c219c05-c5f4-459d-be12-2907a07de097",
+    "parts": [ {
+      "text": "i've been getting a lot of calls from telus i'm just curious as to what was going on here"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d07e9dc2-1be6-4177-b8a4-349a85c1edf3",
+    "parts": [ {
+      "text": "i would like to verify the letter you sent me i don't agree with the amount"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "345dfccf-77f6-4735-9166-838e58b1205f",
+    "parts": [ {
+      "text": "a missed call from you guys"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "343c9ae6-db7a-4d7c-a612-e334a79982bd",
+    "parts": [ {
+      "text": "someone's called me i gotta missed call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f09b0180-7a68-4678-bb86-9b0a497031c6",
+    "parts": [ {
+      "text": "i'm calling to confirm that everything is alright because you sent us a call requesting us to do this"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5c00700d-d921-4293-bcba-c5844f7e8b30",
+    "parts": [ {
+      "text": "i just missed your phone call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8f08bf83-5adf-4847-a280-0ea1b8360b1f",
+    "parts": [ {
+      "text": "why somebody called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7dc4e5a1-d1a6-436d-891b-995abc4257c7",
+    "parts": [ {
+      "text": "i got my call back and then hung up on me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a8744ca3-ffc5-4c43-8455-8a2d868cd05d",
+    "parts": [ {
+      "text": "not sure you guys phoned me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a834e64f-5dad-4344-a0c6-55637c5c7b6f",
+    "parts": [ {
+      "text": "well telus been calling me everyday so i'm just wondering what the reason behind them calling me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8d64c338-41f9-4109-bef0-26327ce451d6",
+    "parts": [ {
+      "text": "i'm returning a phone call from someone who called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5974617b-ca2f-4591-bb28-9c06e135ed2b",
+    "parts": [ {
+      "text": "returning someone's call from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "982c9b77-5876-4b8c-9dce-6ad961eabf3b",
+    "parts": [ {
+      "text": "i'm receiving a call from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b11db792-b9e1-4130-a3c5-519ea6bc6620",
+    "parts": [ {
+      "text": "why did you call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7d1910d8-c8a2-496b-b40d-adf559b389bd",
+    "parts": [ {
+      "text": "yes i just recently got a call from telus and i wasn't able to pick it up so i was just wondering what it was about"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e54d6461-1ac9-40f8-8db2-20042563c48c",
+    "parts": [ {
+      "text": "i received the call from you guys"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bb256ee6-60f3-422c-a02d-74a4b03a9763",
+    "parts": [ {
+      "text": "i got i'm calling back like i just receive a call from you because i called this morning and i was expecting a call by five but you called earlier so i missed your call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dc94f528-ae49-4a63-9028-bc8045b34263",
+    "parts": [ {
+      "text": "i have no idea i got a call from there wondering what it's about"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f1dbb441-cfc0-4441-8319-3eb91e7f5a21",
+    "parts": [ {
+      "text": "i was told to call you guys"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3d463b51-8a07-4f15-97c0-bfa235ba368e",
+    "parts": [ {
+      "text": "you called me i don't know why please tell me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8ffa62c7-acb4-4ba4-bb3d-c0d2e9d27f36",
+    "parts": [ {
+      "text": "i missed a phone call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7121a124-93e9-4fca-abbc-8dbb69a3a5a3",
+    "parts": [ {
+      "text": "missed call from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b4e0dfb2-e9e3-46a7-9d72-0edb4fd299c1",
+    "parts": [ {
+      "text": "i received a call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "420b5f91-9291-4710-b732-cbb1fb574e48",
+    "parts": [ {
+      "text": "someone just called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7635e825-d372-4033-9587-3d7e6914b6de",
+    "parts": [ {
+      "text": "i just missed a call from you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8a039e3b-987f-41d1-bfea-297dbe522b11",
+    "parts": [ {
+      "text": "you guys phoned me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b31e9bc8-be03-454c-bff1-09b27da15bd5",
+    "parts": [ {
+      "text": "just returning a call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "404c4ba4-78e9-4207-bfd8-2b0f88a55405",
+    "parts": [ {
+      "text": "i'm returning a call from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "32257458-fb53-46eb-8727-d645530b56bb",
+    "parts": [ {
+      "text": "i don't know you called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d175de48-ac03-4b06-be38-affa2c741b4d",
+    "parts": [ {
+      "text": "i'm returning your call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "52e9e98f-9267-47de-89fa-9e605448819e",
+    "parts": [ {
+      "text": "you guys called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9ee1ebf1-b8f4-4f5a-9cd8-55393fc4c6d6",
+    "parts": [ {
+      "text": "calling back"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "50648b1b-86dc-4e85-8379-f70ccfb5dfcc",
+    "parts": [ {
+      "text": "returning your call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7431957c-5154-4ce2-b6d5-0dde8a434ddc",
+    "parts": [ {
+      "text": "you called me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2d0abe43-164b-4415-b5a6-60f3b01920c6",
+    "parts": [ {
+      "text": "returning a call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

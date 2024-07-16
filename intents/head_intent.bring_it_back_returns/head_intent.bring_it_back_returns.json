@@ -1,0 +1,21 @@
+{
+  "name": "145c0488-515b-4665-8fab-9a9a65e698f4",
+  "displayName": "head_intent.bring_it_back_returns",
+  "priority": 500000,
+  "labels": [ {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "clients wanting to know how to return their device",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 141
+}

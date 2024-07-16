@@ -1,0 +1,24 @@
+{
+  "name": "0c379a1d-89d5-460e-9255-50091ae512b9",
+  "displayName": "head_intent.block_mycallerid",
+  "parameters": [ {
+    "id": "iphone_vs_android",
+    "entityType": "@iphone-vs-android"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about blocking their number when calling out and wanting to keep their number confidential.",
+  "numTrainingPhrases": 172
+}

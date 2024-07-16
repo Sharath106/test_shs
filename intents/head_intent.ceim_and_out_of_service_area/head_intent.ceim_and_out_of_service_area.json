@@ -1,0 +1,24 @@
+{
+  "name": "ac797474-70af-4c4f-9a3e-92a8441463c7",
+  "displayName": "head_intent.ceim_and_out_of_service_area",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customers flagging a service or network issue, or out of service area ",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 230
+}

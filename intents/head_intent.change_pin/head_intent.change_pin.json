@@ -1,0 +1,23 @@
+{
+  "name": "81ae71f0-8119-469a-bbc4-f56596092d8c",
+  "displayName": "head_intent.change_pin",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about changing PIN when user knows the PIN already and wants to change for security reasons",
+  "numTrainingPhrases": 154
+}

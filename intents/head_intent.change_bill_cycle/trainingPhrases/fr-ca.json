@@ -1,0 +1,383 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Si vous mettez mon cycle de facturation le 5, ça serait parfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne peux plus payer ma facture mensuellement le 19 mais le 25 ça marche"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que vous pourriez mettre ma facture le 23? ça m'aiderait beaucoup"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Si mes factures pouvaient toujours être le 3 ça ferait mon affaire"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je peux pas payer la facture le 19 de chaque mois, mais j'aimerais mieux le 25"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne peux plus payer ma facture le 11, j'aimerais mieux que ce soit le 20 s'il vous plait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'veux plus payer ma facture le 11, le 20 ça marcherait mieux pour moi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Si je pouvais payer ma facture "
+    }, {
+      "text": "le 4"
+    }, {
+      "text": " de chaque mois ça serait mieux"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce possible de repousser la fin d'un cycle de facturation?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire pour repousser la fin de mon cycle de facturation?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que c'est possible de repousser la date de fin de mon cycle de facturation?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais repousser la fin d'un cycle de facturation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous m'aider à changer mon cycle de facturation?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer mon cycle de facturation "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais changer ma date de facturation "
+    }, {
+      "text": "pour le 1er"
+    }, {
+      "text": " de chaque mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-vous modifier la date de mon cycle de facturation ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": " est-il possible de modifier ma date de facturation ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "faire changer ma date de facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon paiement passe présentement "
+    }, {
+      "text": "le 18"
+    }, {
+      "text": " de tous les mois, mais je veux que ce soit "
+    }, {
+      "text": "le 1er"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pourriez-vous ajuster mon cycle de facturation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "faire "
+    }, {
+      "text": "un"
+    }, {
+      "text": " ajustement de mon cycle de paiement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "est-ce possible d'ajuster mon cycle de facturation?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'aimerais que ma date de paiement soit "
+    }, {
+      "text": "pour le 20"
+    }, {
+      "text": " de chaque mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux que ma facture soit payable "
+    }, {
+      "text": "pour le 15 du mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux que ma facture commence le premier du mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment faire pour changer mon cycle de facturation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer la date que ma facture commence"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changement de mon cycle de facturation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer mon cycle de facturation "
+    }, {
+      "text": "pour le 1er"
+    }, {
+      "text": " de chaque mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "faire en sorte que mon cycle de facturation soit "
+    }, {
+      "text": "au 20"
+    }, {
+      "text": " de chaque mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'aimerais changer mon cycle de facturation "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "est-ce que je peux change mon cycle de facturation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Remettre "
+    }, {
+      "text": "l"
+    }, {
+      "text": "'échéance de mes "
+    }, {
+      "text": "paiements"
+    }, {
+      "text": " "
+    }, {
+      "text": "à"
+    }, {
+      "text": " "
+    }, {
+      "text": "plus"
+    }, {
+      "text": " tard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer"
+    }, {
+      "text": " "
+    }, {
+      "text": "l"
+    }, {
+      "text": "'échéance d'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "paiement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer"
+    }, {
+      "text": " la "
+    }, {
+      "text": "date"
+    }, {
+      "text": " que je suis "
+    }, {
+      "text": "facturé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changement de"
+    }, {
+      "text": " la "
+    }, {
+      "text": "date de"
+    }, {
+      "text": " "
+    }, {
+      "text": "cycle"
+    }, {
+      "text": " "
+    }, {
+      "text": "de facturation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Faire"
+    }, {
+      "text": " "
+    }, {
+      "text": "changer"
+    }, {
+      "text": " la "
+    }, {
+      "text": "date"
+    }, {
+      "text": " due des "
+    }, {
+      "text": "paiements"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Change"
+    }, {
+      "text": " la "
+    }, {
+      "text": "date"
+    }, {
+      "text": " que mon "
+    }, {
+      "text": "paiement"
+    }, {
+      "text": " est due"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Changer"
+    }, {
+      "text": " la "
+    }, {
+      "text": "date"
+    }, {
+      "text": " que je reçois ma "
+    }, {
+      "text": "facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux choisir ma "
+    }, {
+      "text": "date de"
+    }, {
+      "text": " "
+    }, {
+      "text": "paiement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer"
+    }, {
+      "text": " ma date "
+    }, {
+      "text": "de facturation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Changer de"
+    }, {
+      "text": " "
+    }, {
+      "text": "cycle"
+    }, {
+      "text": " "
+    }, {
+      "text": "de facturation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}
