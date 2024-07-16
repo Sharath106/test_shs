@@ -1,0 +1,17 @@
+{
+  "name": "6c7f4fd6-70af-4ad9-936f-fa03476400ff",
+  "displayName": "small_talk.thank_you",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  }, {
+    "id": "number",
+    "entityType": "@sys.number"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "description": "For when user says thank you to the bot.",
+  "numTrainingPhrases": 59
+}

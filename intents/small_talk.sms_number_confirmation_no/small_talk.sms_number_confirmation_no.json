@@ -1,0 +1,17 @@
+{
+  "name": "f0706a98-b832-44f8-b33d-a4fc6f7104d1",
+  "displayName": "small_talk.sms_number_confirmation_no",
+  "parameters": [ {
+    "id": "yes-or-no",
+    "entityType": "@yes-or-no"
+  }, {
+    "id": "new-or-byod-phone",
+    "entityType": "@new-or-byod-phone"
+  }, {
+    "id": "account-blocks",
+    "entityType": "@account-blocks"
+  } ],
+  "priority": 500000,
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 177
+}

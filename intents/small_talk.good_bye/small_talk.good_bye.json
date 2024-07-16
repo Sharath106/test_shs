@@ -1,0 +1,15 @@
+{
+  "name": "b93c6e4c-e616-4003-8258-a6f387cde32d",
+  "displayName": "small_talk.good_bye",
+  "parameters": [ {
+    "id": "currency-name",
+    "entityType": "@sys.currency-name"
+  }, {
+    "id": "time-period",
+    "entityType": "@sys.time-period"
+  } ],
+  "priority": 500000,
+  "description": "Customer saying bye bye bye!",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 38
+}

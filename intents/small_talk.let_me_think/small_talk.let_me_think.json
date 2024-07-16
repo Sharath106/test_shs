@@ -1,0 +1,8 @@
+{
+  "name": "3411eb50-0c95-49d0-b66d-2a7ef8437ceb",
+  "displayName": "small_talk.let_me_think",
+  "priority": 500000,
+  "description": "Customers asking to wait while they think",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 43
+}

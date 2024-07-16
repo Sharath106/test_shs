@@ -1,0 +1,8 @@
+{
+  "name": "e9976c86-2e8f-4189-97b3-14d27fcfa6f8",
+  "displayName": "small_talk.pay_full_amount",
+  "priority": 500000,
+  "description": "Customer is looking to pay full amount owed on the account",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 47
+}

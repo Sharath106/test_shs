@@ -1,0 +1,48 @@
+{
+  "trainingPhrases": [ {
+    "id": "9436d268-2289-44ff-9434-330cd2498dcf",
+    "parts": [ {
+      "text": "u"
+    }, {
+      "text": " "
+    }, {
+      "text": "2"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "08eca6b9-6698-4fe9-9201-d8696483f26f",
+    "parts": [ {
+      "text": "have "
+    }, {
+      "text": "a good one"
+    }, {
+      "text": " too"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7933f01e-04ed-47fe-9955-a4e10cdb31ad",
+    "parts": [ {
+      "text": "same"
+    }, {
+      "text": " to you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a000431b-e697-4164-8cb1-36ba496c881d",
+    "parts": [ {
+      "text": "you as well"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dc1ff2ad-f330-4e28-9ff6-13885405a72b",
+    "parts": [ {
+      "text": "you too"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

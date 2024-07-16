@@ -1,0 +1,307 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "déjà essayé et non "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ça fonctionne juste pas "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'y arrive pas "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Non, toujours rien "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Non, y'a rien "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ça ne fonctionne "
+    }, {
+      "text": "toujours"
+    }, {
+      "text": " pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "rien, c'est pareil  "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pareil "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "toujours non  "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est toujours pareil "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "non rien, j'attend "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'attend toujours"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "toujours rien "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "non rien "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ça ne fonctionne "
+    }, {
+      "text": "toujours"
+    }, {
+      "text": " pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "non, j'ai toujours le même problème."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ca marche pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "c'est "
+    }, {
+      "text": "toujours"
+    }, {
+      "text": " pas réglé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ça"
+    }, {
+      "text": " "
+    }, {
+      "text": "ne"
+    }, {
+      "text": " "
+    }, {
+      "text": "marche pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ça"
+    }, {
+      "text": " "
+    }, {
+      "text": "ne"
+    }, {
+      "text": " "
+    }, {
+      "text": "marche pas"
+    }, {
+      "text": ", je vois "
+    }, {
+      "text": "encore"
+    }, {
+      "text": " "
+    }, {
+      "text": "l'erreur"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Non"
+    }, {
+      "text": ", "
+    }, {
+      "text": "ça"
+    }, {
+      "text": " "
+    }, {
+      "text": "n'a"
+    }, {
+      "text": " pas "
+    }, {
+      "text": "marché"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ça"
+    }, {
+      "text": " "
+    }, {
+      "text": "n'a"
+    }, {
+      "text": " pas fonctionné, le "
+    }, {
+      "text": "problème"
+    }, {
+      "text": " est "
+    }, {
+      "text": "encore"
+    }, {
+      "text": " là"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ça"
+    }, {
+      "text": " fonctionne "
+    }, {
+      "text": "toujours"
+    }, {
+      "text": " pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je vois "
+    }, {
+      "text": "encore"
+    }, {
+      "text": " "
+    }, {
+      "text": "l'erreur"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Non"
+    }, {
+      "text": ", "
+    }, {
+      "text": "l'erreur"
+    }, {
+      "text": " est "
+    }, {
+      "text": "toujours"
+    }, {
+      "text": " là"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Le "
+    }, {
+      "text": "problème"
+    }, {
+      "text": " persiste "
+    }, {
+      "text": "encore"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Le "
+    }, {
+      "text": "problème"
+    }, {
+      "text": " "
+    }, {
+      "text": "n'a"
+    }, {
+      "text": " pas "
+    }, {
+      "text": "été"
+    }, {
+      "text": " résolu"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je reçois "
+    }, {
+      "text": "toujours"
+    }, {
+      "text": " le message "
+    }, {
+      "text": "d'erreur"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Le "
+    }, {
+      "text": "problème de"
+    }, {
+      "text": " "
+    }, {
+      "text": "connexion"
+    }, {
+      "text": " persiste"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Le "
+    }, {
+      "text": "problème"
+    }, {
+      "text": " "
+    }, {
+      "text": "ne"
+    }, {
+      "text": " disparaît pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

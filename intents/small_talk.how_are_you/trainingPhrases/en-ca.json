@@ -1,0 +1,65 @@
+{
+  "trainingPhrases": [ {
+    "id": "bd38b842-426c-4c90-97c5-1072b36ea806",
+    "parts": [ {
+      "text": "how're you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2dae991e-189b-400e-821a-4eceecddb94e",
+    "parts": [ {
+      "text": "how are you feeling?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "91a7afba-dfc6-4dcd-978e-bf9012b9b093",
+    "parts": [ {
+      "text": "how are you "
+    }, {
+      "text": "today"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9bb38364-fa93-4cdd-973d-2c487d95b14b",
+    "parts": [ {
+      "text": "how are you doing?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2485215e-7bd4-4ab7-9698-b5b141e01a7f",
+    "parts": [ {
+      "text": "How's it going"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b53b5a34-b656-44c8-90d5-90687a8dd5e5",
+    "parts": [ {
+      "text": "hru"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8e5d0de3-f966-4584-a2f7-7d2cbd8d1132",
+    "parts": [ {
+      "text": "how r "
+    }, {
+      "text": "u"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0b898f2a-d787-4612-a0c4-d8e82e94a196",
+    "parts": [ {
+      "text": "how are you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

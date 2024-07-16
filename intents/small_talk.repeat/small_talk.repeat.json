@@ -1,0 +1,8 @@
+{
+  "name": "c3e47522-f7ab-463f-9197-e3da2f10e59c",
+  "displayName": "small_talk.repeat",
+  "priority": 500000,
+  "description": "repeats the given message",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 80
+}

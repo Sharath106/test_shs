@@ -1,0 +1,137 @@
+{
+  "trainingPhrases": [ {
+    "id": "0166db5b-93c7-4be1-acfa-32ff9cff9d00",
+    "parts": [ {
+      "text": "help needed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "12392165-b096-4654-915e-29ad85637e9f",
+    "parts": [ {
+      "text": "hello can you help me today?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6783e8a8-61ef-4635-92f7-6358c6542c29",
+    "parts": [ {
+      "text": "I need help with something"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cc86f921-d7de-4d85-88da-8e4e7d8d8dea",
+    "parts": [ {
+      "text": "Get help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8e88db84-2fc9-407e-873e-ceadda4de424",
+    "parts": [ {
+      "text": "will you be able to help me "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e466ec0-28e7-442c-a50f-40f98515403e",
+    "parts": [ {
+      "text": "I need someone to help me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6c5cc16c-ef2d-4160-b490-40016541c11e",
+    "parts": [ {
+      "text": "Good morning I need some help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2d90023a-4870-4d42-9935-7b300ab9f7e6",
+    "parts": [ {
+      "text": "could you "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6aec49a8-5aeb-48f4-b040-77382cc8df95",
+    "parts": [ {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "038b58fe-3e58-49d4-8071-be9f9c784271",
+    "parts": [ {
+      "text": "want some"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fd2e6176-d370-4c03-be1a-5a9f80f80ea5",
+    "parts": [ {
+      "text": "I would want "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e2fc50d7-060e-41c7-95c7-400d4d5b79c7",
+    "parts": [ {
+      "text": "would you "
+    }, {
+      "text": "help"
+    }, {
+      "text": " me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9fe20bd5-55d4-4c49-8a51-79c2e9b51990",
+    "parts": [ {
+      "text": "i need "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5498e7c2-bdb1-4088-8b38-1ad07c122104",
+    "parts": [ {
+      "text": "can"
+    }, {
+      "text": " you "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a4e0e6ed-2338-46b8-8541-acb4623bcc41",
+    "parts": [ {
+      "text": "need "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ec1b4a13-541b-44fb-aeaf-3ba926946c87",
+    "parts": [ {
+      "text": "please "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

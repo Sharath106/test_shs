@@ -1,0 +1,11 @@
+{
+  "name": "dcd9cb6c-bee2-4618-8b4e-ef8f3cffa2e3",
+  "displayName": "small_talk.confirmation_no",
+  "priority": 500000,
+  "asrCorrections": [ {
+    "errorPhrase": "know",
+    "correctionPhrase": "no"
+  } ],
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 271
+}

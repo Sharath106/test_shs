@@ -1,0 +1,110 @@
+{
+  "trainingPhrases": [ {
+    "id": "aca72c31-9c08-4aab-9b3b-2ea8fd3bf6a4",
+    "parts": [ {
+      "text": "bye bye"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "53b55e6c-d3cc-4419-8589-3cfdbba10052",
+    "parts": [ {
+      "text": "adios"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bcdbcc2f-d8a8-49b9-8714-3d83418593c6",
+    "parts": [ {
+      "text": "seeya"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "288b8721-ca94-45fa-a333-354537fc6c15",
+    "parts": [ {
+      "text": "chow"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "073a89b8-8e1e-4e20-8a5b-f59763822e10",
+    "parts": [ {
+      "text": "goodbye"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "80cfecb8-96db-4d87-a494-b226b62a8633",
+    "parts": [ {
+      "text": "bye"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bc0a9fda-f91d-4d93-b581-c3ff9afd8ac2",
+    "parts": [ {
+      "text": "have a good day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "316b7a72-f29a-4518-a03b-94cf7ecb2cec",
+    "parts": [ {
+      "text": "bye "
+    }, {
+      "text": "for now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c2d10b2a-0609-4c4b-a0dd-c556acb13ccb",
+    "parts": [ {
+      "text": "later"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5d718699-68f4-466f-b661-2fbde31e685c",
+    "parts": [ {
+      "text": "ciao"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b982d21-f636-4acf-90ac-067788723e51",
+    "parts": [ {
+      "text": "see you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "81062697-9a5c-4b9a-8dd4-69abd63d9d60",
+    "parts": [ {
+      "text": "farewell"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2d875c14-656a-4b73-8311-8497ebb74854",
+    "parts": [ {
+      "text": "see you later"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "951626c3-1cc4-4e59-9797-b6b1dc6b78db",
+    "parts": [ {
+      "text": "ok bye"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "11a7fd8c-6c2d-4d89-aaa1-33c6cd59d05e",
+    "parts": [ {
+      "text": "good bye"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "8b9b530f-dcf2-430e-b55a-b1a2101c37b0",
+  "displayName": "small_talk.no_more_questions",
+  "priority": 500000,
+  "description": "When client mention they don't have more questions about a topic or in general.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 93
+}

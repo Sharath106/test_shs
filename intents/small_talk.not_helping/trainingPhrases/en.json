@@ -1,0 +1,487 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "does this chat work at all"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "no I am getting very annoyed "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "you are ",
+      "auto": true
+    }, {
+      "text": "no"
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "helping"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "You are not comparing."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "You do not understand."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "You didn't address my concern."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "You are not listening!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Please check again."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "You are ",
+      "auto": true
+    }, {
+      "text": "unable to"
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "help"
+    }, {
+      "text": " me",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "no"
+    }, {
+      "text": " you are ",
+      "auto": true
+    }, {
+      "text": "not helpful"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "You're ",
+      "auto": true
+    }, {
+      "text": "no"
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "This ",
+      "auto": true
+    }, {
+      "text": "chat"
+    }, {
+      "text": " bot is broken",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "thanks, you're ",
+      "auto": true
+    }, {
+      "text": "not"
+    }, {
+      "text": " any ",
+      "auto": true
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "No"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    }, {
+      "text": " was given"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "TELUS"
+    }, {
+      "text": " "
+    }, {
+      "text": "has"
+    }, {
+      "text": " been "
+    }, {
+      "text": "no"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    }, {
+      "text": ", what a waste"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I "
+    }, {
+      "text": "didn't"
+    }, {
+      "text": " get a "
+    }, {
+      "text": "bit"
+    }, {
+      "text": " of "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "This "
+    }, {
+      "text": "didn't"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    }, {
+      "text": " me "
+    }, {
+      "text": "one"
+    }, {
+      "text": " "
+    }, {
+      "text": "bit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "You "
+    }, {
+      "text": "didn't"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    }, {
+      "text": " me at "
+    }, {
+      "text": "all"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Didn't"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    }, {
+      "text": " at "
+    }, {
+      "text": "all"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "this was a waste, "
+    }, {
+      "text": "received"
+    }, {
+      "text": " "
+    }, {
+      "text": "no"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "this "
+    }, {
+      "text": "has"
+    }, {
+      "text": " been a waste as "
+    }, {
+      "text": "no"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    }, {
+      "text": " given"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "why are you "
+    }, {
+      "text": "no"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "that's "
+    }, {
+      "text": "all"
+    }, {
+      "text": ", as you've been of "
+    }, {
+      "text": "no"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "You've been "
+    }, {
+      "text": "no"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "This "
+    }, {
+      "text": "TELUS"
+    }, {
+      "text": " "
+    }, {
+      "text": "chat"
+    }, {
+      "text": " is of "
+    }, {
+      "text": "no"
+    }, {
+      "text": " "
+    }, {
+      "text": "use"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I thought the point was to "
+    }, {
+      "text": "help"
+    }, {
+      "text": " and you "
+    }, {
+      "text": "aren"
+    }, {
+      "text": "'t"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "TELUS"
+    }, {
+      "text": " "
+    }, {
+      "text": "is no"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "That's "
+    }, {
+      "text": "all"
+    }, {
+      "text": ", you're "
+    }, {
+      "text": "no"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "no"
+    }, {
+      "text": " what's the "
+    }, {
+      "text": "good"
+    }, {
+      "text": " of you if "
+    }, {
+      "text": "you can't"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    }, {
+      "text": " me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "no"
+    }, {
+      "text": " that is "
+    }, {
+      "text": "all"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "This "
+    }, {
+      "text": "has"
+    }, {
+      "text": " been of "
+    }, {
+      "text": "no"
+    }, {
+      "text": " "
+    }, {
+      "text": "use"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "This is not "
+    }, {
+      "text": "helping"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "sorry you are not "
+    }, {
+      "text": "helping"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what's the point if "
+    }, {
+      "text": "you can't"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "you "
+    }, {
+      "text": "aren"
+    }, {
+      "text": "'t "
+    }, {
+      "text": "helping"
+    }, {
+      "text": " at "
+    }, {
+      "text": "all"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "that's really not "
+    }, {
+      "text": "helping"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "you're "
+    }, {
+      "text": "no"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "You're of "
+    }, {
+      "text": "no"
+    }, {
+      "text": " "
+    }, {
+      "text": "help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

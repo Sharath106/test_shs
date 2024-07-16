@@ -1,0 +1,43 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "u"
+    }, {
+      "text": " "
+    }, {
+      "text": "2"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "have "
+    }, {
+      "text": "a good one"
+    }, {
+      "text": " too"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "same"
+    }, {
+      "text": " to you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "you as well"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "you too"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

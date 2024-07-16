@@ -1,0 +1,8 @@
+{
+  "name": "592d61c8-ae47-4fe1-8373-73ceb1988f8a",
+  "displayName": "small_talk.nevermind",
+  "priority": 500000,
+  "description": "When customer says \"never mind\".",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 81
+}

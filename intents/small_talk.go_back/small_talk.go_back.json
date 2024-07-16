@@ -1,0 +1,8 @@
+{
+  "name": "768939f7-36d2-481d-ba25-4c3c39ee0fa9",
+  "displayName": "small_talk.go_back",
+  "priority": 500000,
+  "description": "When user wants to go back to the previous step",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 25
+}
