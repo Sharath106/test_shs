@@ -1,0 +1,322 @@
+{
+  "trainingPhrases": [ {
+    "id": "a87a287b-097b-4662-b986-a4123a1c6aff",
+    "parts": [ {
+      "text": "would you "
+    }, {
+      "text": "check"
+    }, {
+      "text": " for "
+    }, {
+      "text": "another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "52c3d236-341a-4064-86c7-4aa54a0ea53e",
+    "parts": [ {
+      "text": "could you "
+    }, {
+      "text": "check"
+    }, {
+      "text": " for "
+    }, {
+      "text": "another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4791bed3-d2b7-49c5-8d63-aafdcdf0a751",
+    "parts": [ {
+      "text": "please review "
+    }, {
+      "text": "second"
+    }, {
+      "text": " "
+    }, {
+      "text": "line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0e0ab8bc-26ff-4074-b1cd-47e23ce54993",
+    "parts": [ {
+      "text": "check"
+    }, {
+      "text": " if "
+    }, {
+      "text": "there'"
+    }, {
+      "text": "s "
+    }, {
+      "text": "second"
+    }, {
+      "text": " "
+    }, {
+      "text": "line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1144e98c-b3f0-4068-8ab7-4bed1e4b8af8",
+    "parts": [ {
+      "text": "search"
+    }, {
+      "text": " for "
+    }, {
+      "text": "second"
+    }, {
+      "text": " "
+    }, {
+      "text": "line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0c5097d8-0212-442b-a3fb-079308765e39",
+    "parts": [ {
+      "text": "another line"
+    }, {
+      "text": " review"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "34333163-a8a0-48a9-b494-e2348c5ea817",
+    "parts": [ {
+      "text": "another line"
+    }, {
+      "text": ", please "
+    }, {
+      "text": "check"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "44701262-b029-4fc5-93d2-79b530255ca3",
+    "parts": [ {
+      "text": "yes"
+    }, {
+      "text": ", look for "
+    }, {
+      "text": "other line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f83a997f-092c-49bf-95ab-bd59603b52b9",
+    "parts": [ {
+      "text": "search"
+    }, {
+      "text": " "
+    }, {
+      "text": "another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "222e355d-a0e0-4844-8cf1-5a440f224ea1",
+    "parts": [ {
+      "text": "search"
+    }, {
+      "text": " for "
+    }, {
+      "text": "another"
+    }, {
+      "text": " "
+    }, {
+      "text": "#"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "213342c0-6e28-4d40-8403-08e9f85d1cc4",
+    "parts": [ {
+      "text": "please look for "
+    }, {
+      "text": "another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e7b338ab-b695-4149-9046-89e8073e4499",
+    "parts": [ {
+      "text": "please review for "
+    }, {
+      "text": "another"
+    }, {
+      "text": " "
+    }, {
+      "text": "#"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cf3299f7-628b-4866-a131-c3b0191df00b",
+    "parts": [ {
+      "text": "see"
+    }, {
+      "text": " if there"
+    }, {
+      "text": "'s another"
+    }, {
+      "text": " "
+    }, {
+      "text": "line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "07bdab0d-8fda-4e1d-a043-ff529dd6378d",
+    "parts": [ {
+      "text": "see"
+    }, {
+      "text": " if there"
+    }, {
+      "text": "'s another"
+    }, {
+      "text": " "
+    }, {
+      "text": "number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7c21afd7-cf84-4c8a-9a0d-56e1229b8998",
+    "parts": [ {
+      "text": "look for "
+    }, {
+      "text": "another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0be99329-f51c-4b0e-9dc3-f367cab3cb3e",
+    "parts": [ {
+      "text": "Look for "
+    }, {
+      "text": "another"
+    }, {
+      "text": " "
+    }, {
+      "text": "number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "882fe3e5-6bda-40bf-8ca0-fa117665e265",
+    "parts": [ {
+      "text": "yes"
+    }, {
+      "text": ", "
+    }, {
+      "text": "check"
+    }, {
+      "text": " if "
+    }, {
+      "text": "another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2a0c03eb-fb87-4028-85f1-8f56fc237557",
+    "parts": [ {
+      "text": "review "
+    }, {
+      "text": "another"
+    }, {
+      "text": " "
+    }, {
+      "text": "#"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c9da315f-694e-4421-9dda-d3350ffe58ab",
+    "parts": [ {
+      "text": "review "
+    }, {
+      "text": "other line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0747d5c0-b588-43b4-9565-717a62ff2877",
+    "parts": [ {
+      "text": "yes"
+    }, {
+      "text": " review "
+    }, {
+      "text": "another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0dbf18e8-0659-40e6-93b7-2dcb841d5f46",
+    "parts": [ {
+      "text": "check"
+    }, {
+      "text": " for "
+    }, {
+      "text": "another line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2b0b8c58-bf18-4d27-abdd-61c8456a9312",
+    "parts": [ {
+      "text": "check"
+    }, {
+      "text": " for "
+    }, {
+      "text": "another"
+    }, {
+      "text": " "
+    }, {
+      "text": "number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c3ebdc00-7a43-460d-8ef0-46ca4f5ca7d8",
+    "parts": [ {
+      "text": "another"
+    }, {
+      "text": " "
+    }, {
+      "text": "number"
+    }, {
+      "text": " "
+    }, {
+      "text": "check"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e75360eb-7684-4f9c-938a-b40ac96ff2c2",
+    "parts": [ {
+      "text": "check"
+    }, {
+      "text": " "
+    }, {
+      "text": "other line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2599c38f-e37c-4651-ba6d-b11482cd9736",
+    "parts": [ {
+      "text": "check"
+    }, {
+      "text": " "
+    }, {
+      "text": "another"
+    }, {
+      "text": " "
+    }, {
+      "text": "number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

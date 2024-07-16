@@ -1,0 +1,11 @@
+{
+  "name": "409176f7-7a28-401e-aa65-3778a0d478fb",
+  "displayName": "mock_head_intent.sal_test",
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "For testing, please do not delete",
+  "numTrainingPhrases": 4
+}

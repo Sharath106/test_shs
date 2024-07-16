@@ -1,0 +1,23 @@
+{
+  "name": "64092c19-3ef6-4409-a2ff-ed072f88b3e8",
+  "displayName": "head_intent.when_will_offer_expire",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about the expiration of an offer.",
+  "numTrainingPhrases": 151
+}

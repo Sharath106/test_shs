@@ -1,0 +1,25 @@
+{
+  "name": "e9153f6f-c560-435e-a7ac-82bcaca1fcf1",
+  "displayName": "head_intent.vvm_issues",
+  "parameters": [ {
+    "id": "iphone_vs_android",
+    "entityType": "@iphone-vs-android"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Troubleshooting visual voicemail (vvm) issues.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 161
+}

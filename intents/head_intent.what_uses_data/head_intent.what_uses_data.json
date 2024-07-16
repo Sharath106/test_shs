@@ -1,0 +1,25 @@
+{
+  "name": "708f4727-9ddb-4f03-ae9f-2d14777586a5",
+  "displayName": "head_intent.what_uses_data",
+  "parameters": [ {
+    "id": "iphone_vs_android",
+    "entityType": "@iphone-vs-android"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Information on how to see what uses data in their phone",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 155
+}

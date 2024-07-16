@@ -1,0 +1,8 @@
+{
+  "name": "a7b025bf-4600-4b42-865c-3104f16fe319",
+  "displayName": "small_talk.choose_different_amount",
+  "priority": 500000,
+  "description": "When customer wants to provide different amount for the provided option",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 54
+}

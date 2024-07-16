@@ -1,0 +1,28 @@
+{
+  "name": "e48c468f-7228-4fca-815b-9a9a189bad51",
+  "displayName": "head_intent.vtt_issues",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Issues with voicemail to text (vtt).",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 188
+}

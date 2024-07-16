@@ -1,0 +1,28 @@
+{
+  "name": "c23f4fa6-0e3b-4e1e-95b1-5d10fd59f359",
+  "displayName": "head_intent.voicemail_issues_vm_setup",
+  "parameters": [ {
+    "id": "currency-name",
+    "entityType": "@sys.currency-name"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "How to setup your voicemail, including problems with set up.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 112
+}

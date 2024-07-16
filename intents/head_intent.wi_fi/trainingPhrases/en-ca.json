@@ -1,0 +1,325 @@
+{
+  "trainingPhrases": [ {
+    "id": "ea502b86-bb01-45e7-a81c-9735ed67afde",
+    "parts": [ {
+      "text": "how do I connect to wifi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "05943f70-8c18-4d24-8b9c-d5cd9e5a9382",
+    "parts": [ {
+      "text": "give me wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c0657fdf-a67f-4faa-bc7c-a58d5e67852c",
+    "parts": [ {
+      "text": "question about the wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "39f8afad-7d91-464c-8c0f-a0d51adf8865",
+    "parts": [ {
+      "text": "How can i connec to my new internet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "89f0adc3-7a62-4ba2-8ec1-4a19f2e41f7c",
+    "parts": [ {
+      "text": "How can i update the wifi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0d754a56-3c8c-4d56-965a-f94129ac2563",
+    "parts": [ {
+      "text": "Instructions on setting up new wi-fi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "00b17e3e-b331-4e72-b16e-9ae4f3236a02",
+    "parts": [ {
+      "text": "I'd like some help setting up my new wifi "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "add23178-8e11-4325-bbca-b8ae5548a2ee",
+    "parts": [ {
+      "text": "Are you able to explain how the wi-fi works "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0929ae74-e040-4b89-9e97-46c234b7beaa",
+    "parts": [ {
+      "text": "questions about using wi-fi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2656c5dd-190e-4efb-bc50-5392797d3bd8",
+    "parts": [ {
+      "text": "how to use wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5fa0dab8-112a-41fe-aabe-d0064df2b8a4",
+    "parts": [ {
+      "text": "how do i update the wifi password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "993fa729-e467-4efd-9b2c-8b6c374a2666",
+    "parts": [ {
+      "text": "I would like to update my wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7cd7774b-489b-4f31-8a3e-56b96950feff",
+    "parts": [ {
+      "text": "Change wifi name"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c8619f5c-9c77-419d-90a8-f9770f68f190",
+    "parts": [ {
+      "text": "Can you change the wifi name?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a1f74061-4993-43ae-80e5-5b5b9c64c482",
+    "parts": [ {
+      "text": "How do i connect to TELUS wifi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7f9cf273-8e2d-42a1-b6f1-9f6bd8adcef6",
+    "parts": [ {
+      "text": "Can i get some information on telus wifi please!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "af5502a0-3f5d-47d1-97a3-c3ee2b92a070",
+    "parts": [ {
+      "text": "how do i set up wifi on my iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fe112a1e-e4fa-494f-aeea-12bb4ccb7cb0",
+    "parts": [ {
+      "text": "how can i connect to wifi on my samsung"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "48c82a3e-4799-4ae1-a04c-c92e66abd5bd",
+    "parts": [ {
+      "text": "i am wondering how to set up wifi on my device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4a15ad17-29e3-4b1e-ab0b-0fe7dedadc52",
+    "parts": [ {
+      "text": "i am looking for help on setting up wifi on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "74b5ab9e-1bcb-48ff-af32-ad8957509115",
+    "parts": [ {
+      "text": "i need help with connecting my wifi to my iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4de29a21-208f-4d54-93cc-b1bb90a23daf",
+    "parts": [ {
+      "text": "i don't know how to connect wifi to my samsung device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2e491162-adeb-4eed-b8dd-eb193ab1c4bd",
+    "parts": [ {
+      "text": "how does one connect their wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d59a06b6-0543-4a77-92b7-6043ea38145b",
+    "parts": [ {
+      "text": "How much coverage does TELUS wifi have?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1c49e1d0-0c2d-4ba5-854c-00dfeab44a7e",
+    "parts": [ {
+      "text": "how do you connect a pixel to wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c7d60621-0708-40a0-915d-eddbc0d917e4",
+    "parts": [ {
+      "text": "how can i set up wifi on my ipad"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b7fd7594-356c-49ed-9cdc-8f7bf579fc63",
+    "parts": [ {
+      "text": "I am looking for help with connecting my new phone to my wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a00049ab-a598-481c-b97e-a9d9be633036",
+    "parts": [ {
+      "text": "can you tell me how to connect wifi to my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c96a60a9-37a2-4f59-882c-9061cd1735e4",
+    "parts": [ {
+      "text": "I need to connect my wifi to my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9f5edf9d-56ae-4cf0-8c92-1e46a0b0c831",
+    "parts": [ {
+      "text": "configure wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3f740e65-d45b-4e55-8847-a0f3573a7773",
+    "parts": [ {
+      "text": "Can you help me with configuring wi-fi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b1594a82-33a1-48b9-bb7e-68d504f30e64",
+    "parts": [ {
+      "text": "How does wifi work?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6bacdb7e-1ac6-4055-9f9e-859d11f66d9a",
+    "parts": [ {
+      "text": "what is wi-fi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9d4b3a0b-3511-4ed5-b918-dd6cb75d213d",
+    "parts": [ {
+      "text": "Help with wi-fi configuration"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "da5a47c7-21ba-4c16-b096-7da608315416",
+    "parts": [ {
+      "text": "wanting to know how to connect wifi to my google pixel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "18c91013-30eb-4eb5-95c9-099447d8c3ed",
+    "parts": [ {
+      "text": "Need help connecting to the internet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3d03a4d-288f-42d9-a461-74bc4c834aad",
+    "parts": [ {
+      "text": "I need help connecting my tablet to my wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fe490961-3552-4359-8f5c-1b89bcd49444",
+    "parts": [ {
+      "text": "help with my wi-fi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "34f0fa37-09cf-4ab7-8d4e-eda80cfb6160",
+    "parts": [ {
+      "text": "I'd like to set up wifi access"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e728b88e-a7a2-482b-ac1d-1fb9872da688",
+    "parts": [ {
+      "text": "I would like to have wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d165cfdd-c265-45b6-be20-d695c383666b",
+    "parts": [ {
+      "text": "how to get wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a854262d-22f8-4829-bab5-62e94a90b63a",
+    "parts": [ {
+      "text": "need help setting up wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8761f0cc-8b47-4476-987d-8927f8a156fa",
+    "parts": [ {
+      "text": "manual for wifi setup"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "429c1b57-4a8b-48b2-ac45-4e301bce61d4",
+    "parts": [ {
+      "text": "can you help with setting up wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e74c930-3df0-4776-8245-796bdbba47b4",
+    "parts": [ {
+      "text": "I need help connecting to the internet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d45696c6-8ffd-4b45-acea-ef9beb1b409b",
+    "parts": [ {
+      "text": "I need help with wi-fi."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

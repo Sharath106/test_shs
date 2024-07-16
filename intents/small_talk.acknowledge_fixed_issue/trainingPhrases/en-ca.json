@@ -1,0 +1,271 @@
+{
+  "trainingPhrases": [ {
+    "id": "633a0b85-bc25-42b6-99fb-461c8abb36c8",
+    "parts": [ {
+      "text": "that "
+    }, {
+      "text": "helps",
+      "parameterId": "agent",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "62ee4941-c1ca-411e-8d89-835d4fc01294",
+    "parts": [ {
+      "text": "that "
+    }, {
+      "text": "helped",
+      "parameterId": "agent",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "31cae8d2-199c-4d49-bb42-f7cfea5c6dcd",
+    "parts": [ {
+      "text": "it's "
+    }, {
+      "text": "fixed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "527e005b-9cae-4520-bf34-cc74353b7dc6",
+    "parts": [ {
+      "text": "it did, thanks!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "84fc6a7f-734b-4d10-8458-408760b47714",
+    "parts": [ {
+      "text": "It works now."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "362a5e1e-2c5f-4445-a3b4-3807b065f633",
+    "parts": [ {
+      "text": "problem"
+    }, {
+      "text": " resolved."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3894cb56-1f56-4595-82ee-ceaa14cfcb15",
+    "parts": [ {
+      "text": "Troubleshooting fixed the "
+    }, {
+      "text": "problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d9397ccc-c726-4b46-9500-ae68ceb93480",
+    "parts": [ {
+      "text": "troubleshooting was a success."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "05381fdd-8b39-4b7e-be97-45d3e3514f68",
+    "parts": [ {
+      "text": "I "
+    }, {
+      "text": "can"
+    }, {
+      "text": " "
+    }, {
+      "text": "confirm"
+    }, {
+      "text": " "
+    }, {
+      "text": "issues"
+    }, {
+      "text": " is fixed."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c4f5cb3c-b827-4d1b-a89e-17066f91c9e5",
+    "parts": [ {
+      "text": "It should be working "
+    }, {
+      "text": "now"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "16b7011c-8394-4b24-b998-fccf14767dbd",
+    "parts": [ {
+      "text": "it's resolved."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bf1d297d-9bac-49ea-8b77-2eeddee330bd",
+    "parts": [ {
+      "text": "Everything"
+    }, {
+      "text": " is good "
+    }, {
+      "text": "now"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6c2c57c3-4a36-4373-807b-b926098428ba",
+    "parts": [ {
+      "text": "Issue"
+    }, {
+      "text": " is "
+    }, {
+      "text": "now"
+    }, {
+      "text": " resolved"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6d630922-3ce3-40ae-a432-4a0a02f87a98",
+    "parts": [ {
+      "text": "Your "
+    }, {
+      "text": "voicemail"
+    }, {
+      "text": " should work "
+    }, {
+      "text": "now"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "da862c83-0c93-4623-81c2-574ad312d1e6",
+    "parts": [ {
+      "text": "I've went ahead and adjusted that."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2b2528bc-c0f9-4ca5-b492-4a19aa648c4a",
+    "parts": [ {
+      "text": "Hi, It is "
+    }, {
+      "text": "now"
+    }, {
+      "text": " fixed."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b715a983-52ef-4c5a-875f-aaf21a8adeb6",
+    "parts": [ {
+      "text": "The "
+    }, {
+      "text": "issues"
+    }, {
+      "text": " is fixed."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9379dd32-3532-4764-a2f0-937fd940b81e",
+    "parts": [ {
+      "text": "Issues"
+    }, {
+      "text": " has been resolved."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1590946a-06c1-47ab-9b96-87aece70454a",
+    "parts": [ {
+      "text": "I've adjusted that."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6df25c0d-9a97-4104-9294-8a89ce1238fb",
+    "parts": [ {
+      "text": "it "
+    }, {
+      "text": "works"
+    }, {
+      "text": " now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "274b3067-2664-47ac-9e93-0393525255b1",
+    "parts": [ {
+      "text": "all good now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "58df7122-0b78-45d3-8c7b-9999ea73ba10",
+    "parts": [ {
+      "text": "it's resolved"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b4ee866e-9cbd-4d71-9808-313617f18332",
+    "parts": [ {
+      "text": "that solved it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "faa03a77-b3fb-4391-8963-ee9001ae81ae",
+    "parts": [ {
+      "text": "it is now "
+    }, {
+      "text": "working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cb7fec42-9e2e-4aa9-ac06-ebbade9f45d2",
+    "parts": [ {
+      "text": "Working"
+    }, {
+      "text": " now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3cff75a0-8364-4c90-b958-a3a177baf417",
+    "parts": [ {
+      "text": "it's ok now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7a25f48f-a474-4460-bccd-61219045a110",
+    "parts": [ {
+      "text": "it's "
+    }, {
+      "text": "working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "af5827a2-b0a8-4177-918c-50c0ad1e47c7",
+    "parts": [ {
+      "text": "That "
+    }, {
+      "text": "worked"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

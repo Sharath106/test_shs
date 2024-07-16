@@ -1,0 +1,30 @@
+{
+  "name": "2b3355c7-18d7-443e-8c1c-e9581e4f583e",
+  "displayName": "head_intent.wifi_voip_calls",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Explains what Wi-Fi /Voip Calls are and links to website for more information",
+  "asrCorrections": [ {
+    "errorPhrase": "vidéos IP",
+    "correctionPhrase": "VOIP"
+  }, {
+    "errorPhrase": "boip",
+    "correctionPhrase": "VOIP"
+  } ],
+  "numTrainingPhrases": 140
+}

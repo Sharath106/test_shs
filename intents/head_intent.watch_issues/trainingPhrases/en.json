@@ -1,0 +1,548 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "seems like my watch won't connect to mobile data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "apple watch",
+      "parameterId": "smart_watches",
+      "auto": true
+    }, {
+      "text": " won't connect to mobile data",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "smart watch sync issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch is not connecting properly"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My smartwatch isn't connecting"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I got a new device and i am having issues pairing the watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am having issues pairing the watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my watch is refusing to connect can you help me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my smart"
+    }, {
+      "text": " watch doesn't seem to be working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "troubleshoot "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "smart watch"
+    }, {
+      "text": " is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "issues with my "
+    }, {
+      "text": "smart watch"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am having difficulties with my "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't access my "
+    }, {
+      "text": "watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "problem with "
+    }, {
+      "text": "watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch isn't working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't use my "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "trouble with "
+    }, {
+      "text": "samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "getting an error on "
+    }, {
+      "text": "samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch won't work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't pair my "
+    }, {
+      "text": "watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch cellular connection issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Unable to connect to cellular network on "
+    }, {
+      "text": "watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch connection failure"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "watch"
+    }, {
+      "text": " issues"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am having issue with my "
+    }, {
+      "text": "watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i think there's a problem with my "
+    }, {
+      "text": "watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can someone help me with my "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch issues?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just bought the "
+    }, {
+      "text": "samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch and i'm already having some issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help with a "
+    }, {
+      "text": "samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Looking to connect with tech support for my "
+    }, {
+      "text": "smart watch"
+    }, {
+      "text": " issues."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need help with "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "smart watch"
+    }, {
+      "text": " isn't working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "smart watch"
+    }, {
+      "text": " issues"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have some problems with my "
+    }, {
+      "text": "Samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "watch"
+    }, {
+      "text": " problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am having problems with my "
+    }, {
+      "text": "watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i cant get my "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " to work and need technical support"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch is not working again"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my watch won't turn on"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "smart watch"
+    }, {
+      "text": " is doesn't seem to be charging"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "having issues with my "
+    }, {
+      "text": "watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "having issues with my "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch stopped working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch is not working"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you help me, my "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " wont charge any more"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " stopped working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am having issues with my "
+    }, {
+      "text": "watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "issue with "
+    }, {
+      "text": "smartwatch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me with my "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just bought the "
+    }, {
+      "text": "samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch and having some issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "would you help me figure out what is wrong with my "
+    }, {
+      "text": "smartwatch"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "having trouble connecting my "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " to my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need help to troubleshoot my "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "smart watch"
+    }, {
+      "text": " not syncing with the phone and has no errors"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

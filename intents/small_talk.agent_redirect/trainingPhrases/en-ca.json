@@ -1,0 +1,213 @@
+{
+  "trainingPhrases": [ {
+    "id": "b0740dc9-677d-4d00-a94c-08e21774cbd5",
+    "parts": [ {
+      "text": "live person please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ae1199e3-fbe3-49a6-b828-33bfba3af8be",
+    "parts": [ {
+      "text": "I want to speak to someone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e8293318-7cbc-4f2e-8476-8d36e62c290b",
+    "parts": [ {
+      "text": "live agent please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1e53785f-d32f-43a4-b174-edbc64198e72",
+    "parts": [ {
+      "text": "I'd like to speak to an agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f8412f9a-c028-4825-8f70-90ee899c5e81",
+    "parts": [ {
+      "text": "speak to agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2e956fd4-a4ac-4058-9e59-56f48f77a1e7",
+    "parts": [ {
+      "text": "transition me to a customer helper"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "50f5a322-c2d9-4d54-bb6f-93b2a64cf533",
+    "parts": [ {
+      "text": "transfer me to a real person"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8313ab84-7ccd-471d-afe5-d49050682c53",
+    "parts": [ {
+      "text": "this isn't working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6559f9bd-1b30-462c-8523-9fd9bdc9965a",
+    "parts": [ {
+      "text": "this is frustrating, can i talk to someone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "06db1c2f-bbf2-4607-bb2e-262b77429ff1",
+    "parts": [ {
+      "text": "talk to human"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0abf9dd0-e9f3-4298-9c78-f8b86efa70c5",
+    "parts": [ {
+      "text": "representative"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8f231913-c4b2-4f9a-a48c-b3f76d94d323",
+    "parts": [ {
+      "text": "redirect me to customer service please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d60b3313-2e71-49da-bb0a-14d18e752c70",
+    "parts": [ {
+      "text": "redirect me to a representative"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "93c6c078-34ae-4392-8b04-611939eaae95",
+    "parts": [ {
+      "text": "real person please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5e66440e-6173-4d72-86a1-a9683633f337",
+    "parts": [ {
+      "text": "please transfer me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e8f3762-7feb-4e4e-bd99-908512edeb4b",
+    "parts": [ {
+      "text": "operator"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2245d1f1-e2d2-4dee-9c68-023282a1184d",
+    "parts": [ {
+      "text": "no robots real human"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bd0a4c63-606b-4292-988a-79720393bd61",
+    "parts": [ {
+      "text": "manager"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c5da8dae-822b-4755-9185-5b850983ae57",
+    "parts": [ {
+      "text": "live rep please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cba6a17d-17ca-4919-b00c-d95825c5a266",
+    "parts": [ {
+      "text": "live human now please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0fe54f3e-4832-40cb-8f7c-d59f2996a773",
+    "parts": [ {
+      "text": "live agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c8ca6512-4f57-42d8-bc70-82cd33be9b0b",
+    "parts": [ {
+      "text": "i only want to speak to a human"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "44300d4e-a8e4-4fcb-9b0b-0afe00aba879",
+    "parts": [ {
+      "text": "i need to talk to someone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9af95e94-4b19-43c2-80cc-ac25d6cbd15a",
+    "parts": [ {
+      "text": "i need to speak to a real person"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c668825e-070d-4c2d-bd80-97f6534d17ad",
+    "parts": [ {
+      "text": "human please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f249fd85-f456-40c6-b733-3207ee6f67ed",
+    "parts": [ {
+      "text": "can you escalate this to a human"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d04e725e-0b4d-4591-b1e8-bda411d3a1f9",
+    "parts": [ {
+      "text": "can i talk to a real person"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cee5eb89-7503-4607-b6f9-51526737cebc",
+    "parts": [ {
+      "text": "can i speak with a person?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c59dc769-9262-4bd1-84b3-f36221e66211",
+    "parts": [ {
+      "text": "can i please speak to a manager"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "251641c2-f671-41d9-9c40-5b271b0b27fc",
+    "parts": [ {
+      "text": "agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

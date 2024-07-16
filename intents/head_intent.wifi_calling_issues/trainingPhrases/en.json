@@ -1,0 +1,422 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "seems like wifi calling isn't working for me",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "calling through wifi is not working",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "calls through wifi are not working for some reason"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wifi calling not working on my "
+    }, {
+      "text": "motorola",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone, can't make calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "calling through wifi not working properly"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my wifi calling is not working well on samsung "
+    }, {
+      "text": "fold",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Calling with wifi is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't make calls with wifi calling on "
+    }, {
+      "text": "LG",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "problems calling through wifi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My wifi calling is not working on "
+    }, {
+      "text": "huawei",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am having an issue with wifi calling on my "
+    }, {
+      "text": "apple phone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am attempting to connect to wifi calling on my "
+    }, {
+      "text": "ios device",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " and the message on the screen says   To allow wi-fi calling on this account contact Telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Lets try this again I requested an updated phone yesterday to be shipped now the wifi calling no longer works and I have zero cell service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm currently living somewhere with not much service... My wifi calling isn't working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": " I want it to stay on WiFi as the cellular calls ALWAYS drop or break-up"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "so i'm having issues with enabeling voice wifi on my phone, it either fails to enable or turns off after a few hours causing the registration to need to be completed again."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I tried wi-fi calling but it won't work?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why am i having problems using wifi calling on "
+    }, {
+      "text": "sony",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Issues with wifi calling on "
+    }, {
+      "text": "TCL",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have no more data but i can't use my wifi calling why?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My wifi calling won't turn on"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me out, i'm having problems using the wifi calling feature on my "
+    }, {
+      "text": "oneplus",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wifi calling keeps having issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My calls don't work when i use the wifi calling feature"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I keep encountering issues every time i try the wifi calling feature"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why is my wifi calling feature no longer working?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wifi calling troubleshoot "
+    }, {
+      "text": "samsung galaxy",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wifi calling is causing so many problems"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My calls don't go through with wifi calling"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you know why my wifi calls keep dropping?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wifi calling doesn't work on my "
+    }, {
+      "text": "android",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My wifi calling seems to always have issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Every time we want to use wifi for calls - it doesn't work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Issues with wifi calling on my "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wifi calling is not working on my "
+    }, {
+      "text": "samsung",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wifi calling issues on my "
+    }, {
+      "text": "Iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wifi calling troubleshoot on "
+    }, {
+      "text": "android",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to troubleshoot wifi calling issue on "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wifi calling is not working on my "
+    }, {
+      "text": "galaxy",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to get wifi calling fixed on "
+    }, {
+      "text": "google",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "facing issues with wifi calling on my "
+    }, {
+      "text": "google pixel",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I tried wifi calling on my "
+    }, {
+      "text": "Android",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone, it's not working properly"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why wifi calling is not working on my "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to troubleshoot the issues with wifi calling on "
+    }, {
+      "text": "droid",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "problems using WIFI calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "phone suddenly not working with voice over WIFI"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have issues with wifi calls on my "
+    }, {
+      "text": "apple",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "WIFi calling not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "issues with WIFI phone calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't know why I can't use the WIFI for calls, what's happening?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When using wifi to call, it doesn't work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "calls on wifi not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I've been trying to call my friend on wifi and its not working, I don't know why"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wifi problems when making wifi call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

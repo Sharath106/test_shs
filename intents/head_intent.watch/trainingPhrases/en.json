@@ -1,0 +1,884 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "related to my watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "about my watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Could you help me with buying a watch please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "want to add "
+    }, {
+      "text": "Apple watch",
+      "parameterId": "smart_watches",
+      "auto": true
+    }, {
+      "text": " to existing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to set up my "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to link an apple watch to my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "instruction for syncing apple watch to a phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to sync an apple watch to my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "buy an apple watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I got a watch but don't know how to use it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to get a smartwatch for my son it's his birthday"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help with smart watch set up"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need to set up my watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "setting up the "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I got a "
+    }, {
+      "text": "galaxy",
+      "parameterId": "smart_watches",
+      "auto": true
+    }, {
+      "text": " watch but not sure to set it up"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't pair my "
+    }, {
+      "text": "iwatch",
+      "parameterId": "smart_watches",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches",
+      "auto": true
+    }, {
+      "text": " won't pair with my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm having difficulty pairing my phone and "
+    }, {
+      "text": "smartwatch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What "
+    }, {
+      "text": "watches"
+    }, {
+      "text": " do you offer?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to pair my "
+    }, {
+      "text": "Samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch to my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Instructions on setting up the "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to sync my new "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " with my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a new "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches",
+      "auto": true
+    }, {
+      "text": " I wanted to link it to my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what smart "
+    }, {
+      "text": "watches"
+    }, {
+      "text": " do you have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "available "
+    }, {
+      "text": "samsung",
+      "parameterId": "smart_watches",
+      "auto": true
+    }, {
+      "text": " watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to get a "
+    }, {
+      "text": "smart watch"
+    }, {
+      "text": " I need more info "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm planning on buying an "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " series and I'd like to compare models"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "more details about the "
+    }, {
+      "text": "Apple Watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how much is an "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " cost"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Which is the best "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " that you sell?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch info please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What's the "
+    }, {
+      "text": "smartwatch"
+    }, {
+      "text": " battery life"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can i get more information on the "
+    }, {
+      "text": "watches"
+    }, {
+      "text": " you offer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can a "
+    }, {
+      "text": "smartwatch"
+    }, {
+      "text": " do pretty much the same as the phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What can a "
+    }, {
+      "text": "smartwatch"
+    }, {
+      "text": " do?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Which "
+    }, {
+      "text": "smartwatch"
+    }, {
+      "text": " is the best one?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am wondering if the telus stores have "
+    }, {
+      "text": "Apple watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to know if the stores already got the "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " series 6"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am looking to order an "
+    }, {
+      "text": "Apple Watch"
+    }, {
+      "text": " do you have the 12mm Stainless Steel one?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "do you have "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watches on offer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am interested in getting an "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " 6 series and I am wondering, instead of ordering online, can I pick it up in store?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when can i buy the telus "
+    }, {
+      "text": "smart watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was just wondering if the Telus stores have the "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watches available for purchase"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When will you get the "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " series 6?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I do not see any "
+    }, {
+      "text": "Apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " Watches. Are there any available?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you tell me if there are any "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watches for sale"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "just wondering if the new "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " is available in stores"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to know if you have the series 5 "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What is your latest "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " available?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is the "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " available?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "available "
+    }, {
+      "text": "watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was thinking of getting a "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " for my wife's birthday"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to get a smart "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " for my husband"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "bought a smart "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " but don't know how to set it up"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My watch is "
+    }, {
+      "text": "something else",
+      "parameterId": "smart_watches",
+      "auto": true
+    }, {
+      "text": ", it's "
+    }, {
+      "text": "neither"
+    }, {
+      "text": " apple or samsung"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I activate "
+    }, {
+      "text": "different brand"
+    }, {
+      "text": " watch on Telus network?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have "
+    }, {
+      "text": "another brand",
+      "parameterId": "smart_watches",
+      "auto": true
+    }, {
+      "text": " watch for activation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "huawei",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch activation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you tell me how to set up my "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " sport"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i got a new "
+    }, {
+      "text": "watch"
+    }, {
+      "text": " and need help setting it up"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need help with setting up my "
+    }, {
+      "text": "watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i set up my "
+    }, {
+      "text": "iwatch",
+      "parameterId": "smart_watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need information on your "
+    }, {
+      "text": "samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "purchasing a "
+    }, {
+      "text": "smartwatch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "buy a "
+    }, {
+      "text": "smartwatch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to buy the "
+    }, {
+      "text": "samsung galaxy",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to buy the "
+    }, {
+      "text": "iwatch",
+      "parameterId": "smart_watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to buy an "
+    }, {
+      "text": "galaxy",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "buy "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "buy "
+    }, {
+      "text": "samsung",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "ordering an "
+    }, {
+      "text": "iwatch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to buy a "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " series five"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "about "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " zero series three"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " series three lte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "activate "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "calling about the new "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " series three"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "connect "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "smart watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it's regarding the "
+    }, {
+      "text": "iwatch",
+      "parameterId": "smart_watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "activate a "
+    }, {
+      "text": "samsung galaxy",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " three"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "apple watch three on "
+    }, {
+      "text": "iphone",
+      "parameterId": "smart_watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "iwatch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " information"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " series three"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm looking for information on "
+    }, {
+      "text": "apple",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " three watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "set up my "
+    }, {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "setting up "
+    }, {
+      "text": "galaxy fit",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " "
+    }, {
+      "text": "watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "set up "
+    }, {
+      "text": "i watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "apple watch",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " series three"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "iphone",
+      "parameterId": "smart_watches"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "apple watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

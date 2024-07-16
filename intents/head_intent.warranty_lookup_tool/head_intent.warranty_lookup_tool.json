@@ -1,0 +1,23 @@
+{
+  "name": "5958e39b-4e16-4601-9f72-182c7719e8ef",
+  "displayName": "head_intent.warranty_lookup_tool",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "give link to where clients can check their warranty using the Online warranty lookup tool",
+  "numTrainingPhrases": 132
+}

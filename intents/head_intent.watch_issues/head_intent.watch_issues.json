@@ -1,0 +1,24 @@
+{
+  "name": "dda4c6af-e36d-45e4-a020-a9c2f42877fa",
+  "displayName": "head_intent.watch_issues",
+  "parameters": [ {
+    "id": "smart_watches",
+    "entityType": "@smart-watches"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "customer having issue with watches",
+  "numTrainingPhrases": 140
+}

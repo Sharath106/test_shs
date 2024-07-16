@@ -1,0 +1,310 @@
+{
+  "trainingPhrases": [ {
+    "id": "8c0a7caa-e338-43b0-9632-4ccdac26ef7f",
+    "parts": [ {
+      "text": "can"
+    }, {
+      "text": " i ask "
+    }, {
+      "text": "something else"
+    }, {
+      "text": " please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6be993bf-ad35-46b3-ae34-290cec91e277",
+    "parts": [ {
+      "text": "I have "
+    }, {
+      "text": "more"
+    }, {
+      "text": " question for you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "32bf3487-1615-4f7e-a6f2-975a033f32a1",
+    "parts": [ {
+      "text": "can"
+    }, {
+      "text": " I ask "
+    }, {
+      "text": "another"
+    }, {
+      "text": " thing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a257bf70-5aab-48fc-a7ef-273db154c2bc",
+    "parts": [ {
+      "text": "I have a query about "
+    }, {
+      "text": "something else"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "754c88e1-b319-45ef-84d3-6b075fb31cb7",
+    "parts": [ {
+      "text": "I have "
+    }, {
+      "text": "more"
+    }, {
+      "text": " to ask"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cb0b4f72-aebd-4e65-8592-45ff43d5eb33",
+    "parts": [ {
+      "text": "I thought of "
+    }, {
+      "text": "another"
+    }, {
+      "text": " question"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9410b689-f9c7-4f15-be4b-ff09ba959767",
+    "parts": [ {
+      "text": "can"
+    }, {
+      "text": " I ask you "
+    }, {
+      "text": "another"
+    }, {
+      "text": " query at "
+    }, {
+      "text": "this time"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "20fbec2e-84d3-4ef6-a566-c894af1dc367",
+    "parts": [ {
+      "text": "I have to ask "
+    }, {
+      "text": "something else"
+    }, {
+      "text": " "
+    }, {
+      "text": "here"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "86cd15d8-e8c4-49dc-a323-f466d98b27f6",
+    "parts": [ {
+      "text": "I have "
+    }, {
+      "text": "more"
+    }, {
+      "text": " questions for you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a1fad209-9057-4ea4-bf3d-e2d114cc3de6",
+    "parts": [ {
+      "text": "I've "
+    }, {
+      "text": "got"
+    }, {
+      "text": " "
+    }, {
+      "text": "more"
+    }, {
+      "text": " to ask "
+    }, {
+      "text": "now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "07129caf-a97d-4d88-8813-21f6bb09ce90",
+    "parts": [ {
+      "text": "i have "
+    }, {
+      "text": "another"
+    }, {
+      "text": " question about"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "53f7cede-16ca-451a-a75f-eda7d05cb0ad",
+    "parts": [ {
+      "text": "may"
+    }, {
+      "text": " I ask you something further"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5c0b5478-96fa-463f-ba10-c5d9a0c1d959",
+    "parts": [ {
+      "text": "I have "
+    }, {
+      "text": "more"
+    }, {
+      "text": " to ask "
+    }, {
+      "text": "now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8a369334-1db4-4d84-9a17-df63e033dc65",
+    "parts": [ {
+      "text": "i "
+    }, {
+      "text": "want to"
+    }, {
+      "text": " inquire about "
+    }, {
+      "text": "something else"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ef6d1f88-a956-4f15-9c55-0d2831786bb3",
+    "parts": [ {
+      "text": "I have "
+    }, {
+      "text": "another"
+    }, {
+      "text": " query"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3c1714ca-7fad-4cc4-9c93-b04fb9375bf2",
+    "parts": [ {
+      "text": "can"
+    }, {
+      "text": " I ask "
+    }, {
+      "text": "another"
+    }, {
+      "text": " question"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "862c36ee-40d4-4654-9d24-57dcd4fdb946",
+    "parts": [ {
+      "text": "can"
+    }, {
+      "text": " I ask you "
+    }, {
+      "text": "another"
+    }, {
+      "text": " thing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3c007059-6d74-4ac7-88b1-3c71790414e7",
+    "parts": [ {
+      "text": "I've "
+    }, {
+      "text": "got"
+    }, {
+      "text": " "
+    }, {
+      "text": "something else"
+    }, {
+      "text": " to ask "
+    }, {
+      "text": "now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "08c99a14-4156-40db-aca3-0d51afe118a8",
+    "parts": [ {
+      "text": "I have "
+    }, {
+      "text": "another"
+    }, {
+      "text": " thing to ask about"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6d45f53e-a5df-4a1c-8eba-c28b0798d9be",
+    "parts": [ {
+      "text": "I've "
+    }, {
+      "text": "got"
+    }, {
+      "text": " "
+    }, {
+      "text": "another"
+    }, {
+      "text": " query"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4d14f8e7-68ba-411b-a81e-80cfc0062f7c",
+    "parts": [ {
+      "text": "can"
+    }, {
+      "text": " I ask you "
+    }, {
+      "text": "something else"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "77b093c8-02d0-4124-a52a-d79ac6772cab",
+    "parts": [ {
+      "text": "I have "
+    }, {
+      "text": "more"
+    }, {
+      "text": " questions"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d8f715ef-d44a-475a-b1e1-deed963758de",
+    "parts": [ {
+      "text": "I "
+    }, {
+      "text": "want to"
+    }, {
+      "text": " ask you "
+    }, {
+      "text": "something else"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "45ece920-df90-47fb-b061-429c941c505c",
+    "parts": [ {
+      "text": "i have "
+    }, {
+      "text": "another"
+    }, {
+      "text": " thing to ask please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "23b1e758-762c-412f-9563-4479828e48f8",
+    "parts": [ {
+      "text": "I have "
+    }, {
+      "text": "another"
+    }, {
+      "text": " question"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}
