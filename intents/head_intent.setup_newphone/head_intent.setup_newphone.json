@@ -1,0 +1,23 @@
+{
+  "name": "ad19a9af-7c82-46ba-92fd-7862f6bd618a",
+  "displayName": "head_intent.setup_newphone",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about setting up a new phone (device related setup).",
+  "numTrainingPhrases": 138
+}

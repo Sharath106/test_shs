@@ -1,0 +1,27 @@
+{
+  "name": "fcd1c0a3-a510-4fe1-be0f-d305d519a3a8",
+  "displayName": "head_intent.telus_rewards",
+  "parameters": [ {
+    "id": "online_vs_app",
+    "entityType": "@online-vs-app"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "program"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "TELUS rewards",
+  "numTrainingPhrases": 130
+}

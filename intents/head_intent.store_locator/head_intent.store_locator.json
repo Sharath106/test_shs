@@ -1,0 +1,24 @@
+{
+  "name": "cdf4fb2f-0702-4300-aadf-1c31d7c79aaa",
+  "displayName": "head_intent.store_locator",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "info"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Link to find nearest store",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 172
+}

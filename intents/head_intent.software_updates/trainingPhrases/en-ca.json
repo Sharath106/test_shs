@@ -1,0 +1,381 @@
+{
+  "trainingPhrases": [ {
+    "id": "2922178f-dbdf-4b99-a312-389ea4710b1b",
+    "parts": [ {
+      "text": "How long does the software update last?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d92792f8-6fab-48b7-818c-ddac9767b935",
+    "parts": [ {
+      "text": "Can I update my phone after the release date?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d0fba668-558b-4465-aa20-4ea262b82f84",
+    "parts": [ {
+      "text": "Can I update my software after the due date?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d0b64a36-afb3-46e8-9fbf-190539d5b660",
+    "parts": [ {
+      "text": "I do not know why my phone needs to be updated"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d849d2af-3012-489c-8b13-24bb9505865d",
+    "parts": [ {
+      "text": "Why is the software update so important?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fdb07f77-3eb4-46b1-b0a6-7bfe86175f09",
+    "parts": [ {
+      "text": "How important is a software update?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "877aa7f2-76c4-4e4a-a90d-574cfb10bcbb",
+    "parts": [ {
+      "text": "I am wondering how important is a software update"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "17a85d8c-50cb-4b22-a927-1e7b202e5a0b",
+    "parts": [ {
+      "text": "When is the release date of software updates for Android phones?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d657f14e-742b-4b7d-ab7e-ae9ce293a46a",
+    "parts": [ {
+      "text": "Upcoming software schedule"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "600b4cce-ed8e-44c7-93ad-9c912c6dddbb",
+    "parts": [ {
+      "text": "Software update schedule"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9477d9cb-a3a8-4125-9b95-21cffd94b598",
+    "parts": [ {
+      "text": "Is there a software update coming soon for Android phones?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d51ea11b-dfc0-4e6f-a00f-8c8331b693fa",
+    "parts": [ {
+      "text": "Is there a software update schedule available online?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7dd1f3d0-25b9-437c-a5e6-59617273eb13",
+    "parts": [ {
+      "text": "Does telus offer a software update schedule for iPhone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d0908356-3fe8-4914-953e-358a85f7ea9d",
+    "parts": [ {
+      "text": "How many times a year should I update my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "83e356d9-8de9-4031-b546-ff0c3142f4d1",
+    "parts": [ {
+      "text": "How often does my software need to be updated?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "70285631-4ca3-4afd-8f6d-d2f19dc93d41",
+    "parts": [ {
+      "text": "How often should I update my software?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "45cef504-4b26-4cef-a055-c11c37eef809",
+    "parts": [ {
+      "text": "What if I do not update my new phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "01993d3c-7716-411a-93d3-b595eda0c685",
+    "parts": [ {
+      "text": "Should I really update my software on my Android?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "53631dd7-20c1-4b67-baa1-43b4b00dbec4",
+    "parts": [ {
+      "text": "Is the software update really necessary on my device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c1b9ead7-0c96-4abd-8e08-416279dceb6e",
+    "parts": [ {
+      "text": "Do I really have to update my software?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4af62941-dc9f-4a91-88e0-019300e2087e",
+    "parts": [ {
+      "text": "Can you check if my iPhone is up to date?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "03ee1dfa-67e9-4d3e-b37d-8d35ec3ce0b5",
+    "parts": [ {
+      "text": "I am wondering if my device is up to date"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "591c669d-24be-40a3-b6bd-198cf7e4fa69",
+    "parts": [ {
+      "text": "When is the release date of software updates on IPhone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "552d0ab8-983c-4e4d-8f0f-93546795db4a",
+    "parts": [ {
+      "text": "Is there a specific way to update my software?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b9b1d933-31b6-4d7c-85a4-7ea4f36961c8",
+    "parts": [ {
+      "text": "I need to know how to update my software"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ee18a5ef-9a36-4fe7-b610-7c5f109205ec",
+    "parts": [ {
+      "text": "Software Updates"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3e28760a-841f-4ea8-8339-f82a4c20c8c9",
+    "parts": [ {
+      "text": "What is a software update?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e31549f4-b1d5-437c-8b0f-59afd55c6f57",
+    "parts": [ {
+      "text": "Is my software up to date?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c351c882-a15d-420f-9aed-a9d5cf522951",
+    "parts": [ {
+      "text": "check if I have an update in phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "85714131-3861-47c2-a7fa-0ccb97bdedd1",
+    "parts": [ {
+      "text": "do I need to update my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "98ce5c93-5c1e-4ea6-bc80-2c8b5676b01a",
+    "parts": [ {
+      "text": "what is a software"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cff6f7c7-1de5-462b-a254-017078743371",
+    "parts": [ {
+      "text": "how do i update my software"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "21ae6829-ea74-499f-bb39-377df1151b3a",
+    "parts": [ {
+      "text": "device software update"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e8d7af73-228d-4922-9412-8c48a415cec3",
+    "parts": [ {
+      "text": "I got a notification about device software update"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7b1ba8f9-5ddc-4726-bd98-c266656e62ef",
+    "parts": [ {
+      "text": "How do you update the software on the device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4169d264-ff4e-47df-a715-8be39aac0a1a",
+    "parts": [ {
+      "text": "Why are there so many software updates?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fc103f99-9bcd-4205-b5e8-63c5227d1f57",
+    "parts": [ {
+      "text": "Am i obligated to do the software update?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bd4cd817-ac23-42e6-89f9-0a0b0c2ecf18",
+    "parts": [ {
+      "text": "If i don't update my software will my device become slow?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9f1c72dc-dd73-48fa-b92f-0548f614349f",
+    "parts": [ {
+      "text": "How many software updates are there a year?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aae717f4-1ce5-4df8-8269-9fd8e1d95af0",
+    "parts": [ {
+      "text": "Hello, could you answer some questions about software updates?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fad528a4-8c5f-4564-93ca-81a9544fb9ec",
+    "parts": [ {
+      "text": "Does every phone have a software update?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "965714c3-8d3e-4e05-990c-b7b59f441690",
+    "parts": [ {
+      "text": "Can you confirm i did my software update?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "884899bb-45a9-4ad2-8f9b-3543c340f765",
+    "parts": [ {
+      "text": "How do i update my device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c139bde3-d247-4250-8977-a0efeee86d8d",
+    "parts": [ {
+      "text": "Will my iPhone update its software by itself?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0e2b2402-1676-468c-9946-f28a22e55313",
+    "parts": [ {
+      "text": "Do i have to do something for the software to update?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0d411e0b-2ee6-41ff-be84-661ea3a59b48",
+    "parts": [ {
+      "text": "Can i update the software overnight?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "143d3cb1-48f1-4cd7-ab5e-8220516fd880",
+    "parts": [ {
+      "text": "How long does the software update take?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "efec034f-1439-44ff-aaac-e6b08f4dea70",
+    "parts": [ {
+      "text": "how often does TELUS release new software updates?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f861e6ba-0471-4210-9311-535c95b246b4",
+    "parts": [ {
+      "text": "How many software updates a year?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1307ac6d-10b6-443a-9f95-b33d09d44c82",
+    "parts": [ {
+      "text": "How can i see my update has been completed?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "64c3a1e4-192d-4a21-a5e6-50f7a70df5e9",
+    "parts": [ {
+      "text": "problems software"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "74997245-1b72-4454-9f17-99940d7994d7",
+    "parts": [ {
+      "text": "i want to know how to update my phone program right now so that i can use my phone again"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f73d8af5-80d1-484b-b5ad-f72dc50d568c",
+    "parts": [ {
+      "text": "phone update"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "afe1c605-0f7d-446e-be0a-3a63e4256310",
+    "parts": [ {
+      "text": "software repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

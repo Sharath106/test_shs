@@ -1,0 +1,34 @@
+{
+  "name": "690b5433-4ff6-44a0-a3be-cc63061253aa",
+  "displayName": "head_intent.sms_issues",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  }, {
+    "id": "currency-name",
+    "entityType": "@sys.currency-name"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Issues with text messaging. includes phrases about not being able to receive text.\n",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 153
+}

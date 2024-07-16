@@ -1,0 +1,21 @@
+{
+  "name": "9922762a-c92a-4f2d-8713-697f3d3dec70",
+  "displayName": "head_intent.software_updates",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about software updates",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 165
+}

@@ -1,0 +1,25 @@
+{
+  "name": "3275565f-682d-4ffb-aacd-0778346d8afa",
+  "displayName": "head_intent.suspend",
+  "parameters": [ {
+    "id": "suspend_account",
+    "entityType": "@suspend-account"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "suspend service but not cancel service",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 357
+}

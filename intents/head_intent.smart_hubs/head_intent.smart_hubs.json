@@ -1,0 +1,35 @@
+{
+  "name": "831b4fa0-800f-43b5-b540-c14e2c1974be",
+  "displayName": "head_intent.smart_hubs",
+  "parameters": [ {
+    "id": "smart_hub",
+    "entityType": "@smarthub"
+  }, {
+    "id": "time",
+    "entityType": "@sys.time"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer has an inquiry about the Smart hub (product info, available plans, activation/setting up, troubleshooting).",
+  "asrCorrections": [ {
+    "errorPhrase": "mot DAB",
+    "correctionPhrase": "smart hub"
+  } ],
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 241
+}

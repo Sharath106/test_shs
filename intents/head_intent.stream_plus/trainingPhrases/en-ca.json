@@ -1,0 +1,360 @@
+{
+  "trainingPhrases": [ {
+    "id": "8f6db165-4d6d-4406-b57f-749fac533c32",
+    "parts": [ {
+      "text": "streaming to other devices"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ce4404bd-ecbf-4152-843a-d23ca4d17185",
+    "parts": [ {
+      "text": "what is stream plus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cac4286e-3185-4ec3-acea-b1b8fcfd6e06",
+    "parts": [ {
+      "text": "how much would it be to add stream + to my bundle?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c25245f7-66bc-4705-ba97-11e582951b74",
+    "parts": [ {
+      "text": "what's the cost of netflix and stream plus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ad9f27c1-32c0-4d53-8996-3683f98e715b",
+    "parts": [ {
+      "text": "how much does stream+ cost?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9724605b-5d72-495f-bf04-0321ea1ae338",
+    "parts": [ {
+      "text": "do you offer a bundle with both apple TV anf netflix?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1da77ef0-ef75-47d2-9bb3-a294a73c1887",
+    "parts": [ {
+      "text": "What's included in apple tv?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c3e0722a-de52-4595-b203-d7894e7a1506",
+    "parts": [ {
+      "text": "Can you tell me more about Apple TV?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "79bc54b5-04f2-4f10-bbed-a91f207cfc3f",
+    "parts": [ {
+      "text": "do you guys offer netflix with the bundle?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "38f1770d-a050-45bc-baba-426ac7f4b671",
+    "parts": [ {
+      "text": "I have an inqquiry regarding the discovery bundle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d16f73c0-9709-4c20-864c-86440fac376c",
+    "parts": [ {
+      "text": "question regarding netflix "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d18503a4-38a9-4784-8ea5-ef53bd926974",
+    "parts": [ {
+      "text": "I want to sign up for netflix"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3ddc7d4a-7677-4fb4-81af-5ee97f286752",
+    "parts": [ {
+      "text": "what's included in the stream plus bundle?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "89e4f586-70f9-489d-8567-d74c4fdb95d1",
+    "parts": [ {
+      "text": "I'd love to know more about what's included in the disney and discovery plus bundle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e25987c4-4b7e-4e23-a90a-f20cb7bec5cc",
+    "parts": [ {
+      "text": "information on stream + "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f68e1171-00f6-4cf0-9adf-4c84afb8f7a8",
+    "parts": [ {
+      "text": "What's the difference between stream plus and regular television?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c849d7f8-35b7-4f0d-b155-a7c56d623f02",
+    "parts": [ {
+      "text": "I'd like to know what's included in your streaming + bundles"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "933e216c-8dd3-4a4a-9f5b-03b3ffe8918e",
+    "parts": [ {
+      "text": "stream plus bundles"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6020c760-6210-4892-9c27-78878d7ac0b1",
+    "parts": [ {
+      "text": "Netflix"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "baf33720-8d94-42f2-9b58-927c1ffb6883",
+    "parts": [ {
+      "text": "discovery +"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "322342a5-99b8-4443-8f7c-d6041f97f795",
+    "parts": [ {
+      "text": "Can you tell me more about discovery plus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "60639d3a-cd8b-4db5-a605-350e20b3dca7",
+    "parts": [ {
+      "text": "are we able to get discovery+?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b9fa218-ebf4-46dd-87f7-c7cad49b885c",
+    "parts": [ {
+      "text": "I'd like to get Apple tv through you guys "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "11498218-fe26-42f0-8106-24ec04f7079d",
+    "parts": [ {
+      "text": "How do I sign up for Netflix?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "83ed44ed-6e74-46c1-a9f6-07271cbe0c7f",
+    "parts": [ {
+      "text": "tell me more about streaming plus "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dc337b36-14b5-4eb4-ad1b-e3e691c5a098",
+    "parts": [ {
+      "text": "Can you provide me with more information on your stream plus services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4257e9bf-7ce6-4723-be61-7037981b918e",
+    "parts": [ {
+      "text": "what is stream+"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a2e726ee-0128-40fd-9e8c-337b8abbff7b",
+    "parts": [ {
+      "text": "i saw on tv you have something called stream+, what is it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1772c77f-ddcf-4316-95d4-3d9b0ec436f6",
+    "parts": [ {
+      "text": "can you tell me about stream+"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ffc7172c-fb21-418d-8d2d-6db30b578f73",
+    "parts": [ {
+      "text": "know more about stream+"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "89539a85-55d0-4d37-a380-38fe34340640",
+    "parts": [ {
+      "text": "this new streaming service you have, called stream+, do you have details on it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fb13ed57-33ca-4438-a695-c8e2302efa2c",
+    "parts": [ {
+      "text": "tell me about stream plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "34f75cc4-3088-46d2-a3d4-39816c886a0e",
+    "parts": [ {
+      "text": "how does stream+ work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db514982-81a7-4deb-a9c6-8b2343abc60a",
+    "parts": [ {
+      "text": "Stream plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4e7af2af-8bd8-4f41-af50-91f61ba73fce",
+    "parts": [ {
+      "text": "looking for info on stream+"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2635a87a-b18f-42e2-919b-5f0bef39e05d",
+    "parts": [ {
+      "text": "more about stream plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5483df8f-5c12-4547-9e75-283c4263876d",
+    "parts": [ {
+      "text": "Stream+"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "830cd437-29fb-4b29-810d-ce1c93c1e40f",
+    "parts": [ {
+      "text": "heard about stream plus what is it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2c881c49-920f-463e-a3d9-3727093c7ec2",
+    "parts": [ {
+      "text": "stream plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5847c5b7-98ab-4f94-a46d-ebe3a1e30a10",
+    "parts": [ {
+      "text": "i saw on advert that you have something called stream+ what is it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b5ce1583-de90-4f89-be8b-8d073d1eef94",
+    "parts": [ {
+      "text": "i am looking for more info about bundling netflix, apple tv and discovery+"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2985163c-8147-49bc-bab1-819b38aede62",
+    "parts": [ {
+      "text": "can you tell me more about how stream+ work and how to add it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "baf1a0a8-174c-4bdf-a1ab-005e5ecb9833",
+    "parts": [ {
+      "text": "want to know what this new streaming service is called"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1965b944-7c0b-4713-8dc1-7f45631672a1",
+    "parts": [ {
+      "text": "i saw you offer a new bundle for netflix, apple tv and discovery plus what is it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ed588210-f836-4bab-ae06-5d35c9a9c5d2",
+    "parts": [ {
+      "text": "can you tell me about how stream + works and how to get it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bd2cdbd7-cbed-4ff7-87ca-df115163567a",
+    "parts": [ {
+      "text": "i want to add stream+ online"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e40252a7-4a51-4b10-a4a4-ab0ccc638315",
+    "parts": [ {
+      "text": "how do you add stream+ on my app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "75db6ce8-4c6e-4c98-aee8-5c7a995f38cd",
+    "parts": [ {
+      "text": "how to add stream+ through the my telus app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "65a77a89-6e97-4e37-82fc-747986a7f348",
+    "parts": [ {
+      "text": "can you tell me how to add stream online"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f2411fc2-7e4e-4393-95a9-0282d2957e3d",
+    "parts": [ {
+      "text": "i want to add stream plus online today"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0b163106-7e78-469d-80d9-503bcfd037f0",
+    "parts": [ {
+      "text": "can i add stream+ through the my telus app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

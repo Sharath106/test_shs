@@ -1,0 +1,15 @@
+{
+  "name": "2984819c-92e2-4647-9852-48d96d7dce9c",
+  "displayName": "head_intent.sms_reception_issues",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customers inquiring about being unable to receive text messages.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 110
+}
