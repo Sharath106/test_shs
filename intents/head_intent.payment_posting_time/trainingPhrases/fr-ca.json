@@ -1,0 +1,325 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "ça prend 3 à 5 jours pour que mes paiements s'affichent?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": " je vais voir mon message de paiement dans environ 3 jours?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est"
+    }, {
+      "text": "-ce que ça va prendre 5 jours pour publier "
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que ca prend  trois jours pour publier les paiements?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Faudra-t-il plus de trois jours pour que le paiement soit afficher?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux savoir combien de jours ca prend pour publier un paiement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "paiement n'apparaît pas encore"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande quand l'affichage des paiements apparaîtra"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne vois pas "
+    }, {
+      "text": "mon paiement"
+    }, {
+      "text": " fait "
+    }, {
+      "text": "ce matin"
+    }, {
+      "text": ", y'a t'il "
+    }, {
+      "text": "un"
+    }, {
+      "text": " délai?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quand vais-je voir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement effectué "
+    }, {
+      "text": "aujourd'hui"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est quand que je vais voir le paiement que j'viens de faire?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien de temps ca prends pour que mon paiement apparaisse sur Mon TELUS?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quand est-ce que je pourrai voir le paiement que jviens de faire dans mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais comprendre le délai de traitement des paiements."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je viens de faire un paiement, mais il n'est pas indiqué dans mon compte, est-ce parce qu'il y a un délai de traitement?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Si je fais "
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement, devrais-je le voir immédiatement dans mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quand le paiement sera-t-il effectué ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien de temps les paiements prennent-ils pour être traités ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quand vais-je pouvoir voir le paiement que je viens d'effectuer ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quel est le délai de traitement pour qu'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement apparaisse sur mon compte ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Si j'effectue un paiement, sera-t-il noté à mon compte immédiatement?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "vais-je le voir "
+    }, {
+      "text": "tout de suite"
+    }, {
+      "text": " sur mon compte ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Savez-vous combien de temps il faut pour qu'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement soit affiché ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quel est le délai d'affichage d'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement en ligne ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande simplement s'il y "
+    }, {
+      "text": "a un"
+    }, {
+      "text": " délai entre le moment où j'effectue "
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement et le moment où je le vois ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien de temps dois-je attendre pour voir que mon paiement a été bien recu?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien de temps faut-il pour qu'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement soit mis à jour dans mon compte ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Délai de traitement pour qu'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement apparaisse sur mon relevé de compte ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Dois-je attendre longtemps avant de voir le paiement que j'ai effectué ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous m'indiquer le délai de traitement pour qu'un paiement apparaisse sur ma facture?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Dois-je attendre pour voir que mon paiement a été enregistré ou je vais le voir toute de suite dans mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quel est le délai d'affichage d'un paiement?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais connaître le délai d'attente avant qu'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement apparaisse sur mon relevé de compte."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Savez-vous combien de temps il vous faut pour recevoir mon paiement et le publier sur mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quand recevez-vous et publiez-vous habituellement le paiement?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quand puis-je m'attendre à ce que vous receviez mon paiement afin que je puisse voir qu'il a "
+    }, {
+      "text": "été"
+    }, {
+      "text": " reçu et affiché sur mon compte ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "combien de temps il faut en moyenne pour recevoir un paiement et l'afficher sur mon relevé en ligne?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien de temps pour qu'un paiement soit reçu et confirmé après l'avoir envoyé?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous me dire combien de temps il vous faut pour recevoir un paiement et le poster?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien de temps faut-il avant que vous receviez mon paiement et qu'il soit affiché?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Savez-vous combien de temps ca va prendre avant que je vois le paiement que je viens de faire dans mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "paiement en ligne ne s'affiche pas, quand est-ce que je vais l'voir?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

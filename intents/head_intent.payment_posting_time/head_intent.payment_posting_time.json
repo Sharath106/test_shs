@@ -1,0 +1,20 @@
+{
+  "name": "2122d47b-3c07-48f3-9c85-edb9532ef260",
+  "displayName": "head_intent.payment_posting_time",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "payment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer inquiring about when the payment will show on the account.",
+  "numTrainingPhrases": 165
+}

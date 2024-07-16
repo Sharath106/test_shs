@@ -1,0 +1,521 @@
+{
+  "trainingPhrases": [ {
+    "id": "ab0f6976-1e37-4cea-8076-ef226686f288",
+    "parts": [ {
+      "text": "Notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3ba1d9e6-44ab-48c0-8bc0-6670ae845d22",
+    "parts": [ {
+      "text": "Questions about notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "77e3339b-0316-4a95-a9c3-e90d385e6ae4",
+    "parts": [ {
+      "text": "How do I set my notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5cf7c3df-ca4a-4d2a-b3d1-05ae38c91755",
+    "parts": [ {
+      "text": "I would like to change my notification settings"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8de476f5-0d4a-4ac3-86a0-9db768bbfad7",
+    "parts": [ {
+      "text": "I did not get a notice"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f1ecc9aa-a96f-421b-8b4b-aa40162f3ef1",
+    "parts": [ {
+      "text": "manage my notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4c935802-0f7d-4a2d-bdc6-9d2fd7bd6dc5",
+    "parts": [ {
+      "text": "how do I manage my notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f62d3934-14d0-4df2-b32d-a5035a25b6f6",
+    "parts": [ {
+      "text": "how will I be notified"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5d408fba-f995-47e7-ae12-d37d77a144be",
+    "parts": [ {
+      "text": "will I get data notifications?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eefb6057-e5de-47f6-bd31-5b4abedff679",
+    "parts": [ {
+      "text": "manage my data notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b780775d-255f-4ad1-9961-e3f785a0c958",
+    "parts": [ {
+      "text": "notifications for data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f7e28ad2-7694-4fd6-b5b9-14e737522f10",
+    "parts": [ {
+      "text": "when do you send data notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "108f2359-751b-43b8-a72e-27e9a9fba74f",
+    "parts": [ {
+      "text": "notifications for data usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5ef2c067-f2d6-4355-beae-b13db5c624fc",
+    "parts": [ {
+      "text": "data usage notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b2b6530b-3d72-4e09-8e0c-57fd5755240e",
+    "parts": [ {
+      "text": "how do i turn on my notifications?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3c49dfe6-8ee0-4c4f-8d8d-5f48fa779ae0",
+    "parts": [ {
+      "text": "is it normal that i do not see any notifications?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1f1b2d9b-871e-4b94-b6d9-5cfc89bbd979",
+    "parts": [ {
+      "text": "I'd like to turn on my email notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4ee8b9b0-5039-4a84-82fe-af4a9c0ba00c",
+    "parts": [ {
+      "text": "how to manage device notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "05b941bc-cdf5-415d-91fb-2055d67fc906",
+    "parts": [ {
+      "text": "will i receive a notification about my data usage?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d6fa8dd5-e82e-4224-9f1c-30ffcd606322",
+    "parts": [ {
+      "text": "i did not receive a notification that i reached hundred percent of my data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "22e14916-fb29-46ef-ae5e-d97636a053e5",
+    "parts": [ {
+      "text": "notification help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f15faaff-fc81-41c1-aee3-9847b423b6ae",
+    "parts": [ {
+      "text": "When do i get a notification about my data usage?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "17e4317a-a28a-425f-9308-5c49881974ea",
+    "parts": [ {
+      "text": "How does data usage notifications work?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4f1bf20b-8843-45b5-9511-8460bd038649",
+    "parts": [ {
+      "text": "explain data notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "10c952f8-cfca-4209-9441-287c8e68024a",
+    "parts": [ {
+      "text": "where do i switch on my notifications ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d17a8dfc-6cae-4c9f-acc7-5bf4f2b9a87e",
+    "parts": [ {
+      "text": "how to turn on notifications?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "917bd3c9-0a33-4b45-8233-1647670557ce",
+    "parts": [ {
+      "text": "will you notify me next time for data limits?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "950e948b-7d53-4854-ac42-b93188f88f72",
+    "parts": [ {
+      "text": "when do i get a data limit notification?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ffbaac67-2c1b-4dff-9b96-8e4c40ae8ab0",
+    "parts": [ {
+      "text": "How can I change the DING sound when I get a notification?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "54a070a6-f174-408f-ba2c-ed040c74995c",
+    "parts": [ {
+      "text": "Can you tell me how to silence all notifications?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "76ac92c4-355d-4bcf-9e7b-040227d7ad91",
+    "parts": [ {
+      "text": "How to change ring tone with samsung S9?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2bdd55b7-ab29-4cc5-95f3-beaae119feb2",
+    "parts": [ {
+      "text": "Very complicated for me to change the sounds of my phone, can you help?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2f0ec61d-21e5-4324-b4e3-ebe9cd0d9b58",
+    "parts": [ {
+      "text": "I feel like it's very complicated to change my ringtone and can't figure it out!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "45878a81-18cd-4a9a-a67d-9ee4b8dc2f49",
+    "parts": [ {
+      "text": "Oh my god I did not think that changing a ringtone would be so hard, I need help!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5af73d66-6e2d-4d07-b24b-f82422497192",
+    "parts": [ {
+      "text": "Just wondering how to change the pop-up sounds I get from my phone when receiving notifications."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fcddbcdc-e1c1-430d-a615-c948a08957e6",
+    "parts": [ {
+      "text": "Pop-up noise modification"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5a5817e0-44fb-4f37-94a4-e4b52fd177ae",
+    "parts": [ {
+      "text": "Want to change the pop-up noises of my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "506c04cc-a95a-4a81-8c0d-08fe445b8a12",
+    "parts": [ {
+      "text": "Do you know how to change the noise a phone makes when receiving a pop-up?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "54edb105-c577-45f5-b216-70232863a2eb",
+    "parts": [ {
+      "text": "Everytime I receive a pop-up from my phone, it makes a noise, and I don't like it. How can I change it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8af6cce4-e067-48e2-9d82-a1ab5670bd95",
+    "parts": [ {
+      "text": "When I receive a phone call,  I don't like the sound my phone makes, can I change that?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b1d2f766-be3b-48d9-bf22-90298dfe0908",
+    "parts": [ {
+      "text": "Can you please tell me how to change the way my phone sounds when someone is calling me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4cdf2908-cb14-43f6-a86a-ac083ebc8d64",
+    "parts": [ {
+      "text": "I would like to change the ring my phone makes when I get a call."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "20f7d0f5-d514-41aa-a87f-3e8fc8897c64",
+    "parts": [ {
+      "text": "Don't know how to turn on or off notification sounds"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6f71dca6-5340-4267-be8a-23124d6bc6da",
+    "parts": [ {
+      "text": "I'm wondering how to turn off notification sounds."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d9c7cb82-77c5-4b61-805a-592ab0b7ccd6",
+    "parts": [ {
+      "text": "Help me make sure I have no more notification sounds, just when people call."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "047dc8b8-ac0b-458b-97d0-8b913078caae",
+    "parts": [ {
+      "text": "Don't want to have any notification sounds anymore"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b30aca5c-eecb-49c1-b8ac-7bb1b0e1b23f",
+    "parts": [ {
+      "text": "Just wondering how to switch my notification sound, please help!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1fbd155b-31d2-4ba8-a8a7-24f12455dde1",
+    "parts": [ {
+      "text": "Is it possible to switch my notification sound, I don't know how?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "433425e5-8bee-466e-80bf-132fa27e6806",
+    "parts": [ {
+      "text": "wanna switch my notification sounds"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c89792ab-eeda-4efc-be2e-3329cfa11f16",
+    "parts": [ {
+      "text": "Can you please tell me how to change notifications sounds for text messages on IPhone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1f75bf8d-b24d-4512-b9cb-a3605e16bb9c",
+    "parts": [ {
+      "text": "Need your help to change notifications sounds for text messages."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e2d58ec8-a2dd-4851-99b8-04de87ba8003",
+    "parts": [ {
+      "text": "I need your help to change notifications sounds on my new phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "77aa8219-b4de-4037-8dcb-3a0b66d3c61e",
+    "parts": [ {
+      "text": "Need a different notifications sound for text messages on my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0b9487ae-3279-49ea-ace1-7bd0b70fadf3",
+    "parts": [ {
+      "text": "Need a different notifications sound on my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db5e7a02-4931-4cc2-b3a3-7433fbdf051a",
+    "parts": [ {
+      "text": "Need to change my notifications sound for emails on Samsung Pro."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4942fa70-6e3d-4199-9071-41a6d90e567c",
+    "parts": [ {
+      "text": "How can I change notifications sound for emails?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "47a79377-8968-4a19-9ae4-86396a25bef9",
+    "parts": [ {
+      "text": "How can I change notifications sound for text messages?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "36e87afc-df00-4504-8360-802d35d0672c",
+    "parts": [ {
+      "text": "Wondering how I can change notifications sound for emails on my new phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4c8a77c1-c600-40a8-8718-f7062c8f7715",
+    "parts": [ {
+      "text": "Is there a way to change the notifications sound on iPhone Pro?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "417173ba-759d-48b2-8b42-8818a89d4f74",
+    "parts": [ {
+      "text": "Need to change my notifications sound for text messages."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e398123b-fad9-49c4-9748-82629bcedba9",
+    "parts": [ {
+      "text": "I don't like my notifications sounds anymore so I really need to change it now."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "500222b8-0f9f-4c4f-ae51-a73beba9851d",
+    "parts": [ {
+      "text": "I don't know how to set up sound notifications."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "167f328b-9a85-4063-afda-bd0868606a3c",
+    "parts": [ {
+      "text": "Need your help to change my notifications sound on my new phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a1aa2ce1-78f8-4265-b3c8-d24d92d4e574",
+    "parts": [ {
+      "text": "I want a different sound for notifications on Samsung."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b19956fb-2f7d-4d22-8f2f-07542bba937b",
+    "parts": [ {
+      "text": "Need to change my notifications sound on my iPhone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b987da1-6e4a-4f9b-a969-d30014778786",
+    "parts": [ {
+      "text": "How can I add a ringtone to my google Pixel?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "42abe725-5021-447e-9a19-1172b2362dca",
+    "parts": [ {
+      "text": "I want to change the notifications sound on android."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a5287240-fee6-48a0-a836-42afbd878e0d",
+    "parts": [ {
+      "text": "Need to change notifications ringtone on my new iPhone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a824f83f-b3e1-4e68-85db-57739e2e63e0",
+    "parts": [ {
+      "text": "How do I change sounds on my iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3dc442d9-b450-4b3d-b206-1921cfe2f73d",
+    "parts": [ {
+      "text": "Change notification sounds on my device."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b23cd46e-2068-4b19-9a76-95e7e502d9c7",
+    "parts": [ {
+      "text": "Change notifications ringtone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4c201abc-1726-4422-b2e6-5552ab02abf0",
+    "parts": [ {
+      "text": "Change the notifications ringtone on Samsung."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bac7b48e-69ab-4bfc-8157-b6789ed7bd96",
+    "parts": [ {
+      "text": "Set my notification ringtone on my iPhone 13 Pro"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4cbca686-2d73-4501-a742-42283f90dbad",
+    "parts": [ {
+      "text": "Wondering how I can change notifications sounds on my device."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

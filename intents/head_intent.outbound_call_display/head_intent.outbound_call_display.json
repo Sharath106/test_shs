@@ -1,0 +1,23 @@
+{
+  "name": "031ae7f0-cd9e-47d1-a573-921dbe6ad780",
+  "displayName": "head_intent.outbound_call_display",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Outbound call display feature info",
+  "numTrainingPhrases": 129
+}

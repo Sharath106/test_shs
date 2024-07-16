@@ -1,0 +1,1421 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "savoir plus sur "
+    }, {
+      "text": "apple",
+      "parameterId": "apple"
+    }, {
+      "text": " tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux parler d'"
+    }, {
+      "text": "apple",
+      "parameterId": "apple"
+    }, {
+      "text": " tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai une question sur "
+    }, {
+      "text": "apple",
+      "parameterId": "apple"
+    }, {
+      "text": " TV"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Question sur l'"
+    }, {
+      "text": "apple",
+      "parameterId": "apple"
+    }, {
+      "text": " TV"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "apple",
+      "parameterId": "apple"
+    }, {
+      "text": " tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon "
+    }, {
+      "text": "apple",
+      "parameterId": "apple"
+    }, {
+      "text": " tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "à propos de l'"
+    }, {
+      "text": "apple",
+      "parameterId": "apple"
+    }, {
+      "text": " tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "à propos de la télévision d'"
+    }, {
+      "text": "apple",
+      "parameterId": "apple"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai un problème avec Norton"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "enlever la protection numérique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Problèmes de téléphone résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Débrancher Internet résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Avez-vous des forfaits pour le câble ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai "
+    }, {
+      "text": "une"
+    }, {
+      "text": " nouvelle télé et je cherche "
+    }, {
+      "text": "un"
+    }, {
+      "text": " forfait pour le câble"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quels sont vos offres pour les services résidentiels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je regarde les nouvelles offres pour mes services résidentiels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux parler de ma ligne à domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Petite question pour la ligne de domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Problème avec ma ligne de domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai une question par rapport à mon téléphone domestique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais un téléphone domestique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Plan pour téléphone domestique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il y a un problème avec notre télécommande"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous m'aider à configurer ma télécommande?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est possible de m'envoyer une nouvelle télécommande"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Configurer le volume de mon téléviseur"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Besoin d'aide avec le volume de notre télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous m'aider à setter le volume du téléviseur?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais plus d'information sur le satellite"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Nous aimerions annuler notre satellite"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Télé satellite s'il vous plait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais faire la mise à niveau de notre internet résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mise à niveau du téléphone résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire la mise à niveau de notre télé?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "chaînes de télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changements de chaîne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "canaux"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter une chaîne"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter des chaînes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changement de canal"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "chaîne TV"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer ma chaine tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler la télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler le téléphone résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer de chaine tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "boîte de télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajout de chaînes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer de chaîne"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer mes chaînes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "téléphone fixe ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "instalation tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "réparer ma télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "boîte de câble"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "selection de chaîne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "crave tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer de chaîne de télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "fibre optique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "numéro de téléphone résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ligne fixe ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "forfaits thématiques"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "canaliser"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "modem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "branchement télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "compte services à domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "boîte numérique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler le câble"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ma ligne fixe ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connexions télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "boîte de télévision optik"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "forfait télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer de télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "routeur de retour"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nouveau branchement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "forfait internet à domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "téléviseur mis en place"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "boîte telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "regroupement télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "abonnement télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "gérer les canaux"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "les chaînes ne fonctionnent pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "le téléphone fixe ne fonctionne pas"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "support technique de la téléphonie résidentielle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin d'un nouveau modem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais résilier ma ligne fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "fermer la ligne fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux résilier ma ligne fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "installer un téléphone résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "forfaits téléphoniques résidentiels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "brancher le câble"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "installer la télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer mon forfait tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nouveau forfait télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mes chaînes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "gérer ma chaîne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "chaînes de télévision"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "programme télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ma tv n'a pas de son"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux annuler ma télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler ma télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler télé optik"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "installation fibre optique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "réparations domiciliaires"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "compte de service à domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "réparation de ligne téléphonique à domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai un problème avec mon téléphone fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de téléphone fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "support technique téléphone fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "réparation ligne terrestre"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ma ligne fixe est morte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon téléphone fixe ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin d'aide avec mon téléphone fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "aide avec le téléphone à la maison"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problèmes de modem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon modem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "déplacement du modem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "modem internet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "routeur"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Internet à la maison ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "branchement de service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "installation telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "service de branchement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connexion telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "agent commercial télé optik"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connexion à domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nouveau service résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annulation du téléphone résidentiel"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais annuler mon téléphone fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux annuler mon téléphone fixe"
+    } ],
+    "repeatCount": 5,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais annuler mon service de téléphonie résidentielle s'il vous plaît"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "résilier ma ligne fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connexion ligne terrestre"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "dvr ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "promotion télévisée"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "télévision gratuite"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "utilisation d'internet à domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer de maison"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "déménagement du téléphone à la maison"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "déménagement service internet résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "informations de facturation internet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "facture tv et internet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler l'internet à domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler le Wi-Fi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer de service internet résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "installation de câble"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "créer un compte télé optik"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "réparer la télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "s'inscrire à la télé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "configuration télé optik"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "réglage de la télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "décodeur de télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "connecter la boîte de télévision sans fil"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer les forfaits thématiques"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin que mon forfait télé soit activé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler crave"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "télé optik sur demande"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "télévision à la demande"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "forfaits internet et tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux ajouter une chaîne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter plus de chaînes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ajouter une chaîne de télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux changer de chaîne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changement de chaine tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer mes chaînes de télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais changer de chaîne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux changer mes chaines tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "abonnement à la chaîne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "gamme de chaînes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "gérer mes chaînes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "chaînes de télévision optik"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ma chaîne ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème avec les chaînes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de chaine tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler le service de câble"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annulation de télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler la télévision et internet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler mon optik"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "se connecter à la fibre optique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Installation de fibre optique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "fibre optique dans le bâtiment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer mon service tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changer télé optik"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon contrat internet par fibre optique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "vous m'avez trop facturé pour telus tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "notre facture est passée de soixante-quatre dollars à quatre-vingt-dix dollars pour la télévision le mois dernier, je me demande juste pourquoi"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai reçu une double facturation d'internet résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mes frais internet sont trop élevés"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ma facture de téléphone ou de télé telus est à un prix exorbitant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "votre facture de téléphone pour notre ligne fixe n'est pas encore arrivée"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais parler à quelqu'un de ma facture tv et internet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin d'aide aujourd'hui, mon service à domicile ne fonctionne pas, j'ai déjà payé\n"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "assistance technique optik"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "informations sur mon compte de téléphonie résidentielle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon compte services résidentiels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de connaître certaines fonctionnalités de la ligne fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'aimerais de l'aide avec mon téléphone fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "le pvr est cassé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ne peut pas recevoir d'appels téléphoniques à domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'ai pas de tonalité sur mon téléphone à la maison"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ma ligne fixe ne fonctionne pas elle est en panne depuis 6 jours"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon numéro de téléphone personnel ne fonctionne pas bien j'aimerais parler à un technicien"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-vous s'il vous plaît vérifier pourquoi mon téléphone ne fonctionne pas, j'ai dû utiliser mon téléphone portable pour obtenir une réponse de votre part"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "téléphone à la maison ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ligne terrestre morte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "bonjour quelqu'un est venu chez mes voisins hier et ils ont installé la fibre optique et maintenant mon téléphone ne fonctionne pas correctement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ma ligne fixe est coupée"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin de quelqu'un pour réparer mon téléphone afin que quelqu'un puisse me joindre sur mon téléphone fixe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "la ligne fixe ne fonctionne plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "le téléphone est mort ça dit vérifiez la ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon téléphone fixe est coupé je n'ai pas de service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de téléphone résidentiel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "nouveau mot de passe du modem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin d'un service pour mon modem internet haut débit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "à propos de mon routeur"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "bon mon routeur ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mes services Internet résidentiels ont été déconnectés, j'ai mélangé mes dates de quand je devais payer."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "aidez moi avec mon service internet résidentiel avec telus à port coquitlam"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai besoin de parler avec un technicien j'ai un problème avec internet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "panne internet à domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Internet et le téléphone fixe ne fonctionnent pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux annuler mon service à domicile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'appelle à propos de mon relevé mon relevé de téléphone résidentiel et de télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mise en place d'un nouveau service au foyer rural"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "contrat de télévision"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler la ligne téléphonique résidentielle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "annuler le téléphone et la télévision à la maison"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "d'accord c'était une réponse rapide je voudrais annuler un de mes numéros de téléphone, j'ai raté votre appel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quelque chose s'est passé avec mon téléphone à la maison, c'est tellement bruyant que je perds des appels et je n'entends pas correctement et les gens ne peuvent pas m'entendre correctement et c'est pas la première fois que ça l'arrive et j'aimerais qu'il soit réparé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problèmes de téléphone à la maison"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "notre téléphone à la maison est en panne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

@@ -1,0 +1,745 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "modifier le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de mes notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment changer le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de mes notifications de texte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment changer ma "
+    }, {
+      "text": "sonnerie",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Envoyez vous des notifications de "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Parlez-moi des notifications de "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment configurer les notifications de "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande comment je peux modifier les "
+    }, {
+      "text": "sons",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " des notifications sur mon appareil."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Définir ma "
+    }, {
+      "text": "sonnerie",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de notification sur mon "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " 13 Pro"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Changez la "
+    }, {
+      "text": "sonnerie",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " des notifications sur "
+    }, {
+      "text": "Samsung",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Changer la "
+    }, {
+      "text": "sonnerie",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " des notifications."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Modifier les "
+    }, {
+      "text": "sons",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de notification sur mon "
+    }, {
+      "text": "appareil",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment changer les "
+    }, {
+      "text": "sons",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " sur mon "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Besoin de changer la "
+    }, {
+      "text": "sonnerie",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " des notifications sur mon nouvel "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux changer le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " des notifications sur "
+    }, {
+      "text": "android",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment puis-je ajouter une "
+    }, {
+      "text": "sonnerie",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " à mon "
+    }, {
+      "text": "Google Pixel",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de changer le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de mes notifications sur mon "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux un "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " différent pour les notifications sur "
+    }, {
+      "text": "Samsung",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Besoin de votre aide pour modifier le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de mes notifications sur mon nouveau téléphone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne sais pas comment configurer les notifications "
+    }, {
+      "text": "sonores",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'aime plus les "
+    }, {
+      "text": "sons",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de mes notifications donc je dois vraiment les changer maintenant."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de changer le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de mes notifications pour les messages texte."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Existe-t-il un moyen de modifier le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " des notifications sur "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " Pro ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande comment je peux modifier le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " des notifications pour les e-mails sur mon nouveau téléphone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment puis-je modifier le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " des notifications pour les SMS ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment puis-je modifier le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " des notifications pour les e-mails ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Besoin de changer le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de mes notifications pour les e-mails sur "
+    }, {
+      "text": "Samsung",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " Pro."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin d'un son de notification différent sur mon téléphone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin d'un son de notification différent pour les messages texte sur mon téléphone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de votre aide pour modifier les sons des notifications sur mon nouveau téléphone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Besoin de votre aide pour modifier les sons des notifications pour les messages texte."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous s'il vous plaît me dire comment modifier les sons des notifications pour les messages texte sur "
+    }, {
+      "text": "IPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux changer mes "
+    }, {
+      "text": "sons",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de notification"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-il possible de changer mon son de notification, je ne sais pas comment ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande simplement comment changer le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de ma notification, aidez-moi s'il vous plaît !"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne veux plus avoir de sons de notification"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Aidez-moi à m'assurer que je n'ai plus de sons de notification, juste lorsque les gens appellent."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande comment désactiver les "
+    }, {
+      "text": "sons",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de notification."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne sais pas comment activer ou désactiver les sons de notification"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souhaite modifier la "
+    }, {
+      "text": "sonnerie",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de mon téléphone lorsque je reçois un appel."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous s'il vous plaît me dire comment changer la façon dont mon téléphone sonne lorsque quelqu'un m'appelle?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Lorsque je reçois un appel téléphonique, je n'aime pas le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " de mon téléphone, puis-je changer cela ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Chaque fois que je reçois une fenêtre publicitaires de mon téléphone, cela fait du bruit et je n'aime pas ça. Comment puis-je le changer?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Savez-vous comment modifier le bruit émis par un téléphone lorsqu'il reçoit une fenêtre publicitaire?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux changer les bruits des fenêtres publicitaires de mon téléphone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Modification du bruit des fenêtres publicitaires"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande simplement comment modifier les sons contextuels que je reçois de mon téléphone lors de la réception de notifications."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Oh mon dieu je ne pensais pas que changer une "
+    }, {
+      "text": "sonnerie",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " serait si dur, j'ai besoin d'aide !"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai l'impression que c'est très compliqué de changer ma sonnerie et je n'y arrive pas !"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Très compliqué pour moi de changer les sons de mon téléphone, pouvez-vous m'aider ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment changer la sonnerie avec "
+    }, {
+      "text": "Samsung",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " S9 ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous me dire comment désactiver toutes les notifications ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment puis-je modifier le "
+    }, {
+      "text": "son",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " DING lorsque je reçois une notification ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quand est-ce que je reçois une notification de limite de "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "m'informerez-vous la prochaine fois des limites de "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment activer les notifications ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "où activer mes notifications ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "expliquer les notifications de "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment fonctionnent les notifications d'utilisation des "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quand est-ce que je reçois une notification concernant ma consommation de "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "aide avec notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je n'ai pas reçu de notification indiquant que j'ai atteint cent pour cent de mes "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Vais-je recevoir une notification sur mon utilisation des "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment gérer les notifications de l'appareil"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souhaite activer mes notifications par e-mail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "est-ce normal que je ne vois aucune notification ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment activer mes notifications ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "notifications d'utilisation des "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quand envoyez-vous des notifications de "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "notifications de "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "gérer mes notifications de "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "vais-je recevoir des notifications de "
+    }, {
+      "text": "données",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment serai-je informé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment gérer mes notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "gérer mes notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'ai pas reçu d'avis"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souhaite modifier mes paramètres de notification"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment paramétrer mes notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Questions sur les notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Avis"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

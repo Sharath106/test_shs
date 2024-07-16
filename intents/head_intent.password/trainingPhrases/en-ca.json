@@ -1,0 +1,383 @@
+{
+  "trainingPhrases": [ {
+    "id": "dad8d336-7980-4c95-ac40-982b9a2c30aa",
+    "parts": [ {
+      "text": "need help with password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "55ae8c8e-b8b0-4321-aa74-3184358ab998",
+    "parts": [ {
+      "text": "forgot my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "16b5fc7d-e345-4eea-9496-b9fc62c18da1",
+    "parts": [ {
+      "text": "don't remember my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c3a9d834-de83-4df1-8e2b-50e4ba74806b",
+    "parts": [ {
+      "text": "password reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "543e23b2-f37a-4e61-b76d-b8a178d6b6b0",
+    "parts": [ {
+      "text": "check my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8c241a5d-8b76-4304-b02c-cc76e274f390",
+    "parts": [ {
+      "text": "how do I know what my password is?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "11793f11-dd98-4ce1-b8d2-e957a6d5e570",
+    "parts": [ {
+      "text": "to change password for my internet "
+    }, {
+      "text": "email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3d798540-ecec-41a2-acf5-1c2f747871e2",
+    "parts": [ {
+      "text": "to change a password for "
+    }, {
+      "text": "email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bf12148b-75ca-4377-92d9-e6f843fc200b",
+    "parts": [ {
+      "text": "my password for my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d9f129bd-86ae-4fdf-8af8-4f0bdc081bb7",
+    "parts": [ {
+      "text": "need email for need email password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5eaa98eb-3785-423c-93b1-2227e9fd28a7",
+    "parts": [ {
+      "text": "email"
+    }, {
+      "text": " password problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d2171926-b3db-4386-ac80-9394c96dfa08",
+    "parts": [ {
+      "text": "my password is not being accepted on my "
+    }, {
+      "text": "email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4e1af932-ec7c-4602-b16c-81855ffac4bd",
+    "parts": [ {
+      "text": "hello i'd like to change the password in my "
+    }, {
+      "text": "webmail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4d5a9f23-c053-4775-95f0-324e7ade8524",
+    "parts": [ {
+      "text": "internet mail password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "312bc6ce-ffdd-4db5-808b-f297a60c8bb4",
+    "parts": [ {
+      "text": "i need to change my "
+    }, {
+      "text": "webmail"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "15c0a6f5-ee65-4b2b-b129-28f70b2c379f",
+    "parts": [ {
+      "text": "email"
+    }, {
+      "text": " and log in password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "047ca3fd-538e-4a51-905a-949286e45808",
+    "parts": [ {
+      "text": "change "
+    }, {
+      "text": "email"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "115340f4-60a3-48f2-a45e-47b5a1219a2f",
+    "parts": [ {
+      "text": "having problem with my "
+    }, {
+      "text": "telus webmail"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9b5fc752-6814-4ee8-a124-eac412b259de",
+    "parts": [ {
+      "text": "change my "
+    }, {
+      "text": "email"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bb19f2fb-9216-4c00-a125-57dd3653d32f",
+    "parts": [ {
+      "text": "i would like to change my password on my "
+    }, {
+      "text": "email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1a744e95-5c4f-496f-8c04-2ba201f3a2cd",
+    "parts": [ {
+      "text": "yes i have a problem with my password in my "
+    }, {
+      "text": "email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b836e22c-fe17-465f-92e7-84748ce8e2f9",
+    "parts": [ {
+      "text": "i need a new password for my "
+    }, {
+      "text": "email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6baa3359-eea1-4075-80c7-79b67eb26d15",
+    "parts": [ {
+      "text": "i forgot my password to get in my "
+    }, {
+      "text": "webmail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "86a3024d-4e4b-4a50-b3c8-c8000be8e7a9",
+    "parts": [ {
+      "text": "changing "
+    }, {
+      "text": "email"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "581d7f95-cac3-4426-a15d-729c1ae6eaa7",
+    "parts": [ {
+      "text": "i forgot my password for my "
+    }, {
+      "text": "email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3b39e00d-64e0-446e-8af1-a59e376e8936",
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "webmail"
+    }, {
+      "text": " password is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "796cb0ce-6f22-44fb-b3f4-03be82f0c7b0",
+    "parts": [ {
+      "text": "i need help with my "
+    }, {
+      "text": "email"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "05d71334-618f-46c0-a277-3f2c19d22f05",
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "email"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0247b0e7-56f1-478e-bf25-b63b5c363978",
+    "parts": [ {
+      "text": "webmail"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a4cd23f0-3b43-46d8-9c54-9a277291f1cc",
+    "parts": [ {
+      "text": "forgot "
+    }, {
+      "text": "email"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66366311-d08a-49ef-bd2d-19d549d6b28b",
+    "parts": [ {
+      "text": "answer machine billing answer machine password problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "59bd286f-d9f5-48ee-83a9-99b6ccda2e5a",
+    "parts": [ {
+      "text": "i need to reset my "
+    }, {
+      "text": "voicemail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8ec981e1-5ed0-4f4d-8827-4197d111096e",
+    "parts": [ {
+      "text": "voicemail"
+    }, {
+      "text": " reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "78324091-02f5-47d5-b0f9-105deb173f12",
+    "parts": [ {
+      "text": "i would like to know about my password for my "
+    }, {
+      "text": "hub"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c1c43d10-6512-4e37-afb3-6b8057a4f13a",
+    "parts": [ {
+      "text": "i'm locked out of my "
+    }, {
+      "text": "webmail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "76e52e5d-516e-48dc-9707-ec85b0c3d09a",
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "email"
+    }, {
+      "text": " has been locked and i need some help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f30dd1e6-0188-46bc-9062-728eaf666b8e",
+    "parts": [ {
+      "text": "cell pin"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "96d8c38b-a36e-4aba-ba49-273311dc0df0",
+    "parts": [ {
+      "text": "pin number on a cellphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "036cea85-5630-4193-87ae-9b3c637c50c4",
+    "parts": [ {
+      "text": "pin code activate"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c332d7f-3145-43fa-9c1e-a92c17ebd1ef",
+    "parts": [ {
+      "text": "putting in a pin number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "16224a0d-153f-47f8-b9c8-6cea4085f2d7",
+    "parts": [ {
+      "text": "my pin number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3455d26e-95e0-4023-9f2a-13bca51499e3",
+    "parts": [ {
+      "text": "pin is invalid let me get a representative that can help you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "27210750-ec5f-4ca0-9d81-084e2205b043",
+    "parts": [ {
+      "text": "i want to find my telus pin number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3a2f142d-9837-406e-9c89-076f000aa823",
+    "parts": [ {
+      "text": "pin number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

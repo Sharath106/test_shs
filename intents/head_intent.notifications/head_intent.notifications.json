@@ -1,0 +1,27 @@
+{
+  "name": "2f20d482-9de9-4e61-8929-59f46f29f25e",
+  "displayName": "head_intent.notifications",
+  "parameters": [ {
+    "id": "iphone_vs_android",
+    "entityType": "@iphone-vs-android"
+  }, {
+    "id": "data_vs_bill",
+    "entityType": "@data-vs-bill"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "notifications",
+  "numTrainingPhrases": 242
+}

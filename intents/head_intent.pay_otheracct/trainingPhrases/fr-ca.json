@@ -1,0 +1,479 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Pouvez-vous me dire si je peux payer la facture de téléphone de ma sœur?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je fais comment pour transférer du cash sur un autre compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Faire un paiement sur le deuxième compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Transférer des fonds vers le compte de ma mère"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais transférer de l'argent sur notre autre compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est possible de faire un paiement sur le deuxième compte en ligne?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je peux payer un autre compte en ligne?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de payer le compte pour ma femme."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon mari et moi avons des comptes séparés et je veux faire un paiement sur son compte."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que c'est possible pour moi de payer le compte de ma soeur?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Puis-je payer le compte à ma soeur?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais aider mon frère et payer son compte. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que je peux payer pour mon frere?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire pour payer le compte d'une autre personne?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voudrais payer le compte de cell a mon "
+    }, {
+      "text": "pere"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais payer le compte pour ma "
+    }, {
+      "text": "mere"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'veux payer le compte de mon chum svp"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Le compte d'un ami est en souffrance et je voudrais faire un paiement pour l'aider "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce possible de payer la facture d'un membre de ma famille "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche seulement à payer facture de quelqu'un d'autre    "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "De quelle façon puis-je régler la facture de quelqu'un d'autre?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment régler "
+    }, {
+      "text": "une"
+    }, {
+      "text": " facture qui n'est pas à moi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux régler la facture d'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " membre de ma famille"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est possible de régler la facture d'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "ami"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'aimerais payer le compte de mon "
+    }, {
+      "text": "frère"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "configurer des paiements "
+    }, {
+      "text": "sur un"
+    }, {
+      "text": " autre compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais faire "
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement "
+    }, {
+      "text": "sur un"
+    }, {
+      "text": " autre compte svp"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "payer la facture qui n'est pas la mienne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment je peux payer un autre compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "effectuer "
+    }, {
+      "text": "une"
+    }, {
+      "text": " paiement "
+    }, {
+      "text": "sur un"
+    }, {
+      "text": " autre compte que le mien"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je voudrais payer la facture d'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "ami"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment payer le compte d'"
+    }, {
+      "text": "une"
+    }, {
+      "text": " autre personne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'aimerais faire "
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement sur le compte de ma "
+    }, {
+      "text": "mère"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "payer le compte de mon "
+    }, {
+      "text": "père"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux faire "
+    }, {
+      "text": "un"
+    }, {
+      "text": " paiement "
+    }, {
+      "text": "sur un"
+    }, {
+      "text": " autre compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souhaite effectuer "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "paiement"
+    }, {
+      "text": " "
+    }, {
+      "text": "sur un"
+    }, {
+      "text": " "
+    }, {
+      "text": "compte"
+    }, {
+      "text": " "
+    }, {
+      "text": "qui n'"
+    }, {
+      "text": "est pas "
+    }, {
+      "text": "le mien"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment puis-je payer la facture mobile de ma "
+    }, {
+      "text": "fille"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Payer"
+    }, {
+      "text": " le solde "
+    }, {
+      "text": "existant"
+    }, {
+      "text": " "
+    }, {
+      "text": "pour une"
+    }, {
+      "text": " "
+    }, {
+      "text": "autre personne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux payer la facture de mon "
+    }, {
+      "text": "fils"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "payer"
+    }, {
+      "text": " "
+    }, {
+      "text": "pour"
+    }, {
+      "text": " "
+    }, {
+      "text": "quelqu'un d'"
+    }, {
+      "text": "autre"
+    }, {
+      "text": "\r "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "payer pour mon "
+    }, {
+      "text": "conjoint"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "payer"
+    }, {
+      "text": " "
+    }, {
+      "text": "pour un"
+    }, {
+      "text": " "
+    }, {
+      "text": "membre"
+    }, {
+      "text": " de la famille"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "effectuer le "
+    }, {
+      "text": "paiement"
+    }, {
+      "text": " "
+    }, {
+      "text": "pour"
+    }, {
+      "text": " "
+    }, {
+      "text": "quelqu'un d'"
+    }, {
+      "text": "autre"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Puis-"
+    }, {
+      "text": "je "
+    }, {
+      "text": "payer"
+    }, {
+      "text": " "
+    }, {
+      "text": "la facture"
+    }, {
+      "text": " impayée "
+    }, {
+      "text": "d'un de"
+    }, {
+      "text": " mes "
+    }, {
+      "text": "amis"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux "
+    }, {
+      "text": "payer"
+    }, {
+      "text": " "
+    }, {
+      "text": "une facture pour un"
+    }, {
+      "text": " "
+    }, {
+      "text": "autre compte"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Puis-"
+    }, {
+      "text": "je "
+    }, {
+      "text": "payer"
+    }, {
+      "text": " la facture "
+    }, {
+      "text": "de quelqu'un d'"
+    }, {
+      "text": "autre"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux "
+    }, {
+      "text": "payer"
+    }, {
+      "text": " "
+    }, {
+      "text": "la facture de"
+    }, {
+      "text": " mon "
+    }, {
+      "text": "ami"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

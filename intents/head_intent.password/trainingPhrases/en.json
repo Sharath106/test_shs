@@ -1,0 +1,2592 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "phone security"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need to know more about my phone security"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "concerning my phone security"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it's about my phone security"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "forgot what is my  purchase pin"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need an email password change"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "problems with my email password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "outlook password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "give me my "
+    }, {
+      "text": "pin"
+    }, {
+      "text": " number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't log in, and so need to reset my password to view "
+    }, {
+      "text": "my account",
+      "parameterId": "password_reset",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm able to view "
+    }, {
+      "text": "my account",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": ", but can't reset my password to log in"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't reset my password to log in but I can view "
+    }, {
+      "text": "my account",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " but"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can view "
+    }, {
+      "text": "my account",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " but I can't reset my password to log in"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't reset my password to log in so I don't know the old one on how am I supposed to reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "to change password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "change password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hi I need some assistance with my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't use my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "2 f a"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help with password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need help with password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "phone",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what is my password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "mytelus",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help with password reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help me with the password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "password issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my password is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reset "
+    }, {
+      "text": "my account",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't find my "
+    }, {
+      "text": "smarthub",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " username for "
+    }, {
+      "text": "wifi",
+      "parameterId": "password_reset",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where do I find my "
+    }, {
+      "text": "smarthub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " Wi-Fi username"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I forgot my "
+    }, {
+      "text": "wi-fi",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " password with "
+    }, {
+      "text": "Rogers",
+      "parameterId": "change_wifi_pswd"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can I change my "
+    }, {
+      "text": "hotspot",
+      "parameterId": "change_wifi_pswd",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "network name",
+      "parameterId": "password_reset",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where can i update my "
+    }, {
+      "text": "smart hub",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": "'s "
+    }, {
+      "text": "network"
+    }, {
+      "text": " name?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "make my "
+    }, {
+      "text": "smarthub",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " network name easier to remember"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "change my "
+    }, {
+      "text": "smart hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " network name"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "smart hub",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " wifi username?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "would like to change the name of my "
+    }, {
+      "text": "smart hub",
+      "parameterId": "password_reset",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "change the network name on my "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me change the "
+    }, {
+      "text": "network",
+      "parameterId": "password_reset"
+    }, {
+      "text": " name on my "
+    }, {
+      "text": "mobile hotspot",
+      "parameterId": "change_wifi_pswd",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "password help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "password question"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "password problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "smarthub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "smart hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "password for "
+    }, {
+      "text": "smart hub",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you tell me how i can change my "
+    }, {
+      "text": "mobile hotspot",
+      "parameterId": "change_wifi_pswd"
+    }, {
+      "text": " "
+    }, {
+      "text": "wi-fi",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how can i change my mobile "
+    }, {
+      "text": "hotspot",
+      "parameterId": "change_wifi_pswd",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "wifi",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help me, I'm locked out of the "
+    }, {
+      "text": "webmail",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " as I forgot my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "forgot my "
+    }, {
+      "text": "webmail",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am locked out of "
+    }, {
+      "text": "Webmail",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " what do I do"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "would need to reset the "
+    }, {
+      "text": "wifi",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " password on "
+    }, {
+      "text": "hot spot",
+      "parameterId": "change_wifi_pswd"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "hot spot",
+      "parameterId": "change_wifi_pswd"
+    }, {
+      "text": " password reset please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't remember my "
+    }, {
+      "text": "home",
+      "parameterId": "change_wifi_pswd"
+    }, {
+      "text": " "
+    }, {
+      "text": "wifi",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "forgot my "
+    }, {
+      "text": "wi-fi",
+      "parameterId": "password_reset",
+      "auto": true
+    }, {
+      "text": " password on "
+    }, {
+      "text": "mobile hotspot",
+      "parameterId": "change_wifi_pswd"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm trying to reach my voicemail and it asks me to give a password i don't know my password for "
+    }, {
+      "text": "voicemail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i cant remember what i set up as my "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I looked everywhere, for hours, and I can't figure out what my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": " is?!?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I've been looking for hours and I cannot find my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": " number, please help!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "If I can't find my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": ", can you change it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can't find my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": " number, please help!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My security "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": " number is invalid, could you please change it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": " number is invalid, how can I change it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Not sure what my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": " is, can you help me to change it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I wasn't given a security "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": " for my account, would you please help me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "is it possible to change my "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't even remember my password, would you change it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I forgot my password, can you change it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i cant get into my "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    }, {
+      "text": " it is not accepting my pin"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i cant get into my "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    }, {
+      "text": ", i forgot the pattern"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Changing the "
+    }, {
+      "text": "wi-fi",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password is not easy, please help me!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I forgot my "
+    }, {
+      "text": "smart hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password, how can i reset it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I keep getting my "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password wrong, can we just reset it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Ive been having difficulty logging in onto "
+    }, {
+      "text": "my telus account",
+      "parameterId": "password_reset"
+    }, {
+      "text": " app. It says its the wrong password, yet i keep clicking the reset password but im not getting the reset email."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I manage to forgot my password every month for "
+    }, {
+      "text": "my Telus account",
+      "parameterId": "password_reset"
+    }, {
+      "text": ", and I did it again this month and am now locked out of my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need help signing into "
+    }, {
+      "text": "my telus account",
+      "parameterId": "password_reset"
+    }, {
+      "text": ", i tried sending the password reset but the link did not work for me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reset my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": " change"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": " is incorrect"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reset "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how long can my "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": " be"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can my password be letters or numbers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where do I change my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you help me find my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what is my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "password assistance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "forgot password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to fix my pass word"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you give me pass word help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "setup password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where can I configure a password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to fix the passcode"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you reset the "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": " code"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do I know what my pass word is?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to change the "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": " code"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "password change"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reset password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "please help me recover my "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "are you able to help with a password change for "
+    }, {
+      "text": "voicemail"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my daughter can't remember her voice password."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "do you mind helping me reset my PIN for "
+    }, {
+      "text": "voicemail"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I've completely forgetting my "
+    }, {
+      "text": "voicemail"
+    }, {
+      "text": " pw and need to reset."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you please assist me with getting a new password for my "
+    }, {
+      "text": "voicemail"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "change password to "
+    }, {
+      "text": "voicemail"
+    }, {
+      "text": " please."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "husband can't remember his password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "since I can't get into my "
+    }, {
+      "text": "voicemail"
+    }, {
+      "text": " i'd like to change the password."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the "
+    }, {
+      "text": "vm",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password I have it's working."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "receiving an error when entering password."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it keeps saying my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": " is wrong."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "voicemail"
+    }, {
+      "text": " password change"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't remember the pin for "
+    }, {
+      "text": "vm",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "voicemail"
+    }, {
+      "text": " won't accept my PIN"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what is the password for "
+    }, {
+      "text": "vm",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help find the "
+    }, {
+      "text": "vm",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what's the "
+    }, {
+      "text": "voice mail"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "don't know the password for my "
+    }, {
+      "text": "voicemail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't remember my "
+    }, {
+      "text": "voice mail"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reset my "
+    }, {
+      "text": "voice mail"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Voicemail"
+    }, {
+      "text": " reset options"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Smart Hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " - Reset Password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Reset "
+    }, {
+      "text": "Smart Hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "password reset for telus "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reset my "
+    }, {
+      "text": "telus hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me reset my "
+    }, {
+      "text": "smarthub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " "
+    }, {
+      "text": "PIN"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "smarthub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " reset pin"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "smarthub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "password reset for "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to reset my "
+    }, {
+      "text": "smart hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to create a new "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Please help me reset "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do i have to call TELUS to change my "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can i change my smart "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password online?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you please assist me in resetting my "
+    }, {
+      "text": "smart hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where do i change my "
+    }, {
+      "text": "smart hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can i change my "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password myself?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me in changing my "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to change the password on my "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "change the password on my "
+    }, {
+      "text": "smarthub",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "change "
+    }, {
+      "text": "smart hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to modify "
+    }, {
+      "text": "wifi",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Please tell me how to change "
+    }, {
+      "text": "Wi-Fi",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password on Telus "
+    }, {
+      "text": "Home",
+      "parameterId": "change_wifi_pswd"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I update my "
+    }, {
+      "text": "279",
+      "parameterId": "smarthubpassword"
+    }, {
+      "text": " "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I change "
+    }, {
+      "text": "huawei",
+      "parameterId": "smarthubpassword"
+    }, {
+      "text": " "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to change "
+    }, {
+      "text": "zte",
+      "parameterId": "smarthubpassword"
+    }, {
+      "text": " "
+    }, {
+      "text": "smart hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password now."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I change "
+    }, {
+      "text": "wifi",
+      "parameterId": "password_reset"
+    }, {
+      "text": " on "
+    }, {
+      "text": "huawei",
+      "parameterId": "change_wifi_model"
+    }, {
+      "text": " "
+    }, {
+      "text": "hotspot",
+      "parameterId": "change_wifi_pswd"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to change "
+    }, {
+      "text": "wi-fi",
+      "parameterId": "password_reset"
+    }, {
+      "text": " pass on non telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Want to change "
+    }, {
+      "text": "home",
+      "parameterId": "change_wifi_pswd"
+    }, {
+      "text": " "
+    }, {
+      "text": "wifi",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you please give instructions on how to change "
+    }, {
+      "text": "wifi",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password on "
+    }, {
+      "text": "huawei",
+      "parameterId": "change_wifi_model"
+    }, {
+      "text": " "
+    }, {
+      "text": "hotspot",
+      "parameterId": "change_wifi_pswd"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Change "
+    }, {
+      "text": "wi-fi",
+      "parameterId": "password_reset"
+    }, {
+      "text": " pass on "
+    }, {
+      "text": "hub",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need help changing "
+    }, {
+      "text": "wifi"
+    }, {
+      "text": " password on "
+    }, {
+      "text": "smart hub",
+      "parameterId": "password_reset"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I change the "
+    }, {
+      "text": "wi-fi",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Change "
+    }, {
+      "text": "Wi-Fi",
+      "parameterId": "password_reset"
+    }, {
+      "text": " Password on Telus "
+    }, {
+      "text": "Home",
+      "parameterId": "change_wifi_pswd"
+    }, {
+      "text": " "
+    }, {
+      "text": "Wi-Fi",
+      "parameterId": "password_reset"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't recall "
+    }, {
+      "text": "iphone"
+    }, {
+      "text": " pass code"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I forgot my "
+    }, {
+      "text": "iphone"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't remember my "
+    }, {
+      "text": "mobile",
+      "parameterId": "password_reset"
+    }, {
+      "text": " phone password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "forgot "
+    }, {
+      "text": "mobile",
+      "parameterId": "password_reset"
+    }, {
+      "text": " phone passcode"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what do i do if i forgot my "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am locked out of my "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i forgot my unlock code for my "
+    }, {
+      "text": "device",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i switched phones and forgot the pattern on the "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i forgot my lock code for my "
+    }, {
+      "text": "samsung",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need help my "
+    }, {
+      "text": "samsung",
+      "parameterId": "password_reset"
+    }, {
+      "text": " is not taking my pin"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    }, {
+      "text": " is not working with my pattern"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "pin is not being accepted in my "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i forgot my lock code on my "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Please help me recover my "
+    }, {
+      "text": "device",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't remember my "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": " pattern"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "recover "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    }, {
+      "text": " pin"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't remember passcode"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I forgot my passcode and i've been locked out now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you help me recover my passcode?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "forgot "
+    }, {
+      "text": "device",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't remember my "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    }, {
+      "text": " code"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "forgot the "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "change my telus "
+    }, {
+      "text": "e-mail",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wrong "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password needs to be changed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me with my "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is my password for my "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " the same as My TELUS? Can't enter my emails."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Want to recover my telus "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": "... forgot password."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me recover my telus "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " since I forgot my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need help resetting my "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Reset TELUS "
+    }, {
+      "text": "Webmail",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I forgot my "
+    }, {
+      "text": "account pin",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Forgot "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": " with Telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I do not remember what my "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": " number is."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there a way to find out what's my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need help with my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": " because I forgot it."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What happens if I forgot my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Where can I find out what my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": "# is?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can't remember what my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": " is."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you know what's my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "forgot my security "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": " number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "forgot my account "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": " number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "don't remember my "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what's my security account "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    }, {
+      "text": " again?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me find my security "
+    }, {
+      "text": "pin",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What is my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't remember my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Forgot my "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Forgot my security "
+    }, {
+      "text": "PIN",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i cannot login into "
+    }, {
+      "text": "my Telus",
+      "parameterId": "password_reset"
+    }, {
+      "text": " and my "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " is not allowing emails from Telus to reset it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "im trying to log into "
+    }, {
+      "text": "Telus account",
+      "parameterId": "password_reset"
+    }, {
+      "text": " and cant remember my password. Ive tried. Multiple times to reset but it never works"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need some help resetting "
+    }, {
+      "text": "my telus account",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i've tried to reset "
+    }, {
+      "text": "my telus.com",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password and it says it was successfully changed but i still can't log in"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am in need of a new password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need a new password asap please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Its embarassing but I forgot my own password."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I forgot my password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need a new password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i get a password change"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm unsure of my password. How do I change it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how can i change my password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to change my password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need help to reset "
+    }, {
+      "text": "My TELUS",
+      "parameterId": "password_reset"
+    }, {
+      "text": " passcode"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am not able to change password and need help!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to change a password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need to change my password."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How would I change my online password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Change "
+    }, {
+      "text": "My Telus",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I update my online profile password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Change login password."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need to change password to log in."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need your help to change my password online."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to change "
+    }, {
+      "text": "my app",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password but there is no option to reset it."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I received an email today saying I need to reset my password but the link is not working."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I think someone is trying to gain access to my account and I need to change the password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Really important that I change my password with you today!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm in "
+    }, {
+      "text": "My TELUS account",
+      "parameterId": "password_reset"
+    }, {
+      "text": " and don't know where to go to change my password."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My passcode on "
+    }, {
+      "text": "my telus",
+      "parameterId": "password_reset"
+    }, {
+      "text": " doesn't work anymore"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Could you change my password on "
+    }, {
+      "text": "myTelus",
+      "parameterId": "password_reset"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i change the password for my online account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": " can you tell me all the steps for me to change my online password?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to reset "
+    }, {
+      "text": "my telus app",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to set up "
+    }, {
+      "text": "two-factor authentication",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "set up "
+    }, {
+      "text": "two step authentication",
+      "parameterId": "password_reset"
+    }, {
+      "text": " on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I enable "
+    }, {
+      "text": "two-step verification",
+      "parameterId": "password_reset"
+    }, {
+      "text": " on my telus "
+    }, {
+      "text": "phone",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I enable "
+    }, {
+      "text": "two step verification",
+      "parameterId": "password_reset"
+    }, {
+      "text": " on "
+    }, {
+      "text": "my telus account",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help me set up "
+    }, {
+      "text": "2FA verification"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to activate "
+    }, {
+      "text": "two-step authentication"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to set up "
+    }, {
+      "text": "2-step verification",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what is "
+    }, {
+      "text": "two-factor verification"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "2 steps verification",
+      "parameterId": "password_reset"
+    }, {
+      "text": " feature setup assistance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "2FA",
+      "parameterId": "password_reset"
+    }, {
+      "text": " reset support"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Update my "
+    }, {
+      "text": "2 factor authentication",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do I use "
+    }, {
+      "text": "2 step verification",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "two factor authentication"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "2 factor verification"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "voicemail"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "password to my "
+    }, {
+      "text": "voice mail",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what is "
+    }, {
+      "text": "two factor verification"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do I know what my password is?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my password is not being accepted on my "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "hello i'd like to change the password in my "
+    }, {
+      "text": "webmail",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to change my "
+    }, {
+      "text": "webmail",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " and log in password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "having problem with my "
+    }, {
+      "text": "telus webmail",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "change my "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to change my password on my "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i forgot my password to get in my "
+    }, {
+      "text": "web mail",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i forgot my password for my "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my telus "
+    }, {
+      "text": "web mail",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need help with my "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "webmail",
+      "parameterId": "password_reset"
+    }, {
+      "text": " password"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "answer machine billing answer machine password problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm locked out of "
+    }, {
+      "text": "TELUS webmail",
+      "parameterId": "password_reset"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "email",
+      "parameterId": "password_reset"
+    }, {
+      "text": " has been locked and i need some help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

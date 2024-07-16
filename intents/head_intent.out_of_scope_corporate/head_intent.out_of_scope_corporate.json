@@ -1,0 +1,21 @@
+{
+  "name": "c6f044a0-050a-4d8a-bfd9-35872f628450",
+  "displayName": "head_intent.out_of_scope_corporate",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "out_of_scope"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Question about Corporate accounts",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 104
+}

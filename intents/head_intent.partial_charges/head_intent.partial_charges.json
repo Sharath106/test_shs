@@ -1,0 +1,20 @@
+{
+  "name": "1433f0b2-e14e-41da-b677-78c874f6cb57",
+  "displayName": "head_intent.partial_charges",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about partial charges and proration.",
+  "numTrainingPhrases": 129
+}

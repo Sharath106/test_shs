@@ -1,0 +1,409 @@
+{
+  "trainingPhrases": [ {
+    "id": "867268cd-dc29-467b-a2a6-9a409273ceb4",
+    "parts": [ {
+      "text": "Does the payment status appear on my account right away?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3eef66a0-beab-4a93-a2d7-2f9d690c418d",
+    "parts": [ {
+      "text": "How much longer do I need to wait to see that the payment was made?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "31cec6d9-1a52-472e-a77e-0ac9f62fdabc",
+    "parts": [ {
+      "text": "I need to know an average payment status posting time."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7afc14d3-a3b0-49fc-a293-c70230ca7684",
+    "parts": [ {
+      "text": "Why does it take so long to post a payment on my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "35712793-e8a3-404a-aaee-f0046555920a",
+    "parts": [ {
+      "text": "How long does it take before showing as paid?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "591f94e4-905c-46b2-92fc-8f4d455637e6",
+    "parts": [ {
+      "text": "I was wondering if posting the payment confirmation is going to take more than a couple of minutes."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "38d04ceb-d5c1-4994-ad7e-b49d99d3ff69",
+    "parts": [ {
+      "text": "Does the payment show on my account directly after making it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3a0e605-47d0-49c4-b82f-decd97802f76",
+    "parts": [ {
+      "text": "How do I know when the payment was processed?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c6893443-17cd-4b2b-8c21-e99e9fb433be",
+    "parts": [ {
+      "text": "online payment posting time"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1218b732-6f82-4853-a0c4-aa2a8e54b3c5",
+    "parts": [ {
+      "text": "When can I check if my payment went through?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66412f8e-dcfc-4b38-b64a-07a78190e414",
+    "parts": [ {
+      "text": "How long does it take to process a payment so I can see it posted?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "503ac5bf-2f20-4a3e-ad5c-713320ec931e",
+    "parts": [ {
+      "text": "Is it going to take a long time for the payment to appear on my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b175504e-43a1-4a91-9bfa-61fd1d957fff",
+    "parts": [ {
+      "text": "I made a payment, when can I see it on my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "98d32eb3-9d0b-4ace-bda9-ce0379a3f4f2",
+    "parts": [ {
+      "text": "When will the payment go through?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d35e1fa6-dee5-4e65-b3f7-baee5111635a",
+    "parts": [ {
+      "text": "How long do payments take to process?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c4197cf4-4467-445a-913d-de11dbeb4a64",
+    "parts": [ {
+      "text": "When am I going to be able to see the payment I just made?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4323758f-e7f2-44a3-a8cd-9aeca6c8b85b",
+    "parts": [ {
+      "text": "What is the processing time for a payment to show on my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1d2fb9b3-4950-4c69-b4c7-a559d4ad23ea",
+    "parts": [ {
+      "text": "am I going to see payment right away on my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "299beae2-8c07-4310-879f-3c7bdadc55e6",
+    "parts": [ {
+      "text": "Do you know how long it takes for a payment to be posted?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7c89ac2a-4030-4ec9-8fbd-424477ebb998",
+    "parts": [ {
+      "text": "What's the delay for a payment to show up online?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "52101ac1-25fd-4f51-be7e-c73b79cce910",
+    "parts": [ {
+      "text": "Just wondering if there is a delay between the time I make a payment and the time I see it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "220383ad-d104-4ce0-92a4-e28651969184",
+    "parts": [ {
+      "text": "How long do I have to wait to see that my payment has been posted?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fdab09c2-ef0f-4899-b9b0-792d44f2b209",
+    "parts": [ {
+      "text": "How long does it take for a payment to be updated in my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2832382d-0e91-48a0-b0f3-ba09806ba8d0",
+    "parts": [ {
+      "text": "Processing time for a payment to show on my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5e7a610b-8607-453f-9273-8fd2b18f24e6",
+    "parts": [ {
+      "text": "Do I have to wait a long time before seeing the payment I made?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "da2e1574-0f6e-476c-8ef0-b705400a956c",
+    "parts": [ {
+      "text": "Can you please tell me the processing time for a payment to appear on my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fe5db5d0-5f41-4dc9-832b-0d3fa54d8f17",
+    "parts": [ {
+      "text": "Do I have to wait to see that my payment has been posted?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3434918-c945-48d0-8cd6-1a7a8319e987",
+    "parts": [ {
+      "text": "what's the posting time for a payment?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d7a79722-d7d2-4b7d-a209-c5fda9eb3aaf",
+    "parts": [ {
+      "text": "I would like to know how long is the wait time for a payment to show up."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1ee39058-b376-4aa8-a11c-d57197dfcf6e",
+    "parts": [ {
+      "text": "Do you know how long it takes for you to receive my payment and post it in my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b6510422-97d2-4297-9582-cd42630f4ff6",
+    "parts": [ {
+      "text": "When do you usually receive and post the payment?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d2f820aa-8c4a-47dd-99e1-febade3d63f5",
+    "parts": [ {
+      "text": "When can I expect you to receive my payment so I can see it it has been received and posted in my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1596bbab-a10b-4e31-ad93-6a19d0941ce4",
+    "parts": [ {
+      "text": "Just wondering how long it takes in average to receive a payment and to be posted on my online statement?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7b30dd54-2fd1-41d9-9c0f-4814d5850ed7",
+    "parts": [ {
+      "text": "How long for a payment to be received after I send it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f0d8c3ec-6493-4c6e-b273-3b194dda0bc1",
+    "parts": [ {
+      "text": "Can you tell me how much time it takes for you to receive a payment and post it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "507a6f41-aad9-4d87-95d4-d0a36b7aae5e",
+    "parts": [ {
+      "text": "How long does it take before you receive my payment?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b4286695-4d66-4a17-a6cb-f92231e9a12c",
+    "parts": [ {
+      "text": "online payment not showing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "081d13e2-cf19-41b9-9260-d7dcd46830d0",
+    "parts": [ {
+      "text": "How long does it take for a payment to show?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "80d5995e-0ef1-4d7f-8ab7-85bfd4bd3078",
+    "parts": [ {
+      "text": "Made a payment how long does it take to show up as paid?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c44b755c-7a75-47f4-9631-462d4dc06a90",
+    "parts": [ {
+      "text": "Wondering when my payment will show on the account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bc05e591-a569-453b-8b5b-986f6c79aaba",
+    "parts": [ {
+      "text": "Can you tell me when my payment will appear on my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "62534b38-e533-47d3-b195-224bdd35c1c1",
+    "parts": [ {
+      "text": "In how many business days will my payments appear on the account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "06e3fc73-adb9-4d76-a73e-ecb15b980878",
+    "parts": [ {
+      "text": "Is it 3 business days for the payment to appear on the account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8b633544-8c70-48a1-ba68-5a0215f72029",
+    "parts": [ {
+      "text": "When will the payment post on my husband's account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1ba185b7-4e96-402f-8d94-46d5081fa983",
+    "parts": [ {
+      "text": "Wanted to check how long it takes for my payment to post on my son's account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "718bf5ac-426b-40eb-8631-47f5da9fb3a3",
+    "parts": [ {
+      "text": "How many days does it take for payments to post"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d1e65fc9-2d15-40fb-9ae6-20094121d731",
+    "parts": [ {
+      "text": "Does it take around 3 or 5 days for payments to post?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dea3b130-ff6b-4f78-a6ec-cfd74c935693",
+    "parts": [ {
+      "text": "I got a shared account and made a payment, what's the payment processing time?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "582f3e6f-b06c-4602-bfca-82daa0d99e2c",
+    "parts": [ {
+      "text": "Would you be so kind to tell me how long it takes for a payment to show"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "55ace611-2f37-4fb1-a6d0-7b30acb21ac4",
+    "parts": [ {
+      "text": "Curious when payment to my daughter's account will show"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "23a514ab-b52b-468a-a229-631383401416",
+    "parts": [ {
+      "text": "i want to know if my payment has been processed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "48885e18-c6ad-4b04-8aa0-52a9c678b19e",
+    "parts": [ {
+      "text": "i'm calling to talk about my bill that still shows unpaid"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ac8a8004-2e80-499b-a956-b62e9da79ba8",
+    "parts": [ {
+      "text": "i keep getting bills saying my account has been on hold and the payment hasn't gone through and yet it has gone through"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3419dce9-2664-4557-a275-97ce8f65c844",
+    "parts": [ {
+      "text": "hi this is yvonne calling from calgary and on my bill it says that my last payment was not made but you take it out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5a5c9010-928e-420f-a86b-c5ff7244ffcc",
+    "parts": [ {
+      "text": "one i made a payment to my account on july twenty third and it's not credited"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b6e74917-273e-4798-8f09-a048e7926cc7",
+    "parts": [ {
+      "text": "i'm calling about my bill it seems as though my last payment wasn't posted"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "516e08b8-76d9-42b8-a262-3e9fbbfe3399",
+    "parts": [ {
+      "text": "i made a payment of three hundred dollars over the last week and it is not showing up on my telus account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "84ea95ea-53f3-4854-9441-6e10efc63924",
+    "parts": [ {
+      "text": "i'm calling about my bill i made a payment and it's not showing up on my telus side"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

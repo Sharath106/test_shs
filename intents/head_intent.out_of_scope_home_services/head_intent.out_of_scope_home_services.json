@@ -1,0 +1,35 @@
+{
+  "name": "be2eb0e4-1c13-45da-8e38-b7323dec278c",
+  "displayName": "head_intent.out_of_scope_home_services",
+  "parameters": [ {
+    "id": "apple",
+    "entityType": "@apple"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "out_of_scope"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Questions about home services",
+  "asrCorrections": [ {
+    "errorPhrase": "table",
+    "correctionPhrase": "cable"
+  }, {
+    "errorPhrase": "soldes du câble",
+    "correctionPhrase": "solde du compte"
+  }, {
+    "errorPhrase": "roam service",
+    "correctionPhrase": "home service"
+  } ],
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 822
+}

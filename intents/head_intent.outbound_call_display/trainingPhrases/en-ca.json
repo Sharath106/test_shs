@@ -1,0 +1,227 @@
+{
+  "trainingPhrases": [ {
+    "id": "8e31dd84-b7ec-4edb-9777-eeeea639e53b",
+    "parts": [ {
+      "text": "Tell me about the outbound call display"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "21718d75-83cd-40d1-a59b-7ed8415e6802",
+    "parts": [ {
+      "text": "How can I show my number when I make a call?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "05b1e291-04d8-43a8-be73-66fe0054a07d",
+    "parts": [ {
+      "text": "Do you have outbound call display"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1842d8ae-f834-4c86-a806-2a748b7d92a1",
+    "parts": [ {
+      "text": "I want to get my number to show when I make calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66e3b6e5-08a9-46d6-b1c7-212c78e9f0d3",
+    "parts": [ {
+      "text": "What is outbound call display?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "48b22417-3207-4c51-a53d-7165499ca6c5",
+    "parts": [ {
+      "text": "I have a question about our TELUS outbound call display"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "79858109-0f72-4e87-8d06-5b4432ae2cf3",
+    "parts": [ {
+      "text": "Can i ask you about the outgoing calling display?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3d4d3b19-7772-43f0-860a-c7eb449ec5a4",
+    "parts": [ {
+      "text": "I want to disable outgoing call display"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1a9bcd2d-4593-4916-84b4-977d6e5a2097",
+    "parts": [ {
+      "text": "How do i change my telus name display?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e99837a2-71b3-487d-bfcf-0a901212f073",
+    "parts": [ {
+      "text": "How do i change my telus outbound caller ID?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "269099c7-9390-4cf9-9676-d1b28ca6665b",
+    "parts": [ {
+      "text": "Does TELUS have outbound call display?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c64375c9-bd82-430e-b899-7ee94053802e",
+    "parts": [ {
+      "text": "How do i activate telus outbound call display?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1febbaa2-6fa3-413d-a0bc-b0cc951e898e",
+    "parts": [ {
+      "text": "Can you help me with my call display please?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0340b099-83a6-4ed6-931b-db3085d8bc7a",
+    "parts": [ {
+      "text": "Can i change the name on my outbound caller ID?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "333c4148-05a5-469c-8ddc-b142f3aa1c0e",
+    "parts": [ {
+      "text": "I'd like more information on the telus outbound caller ID"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eef7e247-4c86-4864-8eba-86a900748628",
+    "parts": [ {
+      "text": "I have some inquiries about the outbound call display"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d1ed3ff9-9eef-4be8-b881-2efe3670f603",
+    "parts": [ {
+      "text": "Can i add the call display feature to my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b435ccc0-bf01-4227-9068-8debdb27e79b",
+    "parts": [ {
+      "text": "Do you have a call display add on?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a3372ed6-1719-423d-a807-66c5bd9c9e6d",
+    "parts": [ {
+      "text": "I want to change my name on my outbound call display"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "29bad8c9-2d63-4a6c-a9b7-13bf28f8f4df",
+    "parts": [ {
+      "text": "How can i change my caller display ID?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "31c24d55-14b1-4c26-8589-700212bb6da4",
+    "parts": [ {
+      "text": "I have some questions about the outbound name display"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "07c7e6f1-63c0-491f-bf5b-d1fa21c5eb43",
+    "parts": [ {
+      "text": "How can i put myself on private when calling?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5f8292ba-f835-4149-9363-ba8f7e04db71",
+    "parts": [ {
+      "text": "Can i know more about the call display feature?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a25b353f-f065-4ef8-ad9e-9184031fcbb8",
+    "parts": [ {
+      "text": "Is there a cost to the outbound call display feature?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "329ab93e-2645-474f-98fe-9eb6a52bf078",
+    "parts": [ {
+      "text": "Can i change the name on the outbound call display?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7106e336-964b-4dc1-a58c-d24b243f6cd1",
+    "parts": [ {
+      "text": "Is there any way to change the setting for my caller ID?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3be9e329-8c13-4ae3-aa43-9e3de55b77b3",
+    "parts": [ {
+      "text": "Just wondering how to modify my caller ID?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e14f48d9-07ec-44c2-b689-8c36a26fbabf",
+    "parts": [ {
+      "text": "How do I make my name show up when I call someone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8d2b603d-8cac-4d21-b0b8-ee903841b754",
+    "parts": [ {
+      "text": "I would like to know what name is showing up on the phone when I call people"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bae85e72-a06d-4c40-8bde-718507fc63ee",
+    "parts": [ {
+      "text": "How to remove my name from the caller ID? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a8df74d7-a844-4d49-a411-8608a2db293c",
+    "parts": [ {
+      "text": "my name is not coming up on the call display"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4493a486-7a54-4744-8d05-4fcab3d7ad20",
+    "parts": [ {
+      "text": "i want to change the display when someone when i am calling someone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

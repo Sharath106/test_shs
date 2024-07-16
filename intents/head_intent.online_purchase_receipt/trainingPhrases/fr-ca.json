@@ -1,0 +1,459 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Demande d'une facture pour achat en ligne."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire pour avoir une facture quand on achète en ligne?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Après avoir fait l'achat d'"
+    }, {
+      "text": "une"
+    }, {
+      "text": " tablette en ligne, je n'ai pas eu de facture."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai acheté quelque chose en ligne, mais je n'ai pas eu de facture."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de faire imprimer ma facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'veux ma facture svp"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai perdu mon reçu! Pouvez-vous me donner une copie?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il est où mon reçu?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai passé "
+    }, {
+      "text": "une"
+    }, {
+      "text": " commande en ligne mais je n'ai jamais eu "
+    }, {
+      "text": "un"
+    }, {
+      "text": " reçu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Besoin d'"
+    }, {
+      "text": "une"
+    }, {
+      "text": " preuve d'achat "
+    }, {
+      "text": "pour une"
+    }, {
+      "text": " commande fait en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Reçu pour achat en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai jamais eu le reçu et j'en ai besoin"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que je pourrais avoir une facture?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai fait "
+    }, {
+      "text": "un"
+    }, {
+      "text": " achat en ligne mais je n'ai jamais eu le reçu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est tu possible d'avoir "
+    }, {
+      "text": "une"
+    }, {
+      "text": " facture pour la commande?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "besoin d'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " reçu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est possible d'avoir une copie du reçu par courriel?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourriez-vous m'envoyer une copie de la facture par courriel?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aurais besoin d'une copie du reçu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est où que je peux trouver le reçu?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'arrive pas à trouver le reçu pour ma commande en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche "
+    }, {
+      "text": "une"
+    }, {
+      "text": " facture pour la commande que je viens de passer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche le reçu de ma commande"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C possible d'avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " reçu SVP?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je me demande si c'est possible d'avoir une copie de la facture svp?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai mon numéro de commande, est-ce que tu peux trouver ma facture?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin d'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " reçu pour ma dernière commande"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je viens de commander qqch et je me demande si c'est possible d'avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " reçu?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est possible d'avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " reçu?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce possible d'avoir "
+    }, {
+      "text": "une"
+    }, {
+      "text": " facture pour le cell que je viens de commander en ligne?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux "
+    }, {
+      "text": "une"
+    }, {
+      "text": " facture pour le cell que je viens de commander en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "est-ce que je peux demander "
+    }, {
+      "text": "une"
+    }, {
+      "text": " facture pour le téléphone que je me suis commandé?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où est mon reçu?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Une copie du reçu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment j'obtiens "
+    }, {
+      "text": "un"
+    }, {
+      "text": " reçu de mon téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voudrais une copie du reçu de mon dernier achat"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Si je vous donne mon numéro de commande, pouvez-vous m'obtenir une copie de mon achat?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment puis-je obtenir mon reçu TELUS?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce que j'aurai un reçu après que mon achat soit fait?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous m'envoyer une copie de mon reçu par courriel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de trouver le reçu pour l'achat que j'ai faite"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où je peux localiser mon reçu d'achat"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'ai pas de reçu d'achat"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai placé "
+    }, {
+      "text": "une"
+    }, {
+      "text": " commande mais je n'ai pas reçu "
+    }, {
+      "text": "un"
+    }, {
+      "text": " preuve d'achat"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où je peux trouver mon reçu d'achat en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche "
+    }, {
+      "text": "une"
+    }, {
+      "text": " preuve d'achat"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Preuve de paiment de mon achat en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "preuve d'achat en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "acheté un téléphone en"
+    }, {
+      "text": " ligne et besoin du "
+    }, {
+      "text": "recu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "aimerais "
+    }, {
+      "text": "une"
+    }, {
+      "text": " copie du "
+    }, {
+      "text": "reçu"
+    }, {
+      "text": " "
+    }, {
+      "text": "d'achat en"
+    }, {
+      "text": " ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "un reçu pour"
+    }, {
+      "text": " commande "
+    }, {
+      "text": "en ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "copie du "
+    }, {
+      "text": "reçu"
+    }, {
+      "text": " original"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "perdu mon "
+    }, {
+      "text": "reçu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'ai pas eu mon reçu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Avoir une"
+    }, {
+      "text": " "
+    }, {
+      "text": "autre"
+    }, {
+      "text": " copie de mon "
+    }, {
+      "text": "reçu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Reçu"
+    }, {
+      "text": " "
+    }, {
+      "text": "d'achat en"
+    }, {
+      "text": " ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

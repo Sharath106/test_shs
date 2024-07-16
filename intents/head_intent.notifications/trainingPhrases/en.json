@@ -1,0 +1,759 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "do you send notifications when I'm about to go over my data limit?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "set up "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifications for all users on my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i manage "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need some help with "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notification"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you help me with my "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifications?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "tell me about "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifcations"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I configure "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to get notifications for my "
+    }, {
+      "text": "invoice",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i get "
+    }, {
+      "text": "invoice",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to set up "
+    }, {
+      "text": "bill",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i get "
+    }, {
+      "text": "bill",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there a way to change notifications volume on "
+    }, {
+      "text": "apple device",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm looking for information on changing notification sound on my "
+    }, {
+      "text": "TCL",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What are the steps to change ringing sound on my "
+    }, {
+      "text": "oneplus",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to change notifications on "
+    }, {
+      "text": "sony",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Questions about notifications for my "
+    }, {
+      "text": "LG",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I set my notifications on "
+    }, {
+      "text": "ipad",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to change my notification settings"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I did not get a notice"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "manage my notifications on "
+    }, {
+      "text": "blackberry",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do I manage my notifications on "
+    }, {
+      "text": "huawei",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how will I be notified"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "will I get "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifications?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "manage my "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "notifications for "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when do you send "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "notifications for "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " usage notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i turn on my notifications?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "is it normal that i do not see any notifications?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to turn on my email notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to manage device notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "will i receive a notification about my "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " usage?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i did not receive a notification that i reached hundred percent of my "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "notification help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When do i get a notification about my "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " usage?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How does "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " usage notifications work?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "explain "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " notifications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where do i switch on my notifications ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to turn on notifications?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "will you notify me next time for "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " limits?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when do i get a "
+    }, {
+      "text": "data",
+      "parameterId": "data_vs_bill"
+    }, {
+      "text": " limit notification?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I change the DING sound when I get a notification?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me how to silence all notifications on "
+    }, {
+      "text": "motorola",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to change ring tone with "
+    }, {
+      "text": "samsung",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " S9?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Very complicated for me to change the sounds of my phone, can you help?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I feel like it's very complicated to change my ringtone and can't figure it out!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Oh my god I did not think that changing a ringtone would be so hard, I need help!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just wondering how to change the pop-up sounds I get from my phone when receiving notifications."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Pop-up noise modification"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Want to change the pop-up noises of my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you know how to change the noise a phone makes when receiving a pop-up?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Everytime I receive a pop-up from my phone, it makes a noise, and I don't like it. How can I change it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When I receive a phone call,  I don't like the sound my phone makes, can I change that?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you please tell me how to change the way my phone sounds when someone is calling me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to change the ring my phone makes when I get a call."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Don't know how to turn on or off notification sounds"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm wondering how to turn off notification sounds."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Help me make sure I have no more notification sounds, just when people call."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Don't want to have any notification sounds anymore"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just wondering how to switch my notification sound, please help!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to switch my notification sound, I don't know how?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wanna switch my notification sounds on "
+    }, {
+      "text": "Nokia",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you please tell me how to change notifications sounds for text messages on "
+    }, {
+      "text": "IPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need your help to change notifications sounds for text messages."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need your help to change notifications sounds on my new phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need a different notifications sound for text messages on my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need a different notifications sound on my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need to change my notifications sound for emails on "
+    }, {
+      "text": "Samsung galaxy",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I change notifications sound for emails?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I change notifications sound for text messages?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wondering how I can change notifications sound for emails on my new phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there a way to change the notifications sound on "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " Pro?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need to change my notifications sound for text messages."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't like my notifications sounds anymore so I really need to change it now."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't know how to set up sound notifications."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need your help to change my notifications sound on my new phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want a different sound for notifications on "
+    }, {
+      "text": "Samsung",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need to change my notifications sound on my "
+    }, {
+      "text": "apple Phone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I add a ringtone to my "
+    }, {
+      "text": "google Pixel",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to change the notifications sound on "
+    }, {
+      "text": "android",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need to change notifications ringtone on my new "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I change sounds on my "
+    }, {
+      "text": "apple iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Change notification sounds on my "
+    }, {
+      "text": "droid",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Change notifications ringtone on "
+    }, {
+      "text": "galaxy",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Change the notifications ringtone on "
+    }, {
+      "text": "Samsung",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Set my notification ringtone on my "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " 13 Pro"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wondering how I can change notifications sounds on samsung "
+    }, {
+      "text": "note",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

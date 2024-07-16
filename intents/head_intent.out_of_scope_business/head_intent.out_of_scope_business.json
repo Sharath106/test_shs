@@ -1,0 +1,21 @@
+{
+  "name": "cf909edb-1764-42a3-aeab-5b63f2d3cdac",
+  "displayName": "head_intent.out_of_scope_business",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "out_of_scope"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Questions about Business accounts",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 212
+}

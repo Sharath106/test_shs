@@ -1,0 +1,21 @@
+{
+  "name": "23dc9906-99d6-47eb-b299-fb4eff990196",
+  "displayName": "head_intent.out_of_scope_prepaid",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "out_of_scope"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Question on prepaid accounts",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 137
+}
