@@ -1,0 +1,18 @@
+{
+  "name": "c16f8faf-037a-4aea-a563-7d5f05707180",
+  "displayName": "head_intent.preauthorized_payment_retrieve",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "payments"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer inquiry about whether or not pap exists on account",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 188
+}

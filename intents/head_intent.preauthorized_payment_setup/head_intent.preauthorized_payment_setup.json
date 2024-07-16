@@ -1,0 +1,22 @@
+{
+  "name": "09f9382d-90b2-4dde-913a-8f1797a59e31",
+  "displayName": "head_intent.preauthorized_payment_setup",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "payments"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer inquiring about setting up preauthorized payments",
+  "asrCorrections": [ {
+    "errorPhrase": "three authorized",
+    "correctionPhrase": "pre authorized"
+  } ],
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 354
+}

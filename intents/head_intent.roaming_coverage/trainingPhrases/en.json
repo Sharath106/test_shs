@@ -1,0 +1,474 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Wondering about where roaming is really covered?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you have a map of all the places where roaming is covered?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you have a map of all roaming coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is "
+    }, {
+      "text": "Europe",
+      "parameterId": "country",
+      "auto": true
+    }, {
+      "text": " covered by your roaming?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Am I covered if I travel across "
+    }, {
+      "text": "Canada",
+      "parameterId": "country",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Does TELUS have "
+    }, {
+      "text": "Canada",
+      "parameterId": "country",
+      "auto": true
+    }, {
+      "text": " wide plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Does TELUS have any plans covering all of "
+    }, {
+      "text": "Canada",
+      "parameterId": "country",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "am I covered if I use my phone in "
+    }, {
+      "text": "calgary",
+      "parameterId": "country"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'll be travelling to "
+    }, {
+      "text": "edmonton",
+      "parameterId": "country"
+    }, {
+      "text": ", will I be charged"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm visiting family in "
+    }, {
+      "text": "Montreal",
+      "parameterId": "country"
+    }, {
+      "text": ", am I covered"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I will be visiting family in "
+    }, {
+      "text": "Toronto",
+      "parameterId": "country"
+    }, {
+      "text": ", will I be charged extra when using my cell plan there?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "coverage for coast to coast travels"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "coast to coast cell coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "northern travel coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "looking for full northern coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "does Easy roam cover every location in "
+    }, {
+      "text": "the world",
+      "parameterId": "country"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Travelling to "
+    }, {
+      "text": "Mexico",
+      "parameterId": "country",
+      "auto": true
+    }, {
+      "text": " soon, am I covered while I'm there?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Will I be covered if I travel in "
+    }, {
+      "text": "Spain",
+      "parameterId": "country",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Does your option cover travels to "
+    }, {
+      "text": "France",
+      "parameterId": "country"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'll be travelling in "
+    }, {
+      "text": "Italy",
+      "parameterId": "country",
+      "auto": true
+    }, {
+      "text": " and want to see if it's covered"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am travelling to "
+    }, {
+      "text": "Japan",
+      "parameterId": "country"
+    }, {
+      "text": " and would like to ensure I am covered"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm flying to "
+    }, {
+      "text": "Dubai",
+      "parameterId": "country"
+    }, {
+      "text": " and want to check if my phone will work there"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "roaming coverage areas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "list of countries that are covered by your roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "does your roaming cover any country in "
+    }, {
+      "text": "Europe",
+      "parameterId": "country"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wondering about network coverage when roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "do you know if my phone will work while traveling "
+    }, {
+      "text": "overseas",
+      "parameterId": "country"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "tell me what areas you cover with roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "do I need roaming if I'm traveling within "
+    }, {
+      "text": "Canada",
+      "parameterId": "country"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "will my plan still work in "
+    }, {
+      "text": "another province",
+      "parameterId": "country"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "will my plan work in "
+    }, {
+      "text": "Quebec",
+      "parameterId": "country"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "does your roaming work in "
+    }, {
+      "text": "Africa",
+      "parameterId": "country"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "will be traveling soon and need to learn about your roaming coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wanna learn about easy roam  coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "easy roam map"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is destination covered by roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "planning a trip abroad, need to know if I will be covered"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm travelling soon and wanted to check if I will be covered where I go"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Am I gonna be covered by your roaming in "
+    }, {
+      "text": "Europe",
+      "parameterId": "country"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "roaming coverage when in "
+    }, {
+      "text": "Europe",
+      "parameterId": "country"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "is "
+    }, {
+      "text": "Europe",
+      "parameterId": "country"
+    }, {
+      "text": " covered by roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Does roaming cover europe"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'll be going to central america and wanted to know about easy roam coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wanna learn more about easy roam coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Easy roam coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "am I covered in "
+    }, {
+      "text": "Europe",
+      "parameterId": "country"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "is "
+    }, {
+      "text": "UK",
+      "parameterId": "country"
+    }, {
+      "text": " covered by roaming "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "roaming coverage in "
+    }, {
+      "text": "Europe",
+      "parameterId": "country"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "out of province use"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "coverage while in "
+    }, {
+      "text": "mexico",
+      "parameterId": "country"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "trying to get my cellphone to work in the "
+    }, {
+      "text": "united states",
+      "parameterId": "country"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "out of country",
+      "parameterId": "country"
+    }, {
+      "text": " coverage"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "out of country",
+      "parameterId": "country"
+    }, {
+      "text": " service"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm going to the states and i would like to have coverage over there data"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "roaming in "
+    }, {
+      "text": "canada",
+      "parameterId": "country"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en"
+  } ]
+}

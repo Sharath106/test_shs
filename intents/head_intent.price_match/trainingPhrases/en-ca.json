@@ -1,0 +1,353 @@
+{
+  "trainingPhrases": [ {
+    "id": "8026f38b-b4c8-4ffc-8a8b-7a21ed5552c4",
+    "parts": [ {
+      "text": "Is there a way to get the same price as these other companies?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "803406d4-a31e-4cb5-8013-cdc8fca8025a",
+    "parts": [ {
+      "text": "Need you to equal the price of this company plan!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f8eb7e01-ce3a-42d8-b822-8c548b792275",
+    "parts": [ {
+      "text": "Do you equal other compagnies doscounts?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ec5cfb90-000f-4dee-b3b1-9c6c30ff354d",
+    "parts": [ {
+      "text": "Does Telus offer price match with other companies?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "071fbb8a-26f9-4f3b-b7fb-eb6a5543ade3",
+    "parts": [ {
+      "text": "I bought my phone yesterday but it went on sale today, can you give me back the difference?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c210202e-da01-4503-b9fd-7ac05c3c1a3a",
+    "parts": [ {
+      "text": "The phone i just bought went on sale, can you refund the difference?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6d5f90e1-0e7e-4c3c-a7ed-baba9a9f677b",
+    "parts": [ {
+      "text": "I would like to ask for a discount since I saw a better deal elsewhere"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b7f6acff-e456-4186-b4e7-98dbd7eed4bc",
+    "parts": [ {
+      "text": "Do you match the discount of your competitors?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "faf42153-93d6-40db-afea-7217586e8b2a",
+    "parts": [ {
+      "text": "Can you match the competition deals?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6a06b379-4b18-45a5-accb-28a74851cb97",
+    "parts": [ {
+      "text": "Just got off the phone with another company offering me a great deal, do you match your competitors?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "15270f09-d63d-4619-9652-39d98852bd49",
+    "parts": [ {
+      "text": "I saw better prices with the competiton, can you equal their offers?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cd410048-e665-468b-92da-58efbe52dbf2",
+    "parts": [ {
+      "text": "De you equal prices of competitors?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7ff05443-c2f7-428c-a467-ccf2b90dde76",
+    "parts": [ {
+      "text": "So much cheaper with them, can you equal their offers?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "296d2cf0-d66d-463d-ad78-7e78f049f77c",
+    "parts": [ {
+      "text": "I found a company that offers me an attractive offer, can you match them?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3d33e83c-5e7a-4cf4-8699-d2645e2a8b31",
+    "parts": [ {
+      "text": "I've researched and there are many companies with better deals, can you match them?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "30407069-1947-4035-a227-95c041efd29a",
+    "parts": [ {
+      "text": "Do you match prices?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "29c3663c-fb00-4b59-8b87-bf1817ddc6d7",
+    "parts": [ {
+      "text": "Another company offers a way cheaper deal, can you match it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aa3a6e94-3155-4291-9a6c-d0fbb58b62f9",
+    "parts": [ {
+      "text": "Can you match the prices of other providers?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "730c9aa3-0dd8-4c36-909f-7777be8fb415",
+    "parts": [ {
+      "text": "Phone price change"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b91f3d37-344c-4835-84cc-4ab2fd7d7102",
+    "parts": [ {
+      "text": "bought a phone and the price dropped"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e92efbc-783b-42af-99d4-b5c891a66e2e",
+    "parts": [ {
+      "text": "the price has dropped since I bought my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "587e4832-0cfa-46fc-bcf7-b7cc828c0774",
+    "parts": [ {
+      "text": "price of the phone I bought is lower now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b3481bc6-1e9a-4754-b7ba-b6d313cbb065",
+    "parts": [ {
+      "text": "there's a promotion on a phone I bought"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1d9c4c1d-ed62-47e0-a286-b81329643b14",
+    "parts": [ {
+      "text": "will you credit the price difference with the new pricing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "45b6f975-a1da-4438-bf8b-3ab28508d760",
+    "parts": [ {
+      "text": "the price of the phone is lower now"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5dcc15cf-adb4-4e6c-9532-53ce227978c2",
+    "parts": [ {
+      "text": "my phone is now cheaper"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9ebf8fc8-1ccf-4530-9805-0004b98120de",
+    "parts": [ {
+      "text": "price match phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "58f5b82f-6d23-4a6a-b85a-a953be7c68a3",
+    "parts": [ {
+      "text": "Can you price match a new phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "63c62ad3-801c-4329-bc13-f895ef3d6ae6",
+    "parts": [ {
+      "text": "do you price match iphones"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db930a6d-22f7-45d8-825e-b52a087998d3",
+    "parts": [ {
+      "text": "I see that the phone i purchased last month has decreased in price"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "762d693d-041a-482c-b487-1a3fd0f618da",
+    "parts": [ {
+      "text": "Will you price match your own offers from last month?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "79f4f616-3a27-4e7f-ab58-765953fadd06",
+    "parts": [ {
+      "text": "I need some info on price matching"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "00f39ca5-3185-46d1-bb48-475205b42b39",
+    "parts": [ {
+      "text": "Another provider offers the same device cheaper, will you price match?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "83860dd8-2d3f-4eef-a9aa-e6b182911c34",
+    "parts": [ {
+      "text": "Will Telus price match devices if i find them at a lower cost with other providers?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c32edc71-1e7b-479f-87cb-a68e31179390",
+    "parts": [ {
+      "text": "Price match new device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "48fa7ce7-3b04-41f4-8e5e-1092255b6bc9",
+    "parts": [ {
+      "text": "Is price match possible with TELUS for the phone cost?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4b7e0dc4-c72b-4136-a54b-f77435fbe22b",
+    "parts": [ {
+      "text": "Inquiries about phone price match"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b88d7a53-3a28-4306-b5e2-18c9a9eda2f2",
+    "parts": [ {
+      "text": "the phone I got yesterday costs less now, can you adjust"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7b2eaf82-614e-44d9-b092-ae64f66a8f43",
+    "parts": [ {
+      "text": "if the device I bought last week goes on sale, can I get the sale price"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "21a253e2-091f-4351-86e3-22ef8636ac3a",
+    "parts": [ {
+      "text": "match the price of the phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ed840ee3-ce53-4f1f-94b8-2b014ff8ef31",
+    "parts": [ {
+      "text": "I want to get adjustment on price as the phone I got went on sale"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1d73781d-a77f-4316-8c36-7c2301c4af38",
+    "parts": [ {
+      "text": "match the sale price"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ca8311a1-5b6f-4d63-9195-cbeaf7318499",
+    "parts": [ {
+      "text": "can I get a price adjusted"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "de6fdf89-afd8-4925-ad8a-962a3bc1163e",
+    "parts": [ {
+      "text": "Can I get a credit if the price of the phone i just bought went down?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "31701afb-86fe-49e6-99f8-c9770fc6048a",
+    "parts": [ {
+      "text": "do you do price match for holidays sales?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4caa11b3-f494-4c20-83e5-90dbfdd108b5",
+    "parts": [ {
+      "text": "I bought an item last week and now it went on sale, anything we can work out?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "67f36d1e-aad4-48ad-925f-49107dedf940",
+    "parts": [ {
+      "text": "Can you match other providers prices?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9701d5ce-8cda-4722-a391-6a71f30394f9",
+    "parts": [ {
+      "text": "Please match this great deal that I got from another company!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d293fa0a-d7d5-489b-b697-8a1627d3b9e7",
+    "parts": [ {
+      "text": "Will you match a plan from another provider"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1d6c7be4-e76b-4058-9595-ca0e6b34a477",
+    "parts": [ {
+      "text": "I have a lower offer from another provider, will you match?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

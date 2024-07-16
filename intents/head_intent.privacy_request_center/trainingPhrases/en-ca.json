@@ -1,0 +1,360 @@
+{
+  "trainingPhrases": [ {
+    "id": "9f06c459-b451-40af-8b5f-76ce7223d613",
+    "parts": [ {
+      "text": "how to protect my personal information "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a5a90cb5-c45b-43be-bbf6-3f34160a519c",
+    "parts": [ {
+      "text": "how does Telus protect its customers against privacy breaches?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a8b5261f-b89d-44cc-9831-8fac56b9db83",
+    "parts": [ {
+      "text": "privacy questions"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b04021a1-7cc3-40db-a186-9d576e730e9b",
+    "parts": [ {
+      "text": "How can you assure my data remains private?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "90c1668f-1209-4bdc-a594-69eabe4c80bb",
+    "parts": [ {
+      "text": "Can you provide me with a copy of my data?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fbe254f6-f2ad-4b40-9245-f0581d90c904",
+    "parts": [ {
+      "text": "I would like a copy of my data for privacy reasons"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "37f31b72-bc51-49e8-8cc2-9ee5c1342472",
+    "parts": [ {
+      "text": "I have a few questions surrounding data privacy and confidentiality"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7643721e-16c0-4e9a-ad82-376b50734bdf",
+    "parts": [ {
+      "text": "Can I speak to the privacy center?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3a874d29-19e2-4dc6-a136-4ced366d2f63",
+    "parts": [ {
+      "text": "where can I read about your privacy policy "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "57b1b82e-2c3c-4ef9-b41c-a2990f2d1417",
+    "parts": [ {
+      "text": "Data privacy policy "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "26c998bf-bb1b-438d-88ee-b8333fa35002",
+    "parts": [ {
+      "text": "How do I make sure my data remains private "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "07130bf3-1e78-41aa-ba49-70d73eb5c773",
+    "parts": [ {
+      "text": "What is your privacy policy "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b5cb4a72-fea6-4378-9d2d-e017b62539f6",
+    "parts": [ {
+      "text": "how does telus insure its customers' privacy is respected?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "31731075-8b42-4940-90b7-85a021cb3ba6",
+    "parts": [ {
+      "text": "Information on the Telus privacy policy "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3cf13f8b-8b03-47aa-a010-cadff7563845",
+    "parts": [ {
+      "text": "I'd like to discuss TELUS's privacy policy "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3fdedfba-504c-4187-929b-b96f85c7bff8",
+    "parts": [ {
+      "text": "How do I get a hold of the privacy center?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2dccdc27-dd95-472e-aec0-12fdb5fbed05",
+    "parts": [ {
+      "text": "Get me the TELUS privacy center"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e5cdd77c-9da2-49a6-a90b-2e2a25cdfd60",
+    "parts": [ {
+      "text": "I'd like to speak to the privacy center"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7118a756-0678-4b84-9109-6d6b1306515b",
+    "parts": [ {
+      "text": "Are all Telus conversations confidential?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5af3416f-35ac-4c0e-8bd7-a6bba9b5705b",
+    "parts": [ {
+      "text": "I have a question regarding confidentiality at telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "502b53df-5fca-49e6-b4f9-5803593ecefc",
+    "parts": [ {
+      "text": "Is this conversation confidential?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6cac6167-40a7-4de5-a2be-f7763889a433",
+    "parts": [ {
+      "text": "Privacy request center"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ab3dde51-eba8-4b8d-a401-50729edaa542",
+    "parts": [ {
+      "text": "Contact telus privacy"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b334a8e2-adb0-4e56-b53e-2b7d0367b71a",
+    "parts": [ {
+      "text": "Question about privacy policy at telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "702fe57d-dd8f-4f37-8bd1-aae646a45a1d",
+    "parts": [ {
+      "text": "privacy and confidentiality"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fd558165-9980-4ffc-bd68-87c85e4b4594",
+    "parts": [ {
+      "text": "can I get a transcript of a conversation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b55baef8-e64b-4dea-8fd7-2b4c23181db9",
+    "parts": [ {
+      "text": "does telus respect my privacy"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c0352766-84b2-419d-9356-d90eeb2850ac",
+    "parts": [ {
+      "text": "request my personal information from telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "22282fc3-ef21-416a-83bd-6a70c92c83e1",
+    "parts": [ {
+      "text": "telus privacy standard"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "85566e83-f56f-4b96-be3f-5c72df6b24e7",
+    "parts": [ {
+      "text": "i think my personal info was stolen"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e58f41b6-0f64-4bd6-a5d5-9311350b91ed",
+    "parts": [ {
+      "text": "can anyone get access to my personal info"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "feef7945-cf1c-4817-b769-357626686ad0",
+    "parts": [ {
+      "text": "privacy "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "86fa2ceb-24c3-4693-b308-aa3bbddb6aa0",
+    "parts": [ {
+      "text": "I'd like to know more about the telus privacy center"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d5d05451-f19c-4888-970e-112754100f8f",
+    "parts": [ {
+      "text": "How does TELUS keep its customers safe?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aead96a7-6e6c-4f14-9dfa-7935a80f25eb",
+    "parts": [ {
+      "text": "Can i know more about the privacy code?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "74f527ba-af9d-4ec2-a620-c6729b9940ae",
+    "parts": [ {
+      "text": "Info on telus and its privacy policy"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b2ce33bb-72a7-491f-bf22-2933e11cb50d",
+    "parts": [ {
+      "text": "Does telus have access to internet browsing history?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8a64456f-26e8-455c-839c-0860530ff179",
+    "parts": [ {
+      "text": "Does telus keep data information from customers?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "65435608-9510-48f9-96f6-d81fb9a6e2ee",
+    "parts": [ {
+      "text": "What kind of data is collected from customers?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8847890f-589e-4093-ae91-8c61ccb067ec",
+    "parts": [ {
+      "text": "How does telus make sure to keep information confidential?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1f0afd23-3868-4049-9031-bd0dfe87770a",
+    "parts": [ {
+      "text": "can i know more about the business privacy policy?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "88c909c8-3a1c-4aea-9f8e-3ead26564d81",
+    "parts": [ {
+      "text": "Can i know more about customer privacy policy?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9f3192ca-f5d3-4733-b85c-994482341aad",
+    "parts": [ {
+      "text": "Can you put in contact with the privacy department?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6678f34c-8f05-4776-8f5f-e0d37ae7fdfb",
+    "parts": [ {
+      "text": "Is there a phone number i can call to talk to the privacy center department?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e55dff37-8c2e-4a33-b403-66cc387d56b9",
+    "parts": [ {
+      "text": "Is this conversation kept private?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "72f9ab43-c908-49ad-a150-ab7c23de1941",
+    "parts": [ {
+      "text": "How much data does TELUS collect on its customers?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dcf5b6d9-02a8-49bf-90b8-edb5ed870161",
+    "parts": [ {
+      "text": "how can i protect my privacy?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fdb75cd0-1a61-4ca7-bcf6-a20a3903d291",
+    "parts": [ {
+      "text": "protect privacy information"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "25a664de-85ce-406f-ba4b-f01b3c324c1a",
+    "parts": [ {
+      "text": "I'd like to protect my personal information"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5167b557-f1b3-435c-b96c-2346bcad8ff9",
+    "parts": [ {
+      "text": "can I get the notes off my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3392f35e-4129-42f1-87fd-c211f4fe1600",
+    "parts": [ {
+      "text": "i'm having privacy issues with my own cellphone and i don't know why"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

@@ -1,0 +1,507 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "J'ai voyagé dernièrement, mais je n'ai rien utilisé qui me causerait des frais d'itinérance. Pouvez-vous m'aider à comprendre?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai voyagé il y deux semaines, je n'ai rien utilisé qui me causerait des frais d'itinérance. Pouvez-vous m'expliquer?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ma facture de mobilité et l'itinérance sont facturées sur mon numéro de téléphone 250 888-0816, mais j'ai désactivé le cellulaire aux États-Unis et je n'ai passé aucun appel téléphonique sortant. La facture indique que j'ai fait 9 appels. Pourquoi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Si j'accède à la couverture de voyage pour les États-Unis le 17 juin, par exemple, pour appeler un taxi, suis-je facturé le tarif journalier de 12 dollars d'itinérance pour les jours où le service n'est pas utilisé?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourquoi j'ai été facturé des frais d'itinérance alors que j'avais configuré mon voyagez connecté avant d'entrer aux États-Unis?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai juste besoin de savoir si je suis en Alberta, je serai facturé des frais d'itinérance pour recevoir des appels ou si j'appelle quelqu'un d'autre qui est au Canada"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon mari et moi avons récemment fait un voyage de 16 jours en France et j'ai désactivé mon itinérance cellulaire pendant notre voyage pour ne pas être facturés pour l'itinérance pendant le voyage. Je vois maintenant qu'on nous a facturé 11 jours d'itinérance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Si je passe ou réponds à un appel depuis le Canada alors que je suis aux États-Unis, je veux juste confirmer si je serai juste facturé les douze dollars par jour ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai l'esprit tranquille avec le forfait américain et canadien, mais j'ai quand même été facturé pour l'utilisation de ma tablette aux États-Unis"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment Telus facture l'itinérance au Mexique?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Dites-moi simplement le tarif mensuel de votre forfait voyage, s'il vous plaît."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "aller aux États-Unis du lundi au vendredi, quel est le tarif journalier ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "donc dès que j'utilise mon téléphone aux États-Unis, il me facture automatiquement des frais d'itinérance par période d'utilisation de 24 heures, n'est-ce pas?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Nous étions dans le Michigan et j'ai dû payer des frais d'itinérance alors que mon téléphone était en mode avion"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je parlais justement à quelqu'un concernant les frais d'itinérance de mon compte. Je ne comprends pas et je suis très mécontent d'être facturé 240 dollars en frais d'itinérance lorsque nous avons désactivé nos données."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai reçu un avis m'informant que j'avais des frais d'itinérance. Lors de mon dernier voyage, j'ai eu une charge forfaitaire. Ma facture comprend des frais réguliers pour des choses comme les frais aux États-Unis et au Canada"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "En itinérance aux États-Unis, dois-je payer pour les appels entrants, les SMS, les messages photo et vidéo? Ou juste sortant?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux savoir ce que ça me coûterait en plus d'utiliser mon téléphone aux États-Unis"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je pars en Ecosse en décembre et j'aimerais prendre mon portable. Ce que je dois savoir, c'est que si j'utilise le Wi-Fi local, des frais Telus seront-ils impliqués?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien cela coûte-t-il d'appeler le pass Explorer Combo"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis en Italie en ce moment et si j'ouvre l'itinérance, serai-je automatiquement facturé 15 dollars par jour?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "voyage aux USA, quels sont les frais d'itinérance?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien serai-je facturé à l'international?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien coûte easy roam par jour?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "combien me coûtera l'itinérance facile?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "coût de voyagez connecté"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "combien me coûtera l'itinérance facile par jour?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien coûte l'itinérance?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "coût de l'itinérance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "combien coûte l'ajout d'un forfait d'itinérance internationale"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "frais d'itinérance"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "facturation de l'itinérance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "si je désactive l'itinérance, est-ce que c'est garanti d'arrêter les frais"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourquoi les deux téléphones qui sont sur ce plan sont-ils facturés avec les frais de 7,00 us ? seul le 518-759-6155 était utilisé lorsque nous étions aux États-Unis. Des courriels ont été reçus de telus, mais le téléphone n'a pas été utilisé."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Bonjour, je voulais contester mes frais d'itinérance aux États-Unis."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voyage aux États-Unis et j'ai appelé Telus avant de partir pour m'assurer que je n'aurais pas besoin de changer quoi que ce soit parce que je serais couvert. J'ai été facturé 13 dollars sur cette dernière facture. Pourquoi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis allé aux États-Unis le 15 avril, je n'ai pas utilisé mon portable pendant que j'y étais. J'ai été facturé les frais d'itinérance de 11 dollars. Sur ma facture, il a été facturé à 16 h 03, mais j'étais de retour au Canada à 1 h 16."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Bonjour, j'ai des questions concernant les frais d'itinérance sur mon compte."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pourquoi vous me facturez des frais voyagez connecté? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pourquoi j'ai des frais d'itinérance voyagez connecté aux États-Unis?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai acheté de nombreux forfaits de voyage pour aller au Mexique. Je viens de recevoir des textos de Telus me disant que je suis à 1100 dollars en frais d'itinérance. Même si j'ai acheté des forfaits de voyage. Veuillez examiner cela. Merci"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux savoir pourquoi on m'a facturé l'itinérance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "L'itinérance des données est désactivée, mais j'ai quand même été facturé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai été informé que je n'avais pas de couverture voyage à notre arrivée à la Barbade. En 10 minutes, j'avais accumulé 70 dollars de frais d'itinérance. Je ne m'y attendais pas pouvez vous m'aider"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Existe-t-il un moyen d'éviter les frais Voyagez connecté?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Donc, j'ai voyagé récemment mais je suis sûr que je n'ai rien utilisé qui me donnerait des frais d'itinérance, pouvez-vous m'aider?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai voyagé il n'y a pas longtemps, je n'ai pas utilisé l'itinérance et j'ai été facturé. Pourquoi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne pense pas qu'il devrait y avoir des frais d'itinérance sur ma facture, pouvez-vous m'expliquer pourquoi je les ai reçus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Vous voyez, j'ai voyagé il n'y a pas longtemps et je n'ai pas utilisé l'itinérance mais j'ai été facturé pour cela, pourriez-vous m'expliquer pourquoi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne pense pas que je devrais avoir des frais d'itinérance sur ma facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quels sont les frais d'itinérance facile?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Facturez-vous tous les jours pour une itinérance facile?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai voyagé récemment et je sais avec certitude que je n'ai pas utilisé l'itinérance. Pourquoi ai-je été facturé pour l'itinérance alors?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai voyagé le mois dernier, mais je suis certain que je n'ai rien utilisé qui me coûterait des frais d'itinérance. Pouvez-vous m'aider à comprendre?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Puis-je être facturé pour l'itinérance si vous recevez des appels d'un autre pays?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de comprendre comment je serai facturé lors de l'utilisation d'easyroam"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Puis-je voir le détail de la facture, mais seulement pour le moment où je voyageais?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "frais d'itinérance à l'international"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne comprends pas pourquoi je vois des frais d'itinérance sur ma facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous confirmer si j'ai été facturé pour l'itinérance le mois dernier?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous m'aider à comprendre ma dernière facture? Il y a des frais d'itinérance dessus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "expliquer comment fonctionnent les frais d'itinérance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment puis-je être facturé en voyage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "facture de voyage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Limite d'itinérance internationale"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment voyagez connecté apparaît-elle sur la facture "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "frais d'itinérance maximum"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "limite pour les frais de voyagez connecté"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "charge maximale pour voyagez connecté"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ai-je des frais pour l'itinérance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment fonctionne la facturation lorsque je suis en itinérance?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "puis-je vérifier mon utilisation en itinérance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ai-je été facturé pour l'itinérance ce mois-ci?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quels sont ces frais d'itinérance "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "facturation en voyage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "vérifier l'utilisation de voyagez connecté sur la facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Combien m'a-t-on facturé pour l'itinérance "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quels sont mes frais d'itinérance sur ma facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quels sont les frais d'itinérance sur ma facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourquoi ma facture indique-t-elle une utilisation en itinérance ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Vérifier mon utilisation de l'itinérance pendant les vacances le mois dernier"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "facturation en itinérance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment Telus facture-t-elle l'itinérance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment facturez-vous l'itinérance ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

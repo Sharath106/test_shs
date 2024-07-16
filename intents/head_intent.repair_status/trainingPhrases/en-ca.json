@@ -1,0 +1,374 @@
+{
+  "trainingPhrases": [ {
+    "id": "cba573c9-a213-4555-b73c-f709db8290e7",
+    "parts": [ {
+      "text": "How much more time until my phone gets fixed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7ce0e449-3525-4937-9da0-4d7fa48b6992",
+    "parts": [ {
+      "text": "I sent a tablet in 10 days ago for a repair, is it done yet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4c07b3d2-34b3-4e3e-973e-3ce87f81d113",
+    "parts": [ {
+      "text": "is my tablet fixed yet "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f407b6ad-de4e-40e7-aa58-dfcf35b0bfa4",
+    "parts": [ {
+      "text": "how many more days until my device is fixed?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "19fa7887-fb8e-4be7-94b9-aa65fa0b90ca",
+    "parts": [ {
+      "text": "Device repair status"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ab425523-834d-45df-9398-8c005e84af2a",
+    "parts": [ {
+      "text": "did you guys repair my cell yet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ac60554d-df54-4300-8558-6681981b6d40",
+    "parts": [ {
+      "text": "Is my android repaired yet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c675a0bc-7d0e-4e7b-a30d-231ab4fe7a75",
+    "parts": [ {
+      "text": "Is my iPhone repaired yet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5f6dd3ae-0ffd-44a4-9281-8e330f497ddb",
+    "parts": [ {
+      "text": "Can you confirm that my phone is repaired?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4a8653d7-c9cf-42d0-b2ff-c33c86e9c689",
+    "parts": [ {
+      "text": "Hi, I sent my phone in for a repair over a week ago and still haven't heard anything"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d3077bbe-dda5-491b-9bf9-5dfbeab90c54",
+    "parts": [ {
+      "text": "Repair status"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ab333343-75d8-416f-9b2f-d57c3077cd91",
+    "parts": [ {
+      "text": "Status of my repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "253d91f8-9256-423e-bf77-3a84079fdc56",
+    "parts": [ {
+      "text": "track a repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8b6f904f-fd78-4d0f-b0ad-199d29740634",
+    "parts": [ {
+      "text": "cack on repair for my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "692b35fe-208a-4ac2-bda2-76289b383c35",
+    "parts": [ {
+      "text": "update on my phone repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1255d5e8-f851-4a8c-a8d6-dbab843ada54",
+    "parts": [ {
+      "text": "can I know where the repair of my phone is"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f0832a81-803c-49db-878b-2f2a6b99b717",
+    "parts": [ {
+      "text": "where are you with repairing my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "01bd96b9-32dd-4435-9fca-f8ad92bc5b2c",
+    "parts": [ {
+      "text": "phone repair status"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4426c172-cd26-419a-9105-393c4b832ea2",
+    "parts": [ {
+      "text": "can I get a repair update"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "404516c8-54d3-4ec4-862a-2466d99ad5ac",
+    "parts": [ {
+      "text": "it's been a while, how much longer for my phone to be repaired?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d511baba-738e-41e5-ad17-865266abaa5a",
+    "parts": [ {
+      "text": "Hello, i was wondering if i can get an update on my device repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e013c786-1050-4734-9893-8702cba6d0bc",
+    "parts": [ {
+      "text": "check status of device repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e8f7af49-0794-43d1-9cf7-f55893c8cb98",
+    "parts": [ {
+      "text": "Can someone help me and check the status of my repair?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "80b023d4-9ea0-42bc-a303-6d1dd4666913",
+    "parts": [ {
+      "text": "Confirm status of device repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4781c37d-fbf9-40d2-a4b9-731371ea7336",
+    "parts": [ {
+      "text": "It's been 5 days how much longer for my repair?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bc3b2885-9e1c-4c56-8a90-08f7bd5f18b0",
+    "parts": [ {
+      "text": "where are we at with my repair?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9b9cec93-1442-405e-9528-477ecaa87175",
+    "parts": [ {
+      "text": "Repair status please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ed5fb476-2378-4c54-aea9-2ae2421b1aea",
+    "parts": [ {
+      "text": "Is there a number i can call to check the status on my repair?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "609afdb8-864a-4914-b33d-b9ea3f57fff9",
+    "parts": [ {
+      "text": "Can you get me in touch with someone from the repair department? I've been waiting too long for this repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db00965e-8f75-4a8a-87e9-c6c05632b410",
+    "parts": [ {
+      "text": "hi please check how much longer for my repair !"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b97d0b69-481a-45b2-ac28-d56c73ebd9ef",
+    "parts": [ {
+      "text": "Device for repair has been in for weeks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "de7d485f-5148-44fa-9fbb-7e9acb4dfb1d",
+    "parts": [ {
+      "text": "How much longer for the repair on my device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bc36483a-8e73-484c-bbcb-40c77d122387",
+    "parts": [ {
+      "text": "Is my device fixed yet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ead8c414-e631-4335-8d1a-4ed14f9c5314",
+    "parts": [ {
+      "text": "There's no way my phone isn't fixed yet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "56970662-2cee-4a0b-8af3-ba629622d63a",
+    "parts": [ {
+      "text": "Could you tell me if my tablet is fixed?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "978d8c01-e53b-45d8-86ac-ccc3fb818ac1",
+    "parts": [ {
+      "text": "When will my ipad be fixed?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "645bd665-7c75-43ad-ab55-0827823c575d",
+    "parts": [ {
+      "text": "Do you know when my device will be fixed?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "62441fa1-8f03-45fc-a32e-d6fde86472d2",
+    "parts": [ {
+      "text": "I'm checking to see how I can find out if my phone is fixed yet, I sent it in a week ago"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a354eed6-1f5a-4cf6-bf69-490001f45ac6",
+    "parts": [ {
+      "text": "I'm checking to see if my husbands phone is fixed, how can I find that out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d1e6216a-9bc2-48c3-867e-94495f254e19",
+    "parts": [ {
+      "text": "where do I go to see if my phone is ready to pick up? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f40a51f7-b517-488c-9f36-680f3ebff192",
+    "parts": [ {
+      "text": "is my phone fixed yet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fb7ba48f-769c-4866-84b3-77a201a9629b",
+    "parts": [ {
+      "text": "I just want to know if my phone is almost done getting fixed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c2c0bbb0-c07d-44db-a5d5-82b69d5e0124",
+    "parts": [ {
+      "text": "Has Telus repaired my phone? I haven't heard anything yet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eafe6f1f-b1e9-4fdb-80dd-0db0189ab871",
+    "parts": [ {
+      "text": "What's going on with my phone repair?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "51780def-b6db-4029-a507-d224360e08c6",
+    "parts": [ {
+      "text": "Is my phone repaired yet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "74cffd93-b664-4d23-b250-b1c6204a46b9",
+    "parts": [ {
+      "text": "Can you tell me if my phone is done being repaired?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ed6609aa-402e-450e-a52e-56552ce16944",
+    "parts": [ {
+      "text": "is my phone repaired already"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "21973dc9-0248-4e48-8deb-582c7a93677d",
+    "parts": [ {
+      "text": "What's the timeframe for my phone repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "29b4483c-20ba-45bd-a460-b57fccfc800c",
+    "parts": [ {
+      "text": "I haven't had any update on my phone repair, can you check?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5e718b20-7c7a-432e-ad1c-a7218fea2f3e",
+    "parts": [ {
+      "text": "I haven't heard about my phone repair status, what's going on?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c9613aa4-4f58-4790-a795-a1df65f24b6f",
+    "parts": [ {
+      "text": "i'm calling about my phone that had to get sent in for applecare"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "26204062-2e17-48a9-b431-56229ad0b745",
+    "parts": [ {
+      "text": "check repair status"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9dc9f59d-64ff-4e57-a07e-483cb9f8ffb8",
+    "parts": [ {
+      "text": "still waiting for a phone repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

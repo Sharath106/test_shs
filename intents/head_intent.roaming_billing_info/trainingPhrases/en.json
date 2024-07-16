@@ -1,0 +1,546 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "France",
+      "parameterId": "currency-name"
+    }, {
+      "text": " billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "going on a trip and I would like  information about the cost of having a cell phone out of country"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "calling to see roaming on the other line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Mexico statements"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "billing Spain"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how why with my roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "am I still being billed for roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do you bill for roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how does Telus bill for roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "roaming billing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Check my roaming usage during vacation last month"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why does my bill show roaming usage?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What are the roaming charges on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what are my roaming fees on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What was I charged for roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "check easy roam usage on bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "billing while travelling"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what is this charge for roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "was I billed for roaming this month?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can I check my roaming usage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How does billing work when I'm roaming?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do i have charges for roamimg"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "max charge for easy roam"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "cap for easy roam charges"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "max roaming charge"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how does easy roam show on the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "International roaming cap"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "travel bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i get billed while travelling"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "explain how roaming charges work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me understand my last bill? There are roaming fees on it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you confirm if i've been billed for roaming last month?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Don't understand why i see roaming charges on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "roaming fees internationally"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I see a bill breakdown but only for when I was traveling?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am trying to understand how I will be charged while using easyroam"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I be charged for roaming if you get calls from another country?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I travelled last month but I'm certain I didn't use anything that would get me roaming charges. Can you help me understand?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I travelled recently and I know for sure I didn't use roaming. Why was I charged for roaming then?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you charge everyday for easy roam?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What are the charges for easy roam?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "don't think I should have roaming charges on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "You see I travelled not long ago and I didn't use roaming but I got charged for it, could you please explain why?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't think there should be roaming charges on my bill, can you please explain why I got them?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I travelled not long ago, didn't use roaming and got charges. Why?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "So, I travelled recently but I'm sure I didn't use anything that would give me roaming charges, can you help me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there any way to prevent Easy Roam charges?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "We just arrived in Barbados and I always had travel plan coverage but when arrived I was notified I did not have coverage.  In 10 mins I had accumulated 70 dollars of roaming charges.  I was not expecting this can you help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Data Roaming is disabled but I was still charged"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to know why I  was charged us roaming instead of pay per use for 3 texts"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I bought numerous travel packages to go to Mexico. I just got some texts from Telus saying I am at 1100 dollars in roaming charges. Even though I have bought travel packages. Please look into this. Thanks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "On my recent bill I have been charged for US roaming and Easy roam when i entered the US, I got a message to join the US roaming service for 20 dollars which I agreed to. I thought that this would prevent me from charges. I don't understand. What should I do when I go to the US?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to confirm Roaming Charges. When this plan was started I was on US Canada  phone and Text and US Roaming  Now Sue is travelling and we are getting text message for excessive roaming charges. What is going on!?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hi, i have questions about roaming charges on my account. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I went to US on April 15th, I did not use my cell while I was there. i got charged the 11 dollar roaming fee. On my bill it charged at 4.03 pm but I was back in Canada by 1:16"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm travelling in the USA \u0026 I called Telus before I left to make sure I wouldn't have the problem I'm having now. They assured me I didn't need to change anything about my plan because I'd be covered. I was charged 13 on this past bill and i'm super upset about it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Good morning, I wanted to contest my US roaming charges. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why have both of the phones that are on this plan being charged with the 7.00 us fee?  only 518-759-6155 was used when we were in the states. Emails were received from telus, but the phone was not used."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "if I disable roaming, is that guaranteed to stop the charges"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Quick question.  When you are in the U.S. are texts from IPhone to IPhone in Canada still charged as roaming when I am on a wifi account in the U.S.?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "roaming charges"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "roaming costs"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how much is it to add an international roaming plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "cost of roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How much does roaming cost?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how much will easy roam cost me a day?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "easy roam cost"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how much will easy roam cost me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How much is easy roam per day?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how much will I be charged internationally?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "travelling to the USA, what are the roaming charges?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am in Italy right now and if I open roaming, will I be charged 15 dollars per day automatically?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How much does it cost to call on Explorer Combo pass"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am going to Scotland in Dec and I'd like to take my cell. The thing I need to know is if I use local WIFI, will then any Telus fees be involved?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to know what extra it would cost me to use my phone in the US"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "While roaming in the US, do I have to pay for incoming calls, texts, picture and video messaging? Or just outgoing?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am enquiring about my service while I am in the United States. I received a notice that advised that I have roaming charges. I am confused. On my last trip I had a flat fee charge. My bill includes a regular fee for things like US and Canada charges"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was just speaking to someone regarding my account charges for roaming. I am not understanding and am very unhappy to be charged 240 dollars in roaming charges when we turned our data off."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "We were in michigan at my daughters and I was charged roaming charges.  I always have my phone on airplane mode till i get there than i hook into their wifi.  Why am I being charged roaming charges.  While I was there my phone never left the house"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "so as soon as I use my phone in the US it automatically charges me a roaming fee per the 24 hour period of use, right?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "going to the United States on Monday till Friday, what's the daily rate?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just tell me the monthly rate for your travel plan, please."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I just got notification of my mobility bill. There is a charge of 196 dollars for roaming. I was in Mexico and it said that roaming charges would only happen when I texted or called out or when I used Data."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have peace of mind us and Canada plan, but I still got charged for my tablet usage in US"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "If I make or answer a call from Canada while in US, just want to confirm if I will just be charge the twelve dollars a day ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have questions about my roaming. My husband and I recently went on a 16 day trip to france and I purposefully turned off my cellular roaming for the majority of our trip so that we both didn't get charged for roaming while travelling. I now see we got charged 11 days of roaming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I just need to know if I'm in Alberta I will be charged for receiving calls or if I call someone else who is in canada"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I got a text saying I was being charged roaming cost and I was confused because I set my EASY roam before entering the states so I don't know why it wasn't active. I also had no service for the first two hours upon entering so I didn't receive any text"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "If I access the travel coverage for the US on say June 17 to phone a cab or check email, and then don't use it again until maybe June 20, am I charged the daily fee of 12 for the days the service is not used?  return to canada would be June 26"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I got my mobility bill and I have roaming charged on my phone number of 250 888-0816 but I disabled cellular while in the US and have made no outgoing phone calls. Bill says I made 9 calls. What is going on?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "d9ea6306-216f-41cf-a59a-73ca4b36433b",
+  "displayName": "head_intent.role_access",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "account"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer wants to know what account owner, manager, or member do for an online account (informational only; managing users falls under account_authorization).",
+  "numTrainingPhrases": 88
+}

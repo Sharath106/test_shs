@@ -1,0 +1,27 @@
+{
+  "name": "55f6e0d8-99ec-4db5-a3c3-5f8c585610d4",
+  "displayName": "head_intent.roaming_billing_info",
+  "parameters": [ {
+    "id": "currency-name",
+    "entityType": "@sys.currency-name"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Billing while roaming information",
+  "numTrainingPhrases": 257
+}

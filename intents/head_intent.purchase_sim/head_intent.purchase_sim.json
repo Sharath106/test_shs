@@ -1,0 +1,28 @@
+{
+  "name": "8833e365-ae65-47c4-b1c2-3be59d5cd1b2",
+  "displayName": "head_intent.purchase_sim",
+  "parameters": [ {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "How to purchase a new SIM card",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 113
+}

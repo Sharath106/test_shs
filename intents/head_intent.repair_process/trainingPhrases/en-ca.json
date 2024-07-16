@@ -1,0 +1,549 @@
+{
+  "trainingPhrases": [ {
+    "id": "29f92c40-cbc5-49ea-ad74-f57ab11b7523",
+    "parts": [ {
+      "text": "repair help"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0fc8ae5d-82b5-4fc8-bf65-1dd4b1538c2c",
+    "parts": [ {
+      "text": "i need repair service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "42822509-d183-4873-a19e-4741e354535d",
+    "parts": [ {
+      "text": "repair support"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "38102848-a330-48bb-bbd4-19b2df5dc050",
+    "parts": [ {
+      "text": "my phone needs fixing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "29da90eb-701c-4ed0-9895-1ee5fbb370c3",
+    "parts": [ {
+      "text": "Can I  speak to somebody need to fix my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "99858aa0-329f-4f30-83f9-0f247c629e74",
+    "parts": [ {
+      "text": "so i was wondering if you could fix our phone it got broken "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aaaa66dd-2481-4d72-b5af-c327e7ec6007",
+    "parts": [ {
+      "text": "need my phone fixed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "281a7d8c-437d-4d69-8f2a-ab852aeaab43",
+    "parts": [ {
+      "text": "I need a phone replacement my phone broke"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "18d5f68c-eb4a-457c-a3e5-682266550cc0",
+    "parts": [ {
+      "text": "can I give my mobile in for repair and get a replacement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3386f46-0b1d-4f44-933f-d7d3b0de4d8c",
+    "parts": [ {
+      "text": "I broke my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6333c7a1-5f3c-4b02-be1e-72d760bb0744",
+    "parts": [ {
+      "text": "i broke a phone and i have a two year plan and i need it fixed or get a replacement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "97b9e81d-3036-4404-b9b3-0e142d178cbc",
+    "parts": [ {
+      "text": "I was wondering if i could get telus to repair our phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7a1bd14c-3dd1-4dc7-846c-03906f76321f",
+    "parts": [ {
+      "text": "could I get the number for telus repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5d02508a-79c7-40a6-ae1b-9b1525ba04d3",
+    "parts": [ {
+      "text": "maintenance repair request"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fcd3f1bc-d654-47ad-bfeb-624d3f94c820",
+    "parts": [ {
+      "text": "a technical repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f4653422-f738-4f9d-8983-8b07393e2f7d",
+    "parts": [ {
+      "text": "repair or install"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ea48550e-1532-43c4-b007-f4ca840aa0b3",
+    "parts": [ {
+      "text": "with repairs"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6a5a87fd-28c4-4430-a951-1468c8bb9140",
+    "parts": [ {
+      "text": "repair i guess"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d5f57106-3023-478a-9861-da61eb7093ce",
+    "parts": [ {
+      "text": "customer service repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aeda6803-9de0-4ca7-988d-97843d49e7cf",
+    "parts": [ {
+      "text": "it's not working repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f2f04116-1606-4bfc-9fb3-157e8a12652d",
+    "parts": [ {
+      "text": "repair our service service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "43b0f41e-0746-4c72-93ac-46b1c45ce8ec",
+    "parts": [ {
+      "text": "repair repair repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4e05e63e-a4a6-40b9-8504-badc1adfa146",
+    "parts": [ {
+      "text": "service repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e44d0607-7266-4427-8b80-1cee1289faa0",
+    "parts": [ {
+      "text": "repair yes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8fbc5460-a16c-4781-96e2-f37f1407cf7a",
+    "parts": [ {
+      "text": "parts repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b48a5b57-1725-477a-9e45-8ced05c0986a",
+    "parts": [ {
+      "text": "i want to repair and maybe get it shut off"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6a560cd3-8533-4091-b55d-f31803bff96b",
+    "parts": [ {
+      "text": "repair repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6372a315-9f4b-4e14-82a1-d69f00d18c35",
+    "parts": [ {
+      "text": "technical repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fd0bb7a2-d993-4e85-bff1-34105bc98a48",
+    "parts": [ {
+      "text": "i need technical support phone broken"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a0746884-c28a-4ed7-87f9-890e7259963a",
+    "parts": [ {
+      "text": "repair phone line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7c4762c9-46e9-4841-b1ff-c99932443e6f",
+    "parts": [ {
+      "text": "fix telephone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d4de0ffa-109b-49e1-b236-823afa412a95",
+    "parts": [ {
+      "text": "the line is dead"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "077e6688-1fe2-4b14-b672-526a17bbbd27",
+    "parts": [ {
+      "text": "i need a phone repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3c275d60-cd1c-4ccc-8a88-212741f48bb5",
+    "parts": [ {
+      "text": "broken cellphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "77c5c395-9ed8-413b-8adf-4e0dc9fafad4",
+    "parts": [ {
+      "text": "cracked iphone screen"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "343f4ca1-248a-40d6-957c-5f359980c03c",
+    "parts": [ {
+      "text": "cracked screen"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7fb12a5e-d4f0-49a5-a903-4b66c8733507",
+    "parts": [ {
+      "text": "i have a broken phone and i need a new one"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3f5808ed-5083-4bc5-8a1d-37dadbccc6b5",
+    "parts": [ {
+      "text": "broke my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "77bbf664-69aa-4a7f-b052-db93af2b4998",
+    "parts": [ {
+      "text": "broken screen"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8afbfea2-e82b-4011-97db-e5d4a0e92619",
+    "parts": [ {
+      "text": "iphone destroyed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bfb38961-e259-4c49-9adf-982f5df8bbed",
+    "parts": [ {
+      "text": "my phones that i keep getting come broken"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "462e37bc-b931-435f-a09b-e933aacb5af9",
+    "parts": [ {
+      "text": "telephone broke"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "34eb7f33-f2a9-493c-80ce-90fb28a034e3",
+    "parts": [ {
+      "text": "damage on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1cbbe001-4a0c-49f2-babe-33be67b90f40",
+    "parts": [ {
+      "text": "no repair service is what we need for our phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "16d99448-7a4f-4678-9cd7-3f60a6b8b5d7",
+    "parts": [ {
+      "text": "i am in need of a telephone repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8e335a06-c65a-44d1-8c67-5e1e5371c366",
+    "parts": [ {
+      "text": "repair phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8d76b611-1f61-45b8-ba80-e4ae3001d911",
+    "parts": [ {
+      "text": "phone needs repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b8e3cd39-f3ff-4347-b022-1185cba5da9f",
+    "parts": [ {
+      "text": "repairs telephone repairs"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a5ce9fa0-ad16-4318-bb7e-7a63598195db",
+    "parts": [ {
+      "text": "i need my phone repaired"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2dd1ec4a-9ba1-4b74-a8e3-41b751aae8f0",
+    "parts": [ {
+      "text": "damage claims"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "37edf9f5-3f68-4407-90ee-d54177faed3e",
+    "parts": [ {
+      "text": "repair my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "100cfa34-805a-4f8e-aeec-b697d37e19e2",
+    "parts": [ {
+      "text": "telephone repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5be16584-16fb-4313-9047-387f401ea39f",
+    "parts": [ {
+      "text": "phone repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "91017fcc-f6b1-42d0-8d1c-29ea64a2b26a",
+    "parts": [ {
+      "text": "technical repairs"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8d0db7db-1fc6-404f-87b3-efc28c9af39f",
+    "parts": [ {
+      "text": "repairs and maintenance"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "73d3bc6a-19d2-41cc-8385-560fa2f6a481",
+    "parts": [ {
+      "text": "support and repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2cdf20b8-9e74-4500-8a79-50de090284c3",
+    "parts": [ {
+      "text": "hi i need repair please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cc298d99-7ae1-4570-8e12-1610cadb79a3",
+    "parts": [ {
+      "text": "repair please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ed325edc-7861-4e5e-9935-2e0550751e83",
+    "parts": [ {
+      "text": "i need to talk to somebody repairs please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4b2f0c63-0dae-4eca-a5df-292bd8a6a285",
+    "parts": [ {
+      "text": "re repair service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "202109d6-ebfc-456b-82a7-99ac762c8ba9",
+    "parts": [ {
+      "text": "we need repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8d2eac80-7dac-4dfa-94a8-155e7233bee5",
+    "parts": [ {
+      "text": "center repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dd09afb0-7684-4d68-b2be-6722e95c750b",
+    "parts": [ {
+      "text": "repairs technical support"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "27afd34c-712c-4d3a-935a-8a884adca4ae",
+    "parts": [ {
+      "text": "screen replacement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "45072330-e45d-4fd8-b5e6-83b4441f83a8",
+    "parts": [ {
+      "text": "repair call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "57b1fe36-2133-470f-adbb-ebe93ca241b3",
+    "parts": [ {
+      "text": "repairs needed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "87d4d3bf-5c0e-4482-ba71-99245c8b1b17",
+    "parts": [ {
+      "text": "telus repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d5d45b97-27ce-421d-83d4-ad3d10a413d0",
+    "parts": [ {
+      "text": "please get me in contact with an repair person"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6575bd8a-74e4-447d-887b-e6765c92ad50",
+    "parts": [ {
+      "text": "i need service repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "85bf69e9-aaf9-4028-b996-65abac216a5e",
+    "parts": [ {
+      "text": "need service repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3e1b5be2-36b9-4518-b691-a478c4efc228",
+    "parts": [ {
+      "text": "maintenance repairs"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "11574ced-dd4c-4ef6-95ba-f617fac1bb2a",
+    "parts": [ {
+      "text": "screen repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fc6caaac-1f1c-429c-960b-f87b10e69ad3",
+    "parts": [ {
+      "text": "repair agent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a23bd9fb-1a8b-423b-b214-64bb922c8ce5",
+    "parts": [ {
+      "text": "for repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f4bc45c8-d927-409e-be1a-369bd16f11dd",
+    "parts": [ {
+      "text": "a repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5dc67af4-a457-409e-afbc-307ec3ab77ed",
+    "parts": [ {
+      "text": "repair service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5fadee85-91af-4d84-a883-2fc49e37c4bd",
+    "parts": [ {
+      "text": "repairs"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5fbf5bee-4366-4cfb-bc9a-f4c099faf4f6",
+    "parts": [ {
+      "text": "repair"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

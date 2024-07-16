@@ -1,0 +1,417 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "J'ai sélectionné le plan facile de base mais je ne peux pas l'ajouter au panier"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essayais juste de mettre à niveau mon plan en ligne, mais je vois juste une roue de chargement qui tourne."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Salut. Je suis en train de passer une commande AVPA pour un plan Sans tracas. Lorsque j'ai cliqué sur Ajouter au panier, un avertissement est apparu sous le bouton Ajouter au panier disant \"On dirait que nous avons rencontré un problème\"..."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Bonjour, j'ai un problème pour acheter un plan via le site Web. J'obtiens le message suivant: \"Votre province doit correspondre à celle associée à votre navigateur\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Salut, j'essaie juste de mettre à jour mon plan, mais cela ne me permet pas d'ajouter au panier, ai-je fais quelque chose de mal ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Salut, j'essaie de m'inscrire au plan sans tracas avec un code promotionnel et j'obtiens une erreur. Pouvez-vous aider ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ouais. J'essaie de m'inscrire en ligne au plan de partage mais il n'accepte pas mon adresse dans le champ d'adresse"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai sélectionné mon forfait, mais le site Web ne me permet pas de passer à la caisse."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai un numéro et un forfait de la SK, mais je vis au NL et, cela ne me permet pas de le faire en ligne. Y a-t-il un moyen de contourner ceci?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souhaite acheter un forfait téléphonique pour mon fils au Canada, mais votre site Web indique que l'adresse de facturation doit être la même que l'adresse de livraison. Pouvez-vous aider?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essayais de renouveler mon forfait avec l'offre dont j'ai été informé, mais je reçois toujours une erreur lorsque je passe à la caisse"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de commander un nouveau forfait et il ne me laisse pas payer."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je viens de mettre un nouveau forfait à acheter et il n'apparaît nulle part."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Bonjour. Je n'arrive pas à ajouter un forfait AVPA au panier. Le message d'erreur est On dirait que quelque chose ne va pas."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de modifier mon forfait téléphonique J'ai un message d'erreur indiquant que quelque chose ne va pas. Je ne sais pas ce qui ne va pas."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai choisi mon forfait, mais je ne vois pas de bouton Ajouter au panier."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai essayé de passer une commande sur mytelus pour changer mon forfait mobile mais j'obtiens toujours des erreurs"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de mettre à niveau mon forfait, mais la page de destination prend un certain temps à télécharger. ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie d'acheter deux forfaits, mais lorsque j'appuie sur Ajouter au panier, cela indique que quelque chose s'est mal passé."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie d'acheter un forfait, j'ai mon propre téléphone, pour une raison quelconque, il ne me laisse pas entrer mon adresse"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne peux pas ajouter "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau forfait à mon panier. Je"
+    }, {
+      "text": " reçois juste "
+    }, {
+      "text": "une"
+    }, {
+      "text": " roue verte qui finit par expirer. J'ai le même problème avec différents navigateurs et sur différents ordinateurs."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais changer mon forfait, mais à cause d'un problème quelconque, je ne suis pas capable de le faire. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais changer mon forfait, mais à cause d'une erreur quelconque, je ne peux pas le changer."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Le changement de forfait échoue à toutes les fois que j'essaie"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "changement de forfait qui échoue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Le changement de forfait échoue à chaque fois que j'essaie de le faire"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je croyais que changer mon forfait serait très simple mais ce n'est vraiment pas le cas. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je pensais que changer mon forfait serait beaucoup plus simple que cela"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème avec modification de forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de faire la modification de mon forfait mais je n'en vois aucun en ligne!?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai des problèmes avec la modification de mon forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voudrais passer à un autre forfait, mais il y a une erreur qui m'empêche de le faire."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais changer de forfait mais j'ai des difficultés à le faire."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de passer à un autre forfait mais je suis incapable de le faire par moi-même. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais passer à un meilleur forfait, mais j'ai une erreur qui m'empêche de le faire en ligne."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce qu'il y a une raison pour ces problèmes de changement de forfait ou est-ce juste de la malchance?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Quelle est la raison pour ces problèmes de changement de forfait?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Y a-t-il une raison pour ce problème de changement de forfait??"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pas capable de changer mon plan tarifaire. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis incapable d'effectuer un changement de forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai vraiment de la misère à changer de forfait, pouvez-vous m'aider? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai essayé à plusieurs reprise de changer mon forfait en ligne, mais ça marche jamais!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis incapable de changer mon forfait de mobile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je tente de changer mon plan de cell, mais je n'y arrive pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Peux-tu me dire comment faire pour modifier mon plan, ça ne fonctionne pas!!!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire pour changer mon plan de téléphone, ça ne fonctionne pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'arrive pas à changer de plan pour mon cell"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai du trouble à modifier le prix de mon nouveau forfait."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne suis pas capable de changer mon forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "incapable de faire un changement de forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux changer mon forfait mais j'ai une erreur"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis les instructions pour changer de plan et ça ne marche pas."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment faire pour changer pour un nouveau forfait?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Incapable de changer pour un nouveau forfait..."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ceci n'est pas le bon. C'est un nouveau forfait que je veux, aidez-moi, je suis incapable de le faire."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Le nouveau forfait que j'essaie de choisir ne s'applique pas et je ne comprends pas comment faire."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Nous avons des difficultés lors du changement de forfait."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Changements de plan tarifaire impossible"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai du trouble pour changer mon forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Changement forfaitaire difficile"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Incapable de changer de plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Changement du forfait problématique"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Troubles lors du changement de forfait."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pas capable de changer mon forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ça ne me laisse pas apporter des changements au forfait."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai de la misère à changer de forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Incapable de changer mon forfait."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

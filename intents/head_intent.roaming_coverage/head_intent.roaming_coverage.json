@@ -1,0 +1,28 @@
+{
+  "name": "a0450d90-7564-4ea5-9835-77114fc086f1",
+  "displayName": "head_intent.roaming_coverage",
+  "parameters": [ {
+    "id": "country",
+    "entityType": "@country"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Coverage map for roaming",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 131
+}

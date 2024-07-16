@@ -1,0 +1,18 @@
+{
+  "name": "dd4cec2a-39d8-4c65-b3db-46e011d43495",
+  "displayName": "head_intent.preauthorized_payment_update",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "payments"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer inquiring about updating preauthorized payments (update of new credit card, expiry date and cvv)\n\n",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 450
+}

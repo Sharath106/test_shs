@@ -1,0 +1,423 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "i'd like to know what role i have as an account owner",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i add a user as an account member?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what's the difference between account member and manager?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i make changes as an account member?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "account access as a member",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What changes can i make as an account member?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What can an account member do?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do i have to be the account manager to make a change?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "account access types",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What changes can users make on the account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can account owner add someone to account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like know who on my account can add another member"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What changes can account users make on the account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Who is authorized to make changes on the account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "is it only the account manager that can make account changes?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what account users can make changes"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Who has access to make changes to the account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can account owner manage users on account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do I have access to make account changes?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what changes can I make as account owner"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do I have the authorization to modify information on the account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "As one of the account managers, what kind of modifications can I make?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What can I do if I am one of the owners of the account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Are account owners the only people who can make changes on the account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What is my actual role on the account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What are the responsibilities of the manager on the account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to manage role access?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't understand why my account would need a manager."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what does a "
+    }, {
+      "text": "manager on"
+    }, {
+      "text": " the "
+    }, {
+      "text": "my telus account"
+    }, {
+      "text": " do"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i "
+    }, {
+      "text": "want to change my"
+    }, {
+      "text": " "
+    }, {
+      "text": "plan"
+    }, {
+      "text": " but it says i am a "
+    }, {
+      "text": "member"
+    }, {
+      "text": ", what does this "
+    }, {
+      "text": "mean"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am a member on my parents telus account. Can i change my plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what is the difference between the account owner, manager or member"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you tell me what i can do on an account if i am a manager"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am a "
+    }, {
+      "text": "member on"
+    }, {
+      "text": " my parents "
+    }, {
+      "text": "telus account"
+    }, {
+      "text": ", what "
+    }, {
+      "text": "can"
+    }, {
+      "text": " I do"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what "
+    }, {
+      "text": "can"
+    }, {
+      "text": " an "
+    }, {
+      "text": "account"
+    }, {
+      "text": " "
+    }, {
+      "text": "member"
+    }, {
+      "text": " do"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what is the difference between an account owner and a manager"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wanting to "
+    }, {
+      "text": "know"
+    }, {
+      "text": " what a "
+    }, {
+      "text": "member"
+    }, {
+      "text": " "
+    }, {
+      "text": "profile"
+    }, {
+      "text": " is"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you tell me what a member profile is"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wanting to "
+    }, {
+      "text": "know"
+    }, {
+      "text": " what different access I "
+    }, {
+      "text": "can"
+    }, {
+      "text": " give for "
+    }, {
+      "text": "my telus account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "if i give access to "
+    }, {
+      "text": "my telus account"
+    }, {
+      "text": " to my "
+    }, {
+      "text": "friend"
+    }, {
+      "text": " what "
+    }, {
+      "text": "can"
+    }, {
+      "text": " they do with it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wondering what role does an owner have on my telus account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can"
+    }, {
+      "text": " you tell me what access a "
+    }, {
+      "text": "manager on"
+    }, {
+      "text": " "
+    }, {
+      "text": "my account"
+    }, {
+      "text": " "
+    }, {
+      "text": "has"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what access does a member profile have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Explain user role access"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How "
+    }, {
+      "text": "many"
+    }, {
+      "text": " type of "
+    }, {
+      "text": "account"
+    }, {
+      "text": " roles"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what access do i have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what kind"
+    }, {
+      "text": " of access for a "
+    }, {
+      "text": "member"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What does an "
+    }, {
+      "text": "owner"
+    }, {
+      "text": " have access to"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What access does a manager have?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Types of "
+    }, {
+      "text": "account"
+    }, {
+      "text": " access"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

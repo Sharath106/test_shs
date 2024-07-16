@@ -1,0 +1,25 @@
+{
+  "name": "5a0cb044-4581-46bf-aa66-17fbb8b6e42e",
+  "displayName": "head_intent.remove_email_from_phone",
+  "parameters": [ {
+    "id": "iphone_vs_android",
+    "entityType": "@iphone-vs-android"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "remove email from phone",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 136
+}

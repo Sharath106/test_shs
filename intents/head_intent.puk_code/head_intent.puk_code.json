@@ -1,0 +1,30 @@
+{
+  "name": "16c33f2c-87d0-49e0-82e9-2f29a03b2223",
+  "displayName": "head_intent.puk_code",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "SIM card locked and asking for PUK code",
+  "asrCorrections": [ {
+    "errorPhrase": "stock",
+    "correctionPhrase": "puk"
+  }, {
+    "errorPhrase": "pack",
+    "correctionPhrase": "puk"
+  } ],
+  "numTrainingPhrases": 181
+}
