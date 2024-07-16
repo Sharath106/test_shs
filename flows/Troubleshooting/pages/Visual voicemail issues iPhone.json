@@ -1,0 +1,366 @@
+{
+  "name": "62b16b86-62bf-4d23-b666-950ecefdfdaa",
+  "displayName": "Visual voicemail issues iPhone",
+  "form": {
+    "parameters": [ {
+      "displayName": "iphone_vs_android",
+      "required": true,
+      "entityType": "@iphone-vs-android",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "To confirm, are you having these issues on an iPhone?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Juste pour confirmer, avez-vous des problèmes avec la messagerie vocale visuelle sur un appareil iPhone?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you using an iPhone?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous un appareil iPhone?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "eff23920-da8e-47a5-904c-2606cb512d5c"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have an iPhone, say yes or press 1 otherwise say no or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites oui ou faites le 1, sinon dites non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "4c52382a-7850-4913-a85a-603a17f75125"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "577e23e0-d8f1-4522-9e96-f0a1d04e043a"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that. ", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you using an iPhone?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous un appareil iPhone?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "69ef63ee-fafc-4ad8-819c-65a4e9876dd2"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have an iPhone, say yes or press 1. No or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites oui ou faites le 1. Non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "589b34d8-5c80-49e6-ae71-2ba25aac9318"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "66fb93a3-43c2-4bb8-b00f-c1d08fa0c7a4"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Visual voicemail issues iPhone"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "vvmissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "VVM iPhone troubleshooting",
+    "name": "e6764440-c2d1-4808-b9f9-afcced80ca7e"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "vvmissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "Visual voicemail issues Android",
+    "name": "e33ce985-ba5b-46bf-abc0-e5d6c71d741a"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "vvmissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "2f6a0e6a-3e4b-4bb4-9854-61d618904c57"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "vvmissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "VVM iPhone troubleshooting",
+    "name": "05fd7488-2409-442c-8f36-6ee3805e638a"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "vvmissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Visual voicemail issues Android",
+    "name": "01bca7f6-c962-4757-b122-d530d8a0a539"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"android\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Reset the network settings on your android to refresh your network connections.\n\nIn Settings, under System or General management, you may need to select Advanced, then Reset.\nAfter that, Select Reset network settings or Reset Wi-Fi, mobile \u0026 Bluetooth, and enter your password if required." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Confirm the reset, and reboot your device once completed." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Réinitialisez vos paramètres réseau sur votre Android pour actualiser vos connexions réseau.\n\nDans vos paramètres, sélectionnez Système ou Gestion générale et vous devrez peut-être sélectionner Avancé, puis Réinitialiser.\nEnsuite, sélectionnez Réinitialiser les paramètres réseau ou Réinitialiser Wi-Fi, mobile et Bluetooth, et saisissez votre mot de passe si nécessaire." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Confirmez la réinitialisation et redémarrez votre appareil une fois terminé." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "vvmissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "0e5feeeb-613d-49b2-ab59-5654d28ea0d7"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I'm happy to get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Certainement, je peux vous transférer à un membre de l’equipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "2f537287-0174-4e0c-8c41-ec27f2404187"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"9\" AND $session.params.dtmf_9 = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Can you please be more specific." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous être plus précis?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "dtmf_9",
+        "value": "1"
+      } ]
+    },
+    "name": "ea4fae19-f419-4111-8e6b-ce420ff186b8"
+  }, {
+    "condition": "$session.params.dtmf_9 = \"1\" AND $session.params.iphone_vs_android = \"9\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me get you to a team member for help." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Certainement, je peux vous transférer à un membre de l’equipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "11ea5cbf-d7bc-43e9-bd0c-27795aee559a"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "vvmissues_retrycnt",
+        "value": "$sys.func.ADD($session.params.vvmissues_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.vvmissues_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.vvmissues_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "88c069e9-c953-4e18-9a25-e107c5cddf4e"
+  } ],
+  "transitionRouteGroups": [ "troubleshooting_answers" ]
+}

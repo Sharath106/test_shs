@@ -1,0 +1,117 @@
+{
+  "name": "4d89b34f-e743-4870-bad7-dc07aa89cf84",
+  "displayName": "Phone will not charge",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Phone will not charge"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Voyons pourquoi votre téléphone ne charge pas." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour vérifier si votre port de charge ne fonctionne pas, la première chose à faire est de s'assurer que ce n'est pas le câble." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si un autre câble ne fonctionne pas, je suggérerais d'examiner les options de réparation dans ce cas." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Let's see why your phone isn't charging." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To check if your charging port is not working, first, try another cable and see if that helps." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If the other cable doesn't work, I would suggest looking into further repair options." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour résoudre les problèmes de charge, commencez par tester un autre câble pour voir si le port de charge est défectueux." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si le câble de remplacement ne fonctionne pas, envisagez de rechercher d'autres options de réparation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To troubleshoot charging issues, start by testing another cable to see if the charging port is faulty. If the alternate cable doesn't work, consider seeking additional repair options." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si votre téléphone ne se charge pas, commencez par tester un autre câble pour déterminer si le port de charge est défectueux." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si le câble alternatif ne résout pas le problème, explorez d'autres alternatives de réparation." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If your phone won't charge, begin by testing a different cable to determine if the charging port is defective. If the alternative cable fails to resolve the issue, explore other repair alternatives." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "ba8521d9-ef26-4af9-9843-f1ed65588409"
+  } ]
+}

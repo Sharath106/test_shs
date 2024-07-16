@@ -1,0 +1,362 @@
+{
+  "name": "10c788af-e98a-464a-b5d7-b219ae6e11a4",
+  "displayName": "Stream and Issues",
+  "form": {
+    "parameters": [ {
+      "displayName": "streamplus_troubleshooting",
+      "required": true,
+      "entityType": "@streamplus-troubleshooting",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "$session.params.streamplusissues_retrycnt = null OR $session.params.streamplusissues_retrycnt = 0",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "I'm sorry to hear you are having problems with your Stream+." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Are you having issues with registering for My TELUS, or logging into My TELUS, or activating Stream+ services?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.streamplusissues_retrycnt = 1",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Are you having issues with registering for My TELUS, or logging into My TELUS, or activating Stream+ services?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.streamplusissues_retrycnt = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "For more information, say registration, or press 1, logging in, or press 2, activating, or press 3, other issues, or press 4." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          }, {
+            "cases": [ {
+              "condition": "$session.params.streamplusissues_retrycnt = null OR $session.params.streamplusissues_retrycnt = 0",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Je suis désolé d'apprendre que vous rencontrez des problèmes avec EnContinu+." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Rencontrez-vous des problèmes lors de l'inscription de Mon TELUS, la connection de Mon TELUS, ou l'activation des services EnContinu+ ?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.streamplusissues_retrycnt = 1",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Rencontrez-vous des problèmes lors de l'inscription de Mon TELUS, la connection de Mon TELUS, ou l'activation des services EnContinu+ ?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.streamplusissues_retrycnt = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour plus d'informations, dites inscription, ou faites le 1. Connexion, ou faites le 2. Activation de Encontinue+, ou faites le 3. Pour tout autre problème, dites autre chose, ou faites le 4." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Je ne crois pas avoir bien saisi.", "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Est-ce que le problème est avec de l'inscription à Mon TELUS, la connection à Mon TELUS, ou l'activation des services EnContinu+." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you having issues with registering for My TELUS, or logging into My TELUS or activating Stream+ services?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "26c0503c-dcc0-4af0-94c3-414f54c83b4d"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je n'ai toujours pas saisi. Pour plus d'informations, dites inscription, ou faites le 1. Connexion, ou faites le 2. Activation de Encontinue+, ou faites le 3. Pour tout autre problème, dites autre chose, ou faites le 4." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For more information, say registration, or press 1, logging in, or press 2, activating, or press 3, other issues, or press 4." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "96816f43-a62e-43ed-8418-0986bc8edbd9"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "dcf4c10d-3f26-48f6-a2f0-9a4eb2bf9c46"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir entendu." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Est-ce que le problème est avec de l'inscription à Mon TELUS, la connection à Mon TELUS, ou l'activation des services EnContinu+." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Are you having issues with registering for My TELUS, or logging into My TELUS or activating Stream+ services?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "25443de5-0e3d-4e80-abb1-fcbefef21594"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je n'ai toujours pas saisi. Pour plus d'informations, dites inscription, ou faites le 1. Connexion, ou faites le 2. Activation de Encontinue+, ou faites le 3. Pour tout autre problème, dites autre chose, ou faites le 4." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For more information, say registration, or press 1, logging in, or press 2, activating, or press 3, other issues, or press 4." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "1722aa4d-ec69-4c71-aab2-80361eaf2a57"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "a7761db0-4ecf-4580-8130-f5d2ee8471c7"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Stream and Issues"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "streamplusissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "streamplus_troubleshoot",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "28505402-b080-48ca-8bfc-ff9a6b45b3d3"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "streamplus_troubleshoot",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "7e7a73ca-74f0-4e20-a777-caca0b8636c0"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sûr, je me ferai un plaisir de vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, I m happy to get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "df204944-14a6-409a-ba3a-0addfd7dda71"
+  }, {
+    "condition": "$session.params.streamplus_troubleshooting = \"registration\" OR $session.params.streamplus_troubleshooting = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "streamplusissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "route",
+        "value": "self_serve_registration"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "ecdd117d-903d-43ec-ace4-f8e165c8e076"
+  }, {
+    "condition": "$session.params.streamplus_troubleshooting = \"login\" OR $session.params.streamplus_troubleshooting = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "streamplusissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "route",
+        "value": "account_recovery"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "b7a9cb99-0575-4b0a-80fa-624465261bf5"
+  }, {
+    "condition": "$session.params.streamplus_troubleshooting = \"activation\" OR $session.params.streamplus_troubleshooting = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "streamplusissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Activating StreamPlus",
+    "name": "059b9f8d-8149-43f9-94f4-076a48a95091"
+  }, {
+    "condition": "$session.params.streamplus_troubleshooting = \"anything else\" OR $session.params.streamplus_troubleshooting = \"4\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pas de soucis! Pour tout autre problème, j'aurais besoin de vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No worries! For any other issues, I would need to get you to a team member. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e115ed0b-b648-49f9-af17-7f71fd872d88"
+  }, {
+    "condition": "$session.params.streamplusissues_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "streamplusissues_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "65f669d2-8271-48a6-af05-acc7e688085e"
+  }, {
+    "condition": "$session.params.streamplusissues_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "313a97d3-f429-4ecc-9b43-1e7e0252d097"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "streamplusissues_retrycnt",
+        "value": "$sys.func.ADD($session.params.streamplusissues_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.streamplusissues_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.streamplusissues_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "97f8948c-ffcf-4a73-8de2-467cfccf7b13"
+  } ]
+}

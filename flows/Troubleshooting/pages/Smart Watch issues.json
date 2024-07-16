@@ -1,0 +1,621 @@
+{
+  "name": "ca728745-f0a2-4a5e-9078-ca40120562d4",
+  "displayName": "Smart Watch issues",
+  "form": {
+    "parameters": [ {
+      "displayName": "smart_watches",
+      "required": true,
+      "entityType": "@smart-watches",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "($session.params.watchissue_retrycnt = null OR $session.params.watchissue_retrycnt = 0) AND $session.params.smart_watches = null",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "I'm sorry to hear you are having problems with your smartwatch." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Are you having issues with an Apple or Samsung watch?" ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Désolé d'apprendre que vous avez des problèmes avec votre montre intelligente." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Est-ce que ces problèmes sont avec une montre Apple ou Samsung?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.watchissue_retrycnt = null AND $session.params.smart_watches != null",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "I'm sorry to hear you are having problems with your smartwatch." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Are you having issues with an Apple or Samsung watch?" ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Désolé d'apprendre que vous avez des problèmes avec votre montre intelligente." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Est-ce que ces problèmes sont avec une montre Apple ou Samsung?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.watchissue_retrycnt = 1",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Are you having issues with an Apple or Samsung watch?" ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Est-ce que ces problèmes sont avec une montre Apple ou Samsung?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.watchissue_retrycnt = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "For more information, say apple, or press 1, samsung, or press 2." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Est-ce que ces problèmes sont avec une montre Apple ou Samsung?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Is the issue with an Apple or a Samsung smartwatch?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Le problème concerne-t-il une montre intelligente Apple ou Samsung ?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "372c0fb6-dde5-4717-a324-44fdd5d4b5c3"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "For more information, say apple, or press 1, samsung, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous avez une montre intelligente Apple, dites Apple ou faites le 1. Si vous avez une Samsung, dites Samsung ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "1cf26bc6-7f33-4755-85b8-1b5be2f1101e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "c68f788b-d077-4f41-8629-249f41d13304"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Is the issue with an Apple or a Samsung smartwatch?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Est-ce que le problème est avec une montre intelligente Apple ou Samsung ?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "047e966b-3777-48ec-aa9f-06a205d0178f"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "For more information, say apple, or press 1, samsung, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si le problème concerne une montre intelligente d'Apple, dites Apple ou faites le 1. Si c'est plutôt avec une montre intelligente de Samsung, dites Samsung ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "96a513b8-300c-49b8-a50b-306e9a9d0921"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "12b37e82-0f17-449d-8aa9-52b6c9836c9e"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Smart Watch issues"
+    }, {
+      "parameter": "not_working",
+      "value": null
+    }, {
+      "parameter": "applewatchts",
+      "value": 0
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.holdbackcount = 1 OR $session.params.watchtss = 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eI am sorry, If you are still having issues you will need to contact Apple Support at ,,,, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eSi vous rencontrez toujours des problèmes, vous devrez contacter l'assistance Apple au, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "6c985c64-0409-4d90-8177-a5c4698e7482"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.watchtss = 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ensure that your Airplane Mode is disabled, on your iPhone but your Wi-Fi, and Bluetooth are enabled. Please keep your Apple Watch, and iPhone close together, and try pairing them again. You can also say hold on for me to wait while you try them." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Assurez-vous que le mode avion est désactivé sur votre iPhone, mais que le Wi-Fi et le Bluetooth sont activés. Gardez votre montre Apple et votre iPhone près l'un de l'autre et essayez de les jumeler à nouveau. Vous pouvez me dire d'attendre si vous avez besoin de temps pour les connecter." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "watchtss",
+        "value": "$sys.func.ADD($session.params.watchtss, 1)"
+      } ]
+    },
+    "name": "f75bc2a2-1e62-45e0-ae4b-52104e764a9a"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.watchtss = 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eI am sorry, If you are still having issues you will need to contact Apple Support at ,,,, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eSi vous rencontrez toujours des problèmes, vous devrez contacter l'assistance Apple au, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "watchtss",
+        "value": "$sys.func.ADD($session.params.watchtss, 1)"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "af379188-aec7-4025-8bd8-9a75c655f8a3"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.watchtss = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Parfait!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "4d82fabe-6c01-49f0-8687-c803ed595267"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "watchissue_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "3e3f7b47-4d3b-421f-b345-0af8790f81f3"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "watchissue_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "ea963ba5-4221-47a4-a157-b622d028f1ae"
+  }, {
+    "intent": "small_talk.troubleshooting_still_having_issues",
+    "condition": "$session.params.watchtss = 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ensure that your Airplane Mode is disabled, on your iPhone but your Wi-Fi, and Bluetooth are enabled. Please keep your Apple Watch, and iPhone close together, and try pairing them again. You can also say hold on for me to wait while you try them." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Assurez-vous que le mode avion est désactivé sur votre iPhone, mais que le Wi-Fi et le Bluetooth sont activés. Gardez votre montre Apple et votre iPhone près l'un de l'autre et essayez de les jumeler à nouveau. Vous pouvez me dire d'attendre si vous avez besoin de temps pour les connecter." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "watchtss",
+        "value": "$sys.func.ADD($session.params.watchtss, 1)"
+      } ]
+    },
+    "name": "44037090-2053-4e66-a8a0-c6714eec4cc4"
+  }, {
+    "intent": "small_talk.troubleshooting_still_having_issues",
+    "condition": "$session.params.watchtss = 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eI am sorry, If you are still having issues you will need to contact Apple Support at ,,,, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eSi vous rencontrez toujours des problèmes, vous devrez contacter l'assistance Apple au, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "8e351644-fcaf-4e9e-945d-d4e085bcffde"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.holdbackcount = 1 OR $session.params.watchtss = 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Parfait!" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "holdbackcount",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "bce315e9-41e4-4949-87ac-12771b8b3ef9"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.watchtss = 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Can you please try to unpair the Apple Watch from the iPhone, and then pair the Apple Watch with the iPhone again? Please say \"yes\" if it's connected and \"no\" if it's not connected. You can also say \"hold on\" for me to wait while you try them." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous essayer de déconnecter votre montre Apple de votre iPhone, puis les connecter à nouveau? Veuillez dire \"oui\" si vous avez réussi à les connecter ou dire \"non\" si vous n'avez pas réussi. Vous pouvez également dire \"attendez\" pour que je patiente pendant que vous essayez." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "watchtss",
+        "value": "$sys.func.ADD($session.params.watchtss, 1)"
+      } ]
+    },
+    "name": "cd7e009d-d83b-428f-abab-0db9f2a2a683"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.watchtss = 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "okay, If you still have an issue, say \"yes\". If not, say \"no\"." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, si vous avez toujours un problème, dites \"oui\". Sinon, dites \"non\"." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "watchtss",
+        "value": "$sys.func.ADD($session.params.watchtss, 1)"
+      } ]
+    },
+    "name": "f667baef-5946-401c-b2a3-ecc51da1b5a7"
+  }, {
+    "intent": "small_talk.let_me_think",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Hold",
+    "name": "fdecbfe0-517d-4532-9e94-7511fd2e8f0f"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.watchtss = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eI am sorry, If you are still having issues you will need to contact Apple Support at ,,,, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eSi vous rencontrez toujours des problèmes, vous devrez contacter l'assistance Apple au, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "6221892d-fcff-4e21-9320-e94d229ee996"
+  }, {
+    "intent": "small_talk.troubleshooting_still_having_issues",
+    "condition": "$session.params.watchtss = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eI am sorry, If you are still having issues you will need to contact Apple Support at ,,,, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eSi vous rencontrez toujours des problèmes, vous devrez contacter l'assistance Apple au, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "76257a4b-90ea-451a-9457-8ed75f728d5d"
+  }, {
+    "condition": "$session.params.smart_watches = \"none\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay. In this case, you will need to contact the product manufacturer for additional support by simply searching online for their contact number." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Can I help you with something else today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Dans ce cas, vous devrez contacter le fabriquant du produit pour obtenir une assistance en recherchant simplement son numéro de contact en ligne." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que je peux vous aider avec autre chose ?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "f7c7fe23-8b52-458c-b552-1169277e05cc"
+  }, {
+    "condition": "$session.params.holdbackcount = 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Did the previous step fix the issue ?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Est-ce que cela a résolu votre problème?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "holdcount",
+        "value": null
+      } ]
+    },
+    "name": "4ab22ff7-524b-449f-81c2-273f02401301"
+  }, {
+    "condition": "($session.params.smart_watches = \"Apple\" OR $session.params.smart_watches = \"1\") AND $session.params.applewatchts = \"0\" AND $session.params.holdbackcount = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's try some troubleshooting steps. Is your Apple Watch connected with your iPhone? Please say \"yes\" if it's connected and \"no\" if it's not connected.\n" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé d'apprendre que vous avez des problèmes avec votre montre Apple. Essayons de résoudre ce problème. Est-ce que votre montre est connectée ou jumelée à votre iPhone?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "watchissue_retrycnt",
+        "value": null
+      }, {
+        "parameter": "watchtss",
+        "value": 1
+      }, {
+        "parameter": "applewatchts",
+        "value": null
+      } ]
+    },
+    "name": "827214ac-59fe-43ab-8896-79719a17c3da"
+  }, {
+    "condition": "$session.params.smart_watches = \"Samsung\" OR $session.params.smart_watches = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "watchissue_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Smart Watch issues text",
+    "name": "200f43f7-9280-4144-9b4b-3e711b74cab4"
+  }, {
+    "condition": "$session.params.watchissue_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "watchissue_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "50685942-d286-4b53-89f6-ec9d0a67ec0c"
+  }, {
+    "condition": "$session.params.watchissue_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "watchissue_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "928eb176-64f8-46e1-9315-4447a735fd98"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "watchissue_retrycnt",
+        "value": "$sys.func.ADD($session.params.watchissue_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.watchissue_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.watchissue_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "62999785-4b9e-4e18-81c8-abb4c7a7924c"
+  } ]
+}

@@ -1,0 +1,165 @@
+{
+  "name": "2e3f738b-4d17-48c6-9fda-8ef0741aab4e",
+  "displayName": "Activating StreamPlus",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Activating StreamPlus"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "activating Stream+ services"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": " l'activation des services Encontinu+"
+    }, {
+      "parameter": "last_page_summary",
+      "value": "Activating or managing Stream +"
+    }, {
+      "parameter": "last_page_summaryfr",
+      "value": "l'activation ou la gestion EnContinue+"
+    }, {
+      "parameter": "mandatory_ss",
+      "value": "true"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_poc = true",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur l'activation ou la gestion d'EnContinue +, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To get information on how to activate or manage Stream +, you must use the TELUS website for the fastest resolution. It's easy to use and allows you to avoid waiting on the line." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I am sending you a link to the website now." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you still need help, you can request a priority call back from the virtual assistant in your My TELUS account." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour de l'information sur l'activation ou la gestion d'EnContinue+, vous devez utiliser le site Web de TELUS pour obtenir la résolution la plus rapide. Il est simple à utiliser et vous permet d'éviter d'attendre en ligne.à" ]
+            },
+            "languageCode": "fr"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Je vous envoie maintenant un lien vers le site Web." ]
+            },
+            "languageCode": "fr"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez encore besoin d'aide, vous pouvez demander un rappel prioritaire à l'assistant virtuel dans votre compte Mon TELUS." ]
+            },
+            "languageCode": "fr"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "EnContinu + peut être activé que sur le site web Mon TELUS pour le moment." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour tout problème de connexion avec Netflix, Disney plus ou Amazon Prime, veuillez contacter le fournisseur de services respectif." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Stream + can only be activated on My TELUS web at this time." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "For any login issues with Netflix, Disney plus, or Amazon Prime, please contact the respective service provider." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "EnContinu+ peut être activé que sur site le web Mon TELUS pour le moment." ]
+            },
+            "languageCode": "fr"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour tout problème de connexion avec Netflix, Disney plus ou Amazon Prime, veuillez contacter le fournisseur de services respectif." ]
+            },
+            "languageCode": "fr"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Souhaitez-vous recevoir un message texte avec plus d'informations sur l'activation des services EnContinu+ ?" ]
+            },
+            "languageCode": "fr"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000A1aHVQ37V00YT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000A0aHT5CEW01DE"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "c4435f7e-ada5-4405-85ed-de5d8059e151"
+  } ]
+}

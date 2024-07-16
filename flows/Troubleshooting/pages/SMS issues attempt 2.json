@@ -1,0 +1,185 @@
+{
+  "name": "e2b66885-e33b-4172-985e-6de17698ea1e",
+  "displayName": "SMS issues attempt 2",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Assurez-vous de vérifier votre couverture, de redémarrer votre appareil et de vérifier les paramètres de votre appareil. Nous proposons également un guide amiable pour résoudre vos problèmes de messagerie texte sur notre site Web pour tous les appareils. Notre priorité est de résoudre vos problèmes rapidement." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Est-ce que cela vous a aidé?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Make sure you check your coverage, restart your device and check your device settings . We also offer a user-friendly guide to fixing your texting  issues on our website for all devices . Our priority is to fix your issues quickly." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Did that help you?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "SMS issues attempt two"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "2a678ec0-eb30-47a6-be51-bbff37650ec0"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "084ee89c-dd14-4c56-b7fe-c07fc3c9f256"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "bbffa5f7-4050-4448-815e-f07dc67e121f"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que cette information vous a aidée ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that.", "Sorry, I did not catch that.", "Sorry, I didn’t understand that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did that help you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b0324ef6-aedd-45fc-a6f1-686d26018a0f"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Weuillez répondre par oui ou par non." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que cette information vous a aidée ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please respond with a yes or no." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did that help you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6a6cc70e-f257-44c9-b4ac-2ae3bc527bf3"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "fab70aa1-ae5b-4e42-85ad-db3df595f2ec"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que cette information vous a aidée ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that.", "Sorry, I did not catch that.", "Sorry, I didn’t understand that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did that help you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ba4fe446-953e-4fff-84fa-ef3c9b88a78d"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez répondre par oui ou par non." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que cette information vous a aidée ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please respond with a yes or no." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did that help you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "cd4639c5-525b-47b3-ac01-8fc4d7d8a61f"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "0c1aa117-3738-4fee-a397-a7d95c32707c"
+  } ]
+}

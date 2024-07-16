@@ -1,0 +1,386 @@
+{
+  "name": "ba91daa9-1349-4ee7-bc1e-29c03544d7d8",
+  "displayName": "Troubleshooting apps",
+  "form": {
+    "parameters": [ {
+      "displayName": "iphone_vs_android",
+      "required": true,
+      "entityType": "@iphone-vs-android",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pouvez-vous confirmer si vous rencontrez des problèmes avec un iPhone ou un appareil Android?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Just to confirm, are you having issues with an iPhone, or, an Android device?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d90f8b07-7ef4-4812-82a7-673d8d2470c3"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "72a239b2-723e-4ec5-899a-edc51a72b7fa"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "ccfd6c6a-2965-4d77-8939-6f89eda0f33d"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pouvez-vous confirmer si vous rencontrez des problèmes avec un iPhone ou un appareil Android?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Just to confirm, are you having issues with an iPhone, or, an Android device?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "80e6206a-6a5f-4b33-9900-e38bb9b081c1"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d8e003af-1feb-462a-83f6-68ded3821cb6"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "0f7cfd21-d5c2-44a2-8cce-385c980ab23e"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Troubleshooting apps"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.appissue_retrycnt = null OR $session.params.appissue_retrycnt = 0) AND $session.params.iphone_vs_android = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous rencontrez des problèmes avec les applications, je vous recommande de télécharger l'application Vérification de l'appareil Mobile Klinik, qui peut vous aider à optimiser et à résoudre les problèmes matériels ou logiciels de votre appareil." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Juste pour confirmer, avez-vous des problèmes avec un iPhone ou un appareil Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you are experiencing app issues, I recommend downloading the Mobile Klinik Device Checkup. This can help optimize, and troubleshoot both hardware, or software issues with your device." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Just to confirm, are you having issues with an iPhone, or, an Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.appissue_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pouvez-vous confirmer si vous rencontrez des problèmes avec un iPhone ou un appareil Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Just to confirm, are you having issues with an iPhone, or, an Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.appissue_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "appissue_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "bc1b25ec-192d-4c1e-874d-3f6ca488574f"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "appissue_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "51b1804c-3c80-4e2c-9e3a-22cd8df4f922"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Si une application sur votre iPhone ou iPad cesse de répondre, se ferme de manière inattendue ou ne s'ouvre pas :\nFermez et rouvrez l'application.\nRedémarrez votre appareil.\nVérifiez les mises à jour.\nSupprimer l'application, puis retéléchargez-la." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eSi vous rencontrez toujours des problèmes, vous devrez contacter l'assistance Apple au ,,,, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "If an app on your iPhone or iPad stops responding, closes unexpectedly, or won’t open:\nClose and reopen the app.\nRestart your device.\nCheck for updates.\nDelete the app, then redownload it." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eIf you are still having issues you will need to contact Apple Support at ,,,, \u003cprosody rate=\"slow\" pitch=\"-2st\"\u003e\u003csay-as interpret-as=\"telephone\"\u003e 1800-263-3394 \u003c/say-as\u003e.\u003c/prosody\u003e \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "appissue_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "4d154146-ed0c-4886-9ed2-38baea93a3e1"
+  }, {
+    "condition": "$session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Essayez les étapes suivantes si une application installée sur votre téléphone ne fonctionne pas." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Redémarrez votre téléphone.\r\nVérifiez les mises à jour Android.\r\nMettre à jour l'application." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Forcer l'arrêt de l'application.\nEffacez le cache et les données de l'application.\nSynchronisez l'appareil avec les serveurs Google.\nDésinstallez l'application.\nContacter le développeur de l'application" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Try the following steps if an app installed on your phone isn't working." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Restart your phone.\nCheck for Android updates.\nUpdate the app." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Force stop the app.\nClear the app's cache \u0026 data.\nSync device with Google servers.\nUninstall the app.\nContact the app developer" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "appissue_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "938a6501-3058-4058-8092-b09bd6a37788"
+  }, {
+    "condition": "$session.params.appissue_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "appissue_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "fab7cfc1-ac6c-48d8-bd94-9ad5a37a91e5"
+  }, {
+    "condition": "$session.params.appissue_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "368dcc3e-90a7-4404-937b-ce248957c8bc"
+  }, {
+    "condition": "$session.params.iphone_vs_android = 0 OR $session.params.iphone_vs_android = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "appissue_retrycnt",
+        "value": "$sys.func.ADD($session.params.appissue_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "77d418a3-c1cd-44c0-82c4-2e0bbf613d5f"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "appissue_retrycnt",
+        "value": "$sys.func.ADD($session.params.appissue_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.appissue_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.appissue_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "5bbaaa66-9fce-411f-9e75-9456d9553592"
+  } ]
+}

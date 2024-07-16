@@ -1,0 +1,457 @@
+{
+  "name": "e43373b6-342d-4664-ba00-b10af8a46662",
+  "displayName": "Troubleshooting",
+  "transitionRoutes": [ {
+    "intent": "head_intent.device_checkup",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "device_checkup"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "f8844a81-5aa1-4022-8b6f-608e3011965f"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Certainement, je peux vous transférer à un membre de l’equipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, I'm happy to get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "79685533-c7b8-4ba7-a318-3bdb880074c0"
+  }, {
+    "intent": "head_intent.payment_make",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "05d13455-174e-45cf-9bf8-d34ead98ff01"
+  }, {
+    "intent": "head_intent.payment_made",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_made"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "103265e1-62e9-4b6a-be2a-f6627a1c60ca"
+  }, {
+    "intent": "head_intent.payment_arrangements",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "fa9854bc-cc13-453e-b670-d8d2f1f74944"
+  }, {
+    "condition": "$session.params.routeDetails = null AND $session.params.conversation = null AND $session.params.searchResult = null AND $session.params.user = null AND $session.params.init != null",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "init_retry",
+        "value": "troubleshooting flow"
+      } ]
+    },
+    "name": "343b75bd-0410-45fc-82e6-87c8e93a02ea"
+  }, {
+    "condition": "$session.params.is_repeat_prompted = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_repeat_prompted",
+        "value": null
+      } ]
+    },
+    "targetPage": "Repeat",
+    "name": "2cb82cb1-94e4-4cee-af06-c04bf6e36dc0"
+  }, {
+    "condition": "$session.params.route = \"calling_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Calling issues",
+    "name": "b0e7d36e-5b83-4087-a46b-c1372f08781a"
+  }, {
+    "condition": "$session.params.route = \"network_info\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Network information",
+    "name": "0ab93fb3-9b6b-47e5-865c-6dc9e4d3495e"
+  }, {
+    "condition": "$session.params.route = \"voicemail_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Voicemail issues",
+    "name": "2a618f98-77d2-49a8-a300-16f244790d3f"
+  }, {
+    "condition": "$session.params.route = \"voicemail_issues_forgot_password\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "VM Forgot password",
+    "name": "75f33e80-998f-4004-a47e-19ac0fd92f10"
+  }, {
+    "condition": "$session.params.route = \"voicemail_issues_vm_full\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "VM Voicemail is full",
+    "name": "12011e46-ea03-4ed5-9900-c86e29b68029"
+  }, {
+    "condition": "$session.params.route = \"voicemail_issues_mailbox_number\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "VM Mailbox number",
+    "name": "ca31d798-73f5-4b29-b9e2-f6fa8d1e48bf"
+  }, {
+    "condition": "$session.params.route = \"voicemail_issues_vm_setup\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "VM How to setup",
+    "name": "8f3957f5-b554-4f21-91b7-4cda8d1b1884"
+  }, {
+    "condition": "$session.params.route = \"vtt_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Voicemail to text issues",
+    "name": "7c253dc0-25ce-49e5-bea4-97627e0aaf46"
+  }, {
+    "condition": "$session.params.route = \"voicemail_issues_stuck_indicator\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "VM Stuck indicator",
+    "name": "aa3d621a-c977-42b2-9d13-4b1537cd86dd"
+  }, {
+    "condition": "$session.params.route = \"apps_keep_crashing\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Troubleshooting apps",
+    "name": "1eabffd6-335b-4c29-96fb-6542e1a0cdab"
+  }, {
+    "condition": "$session.params.route = \"browser_crashing\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Browser crashing",
+    "name": "90a02c02-35b7-4e29-96ef-1ded84753e43"
+  }, {
+    "condition": "$session.params.route = \"ceim_outage_site\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CEIM Outage site Out of service area",
+    "name": "7c36e84d-2899-47da-bfc8-22f2ef7cb248"
+  }, {
+    "condition": "$session.params.route = \"mms_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "MMS Issues",
+    "name": "bbe26d6e-fa7c-4b46-8e86-b86285b3e173"
+  }, {
+    "condition": "$session.params.route = \"vvm_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Visual voicemail issues iPhone",
+    "name": "3b6c6f6f-55ac-4349-bd1a-2a7b3c9f8690"
+  }, {
+    "condition": "$session.params.route = \"apple_id_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Apple ID issues",
+    "name": "63bf316d-aa62-496a-9174-ca31e85dbfc4"
+  }, {
+    "condition": "$session.params.route = \"roaming_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Roaming issues",
+    "name": "29093e39-b44a-4717-9ed4-3130480a30fb"
+  }, {
+    "condition": "$session.params.route = \"coverage_map\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Coverage map",
+    "name": "53583e01-07d6-4e1a-a9cb-baccf65c1c17"
+  }, {
+    "condition": "$session.params.route = \"instant_voicemail_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Instant voicemail issues",
+    "name": "b946e8e4-949d-486a-b468-b6f68dd41b15"
+  }, {
+    "condition": "$session.params.route = \"email_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Email issues",
+    "name": "c3f781be-2104-4a5f-93df-1319b04f8fec"
+  }, {
+    "condition": "$session.params.route = \"watch_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Smart Watch issues",
+    "name": "ea35be56-2a79-4dfd-8824-03dbe9ecf027"
+  }, {
+    "condition": "$session.params.route = \"wifi_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "WiFi issues",
+    "name": "48ed61a3-a857-49fe-a591-0c51fc28068e"
+  }, {
+    "condition": "$session.params.route = \"dropped_calls\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Dropped calls",
+    "name": "f8f1fca4-7fb0-4398-9f03-646b4c0912f9"
+  }, {
+    "condition": "$session.params.route = \"data_not_working\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Data Issues Start",
+    "name": "9f136679-ba1f-4e40-8b5a-cb07fd72cfe1"
+  }, {
+    "condition": "$session.params.route = \"sms_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SMS issues",
+    "name": "22a5fcc7-10b7-45b2-9c3c-4c91c3c039a1"
+  }, {
+    "condition": "$session.params.route = \"phone_not_working\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Phone not working",
+    "name": "d6e3de85-9b60-47e7-8d65-54744754f873"
+  }, {
+    "condition": "$session.params.route = \"device_wont_start\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Device will not start",
+    "name": "2c92c617-649b-4bb2-aa6c-d2b0b7c4e873"
+  }, {
+    "condition": "$session.params.route = \"phone_not_charging\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Phone will not charge",
+    "name": "9593a748-196c-4f42-b535-56a5100ae9fc"
+  }, {
+    "condition": "$session.params.route = \"slow_frozen_device\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Slow or frozen device",
+    "name": "d625ef71-c4a2-4b08-8883-aadbbee559d1"
+  }, {
+    "condition": "$session.params.route = \"battery_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Battery issues",
+    "name": "39c4bb12-e7e2-43da-94f7-d119e04344aa"
+  }, {
+    "condition": "$session.params.route = \"audio_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Audio issues",
+    "name": "f74b9efa-9b00-4e68-b33b-54e1b6c3cb91"
+  }, {
+    "condition": "$session.params.route = \"bluetooth\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bluetooth issues",
+    "name": "f8e63cec-0da6-49a3-aa41-595fe852f34b"
+  }, {
+    "condition": "$session.params.route = \"troubleshooting_website_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Online Profile",
+    "name": "06effd6f-618f-4878-a8ba-a6369d8d5c81"
+  }, {
+    "condition": "$session.params.route = \"wifi_calling_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "WiFi Calling Issues",
+    "name": "9a33fc76-b222-475a-b0aa-ef851956cd73"
+  }, {
+    "condition": "$session.params.route = \"smart_hub_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Smart hub issue",
+    "name": "0f1839c6-ca14-484c-ad07-5532d81aa3a4"
+  }, {
+    "condition": "$session.params.route = \"stream_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Stream and Issues",
+    "name": "a76c2fce-685c-4dd6-8b97-be0d03615e54"
+  }, {
+    "condition": "$session.params.route = \"sms_reception_issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SMS Reception Issues Coverage Check",
+    "name": "11d30d6c-d90e-4073-994c-c8cb0f6ff67f"
+  }, {
+    "condition": "$session.params.route = \"supp_device_android\" OR $session.params.route = \"supp_device_iphone\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bounce Back",
+    "name": "307069ac-8c82-4bbc-b243-5534989cdbc1"
+  }, {
+    "condition": "$session.params.route = \"routeback_smsunhelpful\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bounce Back",
+    "name": "51a5e7e1-cb3c-42d3-99f0-e99f4b8415bc"
+  }, {
+    "condition": "$session.params.route = \"troubleshooting_install_tos\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TELUS Online Security (TOS)",
+    "name": "59ad9904-5670-4a2d-917b-acc27e2ba377"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne comprends pas de quoi vous me parlez.", "Je n'ai pas compris. Pouvez-vous répéter ?", "Je n'ai pas compris ce que vous avez dit. Qu'est-ce que c'était ?", "Désolé, voudriez-vous répéter ?", "Désolé, pouvez-vous répéter ?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler ?", "Désolé, qu'est-ce que c'était ?", "Pouvez-vous répéter une autre fois ?", "Qu'avez-vous dit ? Je n'ai pas compris.", "Dites-le encore une fois s'il-vous-plaît.", "Je n'ai pas compris. Pouvez-vous répéter ?", "J'ai raté ce que vous avez dit.  Pouvez-vous recommencer ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d6610d32-6189-4bcd-a0e7-2b909eb7e356"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne comprends pas de quoi vous me parlez.", "Je n'ai pas compris. Pouvez-vous répéter ?", "Je n'ai pas compris ce que vous avez dit. Qu'est-ce que c'était ?", "Désolé, voudriez-vous répéter ?", "Désolé, pouvez-vous répéter ?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler ?", "Désolé, qu'est-ce que c'était ?", "Pouvez-vous répéter une autre fois ?", "Qu'avez-vous dit ? Je n'ai pas compris.", "Dites-le encore une fois s'il-vous-plaît.", "Je n'ai pas compris. Pouvez-vous répéter ?", "J'ai raté ce que vous avez dit.  Pouvez-vous recommencer ?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "35ee4809-810e-4a95-b034-cfefa169f829"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir bien compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Seriez-vous en mesure de reformuler?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry, I'm not sure I got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you mind rephrasing?", "Can you try to rephrase your question?", "Can you reword that for me?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1855f7df-4740-47e3-9d93-c3ab3f1832e3"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "42b94a97-d56a-4c56-99e2-635c140ce9c6"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you rephrase?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ce9de4c3-1584-431d-8b30-d327b114d326"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "9ae23a72-fc6f-48e8-a40d-7fccfeedcdc4"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_CUSTOM",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "transitionRouteGroups": [ "Small Talk" ]
+}

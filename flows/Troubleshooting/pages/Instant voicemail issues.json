@@ -1,0 +1,282 @@
+{
+  "name": "47eec5f7-c016-4804-a9e9-8cb10e7e4132",
+  "displayName": "Instant voicemail issues",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_instantvm_issues",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé je nai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Est-ce que les étapes fournies ont fonctionné?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Did those troubleshooting steps work?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ca32aafa-89a8-400d-bc8b-a057f7551966"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si les étapes fournies ont résolu le problème, dites oui ou appuyez sur 1. Sinon, dites non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If the steps provided worked, say yes, or press 1. Otherwise, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "43be02c9-3107-47fe-810a-4febf383a13e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "a9be56f2-721f-4b6f-bb8d-1131d88a874c"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé je nai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Est-ce que les étapes fournies ont fonctionné?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Did those troubleshooting steps work?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "46c3d7df-edfc-47a3-ab17-5451d7730f4f"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour des problèmes de messagerie vocale instantanée, dites oui ou appuyez sur 1. Si vous n'avez pas de problème de messagerie vocale instantanée, dites non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If the steps provided worked, say yes, or press 1. Otherwise, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "81e348db-17ef-469b-acb0-e212be1e4b66"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "d3426157-eefd-429c-b85e-29a856bad5b0"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cspeak\u003e\nSi votre messagerie vocale instantanée de TELUS ne fonctionne pas, \n\u003cbreak time=\"300ms\"/\u003e \n\u003cprosody rate=\"slow\"\u003e \nvoici quelques trucs pour essayer de résoudre le problème.\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\n\u003cbreak time=\"400ms\"/\u003e \n\u003cprosody rate=\"slow\"\u003e\nRedémarrez votre appareil.\nDésactivez votre Wi-Fi et vérifiez que votre connexion de données fonctionne.\nEnvoyez un message photo et confirmez s'il a été envoyé avec succès.\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Si le message photo fonctionne, essayez à nouveau d'utiliser la Messagerie vocale instantanée." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Veuillez noter que si vous utilisez un iPhone, réglé sur l'anglais, la nouvelle mise à jour i O S 17 a introduit Apple Live Voicemail, ce qui peut affecter les paramètres de la messagerie vocale. Si vous rencontrez des problèmes, essayez de désactiver Apple Live Voicemail." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Est-ce que ça a fonctionné?" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\nIf your TELUS instant voicemail is not working, \n\u003cbreak time=\"300ms\"/\u003e \n\u003cprosody rate=\"slow\"\u003e \nhere are some troubleshooting steps you can try to fix the issue.\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\n\u003cbreak time=\"400ms\"/\u003e \n\u003cprosody rate=\"slow\"\u003e\nRestart your device.\nTurn off your Wi-Fi and confirm your network data connection is working.\nSend a picture message and confirm if it was successfully sent.\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "If the picture message works, test the Instant Voicemail feature again." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Please note if you are using iPhone, the new i O S 17 update introduced Apple Live Voicemail, which may affect voicemail settings. If facing issues, try disabling Apple Live Voicemail." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Did that work?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Instant voicemail issues"
+    }, {
+      "parameter": "not_working",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "23ccb45b-3313-4280-916e-c519d6007862"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super!", "Génial!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great!", "Awesome!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "09117658-fa15-42f0-8ed4-908a50c6ab6f"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé de l'apprendre. Laissez-moi vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry about that. Let me get you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "84aa2c0a-1da3-44f8-ad32-a7d8541a5ecc"
+  }, {
+    "condition": "$session.params.dtmf_instantvm_issues = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super!", "Génial!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great!", "Awesome!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_instantvm_issues",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "e6004aa7-c591-4361-a8e0-e701b5fb5452"
+  }, {
+    "condition": "$session.params.dtmf_instantvm_issues = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé de l'apprendre. Laissez-moi vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry about that. Let me get you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_instantvm_issues",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "65743ca4-ce19-4fbf-897b-84c4ef8aba89"
+  } ]
+}

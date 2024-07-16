@@ -1,0 +1,107 @@
+{
+  "name": "69c7bfc3-6ead-40c0-9770-7e0b0e79b11a",
+  "displayName": "troubleshooting_how_to",
+  "transitionRoutes": [ {
+    "intent": "head_intent.phone_reboot_pwrcycle",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Localisez votre bouton d'alimentation généralement situé sur le côté, en haut ou à l'arrière du téléphone." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Maintenez le bouton enfoncé pendant environ 5 secondes jusqu'à ce que vous voyiez une option pour éteindre ou redémarrer l'appareil." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Une fois votre appareil rallumé, testez vos données lorsqu'il n'est pas connecté au Wi-Fi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Après avoir essayé les 3 étapes, vos données ont-elles commencé à fonctionner?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Locate your power button usually located on the side, top or back of the phone." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Hold the button down for about 5 seconds until you see an option to turn off or restart the device." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Once your device is back on, test your data when not connected to Wi-Fi." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "After you tried all 3 steps, did your data start to work?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d845f31a-b6bf-426b-8fb8-dad6c78b4b4a"
+  }, {
+    "intent": "supplemental.reset_network_settings",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Notez que cela effacera vos paramètres Wi-Fi et Bluetooth actuels." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Voici comment réinitialiser vos paramètres réseau:\n\nPour les iPhone:\nAccédez aux paramètres, puis général, puis Réinitialiser et sélectionnez Réinitialiser les paramètres réseau.\n\nPour les androïdes il y a deux options:\nAccédez aux paramètres, puis Système, puis Avancé, puis Options de réinitialisation et sélectionnez Réinitialiser Wi-Fi, mobile et Bluetooth.\n\nOu accédez auxParamètres, puid Gestion générale, puis Réinitialiser et sélectionnez Réinitialiser les paramètres réseau." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Redémarrez votre téléphone si cela ne se produit pas automatiquement après la réinitialisation." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Testez vos données pour voir si elles fonctionnent lorsqu'elles ne sont pas en Wi-Fi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Après avoir essayé les 3 étapes, vos données ont-elles commencé à fonctionner?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please note that this will erase your current Wi-Fi and Bluetooth settings." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ " Here's how to reset your network settings:\n\nFor iPhones:\nGo to Settings, then General, then Reset and select Reset network settings.\n\nFor Androids there are 2 options:\nGo to Settings, then System, then Advanced, then Reset options and select Reset Wi-Fi, mobile \u0026 Bluetooth.\nOr go to Settings, then General managemen, then Reset and select Reset Network Settings." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Reboot your phone if it doesn't happen automatically after the reset." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Test your data to see if it is working when your device is not on Wi-Fi." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "After you tried all 3 steps, did your data start to work?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1f486612-17ab-46f6-be9a-ca0f24717200"
+  } ]
+}

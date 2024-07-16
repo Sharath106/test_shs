@@ -1,0 +1,485 @@
+{
+  "name": "eebd1f54-865d-4409-8296-c3135cafdfb6",
+  "displayName": "_Data Issues Start",
+  "form": {
+    "parameters": [ {
+      "displayName": "data_device_types",
+      "required": true,
+      "entityType": "@data-device-types",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "$session.params.dataissue_retrycnt = null OR $session.params.dataissue_retrycnt = 0",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Ok, let me help you with data issues." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Can you tell me what type of device you are having data issues with?" ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "D'accord, laissez-moi vous aider avec les problèmes de données." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Pouvez-vous me dire avec quel type d'appareil vous rencontrez des problèmes de données?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.dataissue_retrycnt = 1",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Can you tell me what type of device you are having data issues with? You could say, mobile phone, smart hub, or, internet key as a few examples." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Pouvez-vous me dire avec quel type d'appareil vous rencontrez des problèmes de données? Vous pouvez dire quelque chose comme, téléphone mobile, terminal intelligent ou, clé internet." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.dataissue_retrycnt = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "For mobile phone, say or press 1. Smart hub, 2. Internet key 3. Or, Hotspot hub, 4." ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Pour un téléphone mobile, dites ou faites le 1. Terminal intelligent, le 2. Clé internet, le 3. Pour un point d'accès mobile, dites ou faites le 4." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Can you tell me what type of device you are having data issues with? You could say, mobile phone, smart hub, or, internet key as a few examples." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pouvez-vous me dire avec quel type d'appareil vous rencontrez des problèmes de données? Vous pouvez dire quelque chose comme, téléphone mobile, terminal intelligent ou, clé internet." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "67b2610e-de71-474c-ba7c-3c60859bab49"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "  For mobile phone, say or press 1. Smart hub, 2. Internet key 3. Or, Hotspot hub, 4." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour un téléphone mobile, dites ou faites le 1. Terminal intelligent, le 2. Clé internet, le 3. Pour un point d'accès mobile, dites ou faites le 4." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "cc6a437b-02f5-43cc-8aa2-15469d2a405e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1002422d-7297-4555-b129-addc5cb95ac5"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Can you tell me what type of device you are having data issues with? You could say, mobile phone, smart hub, or, internet key as a few examples." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Pouvez-vous me dire avec quel type d'appareil vous rencontrez des problèmes de données? Vous pouvez dire quelque chose comme, téléphone mobile, terminal intelligent ou, clé internet." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "9ab7d6aa-7893-454d-a298-450efd0d73c7"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "For mobile phone, say or press 1. Smart hub, 2. Internet key 3. Or, Hotspot hub, 4." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour un téléphone mobile, dites ou faites le 1. Terminal intelligent, le 2. Clé internet, le 3. Pour un point d'accès mobile, dites ou faites le 4." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "4d3bc4e1-b08e-4916-b34f-bcf4e959b507"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "a092944c-9aab-48dc-b591-841b559c4329"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "_Data issues Start"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.data_issues = null"
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "supplemental.choose_another_device",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No, problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "data_device_types",
+        "value": null
+      } ]
+    },
+    "name": "35f58a13-d6d2-4f47-8a8e-365e885b2992"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Géniale!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "d4f54222-79ce-49ff-92c1-04e09b894770"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intent",
+        "value": "fixmobile"
+      }, {
+        "parameter": "last_page",
+        "value": "#Data issues \u003e Start\""
+      } ]
+    },
+    "targetPage": "Ask for Agent",
+    "name": "38935a2f-3487-4e5c-a098-8fce1f38018b"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "9548c403-ccd4-4817-80fd-523b0ff843da"
+  }, {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Repeat",
+    "name": "2a6d7bbe-ef83-4568-9916-587be635a8a6"
+  }, {
+    "intent": "head_intent.password",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "password_vague"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "72875899-e276-4fcc-bb07-0841b8897917"
+  }, {
+    "intent": "head_intent.bluetooth_issues",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bluetooth issues",
+    "name": "1e8af4d1-c0cd-4e9d-9673-255430a11af0"
+  }, {
+    "intent": "head_intent.troubleshoot_calling_issues",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Calling issues",
+    "name": "8a4e4d32-2f52-4f4d-b9e5-eb5357874c87"
+  }, {
+    "intent": "head_intent.everything_roaming",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Roaming issues",
+    "name": "ac0881a2-4631-4f3c-9952-fd9a563d7bf9"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, I'm happy to get you to a live agent." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, je me ferai un plaisir de vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "c59d4772-548e-419b-ad72-51f822edba38"
+  }, {
+    "condition": "$session.params.dataissue_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dataissue_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "1f434c09-bc36-459a-b99e-706cb6a78a84"
+  }, {
+    "condition": "$session.params.data_device_types = \"home internet services\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_scope_home_services"
+      }, {
+        "parameter": "data_device_types",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Cross Domain Transfer",
+    "name": "04a0d592-6086-46ee-b2c3-c3b29f01a74b"
+  }, {
+    "condition": "$session.params.data_device_types = \"smart hub\" OR $session.params.data_device_types = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me help you with data issues on your smart hub. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Most issues can be resolved either by rebooting it, or performing a factory reset using a pin to the reset hole besides the SIM slot." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Permettez-moi de vous aider à résoudre les problèmes de données de votre terminal Intelligent." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "La plupart des problèmes peuvent être résolus en redémarrant votre terminal ou en effectuant une réinitialisation d'usine en insérant une épingle dans le trou situé à côté de la fente pour la carte SIM." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "_Data Issues text",
+    "name": "a744679f-bbf3-42d9-af37-0e32a9f98e72"
+  }, {
+    "condition": "$session.params.data_device_types = \"mobile phone\" OR $session.params.data_device_types = \"1\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Data Issues text",
+    "name": "3d8523ae-92c0-4897-a05a-2df6a50533d9"
+  }, {
+    "condition": "$session.params.data_device_types = \"mobile internet key\" OR $session.params.data_device_types = \"3\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Data Issues text",
+    "name": "6f539244-2fb1-4530-83a4-4c9d9d1c431e"
+  }, {
+    "condition": "$session.params.data_device_types = \"hotspot hub\" OR $session.params.data_device_types = \"4\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me help you with data issues on your hotspot hub. \nMost issues can be resolved either by rebooting it by holding the power button for 5 to 10 seconds, or, performing a factory reset by removing the cover and holding the reset button for a similar time." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did that work?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous aider à résoudre les problèmes de données sur votre terminal sans fil.\nLa plupart des problèmes peuvent être résolus soit en le redémarrant en maintenant le bouton marche/arrêt pendant 5 à 10 secondes, soit en effectuant une réinitialisation d'usine en retirant le couvercle et en maintenant le bouton de réinitialisation enfoncé pendant une durée similaire." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que ça a fonctionné?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "bf467fc4-8bfc-4937-9b41-99fe3f792837"
+  }, {
+    "condition": "$session.params.data_issues = \"make a payment\" AND $session.params.data_issues = \"PARRS\" AND $session.params.data_issues = \"report a payment\" AND $session.params.tempdisable = 123",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Data Issues Recently port in",
+    "name": "c092c688-bee0-4924-8a88-dfe111bea5d8"
+  }, {
+    "condition": "$session.params.data_device_types = \"mobile phone\" AND $session.params.data_device_types = \"phone\" AND $session.params.tempdisable = 123",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Data Issues Phone",
+    "name": "7a7cc0ce-848e-4482-9286-6a6fcfcad216"
+  }, {
+    "condition": "$session.params.dataissue_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "58d30d7f-10cf-4ffd-886d-122517511cdb"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dataissue_retrycnt",
+        "value": "$sys.func.ADD($session.params.dataissue_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.dataissue_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.dataissue_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "849c860e-5074-4158-ab0f-d16ff8056e17"
+  } ],
+  "transitionRouteGroups": [ "troubleshooting_answers" ]
+}

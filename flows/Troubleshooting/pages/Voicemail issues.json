@@ -1,0 +1,243 @@
+{
+  "name": "135ab5a6-99fb-4213-8803-fa28695cba1e",
+  "displayName": "Voicemail issues",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Voicemail issues"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Sorry to hear you're having issues with your voicemail." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "There are a few different ways to access your voicemail:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "First, Press and hold 1 on your mobile phone's dialing pad." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Second, Dial +1, and then your 10 digit phone number." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "and Third, Call your own number from another phone, and press the star key when you hear your recorded greeting." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "One thing to note is that airtime charges do apply when accessing your voicemail, including roaming and long distance." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Désolé d'apprendre que vous avez des problèmes avec votre messagerie vocale." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Il y a différentes façons d'accéder à votre messagerie vocale :" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Premièrement, appuyez et maintenez le un sur le clavier de votre téléphone mobile." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Deuxièmement, composez le plus UN et votre numéro de téléphone à dix chiffres." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Et troisièmement, appelez votre propre numéro à partir d'un autre téléphone et appuyez sur l'étoile lorsque vous entendez votre message d'accueil enregistré." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Une chose à noter est que des frais de temps d'antenne s'appliquent lors de l'accès à votre messagerie vocale, y compris l'itinérance et l'interurbain." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can access your voicemail in a few ways:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "1. Press and hold 1 on your mobile phone's dialing pad." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "2. Dial +1, followed by your 10-digit phone number." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "3. Call your own number from another phone and press the star key when you hear your recorded greeting." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Note that airtime charges apply when accessing your voicemail, including roaming and long distance." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour accéder à votre boîte vocale, vous avez plusieurs options :" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Appuyez et maintenez enfoncé le chiffre un sur le clavier de numérotation de votre téléphone portable." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Composez le plus UN, suivi de votre numéro de téléphone à dix chiffres." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Appelez votre propre numéro depuis un autre téléphone et appuyez sur l'étoile lorsque vous entendez votre message d'accueil enregistré." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Veuillez noter que des frais d'utilisation s'appliquent lorsque vous accédez à votre boîte vocale, y compris en itinérance et pour les appels interurbains." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "There are multiple methods to access your voicemail:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "1. Long press 1 on your phone's dialing pad." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "2. Dial +1, followed by your 10-digit phone number." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "3. Call your own number from another phone and press the star key after hearing your recorded greeting." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour accéder à votre boîte vocale, vous avez plusieurs options :" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Appuyez longuement sur un du clavier de numérotation de votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Composez le plus UN, suivi de votre numéro de téléphone à dix chiffres." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Appelez votre propre numéro depuis un autre téléphone et appuyez sur  l'étoile après avoir entendu votre message d'accueil enregistré." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "774b35af-6169-4e7f-8831-8853d1b62931"
+  } ]
+}

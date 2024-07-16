@@ -1,0 +1,241 @@
+{
+  "name": "bac4dcc5-444f-486f-bf5a-8f9d033cb830",
+  "displayName": "Bounce Back",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.last_page = \"Audio issues iphone vs android\" AND $session.params.route = \"supp_device_android\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "android"
+      } ]
+    },
+    "targetPage": "Audio issues iphone vs android",
+    "name": "1291f2cb-8121-42a5-9346-de3967492242"
+  }, {
+    "condition": "$session.params.last_page = \"Audio issues iphone vs android\" AND $session.params.route = \"supp_device_iphone\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "iphone"
+      } ]
+    },
+    "targetPage": "Audio issues iphone vs android",
+    "name": "98342a12-4425-4dee-be80-032503d477a2"
+  }, {
+    "condition": "$session.params.last_page = \"Manual network search\" AND $session.params.route = \"supp_device_iphone\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, iPhone instructions about $session.params.page_summary." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, les instructions Iphone concernant $session.params.page_summaryfr." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "iphone"
+      } ]
+    },
+    "targetPage": "Manual network search",
+    "name": "9ffc6cb4-11a3-49fe-a31e-18e14da7f83b"
+  }, {
+    "condition": "$session.params.last_page = \"Manual network search\" AND $session.params.route = \"supp_device_android\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, les instructions Android concernant $session.params.page_summaryfr." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "android"
+      } ]
+    },
+    "targetPage": "Manual network search",
+    "name": "f8a93451-4594-43e1-9d5f-dc031f1b03a9"
+  }, {
+    "condition": "$session.params.last_page = \"Troubleshooting apps\" AND $session.params.route = \"supp_device_iphone\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "iphone"
+      } ]
+    },
+    "targetPage": "Troubleshooting apps",
+    "name": "0ae027fe-da6a-486b-8116-ab6775d551df"
+  }, {
+    "condition": "$session.params.last_page = \"Troubleshooting apps\" AND $session.params.route = \"supp_device_android\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "android"
+      } ]
+    },
+    "targetPage": "Troubleshooting apps",
+    "name": "289eef15-ce93-4888-b13d-1dca95305826"
+  }, {
+    "condition": "$session.params.last_page = \"Visual voicemail issues\" AND $session.params.route = \"supp_device_iphone\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "iphone"
+      } ]
+    },
+    "targetPage": "Visual voicemail issues iPhone",
+    "name": "42e6809f-0076-41f5-85a3-5b0684825b3f"
+  }, {
+    "condition": "$session.params.last_page = \"Visual voicemail issues\" AND $session.params.route = \"supp_device_android\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "android"
+      } ]
+    },
+    "targetPage": "Visual voicemail issues iPhone",
+    "name": "7efcf8d3-fd99-4cbd-a5e8-c4f7d63516c0"
+  }, {
+    "condition": "$session.params.last_page = \"VM Mailbox number\" AND $session.params.route = \"supp_device_iphone\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "iphone"
+      } ]
+    },
+    "targetPage": "VM Mailbox number",
+    "name": "3f5671fe-7251-4db6-8a6f-db6cbbad5d07"
+  }, {
+    "condition": "$session.params.last_page = \"VM Mailbox number\" AND $session.params.route = \"supp_device_android\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "android"
+      } ]
+    },
+    "targetPage": "VM Mailbox number",
+    "name": "fe5d4135-8563-48d8-a367-185cc052b457"
+  }, {
+    "condition": "$session.params.last_page = \"Smart Watch issues\" AND $session.params.route = \"supp_device_android\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, for Samsung watch instructions." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr, les instructions pour Samsung Watch." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_smart_watches",
+        "value": "Samsung"
+      } ]
+    },
+    "targetPage": "Smart Watch issues",
+    "name": "3f1da7e9-20d6-442c-bd7c-3764009c24dc"
+  }, {
+    "condition": "$session.params.last_page = \"SMS issues\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SMS issues attempt 2",
+    "name": "12ebaabe-4b25-4f8e-9c23-fcc4b6a12526"
+  }, {
+    "condition": "$session.params.last_page = \"_Data Issues text\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Data Issues text SMS Unsuccessful",
+    "name": "c25f2772-95dd-4fdd-b37b-7878696e2216"
+  }, {
+    "condition": "$session.params.last_page = \"Visual voicemail issues Android\" AND $session.params.route = \"supp_device_iphone\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "Visual voicemail issues iPhone",
+    "name": "e0d5d5e7-67ee-468a-a9db-e0c643b22989"
+  } ]
+}

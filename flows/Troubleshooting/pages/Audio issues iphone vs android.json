@@ -1,0 +1,918 @@
+{
+  "name": "8ee9376c-73bc-4a76-9ffb-98b1d10328e2",
+  "displayName": "Audio issues iphone vs android",
+  "form": {
+    "parameters": [ {
+      "displayName": "iphone_vs_android",
+      "required": true,
+      "entityType": "@iphone-vs-android",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous un appareil iPhone ou Android?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you have an iPhone, or, Android device?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ff56969f-37e0-4b69-9ec0-9cc9b3113b68"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "06efc05e-265b-47d0-9f3a-8409596e30c1"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "8844dfb6-f0cc-418c-bc87-e1d3f9fd15a1"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous un appareil iPhone ou Android?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you have an iPhone, or, Android device?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7290f8ce-5fb9-445d-a8f3-5475f2eadecf"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c8fe0e6b-3be4-40f6-8039-98d6b092ac21"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "d32d9b72-04da-4345-b230-184b6dfa67f7"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Audio issues iphone vs android"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.backupdata_retrycnt = null AND $session.params.iphone_vs_android = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Juste pour être sûr, utilisez-vous un iPhone ou un appareil Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Just to be sure, are you using an iPhone, or, Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.backupdata_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Avez-vous un appareil iPhone ou Android?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Do you have an iPhone, or, Android device?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.backupdata_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.iphone_vs_android = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "backupdata_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "347b4587-206b-4768-8113-c733e9b9de9f"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "backupdata_retrycnt",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "1a468e6e-15b4-4e38-9edc-5fde60f7f63f"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "condition": "$session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"1\" OR $session.params.iphone_vs_android = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "backupdata_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "024d9e8f-31db-46c1-992d-5c98b7d223f5"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"1\" OR $session.params.iphone_vs_android = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "backupdata_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Ask for Agent",
+    "name": "ea1ef17d-fc3b-4c12-8f16-bfa93b012e8f"
+  }, {
+    "intent": "supplemental.device_iphone",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "iphone"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "d2453d63-56f2-4497-8d9c-f61aa0524bb8"
+  }, {
+    "intent": "supplemental.device_android",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sûr." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "android"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "27d7c49a-218c-484c-b960-02ab65e57fc1"
+  }, {
+    "intent": "head_intent.audio_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "audio_issues"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "eb832a4f-a62f-46e4-ab19-51457a066fe8"
+  }, {
+    "intent": "head_intent.everything_roaming",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Roaming issues",
+    "name": "aa5e3918-829d-4fe5-9898-f5419419cbdc"
+  }, {
+    "condition": "($session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"2\") AND $session.params.media_issues = \"media\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Les médias, comme la musique, les vidéos, les jeux et d'autres applications, diffusent le son par le même haut-parleur qui est utilisé pour les appels téléphoniques." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous rencontrez des problèmes avec le haut-parleur:\nTout d'abord, vérifiez les paramètres de volume.\nEnsuite, enlevez tous les débris du haut-parleur.\nVous pouvez également essayer de retirer votre étui protecteur pour voir s'il bloque le son.\nEnfin, confirmez qu'aucun appareil Bluetooth n'est connecté." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que ça a fonctionné?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Media, like music, videos, games, and other apps, play sound through the same speaker as the speakerphone." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you are having issues with the speaker:\nFirst, Check the volume settings.\nNext, Clear debris from the speaker.\nYou can also try and Remove any cases to see if it's blocking sound.\nLastly, Confirm no Bluetooth devices are connected." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did that work?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "backupdata_retrycnt",
+        "value": null
+      } ]
+    },
+    "name": "5829582b-2d2b-4034-8016-d5c32afef092"
+  }, {
+    "condition": "($session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"2\") AND $session.params.media_issues = \"hearing others\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Si vous ne parvenez pas à entendre les appels, vous pouvez essayer de passer aux haut-parleurs." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si cela fonctionne, le problème est probablement avec l'écouteur et vous devrez peut-être visiter un magasin pour la réparation." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Avant de le faire, essayez également:\n\nTout d'abord, vérifiez les paramètres de volume.\nEnsuite, enlevez tous les débris du haut-parleur.\nVous pouvez également essayer de retirer votre étui protecteur pour voir s'il bloque le son.\nEnfin, confirmez qu'aucun appareil Bluetooth n'est connecté." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que ça a fonctionné?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "If you're unable to hear people on calls with your device, you can try switching to speakerphone." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If this works, the issue is likely with the ear piece, and you may need to visit a store for repair." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Before doing so, try these as well:\n\nFirst, Check the volume settings.\nNext, Clear debris from the speaker.\nYou can also try and Remove any cases to see if it's blocking sound.\nLastly, Confirm no Bluetooth devices are connected." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did that work?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "backupdata_retrycnt",
+        "value": null
+      } ]
+    },
+    "name": "8a026ad1-7b76-436b-a394-1c2ea9c605e7"
+  }, {
+    "condition": "($session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"2\") AND $session.params.media_issues = \"others hearing\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Plusieurs raisons peuvent expliquer un problème avec le micro.\n\nEssayez ces étapes courantes qui peuvent résoudre la plupart de ces problèmes:\nTout d'abord, redémarrez votre téléphone.\nEnsuite, enlevez tous les débris du microphone.\nVous pouvez également essayer de retirer votre étui protecteur.\nEnfin, confirmez qu'aucun appareil Bluetooth n'est connecté." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que ça a fonctionné?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "There can be a number of reasons a microphone isn't working.\n\nTry these common steps that fix most of these issues:\nFirst, Restart your phone.\nNext, Clear any debris from the microphone.\nAlso try and, Remove any case or screen protectors.\nLastly, Confirm no Bluetooth devices are connected." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did that work?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "backupdata_retrycnt",
+        "value": null
+      } ]
+    },
+    "name": "ed4c3078-44cb-459c-a9a7-cf5e1533d7bc"
+  }, {
+    "condition": "($session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"2\") AND $session.params.media_issues = \"earphone\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vérifiez l'adaptateur si applicable et la prise s'il y a des débris. Testez aussi avec des écouteurs différents." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si ça ne fonctionne pas, le problème peut provenir de l'adaptateur ou de la prise et vous devrez peut-être considérer la réparation ou le remplacement." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si les autres écouteurs fonctionnent, brossez délicatement les ouvertures d'écouteurs avec une petite brosse à poils souples, propre et sèche, pour enlever les débris. Sinon, vous devrez peut-être chercher une autre paire d'écouteurs." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Check both the adapter if applicable and the jack for debris and try another set of headphones.\n" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If they do not work the issue may lay with the adapter or jack and you may need to look into repair or replacement." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If the other set works, gently brush openings in the earphones to remove debris. Otherwise, you might have to look into another pair of earphones." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "backupdata_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "8672dd6f-6e2b-4872-8d5c-0b348fe5b2f5"
+  }, {
+    "condition": "($session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\") AND $session.params.media_issues = \"media\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Les médias, comme la musique, les vidéos, les jeux et d'autres applications, diffusent le son par le même haut-parleur qui est utilisé pour les appels téléphoniques." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si vous rencontrez des problèmes avec le haut-parleur:\n\nVérifiez les paramètres de volume.\nEnlevez tous les débris du haut-parleur.\nRetirez votre étui protecteur.\nConfirmez qu'aucun appareil Bluetooth n'est connecté." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eSi vous rencontrez toujours des problèmes, vous devrez contacter l'assistance Apple au ,,,, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Media, like music, videos, games, and other apps, play sound through the same speaker as the speakerphone." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you are having issues with the speaker:\r\nCheck the volume settings.\r\nClear debris from the speaker.\r\nRemove any cases.\r\nConfirm no Bluetooth devices are connected." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\u003cs\u003eIf you are still having issues you will need to contact Apple Support at ,,,, \u003csay-as interpret-as=\"telephone\"\u003e 18002633394 \u003c/say-as\u003e. \u003c/s\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "d293f73d-0d67-4720-8c8e-caffdac26f44"
+  }, {
+    "condition": "($session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\") AND $session.params.media_issues = \"hearing others\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Si vous ne parvenez pas à entendre les appels, vous pouvez essayer de passer aux haut-parleurs." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si cela fonctionne, le problème est probablement avec l'écouteur et vous devrez peut-être visiter un magasin pour la réparation." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Avant de le faire, essayez également:\r\n\r\nTout d'abord, vérifiez les paramètres de volume.\r\nEnsuite, enlevez tous les débris du haut-parleur.\r\nVous pouvez également essayer de retirer votre étui protecteur pour voir s'il bloque le son.\r\nEnfin, confirmez qu'aucun appareil Bluetooth n'est connecté." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que ça a fonctionné?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "If you are unable to hear people on calls, you can try switching to speakerphone." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If this works the issue is likely with the ear piece and you may need to visit a store for repair." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Before doing so, try these as well:\r\n\r\nFirst, Check the volume settings.\r\nNext, Clear debris from the speaker.\r\nYou can also try and Remove any cases to see if it's blocking sound.\r\nLastly, Confirm no Bluetooth devices are connected." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did that work?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "name": "cf149917-e8ad-490d-a364-d2157d56aeb4"
+  }, {
+    "condition": "($session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\") AND $session.params.media_issues = \"others hearing\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Plusieurs raisons peuvent expliquer un problème avec le micro." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Assurez-vous que vos écouteurs disposent d'un microphone intégré.\r\nVérifiez que votre microphone n'est pas bloqué, comme des débris ou des emballages en plastique." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si cela ne fonctionne pas, vous devrez peut-être visiter un magasin pour réparation s'il est sous garantie." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "There can be a number of reasons a microphone could have issues." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Make sure that your headphones have a built-in microphone.\r\nCheck your microphone for blockage, like debris, lint, or plastic packaging." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If this doesn't work, you may need to visit a store for repair if under warranty." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "fb944661-4d2c-452a-8ac0-da78f08bbbe3"
+  }, {
+    "condition": "($session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\") AND $session.params.media_issues = \"earphone\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Vérifiez s'il y a des débris dans le port du casque de votre iPhone.\nVérifiez que le câble, le connecteur, la télécommande et les écouteurs de votre casque ne sont pas endommagés, comme l'usure ou casser." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Verifier si il y a du débris sur les mailles de chaque écouteur. Pour enlever les débris, brossez doucement toutes les ouvertures avec une petite brosse à poils doux, propre et sèche." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Rebranchez fermement vos écouteurs. Si votre appareil iOS est équipé d'un étui, retirez-le pour obtenir une connexion ferme." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si cela ne fonctionne pas, vous devrez peut-être visiter un magasin pour les options de garantie." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Check for debris in the headphone port on your iPhone.\nCheck your headphone cable, connector, remote, and earbuds for damage, like wear or breakage. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Look for debris on the meshes in each earbud. To remove debris, gently brush all openings with a small, soft-bristled brush that's clean and dry. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Firmly plug your headphones back in. If your iOS device has a case, remove the case to get a firm connection. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If this doesn't work, you may need to visit a store for warranty options." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "582b686a-dc22-482e-8780-381681d6140b"
+  }, {
+    "condition": "$session.params.audissues_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "1242af0f-9fa8-4d34-8d2b-fc22e55bff5a"
+  }, {
+    "condition": "$session.params.audissues_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "6f198a31-b331-4273-9809-18cd3ed7659f"
+  }, {
+    "condition": "$session.params.iphone_vs_android = 0 OR $session.params.iphone_vs_android = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "audissues_retrycnt",
+        "value": "$sys.func.ADD($session.params.audissues_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "35473edc-0dfc-4042-a4ca-9869fe7ad484"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": "$sys.func.ADD($session.params.audissues_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.audissues_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.audissues_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "68f6511c-d266-430d-8838-3d954e976db9"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que les étapes fournies ont fonctionné?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did those troubleshooting steps work?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": "$sys.func.ADD($session.params.audissues_retrycnt,1)"
+      } ]
+    },
+    "name": "4589a1fe-3fbc-4b58-8dda-a2464a9047bb"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne crois pas avoir bien saisi.", "Désolé, je n'ai pas tout à fait compris.", "Désolé, je ne pense pas avoir compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que les étapes fournies ont fonctionné?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that.", "Sorry, I didn't catch that.", "Sorry, I didn’t understand that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did those troubleshooting steps work?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": "$sys.func.ADD($session.params.audissues_retrycnt,1)"
+      } ]
+    },
+    "name": "35154f9d-8c30-42ee-9635-5d6d4d7c23c9"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pouvez-vous recommencer et reformuler encore une fois?", "Seriez-vous en mesure de recommencer et reformuler de nouveau?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm still not sure I've got this.", "I still don't quite understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let's start over, can you try rephrasing one more time?", "Let's start over, can you rephrase that again for me?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "name": "8b002951-be64-4bd2-8ebf-7fe43f89c902"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que les étapes fournies ont fonctionné?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did those troubleshooting steps work?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": "$sys.func.ADD($session.params.audissues_retrycnt,1)"
+      } ]
+    },
+    "name": "4f7c0d30-0996-4e9f-a8f7-a0a1c74a2058"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne crois pas avoir bien saisi.", "Désolé, je n'ai pas tout à fait compris.", "Désolé, je ne pense pas avoir compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Est-ce que les étapes fournies ont fonctionné?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that.", "Sorry, I didn't catch that.", "Sorry, I didn’t understand that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Did those troubleshooting steps work?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": "$sys.func.ADD($session.params.audissues_retrycnt,1)"
+      } ]
+    },
+    "name": "5e963cdf-8830-4e21-9b88-b2f43eb2b735"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pouvez-vous recommencer et reformuler encore une fois?", "Seriez-vous en mesure de recommencer et reformuler de nouveau?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm still not sure I've got this.", "I still don't quite understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let's start over, can you try rephrasing one more time?", "Let's start over, can you rephrase that again for me?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "name": "6f98f7fd-260e-4207-aa34-be91aaf096a1"
+  } ]
+}

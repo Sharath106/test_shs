@@ -1,0 +1,271 @@
+{
+  "name": "107d91b2-3b28-4642-b602-8f21c3d31041",
+  "displayName": "SMS Reception Issues Coverage Check",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_network_coverage",
+      "required": true,
+      "entityType": "@dtmf-menu-9-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Disposez-vous d'une couverture réseau sur l'appareil ?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Do you have network coverage on the device?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé je nai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Si vous disposez d'une couverture réseau sur l'appareil, dites oui ou faites le 9. Sinon, dites non ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you have network coverage on the device concerned with the text issue?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "0bed02f7-b7b8-43d1-b2f5-01572118bb22"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous disposez d'une couverture réseau sur l'appareil, dites oui ou faites le 9. Sinon, dites non ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have network coverage on the device concerned with the text issue, say yes, or press 9. If not, say no, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2831c41f-688c-42b9-a672-0ed3f000c77a"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "8e69ad28-6296-43f4-8bb5-17c6c18e0e81"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé je nai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Si vous disposez d'une couverture réseau sur l'appareil, dites oui ou faites le 9. Sinon, dites non ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you have network coverage on the device concerned with the text issue?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "0f3f890b-5f28-405f-ba2c-bf57d3288eb8"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous disposez d'une couverture réseau sur l'appareil, dites oui ou faites le 9. Sinon, dites non ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have network coverage on the device concerned with the text issue, say yes, or press 9. If not, say no, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "bfcfee5d-3b02-4219-b0d2-41705b25e6eb"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "3acb358a-c8fa-4142-a5fb-ff5f824584ca"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Laissez-moi voir comment je peux vous aider avec les problèmes de messages texte." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Let me see how I can help with texting issues.\r\n" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "SMS Reception Issues Coverage Check"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_network_coverage",
+        "value": null
+      } ]
+    },
+    "targetPage": "SMS Reception Issues Device Check",
+    "name": "5168c430-b3ed-43d5-9e59-4e30a7738a72"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "La force du signal réseau ou la couverture peuvent varier en fonction de l'emplacement en raison de plusieurs facteurs, notamment la distance par rapport à la tour cellulaire la plus proche et les obstacles dans l'environnement, en particulier dans les ascenseurs et les endroits souterrains. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Essayez de vous déplacer vers un endroit offrant une meilleure couverture pour recevoir des messages texte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Network signal strength or coverage can vary by location due to a number of factors including distance from the nearest cell tower and obstacles in the environment, especially in elevators and underground locations." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Try moving to a location with a better coverage to receive text messages." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_network_coverage",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "4dbc0de4-27e2-48b1-a5e4-4f1570f56406"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_network_coverage",
+        "value": null
+      } ]
+    },
+    "name": "7b87a574-a0ac-426f-8818-a3d8185acf76"
+  }, {
+    "condition": "$session.params.dtmf_network_coverage = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_network_coverage",
+        "value": null
+      } ]
+    },
+    "targetPage": "SMS Reception Issues Device Check",
+    "name": "8cbb0f97-32ee-458d-aef7-945dc0a9872e"
+  }, {
+    "condition": "$session.params.dtmf_network_coverage = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "La force du signal réseau ou la couverture peuvent varier en fonction de l'emplacement en raison de plusieurs facteurs, notamment la distance par rapport à la tour cellulaire la plus proche et les obstacles dans l'environnement, en particulier dans les ascenseurs et les endroits souterrains. " ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Essayez de vous déplacer vers un endroit offrant une meilleure couverture pour recevoir des messages texte." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Network signal strength or coverage can vary by location due to a number of factors including distance from the nearest cell tower and obstacles in the environment, especially in elevators and underground locations." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Try moving to a location with a better coverage to receive text messages." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_network_coverage",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "4fe29ea6-c975-45e6-8e9b-64851e454df9"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900KW"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900KB"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "3c76d814-6d44-4150-b7e7-fd620642b72f"
+  } ]
+}

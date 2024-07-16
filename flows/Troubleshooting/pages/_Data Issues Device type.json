@@ -1,0 +1,104 @@
+{
+  "name": "194333c1-ba19-4310-9748-75746961f8fc",
+  "displayName": "_Data Issues Device type",
+  "form": {
+    "parameters": [ {
+      "displayName": "iphone_vs_android",
+      "required": true,
+      "entityType": "@iphone-vs-android",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Are you using an iPhone or Android phone?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Utilisez-vous un iPhone ou un téléphone Android ?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that. ", "Sorry, I didn't catch that.", "I didn't get that. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "quickReplies": {
+                  "replies": [ {
+                    "responsePayload": "iPhone",
+                    "text": "iPhone"
+                  }, {
+                    "responsePayload": "Android",
+                    "text": "Android"
+                  } ],
+                  "title": "Are you using an iPhone or an Android phone?"
+                }
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris. ", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "payload": {
+                "quickReplies": {
+                  "replies": [ {
+                    "responsePayload": "iPhone",
+                    "text": "iPhone"
+                  }, {
+                    "responsePayload": "Android",
+                    "text": "Android"
+                  } ],
+                  "title": "Utilisez-vous un iPhone ou un téléphone Android ?"
+                }
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "9824422d-ac7c-4a19-9234-5f88abb6e72f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+          
+          },
+          "name": "2b67557c-15c3-4986-a59c-59adb6d78aeb"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Ok, let's keep going then. " ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Ok, continuons alors." ]
+      },
+      "languageCode": "fr-ca"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.iphone_vs_android != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Data Issues Check for data block",
+    "name": "102a21da-bc7f-45ab-97f1-ded8d6788df7"
+  } ]
+}

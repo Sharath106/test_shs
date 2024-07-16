@@ -1,0 +1,241 @@
+{
+  "name": "4d3bd885-f3b3-42f3-930f-0b3d09c62595",
+  "displayName": "_Data Issues text SMS Unsuccessful",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_data_issues_text_sms_unsuccessful",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris. ", "Désolé, je ne comprends pas. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Si les informations vous ont aidé, dites oui. Si cela ne vous a pas aidé, dites non. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that.", "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "If the information helps, say Yes, or if it didn't help you, say No." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "6f7b6aca-d544-49e2-9d3f-2d4dd5d1e451"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si les informations vous ont aidé, dites oui ou appuyez sur 9. Si cela ne vous a pas aidé, dites non ou appuyez sur 0. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If the information helps, say Yes or press 9, or if it didn't help you, say No or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a4f27b59-c598-40aa-b5aa-9e2fe4c6e718"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "15cf974e-03f9-43ef-9d2c-43dde2de6e8b"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas bien compris. ", "Désolé, je ne comprends pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Si les informations vous ont aidé, dites oui. Si cela ne vous a pas aidé, dites non. " ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that.", "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "If the information helps, say Yes, or if it didn't help you, say No." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5f1dd3d0-a5ed-4af6-a0be-e0e211a1d201"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si les informations vous ont aidé, dites oui ou appuyez sur 9. Si cela ne vous a pas aidé, dites non ou appuyez sur 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If the information helps, say Yes or press 9, or if it didn't help you, say No or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a6384421-17a2-476a-8bf1-edf134fe8812"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "a051ac90-7190-4dae-99a4-17c24c73fa58"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Data Issues text SMS Unsuccessful"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.data_device_types = \"smart hub\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Vérifiez que les données sont activées et qu'il n'y a aucun blocage pour votre service de terminal intelligent. Nous offrons également un guide facile à utiliser pour résoudre les problèmes avec votre terminal intelligent sur notre site web. Notre priorité est de vous reconnecter rapidement. Est-ce que cela vous a aidé?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Verify data is enabled and there are no blocks for your smart hub service. We also offer a user-friendly guide to fixing your smart hub issues on our website. Our priority is to reconnect you quickly. Did that help you?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.data_device_types = \"mobile phone\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Vérifiez que les données sont activées et qu'il n'y a aucun blocage de votre service de téléphone mobile. Nous offrons également un guide facile à utiliser pour résoudre les problèmes avec votre téléphone mobile sur notre site web. Notre priorité est de vous reconnecter rapidement. Est-ce que cela vous a aidé?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Verify data is enabled and there are no blocks for your mobile phone service. We also offer a user-friendly guide to fixing your mobile phone issues on our website. Our priority is to reconnect you quickly. Did that help you?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.data_device_types = \"mobile internet key\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Explorez notre guide facile à utiliser pour les problèmes de clé Internet mobile sur le site web de TELUS. Choisissez la marque de votre appareil, cliquez sur \"Accéder à mon appareil\" et accédez aux instructions détaillées pour la configuration, le dépannage et les fonctionnalités. Notre priorité est de vous reconnecter rapidement. Est-ce que cela vous a aidé?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Explore our user-friendly guide for mobile internet key issues on the TELUS website. Choose your device brand, click 'Go to my device,' and access step-by-step instructions for setup, troubleshooting, and features. Our priority is to reconnect you quickly.  Did that help you?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Universal handoff",
+    "name": "a08f8749-6672-4d79-86c9-889cd5e48914"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "a1b4828a-05a5-4827-9bcb-febbf8c2d849"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "dce9d681-4653-46a3-a1e6-66b0b1e6de87"
+  }, {
+    "condition": "$session.params.dtmf_data_issues_text_sms_unsuccessful = \"9\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "9f85c4bd-efcd-4c69-a578-7148eb5f350b"
+  }, {
+    "condition": "$session.params.dtmf_data_issues_text_sms_unsuccessful = \"0\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask for Agent",
+    "name": "3e5171b5-a612-4a3c-a87b-a1ff94844c1a"
+  } ]
+}

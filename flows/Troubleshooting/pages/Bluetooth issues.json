@@ -1,0 +1,469 @@
+{
+  "name": "9abb6f10-26b9-4137-8c85-795a0e957b05",
+  "displayName": "Bluetooth issues",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_bluetooth_issues",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé je nai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Est-ce que les étapes fournies ont fonctionné?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Did those troubleshooting steps work?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "fd482e97-3e49-4338-bbbd-bf57c5df1894"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si les étapes fournies ont résolu le problème, dites oui ou appuyez sur 1. Sinon, dites non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If the steps provided worked, say yes, or press 1. Otherwise, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5c326d27-f3d4-4fd8-b39e-cd56703300f5"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "282bb928-334e-4eff-a215-64f3767a7a64"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé je nai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Est-ce que les étapes fournies ont fonctionné?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Did those troubleshooting steps work?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d44cbfb5-9e26-4b11-a928-04102dae4ac4"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si les étapes proposées ont fonctionné, dites oui ou appuyez sur 1. Sinon, dites non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If the steps provided worked, say yes, or press 1. Otherwise, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "76258f48-431b-42ed-8201-6c5b33d3cf6c"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "4f33dcf6-732f-4ce1-a650-002a7212a9ef"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Bluetooth issues"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Voyons ce que nous pouvons faire pour résoudre les problèmes de Bluetooth." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Tout d'abord, assurez-vous que le Bluetooth est activé dans les paramètres de votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Une fois cela fait, voici quelques solutions pour essayer de résoudre le problème:" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Essayez de redémarrer votre appareil et l'accessoire." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Essayez de déconnecter l'accessoire dans les paramètres Bluetooth, puis réessayez de le reconnecter." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Essayez de réinitialiser vos paramètres réseau, mais cela effacera les paramètres Wi-Fi et Bluetooth uniquement." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si cela ne fonctionne toujours pas, confirmez la version de Bluetooth avec la compatibilité de l'accessoire ou essayez une réinitialisation de votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Est-ce que ça a fonctionné?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Let's see what we can do to help with bluetooth issues." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "First, make sure that Bluetooth is enabled in the settings of your phone." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Once that's done, here are a few things to try:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "1. Try rebooting both your device and the accessory you may be pairing it with." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "2. Remove and pair the accessory once more within the Bluetooth settings." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "3. Try resetting your network settings, but, this will erase your current Wi-Fi and Bluetooth settings." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If none of those work, confirm the Bluetooth version and compatibility between devices, or, try a factory reset on your phone." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Did that work?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Analysons les problèmes de Bluetooth." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Assurez-vous que le Bluetooth est activé dans les paramètres de votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ensuite, essayez de redémarrer les deux appareils, de réassocier l'accessoire ou de réinitialiser les paramètres réseau." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si le problème persiste, vérifiez la compatibilité ou effectuez une réinitialisation d'usine." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Est-ce que ça a fonctionné?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Let's troubleshoot Bluetooth issues. Ensure Bluetooth is on in your phone settings." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Then, try rebooting both devices, re-pairing the accessory, or resetting network settings." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If still not resolved, check compatibility or do a factory reset." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Did that work?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour résoudre les problèmes de Bluetooth, assurez-vous que le Bluetooth est activé dans les paramètres de votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ensuite, essayez de redémarrer les deux appareils, de réassocier l'accessoire ou de réinitialiser les paramètres réseau." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si cela ne fonctionne pas, vérifiez la compatibilité de l'appareil et la version Bluetooth, ou effectuez une réinitialisation d'usine." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Est-ce que ça a fonctionné?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To troubleshoot Bluetooth problems, ensure Bluetooth is enabled in your phone settings." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Then, attempt rebooting both devices, re-pairing the accessory, or resetting network settings." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If unsuccessful, verify device compatibility and Bluetooth version or perform a factory reset." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Did that work?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super!", "Génial" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great!", "Awesome!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "af3786d8-84a7-4045-826d-23af6927867a"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé de l'apprendre." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pour les problèmes d'appareil comme celui-ci, je suggère d'examiner les options de réparation pour votre appareil." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry about that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "For device issues like this one, I suggest looking into repair options for your device." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "repair_process"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "e5db20fa-ce07-4ac2-88c9-4276175c4119"
+  }, {
+    "condition": "$session.params.dtmf_bluetooth_issues = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Génial", "Super!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great!", "Awesome!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_bluetooth_issues",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "796710ae-8149-4e93-a4c0-8d7d9d3b3b5e"
+  }, {
+    "condition": "$session.params.dtmf_bluetooth_issues = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry about that. Let me get you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_bluetooth_issues",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "07eb274e-27ae-408a-9667-67d87b331b74"
+  } ],
+  "transitionRouteGroups": [ "troubleshooting_how_to" ]
+}

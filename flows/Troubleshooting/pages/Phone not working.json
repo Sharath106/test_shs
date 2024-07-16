@@ -1,0 +1,731 @@
+{
+  "name": "61144be6-ff5a-4fb1-aa74-8b9882882087",
+  "displayName": "Phone not working",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_phone_not_working",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-3-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn't hear that. Can you repeat?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas entendu. Pouvez-vous fournir plus de détails sur ce qui ne fonctionne pas?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "a590ec94-d135-44c4-9638-c85f37cb2f50"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "For audio issues, press 1.\nFor slow or freezing, 2.\nFor dropped calls, 3.\nFor anything else, tell me more about what you're experiencing." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour les problèmes audio, appuyez sur 1.\nEn cas de lenteur ou de gel, 2.\nPour les appels perdus, 3.\nPour tout autre problème, expliquez-moi ce que vous rencontrez." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "ef02c5c7-19ec-408d-93c9-37e4d4b0e948"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I still didn't catch that. Let me get you over to a team member who can help you." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas. Laissez-moi vous mettre en communication avec un autre agent pour mieux vous aider." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "f59bdfa0-6998-4a68-b5d6-ba3002999072"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I'm not sure I got that. Can you rephrase?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris. Pouvez-vous fournir plus de détails sur ce qui ne fonctionne pas?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "b934d36c-aa34-43c2-a3b2-5c512ec810bb"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "For audio issues, press 1.\nFor slow or freezing, 2.\nFor dropped calls, 3.\nFor anything else, tell me more about what you're experiencing." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour les problèmes audio, appuyez sur 1.\nEn cas de lenteur ou de gel, 2.\nPour les appels perdus, 3.\nPour tout autre problème, expliquez-moi ce que vous rencontrez." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "b6308a38-14c1-4cc1-967f-4b19d18e256a"
+        }, {
+          "targetFlow": "Universal handoff",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I still couldn't hear that. Let me get you over to a team member who can help you." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne comprends toujours pas. Laissez-moi vous mettre en communication avec un autre agent pour mieux vous aider." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "59254d32-a51e-4d35-aa9d-db2af42f82d7"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Phone not working"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.phonenotworking_retrycnt = null OR $session.params.phonenotworking_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Let me help you with your phone." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "A majority of issues can be resolved by rebooting your phone." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "We also have a Mobile Klinik Device Checkup app that helps diagnose some common issues." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you're still experiencing issues, can you please provide more details on what exactly isn't working?" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Laissez-moi vous aider avec votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "La plupart des problèmes peuvent être résolus en redémarrant le téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Nous avons également notre application de vérification d'appareil Mobile Klinik pour aider à diagnostiquer un problème avec votre appareil." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si vous rencontrez toujours des problèmes, pouvez-vous fournir plus de détails sur ce qui ne fonctionne pas?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.phonenotworking_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Can you please provide more details on what exactly isn't working? Some examples to help me understand are;" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "My phone is slow or freezing." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I'm having audio issues." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pouvez-vous s'il vous plaît fournir plus de détails sur ce qui ne fonctionne pas exactement? Quelques exemples pour m'aider à comprendre sont:" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Mon téléphone est lent ou gelé." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "J'ai des problèmes audio." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.phonenotworking_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "If your phone still isn't working, describe the first thing that comes to mind that your device is stopping you from doing." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si votre téléphone ne fonctionne toujours pas, décrivez ce que votre appareil vous empêche de faire." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "supplemental.device_network_issue",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Manual network search",
+    "name": "c697bffd-f6cc-44a9-bc11-3906917d0993"
+  }, {
+    "intent": "head_intent.audio_issues",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Audio issues",
+    "name": "0345477e-2fed-4cd8-ad0c-3a837219fa48"
+  }, {
+    "intent": "head_intent.troubleshoot_slow_frozen_device",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Slow or frozen device",
+    "name": "b1fe6a76-6042-4647-a67a-c7ed5f24e21a"
+  }, {
+    "intent": "head_intent.dropped_calls",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Dropped calls",
+    "name": "2f6f4c82-8eb1-4701-80ea-16dd42b08a82"
+  }, {
+    "intent": "head_intent.troubleshoot_data_not_working",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Data Issues Start",
+    "name": "4df2790a-907d-4161-9d18-d6a9f3220014"
+  }, {
+    "intent": "head_intent.sms_issues",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SMS issues",
+    "name": "aec1db13-3bcd-4f19-91ec-90610b27039d"
+  }, {
+    "intent": "head_intent.warranty_lookup_tool",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "warranty_lookup_tool"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "3e0dca70-0aab-4c39-9255-da8edbc36e19"
+  }, {
+    "intent": "head_intent.out_of_warranty",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_warranty"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "2541cf74-cb43-47f9-8784-57e33a191e70"
+  }, {
+    "intent": "head_intent.device_how_to",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "device_howto"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "da98849a-78ca-424f-988b-e397e09f1929"
+  }, {
+    "intent": "head_intent.bluetooth_issues",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Bluetooth issues",
+    "name": "298a93b5-f90d-4aa3-9129-0a611403bf4d"
+  }, {
+    "intent": "head_intent.troubleshoot_calling_issues",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Calling issues",
+    "name": "58d4fcf1-f9ca-43f5-99f8-087b18a31b16"
+  }, {
+    "intent": "head_intent.troubleshoot_wifi_issues",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "WiFi issues",
+    "name": "878d115d-e64a-4540-8f10-963272e1d6ef"
+  }, {
+    "intent": "head_intent.troubleshoot_apps_keep_crashing",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Troubleshooting apps",
+    "name": "de2f5340-f84b-4a04-ad86-507965b1e86a"
+  }, {
+    "intent": "head_intent.troubleshoot_device_wont_start",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Device will not start",
+    "name": "c026ef96-e0f7-4119-9b80-088a48e70de1"
+  }, {
+    "intent": "head_intent.device_checkup",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "device_checkup"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "33a1b1ec-ec67-42e6-afb2-f11711e30fea"
+  }, {
+    "intent": "head_intent.troubleshoot_battery_issues",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Battery issues",
+    "name": "5a860ce9-5485-45a6-8b02-1ee627ea8607"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Can you please provide more details on what exactly isn't working? Some examples to help me understand are;\n My phone is slow or freezing.\n I'm having audio issues." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous fournir plus de détails sur ce qui ne fonctionne pas exactement ? Voici quelques exemples pour m'aider à comprendre.\r\nMon téléphone est lent ou se bloque.\r\nJ'ai des problèmes audio." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "27d6e80a-451a-4422-b14e-3d20d933a2a6"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Est-ce que je peux vous aider avec d'autres questions?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "3806fe73-15cb-4866-af1f-0ef27b7f9ca3"
+  }, {
+    "intent": "head_intent.voicemail_issues_mailbox_number",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "VM Mailbox number",
+    "name": "dd07c2c7-16c2-4e02-b788-ee33e4748533"
+  }, {
+    "intent": "head_intent.reconnection_fee",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "reconnection_fee"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "4c73b4b0-ed65-4062-a4df-8b49662a5255"
+  }, {
+    "intent": "small_talk.troubleshooting_still_having_issues",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Could you be more specific on what exactly isn't working? Just say,  \"phone is freezing\", \"audio issues\", or \"problem with data\"." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous spécifier qu'est ce qui ne fonctionne pas? Veuillez-dire, \"mon appareil est gelée\", \"appels fonctionnent pas\", ou \"problèmes de données\". " ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "7046358b-cad1-47ac-b315-713315ef4934"
+  }, {
+    "intent": "small_talk.acknowledge_fixed_issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great! " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Est-ce que je peux vous aider avec d'autres choses?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "668bfce2-fdf7-4c72-9429-368451757f7f"
+  }, {
+    "intent": "head_intent.voicemail_issues_stuck_indicator",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "VM Stuck indicator",
+    "name": "27c03d55-ccd6-467b-b4a4-c5985e033508"
+  }, {
+    "intent": "head_intent.everything_roaming",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry to hear you're having issues with roaming. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Nous sommes désolé d'apprendre que vous rencontrez des problèmes d'itinérance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Roaming issues",
+    "name": "3235d846-618a-4713-a038-0b6e235f9b1a"
+  }, {
+    "intent": "supplemental.device_android",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "What exactly are you having trouble with on your Android device?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Qu'est ce qui se passe exactement avec votre appareil Android ?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "89b92d02-4bcf-4c09-a153-bfdd14f20132"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SMS issues",
+    "name": "d44a0029-67d4-484e-b347-1799f4bb0df5"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me get you to a team member for further support." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Ok, laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "483a3d83-9ccb-4972-9717-197dba2cd74d"
+  }, {
+    "condition": "$session.params.dtmf_phone_not_working = \"1\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Audio issues",
+    "name": "8af06999-8085-451f-8413-797f543bb4f5"
+  }, {
+    "condition": "$session.params.dtmf_phone_not_working = \"2\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Slow or frozen device",
+    "name": "62221e35-8ee8-480a-b0d7-f42077fdb659"
+  }, {
+    "condition": "$session.params.dtmf_phone_not_working = \"3\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Dropped calls",
+    "name": "6831deee-11d4-4a80-a026-f44d9d47156b"
+  }, {
+    "condition": "$session.params.dtmf_phone_not_working = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me get you over to a team member who can help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en communication avec un autre agent pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "460bfb77-2abd-4e51-ac6d-844588df191d"
+  }, {
+    "condition": "$session.params.phonenotworking_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phonenotworking_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "65ddc3c7-3dfc-4054-8d27-2290c3916dce"
+  }, {
+    "condition": "$session.params.phonenotworking_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "c3de7020-1f15-4a90-8e66-ea30b79f2f6b"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phonenotworking_retrycnt",
+        "value": "$sys.func.ADD($session.params.phonenotworking_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.phonenotworking_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "If you're still experiencing issues, can you please provide more details on what exactly isn't working?" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.phonenotworking_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "If you're still experiencing issues, can you please provide more details on what exactly isn't working?" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "36cde239-7024-4afb-863e-83ca071a2ecb"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Can you please provide more details on what exactly isn't working? Some examples to help me understand are;\n  My phone is slow or freezing.\n  I'm having audio issues." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous fournir plus de détails sur ce qui ne fonctionne pas exactement ? Voici quelques exemples pour m'aider à comprendre ;\r\n  Mon téléphone est lent ou se bloque.\r\n  J'ai des problèmes audio." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "phonenotworking_retrycnt",
+        "value": "$sys.func.ADD($session.params.phonenotworking_retrycnt,1)"
+      } ]
+    },
+    "name": "5b328b90-708e-4b03-be01-f285d86e8b27"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that.", "Sorry, I didn't catch that.", "Sorry, I didn’t understand that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If your phone still isn't working, describe the first thing that comes to mind that your device is stopping you from doing." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Si votre téléphone ne fonctionne toujours pas, décrivez ce que votre appareil vous empêche de faire." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "0eb693b9-6af2-454c-b304-920bb0d07602"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm still not sure I've got this.", "I still don't quite understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let's start over, can you try rephrasing one more time?", "Let's start over, can you rephrase that again for me?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne crois toujours pas avoir compris.", "Je ne comprends toujours pas bien." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous recommencer et reformuler encore une fois?", "Seriez-vous en mesure de recommencer et reformuler de nouveau?" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "phonenotworking_retrycnt",
+        "value": null
+      } ]
+    },
+    "name": "8eebf839-e5d4-4deb-bdb5-93ab207ff649"
+  } ],
+  "transitionRouteGroups": [ "troubleshooting_how_to" ]
+}

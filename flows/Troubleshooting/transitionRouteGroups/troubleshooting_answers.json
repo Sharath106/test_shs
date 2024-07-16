@@ -1,0 +1,120 @@
+{
+  "name": "92ce56a0-9200-458b-976a-1bde75052d8e",
+  "displayName": "troubleshooting_answers",
+  "transitionRoutes": [ {
+    "intent": "small_talk.troubleshooting_still_having_issues",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry about that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "In this case, let me get you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé de l'apprendre!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Dans ce cas, je peux vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "data_device_types",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "82a483f6-1d75-466e-b99f-87261d3cf8fa"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great! Glad to hear that worked.", "I'm glad it's working now.", "That's awesome, glad this worked." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Super! Heureux de l'apprendre!", "Ravi de savoir que ça marche maintenant.", "C'est génial, content que ça ait fonctionné!" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "data_issues",
+        "value": "resolved"
+      }, {
+        "parameter": "phone_number",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "1b3c8298-61e7-41ad-bbfd-b5c6485d88e8"
+  }, {
+    "intent": "small_talk.acknowledge_fixed_issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great! Glad to hear that worked.", "I'm glad it's working now.", "That's awesome, glad this worked." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Super! Heureux de l'apprendre!", "Ravi de savoir que ça marche maintenant.", "C'est génial, content que ça ait fonctionné!" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "data_device_types",
+        "value": null
+      }, {
+        "parameter": "data_issues",
+        "value": "resolved"
+      }, {
+        "parameter": "phone_number",
+        "value": null
+      }, {
+        "parameter": "iphone_vs_android",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "1d4061e3-f504-4cd6-bf62-8e42dd40f180"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry to hear that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "In this case, let me connect you with a team member to do some investigation. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé de l'apprendre!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Dans ce cas, je peux vous mettre en contact avec un membre de l'équipe pour plus d'assistance." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "Ask for Agent",
+    "name": "6297d7eb-40e7-4fa1-9955-6ed19d6ff87c"
+  } ]
+}

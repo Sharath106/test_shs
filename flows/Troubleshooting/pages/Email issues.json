@@ -1,0 +1,417 @@
+{
+  "name": "42fd54c7-db3c-4103-b070-9e1127e9c892",
+  "displayName": "Email issues",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_email_issues",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Faites-moi savoir si les étapes ont fonctionné ?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Let me know if the steps worked." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Faites-moi savoir si les étapes ont fonctionné ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Let me know if the steps worked." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "1d6971b1-44e6-452e-afab-70d565511bf8"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour qu'un membre de l'équipe vous aide, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For a team member to help, say team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "6a5a51ec-2469-412b-8d94-7a8c1481951c"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "f7e04d29-168a-47ee-9a8b-23c36b17dfd2"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Faites-moi savoir si les étapes ont fonctionné ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Let me know if the steps worked." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "6a2b9c5d-af0c-4b55-8be1-5dab5e2196ee"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour qu'un membre de l'équipe vous aide, dites membre de l'équipe ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For a team member to help, say team member, or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f3c976cb-837f-49fa-a587-257c25f8e3ae"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "9cf75d38-1f6e-41bc-8822-1193fff8b43c"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Email issues"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.repeat_counter = null OR $session.params.repeat_counter = 3",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous rencontrez des problèmes avec votre courriel, voici quelques trucs  à essayer:" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "1, Assurez-vous que les données ou le Wi-Fi sont activés sur votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "2, Confirmez que vous pouvez accéder à votre messagerie via le Web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "et 3, Supprimez et rajoutez le courriel de votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you're having issues with your email, here are few things to try:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "1, Make sure that your mobile data or Wi-Fi is enabled on your phone." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "2, Confirm that you can access your email through the web and" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "3, Try to remove and re-add the email on your phone allowing it to resync itself." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 1 OR $session.params.repeat_counter = 4",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous rencontrez des problèmes avec votre courrier électronique, essayez les étapes suivantes :" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Assurez-vous que les données mobiles ou le Wi-Fi de votre téléphone sont activés." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vérifiez si vous pouvez accéder à votre courrier électronique via le web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Supprimez et réajoutez le compte de messagerie sur votre téléphone, en lui permettant de se resynchroniser." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you're experiencing email problems, try the following:" ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "1. Ensure that your phone's mobile data or Wi-Fi is turned on." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "2. Check if you can access your email through the web." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "3. Remove and re-add the email account on your phone, allowing it to resync." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.repeat_counter = 2 OR $session.params.repeat_counter = 5",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous rencontrez des problèmes avec votre courrier électronique, commencez par vérifier que les données mobiles ou le Wi-Fi de votre téléphone sont activés." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ensuite, vérifiez si vous pouvez accéder à votre courrier électronique via le web." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Si le problème persiste, essayez de supprimer et de réajouter le compte de messagerie sur votre téléphone, en lui permettant de se resynchroniser." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you're encountering email issues, start by verifying that your phone's mobile data or Wi-Fi is enabled. Next, check if you can access your email through the web. If the problem persists, try removing and re-adding the email account on your phone, allowing it to resync." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.remove_email_from_phone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "remove_emailphone"
+      }, {
+        "parameter": "emailissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_email_issues",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "60d80bef-6b38-4acb-9b32-b03ce0171f47"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "emailissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_email_issues",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "fe3c6479-1f02-43c4-9b5c-d555b77c6762"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, je vais vous mettre en contact avec un membre de l'équipe" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright, I will transfer you to a team member" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "emailissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_email_issues",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e63d638e-24ae-4a7b-8081-c40fa77b7816"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "emailissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_email_issues",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "efad80fa-f32e-4c0e-aa54-9fd6c01024c5"
+  }, {
+    "condition": "$session.params.dtmf_email_issues = \"0\" OR $session.params.dtmf_email_issues = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, je vais vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright, I will get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_email_issues",
+        "value": null
+      }, {
+        "parameter": "emailissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "af20e392-71aa-47bf-be8d-aa15ca3ec902"
+  }, {
+    "condition": "$session.params.dtmf_email_issues = 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_email_issues",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "4e36b501-fcb9-4e31-9426-e4655163b4d5"
+  } ],
+  "transitionRouteGroups": [ "troubleshooting_answers" ]
+}

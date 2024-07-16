@@ -1,0 +1,478 @@
+{
+  "name": "41f0b9ae-59e0-42ca-b8a9-dc18befb4fe9",
+  "displayName": "Calling issues Mobile service check",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_calling_issues_mobile",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Votre téléphone a-t-il du réseau présentement?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Does your phone have service?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ba48b70c-cd35-4a62-b183-7a785ddb8625"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez du service cellulaire, dites oui ou faites le 1. Si vous n'avez pas du service cellulaire, dites non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have service, say yes, or press 1. For no service, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2f058512-c161-4632-aa7f-b5b5c597841e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1045eb4c-8678-4e2b-b3ed-3df627b24c05"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Votre téléphone a-t-il du réseau présentement?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Does your phone have service?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "edf53311-fda8-40ac-b369-65309f9ce7dc"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez du service cellulaire, dites oui ou faites le 1. Si vous n'avez pas du service cellulaire, dites non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have service, say yes, or press 1. For no service, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7f9642b7-fad8-4759-aac1-fec1ac05b6bf"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "b1386dbe-05d0-4574-9e07-6f316839368d"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Calling issues Mobile service check"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "($session.params.calling_retrycnt = null OR $session.params.calling_retrycnt = 0) AND $session.params.country != \"other country\" AND $session.params.calling_issues != \"long distance\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous ne l'avez pas déjà fait, le redémarrage de votre appareil résout la plupart des problèmes communs." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Précisons votre problème exact et vous fournir les informations dont vous avez besoin pour résoudre ce problème." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Votre téléphone a-t-il du réseau présentement?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you haven't already, rebooting your device fixes most of the common issues." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Let's narrow it down to get you the information you need to resolve this." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Firstly, does your phone have service?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.calling_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Votre téléphone a-t-il du réseau présentement?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Does your phone have service?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.calling_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez du service cellulaire, dites oui ou faites le 1. Si vous n'avez pas du service cellulaire, dites non ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you have service, say yes, or press 1. For no service, say no, or press 2." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "supplemental.device_network_issue",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Manual network search",
+    "name": "464af8ce-6dad-4804-a5c5-e2356a4c33bb"
+  }, {
+    "intent": "head_intent.audio_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_calling_issues_mobile",
+        "value": null
+      } ]
+    },
+    "targetPage": "Audio issues",
+    "name": "54293748-4124-4de3-9c68-822858ffeab8"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_calling_issues_mobile",
+        "value": null
+      } ]
+    },
+    "targetPage": "Calling issues Mobile Audio check",
+    "name": "c7153b7c-2408-4d70-9c27-1439ccc2f3c5"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_calling_issues_mobile",
+        "value": null
+      } ]
+    },
+    "targetPage": "Manual network search",
+    "name": "12aea93f-38ed-4377-93e5-8e544ca64d90"
+  }, {
+    "intent": "head_intent.dropped_calls",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_calling_issues_mobile",
+        "value": null
+      } ]
+    },
+    "targetPage": "Dropped calls",
+    "name": "815d0b6c-867a-4bba-af1b-5e3374cad906"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_calling_issues_mobile",
+        "value": null
+      }, {
+        "parameter": "calling_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "f72e0b62-28ed-4f04-a705-bb389ae30d51"
+  }, {
+    "intent": "head_intent.troubleshoot_calling_issues",
+    "condition": "$session.params.cal_Is_moSerCheck_retrycount = \"1\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Calling issues Mobile Audio check",
+    "name": "735b211a-061b-4cb7-917b-c6bae9a1dbea"
+  }, {
+    "intent": "head_intent.troubleshoot_calling_issues",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je comprends que vous soyez confronté à des problèmes d'appel." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je vais vous poser quelques questions pour mieux vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I understand you are facing calling issues." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I will be asking few questions to better help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "cal_Is_moSerCheck_retrycount",
+        "value": "1"
+      }, {
+        "parameter": "calling_retrycnt",
+        "value": "$sys.func.ADD($session.params.calling_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "3c4b9832-0ce2-4dbf-ac11-e9b27cb9120b"
+  }, {
+    "intent": "head_intent.password",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "password_vague"
+      } ]
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "64a227ea-4e6e-408d-a0f4-5bd43b26cf73"
+  }, {
+    "intent": "small_talk.troubleshooting_still_having_issues",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Nous sommes désolés d'entendre ça. Pour mieux vous aider, je vais devoir vous poser quelques questions. Si vous avez du service cellulaire, dites oui ou faites le 1. Si vous n'avez pas de service cellulaire, dites non ou faites le 2." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry to hear that. But in order to help you, I'll need to ask you a few questions. If you have service, say yes, or press 1. For no service, say no, or press 2." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "42d43a57-aa88-4dbf-ac04-09f9550f22a9"
+  }, {
+    "intent": "head_intent.phone_reboot_pwrcycle",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "phone_reboot"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "32645204-4b7e-473d-8f3f-90592ae287d6"
+  }, {
+    "intent": "head_intent.troubleshoot_data_not_working",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "_Data Issues Start",
+    "name": "3b7f1479-49c4-4e86-9375-2625b15b3665"
+  }, {
+    "intent": "head_intent.everything_roaming",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Roaming issues",
+    "name": "924270ff-4deb-4dd8-8938-99891ef9fb1f"
+  }, {
+    "condition": "$session.params.dtmf_calling_issues_mobile = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_calling_issues_mobile",
+        "value": null
+      } ]
+    },
+    "targetPage": "Calling issues Mobile Audio check",
+    "name": "2c0e59bc-5167-4aa2-8fd0-df785db4b55b"
+  }, {
+    "condition": "$session.params.dtmf_calling_issues_mobile = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_calling_issues_mobile",
+        "value": null
+      } ]
+    },
+    "targetPage": "Manual network search",
+    "name": "7de3f994-c003-4e2b-8220-75b93e60393f"
+  }, {
+    "condition": "$session.params.calling_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "f653eeb9-5da7-4af0-ba53-85fd0db79914"
+  }, {
+    "condition": "$session.params.calling_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "21c2b61e-4d5e-4ddc-8573-a8bf01d0586c"
+  }, {
+    "condition": "$session.params.calling_issues = \"long distance\" OR $session.params.country = \"other country\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "Long distance issues",
+    "name": "cf549623-7194-4027-94f0-49afb2179d4d"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": "$sys.func.ADD($session.params.calling_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.calling_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.calling_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "bb11ec88-8702-43a8-adb4-0058b19298b5"
+  } ]
+}

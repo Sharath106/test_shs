@@ -1,0 +1,652 @@
+{
+  "name": "01d6824b-32cd-4438-b087-2f2b8d861ced",
+  "displayName": "VM Mailbox number",
+  "form": {
+    "parameters": [ {
+      "displayName": "iphone_vs_android",
+      "required": true,
+      "entityType": "@iphone-vs-android",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "($session.params.vm_mailboxnum_retrycnt = null OR $session.params.vm_mailboxnum_retrycnt = 0) AND $session.params.iphone_vs_android = null",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Pour vous fournir les bonnes étapes, puis-je confirmer si vous avez un iPhone ou un appareil Android?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "To provide you with the correct steps, can I confirm if you have an iPhone or an Android device?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.vm_mailboxnum_retrycnt = 1",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Juste pour confirmer, utilisez-vous un iPhone ou un appareil Android?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Just to confirm, are you using an iPhone, or, an Android device?" ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.vm_mailboxnum_retrycnt = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Juste pour confirmer, utilisez-vous un iPhone ou un appareil Android?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Just to confirm, are you using an iPhone, or, an Android device?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f55cc889-ee12-41b6-a3ff-8e919a198bc8"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "10ef66ef-0264-4734-ae2b-5bcc0de64b8b"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "a9a9ee46-eafd-449d-8e7e-56d269ee8b7c"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Juste pour confirmer, utilisez-vous un iPhone ou un appareil Android?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Just to confirm, are you using an iPhone, or, an Android device?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "3fef246e-22b1-44b3-8d96-0bdc0c6bf417"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez un iPhone, dites iPhone ou faites le 1. Si vous avez un Android, dites Android ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you have an iPhone, say iPhone or press 1. If you have an Android, say Android or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f38b8b53-c9bb-43fb-a4ec-a8408c686de3"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "18d892dc-3e16-48ba-806f-e3796a172af7"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    }, {
+      "displayName": "vm_access_number",
+      "required": true,
+      "entityType": "@vm-access-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "$session.params.vm_mailboxnum_retrycnt = null OR $session.params.vm_mailboxnum_retrycnt = 0",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Veuillez dire ou entrez l'indicatif régional de votre numéro de téléphone. C'est que les 3 premiers chiffres de votre numéro." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Please say or key in the area code of the phone number you're inquiring about. This will be just the first 3 digits of the phone number." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.vm_mailboxnum_retrycnt = 1",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Veuillez dire ou entrez l'indicatif régional de votre numéro de téléphone. C'est que les 3 premiers chiffres de votre numéro." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Please say or key in the area code of the phone number you're inquiring about. This will be just the first 3 digits of the phone number." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.vm_mailboxnum_retrycnt = 2",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "À l'aide de votre clavier de composition, entrez les 3 premiers chiffres de votre numéro de téléphone." ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Using your dial pad, key in the first 3 digits of your phone number." ]
+                  },
+                  "languageCode": "en"
+                }
+              } ]
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je suis désolé, je ne suis pas certain de comprendre.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Veuillez dire ou entrez l'indicatif régional de votre numéro de téléphone. C'est que les 3 premiers chiffres de votre numéro." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Please say or key in the area code of the phone number you're inquiring about. This will be just the first 3 digits of the phone number." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5f306996-e2a9-44e0-9369-3b83b4f497a8"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "À l'aide de votre clavier de composition, entrez les 3 premiers chiffres de votre numéro de téléphone." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Let's try this again." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "\u003cspeak\u003e\nUsing your dial pad, key in the first 3 digits of your phone number.\n,\n,\n,\nFor example, if your phone number is,\n\u003cprosody rate=\".90\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n604-123-4567\n\u003c/say-as\u003e\n\u003c/prosody\u003e\n,\nsimply enter,\nsix, zero, four.\n\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "20194cde-0b39-4ff3-8e47-eff257de0165"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1af17f1f-25fd-4a5b-99ec-dc5b06fb0630"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Veuillez dire ou entrez l'indicatif régional de votre numéro de téléphone. C'est que les 3 premiers chiffres de votre numéro." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Please say or key in the area code of the phone number you're inquiring about. This will be just the first 3 digits of the phone number." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "28d7d79b-8ad9-454f-b2cd-85eb5de8336e"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ " À l'aide de votre clavier de composition, entrez les 3 premiers chiffres de votre numéro de téléphone." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Let's try this again." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "\u003cspeak\u003e\nUsing your dial pad, key in the first 3 digits of your phone number.\n,\n,\n,\nFor example, if your phone number is,\n\u003cprosody rate=\".90\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n604-123-4567\n\u003c/say-as\u003e\n\u003c/prosody\u003e\n,\nsimply enter,\nsix, zero, four.\n\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "3b6824d0-ae90-45ad-8145-325e487444c7"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "e0bbe5d3-6693-45cb-9e29-25511db6dbad"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 3,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "VM Mailbox number"
+    }, {
+      "parameter": "page_summary",
+      "value": "concern regarding mailbox number"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "concern regarding mailbox number"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.vm_mailboxnum_retrycnt = null AND $session.params.iphone_vs_android = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous essayez d'appeler votre messagerie vocale, et qu'on vous demande d'entrer votre numéro d’accès à la messagerie vocale, vous devrez le taper manuellement en utilisant les touches de votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you are trying to call your voicemail, and it's asking you to enter your mailbox number, you may need to enter your voicemail access number manually into your phone." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.vm_mailboxnum_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous essayez d'appeler votre messagerie vocale, et qu'on vous demande d'entrer votre numéro d’accès à la messagerie vocale, vous devrez le taper manuellement en utilisant les touches de votre téléphone." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If you are trying to call your voicemail, and it's asking you to enter your mailbox number, you may need to enter your voicemail access number manually into your phone." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.vm_mailboxnum_retrycnt = 2"
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "vm_access_number",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "29b04bd0-0234-4bae-adeb-6c53a1c9085d"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "vm_access_number",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "d29ec061-c770-4def-b41c-97ff4edda0ab"
+  }, {
+    "intent": "supplemental.device_android",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sûr, les instructions pour android." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, for android instructions\n" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "android"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "eda39075-68dc-4e83-ad0e-6a77383d4dbf"
+  }, {
+    "intent": "supplemental.device_iphone",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bien sûr, les instructions pour iPhone." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, for iPhone instructions" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": "iphone"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "00a2ca80-5e67-40f5-86b2-2c6d9e58bc92"
+  }, {
+    "condition": "($session.params.iphone_vs_android = \"iphone\" OR $session.params.iphone_vs_android = \"1\") AND $page.params.status = FINAL",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\nPour cela, je vous recommande de noter le numéro que je fournirai car il est assez long.\n,\n,\n,\n,\nPour commencer,\nOuvrez l'application Téléphone comme si vous passiez un appel.\nUne fois ouvert, composez:\n\u003cprosody rate=\".90\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\nétoile, 5, 0, 0, 5, étoile, 8, 6, étoile\n,\n\u003cprosody rate=\".80\"\u003e\n$session.params.vm_access_number\ncarrée,\n\u003c/prosody\u003e\npuis appuyez sur Envoyer.\n\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pour faire apparaître le symbole +, maintenez la touche 0 enfoncée." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great, thanks." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\nFor this, I recommend writing down the number I'll be providing as it is quite long.\n,\n,\n,\n,\nTo start,\nOpen up the Phone application like you're making a call. \nOnce it's open, dial:\n\u003cprosody rate=\".90\"\u003e\nstar, five, zero, zero, five, star, eight, six, star\n \u003csay-as interpret-as=\"telephone  google:style='zero-as-zero'\"\u003e $session.params.vm_access_number \n\u003c/say-as\u003e\npound,\n\u003c/prosody\u003e\nand then hit SEND.\n\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "To get the + symbol, hold down the 0 key until it appears." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "61e5aa10-a3fb-4ae6-9c7c-44b79c62b1cc"
+  }, {
+    "condition": "($session.params.iphone_vs_android = \"android\" OR $session.params.iphone_vs_android = \"2\") AND $page.params.status = FINAL",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Super!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\nPour cela, je vous recommande de noter le numéro que je fournirai car il est assez long.\n,\n,\n,\n,\nPour commencer et mettre à jour votre numéro de boîte vocale:\nAccédez à vos paramètres, puis aux paramètres de messagerie vocale. Deuxièmement, sélectionnez le \"Numéro de messagerie vocale\" et entrez, \n\u003cprosody rate=\".80\"\u003e\n$session.params.vm_access_number \n\u003c/prosody\u003e\n, puis cliquez sur OK.\n\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pour faire apparaître le symbole +, maintenez la touche 0 enfoncée." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Après cela, veuillez redémarrer votre téléphone pour que les modifications prennent effet." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Great, thanks." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\nFor this, I recommend writing down the number I'll be providing as it is quite long.\n,\n,\n,\n,\nTo start and update your mailbox number: \nFirst, go to your Settings, followed by Voicemail settings. Second, Select the \"Voicemail number\" , and enter, \n\u003cprosody rate=\".90\"\u003e\n \u003csay-as interpret-as=\"telephone\"  google:style='zero-as-zero'\u003e $session.params.vm_access_number \n\u003c/say-as\u003e\n\u003c/prosody\u003e\n, and click OK.\n\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "To get the + symbol, hold down the 0 key until it appears." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "After that, please reboot your phone for the changes to take place." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "97fb98d9-6bc3-4176-9add-f5538b170941"
+  }, {
+    "condition": "$session.params.vm_mailboxnum_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "vm_mailboxnum_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "5400543c-b0d5-488c-aede-fc86ecf51941"
+  }, {
+    "condition": "$session.params.vm_mailboxnum_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "f64d57fb-4a3c-424b-ae8f-a5045cf2a493"
+  }, {
+    "condition": "$session.params.iphone_vs_android = 0 OR $session.params.iphone_vs_android = 9",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "iphone_vs_android",
+        "value": null
+      }, {
+        "parameter": "vm_mailboxnum_retrycnt",
+        "value": "$sys.func.ADD($session.params.vm_mailboxnum_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "a8aab2c3-60e5-43f6-a227-3fe57c3d82c1"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "vm_mailboxnum_retrycnt",
+        "value": "$sys.func.ADD($session.params.vm_mailboxnum_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.vm_mailboxnum_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.vm_mailboxnum_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "fbc3c10c-f2ff-4dc8-9d15-ccbc15f66515"
+  } ],
+  "transitionRouteGroups": [ "troubleshooting_answers" ]
+}
