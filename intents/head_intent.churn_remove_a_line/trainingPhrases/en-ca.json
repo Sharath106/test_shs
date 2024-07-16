@@ -1,0 +1,514 @@
+{
+  "trainingPhrases": [ {
+    "id": "8d8f1e51-396a-4acb-b1e5-729c66f8eded",
+    "parts": [ {
+      "text": "wanna quit my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8dfcab87-a1cd-45eb-aa44-ca91de8e3001",
+    "parts": [ {
+      "text": "want to cancel the plan on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cc8b0c2d-13d4-40d3-887f-1ddaaef95c3a",
+    "parts": [ {
+      "text": "want to discontinue my other phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5d5a1145-14ea-4dd6-833d-bc21c17103c4",
+    "parts": [ {
+      "text": "cancelling my phone plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5494fd7f-30fa-4044-950e-bd51f0d39da8",
+    "parts": [ {
+      "text": "cancel a plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "51c9f256-8884-416c-9856-71ed4a6ead01",
+    "parts": [ {
+      "text": "i need to cancel a plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "20c61f78-0937-4969-8d57-22d5c113ca6a",
+    "parts": [ {
+      "text": "cancelling mobility plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c00f0e1d-7e3d-43d3-a7c6-18bd3b342fd2",
+    "parts": [ {
+      "text": "i'd like to cancel a plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "574178eb-6385-4d6a-ab1a-ecdad27f99c9",
+    "parts": [ {
+      "text": "closing my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5ac61f44-7571-4a49-9208-53bdc2bfe0fa",
+    "parts": [ {
+      "text": "cancel my plan cancel my service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a98413d9-9af2-44f4-bcb2-20ba363ef2a2",
+    "parts": [ {
+      "text": "cancellation of my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ca208635-f114-45e6-a370-9ba102fea0c3",
+    "parts": [ {
+      "text": "cancelling plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b578d711-0a61-483d-998b-c2e12c2a9646",
+    "parts": [ {
+      "text": "cancel the plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "19488236-b1da-43b9-9bca-e31efc4ff8dd",
+    "parts": [ {
+      "text": "i wanna cancel a plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2ae3b582-1f8f-4c3c-972c-fd1956175bde",
+    "parts": [ {
+      "text": "i want to cancel my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cc74b68c-2e20-4e2a-b238-df9a35d16879",
+    "parts": [ {
+      "text": "cancelling our coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "153a1646-8106-4e23-828e-836e47d2f218",
+    "parts": [ {
+      "text": "cancelling a plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5b753b08-5819-4aea-9b45-739710e31160",
+    "parts": [ {
+      "text": "cancel phone plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "74d722bf-c150-4262-b11d-796bcfc50f54",
+    "parts": [ {
+      "text": "need to cancel my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "42ab2ad6-632a-43df-b3df-56a940cc452f",
+    "parts": [ {
+      "text": "cancelling my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "986de017-e501-4a31-bb3d-179d66ae94be",
+    "parts": [ {
+      "text": "cancel my plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bb027853-3549-4a30-9227-eb1cee59f2b7",
+    "parts": [ {
+      "text": "this business phone and we've lost one of our in lines"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b0aa37fb-e966-4ec8-998a-24783f03ffe6",
+    "parts": [ {
+      "text": "i'm calling about giving you my the new my new phone number my new payment number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9783fd62-5010-4c47-b4a0-9483e7675713",
+    "parts": [ {
+      "text": "to change my phone number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d5bfc8bf-8c3b-40b1-8585-1f57ac75c02e",
+    "parts": [ {
+      "text": "removing a phone number from my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bab82ef1-6774-453b-97bc-abbbd91ed346",
+    "parts": [ {
+      "text": "device cancellation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "877545d5-8c4d-4e18-baae-63c17c39a95a",
+    "parts": [ {
+      "text": "removing a phone from my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0e27e3d7-f88b-4117-9584-b7a8daf9904e",
+    "parts": [ {
+      "text": "i'm calling about cancelling one of my cellphones"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8322a42e-c7ec-4742-a9ae-458ff9f20afe",
+    "parts": [ {
+      "text": "line cancellation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bfa08972-733f-434f-ba0c-61fce07f11a7",
+    "parts": [ {
+      "text": "disconnect line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5d8df486-b28b-45fd-89fb-4727f238d1c7",
+    "parts": [ {
+      "text": "cancellation of a line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c6bdf5e1-8e1d-44b7-af0d-6ea3ad185e24",
+    "parts": [ {
+      "text": "disconnect number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d5637224-1d24-43c6-8ae5-4bd74a685bd6",
+    "parts": [ {
+      "text": "i want to cancel one of my phone numbers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3032cbfc-5904-4527-bd69-c6695493cc4c",
+    "parts": [ {
+      "text": "deactivate phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "81d26386-b34c-4b54-9783-ebcb99dac58f",
+    "parts": [ {
+      "text": "i'd like to cancel a phone number on my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7f6479bc-f721-4681-8b5a-74a31eaf60b6",
+    "parts": [ {
+      "text": "i need to cancel one of the phone numbers on my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "84c8f8d3-2a46-4369-a3b3-e797f8ebf078",
+    "parts": [ {
+      "text": "i'd like to discontinue one of the numbers on our account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6795f87d-7962-4c87-99b0-df071a3c43d2",
+    "parts": [ {
+      "text": "need to take a cellphone off this account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e332cb24-1d81-4486-983f-7ae0558a2138",
+    "parts": [ {
+      "text": "cancelling a line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2febcea0-d197-44cb-8d6a-bc68d598f6be",
+    "parts": [ {
+      "text": "i'd like to cancel my daughter's phone on my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b9814e10-2047-423a-9e10-47a1eea412af",
+    "parts": [ {
+      "text": "disconnect one line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "575d72bf-7f80-42c9-a8fb-c4a1459a9a78",
+    "parts": [ {
+      "text": "line disconnect"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ee52ea26-14cf-4aa4-a31c-1ab4cf658107",
+    "parts": [ {
+      "text": "i'd like to cancel the number please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9db0adce-8822-465d-86ab-38f9f9ea6591",
+    "parts": [ {
+      "text": "i would like to disconnect one of the numbers on my phone line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d94906a2-ba9b-441e-a8e3-885db1c3d49b",
+    "parts": [ {
+      "text": "i need to cancel a line on our account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c604f766-f737-4e79-b09d-5473fa69ce9f",
+    "parts": [ {
+      "text": "stop my service for my one phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0b0c5115-2949-40f7-a4a8-04a8f8d82789",
+    "parts": [ {
+      "text": "deactivate a line on my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0bd5917f-0844-4ccf-b7d6-e6892ab28597",
+    "parts": [ {
+      "text": "removing a line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b924a927-3228-4e0f-9ad5-dcc7ac631532",
+    "parts": [ {
+      "text": "cancel a line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e7234c61-76ee-46b2-8c76-985617bdbbeb",
+    "parts": [ {
+      "text": "cancel a phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e5a9a91-a7d3-48e1-9d22-5e146e18471e",
+    "parts": [ {
+      "text": "cancel phone line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ce8dbda1-e46a-424a-abb5-8577281b372e",
+    "parts": [ {
+      "text": "cancelling a number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fa36ac68-ddb9-4aab-965e-656904e59c12",
+    "parts": [ {
+      "text": "we wish to cancel the service on that particular number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "679d95ea-98a9-4174-8eaa-a2267b168e80",
+    "parts": [ {
+      "text": "take a number off my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "da44f2d5-8458-475c-a270-3133cdca54d9",
+    "parts": [ {
+      "text": "i am taking my ex wife off the policy and putting her on with her son with telus as well"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "54fd96c3-a102-4d44-9d81-552794fa2ae9",
+    "parts": [ {
+      "text": "remove person off plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "055423ea-ab0b-4afa-9e17-c42173147cde",
+    "parts": [ {
+      "text": "i wanna take someone off my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c96f0f8-5325-4b1a-a49e-389f3206c6f2",
+    "parts": [ {
+      "text": "i want to take my son off my plan and get his his own he's nineteen he can get his own plan with the same number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "98909026-be79-4d99-899a-d51f5773eb54",
+    "parts": [ {
+      "text": "i just need to remove a person off the account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cbf35cc9-e9c1-4e78-9569-6b7b9d9dfe1c",
+    "parts": [ {
+      "text": "cancel cell lines"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b23c2ba6-20bf-424c-945a-46a6c9b761f5",
+    "parts": [ {
+      "text": "i'd like to cancel this phone line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ea742eb3-7528-4aae-a73e-0bbdcf7f6a81",
+    "parts": [ {
+      "text": "cancel lines"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "93623a4c-a5c2-4552-8c50-4bc5aab63fd6",
+    "parts": [ {
+      "text": "i wanna cancel my phone plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "59217dfc-6e9e-4bb3-b8c5-b57aadb96001",
+    "parts": [ {
+      "text": "line cancel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fa748bc2-ed73-48b1-922d-2b76f702031b",
+    "parts": [ {
+      "text": "cancelling line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "692cd4cc-073a-4b6d-a507-e94c4880f7cc",
+    "parts": [ {
+      "text": "i'm calling to disconnect the phone line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "97c4d72f-ac02-4a48-a5ea-67541d2a5370",
+    "parts": [ {
+      "text": "hi i'm calling on behalf of my mom georgia and we would like to terminate our line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b2089d7f-1062-42d2-949c-8533bfdd7d26",
+    "parts": [ {
+      "text": "i'd like to cancel the line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "68b15e48-5a3e-48c4-a21b-2e49af31507d",
+    "parts": [ {
+      "text": "take off phone line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ba682bf5-1542-41ee-ad75-14f6a48129f7",
+    "parts": [ {
+      "text": "i'd like to cancel my phone line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0bad2fdc-e7c1-4823-9977-5afa03c0ca24",
+    "parts": [ {
+      "text": "cancellation of three lines"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b754b262-852d-49f4-91c7-871be429229d",
+    "parts": [ {
+      "text": "cancelling phone line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "62bff037-e3c3-4c23-92ba-1bb2f0789e37",
+    "parts": [ {
+      "text": "cancel line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

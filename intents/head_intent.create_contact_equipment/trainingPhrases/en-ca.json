@@ -1,0 +1,353 @@
+{
+  "trainingPhrases": [ {
+    "id": "ef7fb771-0521-4c0d-94b6-1b0e0ad0752b",
+    "parts": [ {
+      "text": "Where do I go to add some conatct to my new phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "88cc8585-424b-4ed9-adf4-db047773930f",
+    "parts": [ {
+      "text": "I need to erase some contacts from my phone, how woud i do that?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8adfb758-32d6-4183-bb12-18e1cd22b268",
+    "parts": [ {
+      "text": "Where do I add new contact number to my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ddc35348-2532-48db-ae7a-9eaf31d008ad",
+    "parts": [ {
+      "text": "Cannot find how to modify a number from my phone contacts "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d7c6fde9-e877-4ea4-bd9a-8b11259c5637",
+    "parts": [ {
+      "text": "I still see a contact that I would like deleted from my phone "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "887aafa7-fc80-4948-a631-c8cf1aed1a95",
+    "parts": [ {
+      "text": "Show me how to delete a contact on my contact list please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "04f142df-a885-4b9e-98a2-6a77cfa159b5",
+    "parts": [ {
+      "text": "How would I modify a contact on my new cellphone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a707d5ee-294b-42cf-b910-9556dd76c106",
+    "parts": [ {
+      "text": "Is there a way to modify a pre-existing contact on my device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "32f65561-bf2a-49a6-9e7c-eabaefac66fa",
+    "parts": [ {
+      "text": "I'm trying to modify one of the contact listed on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "825b4cd9-2b99-411e-9cb8-7827ee7a91aa",
+    "parts": [ {
+      "text": "Can you show me how to delete a contact from my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cd439537-baff-4775-b8c8-b6e2d9365d1d",
+    "parts": [ {
+      "text": "Is there a way to delete a contact from my phone contact list?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b169bae4-0c50-4756-bb1f-ed16a2ed4c9f",
+    "parts": [ {
+      "text": "Where do I remove contacts from my cellphone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "243606a7-f562-42fe-bd49-a876a4b318a4",
+    "parts": [ {
+      "text": "I would like to delete some contacts on my phone "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "947a8bae-7582-4e0e-be43-1645a27d0cef",
+    "parts": [ {
+      "text": "Where on my device can I create new contact?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b60d5e5e-0337-4b70-9324-4186407cf2fb",
+    "parts": [ {
+      "text": "How to add a contact to contact list of my device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "792239e4-7895-4fcc-8914-0279f03f5764",
+    "parts": [ {
+      "text": "Where do I find my contacts on this new phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "caaeccab-67b7-4b4b-9597-f182f084c902",
+    "parts": [ {
+      "text": "I'd like to transfer my contact list on my new device "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9f284c70-fc24-482d-8e41-58039efdbca8",
+    "parts": [ {
+      "text": "I would like to add another contact to my new phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "20bcbc35-0ebc-402c-bc99-9812b907c14f",
+    "parts": [ {
+      "text": "I wanna add a person to my contact"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2f346f6c-e84c-4ebf-96c5-4f385cd2fe92",
+    "parts": [ {
+      "text": "Wondering how to save phone numbers to my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ac42861d-adcc-452e-a0b0-5075e754d1f9",
+    "parts": [ {
+      "text": "How to create a contact?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "95b34f9b-b08e-47e2-8495-58fdc028d165",
+    "parts": [ {
+      "text": "How can I add a contact on my device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f41f9fe0-9543-4b77-9180-538091f3ae79",
+    "parts": [ {
+      "text": "How do I create a contact?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8fcaeb2e-0045-4c14-ae7e-ec1797ea4bae",
+    "parts": [ {
+      "text": "Need to add a new contact on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2836907e-6e37-4a52-9f96-9347c3236dde",
+    "parts": [ {
+      "text": "Need to know how to add a new contact on my iPhone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d6010e13-a997-4d2c-afdc-9c8307f2c037",
+    "parts": [ {
+      "text": "Just bought a new phone but I don't know how to create a new contact. Please help me!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "341d5990-e4b9-434e-989c-749e4373fb28",
+    "parts": [ {
+      "text": "How can I create a new contact on my new Samsung Galaxy S21 Ultra?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "045803b6-aa4f-4c66-9ec0-755fab499c38",
+    "parts": [ {
+      "text": "I need your help to add a new contact on my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eb91cab9-e2b6-4e80-a396-9847afc7a23f",
+    "parts": [ {
+      "text": "Need to create a new contact."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "12dc10cd-68f5-47ae-a801-e029c0826b5f",
+    "parts": [ {
+      "text": "Need to create a new contact on my phone. But I don't know how. Help me please!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "23e5082e-c311-45eb-8b11-66e6359a3aae",
+    "parts": [ {
+      "text": "How to add a new contact on my iPhone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "afb31ce9-f5c7-4fe6-a269-9e32071270fd",
+    "parts": [ {
+      "text": "Don't know how to create a contact on my new iPhone. Please help!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5d183305-4bb3-4a3d-8d98-939b65552527",
+    "parts": [ {
+      "text": "Wondering how to create a new contact on my new phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "478b1c22-98c0-44c6-9b4c-d2cee3d01527",
+    "parts": [ {
+      "text": "Please tell me how to create a contact on my new Samsung Galaxy."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "299dcfae-f6f7-4c0e-8c9a-9745f4e215b4",
+    "parts": [ {
+      "text": "Need to add a new contact in his device."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "215621a8-8f8b-4222-8c4c-aa5f57cdbe71",
+    "parts": [ {
+      "text": "Create a new contact in my device."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5513b7b8-e135-456a-b396-42c87bb1b532",
+    "parts": [ {
+      "text": "I need to create a contact in my new device."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5220ad1c-45ca-4386-9469-8bffbdd028b8",
+    "parts": [ {
+      "text": "Please help me to create a new contact on my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ffe81a82-e2dd-4dec-8280-e0f881f2238b",
+    "parts": [ {
+      "text": "Please tell me how to create a contact on my new phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "de14e271-1a76-49bc-a683-2e4624dc1b61",
+    "parts": [ {
+      "text": "I am unable to add a new contact on my new Samsung Galaxy."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e458f237-3d37-4c99-88bf-293bf4198d21",
+    "parts": [ {
+      "text": "Wondering how I can add a new contact in my new device."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "817a6ab8-3a36-433a-9e1e-1a78113787a2",
+    "parts": [ {
+      "text": "Wondering how I can create a contact on my new Samsung Galaxy please."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1f1bdd30-e61b-4c88-b42e-cee10aa876cd",
+    "parts": [ {
+      "text": "Need you to tell me how to create a new contact on my new iPhone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e189804b-679a-4b79-b200-652192598348",
+    "parts": [ {
+      "text": "how can I create a contact in my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9e5f8623-e7b4-454e-9eb6-2bc6da3eafc7",
+    "parts": [ {
+      "text": "Want to create my contact on an equipment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ecf2bc56-7815-4a70-bee9-d97ccdf22381",
+    "parts": [ {
+      "text": "Would you help me create contacts?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "59d2a7f9-cec9-43a5-b012-aa4ab8eb4b77",
+    "parts": [ {
+      "text": "Can you help me find where to put in contacts?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b4630a8b-1296-4415-96d3-8e7b342d7961",
+    "parts": [ {
+      "text": "How do I add a contact on my tablet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3f2d7bb1-ba19-41e6-a04c-c1e38a72c712",
+    "parts": [ {
+      "text": "Trying to add a number but can't find where to do it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1946300c-787b-4645-840d-a3fbef7fc614",
+    "parts": [ {
+      "text": "Need help saving some contacts on a device."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "e020445e-deff-4ac8-a1e6-2441517e35dd",
+  "displayName": "head_intent.churn_remove_a_line",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "churn"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiry about removing a line from the account.",
+  "numTrainingPhrases": 235
+}

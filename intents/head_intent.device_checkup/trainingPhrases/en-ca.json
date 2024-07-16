@@ -1,0 +1,318 @@
+{
+  "trainingPhrases": [ {
+    "id": "e03c51cc-9f9f-431e-a068-084229630b22",
+    "parts": [ {
+      "text": "Do you have an app I can use to check up on my device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8a276481-5fc5-458b-936f-91a4b789eada",
+    "parts": [ {
+      "text": "I need you to check my phone please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dbaffa21-8cf4-4dd3-9102-556aa86ceeb4",
+    "parts": [ {
+      "text": "I need help with the Mobile klinik device checkup"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "57722ec8-7646-48bf-81a5-20871287f33d",
+    "parts": [ {
+      "text": "I need help with the klinik app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bb425715-5810-4a07-95eb-497293351865",
+    "parts": [ {
+      "text": "I need a check up on my device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d8907b68-8439-48a2-962c-1e42889361fb",
+    "parts": [ {
+      "text": "Is it possible to get a checkup on my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "12f0e388-74be-4f73-894a-b4557071c694",
+    "parts": [ {
+      "text": "My device has issues I need to check out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "27eda708-5959-45e0-a830-2da0b40d4120",
+    "parts": [ {
+      "text": "I'd like some help with the mobile klinik app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aa1b5266-da7d-4798-9ab7-72a5c6590238",
+    "parts": [ {
+      "text": "Is there an app to see if my phone is working ok?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e4327448-5d5d-495e-a2a5-6abbbfa5f18a",
+    "parts": [ {
+      "text": "What can I check on the mobile klinik app?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3fe5bd4-e046-4384-83ce-154529775456",
+    "parts": [ {
+      "text": "How does the mobile klinik device checkup work?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e29aaba1-62e2-4876-aa72-6b6d60c4b240",
+    "parts": [ {
+      "text": "How do I get the klinik app?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4af6ad61-0f77-4899-8b51-e69f50a6b6bd",
+    "parts": [ {
+      "text": "Can I check an android on the klinik app?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "76256d02-55cb-4bc2-a957-c2c0cf1bd6bf",
+    "parts": [ {
+      "text": "What does the Checkupp app do?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4bc0220a-faf4-4e17-9dc5-942acb0b8725",
+    "parts": [ {
+      "text": "How do I access the device klinik?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6d94772d-0230-4c97-8ca7-ed6353f96b64",
+    "parts": [ {
+      "text": "What is device check up?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fedb6919-8ffc-48d1-9c25-7a87e8abef3d",
+    "parts": [ {
+      "text": "TELUS Device Checkup"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "03445038-e93c-4a8b-a069-f7e57a22f532",
+    "parts": [ {
+      "text": "Do you have an app to troubleshoot my device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "53f47975-123f-4af9-a5d4-c353b4f4817d",
+    "parts": [ {
+      "text": "How to check my phone for issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f6aa459c-845b-4406-a791-fc1d40efcc65",
+    "parts": [ {
+      "text": "How to do a phone checkup"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "477b00ea-4e44-4859-8aeb-9575e36a9188",
+    "parts": [ {
+      "text": "I need my device checked up."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eee56c17-3d0c-4b9a-86ed-21f4bbdc4aac",
+    "parts": [ {
+      "text": "Does Telus have checkup app?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e378691a-eaf3-4375-b511-2e3cac9f4d87",
+    "parts": [ {
+      "text": "Can you run a phone check?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "479253d6-3aa1-4529-a96c-c07ab8149be1",
+    "parts": [ {
+      "text": "Can you check my phone for performance issues?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aa1356b3-004e-44f7-b4d1-94307d681d4e",
+    "parts": [ {
+      "text": "Is my phone working optimally?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d86161e2-a36a-467e-9eec-5f1e207ed744",
+    "parts": [ {
+      "text": "Can you check my device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2be50ca0-d77e-45f2-a797-59ca13ba78bb",
+    "parts": [ {
+      "text": "I would like a device check done on my iPhone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "03d1d98f-04bb-463d-a7ad-b76b61ffea36",
+    "parts": [ {
+      "text": "Can TELUS do a phone check?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "69028dab-9812-4277-8f0e-8989e59b0723",
+    "parts": [ {
+      "text": "Can you do a performance test on my son's device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c40d4c3e-f252-4bda-a188-7832213ea30a",
+    "parts": [ {
+      "text": "I would like a device check please."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e364490d-9d31-4a17-b6a6-39aed09b5b2d",
+    "parts": [ {
+      "text": "I need to check if my phone is working."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ce7b2b52-d59e-4713-9315-92d60bd64631",
+    "parts": [ {
+      "text": "I am trying to see if my phone is working properly."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f7c13dbe-5840-46b2-b1d8-d8be313ff1f0",
+    "parts": [ {
+      "text": "Are we able to do a device checkup on an Android?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "90594686-1f41-4810-a813-8e152546aeac",
+    "parts": [ {
+      "text": "I am looking to get a TELUS phone check."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3746331-1e48-4c6c-b1f5-8d46c4f019a3",
+    "parts": [ {
+      "text": "Is there a phone checkup application I can use?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9838e46a-5da4-4a28-ae31-d19100c79637",
+    "parts": [ {
+      "text": "Please explain to me what a device check up is."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8509bcf1-2610-4d3e-8d1f-8b06df7a2fea",
+    "parts": [ {
+      "text": "I'm trying to troubleshoot my iPhone and I would like a device checkup."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7bb6f10e-7acd-4505-b30e-0e7dbe9f56f0",
+    "parts": [ {
+      "text": "could you do a checkup on my tablet please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3e4a765c-1f05-403d-b100-54b6d5f5da66",
+    "parts": [ {
+      "text": "I would love to have a checkup for my tablet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "73e7ed1b-1146-4d14-9a9d-0c4296018f22",
+    "parts": [ {
+      "text": "My tablet has been lagging, could you check it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "447dcd01-229b-4e10-b245-4ffe558e93d1",
+    "parts": [ {
+      "text": "My tablet has issues and I need a checkup as soon as possible."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8f1ee779-5af6-415e-a71d-39cf11c45b75",
+    "parts": [ {
+      "text": "what is the Mobile Klinik Device Checkup app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e3b2c5b-7ac1-47e1-9fb0-df7430d01bbd",
+    "parts": [ {
+      "text": "can you tell me about Mobile Klinik Device Checkup app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f1626afa-4cc2-454c-a8f7-c05d9b5c5bfc",
+    "parts": [ {
+      "text": "Mobile Klinik Device Checkup"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a6ba1e69-a8de-46dc-b508-bf726e300f09",
+    "parts": [ {
+      "text": "Mobile Klinik Device Checkup app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

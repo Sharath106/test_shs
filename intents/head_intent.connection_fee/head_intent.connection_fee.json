@@ -1,0 +1,23 @@
+{
+  "name": "894b1166-1bb1-49bf-b32f-722f66aa4e64",
+  "displayName": "head_intent.connection_fee",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Information on connection fee for new activations or renewals",
+  "numTrainingPhrases": 150
+}

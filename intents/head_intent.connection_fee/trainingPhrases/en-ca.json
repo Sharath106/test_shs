@@ -1,0 +1,325 @@
+{
+  "trainingPhrases": [ {
+    "id": "fdce82d9-36c1-4beb-b669-32e93227c328",
+    "parts": [ {
+      "text": "Do i get charges for connecting a new line?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "97660e81-27e1-4aa0-bf35-9245df8d8ccb",
+    "parts": [ {
+      "text": "Connection charges come from my new line activation?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b76bbe82-c3f9-445e-9230-a596c37ff0ca",
+    "parts": [ {
+      "text": "The connection fees are coming from my new line activation?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e6ce5c82-774d-46c1-9c32-e9f4a7e7dddd",
+    "parts": [ {
+      "text": "Would you tell me what are your connection fee?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "00822502-80b4-4717-a24d-4ac9069dcced",
+    "parts": [ {
+      "text": "The difference between connection fee and activation fee is not clear to me."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "37551afa-2e71-4d00-8b9a-e3b22690b00b",
+    "parts": [ {
+      "text": "Do you charge connection fee for every new lines added?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "96ed5ead-ac7c-47e1-b787-868801aef84f",
+    "parts": [ {
+      "text": "I am wondering if I'll have to pay a connection fee if I get a line?"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f71ec43f-c7cc-4b53-ae7e-fc5b18cffe5a",
+    "parts": [ {
+      "text": "If I'm renewing my plan, will I pay connection fees or will it be free?"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "10ea5e98-e8b5-4a98-afa9-658ed99b3b0b",
+    "parts": [ {
+      "text": "What will be the cost of activation of a new plan?"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "441d6903-5894-4126-a439-8e6c23f15f19",
+    "parts": [ {
+      "text": "I'd like to ask if you charge a fee for connecting new line"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7e0d9237-f665-43e7-a639-74acba865722",
+    "parts": [ {
+      "text": "Is there a way to save the connection fees?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e05eb399-777e-49ed-8f81-2a88af4988c2",
+    "parts": [ {
+      "text": "Activating an account online saves connection fees, right?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "018dc675-f75b-412c-baa7-6ac43294b099",
+    "parts": [ {
+      "text": "I need information about the connection costs incurred by online activation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d4bdad6f-ee83-4389-9b49-4b1d2be5d2c3",
+    "parts": [ {
+      "text": "Are there connection fees for a suspended account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "08826f4e-5230-442d-99ae-78f535067714",
+    "parts": [ {
+      "text": "What are the connection fees for a new line?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3ad14af6-7e1b-4867-aee1-1c4a2bd7e6ec",
+    "parts": [ {
+      "text": "Does a new line activation automatically equals activation fees?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "75bf54a2-c02b-49fa-a21c-a2557048c621",
+    "parts": [ {
+      "text": "Will I incur activation fees for this new line?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "690d985b-85b3-4d73-8db8-97dccccbcb04",
+    "parts": [ {
+      "text": "Would you tell me the difference between renewal and activation fee?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4b576fe1-7932-4620-9291-6b68686c538e",
+    "parts": [ {
+      "text": "I need information on connection fees"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5acae32c-98b4-497a-b422-1be457eddb2d",
+    "parts": [ {
+      "text": "Wondering why you charge me both an activation and a renewal fee."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "92def4f4-3706-4df9-b461-50ec176e1488",
+    "parts": [ {
+      "text": "Need to know why you charge me new activation fees."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1d1b583e-c273-4e7c-a078-1747fbb0c520",
+    "parts": [ {
+      "text": "What are connection fees used for?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "55f27e05-8a23-430f-ac46-51fb7fa7ade7",
+    "parts": [ {
+      "text": "Why do I have to pay a connection fee?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "57cf570d-45e5-40d8-a6fb-2a05ba9d6ede",
+    "parts": [ {
+      "text": "What is the activation fee?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b7be9281-ff47-4fd2-9f08-5313d3c344c5",
+    "parts": [ {
+      "text": "Need information on the renewal fee."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "251c4eff-8fae-41f7-ba16-98bf6dc534a3",
+    "parts": [ {
+      "text": "Do I need to pay for connection fees?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fa304515-72c0-4444-851c-8c476e573dc6",
+    "parts": [ {
+      "text": "Is there an activation fee?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f978ee93-f539-4df2-a56a-d026a5a9a7cc",
+    "parts": [ {
+      "text": "How much should I pay for this activation?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3cf3d39e-ccc9-40b4-aa3a-d335c8a94f34",
+    "parts": [ {
+      "text": "I was charged a connection fee."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "49104436-5a45-419f-afb2-de7c5754736f",
+    "parts": [ {
+      "text": "Need information on the new activation fee."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c01ddc73-c985-4065-bd26-08558a82112e",
+    "parts": [ {
+      "text": "Wondering why there's a connection fee when you didn't connect anything."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bbdc0cb9-4ef3-4829-951b-aa776a5bbfc9",
+    "parts": [ {
+      "text": "I don't understand why you charge me a connection fee if I already have a SIM card."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "584a5065-eeb1-4fc7-bc01-96e1c7c8c43e",
+    "parts": [ {
+      "text": "How come you charge me connection fees while I keep using the same phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2e4398d1-bfa4-4b3f-b7a9-e225d4e5a600",
+    "parts": [ {
+      "text": "Need more information about connection fee."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "183e3798-6216-4bb7-887e-035908151cf4",
+    "parts": [ {
+      "text": "I was wondering about renewals fee."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0268c19f-1b56-4099-bb64-48ec8d07bdc9",
+    "parts": [ {
+      "text": "I don't know how much you charge for renewal fee."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "38740ad2-dcac-456f-b28d-2e94c3ce6b34",
+    "parts": [ {
+      "text": "I was told by an agent that as an exclusive Telus customer my new mobile plan wouldn't include a connection fee."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "164aa33b-4dd8-4e70-8229-a7d8a900feae",
+    "parts": [ {
+      "text": "Wondering about the difference between connection fees for new activation and renewals fee."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bafbaf61-bdd4-4ab0-a588-890576849943",
+    "parts": [ {
+      "text": "Is the connection for free or is there a connection fee?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fd400456-ec4d-4d46-92cb-fec397b1abf5",
+    "parts": [ {
+      "text": "If I get a line, will I have to pay a connection fee?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b9225074-f38c-4e6d-849a-3f1c7b416079",
+    "parts": [ {
+      "text": "Are there connection fees for new line?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2d027425-7e3c-447c-9ba2-de5cb81dff36",
+    "parts": [ {
+      "text": "What is the activation going to cost me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "68869700-8a29-4743-b958-21fc86ab5306",
+    "parts": [ {
+      "text": "Are there connection fees or is it free?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e58dce32-68ad-4d60-b352-1eb4fac0c6fb",
+    "parts": [ {
+      "text": "Will you charge me connection fee again?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3f2fa444-8a7e-4ae9-b9cf-bdcd3f4dcbdf",
+    "parts": [ {
+      "text": "Are you going to charge a fee for connecting my new phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6d83c02d-a347-4b25-86d9-387f006ddf5c",
+    "parts": [ {
+      "text": "How much is the fee to activate new line?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

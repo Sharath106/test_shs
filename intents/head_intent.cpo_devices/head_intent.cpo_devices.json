@@ -1,0 +1,23 @@
+{
+  "name": "78d10043-66de-4714-883e-59ef08ca0ce7",
+  "displayName": "head_intent.cpo_devices",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about Certified Pre-Owned (CPO) devices.",
+  "numTrainingPhrases": 150
+}

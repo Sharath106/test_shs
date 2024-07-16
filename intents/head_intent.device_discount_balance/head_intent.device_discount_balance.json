@@ -1,0 +1,20 @@
+{
+  "name": "b4ee60df-2114-41e7-b64e-690974507dae",
+  "displayName": "head_intent.device_discount_balance",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about what a device discount balance is.",
+  "numTrainingPhrases": 150
+}

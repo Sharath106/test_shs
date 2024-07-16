@@ -1,0 +1,493 @@
+{
+  "trainingPhrases": [ {
+    "id": "3ca13ddb-fac9-4e14-b68b-58ff5caab822",
+    "parts": [ {
+      "text": "i have no cellular coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "07a96a09-1f59-4466-9036-976c11e3ee04",
+    "parts": [ {
+      "text": "Is there a coverage map?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "22386f46-dadc-4220-9c8e-b135ccc67792",
+    "parts": [ {
+      "text": "Can I see your coverage map?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bbc94372-23cb-4e9f-818d-09066fab21c3",
+    "parts": [ {
+      "text": "Wondering about a coverage area map if available."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66979cc7-394a-4235-82ed-b2895f05c0a5",
+    "parts": [ {
+      "text": "I need a network coverage map."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "47748427-bb13-40b2-b06f-93d1c48b285e",
+    "parts": [ {
+      "text": "Where can I see the coverage area?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2643c664-43eb-42e2-afd2-b908ab96947f",
+    "parts": [ {
+      "text": "What is the area coverage?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5bee4d4f-b590-416e-a826-c44af3e5fb59",
+    "parts": [ {
+      "text": "Is there a Telus coverage map?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e37f92b9-e82f-481f-811d-5cf632df5c08",
+    "parts": [ {
+      "text": "What is your coverage like?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ebaa83c7-98e5-4dc6-a78a-89d77088502c",
+    "parts": [ {
+      "text": "Do you have a coverage map?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3e2ea575-d7ff-48f2-9590-95a706ad8160",
+    "parts": [ {
+      "text": "How do I see your coverage?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "24ced35c-588a-41aa-90a5-53b83adae7af",
+    "parts": [ {
+      "text": "Do you have a Telus coverage map to reference?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d728ac99-f8b5-48b9-be23-2ad8fbc7e45e",
+    "parts": [ {
+      "text": "Your coverage map looks like we are covered but I'm not sure."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ce61ae3e-5f11-43e0-be8e-bd5a134c6849",
+    "parts": [ {
+      "text": "Please send me the link to your Telus coverage map in Quebec!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6ebae292-93ae-40ec-9c20-b4353e32f1d7",
+    "parts": [ {
+      "text": "Can you send me a coverage map for Toronto?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "81a66ef4-7782-443e-a596-2a64570a6a2a",
+    "parts": [ {
+      "text": "Do you have a Telus coverage map?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ebfe2cc6-a08c-45f2-bb86-74fb695895a3",
+    "parts": [ {
+      "text": "Would like to see a coverage map for Telus."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b6abb23-8c7b-401f-bc07-21f7bb7af852",
+    "parts": [ {
+      "text": "Is there a place to see the Telus coverage map online?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0088701a-834e-42a7-a9d4-cc61ce78aec2",
+    "parts": [ {
+      "text": "Is there coverage in downtown Manitoba yet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8111e1b4-1bc6-4263-9764-9f9ee1a23976",
+    "parts": [ {
+      "text": "I'm looking for a coverage map to show LTE coverage."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f191c158-72ee-42b7-b95c-c81cf5e6a15e",
+    "parts": [ {
+      "text": "Looking at the coverage map and it doesn't look like there's coverage here. Do you know why?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "79c2ae58-640b-47a0-b551-9aab887a41db",
+    "parts": [ {
+      "text": "Need to make sure I'm covered. Please tell me more about your Telus coverage."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bd7da737-bd41-46d7-bb47-003742132bb8",
+    "parts": [ {
+      "text": "How is your coverage in Ontario?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "09ee3730-692a-4d31-b79b-60c507b49a4c",
+    "parts": [ {
+      "text": "I looked at your coverage map but I don't see LTE coverage in my area. Please help me!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "10b562df-5fce-4ae9-8839-6b06d27810a0",
+    "parts": [ {
+      "text": "Wondering why your coverage map doesn't show any LTE coverage in my area. Help me please!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cc71ce52-12c7-4728-a4b0-44d6bb8cc997",
+    "parts": [ {
+      "text": "Need to know more about the Telus coverage map in Ontario."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b145d174-45c9-4068-898d-38d9b437e00d",
+    "parts": [ {
+      "text": "can you provide me a map of areas covered by TELUS?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2adcea00-215a-4576-8171-2cb2f2ea0f36",
+    "parts": [ {
+      "text": "Are there areas in Quebec that are not covered by telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "36da4951-89b5-4833-9730-a8cae8d54e9e",
+    "parts": [ {
+      "text": "I want to know if your service is available in my area?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "722ceee7-58a2-40b0-b092-e32c44d212ec",
+    "parts": [ {
+      "text": "How can I know if my area is covered by your service?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "17cca3eb-64cc-44a8-9b47-18e90e77d09d",
+    "parts": [ {
+      "text": "Are we covered even all the way out here?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d0650627-833d-4538-bf41-ae3b247f0afd",
+    "parts": [ {
+      "text": "We would like to know if our place is covered by you guys?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f203bd81-7d0f-4fa1-bbe0-62ba20435aef",
+    "parts": [ {
+      "text": "I want to add my daughter to my account, but we are wondering if she'll have service in her area."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f8c11e36-d679-44ac-a940-cd08d1968603",
+    "parts": [ {
+      "text": "wondering if you offer your services in my area?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "55296ba1-bf26-486c-a68a-bc6d07cd792c",
+    "parts": [ {
+      "text": "Please clarify where my coverage are ends."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ec89e6eb-da5e-48d6-a099-1e93d12597f2",
+    "parts": [ {
+      "text": "Does Telus provides coverage in my neighborhood? Please help me understand the map."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c93ce04e-f7e2-49a8-82a9-5cd1a0b6306a",
+    "parts": [ {
+      "text": "is my region on the service map, please inform."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "35ae8012-2f0f-4ce8-a87b-adcacc90ae2a",
+    "parts": [ {
+      "text": "coverage map"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3bf746f6-6842-4166-a1c9-354d48c2b5da",
+    "parts": [ {
+      "text": "do you have cell coverage in Sundridge"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3fd9ef05-3afb-43eb-911f-788e36f84d71",
+    "parts": [ {
+      "text": "Will I have service where I live?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "817d5e93-d156-41e5-ba04-3a9772129509",
+    "parts": [ {
+      "text": "Wondering if I will have service where I live, can you check?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3ad2b3de-9ef1-493e-89b9-87e53a4218a8",
+    "parts": [ {
+      "text": "Do you have network coverage where I live?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0d7b8357-1213-4f0b-a73e-00715d632182",
+    "parts": [ {
+      "text": "My friend wants to know if her place is covered by TELUS"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0fae64da-4475-4ba3-89bf-b6bd33e78f1a",
+    "parts": [ {
+      "text": "My son wants to know if his friend's place is covered by TELUS."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e4b25c81-005e-426f-ab43-aca1061df243",
+    "parts": [ {
+      "text": "Is our place covered by TELUS?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "033b08bb-586a-4ebe-b198-5cfa26b0903a",
+    "parts": [ {
+      "text": "Going on a trip, can I check if the area is covered by Telus network?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a206d7ec-5ad6-4173-a5c7-7ba67097e88c",
+    "parts": [ {
+      "text": "I'm going on a trip, I need to use my phone, is there coverage map available?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7cdbaaa4-eeb1-4b4b-90fc-f81525477cb7",
+    "parts": [ {
+      "text": "Not sure if my brother who lives in Prince Edward Island would be covered by your services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "092df840-f571-46df-80ea-c5b4e7b1dc1b",
+    "parts": [ {
+      "text": "Do you know if my friend would be covered by your services if I add him on my account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "531e9cbc-b041-458a-a0bc-5d0c3f69b813",
+    "parts": [ {
+      "text": "How can I know if I'll be covered by TELUS in Quebec?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "999bc0d3-5502-45b1-8151-bb242a1405e3",
+    "parts": [ {
+      "text": "Will I be covered by TELUS all around Quebec?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bac51b2e-0d37-4e8d-8cd5-5057890dfab4",
+    "parts": [ {
+      "text": "Is the whole province of Manitoba covered by your mobility services?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "90d0c5e3-668d-4e31-9c08-6295c0c17212",
+    "parts": [ {
+      "text": "Would like to find out if the whole province of Manitoba is covered by TELUS?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fab1eefd-340e-46b5-8f75-2fc157a0c695",
+    "parts": [ {
+      "text": "Is the province of Saskatchewan in Canada fully covered?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "57ddc93e-9122-4f9a-ab33-37948cb7bb02",
+    "parts": [ {
+      "text": "Want to know if the province of Saskatchewan Canada is covered by your services"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ad936629-7e48-49cb-9048-bfd5ffe63c57",
+    "parts": [ {
+      "text": "My friend wants to join TELUS but is not sure if your service is covered where she lives"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b457d05b-ca59-47cf-bba6-2104734e1fd6",
+    "parts": [ {
+      "text": "I'm thinking to join TELUS but we are not sure if your service is covered where we live"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f170aac9-afb2-416a-a1b6-802fa3138688",
+    "parts": [ {
+      "text": "How can I check if the place I'm going to will be covered by your service?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b241c5ed-5424-4f6a-afe1-b4e730f3f6fd",
+    "parts": [ {
+      "text": "I would like to know whether the place I'm going to will have service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "210b4585-b2a6-45b9-b07d-7a226dc76de3",
+    "parts": [ {
+      "text": "I work remotely and need to check if I'll be covered by your service where I live"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a3a39db0-c16b-42a6-a718-88fa5ffb3e84",
+    "parts": [ {
+      "text": "I gotta make sure I'll be covered by your service because I work from home"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "995ff78d-ecde-4639-9934-dfe43310f661",
+    "parts": [ {
+      "text": "Does your service cover Mascouche, QC?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "529c2f82-7481-4b92-80f1-0750013e88cc",
+    "parts": [ {
+      "text": "Need to know if your service works in Mascouche in Quebec"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "262a7cf9-bb6a-4838-aba5-3b9ddc53bebf",
+    "parts": [ {
+      "text": "We are travelling a lot in Canada and need to know exactly where your services are covered"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "59e016d7-5ee5-4572-8520-6cf1765e3751",
+    "parts": [ {
+      "text": "Where exactly are your services covered? My husband and I travel a lot all over Canada"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "94302ff9-dd7c-47c5-8e7f-0665e48d4051",
+    "parts": [ {
+      "text": "Does TELUS have coverage across canada?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cc5aaa90-27fa-49e4-912f-688247d6bc7e",
+    "parts": [ {
+      "text": "Is there a map of where there are 5g towers?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a6fb1137-f6d0-44f9-8b45-eb19c4e9a611",
+    "parts": [ {
+      "text": "5G coverage in my area"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c2665675-b1a3-4475-b616-7051f63f6c4f",
+    "parts": [ {
+      "text": "5g coverage"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "33a5067c-7ad9-4bd1-8be6-e2c46be207b1",
+    "parts": [ {
+      "text": "not able to join 5g network, do you have 5g coverage in this area?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

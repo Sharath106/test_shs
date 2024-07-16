@@ -1,0 +1,23 @@
+{
+  "name": "58270b15-2f91-45af-893b-1cf8b281aa51",
+  "displayName": "head_intent.device_checkup",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about Mobile Klinik Device Checkup information.",
+  "numTrainingPhrases": 152
+}
