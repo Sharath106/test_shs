@@ -1,73 +1,12 @@
 {
   "defaultLanguageCode": "en",
-  "supportedLanguageCodes": [ "fr", "fr-ca", "en-ca" ],
   "timeZone": "America/Los_Angeles",
-  "enableLogging": true,
   "projectNumber": 863414079250,
-  "speechToTextSettings": {
-    "enableSpeechAdaptation": true,
-    "enableAsrCorrection": true
-  },
   "startFlow": "Default Start Flow",
-  "enableStackdriverLogging": true,
-  "enableSpellCorrection": true,
   "advancedSettings": {
-    "enabled": true,
-    "audioExportGcsDestination": {
-    
-    },
-    "speechSettings": {
-      "endpointerSensitivity": 91,
-      "noSpeechTimeout": {
-        "seconds": 8
-      },
-      "useTimeoutBasedEndpointing": true,
-      "models": [ {
-        "key": "en",
-        "value": "telephony"
-      }, {
-        "key": "fr-ca",
-        "value": "telephony"
-      } ]
-    },
-    "playbackInterruptionSettings": {
-      "allowPlaybackInterruption": true
-    },
-    "dtmfSettings": {
-      "enabled": true,
-      "customRule": {
-      
-      },
-      "interdigitTimeoutDuration": {
-        "seconds": 2
-      },
-      "endpointingTimeoutDuration": {
-        "seconds": 10
-      }
-    },
     "loggingSettings": {
-      "enableStackdriverLogging": true,
-      "enableInteractionLogging": true
+    
     }
   },
-  "dataResidencyOption": "DATA_RESIDENCY_IN_USE_COMPLIANT",
-  "speakerIdSettings": {
-  
-  },
-  "textToSpeechSettings": {
-    "synthesizeSpeechConfigs": [ {
-      "key": "fr-ca",
-      "value": {
-        "voice": {
-        
-        }
-      }
-    } ]
-  },
-  "duplexSettings": {
-  
-  },
-  "webClientSettings": {
-    "boxBorderRadius": "0"
-  }
+  "dataResidencyOption": "DATA_RESIDENCY_IN_USE_COMPLIANT"
 }

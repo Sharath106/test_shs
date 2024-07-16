@@ -1,8 +1,0 @@
-{
-  "name": "3adc83e0-5a33-4a08-9288-b57a1a5e6a9c",
-  "displayName": "small_talk.send_sms",
-  "priority": 500000,
-  "description": "when user ask for sending an SMS",
-  "skipAutoAnnotation": true,
-  "numTrainingPhrases": 58
-}

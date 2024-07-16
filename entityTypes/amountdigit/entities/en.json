@@ -1,7 +1,0 @@
-{
-  "entities": [ {
-    "value": "(\\d+)\\.(\\d{2})",
-    "synonyms": [ "(\\d+)\\.(\\d{2})" ],
-    "languageCode": "en"
-  } ]
-}

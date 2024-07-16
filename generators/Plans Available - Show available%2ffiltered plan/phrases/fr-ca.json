@@ -1,6 +1,0 @@
-{
-  "promptTexts": [ {
-    "text": "Objectif: \n- crée un résumé de la description du plan. trouve les éléments relié à la description dans $serviceDescription \n\nRègle pour la description du plan complet: \n- Affiche les messages textes (limités VS illimités) \n- Affiche les appels (limités VS illimités) \n- Affiche les données (limitées VS illimitées), Affiche le montant de données offertent par le plan seulement si l'information est disponible dans la description du plan \n- Dis \"Appels au Canada et aux États-Unis\" seulement si les États-Unis sont mentionnées dans la description du plan sinon dis seulement \"au Canada\" \n- affiche la vitesse si elle est disponible, par example 3G, 4G, 5G ou 5G+\n\nRésultat finale: \n- Commence avec \"Voici le plan $selected_plan_name.\" \n- N'ajoute rien au nom du plan \n- Écris \"Ce plan offre\" suvi de la description \n- Écris \"ainsi que\" avant d'ajouter les données incluses \n- Ne dis pas le coût du plan. \n- Enlève tout autre type de caractère spécial \n- Enlève les parenthèses \n- Écris \"gigaoctets\" au lieu de \"Go\" \n- Écris \"mégaoctets\" au lieu de \"Mo\" \n- Dis \"États-Unis\" au lieu de \"É.U\" ou \"ÉU\"\n- Dis \"illimité\" au lieu de \"illim.\"",
-    "languageCode": "fr-ca"
-  } ]
-}

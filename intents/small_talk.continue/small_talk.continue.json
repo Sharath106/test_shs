@@ -1,8 +1,0 @@
-{
-  "name": "40f1ac67-56e0-4e73-a61d-bae73cdb6a5b",
-  "displayName": "small_talk.continue",
-  "priority": 500000,
-  "description": "when customer wants to continue with the given choice",
-  "skipAutoAnnotation": true,
-  "numTrainingPhrases": 52
-}

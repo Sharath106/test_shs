@@ -2,8 +2,5 @@
   "name": "00000000-0000-0000-0000-000000000001",
   "displayName": "Default Negative Intent",
   "priority": 500000,
-  "isFallback": true,
-  "description": "You can add training phrases to this intent that act as negative examples. There may be cases where end-user input has a slight resemblance to training phrases in normal intents, but you do not want these inputs to match any normal intents.",
-  "skipAutoAnnotation": true,
-  "numTrainingPhrases": 147
+  "isFallback": true
 }

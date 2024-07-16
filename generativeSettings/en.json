@@ -1,6 +1,6 @@
 {
   "fallbackSettings": {
-    "selectedPrompt": "Default"
+  
   },
   "generativeSafetySettings": {
     "raiSettings": {
@@ -21,12 +21,6 @@
   },
   "languageCode": "en",
   "knowledgeConnectorSettings": {
-    "llmModelSettings": {
-    
-    },
-    "groundingSettings": {
-      "groundingConfidence": "LOW"
-    },
     "mainLlmConfig": {
     
     }
