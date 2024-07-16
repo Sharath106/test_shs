@@ -1,0 +1,24 @@
+{
+  "name": "4d924a11-7a01-4ccb-81d9-0cac8c882dcd",
+  "displayName": "head_intent.app_stores",
+  "parameters": [ {
+    "id": "iphone_vs_android",
+    "entityType": "@iphone-vs-android"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Queries about app stores in general (apple or android)",
+  "numTrainingPhrases": 293
+}

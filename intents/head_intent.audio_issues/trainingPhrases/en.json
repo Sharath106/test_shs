@@ -1,0 +1,769 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "when I call others - they can't "
+    }, {
+      "text": "hear me",
+      "parameterId": "media_issues",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "sound issues on my phone, I can't hear people calling me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when I call someone they "
+    }, {
+      "text": "can't hear me",
+      "parameterId": "media_issues"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "others "
+    }, {
+      "text": "can't hear me",
+      "parameterId": "media_issues"
+    }, {
+      "text": " when I call them"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm unable",
+      "parameterId": "media_issues",
+      "auto": true
+    }, {
+      "text": " to hear anything"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm not able"
+    }, {
+      "text": " to hear anything when on calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i can't",
+      "parameterId": "media_issues"
+    }, {
+      "text": " hear anything"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "there is "
+    }, {
+      "text": "no audio",
+      "parameterId": "media_issues"
+    }, {
+      "text": " when using "
+    }, {
+      "text": "media",
+      "parameterId": "media_issues"
+    }, {
+      "text": " player"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my friend "
+    }, {
+      "text": "is unable",
+      "parameterId": "media_issues"
+    }, {
+      "text": " to hear me when I call them but I can hear her"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am experiencing Audio issues with "
+    }, {
+      "text": "earphones",
+      "parameterId": "media_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "phone audio "
+    }, {
+      "text": "ear phones",
+      "parameterId": "media_issues"
+    }, {
+      "text": " problems"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "unable to hear "
+    }, {
+      "text": "video on speakers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "audio not working on "
+    }, {
+      "text": "headphones",
+      "parameterId": "media_issues"
+    }, {
+      "text": " connected with my "
+    }, {
+      "text": "LG",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lots of "
+    }, {
+      "text": "static",
+      "parameterId": "media_issues"
+    }, {
+      "text": " on the line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "hear "
+    }, {
+      "text": "static",
+      "parameterId": "media_issues"
+    }, {
+      "text": " during calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "phone communication is "
+    }, {
+      "text": "garbled",
+      "parameterId": "media_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "ear phones",
+      "parameterId": "media_issues"
+    }, {
+      "text": " not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "motorola",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone has "
+    }, {
+      "text": "no audio on calls",
+      "parameterId": "media_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't",
+      "parameterId": "media_issues"
+    }, {
+      "text": " hear anything on my "
+    }, {
+      "text": "flip"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The audio on my "
+    }, {
+      "text": "huawei",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone has been messed up for days."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "keep having issues with my "
+    }, {
+      "text": "audio jack",
+      "parameterId": "media_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "hearing "
+    }, {
+      "text": "static",
+      "parameterId": "media_issues"
+    }, {
+      "text": " on calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "unable to "
+    }, {
+      "text": "hear others",
+      "parameterId": "media_issues"
+    }, {
+      "text": " on call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "others "
+    }, {
+      "text": "can't hear"
+    }, {
+      "text": " me during calls"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "On phone calls, the other person "
+    }, {
+      "text": "can't hear me",
+      "parameterId": "media_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I hear "
+    }, {
+      "text": "weird noise",
+      "parameterId": "media_issues"
+    }, {
+      "text": " when on a call"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i can't",
+      "parameterId": "media_issues"
+    }, {
+      "text": " hear anything on my "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "android",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " audio issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't hear"
+    }, {
+      "text": " "
+    }, {
+      "text": "music on speaker",
+      "parameterId": "media_issues"
+    }, {
+      "text": " for "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can't "
+    }, {
+      "text": "hear others",
+      "parameterId": "media_issues"
+    }, {
+      "text": " when I call with my "
+    }, {
+      "text": "android",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am having issues with my "
+    }, {
+      "text": "microphone",
+      "parameterId": "media_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am having "
+    }, {
+      "text": "microphone",
+      "parameterId": "media_issues"
+    }, {
+      "text": " issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i can't "
+    }, {
+      "text": "hear others",
+      "parameterId": "media_issues"
+    }, {
+      "text": " on my "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "ear buds",
+      "parameterId": "media_issues"
+    }, {
+      "text": " not working on my "
+    }, {
+      "text": "google pixel",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "air pods",
+      "parameterId": "media_issues"
+    }, {
+      "text": " not working on "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "speaker",
+      "parameterId": "media_issues"
+    }, {
+      "text": " on my phone doesnt work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Im experiencing problems with my "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " as it "
+    }, {
+      "text": "no longer has sound when I make phone calls"
+    }, {
+      "text": " and wont let me "
+    }, {
+      "text": "speaker",
+      "parameterId": "media_issues"
+    }, {
+      "text": " phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My phone "
+    }, {
+      "text": "microphone",
+      "parameterId": "media_issues"
+    }, {
+      "text": " is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Evertyime i make a call, there is no connect tone, "
+    }, {
+      "text": "no dial tone",
+      "parameterId": "media_issues"
+    }, {
+      "text": " and the person on the phone cant "
+    }, {
+      "text": "hear me",
+      "parameterId": "media_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The "
+    }, {
+      "text": "mic"
+    }, {
+      "text": " of my new phone is broken, most of the time the other side "
+    }, {
+      "text": "can't hear me",
+      "parameterId": "media_issues"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My "
+    }, {
+      "text": "TCL",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone "
+    }, {
+      "text": "speaker",
+      "parameterId": "media_issues"
+    }, {
+      "text": " no longer works as of yesterday..."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Im constantly having problems with my "
+    }, {
+      "text": "sony",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone; I can hear people on calls but they cant "
+    }, {
+      "text": "hear me",
+      "parameterId": "media_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when I answer calls, there is "
+    }, {
+      "text": "no sound"
+    }, {
+      "text": " or anything, as if nobody was there but people are telling me they hear me."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My "
+    }, {
+      "text": "speaker",
+      "parameterId": "media_issues"
+    }, {
+      "text": " phone is not working, when i call someone there is no volume with speaker or without."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The person at the other end hears only about 1 in 10 words that I say.  This has been going on for several weeks from my "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "we make or receive calls but no one at the other end can "
+    }, {
+      "text": "hear us",
+      "parameterId": "media_issues"
+    }, {
+      "text": " I have reported several times over the last 2 months"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "also my wife's phone "
+    }, {
+      "text": "speaker",
+      "parameterId": "media_issues"
+    }, {
+      "text": " does not work anymore, how can I fix this?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "speaker",
+      "parameterId": "media_issues"
+    }, {
+      "text": " phone doesn't work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am having some issues with my "
+    }, {
+      "text": "pixel",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone; the phone call will connect to the caller but "
+    }, {
+      "text": "I cannot",
+      "parameterId": "media_issues"
+    }, {
+      "text": " hear them, and they can not "
+    }, {
+      "text": "hear me",
+      "parameterId": "media_issues"
+    }, {
+      "text": ". Video and music plays fine though."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My volume with videos is not working anymore."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Video and "
+    }, {
+      "text": "music",
+      "parameterId": "media_issues"
+    }, {
+      "text": " audio no longer works."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Don't understand why my audio stopped working?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Problems with all audio on my device."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Problem with audio."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When receiving calls, having really hard time "
+    }, {
+      "text": "hearing others",
+      "parameterId": "media_issues"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "It sound like people are really far away when they call me."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Everytime I answer a phone call, it sounds like the caller is far far away, I can barely hear."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why it seems like people are so far away when "
+    }, {
+      "text": "I try to",
+      "parameterId": "media_issues"
+    }, {
+      "text": " hear them on my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Since yesterday, when I get a phone call, I have a hard time to hear the person at the other end, just like if the person is very far away."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can't listen to "
+    }, {
+      "text": "music",
+      "parameterId": "media_issues"
+    }, {
+      "text": " on my "
+    }, {
+      "text": "galaxy",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone; I press play, it starts but I don't hear the music."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Trying to play songs but don't hear the sound."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me figure out why I can't hear any sound when playing songs?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Audio songs broken."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The audio of my songs is not working anymore."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you know how to fix the audio for the songs I play?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Trying to play a song but can't hear nothing!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "earbuds",
+      "parameterId": "media_issues"
+    }, {
+      "text": " not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need help to repair my "
+    }, {
+      "text": "earbud",
+      "parameterId": "media_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "no volume"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "volume doesn't work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i just can't"
+    }, {
+      "text": " hear you my phone is so bad can you call me back"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "phone "
+    }, {
+      "text": "audio jack",
+      "parameterId": "media_issues"
+    }, {
+      "text": " not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i have noise on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my phone is so bad i can hardly hear anybody can i get ahold of somebody"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i have "
+    }, {
+      "text": "no dial tone",
+      "parameterId": "media_issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

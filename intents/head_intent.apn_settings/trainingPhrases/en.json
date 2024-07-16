@@ -1,0 +1,424 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Is there anyway you can configure my APN for me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you tell me how to set up data on an unlock device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "using a phone from overseas, how do i get the data to work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am using my phone from rogers, how do i set up the data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to make data work on my non Telus device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My device doesn't have APN and I would like it to"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I keep having issues while trying to access the APN settings"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to add APN to my "
+    }, {
+      "text": "ipad",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " but don't know how to"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I know if I have APN on my "
+    }, {
+      "text": "ios",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Would you please restore my APN settings to default?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Please tell me if there's been any modification to my APN settings lately"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need you to guide me towards the APN settings please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What do I do if I cannot access the APN settings?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "There is an error when I try to access the APN settings"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Want to know if I can modify the access point name settings myself"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What do I do to get to the APN settings?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Could you tell me more about the APN settings?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Looking for information on how to modify APN settings"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do I access the APN?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am in need of adding an access point name to my "
+    }, {
+      "text": "motorola",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need help accessing APN"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have "
+    }, {
+      "text": "ipad",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Please reset my APN settings"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wondering about changing my APN settings on my tablet."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to set up and activate apn data for my device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What are my device access point name setting supposed to be?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to know the access point name settings for my device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What is apn settings?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need help with apn settings on my "
+    }, {
+      "text": "Apple",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " device!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What are my access point name settings for my "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need help adding Access Point Name for my "
+    }, {
+      "text": "Samsung",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I add APN settings for "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I get data to work on my "
+    }, {
+      "text": "Android",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " from another provider?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wondering about how to add Access Point Name settings on my "
+    }, {
+      "text": "Blackberry",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you know how to add new APN settings on my "
+    }, {
+      "text": "Apple device",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there any way to add new access point name settings?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My work requires me to make changes to their private APN on my "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " but I don't know how to do that. Help!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I cannot find access point name setting on my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The network settings keep defaulting to an incorrect APN service. Please help me!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't get to the APN menu on my "
+    }, {
+      "text": "huawei",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone and I need help."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me what the Acces Point Name is for?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I got an error message saying the Access Point Name needs to be reset and I don't understand."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Not sure what the new APN name should be?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I checked my "
+    }, {
+      "text": "galaxy",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone settings and I don't have any APN info, can you help?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need help with access point name setting on "
+    }, {
+      "text": "LG",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "It's asking for my APN name but I don't know what that is."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Reset access point name please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Where should I go to reset the Access Point Name on "
+    }, {
+      "text": "TCL",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me where do I find my APN?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Having access point name setting issue."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i got my "
+    }, {
+      "text": "pixel",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " from another provider how do i get the data to work?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "sony",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " from rogers data is not working, how do i program the data?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need my access point name but I have no idea what that is"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to reset the access point name on "
+    }, {
+      "text": "google pixel",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just wondering where to go in order to reset the access point name?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

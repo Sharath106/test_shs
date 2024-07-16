@@ -1,0 +1,503 @@
+{
+  "trainingPhrases": [ {
+    "id": "2c98f638-3b75-4b8b-987b-3642f7a47275",
+    "parts": [ {
+      "text": "I need to back up data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "071e6b5b-bb98-4bb1-9d46-f6c8ce2bb4d9",
+    "parts": [ {
+      "text": "How do I back up the data on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "11661932-96a2-4363-9176-5a8268795b50",
+    "parts": [ {
+      "text": "How do I transfer my data to the cloud."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a6dad7db-ff83-473b-ac8e-fa4b18deedaf",
+    "parts": [ {
+      "text": "Can I use "
+    }, {
+      "text": "iCloud"
+    }, {
+      "text": " to back up photos"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6d6b7289-ef42-4f46-bb0c-5e2302f055d2",
+    "parts": [ {
+      "text": "how do i back up data on my "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5cd645ee-08b9-49f5-909e-dd90eda4c21d",
+    "parts": [ {
+      "text": "need help back up information on my "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6b06c8bb-e697-4ad8-90fb-1d4411c16dda",
+    "parts": [ {
+      "text": "tell me how to save the information on my "
+    }, {
+      "text": "samsung"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3e157d1d-f901-4026-b7d0-6dffdadce344",
+    "parts": [ {
+      "text": "how do i back up my files on my "
+    }, {
+      "text": "google"
+    }, {
+      "text": " pixel"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bf5865fd-cb9b-4964-ba62-6e2f90322e03",
+    "parts": [ {
+      "text": "can i get more information on backing up my data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b08c59b-5f44-477e-80fb-62e978404c72",
+    "parts": [ {
+      "text": "How do i back up my device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e7f79c32-4dd7-4be5-974e-d948f20f3679",
+    "parts": [ {
+      "text": "I need to back up some data, how do i do it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7abd5fb5-2cd1-4c81-801a-fd92124f04b9",
+    "parts": [ {
+      "text": "What is "
+    }, {
+      "text": "iCloud"
+    }, {
+      "text": " and how can I use it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ceb9d06d-c651-4b09-92de-92d78dddd1cb",
+    "parts": [ {
+      "text": "Will "
+    }, {
+      "text": "iCloud"
+    }, {
+      "text": " back up all my data?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c020e8e-0b9a-4654-9c25-f181b3945808",
+    "parts": [ {
+      "text": "how can i back up my data including my photos?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1be47d65-b8df-4ab0-9b3f-cf1330e15bcd",
+    "parts": [ {
+      "text": "help with backing up data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6bfe8124-fb46-4b08-aac3-08113c975abd",
+    "parts": [ {
+      "text": "I have a few questions about backing up data ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f8d62b67-fe76-4ad8-912f-a8c38922ef2a",
+    "parts": [ {
+      "text": "how can i save everything on my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "329c95f5-1473-422a-8738-027e945e36d6",
+    "parts": [ {
+      "text": "I'm scared of losing data on my phone, can i back it up?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "15f2fb73-4fae-4ce3-8c8d-22c3cadf14c4",
+    "parts": [ {
+      "text": "What data can i back up on my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7d93127d-093d-4da7-8a18-3ade0d448d17",
+    "parts": [ {
+      "text": "I would like to back up my data on my new phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2c566a61-86ae-4dc0-b6c4-5d378c00566b",
+    "parts": [ {
+      "text": "Can i transfer my data to a new device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "28bf519a-1140-47aa-8b08-cc3eb93727df",
+    "parts": [ {
+      "text": "Question about backing up "
+    }, {
+      "text": "android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "35bc9479-f0b9-4d0c-a92c-f5342b9006cf",
+    "parts": [ {
+      "text": "can i back up data to any device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9964bc8a-5874-45a5-b6e9-60b3f8ebfa1b",
+    "parts": [ {
+      "text": "Information on data transfer and back up"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a6f87067-669e-41c1-af8d-ae4924d1c443",
+    "parts": [ {
+      "text": "How can I back up data or make sure i don't lose my photos?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5ecf8c1b-516a-4bd3-83d4-095326a77daf",
+    "parts": [ {
+      "text": "I really need to make sure I do not lose my pictures before changing my phone so I need to back up data."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3cf9f1e5-42ee-40f7-af66-bcd543ed50bb",
+    "parts": [ {
+      "text": "How does the backup on my tablet works? please help."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "29e9626d-a84e-4f01-b5a8-3160714d28fd",
+    "parts": [ {
+      "text": "want to make sure that I have a daily backup setup on my device."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "98eb31e6-b91b-442f-9248-93f2f107e70d",
+    "parts": [ {
+      "text": "Automatic backup is turned on, how can I turn off?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1c3500cf-af5a-47a6-a475-d25afc6166fb",
+    "parts": [ {
+      "text": "there are backups on my phone, but where does it go to?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eb430a82-f985-4eed-b405-9a276425582d",
+    "parts": [ {
+      "text": "I want to save all the pictures from my phone to the cloud. Help me do a back up."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "83e1a4ae-6283-4d84-8a39-0a2b40a5d00a",
+    "parts": [ {
+      "text": "Can I to a back up and send all my pictures to the cloud?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5e66835b-6c81-40f1-b55b-d9f5994cdfdc",
+    "parts": [ {
+      "text": "Is it possible to make sure I don't lose nothing on my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cd8eec91-84ea-4306-82ba-3dbab78550e8",
+    "parts": [ {
+      "text": "If I don't want to lose any data on my phone, like pictures, what can I do?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ebba8b43-ea32-45ca-82d1-9845f9c30c89",
+    "parts": [ {
+      "text": "I know there's a way to save all the pictures and stuff on my phone but I don't know how."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1f3b44bf-2cbe-4353-95c3-abc46a8e52e7",
+    "parts": [ {
+      "text": "I need help to do a backup so I don't lose my pictures, it's very important to me."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eca078ae-a8eb-45af-a09d-6bcbb301a2e6",
+    "parts": [ {
+      "text": "I'm about to change my phone and want to make sure I don't lose my pictures, can you help me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5b4f8ae6-48d8-418b-91d1-7b0404001764",
+    "parts": [ {
+      "text": "How do I save my pictures and files on my device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c9c9605d-4b51-4a07-94ff-c782ebe7ba14",
+    "parts": [ {
+      "text": "Could you please help me back up all my photos so I don't lose them?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cd6a6e1c-31bd-479e-b7b8-482b1cc0e7c1",
+    "parts": [ {
+      "text": "I have a tablet and I don't understand how to do a backup."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8965079d-e421-466b-84e5-e16d7cc9c25a",
+    "parts": [ {
+      "text": "How to back up data and pictures on a "
+    }, {
+      "text": "iPad"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9b30e096-3312-4dc2-ae47-5113a1469d02",
+    "parts": [ {
+      "text": "Can you tell me how to do a back up on a tablet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b9d52651-63a4-4ea4-8dbb-53448de11b46",
+    "parts": [ {
+      "text": "I want to use a daily backup on my device, can you tell me how?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "37db3d13-463a-4339-86b6-e73fb99be129",
+    "parts": [ {
+      "text": "How to setup an automatic daily backup?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6de49700-1f70-4821-8223-92d701eadbaa",
+    "parts": [ {
+      "text": "Just want to make sure the daily backup is setup on my tablet."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fed9d2c5-e584-4d8c-b96d-94787d826cb1",
+    "parts": [ {
+      "text": "The auto backup is on but I don't want it."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "317af757-ed1b-42f3-980b-0c3d3f1d7f73",
+    "parts": [ {
+      "text": "How to turn on the backup option?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aef6fd76-a341-43fc-a3c5-0f6971918eaf",
+    "parts": [ {
+      "text": "How can I see if my device is making backup?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6fe9ea0b-a293-42f0-95e9-2a27f8a472e8",
+    "parts": [ {
+      "text": "Where can I check if my phone does automatic backups?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f1c28af5-63ce-476a-80cd-f3625b375835",
+    "parts": [ {
+      "text": "How do I know if the data is being backed up?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6907c6d9-2a76-4dce-a837-01aee2f09a58",
+    "parts": [ {
+      "text": "Just want to make sure my data is backing up."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4ef2f700-0714-4dcc-ab60-5fec8ba9b5f7",
+    "parts": [ {
+      "text": "Just wondering where the backups of my device are going?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b318d4ab-594e-48c9-98f7-0b0252944496",
+    "parts": [ {
+      "text": "Where can I check all the backups made on my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e147fea6-81a7-402e-ad84-fe0c27206f3c",
+    "parts": [ {
+      "text": "I know the backups are activated on my tablet but not sure where they are all going?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "24adb88e-34ee-422b-b491-33c388e041c3",
+    "parts": [ {
+      "text": "How do I save the pictures from my device to the cloud?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "43388564-43f1-4538-9e71-9624ef3ec024",
+    "parts": [ {
+      "text": "Can I use the cloud to back up my phone data, like my pictures?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c1a01382-db8e-4b17-bffd-9561fe610b7c",
+    "parts": [ {
+      "text": "I'd like to save all the data from my phone to "
+    }, {
+      "text": "iCloud"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d8975bd5-5a98-4e7c-b876-a6ba149e9e65",
+    "parts": [ {
+      "text": "Is it possible to save the pictures that are on my tablet to the cloud?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4e710c54-128c-4577-9e08-deb8e9682d0f",
+    "parts": [ {
+      "text": "I'm not sure how to transfer the pictures I have on my cell phone to the cloud."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d4cdf4fc-e968-4497-ad77-677d4173a009",
+    "parts": [ {
+      "text": "Is it possible to send all the information from my device to the cloud?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f32486d3-abd6-4ca9-ad4e-e0d3f48a60a8",
+    "parts": [ {
+      "text": "How to transfer data from phone to "
+    }, {
+      "text": "icloud"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2b9de41e-cad4-4977-a862-bc8c8430c03e",
+    "parts": [ {
+      "text": "Can you tell me how to upload pictures to my cloud?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a4f8aa76-0877-42a6-acf2-61048ab967c5",
+    "parts": [ {
+      "text": "How exactly can I add pictures to the cloud"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ae941cc6-2e33-4f1f-8c86-3a32e55b3f75",
+    "parts": [ {
+      "text": "tell me how to add pictures to cloud"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9c34c055-c81a-4dd1-8117-67bf504f1d1e",
+    "parts": [ {
+      "text": "Please help me add pictures to my cloud."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b5ea30ec-f574-4616-9f41-96bc7c961b1c",
+    "parts": [ {
+      "text": "I have cloud storage and want to back up my pictures, how do I do it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

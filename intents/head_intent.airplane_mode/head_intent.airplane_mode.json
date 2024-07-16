@@ -1,0 +1,20 @@
+{
+  "name": "8e192f11-609c-4dba-9428-3768ce87b8ba",
+  "displayName": "head_intent.airplane_mode",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer asking about using airplane mode.",
+  "numTrainingPhrases": 131
+}

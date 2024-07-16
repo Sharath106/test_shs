@@ -1,0 +1,15 @@
+{
+  "name": "76149df6-80e4-4cdb-82d1-0972b233d0bb",
+  "displayName": "head_intent.bill_dispute",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer wanting to dispute their bill",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 315
+}

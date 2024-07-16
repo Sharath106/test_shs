@@ -1,0 +1,643 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "my bill is too high I want to cut my services doubt"
+    } ],
+    "repeatCount": 2,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to pay less"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "new plan is so expensive"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "service is too costly"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "any way to lower our bill?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how can I get my bill lowered"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can i get cheaper plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "want my plan to be cheaper"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "want a cheaper plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "find a cheaper plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need my plan to be cheaper"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need a cheaper plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what to do so that my bill goes down"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there any way to bring my bill down a little more? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to bring down my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": " is there anything i can do to lower future bills"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you save me any money on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there a way to get a cheaper monthly bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Options to reduce my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Ways to lower my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I reduce my monthly cost?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": " lower the amount I pay every month"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": " lower my monthly cost"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can't pay that much for my bill anymore is there anything you co do about it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't afford this monthly amount anymore and need a cheaper option"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how can you help me to reduce my monthly cost"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The amount I am paying every month is not within my budget anymore"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "looking for a solution to reduce bill monthly amount"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need more affordable rate"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want a cheaper rate that I can afford"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there a way we can adjust my bill to lessen the costs. It's over $60. I am not happy"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need a cheaper rate"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to make my plan cheaper"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am trying to find a cheaper rate"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what can you offer me that will reduce my bill cost"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "is there anything I can do to make my bill cheaper"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was wondering if there's anything you can do to lower my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was hoping to lower my bill I'm struggling to find something cheaper"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "wondering how I can make my plan cheaper I'm paying way too much"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I wanted to see if there's anything more economical that I can move towards. My current cost is pretty excessive"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "is there a way of lowering my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm curious if there's a way to lower the plan cost"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I feel like I'm paying too much for my bill can I reduce my monthly charge"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't want to pay so much for my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to reduce my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lower my bill amount"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lower my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I finished paying off 2 phones in the fall but the amount Im being billed hasnt changed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the one device was paid off in "
+    }, {
+      "text": "May"
+    }, {
+      "text": " but my invoice has not reduced"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My question is this: I've paid off the balance of my device, but my monthly invoice hasn't changed to reflect this. Why is that?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My bill didnt drop even though I now owe nothing on my phone and I was just wondering why"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the billing price has remained the same. I was expected a lower billing cost since my device is now fully paid"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my bill amount is still high I thought It was paid off thats why I was wondering"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why hasn't my bill been reduced?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was told my bill would go down but it hasn't."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I noticed my bill hasn't decreased."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When will my bill finally decrease?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "With the credit my bill was suppose to be less?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I changed my plan but i see i am still paying the same thing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My bill has not decreased since the change was made"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I opted for a lower plan, why do i still see the same cost?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "update my bill with the lower cost"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Bill should have been lowered"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want a better deal"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm calling about special promotions and reducing my bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to see if i can get a better deal on my bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the phone bill is too much money"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reduced rate"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "better pricing"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "cost reduction"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i recently upgraded my plan curious if i can get a better price"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to find out if i can get a better price than i pay now"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am inquiring about a a better rate"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "a better price"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "cheaper rates"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like a better rate"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'd like to talk about my telus package i need the cost reduced"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i wanna talk to someone about reducing my bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to want to reduce my bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need to reduce cost on billing"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reduce bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to reduce my bill and not get charged extra data"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to reduce the monthly fee"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like my price lowered somehow"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to reduce my bill by twenty bucks a month"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "to lower my monthly payment"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would i would like to have my bill reduced considerably or i i'm thinking of closing out my home phone"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "bill reduction"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to make my bill cheaper"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lower the monthly bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like it lowered i'm thinking it's costing too much money"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lowering my phone bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reduce payments"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lowering phone bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "cheaper bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "billing reduction"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm not working since march so i want to lower my bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "to lower my bill for covid nineteen"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lower the cost of my monthly bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lower bill payment"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my account balance it's way too high i want to cut it back"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need to reduce my monthly bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lower my price"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to reduce my phone bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reduce payment"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reduce my bill"
+    } ],
+    "repeatCount": 11,
+    "languageCode": "en"
+  } ]
+}

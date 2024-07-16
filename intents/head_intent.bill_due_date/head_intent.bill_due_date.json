@@ -1,0 +1,28 @@
+{
+  "name": "51efd00f-f6ef-4bbb-84f3-fca807375efa",
+  "displayName": "head_intent.bill_due_date",
+  "parameters": [ {
+    "id": "online_vs_app",
+    "entityType": "@online-vs-app"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about when the bill is due.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 155
+}

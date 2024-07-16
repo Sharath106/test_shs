@@ -1,0 +1,20 @@
+{
+  "name": "ea8a23bb-a6b2-4e5d-a338-5bcb9ab05621",
+  "displayName": "head_intent.available_plans_none_fit_my_needs",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "When clients feel available plans don't work for them, we give details of our plans.",
+  "numTrainingPhrases": 206
+}

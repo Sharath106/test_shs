@@ -1,0 +1,681 @@
+{
+  "trainingPhrases": [ {
+    "id": "c607d232-299d-4c09-98e8-d35db4880b6f",
+    "parts": [ {
+      "text": "is "
+    }, {
+      "text": "google"
+    }, {
+      "text": " play store free to use?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "74d83321-772b-4097-bb3d-e74ecc3fd5f0",
+    "parts": [ {
+      "text": "where can I get games to play on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9b7d7d93-c497-4ab1-b5f6-4e9bc0397763",
+    "parts": [ {
+      "text": "Mobile App download"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ce15ee68-d1dd-4647-a766-e9447535de7e",
+    "parts": [ {
+      "text": "do you have an "
+    }, {
+      "text": "iphone"
+    }, {
+      "text": " app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "32b54020-c4d4-4a68-84bb-7c925a767a48",
+    "parts": [ {
+      "text": "do you have an "
+    }, {
+      "text": "android"
+    }, {
+      "text": " app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "90b98764-3dcc-413e-8c08-96506583aa75",
+    "parts": [ {
+      "text": "how do I get your app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ba83bce2-d035-4432-92ed-794579c2be3c",
+    "parts": [ {
+      "text": "where to find the app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1812f019-7316-46b0-821f-26e3f9db13ed",
+    "parts": [ {
+      "text": "how to use your app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c117337c-91cf-4ef3-9297-46c47d24e4e1",
+    "parts": [ {
+      "text": "Do you have an app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b57d8821-cca2-499c-96a0-af14fd745ef5",
+    "parts": [ {
+      "text": "How can I get your app?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e42a66d7-391d-4628-bbe9-217898971637",
+    "parts": [ {
+      "text": "app installation process"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dd58fb97-d16d-497e-bbe2-c44cba521a10",
+    "parts": [ {
+      "text": "Can you help me download the app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "509d8013-0a06-431c-9eb4-be190bbf3d2e",
+    "parts": [ {
+      "text": "Can I download the application on my Velvet phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "44e0896e-b9d0-4645-adef-cef5ac9f16cf",
+    "parts": [ {
+      "text": "can I download the app?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f1cc7595-5b6c-4d7b-82da-678c2edc1940",
+    "parts": [ {
+      "text": "Does your app work on a lg velvet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "faeab3d6-c0e6-49cc-abab-4adb57ba2b49",
+    "parts": [ {
+      "text": "App store details"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7366b423-e1d1-4b99-9d4b-14e1037497b7",
+    "parts": [ {
+      "text": "Galaxy"
+    }, {
+      "text": " store more information please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "40ecff17-1b6a-4aa0-b5d3-1b4eb5371d8f",
+    "parts": [ {
+      "text": "Google"
+    }, {
+      "text": " play store info"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ae2eb277-e601-48e9-a2e2-b1b22ee7e68e",
+    "parts": [ {
+      "text": " "
+    }, {
+      "text": "Galaxy"
+    }, {
+      "text": " store issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dcb501b9-d8b0-46dc-a231-c32e1bea5bea",
+    "parts": [ {
+      "text": "Galaxy"
+    }, {
+      "text": " store not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "27c1aa80-2d0d-48e0-a268-6d4d0f8a94bc",
+    "parts": [ {
+      "text": "I recently got a new "
+    }, {
+      "text": "android"
+    }, {
+      "text": ", where do I go to install new apps"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d308c7ef-447a-456b-afec-c3d709980581",
+    "parts": [ {
+      "text": "I have an "
+    }, {
+      "text": "iphone"
+    }, {
+      "text": ", how do I download apps"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4f49408a-d25d-4a3d-a08e-c16c16595fad",
+    "parts": [ {
+      "text": "my app store is broken"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db3a2373-19b8-48c0-9808-56db4ed741d1",
+    "parts": [ {
+      "text": "Can't find a certain app on my "
+    }, {
+      "text": "android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "42c9b49a-f547-4819-a375-1c9ab52b749f",
+    "parts": [ {
+      "text": "Are the apps the same on android and iPhones?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b065946b-08a2-459b-b11d-2aa5b8d7b00d",
+    "parts": [ {
+      "text": "Can i find any app on the app store as well as the "
+    }, {
+      "text": "google"
+    }, {
+      "text": " play store"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3d7785ae-4a24-41a4-9361-bc9d95cbd0ec",
+    "parts": [ {
+      "text": "Need your help downloading some apps"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5bf16fc0-acc1-4cd8-8208-11a49fb4285a",
+    "parts": [ {
+      "text": "I am trying to download some apps and they keep failing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b78449c-fcfe-477f-ac18-e5bd83290857",
+    "parts": [ {
+      "text": "Why isn't the facebook app installing on my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5b93e398-5bed-4542-ac5f-e7da5864884d",
+    "parts": [ {
+      "text": "Can you help me in regards with applications on the device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1c8d56ef-1f77-46db-92de-0018141ee7b8",
+    "parts": [ {
+      "text": "can i get more information about the apps"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4f315b26-fc82-4c55-8e90-d3ce5b424aec",
+    "parts": [ {
+      "text": "app info"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9a4e316f-7423-48b8-8518-887a66634b47",
+    "parts": [ {
+      "text": "are the apps the same on iphone and android?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "97e896d6-1f65-46a7-b3f8-4addad20fe77",
+    "parts": [ {
+      "text": "how do I use the app store on "
+    }, {
+      "text": "android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "37901abd-52c2-4ea6-9b8a-9f2a2fa9c317",
+    "parts": [ {
+      "text": "I have some questions about downloading apps"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6fc7c655-ddb5-40de-8d5d-78be755a2618",
+    "parts": [ {
+      "text": "How can I download apps on "
+    }, {
+      "text": "google"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2aa1fc4c-e24b-4b8e-836f-37fe71aa04ac",
+    "parts": [ {
+      "text": "Where can I download apps on "
+    }, {
+      "text": "iphone"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "caad9de5-a7da-464e-88e1-edab9383beb1",
+    "parts": [ {
+      "text": "How can I download apps on "
+    }, {
+      "text": "android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "51890bbb-dcd4-471d-998c-923bcf986860",
+    "parts": [ {
+      "text": "Want to download apps on "
+    }, {
+      "text": "samsung"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a753540f-52fc-4be4-9ff9-af31fff78c57",
+    "parts": [ {
+      "text": "Where do I find apps on my "
+    }, {
+      "text": "iphone"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "080d37fd-4a0e-45e4-a785-06f3f690c4df",
+    "parts": [ {
+      "text": "How do I get apps on my new "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9e5cc59b-a031-4b0c-b5d2-2d1b6f9ea1ab",
+    "parts": [ {
+      "text": "Where can I get more info about apps?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ca704499-94a5-4b3e-b257-f93dad78b892",
+    "parts": [ {
+      "text": "Where can I use the app store"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0201f1e7-f445-41c2-b832-857a1713b961",
+    "parts": [ {
+      "text": "I want to download an app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "79fa9ce4-1b51-4e40-a943-617fde8d69e8",
+    "parts": [ {
+      "text": "Where can I get Instagram?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1838a4f8-0dbf-4588-8c34-514410001672",
+    "parts": [ {
+      "text": "I want to install Snapchat"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0ae5dc70-6a36-4eb3-9738-bd387a1a826a",
+    "parts": [ {
+      "text": "question on my telus app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7aec9412-a8aa-486a-866a-28291ac4e43d",
+    "parts": [ {
+      "text": "How to use the MyTELUS app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d6f369bd-fe92-4127-9f68-54c0d1296294",
+    "parts": [ {
+      "text": "Download telus app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e390844-b180-4ac7-bf8e-bcb18e097f28",
+    "parts": [ {
+      "text": "how to download the my telus app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "baec23b1-d5a2-442d-952f-69d8caadf3e7",
+    "parts": [ {
+      "text": "My TELUS app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c64011e8-60b0-4c50-bfbb-60fc45120490",
+    "parts": [ {
+      "text": "Don't know how to download the My TELUS app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "219a0991-5859-4555-91ae-89b75b0acffd",
+    "parts": [ {
+      "text": "Can you please help me download the TELUS app?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "19a5d2bf-2b77-48c0-88e2-758cb69b0d48",
+    "parts": [ {
+      "text": "I want to get the My TELUS app."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7d3c94be-1ef1-4d86-a538-88d30c9a2077",
+    "parts": [ {
+      "text": "Steps to get My TELUS app on a "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "654b5c99-4c75-4fed-b198-5b7aedc4d925",
+    "parts": [ {
+      "text": "Just wanting to know where to get My TELUS app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c961481a-ffd7-46a8-8203-996ec0054c11",
+    "parts": [ {
+      "text": "TELUS app for download"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "06c2b136-42bb-40ab-bc85-fea1200f85ef",
+    "parts": [ {
+      "text": "Download My TELUS app please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3cefe70d-7929-4259-bcbc-3ec52d8cbb03",
+    "parts": [ {
+      "text": "I'd like to have My TELUS app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "55303bf3-33da-4aa4-80f2-afebc1827d5b",
+    "parts": [ {
+      "text": "I don't know how to install My TELUS app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b6345680-7e6b-4de6-9401-f1894e5731f4",
+    "parts": [ {
+      "text": "Need assistance with downloading the TELUS app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b89158a2-c971-4edc-add2-65582d81dc95",
+    "parts": [ {
+      "text": "Just trying to download the My TELUS app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "53625b0d-eae4-42eb-96f8-f1ff417c0028",
+    "parts": [ {
+      "text": "How to download the telus app on tablet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d8f0cf7f-a117-4e28-8b73-6917361675d1",
+    "parts": [ {
+      "text": "can I download the telus app?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "018d7a66-3a8b-499e-94cf-c0cf45c77550",
+    "parts": [ {
+      "text": "How do I download My Telus app on my "
+    }, {
+      "text": "android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3941c781-3c5c-4f5e-bbf0-24efda93448e",
+    "parts": [ {
+      "text": "download apps for "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "96f64f4d-36cb-4352-9d81-2d7ac301e040",
+    "parts": [ {
+      "text": "download Telus app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "76fffcb3-127f-431d-b95d-4d8a568359ed",
+    "parts": [ {
+      "text": "issue with app store"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ff505fa3-1ffb-4e28-92b1-93f6fdc6b853",
+    "parts": [ {
+      "text": "app store not loading"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "02ede95f-6615-4391-b66a-2b4efb0fab9d",
+    "parts": [ {
+      "text": "What is "
+    }, {
+      "text": "google"
+    }, {
+      "text": " play store"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dfa845ca-c9e5-4a31-bf90-016b57f5ea7e",
+    "parts": [ {
+      "text": "to add programs"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e1271751-2fc8-4a79-bd37-e83e0dd480c4",
+    "parts": [ {
+      "text": "my telus app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dd125664-b09c-43b2-bbab-40e06fb8361e",
+    "parts": [ {
+      "text": "mobile app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "367b0b69-2d47-43a5-a965-3701ed55f39f",
+    "parts": [ {
+      "text": "application"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "653f42bf-4a14-4466-8ee8-db5d5c4561df",
+    "parts": [ {
+      "text": "i need an application"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "19d17de1-601f-4c91-9934-1e843ed48134",
+    "parts": [ {
+      "text": "apps"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "72c1087f-3d5e-49ee-acb5-ddebecdbdba9",
+    "parts": [ {
+      "text": "my app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "41b09fa5-2b88-4b45-93be-abaa96acd817",
+    "parts": [ {
+      "text": "app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "315b86c2-f00b-4fdb-8355-8cc1578c1e07",
+    "parts": [ {
+      "text": "setting up the telus app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "87e2714f-1250-4cf5-8b0e-5c2be177545e",
+    "parts": [ {
+      "text": "installing telus app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "227dad9b-4f3c-41dc-8c7f-996f9fd3e3a0",
+    "parts": [ {
+      "text": "i want to set up my app on the phone please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c9e13ecf-1256-49db-acd4-244e52ee5f6a",
+    "parts": [ {
+      "text": "app problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fe62beca-5b92-4b8b-9fb5-9e884517481a",
+    "parts": [ {
+      "text": "applications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c1f14d21-efe3-4923-97ad-d4b4859d00b6",
+    "parts": [ {
+      "text": "help with the app on line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "249defab-7633-4f9e-bdce-a798140e2382",
+    "parts": [ {
+      "text": "application purchase"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8b85fd6c-5300-478a-833e-758060a07b5f",
+    "parts": [ {
+      "text": "telus app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

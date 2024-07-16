@@ -1,0 +1,25 @@
+{
+  "name": "72081aea-64e8-46be-8626-759ec05fe21b",
+  "displayName": "head_intent.bill_explanation_charge_by_amount",
+  "parameters": [ {
+    "id": "charge_amount",
+    "entityType": "@sys.number"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  }, {
+    "key": "transactional",
+    "value": "transactional"
+  } ],
+  "description": "Customer inquiries regarding a discrepancy in their bill by giving the extra charge amount they incurred.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 114
+}

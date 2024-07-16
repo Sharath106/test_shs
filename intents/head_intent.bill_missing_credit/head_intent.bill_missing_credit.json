@@ -1,0 +1,30 @@
+{
+  "name": "520c7582-fb36-4175-97ce-62172e2e1b92",
+  "displayName": "head_intent.bill_missing_credit",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquires about credit missing from bill.",
+  "asrCorrections": [ {
+    "errorPhrase": "ma a",
+    "correctionPhrase": "m'a"
+  }, {
+    "errorPhrase": "12 alarme a",
+    "correctionPhrase": "12 dollars m'a"
+  } ],
+  "numTrainingPhrases": 216
+}

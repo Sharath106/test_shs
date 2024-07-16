@@ -1,0 +1,855 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I wanted to"
+    }, {
+      "text": " discuss "
+    }, {
+      "text": "a charge"
+    }, {
+      "text": " "
+    }, {
+      "text": "on"
+    }, {
+      "text": " my "
+    }, {
+      "text": "bill"
+    }, {
+      "text": " that shouldn't be there - it's the $"
+    }, {
+      "text": "19",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "charge for"
+    }, {
+      "text": " Local "
+    }, {
+      "text": "airtime"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "There is $"
+    }, {
+      "text": "35",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "charges"
+    }, {
+      "text": " "
+    }, {
+      "text": "airtime"
+    }, {
+      "text": ". What is that?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "why do I "
+    }, {
+      "text": "see"
+    }, {
+      "text": " "
+    }, {
+      "text": "on"
+    }, {
+      "text": " the "
+    }, {
+      "text": "last"
+    }, {
+      "text": " "
+    }, {
+      "text": "bill a"
+    }, {
+      "text": " "
+    }, {
+      "text": "late fee"
+    }, {
+      "text": " of $"
+    }, {
+      "text": "25",
+      "parameterId": "charge_amount",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "bill was"
+    }, {
+      "text": " supposed to be "
+    }, {
+      "text": "60",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": "  with taxes but it is showing "
+    }, {
+      "text": "92",
+      "parameterId": "charge_amount",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was"
+    }, {
+      "text": " supposed to pay "
+    }, {
+      "text": "60",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " something "
+    }, {
+      "text": "for the bill"
+    }, {
+      "text": " "
+    }, {
+      "text": "not"
+    }, {
+      "text": " more"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am "
+    }, {
+      "text": "not"
+    }, {
+      "text": " "
+    }, {
+      "text": "sure"
+    }, {
+      "text": " why my most "
+    }, {
+      "text": "recent"
+    }, {
+      "text": " "
+    }, {
+      "text": "bill"
+    }, {
+      "text": " is over "
+    }, {
+      "text": "100",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " dollars"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "bill"
+    }, {
+      "text": " went up approximately "
+    }, {
+      "text": "61",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " dollars wondering why"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "why is my "
+    }, {
+      "text": "bill"
+    }, {
+      "text": " an extra "
+    }, {
+      "text": "20",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " dollars"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I "
+    }, {
+      "text": "see"
+    }, {
+      "text": " "
+    }, {
+      "text": "now"
+    }, {
+      "text": " the "
+    }, {
+      "text": "September"
+    }, {
+      "text": " "
+    }, {
+      "text": "bill"
+    }, {
+      "text": " has "
+    }, {
+      "text": "20",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " dollars of "
+    }, {
+      "text": "additional"
+    }, {
+      "text": " "
+    }, {
+      "text": "charges"
+    }, {
+      "text": ". I "
+    }, {
+      "text": "didn't"
+    }, {
+      "text": " notice it before"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Bill"
+    }, {
+      "text": " is about $"
+    }, {
+      "text": "25",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " more than "
+    }, {
+      "text": "i was"
+    }, {
+      "text": " quoted"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "explain the $"
+    }, {
+      "text": "12",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " usage charge "
+    }, {
+      "text": "on"
+    }, {
+      "text": " my "
+    }, {
+      "text": "last"
+    }, {
+      "text": " "
+    }, {
+      "text": "bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my bill has increased by $"
+    }, {
+      "text": "15",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " a month why?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "explain the $"
+    }, {
+      "text": "12",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " usage charge on my last bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "im not sure why my bill is $"
+    }, {
+      "text": "20",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " more than I was told"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my bill says $"
+    }, {
+      "text": "12",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " but the charge is $"
+    }, {
+      "text": "22",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " and it doesn't clarify where the extra comes from"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "im asking why the monthly charge is different by almost $"
+    }, {
+      "text": "12",
+      "parameterId": "charge_amount"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "on"
+    }, {
+      "text": " my "
+    }, {
+      "text": "bill i"
+    }, {
+      "text": " am "
+    }, {
+      "text": "getting charged"
+    }, {
+      "text": " "
+    }, {
+      "text": "20",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " dollars more"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why is there an extra "
+    }, {
+      "text": "15",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " charge "
+    }, {
+      "text": "on"
+    }, {
+      "text": " my "
+    }, {
+      "text": "bill"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Telus"
+    }, {
+      "text": " "
+    }, {
+      "text": "charged me twice"
+    }, {
+      "text": " for $"
+    }, {
+      "text": "30",
+      "parameterId": "charge_amount",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "why do i have an overage of $"
+    }, {
+      "text": "20",
+      "parameterId": "charge_amount",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i was"
+    }, {
+      "text": " looking at my "
+    }, {
+      "text": "bill"
+    }, {
+      "text": "  it has a "
+    }, {
+      "text": "data overage"
+    }, {
+      "text": " charge of "
+    }, {
+      "text": "29",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": "$ "
+    }, {
+      "text": "can"
+    }, {
+      "text": " you explain to me what that is for"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my "
+    }, {
+      "text": "bill"
+    }, {
+      "text": " has $"
+    }, {
+      "text": "12",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "in"
+    }, {
+      "text": " "
+    }, {
+      "text": "airtime"
+    }, {
+      "text": " "
+    }, {
+      "text": "charges"
+    }, {
+      "text": " what's that for"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm just questioning a $"
+    }, {
+      "text": "77.76",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I received"
+    }, {
+      "text": " an "
+    }, {
+      "text": "email"
+    }, {
+      "text": " saying that I have to pay $"
+    }, {
+      "text": "100",
+      "parameterId": "charge_amount",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I've got a $"
+    }, {
+      "text": "20",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " bill this month for us texting"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "There is an additional $"
+    }, {
+      "text": "4",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " charge on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a $"
+    }, {
+      "text": "45.32",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " extra charge"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I noticed a $"
+    }, {
+      "text": "10.25",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " charge on my bill that I don't recognize."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "There's an unexpected $"
+    }, {
+      "text": "3.78",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " fee on my bill. Can you explain it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why is there a $"
+    }, {
+      "text": "18.99",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " added to my bill?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I "
+    }, {
+      "text": "see"
+    }, {
+      "text": " a $"
+    }, {
+      "text": "5.00",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "additional"
+    }, {
+      "text": " charge. What is it for?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My bill shows a $"
+    }, {
+      "text": "12.41",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " I wasn't expecting."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "There seems to be a $"
+    }, {
+      "text": "7.12",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " extra "
+    }, {
+      "text": "fee"
+    }, {
+      "text": " "
+    }, {
+      "text": "on"
+    }, {
+      "text": " "
+    }, {
+      "text": "my account"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was charged an extra $"
+    }, {
+      "text": "21.54.",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " Can you clarify?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a question about the $"
+    }, {
+      "text": "9.36",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " charge "
+    }, {
+      "text": "on"
+    }, {
+      "text": " my "
+    }, {
+      "text": "bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is the $"
+    }, {
+      "text": "4.82",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "on"
+    }, {
+      "text": " my "
+    }, {
+      "text": "bill a"
+    }, {
+      "text": " "
+    }, {
+      "text": "mistake"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me why I was charged an additional $"
+    }, {
+      "text": "16.07",
+      "parameterId": "charge_amount"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "There's a $"
+    }, {
+      "text": "2.99",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " added to my bill that I didn't authorize."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm concerned about the extra $"
+    }, {
+      "text": "13.51",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " on my statement."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I got charged"
+    }, {
+      "text": " $"
+    }, {
+      "text": "8.00",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " more than I expected. What's up with that?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was wondering about the $"
+    }, {
+      "text": "11.23",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " on my bill."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a question regarding the "
+    }, {
+      "text": "additional"
+    }, {
+      "text": " $"
+    }, {
+      "text": "19.75",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " charge"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My bill reflects an unexpected $"
+    }, {
+      "text": "3.10",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " fee."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to understand the reason behind the $"
+    }, {
+      "text": "20.19",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": "  charge."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you explain the $"
+    }, {
+      "text": "5.72",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " added to my recent bill?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I "
+    }, {
+      "text": "see"
+    }, {
+      "text": " a $"
+    }, {
+      "text": "17.38",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "charge I"
+    }, {
+      "text": " "
+    }, {
+      "text": "don't"
+    }, {
+      "text": " remember incurring."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a $"
+    }, {
+      "text": "14",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " charge on my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm calling about the $"
+    }, {
+      "text": "5",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " charge on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I see a $"
+    }, {
+      "text": "20",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " charge on my account that I don't recognize"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "why is there "
+    }, {
+      "text": "15",
+      "parameterId": "charge_amount",
+      "auto": true
+    }, {
+      "text": " dollars more "
+    }, {
+      "text": "on"
+    }, {
+      "text": " my "
+    }, {
+      "text": "bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have additional $"
+    }, {
+      "text": "10",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " charge on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "why am I charged extra $"
+    }, {
+      "text": "20",
+      "parameterId": "charge_amount"
+    }, {
+      "text": " on my last bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

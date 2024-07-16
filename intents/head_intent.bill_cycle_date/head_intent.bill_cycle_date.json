@@ -1,0 +1,28 @@
+{
+  "name": "1ad4dd22-0b35-4326-86f2-cb0b1f022dfc",
+  "displayName": "head_intent.bill_cycle_date",
+  "parameters": [ {
+    "id": "online_vs_app",
+    "entityType": "@online-vs-app"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "inquiries about billing cycle date (doesn't include changing billing cycle.)",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 182
+}

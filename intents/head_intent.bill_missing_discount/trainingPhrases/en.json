@@ -1,0 +1,549 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "for my discount is didn't come on my "
+    }, {
+      "text": "first",
+      "parameterId": "ordinal",
+      "auto": true
+    }, {
+      "text": " bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "discounts wouldn't showing on my "
+    }, {
+      "text": "first",
+      "parameterId": "ordinal",
+      "auto": true
+    }, {
+      "text": " bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "discounts went showing on my "
+    }, {
+      "text": "first",
+      "parameterId": "ordinal",
+      "auto": true
+    }, {
+      "text": " bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it seems like I am missing 25$/month discount for family/friends?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my package discount"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Has my discount expired, I don't see it on my bill anymore?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Missing a discount on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why don't I have the discount anymore"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Don't see the discount anymore"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Does a discount end"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Would like my discount back"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I have my discount again"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "don't see my discount"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to understand why the discounts on my bill have ended"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am looking at my recent invoice and noticed that my 25% discount disappeared."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "A discount has been dropped off my billing and there is no expiry date or explanation."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just inquiring about a discount that is supposed to me on my account but still isn't - last month, the agent said this month"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I recently contacted your customer service as my Ambassador Plan discount is not showing on my current bill.  I was advised to reach out to the Ambassador Team to have it added."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was told and received a text message on Saturday that I'll be paying twelve dollars per line for ten gigabytes unlimited plan... six dollars for loyalty and six dollars for family discount per line...But in the current bill that i received today, didn't get six dollars family discount"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I recently upgraded my phone and was offered a more expensive plan. However, I was told that I would receive a 12 dollar loyalty discount, but upon reviewing my first bill, I don't see that it has been applied.  Can you check please?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a Telus employee account. I made some changes online and when I got my bill, I noticed my 25% disc was removed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I started a Home Internet plan in December. When I signed up, I also switched to Telus Mobility, as I was supposed to get a 25 dollar bundle discount. I have realized that I get billed for my two accounts separately and I don't get the discount. How can I get this rectified?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I just received my first bill and noticed that a multi-product deduction isn't being applied"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need some clarification on my mobility bill please. i don't think the discounts were being applied consistently over the past few months"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My billing for this month did not include my employee discount."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "in the last month or so i got a family member who is with telus to do the refer a friend and get a discount. i'm not quite sure if it showed up on my bill or account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "So I noticed I am not getting the EPP discount on my main line, so I was wondering what happened"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I just noticed on my bill that I never received the home and mobile discount.  Was wondering why?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need to understand what happened to my first bill... not one of the discounts are on there... not literally one"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I entered a friends and family discount when setting up my plan but it does not reflect the discount now that I have received my first bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i don't see a 12 dollar loyalty discount; when i signed up with mobility in august; agent mentioned a loyalty and family discount however i can only see family discount on the bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My internal referral discount was not applied to my mobility bill this month and I was mostly wondering why, and whether it can be reapplied or if I'll have to run to a different call line to get it sorted."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my telus employee discount fell off when I made my rate plan change online. It is a known issue. My discount only applied to the prorated amount."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The bill I received a couple of days ago does not include the discounts I agreed to when I got my new phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I actually have already purchased and set up my new phone but needed to call to have someone apply the agreed upon discounts noted on my account."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I thought I was getting the Loyalty 10 dollar discount on each line."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "If you check your files you will see that I was supposed to be receiving a 12 dollar per month discount effective November, but it was not reflected on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yeah, I have a mobility account and I have my home internet through Telus. When I got them both, in august last year, i was promised 33 dollars off the total price. I have just dived into that billing but can't find it anywhere"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it looks like while doing this my TWA discount fell off"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i'm ok just confused about some of the discounts that are missing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My most recent mobility bill does not have the bundle discount applied"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I noticed that for the month of august, sep and october, my Walmart employee discount was not added on."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I tried to get my employee discount set up but i didn't see it reflected on the bill i got yesterday"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "In March I received the L\u0026R 21 dollar monthly discount however my April bill no longer has it.  Can you explain what the discount was for and why it has stopped?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I wondering why my bill is 19 dollars more than last month. You guys are not giving me my 12 dollar monthly discount. I had the same issue last bill and bill before."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Did my discount expire?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I had a promotional discount and seems like it was not applied"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "EPP promo discount - where is it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want my employee discount to be used"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "There is supposed to be a family discount but I don't see it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My employee discounts didn't show up on my bill?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Where's my discount?"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I've been getting a family discount and it is suddenly gone. Why?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you explain why I don't have my monthly discount anymore?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can't figure out why they took off my monthly discount!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Could you please tell me where is my discount?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Inquiries about a discount missing on my bill."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Question about a discount that is not showing on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you know why they removed my discount?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't understand why I don't get the monthly discount anymore?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me why I don't have the family discount anymore?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I haven't change anything in my account but just realized that they are not giving me the family discount anymore?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I used to have a monthly discount applied on my invoice and I don't see it anymore?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Don't know why I don't see the monthly discount I had on my statement this month."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How come I haven't got the discount I used to have this month?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am missing a discount on my invoice."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Missing a discount on my statement for this month."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just wondering where my discount went?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Had a discount on all my previous bills, but not this one?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The discount I usually have on my invoice is not showing this month."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Where can I see my discount?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Discount not there anymore"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Looking to find the discount I'm supposed to have"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Discount not showing on my statement this month"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My discount is nowhere to be found."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Explain to me the reason why my discount is not showing up on my statement anymore?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just want to know where my discount is?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Looking at my bill right now and can't see the discount I was promised."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Discount not applied on my invoice and should have been."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I thought I had a discount but I don't see it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I do not see the discount that I was offered last month"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hi, I was supposed to receive a discount on my telus monthly bill and I haven't seen it yet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when I joined the representative gave me a great deal of discounts of around three months for free and I don't see any of it applied to my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Who do I contact if I have some discount missing?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I know that we're affiliated with Telus for employee discounts so why isn't it the discount showing up on my bill?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i know i'm eligible for a discount my employer sent it to us in our employee package so why isn't it on my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when i last spoke to the lady at loyalty about our plan, we agreed on an extra 10 dollar discount per month but it doesn't seem to have been applied to my bill"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I spoke with the Loyalty in October and renewed both lines. There were several discounts given to me, which are missing."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

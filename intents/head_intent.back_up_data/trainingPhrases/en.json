@@ -1,0 +1,570 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I need an ",
+      "auto": true
+    }, {
+      "text": "agent",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": " to help transferring data from my old phone to my new phone",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "transferring old phone data",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "transfer from old phone to new phone",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "trying to transfer data to a new phone and it's not happening",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "transfer my data from my old phone to my new phone",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I cannot transfer all my personal stuff over from my old phone to my new phone",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I still have to transfer my old phone info to the new phone so I want to go to the store ",
+      "auto": true
+    }, {
+      "text": "today",
+      "parameterId": "date-time",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "transferring information from my old phone to a new phone",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't understand where goes the data on my phone after a back-up.",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to back up data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I back up the data on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I transfer my data to the cloud."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I use "
+    }, {
+      "text": "iCloud",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " to back up photos"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i back up data on my "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "need help back up information on my "
+    }, {
+      "text": "iphone",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "tell me how to save the information on my "
+    }, {
+      "text": "samsung",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do i back up my files on my "
+    }, {
+      "text": "google pixel",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i get more information on backing up my data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do i back up my "
+    }, {
+      "text": "sony",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to back up some data, how do i do it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What is "
+    }, {
+      "text": "iCloud",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " and how can I use it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Will "
+    }, {
+      "text": "iCloud",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " back up all my data?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how can i back up my data including my photos?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help with backing up data"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a few questions about backing up data ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how can i save everything on my "
+    }, {
+      "text": "samsung",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm scared of losing data on my "
+    }, {
+      "text": "lg",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone, can i back it up?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What data can i back up on my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to back up my data on my new phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can i transfer my data to a new device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Question about backing up "
+    }, {
+      "text": "android",
+      "parameterId": "iphone_vs_android"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i back up data to any device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Information on data transfer and back up"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I back up data or make sure i don't lose my photos?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I really need to make sure I do not lose my pictures before changing my phone so I need to back up data."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How does the backup on my tablet works? please help."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "want to make sure that I have a daily backup setup on my device."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Automatic backup is turned on, how can I turn off?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "there are backups on my "
+    }, {
+      "text": "galaxy",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone, but where does it go to?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to save all the pictures from my "
+    }, {
+      "text": "TCL",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone to the cloud. Help me do a back up."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I to a back up and send all my pictures to the cloud?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to make sure I don't lose nothing on my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "If I don't want to lose any data on my "
+    }, {
+      "text": "samsung galaxy",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone, like pictures, what can I do?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I know there's a way to save all the pictures and stuff on my phone but I don't know how."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need help to do a backup so I don't lose my pictures, it's very important to me."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm about to change my "
+    }, {
+      "text": "pixel",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " phone and want to make sure I don't lose my pictures, can you help me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I save my pictures and files on my device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Could you please help me back up all my photos so I don't lose them?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a tablet and I don't understand how to do a backup."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to back up data and pictures on a "
+    }, {
+      "text": "iPad",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me how to do a back up on a tablet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to use a daily backup on my device, can you tell me how?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to setup an automatic daily backup?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just want to make sure the daily backup is setup on my tablet."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The auto backup is on but I don't want it."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to turn on the backup option?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I see if my device is making backup?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Where can I check if my phone does automatic backups?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I know if the data is being backed up?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just want to make sure my data is backing up."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just wondering where the backups of my device are going?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Where can I check all the backups made on my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I know the backups are activated on my tablet but not sure where they are all going?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I save the pictures from my device to the cloud?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I use the cloud to back up my phone data, like my pictures?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to save all the data from my phone to "
+    }, {
+      "text": "iCloud",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to save the pictures that are on my "
+    }, {
+      "text": "android",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " tablet to the cloud?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm not sure how to transfer the pictures I have on my "
+    }, {
+      "text": "galaxy",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " cell phone to the cloud."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to send all the information from my "
+    }, {
+      "text": "ios",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " device to the cloud?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to transfer data from phone to "
+    }, {
+      "text": "icloud",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me how to upload pictures to my cloud?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How exactly can I add pictures to the cloud"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "tell me how to add pictures to cloud"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Please help me add pictures to my cloud."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have cloud storage and want to back up my pictures, how do I do it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

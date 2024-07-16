@@ -1,0 +1,22 @@
+{
+  "name": "9ac94b39-8729-4d5f-ac03-e9158236096e",
+  "displayName": "head_intent.add_ons_menu",
+  "parameters": [ {
+    "id": "feature_add_ons",
+    "entityType": "@feature-add-ons"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "plans"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer is inquiring about what add-ons are available for all types of features.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 314
+}

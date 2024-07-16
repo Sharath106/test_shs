@@ -1,0 +1,701 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Je me demande que se passe-t-il avec le crédit que j'étais supposé recevoir?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": " j'aurais dû recevoir un crédit pour les frais de connexion"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où est mon crédit de frais de connexion?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande pourquoi le crédit n'a pas été appliqué sur ma facture?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Un"
+    }, {
+      "text": " agent m'a promis "
+    }, {
+      "text": "un"
+    }, {
+      "text": " crédit "
+    }, {
+      "text": "de 10"
+    }, {
+      "text": " "
+    }, {
+      "text": "$"
+    }, {
+      "text": " mais je ne le vois pas."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ma facture était très grosse ce mois-ci donc un agent m'a dit qu'il en créditerait une partie mais je ne vois pas le crédit. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me suis fait dire par "
+    }, {
+      "text": "un"
+    }, {
+      "text": " agent qu'il créditerait ma facture mais ça n'a pas "
+    }, {
+      "text": "été"
+    }, {
+      "text": " fait."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne comprends pas pourquoi je ne vois toujours pas le crédit qu'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " agent m'a promis lorsque l'on a discuté de la grande facture que j'ai reçu!?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai reçu une grande facture le mois dernier et un agent m'a dit qu'il me ferait un crédit pour une grande partie de la facture. Je ne vois pas ce crédit sur ma facture."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai eu une grosse facture dont j'ai parlé avec un agent le mois passé et il m'a dit qu'il en créditerait une bonne partie. Je n'ai pas eu le crédit sur ma facture."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me suis fait dire que j'allais avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " crédit "
+    }, {
+      "text": "de 15"
+    }, {
+      "text": " $ supplémentaire pour que notre facture totale soit à 40 $ par mois mais ce n'est toujours pas sur notre facture de "
+    }, {
+      "text": "janvier"
+    }, {
+      "text": ". Veuillez vérifier le statut de ce crédit et confirmer qu'il sera appliqué."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux simplement savoir ce qui arrive avec le crédit de 10 $ que j'étais supposée recevoir?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je fais juste me demander ce qui se passe avec le crédit que j'étais supposé recevoir? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai parlé avec votre service de fidélisation récemment et ils m'ont offert un crédit qui ne se trouve pas sur ma facture. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai effectué une mise à niveau il n'y a pas longtemps et avant de le faire, j'ai parlé avec la fidélisation, qui m'ont offert un crédit sur ma facture. Je m'attendais à voir ce crédit sur ma facture ce mois-ci, mais ce n'y est pas."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai eu une grande facture très chère en mars, alors j'ai demandé à un agent de m'aider et il a indiqué qu'il créditerait une grande partie. Je ne vois toujours pas le crédit."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Nous étions supposés avoir un crédit supplémentaire pour avoir une facture mensuelle totale de 40 $ par mois mais le crédit n'est toujours pas là quand je regarde notre facture de février. Veuillez confirmer le statut de ce crédit et me dire qu'il sera appliqué."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai eu une vraiment grande facture en avril, donc j'en ai discuté avec un agent et celui-ci m'a dit qu'il en créditerait une grande partie mais je n'ai jamais eu le crédit."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me suis fait dire que j'allais obtenir un crédit mensuel supplémentaire pour avoir une facture mensuelle de 50$ par mois mais en regardant ma facture en cours, je vois que le crédit n'est toujours pas là. Pouvez-vous vérifier le statut de ce crédit? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai acheté un téléphone en magasin on m'a dit qu'on me créditerait les frais d'activation. Le crédit n'a pas été mis sur ma facture, donc j'ai contacté TELUS qui a dit que le crédit serait appliqué sur ma prochaine facture mais c'est pas là."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Après avoir eu une très grosse facture le mois dernier, j'ai dit à un agent que je ne pouvais pas payer ce montant et il m'a dit qu'il me ferait un bon crédit mais je ne l'ai toujours pas eu. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai eu une très grosse facture dernièrement, alors j'en ai parlé avec un agent et il m'a indiqué qu'il en créditerait une partie mais je n'ai jamais eu le crédit. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'étais supposé avoir un crédit pour des frais d'activation mais ce n'était pas sur ma facture, alors j'ai contacté un agent qui a dit que ça serait appliqué sur ma prochaine facture mais là je viens d'avoir ma prochaine facture et le crédit n'est toujours pas là!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai acheté un appareil en décembre et on m'avait dit que les frais d'activation allaient être crédités sur ma facture, mais je viens de recevoir ma facture et les frais n'ont toujours pas été crédités."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'étais supposé avoir un crédit mensuel de 15 $ pour que le total de ma facture soit à 40 $ par mois, mais ce n'a pas été fait. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "En regardant notre facture, nous voyons que le crédit n'est toujours pas là. Veuillez vérifier le statut de ce crédit et nous confirmer que nous allons l'avoir. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "On m'avait dit que j'obtiendrais "
+    }, {
+      "text": "un"
+    }, {
+      "text": " crédit "
+    }, {
+      "text": "de 5"
+    }, {
+      "text": " $ sur ma facture mais en regardant notre facture de "
+    }, {
+      "text": "janvier"
+    }, {
+      "text": ", le crédit n'est toujours pas là."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Y a-t-il quelque chose que vous pouvez faire pour des crédits manquants?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis supposée avoir un crédit supplémentaire sur ma facture mais je n'en vois qu'un. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je pensais que mon crédit supplémentaire serait ajouté à mon crédit "
+    }, {
+      "text": "actuel"
+    }, {
+      "text": " mais je ne vois que "
+    }, {
+      "text": "le premier"
+    }, {
+      "text": " et ne vois pas "
+    }, {
+      "text": "le deuxième"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je croyais que mon crédit supplémentaire serait ajouté à mon crédit que j'ai déjà mais je ne le vois pas."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Après avoir vérifié toutes mes factures, je ne trouve toujours pas le crédit que j'étais censée avoir."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai vraiment vérifié sur toutes mes dernières factures et je ne trouve pas mon crédit nulle part!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "En vérifiant ma facture "
+    }, {
+      "text": "actuelle"
+    }, {
+      "text": " et les dernières, je me rends compte que je n'ai jamais eu mon crédit."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai vérifié toutes mes dernières factures et je n'ai pas pu trouver le crédit."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourquoi est-ce que je n'ai jamais reçu ce crédit que vous avez mentionné plus tôt pendant l'appel?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'ai pas eu ce crédit que vous aviez dit que j'aurais."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'ai jamais reçu le crédit que vous avez mentionné plus tôt."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourquoi je n'ai toujours pas eu mon crédit de frais de connexion? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "On m'avait dit que je recevrais un crédit pour le frais de connexion mais il n'est pas là"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'étais supposée avoir un crédit de frais de connexion mais je ne le vois pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous vérifier pourquoi il manque des crédits sur ma facture? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je viens tout juste de me rendre compte qu'il me manque un crédit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je viens de vérifier ma facture et je me suis rendue compte qu'il me manque "
+    }, {
+      "text": "un"
+    }, {
+      "text": " crédit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Vous avez encore oublié d'appliquer mes crédits ce mois-ci."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Chaque fois que je reçois ma facture, je dois vous contacter car vous oubliez d'appliquer mes crédits!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis vraiment tanné de devoir contacter TELUS chaque mois à cause de crédits manquants."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous faire quelque chose s'il manque "
+    }, {
+      "text": "un"
+    }, {
+      "text": " crédit sur ma facture?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous m'aider "
+    }, {
+      "text": "pour un"
+    }, {
+      "text": " crédit manquant?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il semble qu'un crédit soit manquant."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je crois qu'il y "
+    }, {
+      "text": "a un"
+    }, {
+      "text": " crédit manquant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Un agent m'a promis un crédit et je ne le vois pas."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il semble que quelqu'un a oublié d'appliqué le crédit sur ma facture."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ca fait plus de 20 jours que j'attends pour mon crédit et ce n'est toujours pas dans mon compte!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous me dire ce qui est arrivé à mon crédit qui devait être appliqué sur ma facture? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où est mon crédit de 12$?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourquoi je me suis fait promettre un crédit sur ma facture quand il n'y a aucun crédit?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Juste pour vous dire que le dernier agent m'a menti car il n'a pas appliqué le crédit tel que promis"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Le crédit sur mon compte, j'aimerais l'avoir en argent. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne vois pas de crédits sur ma facture et je suis supposée en avoir 2. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Crédits manquants"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je pense que vous avez oublié d'ajouter mon crédit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Crédits n'ont pas été appliqués sur facture tel qu'entendu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'étais supposée recevoir un crédit dans les 10 prochains jours, ça fait maintenant 21 jours et toujours rien. "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Un agent m'a assuré que j'allais recevoir un crédit de 50$ sur ma prochaine facture et c'est pas là"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Vous me devez toujours ce crédit de 50$"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous me dire où est le crédit que je devais recevoir "
+    }, {
+      "text": "il y a un mois"
+    }, {
+      "text": "??!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouquoi les crédits qu'on m'avait promis ne sont pas sur ma facture?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "On m'avait promis des crédits sur ma prochaine facture et il n'y sont pas."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourquoi les crédits promis ne sont pas sur ma facture?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "vous me devez un crédit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je viens de recevoir ma facture de téléphone et je n'ai toujours pas eu le crédit de quarante-deux dollars"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "un ancien crédit que nous n'avons pas encore eu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'étais censé obtenir un crédit pour les frais d'internet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je recherche un crédit qui n'a pas été appliqué"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne vois pas de crédit sur cette facture et on me l'avait promis"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je devais avoir un crédit sur mon relevé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon crédit n'est pas encore reçu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de parler à un représentant concernant un crédit manquant à mon compte."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "un crédit sur sur mon compte n'a pas été appliqué"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'ai un crédit de quatre-cent soixante-dix-sept et je veux savoir comment puis-je me faire renvoyer ce crédit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "A cause de problèmes que j'ai eu, le service à la clientèle devait me donner un crédit mais le crédit n'a pas été appliqué"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourquoi je ne vois aucun crédit sur ma facture de ce mois-ci?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "C'est pour discuter d'un crédit de deux cents dollars qui manque sur ma facture."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai parlé à un agent qui m'a dit qu'il allait mettre un crédit à mon dossier mais je ne le vois nulle part."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Vous étiez supposés appliquer un crédit sur ma facture. Il n'est pas là."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "sur ma facture j'étais censée avoir un crédit mais je ne le vois pas."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon crédit que j'étais supposé avoir sur ma facture n'est pas là"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Vous avez oublié de mettre un crédit sur mon compte!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux obtenir mon crédit au compte et je ne sais pas comment faire?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous me dire où est mon crédit???"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment obtenir un crédit qui est sur mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "problème de ne pas obtenir de crédit pour le paiement"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "j'appelle au sujet de ma facture je me demande pourquoi je n'ai toujours pas eu mon crédit de 12$?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux savoir quand mon crédit sera mis sur mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "un crédit sur mon compte est manquant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux vérifier pourquoi mes crédits ne sont plus là"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "informations sur le crédit qui était supposé être mis sur la facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "crédit sur mon portable n'a pas été mis sur mon relevé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "crédit manquant de cent dollars"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "On m'a promis un crédit mais je ne l'ai pas eu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai parlé avec un agent et on m'a dit que j'obtiendrais un crédit, mais je ne le vois pas sur ma facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

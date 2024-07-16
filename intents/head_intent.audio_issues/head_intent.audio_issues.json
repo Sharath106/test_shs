@@ -1,0 +1,30 @@
+{
+  "name": "1efded65-2043-4e0e-9a96-28a37ff6d5fc",
+  "displayName": "head_intent.audio_issues",
+  "parameters": [ {
+    "id": "media_issues",
+    "entityType": "@media-issues"
+  }, {
+    "id": "iphone_vs_android",
+    "entityType": "@iphone-vs-android"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Troubleshooting audio issues on device.",
+  "numTrainingPhrases": 210
+}

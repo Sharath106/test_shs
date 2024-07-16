@@ -1,0 +1,24 @@
+{
+  "name": "6fd13c35-5eb0-4320-a98a-9022ab1c6d98",
+  "displayName": "head_intent.bill_reduction_options",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer asking to lower the price of their monthly bill.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 223
+}

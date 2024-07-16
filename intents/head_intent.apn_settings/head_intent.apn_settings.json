@@ -1,0 +1,28 @@
+{
+  "name": "dbaaac3f-8614-4d4e-8d4d-7d992cb18fec",
+  "displayName": "head_intent.apn_settings",
+  "parameters": [ {
+    "id": "iphone_vs_android",
+    "entityType": "@iphone-vs-android"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "APN Settings",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 184
+}

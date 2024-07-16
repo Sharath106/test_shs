@@ -1,0 +1,495 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "J'ai parlé avec l'équipe de fidélisation en octobre et j'ai renouvelé les deux lignes. Il y avait plusieurs remises qui m'ont été accordées, qui manquent."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "la dernière fois que j'ai parlé à la dame de département de fidélité de notre forfait, nous avons convenu d'une remise supplémentaire de 10 dollars par mois, mais cela ne semble pas avoir été appliqué à ma facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je sais que j'ai droit à une remise que mon employeur nous a envoyée dans notre dossier d'employé, alors pourquoi n'est-il pas sur ma facture ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je sais que nous sommes affiliés à Telus pour les rabais des employés, alors pourquoi le rabais n'apparaît-il pas sur ma facture ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Qui dois-je contacter s'il me manque une remise ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quand j'ai rejoint le représentant m'a donné beaucoup de réductions d'environ trois mois gratuitement et je ne vois rien de tout cela appliqué à ma facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Salut, je devais recevoir un rabais sur ma facture mensuelle telus et je ne l'ai pas encore vu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne vois pas la réduction qui m'a été offerte le mois dernier"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je pensais avoir une remise mais je ne la vois pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Remise non appliquée sur ma facture et aurait dû l'être."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je regarde ma facture en ce moment et je ne vois pas la réduction qui m'a été promise."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux juste savoir où est ma réduction ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Expliquez-moi la raison pour laquelle ma réduction n'apparaît plus sur mon relevé ? !"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ma réduction est introuvable."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "La réduction n'apparaît pas sur mon relevé ce mois-ci"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche à trouver la réduction que je suis censé avoir"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "La remise n'existe plus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où puis-je voir ma réduction ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "La réduction que j'ai habituellement sur ma facture ne s'affiche pas ce mois-ci."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'avais un rabais sur toutes mes factures précédentes, mais pas celle-ci ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande simplement où est passée ma remise ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il manque une remise sur mon relevé de compte ce mois-ci."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il me manque une remise sur ma facture."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment se fait-il que je n'ai pas la remise que j'avais l'habitude d'avoir ce mois-ci ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne sais pas pourquoi je ne vois pas le rabais mensuel que j'ai eu sur mon relevé ce mois-ci."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'avais une remise mensuelle appliquée sur ma facture et je ne la vois plus ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je n'ai rien changé sur mon compte mais je viens de me rendre compte qu'ils ne m'offrent plus la réduction familiale ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous me dire pourquoi je n'ai plus la réduction famille ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne comprends pas pourquoi je ne bénéficie plus de la remise mensuelle ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Savez-vous pourquoi ils ont supprimé mon rabais ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Question sur une réduction qui n'apparaît pas sur ma facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Demandes concernant une remise manquante sur ma facture."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pourriez-vous s'il vous plaît me dire où est ma réduction?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je ne comprends pas pourquoi ils ont retiré ma remise mensuelle !"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous m'expliquer pourquoi je n'ai plus ma remise mensuelle ?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai bénéficié d'une réduction familiale et elle a soudainement disparu. Pourquoi?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Où est ma remise ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mes rabais employés n'apparaissent pas sur ma facture?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il est censé y avoir une réduction familiale Mais je ne la vois pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux que ma remise employé soit utilisée"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Remise promotionnelle PEP, où est-elle?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai eu une remise promotionnelle et il semble qu'elle n'ait pas été appliquée"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ma réduction a-t-elle expiré ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande pourquoi ma facture est de 19 dollars de plus que le mois dernier. Vous ne me donnez pas mon rabais mensuel de 12 dollars. J'ai eu le même problème la dernière facture et la facture précédente."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "En mars, j'ai reçu la remise mensuelle L\u0026R de 21 dollars, mais ma facture d'avril ne l'a plus. Pouvez-vous expliquer à quoi servait la réduction et pourquoi elle a cessé ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai essayé de configurer ma remise pour les employés, mais je ne l'ai pas vue sur la facture que j'ai reçue hier."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai remarqué que pour les mois d'août, septembre et octobre, mon rabais d'employé Walmart n'était pas ajouté."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ma facture de services mobiles la plus récente n'a pas la remise groupée appliquée"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je vais bien, je suis juste confus à propos de certaines des réductions qui manquent"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "on dirait qu'en faisant cela, ma remise ATM a chuté"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Oui, j'ai un compte de services mobiles et j'ai mon Internet à domicile via Telus. Quand je les ai eu tous les deux, en août dernier, on m'a promis 33 dollars de réduction sur le prix total. Je viens de plonger dans cette facturation mais je ne la trouve nulle part"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Si vous vérifiez vos fichiers, vous verrez que j'étais censé recevoir une remise de 12 dollars par mois à compter de novembre, mais cela n'a pas été reflété sur ma facture."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je pensais que j'obtenais la remise de fidélité de 10 dollars sur chaque ligne."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "En fait, j'ai déjà acheté et configuré mon nouveau téléphone, mais j'avais besoin d'appeler pour que quelqu'un applique les remises convenues notées sur mon compte."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "La facture que j'ai reçue il y a quelques jours n'inclut pas les remises que j'ai acceptées lorsque j'ai reçu mon nouveau téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon rabais d'employé de telus a diminué lorsque j'ai modifié mon plan tarifaire en ligne. C'est un problème connu. Ma réduction ne s'applique qu'au montant au prorata."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon rabais de référence interne n'a pas été appliquée à ma facture de mobilité ce mois-ci et je me demandais surtout pourquoi, et si elle pouvait être réappliquée ou si je devais me diriger vers une autre compagnie pour régler cela."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne vois pas de rabais de fidélité de 12 dollars ; quand je me suis inscrit avec les services mobiles en août ; l'agent a mentionné une réduction de fidélité et de famille, mais je ne vois que la réduction de famille sur la facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai entré une réduction pour les amis et la famille lors de la configuration de mon plan, mais cela ne reflète pas la réduction maintenant que j'ai reçu ma première facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin de comprendre ce qui est arrivé à ma première facture. aucune des remises n'y figure."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je viens de constater sur ma facture que je n'ai jamais bénéficié de la réduction habitation et mobile. Je me demandais pourquoi ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai donc remarqué que je ne bénéficiais pas de la réduction PEP sur ma ligne principale, alors je me demandais ce qui s'était passé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "au cours du dernier mois environ, j'ai demandé à un membre de ma famille qui est avec telus de recommander un ami et d'obtenir un rabais. je ne sais pas si cela figurait sur ma facture ou mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Ma facturation pour ce mois-ci n'incluait pas ma remise d'employé."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai besoin d'éclaircissements sur ma facture de mobilité, s'il vous plaît. je ne pense pas que les réductions aient été appliquées de manière cohérente au cours des derniers mois"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je viens de recevoir ma première facture et j'ai remarqué qu'une déduction multi-produits n'est pas appliquée"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai commencé un forfait Internet résidentiel en décembre. Lorsque je me suis inscrit, je suis également passé à Services Mobiles de Telus, car j'étais censé bénéficier d'un rabais de 25 dollars sur le forfait. J'ai réalisé que je suis facturé pour mes deux comptes séparément et que je ne bénéficie pas de la remise. Comment puis-je rectifier cela?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai un compte d'employé Telus. J'ai effectué quelques modifications en ligne et lorsque j'ai reçu ma facture, j'ai remarqué que mon rabais de 25 % avait été supprimé"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai récemment mis à jour mon téléphone et on m'a proposé un forfait plus cher. Cependant, on m'a dit que je recevrais un rabais de fidélité de 12 dollars, mais après avoir examiné ma première facture, je ne vois pas qu'il a été appliquée. Pouvez-vous vérifier s'il vous plaît ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "On m'a dit et j'ai reçu un SMS samedi que je paierais douze dollars par ligne pour un forfait illimité de dix gigaoctets. six dollars pour la fidélité et six dollars pour la réduction familiale par ligne. Mais dans la facture actuelle que je reçu aujourd'hui, n'a pas obtenu six dollars de réduction familiale"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai récemment contacté votre service client car ma réduction Ambassador Plan n'apparaît pas sur ma facture actuelle. On m'a conseillé de contacter l'équipe des ambassadeurs pour l'ajouter."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je viens de me renseigner sur une rabais qui est censée m'être accordée sur mon compte mais qui ne l'est toujours pas. Le mois dernier, l'agent a dit que je l'aurais ce mois-ci"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Un rabais a été enlevé sur ma facture et il n'y a pas de date d'expiration ni d'explication."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je regarde ma facture récente et j'ai remarqué que mon rabais de 25 % avait disparu."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'aimerais comprendre pourquoi les rabais sur ma facture ont pris fin"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne vois pas mon rabais"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Puis-je avoir à nouveau mon rabais"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voudrais récupérer mon rabais"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Est-ce qu'une réduction se termine"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je ne vois plus la réduction"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Il me manque une réduction sur ma facture"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon rabais est expiré, je ne la vois plus sur ma facture ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}
