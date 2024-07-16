@@ -1,0 +1,251 @@
+{
+  "name": "474ac5e7-836b-4a60-a497-6486d0939199",
+  "displayName": "FFH Existing Clarification 2",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_yesno",
+      "required": true,
+      "entityType": "@support-queue",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Avez-vous besoin d'une assistance technique?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Do you need technical support?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous besoin d'une assistance technique?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you need technical support?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "858cf491-660d-49a1-9211-6446188eae4d"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez besoin d'une assistance technique, dites oui ou faites le 1, non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you need technical support, say yes, or press 1.\nIf not, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "eccedfcd-ad5e-43b8-a014-7ae5fe80e0d8"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "319d59c2-071f-41b4-92e1-e619a4a46aea"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous besoin d'une assistance technique?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you need technical support?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "fcc20b96-bec6-48db-92b0-5e1dd1d3ccaa"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez besoin d'une assistance technique, dites oui ou faites le 1, non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you need technical support, say yes, or press 1.\nIf not, say no, or press 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "84fcb006-20d6-4428-ad32-efa027fad8ea"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "be0c0592-718d-4931-9718-362a44dbcaba"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "FFH Existing Clarification 2"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "support_queue",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "FFH Existing",
+    "name": "971e2beb-0322-4040-92b8-72d8ae58a1b4"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "support_queue",
+        "value": "2"
+      } ]
+    },
+    "targetPage": "FFH Existing",
+    "name": "5c0b1c32-ecc3-471e-8dd7-24e3e781e011"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "support_queue",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "FFH Existing",
+    "name": "9e49f667-57cc-4a80-a5e3-13dffededa14"
+  }, {
+    "intent": "small_talk.i_dont_know",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "support_queue",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "FFH Existing",
+    "name": "59f89b24-ef1e-4632-888f-122a1cb152f9"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "0df086b1-8c20-43ed-a229-587648d3ac04"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"1\" OR $session.params.dtmf_yesno = \"tech\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "support_queue",
+        "value": "2"
+      }, {
+        "parameter": "dtmf_yesno",
+        "value": null
+      } ]
+    },
+    "targetPage": "FFH Existing",
+    "name": "8dc012da-e2bf-43f2-a58f-4e367abde13b"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"acctmgmt\" OR $session.params.dtmf_yesno = \"2\" OR $session.params.dtmf_yesno = \"3\" OR $session.params.dtmf_yesno = \"4\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "support_queue",
+        "value": "1"
+      }, {
+        "parameter": "dtmf_yesno",
+        "value": null
+      } ]
+    },
+    "targetPage": "FFH Existing",
+    "name": "446465b0-3ad4-4727-b1ce-ec11a9cbe43d"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"moving\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "support_queue",
+        "value": "3"
+      }, {
+        "parameter": "dtmf_yesno",
+        "value": null
+      } ]
+    },
+    "targetPage": "FFH Existing",
+    "name": "d9d68b5d-0fd3-4f56-a7cb-e3ace4d5c47a"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"cancel\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "support_queue",
+        "value": "4"
+      }, {
+        "parameter": "dtmf_yesno",
+        "value": null
+      } ]
+    },
+    "targetPage": "FFH Existing",
+    "name": "b291416c-6ae2-4fcc-86fa-7a78af2aff02"
+  } ]
+}

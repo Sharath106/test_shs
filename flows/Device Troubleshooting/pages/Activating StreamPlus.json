@@ -1,0 +1,350 @@
+{
+  "name": "2e3f738b-4d17-48c6-9fda-8ef0741aab4e",
+  "displayName": "Activating StreamPlus",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_activating_streamplus",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous recevoir un message texte avec plus d'informations sur l'activation des services Encontinu+ ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text message with more information about activating stream+ services?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "347fec88-d20c-40c6-b5d9-8b6c723ee793"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Dites envoyez-moi le message texte ou faites le 9. Membre de l'équipe, ou le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message say or press 9, to speak with a team member say or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "3dcbd27a-4094-4b16-b16f-8d5446d7d0d8"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "908dda0c-2270-404d-9062-f54c5eb096b2"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous recevoir un message texte avec plus d'informations sur l'activation des services Encontinu+ ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text message with more information about activating stream+ services?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ab70094e-ebef-4a9c-a722-eab755ecbb2d"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Dites envoyez-moi le message texte ou faites le 9. Membre de l'équipe, ou le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message say or press 9, to speak with a team member say or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7025ea8e-48b3-4359-a7e5-f39b56a66078"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "1abb6b9e-1085-4975-8bc7-506f26b820bd"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Activating StreamPlus"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.activatingstreamplus_retrycnt = null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "EnContinu+ peut être activé que sur site le web Mon TELUS pour le moment." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pour tout problème de connexion avec Netflix, Apple TV ou Discovery+, veuillez contacter le fournisseur de services respectif." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Souhaitez-vous recevoir un message texte avec plus d'informations sur l'activation des services EnContinu+ ?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Stream+ can only be activated on My TELUS web at this time." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "For any login issues with Netflix, Apple TV or Discovery+, please contact the respective service provider." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like to receive a text message with more information on how to activate Stream+ services?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.activatingstreamplus_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous recevoir un message texte avec plus d'informations sur l'activation des services Encontinu+ ?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like to receive a text message with more information on activating stream+ services?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.activatingstreamplus_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Dites envoyez-moi le message texte ou faites le 9. Membre de l'équipe, ou le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To receive a text message say or press 9, to speak with a team member say or press 0." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000A1aHVQ37V00YT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000A0aHT5CEW01DE"
+      }, {
+        "parameter": "dtmf_activating_streamplus",
+        "value": null
+      }, {
+        "parameter": "activatingstreamplus_retrycnt",
+        "value": null
+      } ]
+    },
+    "name": "e7ed4fae-a53e-4842-af79-23831111f4df"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "activatingstreamplus_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_activating_streamplus",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "8559ed9a-1427-41df-ba0f-c8c1efeca58d"
+  }, {
+    "condition": "$session.params.dtmf_activating_streamplus = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "000A1aHVQ37V00YT"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "000A0aHT5CEW01DE"
+      }, {
+        "parameter": "dtmf_activating_streamplus",
+        "value": null
+      }, {
+        "parameter": "activatingstreamplus_retrycnt",
+        "value": null
+      } ]
+    },
+    "name": "09d1d5c5-605b-404a-9fc6-131b55e2956d"
+  }, {
+    "condition": "$session.params.dtmf_activating_streamplus = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_activating_streamplus",
+        "value": null
+      }, {
+        "parameter": "activatingstreamplus_retrycnt",
+        "value": null
+      } ]
+    },
+    "name": "18cccf8a-fe20-412a-8843-4ec2a8b99d2d"
+  }, {
+    "condition": "$session.params.activatingstreamplus_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "activatingstreamplus_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "b020a289-674f-4d17-9f61-3332c690c259"
+  }, {
+    "condition": "$session.params.activatingstreamplus_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "4a4b8423-f0b1-4207-af1e-2f0eeefdf1df"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "activatingstreamplus_retrycnt",
+        "value": "$sys.func.ADD($session.params.activatingstreamplus_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.activatingstreamplus_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.activatingstreamplus_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "1a61ef83-2aaa-4c92-9a42-1a9c792f0199"
+  } ]
+}

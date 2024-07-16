@@ -1,0 +1,32 @@
+{
+  "name": "43ec2c3b-c0d6-47ff-a592-5f1e63df1b76",
+  "displayName": "Network information",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "LTE, LTE+ or LTE Advanced, and HSPA, are 4th Generation networks for advanced wireless networking.\n\n5G is the 5th Generation network and is currently the fastest network available in Canada." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "LTE, LTE+ ou LTE Advanced et HSPA sont des réseaux et des normes de 4e génération pour les réseaux sans fil avancés.\n\n5G est la 5e génération de réseau, et la plus rapide disponible à l'heure actuelle au Canada." ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Network information"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Coverage map",
+    "name": "f5813a9d-0ede-4b44-aa2b-001a572ac936"
+  } ]
+}

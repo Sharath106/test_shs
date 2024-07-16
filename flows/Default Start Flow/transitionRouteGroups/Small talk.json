@@ -1,0 +1,312 @@
+{
+  "name": "abdbb7d9-d3af-4997-932a-c0255e223261",
+  "displayName": "Small talk",
+  "transitionRoutes": [ {
+    "intent": "small_talk.good_bye",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Goodbye. Thanks for calling TELUS." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Have a good one!", "Enjoy the rest of your day!", "Have a great day!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Au revoir! Merci d'avoir discuté avec moi aujourd'hui." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Bonne journée!", "À la prochaine!", "Passez une belle journée!" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "terminate"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "bd6ea6da-2740-4475-8a0e-161d32a00c8a"
+  }, {
+    "intent": "small_talk.how_are_you",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm great!", "I'm doing great!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Anything I can help with?", "How can I help you?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Ça va super bien!", "Je vais bien, merci!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Que puis-je faire pour vous aider?", "Comment puis-je vous aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "29b6fc81-7166-4a5e-989d-337d5cf16cac"
+  }, {
+    "intent": "small_talk.let_me_think",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem, take your time.", "Of course, take your time.", "Sure, I can wait." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème, prenez votre temps.", "Absolument, je vous attends.", "Bien sûr, je peux patienter." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "ace619e8-e848-4908-a58e-fe23625e5f91"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem! How else can I help?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème! Que puis-je faire d'autre pour vous aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "05e5eb4b-4630-40aa-8d41-fac9d84c35c7"
+  }, {
+    "intent": "small_talk.no_more_questions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great. Thanks for calling TELUS." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Have a good one!", "Enjoy the rest of your day!", "Have a great day!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Super! Merci d'avoir contacté TELUS." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Bonne journée!", "Je vous souhaite une bonne journée!", "Passez une belle journée!" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "terminate"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "2e7b7a93-c68e-43d4-b304-0c0b2c8e1f9a"
+  }, {
+    "intent": "small_talk.swear_hate_words",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry you feel that way." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please give me another chance with a new question." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé que vous vous sentiez ainsi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "S'il vous plaît, donnez-moi une autre chance avec une nouvelle question." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "c25bbab9-fb15-4e5d-b697-c65921953710"
+  }, {
+    "intent": "small_talk.thank_you",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem!", "My pleasure!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème!", "Ça me fait plaisir!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "701c9a55-f461-4ea4-ae57-57dbdcc4f5f2"
+  }, {
+    "intent": "small_talk.another_question",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, go ahead!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sûr!" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "8439e2e1-d15a-4081-92de-1b6908502986"
+  }, {
+    "intent": "small_talk.you_too",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thanks.", "Thank you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Merci.", "Merci beaucoup." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "c0c323fa-8b47-4932-84cd-d36d8dacd08b"
+  }, {
+    "intent": "small_talk.need_help",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "What can I help you with?", "How can I help?", "How can I help you?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Comment puis-je vous aider?", "De quelle façon puis-je vous aider?", "Que puis-je faire pour vous aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "902fbd34-4af0-4dd8-bb6a-8d2ee45e5be2"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "condition": "$session.params.last_page != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem !" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Thanks for calling Telus. Have a good one !" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème!" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Merci d'avoir appelé Telus. Bonne journée!" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "terminate"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "55a3b431-5521-429a-bb7f-3e8d35dcccce"
+  }, {
+    "intent": "small_talk.robot",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm TELUS Assist, your virtual assistant and I'm here to answer your questions", "I am artificially intelligent and I'm here to answer your questions.", "I am a virtual assistant, here to help you! I'm TELUS Assist.", "I'm not a person but I have a lot of answers and can help with a number of inquiries.", "I'm TELUS Assist who is artificially intelligent and I'm here to answer your questions." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je suis l'assistant Telus, votre assistant virtuel et je suis là pour répondre à vos questions.", "Je suis un assistant virtuel, ici pour vous aider! Je suis l'assistant TELUS.", "Je suis artificiellement intelligent et je suis ici pour répondre à vos questions.", "Je ne suis pas un humain mais je peux répondre à plusieurs de vos questions.", "Je suis l'assistant TELUS, artificiellement intelligent et je suis ici pour répondre à vos questions." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "e7a57f07-8743-4614-a193-fd0672847978"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "What can I help you with?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Que puis-je faire pour vous aider?", "De quelle façon puis-je vous aider?", "Comment puis-je vous aider?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "479ce044-0309-422b-8b91-7139a4c88bd0"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pas de problème! " ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "terminate"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "de40d715-4dca-4f4a-b376-e75d0774ae51"
+  }, {
+    "intent": "small_talk.go_back",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "a38e00a8-e36e-494b-825c-d34ecd8df5d7"
+  } ]
+}

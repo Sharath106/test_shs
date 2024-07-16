@@ -1,0 +1,182 @@
+{
+  "name": "f909a128-a624-4dcc-ab7d-50d90b20fbb2",
+  "displayName": "Switch login problems",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "What can I help you with?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "41a88d6c-6ef8-46f7-a208-0b564de26e7b"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "08b5d7c7-bfa7-4499-81e8-f7ca7d4f92c0"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "9481d32a-d047-4730-b02e-e8af2a365df3"
+  }, {
+    "intent": "supplemental.forgot_password",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_forgotpass"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "1b907c7e-6c08-4a8c-9c9b-1374dc685b50"
+  }, {
+    "intent": "supplemental.account_cancelled",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_acccancelled"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "604cc289-ede7-4bd3-8cda-29f8e2a76013"
+  }, {
+    "intent": "supplemental.account_not_activated",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_accnotactivated"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "31df486d-361c-495f-ae93-e809cc8ae0fd"
+  }, {
+    "intent": "supplemental.account_not_approved",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_accnotapproved"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "5ffb1b2b-d932-41be-a333-7add815551fa"
+  }, {
+    "intent": "supplemental.forgot_username",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_forgotuser"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "81eb1c81-f5a4-45ec-bdae-43f149e54079"
+  }, {
+    "intent": "supplemental.account_locked",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_acclocked"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "f56b1e54-96a2-44dc-99eb-cf7328a3043d"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne vous ai pas entendu.", "Désolé, je n'ai pas entendu.", "Désolé, je n'ai pas compris." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn't catch that. ", "I'm sorry, I didn't understand that.", "Sorry, I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "dadc5dc5-bf24-4091-8237-b4682099c776"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne comprends toujours pas.", "Je n’ai toujours pas compris.", "Je n'ai toujours pas bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I still didn't get that.", "I still didn't understand.", "I'm still not sure I got this." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "302cd4f4-3ca0-4c08-8513-73d6315ab18e"
+  }, {
+    "targetPage": "No-input",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "17d6064f-3754-42b6-9522-54a405b44a7b"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je n'ai pas compris.", "Désolé, je ne pense pas avoir compris.", "Désolé, je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I didn't catch that.", "I'm sorry, I didn't understand that.", "Sorry, I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b52280b9-20c0-4659-999a-355d9d8519a3"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je ne comprends toujours pas.", "Je n’ai toujours pas compris.", "Je n'ai toujours pas bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I still didn't get that.", "I still don't understand.", "I'm still not sure I got this." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6988a4c9-2b64-4020-991e-6c0098ef5110"
+  }, {
+    "targetPage": "No match 3",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "ffd55c42-c43c-400c-b380-676d97556230"
+  } ]
+}

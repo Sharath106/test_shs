@@ -1,0 +1,224 @@
+{
+  "name": "5456bf1b-c20d-48df-b2df-899e220fdb61",
+  "displayName": "Cross Domain Transfer",
+  "transitionRoutes": [ {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Repeat",
+    "name": "00b7a7d4-e1d9-46fc-8cdb-3744d285c731"
+  }, {
+    "condition": "$session.params.routeDetails = null AND $session.params.conversation = null AND $session.params.searchResult = null AND $session.params.user = null AND $session.params.init != null",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "init_retry",
+        "value": "cdt flow"
+      } ]
+    },
+    "name": "438d525b-fe04-4261-aaa2-d93b81637181"
+  }, {
+    "condition": "$session.params.error_code != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "error_code",
+        "value": null
+      } ]
+    },
+    "name": "1d8dcb72-0ef6-4094-9f99-178be127574b"
+  }, {
+    "condition": "$session.params.is_repeat_prompted = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_repeat_prompted",
+        "value": null
+      } ]
+    },
+    "targetPage": "Repeat",
+    "name": "f91be309-86c1-4a60-9d0d-ee35ef84b365"
+  }, {
+    "condition": "$session.params.route = \"koodo_inquiries\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Koodo Triage",
+    "name": "4c46fb84-9ca9-4b01-a186-63dbff1bcec0"
+  }, {
+    "condition": "$session.params.route = \"out_of_scope_prepaid\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Prepaid Triage",
+    "name": "7c81fbd9-8aa7-4c7a-821e-1c579d3a3b77"
+  }, {
+    "condition": "$session.params.route = \"smart_home_security\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SHS Triage",
+    "name": "90871020-82b7-4f99-85c8-f987bceed304"
+  }, {
+    "condition": "$session.params.route = \"out_of_scope_home_services\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "FFH Triage",
+    "name": "e58c11f3-6724-4b07-b53b-2d0ac021566b"
+  }, {
+    "condition": "$session.params.last_page = \"koodo inquiries\" AND $session.params.koodo_text = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Koodo Text",
+    "name": "8dc38bd2-37fe-4828-aa72-f63a929575e1"
+  }, {
+    "condition": "$session.params.route = \"out_of_scope_business\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je peux vous envoyer un lien contenant des informations sur les demandes liées aux entreprises et sur les endroits où obtenir de l'aide." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I can send you a link with some information about Business related inquiries and where to get support." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Business",
+    "name": "06767947-9fd8-495b-9713-9ca38ee8f97d"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "J'ai du mal à comprendre cette question.", "J'ai mal compris votre demande.", "Je n'ai pas saisi ce que vous avez dit.", "Je crois que je ne vous suis pas.", "Je ne comprends pas de quoi vous me parlez.", "Je n'ai pas compris. Pouvez-vous le dire à nouveau?", "J'ai raté ce que vous avez dit. C'était quoi?", "Excusez-moi, pourriez-vous répéter?", "Pardon, pouvez-vous répéter?", "Peux-tu répéter cela?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler?", "Pardon, qu'est-ce que c'était?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "J'ai du mal à comprendre cette question.", "J'ai mal compris votre demande.", "Je n'ai pas saisi ce que vous avez dit.", "Je crois que je ne vous suis pas.", "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en-ca"
+      } ]
+    },
+    "name": "5f15d4d1-9075-48f2-9333-148e6a556236"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "J'ai du mal à comprendre cette question.", "J'ai mal compris votre demande.", "Je n'ai pas saisi ce que vous avez dit.", "Je crois que je ne vous suis pas.", "Je ne comprends pas de quoi vous me parlez.", "Je n'ai pas compris. Pouvez-vous le dire à nouveau?", "J'ai raté ce que vous avez dit. C'était quoi?", "Excusez-moi, pourriez-vous répéter?", "Pardon, pouvez-vous répéter?", "Peux-tu répéter cela?", "Désolé, je n'ai pas compris. Pouvez-vous reformuler?", "Pardon, qu'est-ce que c'était?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "J'ai du mal à comprendre cette question.", "J'ai mal compris votre demande.", "Je n'ai pas saisi ce que vous avez dit.", "Je crois que je ne vous suis pas.", "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en-ca"
+      } ]
+    },
+    "name": "d42c1a77-1159-4ea3-beb0-a43157a0edf5"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je suis désolé, je ne suis pas sûr d'avoir celui-là.", "Désolé, je n'ai pas vraiment compris.", "Je ne suis pas sûr de comprendre." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler?", "Pouvez-vous essayer de reformuler votre question?", "Pouvez-vous reformuler cela pour moi?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry, I'm not sure I got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you mind rephrasing?", "Can you try to rephrase your question?", "Can you reword that for me?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "3aea678c-e10f-461d-8bb7-8cf0732e8057"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "2e7f1a1d-d966-4e02-abd6-c696fc17513c"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je suis désolé, je ne suis pas sûr d'avoir celui-là.", "Désolé, je n'ai pas vraiment compris.", "Je ne suis pas sûr de comprendre." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler?", "Pouvez-vous essayer de reformuler votre question?", "Pouvez-vous reformuler cela pour moi?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry, I'm not sure I got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you mind rephrasing?", "Can you try to rephrase your question?", "Can you reword that for me?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "442e041f-5ca6-4570-921d-59c90f3a4101"
+  }, {
+    "targetPage": "No Match 2",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "d90174e4-a6b1-421f-a3f8-5edc608eddb8"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_CUSTOM",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  }
+}

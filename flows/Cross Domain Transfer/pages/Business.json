@@ -1,0 +1,330 @@
+{
+  "name": "84b6b871-7b33-4cfc-aef0-54f666be1fba",
+  "displayName": "Business",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_business_yesno",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Souhaitez-vous que j'envoie un lien avec plus d'informations sur votre téléphone maintenant?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Would you like me to send a link with more information on this, to your phone now?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un lien avec plus d'informations sur votre téléphone maintenant?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't get that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information on this, to your phone now?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d6bc39da-573e-4678-bc8a-779a38dec1e5"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9, pour poser une autre question, dites non ou faites le 1." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, to ask another question, say no, or press 1." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5153cab0-526a-4010-a38b-31903f99171a"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "43efa080-03e8-4a25-aac3-982d73b41acf"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un lien avec plus d'informations sur votre téléphone maintenant?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't get that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a link with more information on this, to your phone now?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c36bab7b-6bf1-48b8-94af-f1f859babce5"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9, pour poser une autre question, dites non ou faites le 1." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 9, to ask another question, say no, or press 1." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "94267f48-584b-4f45-a398-0bb265b5ca79"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "8676b08e-152c-4758-9efc-652f8d9427a6"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Business"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "page_summary",
+      "value": "business related inquires"
+    }, {
+      "parameter": "page_summaryfr",
+      "value": "Soutien aux entreprises"
+    }, {
+      "parameter": "sms_template",
+      "value": "000A1aHVQ37V013A"
+    }, {
+      "parameter": "sms_template_fr",
+      "value": "000B3aJBMB0Q00EY"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.visited = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour plus d’informations sur le support aux entreprises, vous pouvez visiter soutien point telus point com barre oblique Soutien Aux Entreprises." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "For information related to business support, you can visit, support, dot, telus, dot, com, slash, Business, Support. or. " ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "visited",
+        "value": "1"
+      } ]
+    },
+    "name": "739d2071-9243-4c5b-b55e-8ec065c9e4cd"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.visited = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour le moment, notre équipe de services résidentiels ne pourra pas fournir de soutien pour les comptes d'entreprise." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pour obtenir du soutien et les coordonnées de contact pour votre province, veuillez visiter soutien point telus point com barre oblique Soutien Aux Entreprises." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "At this time, our Mobility team members will not be able to provide support for business accounts." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "To get support and contact information for your province, please visit support, dot, telus, dot, com, slash, Business, Support." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "visited",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "3af007a4-d81c-4a9b-a34b-646b4b6dd607"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "162e1cb5-8631-441d-a5dc-b57dd4e08530"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "f3fd79df-680d-498b-b1a9-efec5a8c573b"
+  }, {
+    "intent": "small_talk.i_dont_know",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pour obtenir du soutien et les coordonnées de contact pour votre province, veuillez visiter soutien point telus point com barre oblique Soutien Aux Entreprises." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "To get support and contact information for your province, please visit support, dot, telus, dot, com, slash, Business, Support." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "a60f62fd-5d22-4483-bfd8-c192b1c9aed0"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "06eb32e9-5e0f-4ffc-972f-a037a353d3ad"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "5ba36dc3-0197-44ba-9574-0d661a58aa6f"
+  }, {
+    "condition": "$session.params.dtmf_business_yesno = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      }, {
+        "parameter": "dtmf_business_yesno",
+        "value": null
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "400a7b92-6332-4cb4-bd84-e77eb64e978d"
+  }, {
+    "condition": "$session.params.dtmf_business_yesno = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "For information related to business support, you can visit, support, dot, telus, dot, com, slash, Business, Support." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_business_yesno",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "fa50c615-c27a-4fe4-90b4-2e0ea7d41646"
+  } ]
+}

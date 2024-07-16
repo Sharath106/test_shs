@@ -1,0 +1,42 @@
+{
+  "name": "f4108be6-c831-4ae2-b01e-d3601abaab6c",
+  "displayName": "FFH Province Check",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.apple = \"apple\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Apple TV",
+    "name": "49ae07a7-af25-4387-a371-30a9a12cd37b"
+  }, {
+    "condition": "($session.params.routeDetails.province != \"BC\" AND $session.params.routeDetails.province != \"AB\") OR $session.params.routeDetails.province = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry we don't provide support for this service in your province right now. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, nous ne fournissons pas de support pour ce service dans votre province en ce moment." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "FFH Text",
+    "name": "e73589bb-16a4-420c-9836-d7c4030083e8"
+  }, {
+    "condition": "$session.params.routeDetails.province = \"BC\" OR $session.params.routeDetails.province = \"AB\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "FFH",
+    "name": "72de321a-d7ad-478a-922b-aa731061aa91"
+  } ]
+}

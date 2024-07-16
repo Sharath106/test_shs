@@ -1,0 +1,133 @@
+{
+  "name": "ac53fda4-5c33-47ed-b33b-b8cac371cbb9",
+  "displayName": "Display Amount Owing",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Account Balance",
+    "tag": "voice_retrieve_fi_and_credit_class",
+    "setParameterActions": [ {
+      "parameter": "ban",
+      "value": "$session.params.targetAccount.billingAccountNum"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.financialHistoryInfo = null OR $session.params.targetAccount.currentBalance = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, j'ai des problèmes avec la demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues with the request." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Let me get you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "Display Amount Owing"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d40dd689-203b-4c62-aac5-eb9f32e58d8e"
+  }, {
+    "condition": "$session.params.targetAccount.statusActivityReasonCd = \"SNP\" OR $session.params.targetAccount.statusActivityReasonCd = \"SNP1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Veuillez noter que si vous avez récemment conclu une entente de paiement ou signalé un paiement, cela peut prendre jusqu'à 1 heure pour être reflété ici." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eVotre service a été suspendu en raison d’un solde impayé de \u003cprosody rate=\".80\"\u003e$session.params.financialHistoryInfo.pastDueAmt $\u003c/prosody\u003e, qui etait dû le \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.financialHistoryInfo.dueDt.month - $session.params.financialHistoryInfo.dueDt.day \u003c/say-as\u003e.\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Please note, if you've recently made a payment arrangement or reported a payment, it can take up to 1 hour to reflect here." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eYour service has been suspended due to an unpaid balance of \u003cprosody rate=\".80\"\u003e$$session.params.financialHistoryInfo.pastDueAmt\u003c/prosody\u003e, which was due on \u003csay-as interpret-as=\"date\" format=\"md\"\u003e$session.params.financialHistoryInfo.dueDt.month - $session.params.financialHistoryInfo.dueDt.day \u003c/say-as\u003e.\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "payment_due_date",
+        "value": "$session.params.financialHistoryInfo.dueDt.month - $session.params.financialHistoryInfo.dueDt.day"
+      }, {
+        "parameter": "past_due_amt",
+        "value": "$session.params.financialHistoryInfo.pastDueAmt"
+      }, {
+        "parameter": "amt_displayed",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Pay Now",
+    "name": "ed414284-a12b-4961-bd3d-39e702884760"
+  }, {
+    "condition": "($session.params.creditClass = \"X\" OR $session.params.creditClass = \"L\") AND $session.params.targetAccount.statusActivityReasonCd = \"CLMS\"",
+    "triggerFulfillment": {
+      "webhook": "Account Balance",
+      "tag": "clp_info",
+      "setParameterActions": [ {
+        "parameter": "clp_customer",
+        "value": "true"
+      } ]
+    },
+    "name": "870bebae-b340-4980-9b32-499e6fe5910a"
+  }, {
+    "condition": "$session.params.clp_customer = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003eVotre service a été suspendu parce que vous avez atteint votre limite de crédit de\u003cprosody rate=\".80\"\u003e$session.params.clmSummary.creditLimitAmt $\u003c/prosody\u003e.\nAfin de rétablir votre service, un paiement minimum de \u003cprosody rate=\".80\"\u003e$session.params.clmSummary.requiredPaymentAmt $\u003c/prosody\u003e est requis." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003eYour service has been suspended because you’ve reached your credit limit of \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.creditLimitAmt\u003c/prosody\u003e. In order to restore your service, a minimum payment of \u003cprosody rate=\".80\"\u003e$$session.params.clmSummary.requiredPaymentAmt\u003c/prosody\u003e is required." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "amt_displayed",
+        "value": "true"
+      } ]
+    },
+    "targetPage": "Pay Now",
+    "name": "cbe43489-eef8-4330-8bca-957194e7b930"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let me get you to a team member for more assistance." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "cb1fb643-b49a-4185-b7fe-2fc94081d92e"
+  } ]
+}

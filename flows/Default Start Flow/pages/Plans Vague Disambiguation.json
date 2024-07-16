@@ -1,0 +1,453 @@
+{
+  "name": "f07097e0-d02e-4c50-88da-927306f19d79",
+  "displayName": "Plans Vague Disambiguation",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_plans_vague_disambiguation",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-3-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't catch that.", "I'm sorry, I didn't understand that.", "Sorry, I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Please say how I can help you with your plan. I can help you change a plan, add features, or add a line and more. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Dites-moi comment je peux vous aider avec votre forfait. Je peux vous aider à modifier un forfait, à ajouter des fonctionnalités ou à ajouter une ligne et bien plus encore." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "0c77d453-f99a-40f0-b9d8-ba1fe3df5bf7"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I still didn't get that.", "I still don't hear you.", "I still didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Say change a plan, or press 1, add features, or press 2, add a line, or press 3. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne crois toujours pas avoir compris.", "Je ne comprends toujours pas bien.", "Je ne crois toujours pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Dites modifier un forfait, ou faites le 1, ajouter des fonctionnalités, ou faites le 2, ajouter une ligne ou faites le 3." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "234c9359-7c98-479d-bf5c-a531bfc04701"
+        }, {
+          "targetPage": "No match 3",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "3607b9a5-b793-4951-84b6-139bd0afa22d"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't catch that.", "I'm sorry, I didn't understand that.", "Sorry, I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Please say how I can help you with your plan. I can help you change a plan, add features, or add a line and more. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je n'ai pas entendu. Pouvez-vous répéter?", "Désolé, je n'ai pas entendu. Pouvez-vous répéter votre question?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Dites-moi comment je peux vous aider avec votre forfait. Par exemple, je peux vous aider à modifier un forfait, à ajouter des fonctionnalités ou, à ajouter une ligne." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "d38a41cd-62c4-41d8-9851-bba388f6ef8f"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I still didn't get that.", "I still don't hear you.", "I still didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Say change a plan, or press 1, add features, or press 2, add a line, or press 3. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je suis désolé, je n'ai pas entendu. Pouvez-vous répéter ?", "Je n'ai toujours pas compris. Pouvez-vous répéter ça ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Dites modifier un forfait, ou appuyez sur 1, ajoutez des fonctionnalités, ou appuyez sur 2, ajoutez une ligne ou appuyez sur 3." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "48f3e3ae-4741-40d3-af65-e00ae170c5ad"
+        }, {
+          "targetPage": "No match 3",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "d9b1c21b-f6f4-4c6b-9e97-aaaf283a0be6"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Plans Vague Disambiguation"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.plansvaguedisambiguation_retrycnt = null OR $session.params.plansvaguedisambiguation_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Can you please tell me in more detail how I could assist you with your plan? For example, I can help you  renew a plan, check plan usage or show available promotions." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pouvez-vous me dire plus en détail comment je peux vous aider avec votre forfait aujourd’hui ? Par exemple, je peux vous aider à renouveler un forfait, à vérifier l'utilisation du forfait ou à afficher les promotions disponibles." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.plansvaguedisambiguation_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Can you explain what help you need with your account? I can help you  renew a plan, check plan usage or show available promotions." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pouvez-vous me dire, avec plus de détails, comment je peux vous assister avec votre forfait? Par exemple, je peux vous aider à renouveler un forfait, à vérifier l'utilisation d'un forfait ou à vous faire part des promotions disponibles." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.plansvaguedisambiguation_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Try saying things like renew a plan, my plan usage or promotions." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Essayez de dire des choses comme renouveler un forfait, vérifier l'utilisation de mon forfait ou promotions." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.plans_renew",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "e674ff46-76ff-474f-a57f-8e01f39687a8"
+  }, {
+    "intent": "head_intent.plans_usage",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_usage"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "56b13026-2563-45f1-b78f-01fbacc04707"
+  }, {
+    "intent": "head_intent.churn_remove_a_line",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "remove_a_line"
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "4c18cd86-5aac-49d6-88a0-548d892776d0"
+  }, {
+    "intent": "head_intent.plans_remove_feature",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_remove_feature"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "e7df5cf5-9e36-4666-8bbe-4c710ad9b20f"
+  }, {
+    "intent": "head_intent.plans_promotions",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "promotions"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "f99d2086-611c-4189-ab84-37b9c86ce87b"
+  }, {
+    "intent": "head_intent.plans_current_details",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "current_plan"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "cb8a8a70-7c8f-494d-a24c-08386e0d802e"
+  }, {
+    "intent": "head_intent.plans_change",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "rate_plan_change"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "2e1c19cf-c464-469d-bb86-027fc744300c"
+  }, {
+    "intent": "head_intent.plans_available",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "aam_plans_available"
+      } ]
+    },
+    "targetFlow": "Plans Available",
+    "name": "c10e18d7-5bd4-4bf9-8eb5-df6f3bf9baa9"
+  }, {
+    "intent": "head_intent.plans_add_line",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "a55fd61b-804c-4d91-aa47-e630c75e5daa"
+  }, {
+    "intent": "head_intent.plans_add_feature",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_add_feature"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "7aefabb3-39e9-4ed9-a20d-154c931fdd53"
+  }, {
+    "intent": "head_intent.plans_add",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "available_plans"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "47f0d71d-81ee-4e72-bd6e-f9fc1d2ad8e1"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sur, il me fera plaisir de vous mettre en contact avec un membre de l’équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "4aa8dae9-a62b-4663-af4b-b63ec0c5df2e"
+  }, {
+    "condition": "$session.params.dtmf_plans_vague_disambiguation = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sur, il me fera plaisir de vous mettre en contact avec un membre de l’équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "5d241793-27dd-4390-a741-265eb52d003b"
+  }, {
+    "condition": "$session.params.plansvaguedisambiguation_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "plansvaguedisambiguation_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "119946c0-256c-4b8c-9e9a-24bcbe30a2b3"
+  }, {
+    "condition": "$session.params.plansvaguedisambiguation_retrycnt != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "plansvaguedisambiguation_retrycnt",
+        "value": "$sys.func.ADD($session.params.plansvaguedisambiguation_retrycnt,1)"
+      } ]
+    },
+    "name": "88c0b35a-63cd-4cae-9947-0c9d993b4ad0"
+  }, {
+    "condition": "$session.params.plansvaguedisambiguation_retrycnt \u003e 3",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "plansvaguedisambiguation_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No match 2",
+    "name": "34380573-f0b5-47d5-8f20-08a6c0bcfb1e"
+  }, {
+    "condition": "$session.params.dtmf_plans_vague_disambiguation = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "rate_plan_change"
+      }, {
+        "parameter": "dtmf_plans_vague_disambiguation",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "8bb47d83-9eb9-4464-a166-5f8d641a4cbb"
+  }, {
+    "condition": "$session.params.dtmf_plans_vague_disambiguation = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_add_feature"
+      }, {
+        "parameter": "dtmf_plans_vague_disambiguation",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "936e3fd2-e68f-47d5-b6ee-4aa3dd48c167"
+  }, {
+    "condition": "$session.params.dtmf_plans_vague_disambiguation = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_plans_vague_disambiguation",
+        "value": null
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": "activate"
+      }, {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "9bff58d7-6cd6-4822-aa5c-a562ffdd058c"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.plansvaguedisambiguation_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.plansvaguedisambiguation_retrycnt = 2",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "72b30a5a-e5df-472b-8652-4a1597593f9f"
+  } ]
+}

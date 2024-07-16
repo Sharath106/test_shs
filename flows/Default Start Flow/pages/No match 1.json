@@ -1,0 +1,75 @@
+{
+  "name": "ea349098-8c22-48c9-8cc7-b9f13014db7e",
+  "displayName": "No match 1",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.old_route != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "$session.params.old_route"
+      } ]
+    },
+    "name": "cbf72b0d-9589-44d0-aaab-1cfc463a19a2"
+  }, {
+    "condition": "$session.params.no_match = true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No match 3",
+    "name": "13daa7a1-c1b2-48ed-b37b-a7ff75efdcc7"
+  }, {
+    "condition": "$session.params.route = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I'm not sure I've got this one.", "Sorry, I didn't really catch that.", "I'm not sure I understand." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you mind rephrasing?", "Can you try to rephrase your question? ", "Can you reword that for me?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir bien compris.", "Désolé, je n'ai pas vraiment compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase?", "Pouvez-vous essayer de reformuler votre question?", "Seriez-vous en mesure de reformuler?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir bien compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr"
+      }, {
+        "text": {
+          "text": [ "Pouvez-vous reformuler votre phrase, s'il vous plaît?", "Pouvez-vous essayer de reformuler votre question?", "Seriez-vous en mesure de reformuler?" ]
+        },
+        "languageCode": "fr"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "no-match"
+      } ]
+    },
+    "targetPage": "Start Page",
+    "name": "3b4a94b4-2a5c-404b-98a1-f6ab6f19e6ed"
+  }, {
+    "condition": "$session.params.route != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No match 2",
+    "name": "b1ef2aeb-6538-47ac-91c5-433addf50665"
+  } ]
+}

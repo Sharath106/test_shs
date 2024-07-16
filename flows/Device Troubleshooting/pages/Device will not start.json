@@ -1,0 +1,413 @@
+{
+  "name": "f4baa8ea-bc0c-430d-94cf-1bb0c3303991",
+  "displayName": "Device will not start",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_device_wont_start",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte expliquant comment résoudre ce problème?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to text you a link with more information?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "60214cac-1ba8-4719-8786-1eae45a5d313"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Dites envoyez-moi le message texte, ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "  To receive a text message, say or press 9. For a team member, 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4a4f9e7b-33ec-4f66-9b03-b35d5b97eedf"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "34b36c6d-a8ce-47e5-acc2-8430cbd4b419"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte expliquant comment résoudre ce problème?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to text you a link with more information?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f93cc185-0da1-4256-b1b4-5cacdebf5920"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Dites envoyez-moi le message texte, ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "  To receive a text message, say or press 9. For a team member, 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "0e610284-a8d2-4297-aa5b-273f19bda741"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "6b7d3d9a-8861-4829-91c4-3deb1401ffd8"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Device will not start"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.device_retrycnt = null OR $session.params.device_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si l’écran de votre appareil s’est éteint subitement, vérifiez d’abord que la batterie est chargée." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Sinon, j'ai quelques informations sur la façon d'essayer de résoudre ce problème." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous que j'envoie un message texte expliquant comment résoudre ce problème?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "If your device screen has suddenly turned black or is frozen, first make sure that the battery is charged." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Otherwise, I have some information on how to quickly look at this further." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like me to text you a link with more information?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.device_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous que j'envoie un message texte expliquant comment résoudre ce problème?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like me to text you a link with more information?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.device_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Dites envoyez-moi le message texte, ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To receive a text message, say or press 9. For a team member, 0." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.troubleshooting_still_having_issues",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé de l'apprendre." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Dans ce cas, je vous suggère d'examiner les options de réparation pour votre téléphone." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm sorry to hear that. ", "Sorry about that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "In this case, I would suggest looking into repair options for your phone. " ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "repair_process"
+      }, {
+        "parameter": "device_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_device_wont_start",
+        "value": null
+      } ]
+    },
+    "name": "43ccdf5e-2310-466f-a0cf-78191ecafa08"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900E6"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900H0"
+      }, {
+        "parameter": "device_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_device_wont_start",
+        "value": null
+      } ]
+    },
+    "name": "8d45632b-2363-413e-9476-24a940b64841"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "device_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_device_wont_start",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "cabeeeee-7049-4ca5-a456-1c521b9adcf5"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "device_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_device_wont_start",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "9c0075ed-083a-49ce-8df5-332fb3c219d9"
+  }, {
+    "condition": "$session.params.dtmf_device_wont_start = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900E6"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900H0"
+      }, {
+        "parameter": "device_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_device_wont_start",
+        "value": null
+      } ]
+    },
+    "name": "0291981d-0f10-4214-9186-5c63b8e8b3b8"
+  }, {
+    "condition": "$session.params.dtmf_device_wont_start = \"0\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "device_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_device_wont_start",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "033b0a57-c59c-4b74-a7d5-761807fbaa8c"
+  }, {
+    "condition": "$session.params.device_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "device_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "b6753720-9d4a-4406-bce1-43535d254d83"
+  }, {
+    "condition": "$session.params.device_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "9d76c2e0-13b2-457f-b1d0-4555e9826f68"
+  }, {
+    "condition": "$session.params.dtmf_device_wont_start = 1 OR $session.params.dtmf_device_wont_start = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_device_wont_start",
+        "value": null
+      }, {
+        "parameter": "device_retrycnt",
+        "value": "$sys.func.ADD($session.params.device_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "4a6b16cf-b19e-4ec5-ad41-f7fcfc28d8c7"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "device_retrycnt",
+        "value": "$sys.func.ADD($session.params.device_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.device_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.device_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "faca7715-7fb8-47c3-92cf-27daf1d6bedd"
+  } ]
+}

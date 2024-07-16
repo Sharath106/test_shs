@@ -1,0 +1,31 @@
+{
+  "name": "2442f76c-fe38-4aa6-a9f7-a038e3b0e6c5",
+  "displayName": "End Page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "How else can I help?", "What else can I help you with?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Comment puis-je vous aider autrement?", "Que puis-je faire d'autre pour aider?" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "from_flow",
+      "value": "Troubleshooting"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "name": "7a995eb4-2510-4593-8b19-77193472a231"
+  } ]
+}

@@ -1,0 +1,312 @@
+{
+  "name": "c3f68231-b0c2-441f-963b-c3deedf579b9",
+  "displayName": "Agent Type",
+  "form": {
+    "parameters": [ {
+      "displayName": "acctmgmt_fix_churn",
+      "required": true,
+      "entityType": "@account-vs-technical-vs-cancel",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "J'ai besoin de savoir de quel type de soutien vous avez besoin." ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Nous pouvons vous aider avec la facturation, le compte, l'assistance technique ou les annulations. Pour lequel avez-vous besoin d'aide ?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "I need to know what type of support you need." ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "We can help with billing, account inquiries, technical support, or cancellations. Which one do you need help with?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Nous pouvons vous aider avec la facturation, le compte, l'assistance technique ou les annulations. Pour lequel avez-vous besoin d'aide ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "We can help with billing, account inquiries, technical support, or cancellations. Which one do you need help with?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "52eec898-329d-4a7a-bd17-c18b35c7a518"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez besoin d'aide concernant votre compte, dites comptes ou facturation, ou appuyez sur 1. assistance technique, ou appuyez sur 2, annulations, ou appuyez sur 3." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you need account help, say accounts or billing, or press 1. technical support, or press 2, cancellations, or press 3." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "77cf24c4-0105-4065-b2e0-6c9f1fe243c8"
+        }, {
+          "targetPage": "No match 1",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "6b75487a-1a92-4642-b3a9-8d3a2f81e6b3"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Je n'ai pas compris ça.", "Je n'ai pas compris.", "Désolé, je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Nous pouvons vous aider avec la facturation, le compte, l'assistance technique ou les annulations. Pour lequel avez-vous besoin d'aide ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "We can help with billing, account inquiries, technical support, or cancellations. Which one do you need help with?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "df0d2c25-811d-4d49-8f6e-858b1c92e433"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez besoin d'aide concernant votre compte, dites comptes ou facturation, ou appuyez sur 1. assistance technique, ou appuyez sur 2, annulations, ou appuyez sur 3." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "If you need account help, say accounts or billing, or press 1. technical support, or press 2, cancellations, or press 3." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "46e4ca07-9d20-40cd-9b40-a85f6729260e"
+        }, {
+          "targetPage": "No match 1",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "37456f43-7a59-41a2-9631-85996e3ffd14"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Peux-tu être plus précis." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Can you be more specific." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "aaf83185-7595-4508-a632-64ea7dab21d5"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je vous transfère maintenant à un membre de notre équipe.", "Il me fera plaisir de vous transférer vers un membre de l'équipe maintenant.", "Laissez-moi vous transférer vers un membre de l'équipe maintenant.", "Laissez-moi vous mettre en contact avec un membre de l'équipe maintenant." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "GTBAS exp acctmgmt"
+      }, {
+        "parameter": "acctmgmt_fix_churn",
+        "value": null
+      }, {
+        "parameter": "agent_try",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d7528208-94be-4ad8-9ebe-013dc6daa3d6"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe maintenant.", "Laissez-moi vous transférer vers un membre de l'équipe maintenant.", "Il me fera plaisir de vous transférer vers un membre de l'équipe maintenant.", "Je vous transfère maintenant à un membre de notre équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "GTBAS exp acctmgmt"
+      }, {
+        "parameter": "acctmgmt_fix_churn",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "c3ce7352-52a3-4ece-9455-1fc7d6f5f8cf"
+  }, {
+    "intent": "head_intent.troubleshoot_vague",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je vous transfère maintenant à un membre de notre équipe.", "Il me fera plaisir de vous transférer vers un membre de l'équipe maintenant.", "Laissez-moi vous transférer vers un membre de l'équipe maintenant.", "Laissez-moi vous mettre en contact avec un membre de l'équipe maintenant." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "GTBAS exp fixmobile"
+      }, {
+        "parameter": "acctmgmt_fix_churn",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "863bf545-2dac-4164-81a1-72def207fb31"
+  }, {
+    "condition": "$session.params.acctmgmt_fix_churn = \"account\" OR $session.params.acctmgmt_fix_churn = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe maintenant.", "Laissez-moi vous transférer vers un membre de l'équipe maintenant.", "Il me fera plaisir de vous transférer vers un membre de l'équipe maintenant.", "Je vous transfère maintenant à un membre de notre équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "GTBAS exp acctmgmt"
+      }, {
+        "parameter": "acctmgmt_fix_churn",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "5408c4d0-4136-4ebf-ad32-4194bf552940"
+  }, {
+    "condition": "$session.params.acctmgmt_fix_churn = \"technical\" OR $session.params.acctmgmt_fix_churn = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je vous transfère maintenant à un membre de notre équipe.", "Il me fera plaisir de vous transférer vers un membre de l'équipe maintenant.", "Laissez-moi vous transférer vers un membre de l'équipe maintenant.", "Laissez-moi vous mettre en contact avec un membre de l'équipe maintenant." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "GTBAS exp fixmobile"
+      }, {
+        "parameter": "acctmgmt_fix_churn",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "4612706e-2e99-4f5a-afcb-ea07fade3b8d"
+  }, {
+    "condition": "$session.params.acctmgmt_fix_churn = \"cancel\" OR $session.params.acctmgmt_fix_churn = \"3\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe maintenant.", "Laissez-moi vous transférer vers un membre de l'équipe maintenant.", "Il me fera plaisir de vous transférer vers un membre de l'équipe maintenant.", "Je vous transfère maintenant à un membre de notre équipe." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "GTBAS exp churn mgmt"
+      }, {
+        "parameter": "acctmgmt_fix_churn",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "0b9d03c9-8caf-459d-b4df-f9d3a8a39c6f"
+  } ]
+}

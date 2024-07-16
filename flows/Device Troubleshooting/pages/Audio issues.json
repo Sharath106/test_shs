@@ -1,0 +1,408 @@
+{
+  "name": "fa9fbafd-8142-4c74-9251-d4809b205928",
+  "displayName": "Audio issues",
+  "form": {
+    "parameters": [ {
+      "displayName": "media_issues",
+      "required": true,
+      "entityType": "@media-issues",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel problème audio avez-vous avec votre téléphone? Est-ce lié à quelque chose comme: Entendre l'autre personne sur un appel, écouteurs ne fonctionnent pas, plus de son des hauts parleur, ou les autres ne m'entendent pas en appel." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What kind of audio issues are you having with your phone? Is it relating to something like: audio coming from the speakers, hearing others on a call, others can't hear me on a call, or earphones not working." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "05ce0eda-b3a7-4072-9f0e-5a2c432edae2"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour plus d'informations, dites je ne peux pas entendre les autres ou faites le 1. Écouteurs ne fonctionnent pas, ou faites le 2. Problèmes de haut-parleur, ou faites le 3. Les autres ne peuvent pas m'entendre, ou faites le 4." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For problems with hearing others on a call, say or press 1, earphones not working, 2, hearing audio from the speakers, 3, or if others can't hear you on a phone call, say or press 4." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "0aee2c19-08a9-4fef-a13a-0d923338a45e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "f13bc336-4922-4b16-b9f8-6ed56a8807f4"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Quel problème audio avez-vous avec votre téléphone? Est-ce lié à quelque chose comme: Entendre l'autre personne sur un appel, écouteurs ne fonctionnent pas, plus de son des hauts parleur, ou les autres ne m'entendent pas en appel." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "What kind of audio issues are you having with your phone? Is it relating to something like: audio coming from the speakers, hearing others on a call, others can't hear me on a call, or earphones not working." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b1615a28-a20e-4d6e-bcba-8dda4cca9d7c"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour plus d'informations, dites je ne peux pas entendre les autres ou faites le 1. Écouteurs ne fonctionnent pas, ou faites le 2. Problèmes de haut-parleur, ou faites le 3. Les autres ne peuvent pas m'entendre, ou faites le 4." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For problems with hearing others on a call, say or press 1, earphones not working, 2, hearing audio from the speakers, 3, or if others can't hear you on a phone call, say or press 4." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "10bf0799-3b0a-4a1c-b198-91d1cff34dc8"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "38949923-d773-4278-849f-cad7900a9d80"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Audio issues"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.media_issues = null AND ($session.params.audissues_retrycnt = null OR $session.params.audissues_retrycnt = 0)",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Les problèmes audio peuvent être difficiles, mais je suis là pour vous aider." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Quel problème audio avez-vous avec votre téléphone?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Audio issues can be difficult, but I'm here to help." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "What kind of audio issues are you having with your phone?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.audissues_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Quel problème audio avez-vous avec votre téléphone? Est-ce lié à quelque chose comme: Entendre l'autre personne sur un appel," ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "écouteurs ne fonctionnent pas," ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "plus de son des hauts parleur," ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "ou les autres ne m'entendent pas en appel." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "What kind of audio issues are you having with your phone? Is it relating to something like: audio coming from the speakers," ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "hearing others on a call," ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "others can't hear me on a call," ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "or earphones not working." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.audissues_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Pour plus d'informations, dites je ne peux pas entendre les autres ou faites le 1. Écouteurs ne fonctionnent pas, ou faites le 2. Problèmes de haut-parleur, ou faites le 3. Les autres ne peuvent pas m'entendre, ou faites le 4." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "For problems with hearing others on a call, say or press 1," ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "earphones not working, 2," ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "hearing audio from the speakers, 3," ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "or if others can't hear you on a phone call, say or press 4." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "media_issues",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "f48b8ece-c797-43f3-b623-be49fcd14d9b"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "media_issues",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "db629444-324d-44f6-9f1b-c8a1e53e6e9b"
+  }, {
+    "condition": "$session.params.media_issues = \"media\" OR $session.params.media_issues = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "media_issues",
+        "value": "media"
+      } ]
+    },
+    "targetPage": "Audio issues iphone vs android",
+    "name": "4120597e-60db-4eef-86ed-717ed8725772"
+  }, {
+    "condition": "$session.params.media_issues = \"hearing others\" OR $session.params.media_issues = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "media_issues",
+        "value": "hearing others"
+      } ]
+    },
+    "targetPage": "Audio issues iphone vs android",
+    "name": "bcc0c77d-2fbf-43b4-b4f0-63df04ebf842"
+  }, {
+    "condition": "$session.params.media_issues = \"others hearing\" OR $session.params.media_issues = \"4\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "media_issues",
+        "value": "others hearing"
+      } ]
+    },
+    "targetPage": "Audio issues iphone vs android",
+    "name": "09a8ee99-3fed-40f5-bd1c-74f8088ead7a"
+  }, {
+    "condition": "$session.params.media_issues = \"earphone\" OR $session.params.media_issues = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      }, {
+        "parameter": "media_issues",
+        "value": "earphone"
+      } ]
+    },
+    "targetPage": "Audio issues iphone vs android",
+    "name": "c01671d7-f1df-4d74-89df-10a79813f17b"
+  }, {
+    "condition": "$session.params.audissues_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "2216e833-85ef-4311-828d-031dbbf43868"
+  }, {
+    "condition": "$session.params.audissues_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "e7c8257b-e251-41ff-b919-b935434825f8"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "audissues_retrycnt",
+        "value": "$sys.func.ADD($session.params.audissues_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.audissues_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.audissues_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "9d896433-0e38-484e-ab3a-e2d187dbe379"
+  } ]
+}

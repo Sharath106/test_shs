@@ -1,0 +1,39 @@
+{
+  "name": "476edf55-1bc6-4ec8-8313-965add8497b7",
+  "displayName": "Collections check 2",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.targetAccount.isCAMQ = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Permettez-moi de vous mettre en contact avec un membre de l'équipe qui peut prendre en charge les comptes en cours de traitement." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Let me connect you with a team member who can support accounts in treatment." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "Collections check 2"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "143e8ef0-5ba5-4c68-b841-181c6a6e37bb"
+  }, {
+    "condition": "$session.params.targetAccount.isCAMIVR = true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collections check 3",
+    "name": "fe8873fe-08d3-41bc-a263-068fb2a1fcae"
+  } ]
+}

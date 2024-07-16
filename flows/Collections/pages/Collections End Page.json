@@ -1,0 +1,45 @@
+{
+  "name": "f54dbb2c-32f7-4842-aa57-c65ddfb31ac7",
+  "displayName": "Collections End Page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You haven't selected any options offered to you, but you can call us back at any time." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Thanks for calling TELUS have a nice day." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Vous n’avez sélectionné aucune option qui vous est offerte, mais vous pouvez nous rappeler à tout moment." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Merci d’avoir appelé TELUS. Bonne journée!" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Collections End Page"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "terminate"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "ac82dcdd-0d95-4cad-9d48-df78e0f51c5d"
+  } ]
+}

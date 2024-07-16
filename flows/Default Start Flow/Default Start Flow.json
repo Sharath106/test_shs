@@ -1,0 +1,4443 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "condition": "$session.params.user_attempt_start = 2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me get you over to a team member who can help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "user_attempt_start",
+        "value": "$sys.func.ADD($session.params.user_attempt_start, 1)"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "4e7811fb-0142-4e51-9cc3-7ea2a864f587"
+  }, {
+    "intent": "Default Welcome Intent",
+    "condition": "$session.params.user_attempt_start = 1",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "user_attempt_start",
+        "value": "$sys.func.ADD($session.params.user_attempt_start, 1)"
+      } ]
+    },
+    "targetPage": "Collections check",
+    "name": "0a8fccb5-03f4-47f2-a9ad-6e3b24bd913a"
+  }, {
+    "intent": "Default Welcome Intent",
+    "condition": "$session.params.user_attempt_start = 0",
+    "triggerFulfillment": {
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "user_attempt_start",
+        "value": "$sys.func.ADD($session.params.user_attempt_start, 1)"
+      } ]
+    },
+    "targetPage": "Collections check",
+    "name": "1bf6c629-6670-4903-862e-20b78f70331c"
+  }, {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hi! How are you doing?", "Hello! How can I help you?", "Good day! What can I do for you today?", "Greetings! How can I assist?" ]
+        },
+        "languageCode": "en-ca"
+      }, {
+        "text": {
+          "text": [ "Salut !", "Bonjour !", "Salutations !", "Bienvenue !" ]
+        },
+        "languageCode": "fr"
+      } ],
+      "webhook": "Initialize Voice Bot",
+      "tag": "init",
+      "setParameterActions": [ {
+        "parameter": "environment",
+        "value": "$sys.func.IF(\"$session.params.init.conversation.environment = null\", it04, $session.params.init.conversation.environment)"
+      }, {
+        "parameter": "dsfstart_retrycnt",
+        "value": "$sys.func.ADD($sys.func.IF(\"$session.params.dsfstart_retrycnt = null\", -1,$session.params.dsfstart_retrycnt), 1)"
+      }, {
+        "parameter": "user_attempt_start",
+        "value": -1
+      }, {
+        "parameter": "user_attempt_start",
+        "value": "$sys.func.ADD($session.params.user_attempt_start, 1)"
+      }, {
+        "parameter": "page_list",
+        "value": "$sys.func.APPEND($session.params.page_list, Start Page)"
+      }, {
+        "parameter": "isEPP",
+        "value": "false"
+      } ]
+    },
+    "targetPage": "Collections check",
+    "name": "ac5d1732-6c3d-4d1d-8a00-25b64a42381e"
+  }, {
+    "intent": "head_intent.everything_roaming",
+    "condition": "$session.params.routeDetails.province = \"ON\" AND $session.params.sal_testing = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "everything_roaming"
+      } ]
+    },
+    "targetPage": "Ontario simplification POC",
+    "name": "53d647a4-de16-4050-9ae5-30b1d9ce0bc3"
+  }, {
+    "intent": "head_intent.payment_make",
+    "condition": "$session.params.routeDetails.province = \"ON\" AND $session.params.sal_testing = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetPage": "Ontario simplification POC",
+    "name": "2756047e-beb0-49d5-8c36-0bb5d56749bf"
+  }, {
+    "intent": "head_intent.plans_add_line",
+    "condition": "$session.params.searchResult.idStatus != \"identified\" AND $session.params.sales_unidentified = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_by_design",
+        "value": true
+      } ]
+    },
+    "targetPage": "Check Customer",
+    "name": "a33c4dc9-08d1-4771-9982-a2e9876866e9"
+  }, {
+    "intent": "head_intent.account_activation",
+    "condition": "$session.params.searchResult.idStatus != \"identified\" AND $session.params.sales_unidentified = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_by_design",
+        "value": true
+      } ]
+    },
+    "targetPage": "Check Customer",
+    "name": "648586af-9da1-449c-b1b6-10c0e3d648a2"
+  }, {
+    "intent": "head_intent.equipment_activate_sim",
+    "condition": "$session.params.searchResult.idStatus != \"identified\" AND $session.params.sales_unidentified = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "handoff_by_design",
+        "value": true
+      } ]
+    },
+    "targetPage": "Check Customer",
+    "name": "d3ae5891-a59b-4560-858a-26f2ff06d930"
+  }, {
+    "intent": "head_intent.view_csa_contract",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "View CSA"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "a7cd1a3c-2cf2-44c5-a238-2fa00f74c846"
+  }, {
+    "intent": "head_intent.account_close",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_close"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "50e5afa2-133f-4905-b227-88b3c9199433"
+  }, {
+    "intent": "head_intent.my_telus_capabilities",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "my_telus_capabilities"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "41cfa6de-5e13-45fe-947c-93a9d72c4723"
+  }, {
+    "intent": "head_intent.how_to_sign_in_or_out",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "how_to_sign_in/out"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "4b554b7f-8163-4d26-8c59-7032bc28db11"
+  }, {
+    "intent": "head_intent.account_link_accounts",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_link_accounts"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "4bc132d5-235e-4390-9b6e-691ec6b7e278"
+  }, {
+    "intent": "head_intent.account_authorization",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_authorization"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "e0d6c63d-c2d3-4149-b169-86ae289b4bdf"
+  }, {
+    "intent": "head_intent.payment_posting_time",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "pymtposting_time"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "391cf733-0cdc-45b6-9d7a-ed3a87cb7d8b"
+  }, {
+    "intent": "head_intent.account_recovery",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_recovery"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "3f0a9311-25cb-4340-9ebc-ad765e81fef6"
+  }, {
+    "intent": "head_intent.pay_otheracct",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "pay_otheracct"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "34092645-e3f3-46cb-af87-05254247fb84"
+  }, {
+    "intent": "head_intent.cpo_devices",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "cpo_devices"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "b568be74-03e9-42db-8f8c-d61b1119dcd0"
+  }, {
+    "intent": "head_intent.troubleshoot_phone_not_working",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "phone_not_working"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "783c4cb6-3526-4c8d-8163-e4842d887d68"
+  }, {
+    "intent": "head_intent.bring_it_back_program",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bib"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "a773d421-3d43-4c7a-8e62-e49d24007583"
+  }, {
+    "intent": "head_intent.equipment_trade_in",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "trade-in"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "a7e098ae-5cfa-4840-a0f2-db2796afc266"
+  }, {
+    "intent": "head_intent.store_locator",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "store_locator"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "5cae3b61-1ff5-40f9-b516-ebacb21e4883"
+  }, {
+    "intent": "head_intent.device_discount_balance",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "discount_balance"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "e5139a09-0a94-465d-9d8b-37e2144905cc"
+  }, {
+    "intent": "head_intent.extended_warranty",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "extended_warranty"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "8717ee40-38db-4e01-86c7-8dcce8bf2aa7"
+  }, {
+    "intent": "head_intent.equipment_order_status",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "order_status"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "f73f1f43-a20e-4a8c-b978-18c2a0393330"
+  }, {
+    "intent": "head_intent.account_change_number",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "change_phonenumber"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "c9b24e8d-e67d-4212-b829-d7b3cdb1ddc2"
+  }, {
+    "intent": "head_intent.change_pin",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "change_PIN"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "9f769781-256e-4972-8524-6fe367c64767"
+  }, {
+    "intent": "head_intent.change_security_question",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "change_secquestion"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "e16c03ae-3648-455b-8553-a85b2f073958"
+  }, {
+    "intent": "head_intent.when_will_offer_expire",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "offer_expiry"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "738a4113-b5d1-48b9-94c8-9208e587e5f8"
+  }, {
+    "intent": "head_intent.online_purchase_receipt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "online_purchase_receipt"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "3e3f3c1f-5e64-4473-a86d-80d8c873106f"
+  }, {
+    "intent": "head_intent.legal_age",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "legal_age"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "5dabf2b6-239f-472c-9244-bd9f36d085a1"
+  }, {
+    "intent": "head_intent.bill_reduction_options",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_reduction_options"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "7bee7f27-9948-4c34-ba1d-a5de35e33907"
+  }, {
+    "intent": "head_intent.payment_mistake",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_mistake"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "ae7d2934-74f4-4646-8548-f45a2dce18e0"
+  }, {
+    "intent": "head_intent.lost_stolen_phone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "lost_stolen_phone"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "1381f8d6-2f62-4e33-ba10-e29306c2b476"
+  }, {
+    "intent": "head_intent.phone_found",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "phone_found"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "9a2f5a30-f0e3-43e6-a8e6-7a4f7283baa3"
+  }, {
+    "intent": "head_intent.usage_overage",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "usage_overage"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "77b54939-5854-48da-a48b-9950e961f5c8"
+  }, {
+    "intent": "head_intent.bill_missing_credit",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_missing_credit"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      }, {
+        "parameter": "async_agent_count",
+        "value": null
+      }, {
+        "parameter": "ss_man_async_no",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "c57c033f-6fae-41b7-8a55-b5ed3a5a490d"
+  }, {
+    "intent": "head_intent.local_calling",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "local_calling"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "0c3de2aa-12e0-4099-9f08-8b0b226603cf"
+  }, {
+    "intent": "head_intent.what_uses_data",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "what_uses_data"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "55511679-43a1-42f5-b9db-5a82285f2e86"
+  }, {
+    "intent": "head_intent.bill_reprint",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_reprint"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "8a52f8f7-5198-47be-82cb-37a94420c5c1"
+  }, {
+    "intent": "head_intent.notifications",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "notifications"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "e0a5f70a-d249-4f2a-b201-ac6b4cf8f764"
+  }, {
+    "intent": "head_intent.late_payments",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "late_payments"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "83c88e6b-b315-4850-9c78-e224ec5b50e7"
+  }, {
+    "intent": "head_intent.discounts",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "discounts"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "0ead4884-4cda-46ad-879d-3178bfa43666"
+  }, {
+    "intent": "head_intent.taxes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "taxes"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "fab8c93e-b7f4-494c-bce7-b484bedfd4ed"
+  }, {
+    "intent": "head_intent.partial_charges",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "partial_charges"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "804a137f-a1e7-4282-b32a-19fac6e35634"
+  }, {
+    "intent": "head_intent.bill_due_date",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_due_date"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "860751f0-5086-4d25-b9dd-ef566cf1505b"
+  }, {
+    "intent": "head_intent.first_bill",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "first_bill"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "bb96f9ec-5057-4fe7-89c0-b5aac6407f41"
+  }, {
+    "intent": "head_intent.tax_exemption",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "tax_exemption"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "754a1a82-63ca-4afa-ae57-914abb83be6e"
+  }, {
+    "intent": "head_intent.reconnection_fee",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "reconnection_fee"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "775a0b36-566b-4243-824b-22604cc773f6"
+  }, {
+    "intent": "head_intent.bill_missing_discount",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_missing_discount"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "async_agent_count",
+        "value": null
+      }, {
+        "parameter": "ss_man_async_no",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "9183b38f-501c-420b-8d6f-2671672984dc"
+  }, {
+    "intent": "head_intent.collection_agency",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "collection_agency"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "f603672c-d1c6-4f3e-8665-34cc08f1027b"
+  }, {
+    "intent": "head_intent.soft_shopper",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "soft_shopper"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "2e6e85fc-4842-4b3d-adec-c306b3f6fa51"
+  }, {
+    "intent": "head_intent.bill_unexpected",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_unexpected"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "c51b598c-2512-4f2b-9b6b-392f9e7e5883"
+  }, {
+    "intent": "head_intent.churn_remove_a_line",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "remove_a_line"
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "13ee0297-80ef-4c53-951a-139d48301018"
+  }, {
+    "intent": "head_intent.account_transfer_ownership",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "town"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "47b02a43-62da-4030-b1fd-3d6103ec5052"
+  }, {
+    "intent": "head_intent.tenure",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "tenure"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "7668c647-0e42-47a4-b26b-ff13356df318"
+  }, {
+    "intent": "head_intent.cancellation_fee",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "cancellation_fee"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "6e79d9c1-6c3a-4c93-a0e9-de67c744fd9f"
+  }, {
+    "intent": "head_intent.add_ons_menu",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "add_ons_menu"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "e1e7839a-fd73-4fe9-9060-e731f28e5398"
+  }, {
+    "intent": "head_intent.leaving_the_country",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "leaving_the_country"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Churn",
+    "name": "d4e3b1a5-f36b-4a69-8db2-44ba0ae62aba"
+  }, {
+    "intent": "head_intent.troubleshoot_calling_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "calling_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "c6a8520d-0a66-4b6d-a3db-e6f9ceac4f0b"
+  }, {
+    "intent": "head_intent.suspend",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "suspend"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "d6841a02-d9f9-49fd-adf7-55407106eab2"
+  }, {
+    "intent": "head_intent.account_activation",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "multiple_line_activation"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "b8e4d176-60f3-45c4-8b6e-8dc32f6c85fc"
+  }, {
+    "intent": "head_intent.available_plans_none_fit_my_needs",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "available_plans_none_fit_my_needs"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "3eecde24-4693-43f6-b2ed-6938a5bc4b77"
+  }, {
+    "intent": "head_intent.network_info",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "network_info"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "984f63cf-a2c1-4580-8981-d5f0186f525f"
+  }, {
+    "intent": "head_intent.everything_roaming",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "everything_roaming"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "9fa00e8b-23c7-49b8-bc12-700c4b162795"
+  }, {
+    "intent": "head_intent.troubleshoot_voicemail_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "voicemail_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "21c9de4c-cd98-429f-a8d2-67088a35a65f"
+  }, {
+    "intent": "head_intent.account_reconnect_service",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "suspend_re-instate_service"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "0d37ece6-8bdd-4490-8c5c-ae7eb8d34fed"
+  }, {
+    "intent": "head_intent.voicemail_issues_vm_full",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "voicemail_issues_vm_full"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "0da3e88b-030f-470e-8a88-507540776b9f"
+  }, {
+    "intent": "head_intent.voicemail_issues_mailbox_number",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "voicemail_issues_mailbox_number"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "01ac5742-7ed4-423a-8806-bf21ac49cac1"
+  }, {
+    "intent": "head_intent.phone_reboot_pwrcycle",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "phone_reboot"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "e977da52-ceee-49ba-9390-b132ea076041"
+  }, {
+    "intent": "head_intent.vacation_disconnect_resume",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "return_from_roaming"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "559ad4c3-1f33-48e4-bf92-c4df69615a1b"
+  }, {
+    "intent": "head_intent.voicemail_issues_vm_setup",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "voicemail_issues_vm_setup"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "26232dce-4004-4a42-8c59-414421f4a2a1"
+  }, {
+    "intent": "head_intent.vtt_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "vtt_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "bb147e41-249a-45b9-b5d9-239ec53d2cd6"
+  }, {
+    "intent": "head_intent.voicemail_issues_stuck_indicator",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "voicemail_issues_stuck_indicator"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "e0916f5a-704f-41cc-a5d5-cf0bb8817000"
+  }, {
+    "intent": "head_intent.device_how_to",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "device_howto"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "c7502803-343b-4eaf-a2ba-55622c272b29"
+  }, {
+    "intent": "head_intent.factory_reset",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "factory_reset"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "7879ad2f-54bf-4b10-8683-6ff56a90eb07"
+  }, {
+    "intent": "head_intent.insert_remove_simcard",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "insert_remove_SIM"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "3ed69eb4-0dc2-4b32-9686-1526f03132ce"
+  }, {
+    "intent": "head_intent.wi_fi",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "wi_fi"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "07a8173a-ea57-4055-84e2-56c4130bf5ef"
+  }, {
+    "intent": "head_intent.iphone_wifi_assist",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "iphone_wifi_assist"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "d0a101ea-cd16-4137-9753-093e5b1a7715"
+  }, {
+    "intent": "head_intent.finding_imei_number",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "find_IMEI"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "b58cb9d4-8971-46db-aca2-b711969197d4"
+  }, {
+    "intent": "head_intent.troubleshoot_apps_keep_crashing",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "apps_keep_crashing"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "f65987ca-8068-4723-8499-1c7c1516d20c"
+  }, {
+    "intent": "head_intent.browser_crashing",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "browser_crashing"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "e7bba258-68a0-4d9b-af9a-bf735f48ea42"
+  }, {
+    "intent": "head_intent.ceim_and_out_of_service_area",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "ceim_outage_site"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "2a069b31-33d8-4619-acb0-02247a025d8b"
+  }, {
+    "intent": "head_intent.mms_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "mms_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "f43129d0-1c80-48d4-aae2-60fa3b52193c"
+  }, {
+    "intent": "head_intent.vvm_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "vvm_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "7b5deaa8-e882-41df-9a93-bf18c4dc944f"
+  }, {
+    "intent": "head_intent.apple_id_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "apple_id_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "41452700-97e1-45e4-97ab-292619afdacf"
+  }, {
+    "intent": "head_intent.roaming_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "roaming_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "f6d025c6-6af4-4a29-b5bb-fb7f449f9d75"
+  }, {
+    "intent": "head_intent.coverage_map",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "coverage_map"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "cec77ccd-1801-499f-bf04-725602fa839c"
+  }, {
+    "intent": "head_intent.software_updates",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "software_updates"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "0edd9450-0840-42b7-bf42-b58471edaf55"
+  }, {
+    "intent": "head_intent.device_storage",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "device_storage"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "c950eb06-714c-48f2-b072-3762d71bfed7"
+  }, {
+    "intent": "head_intent.wifi_voip_calls",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "wifi_voip_calls"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "4e5c924d-fcd6-434b-9c5d-70d5fac34a88"
+  }, {
+    "intent": "head_intent.apn_settings",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "APN_setting"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "b554bb21-2d50-4376-9fcd-59b471f7daae"
+  }, {
+    "intent": "head_intent.setup_newphone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "setup_newphone"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "d306fd82-9653-4e35-adaf-ee9f2f9f795d"
+  }, {
+    "intent": "head_intent.setup_email",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "setup_email"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "25b4d516-fbbf-41a4-8e05-57ee4827b548"
+  }, {
+    "intent": "head_intent.airplane_mode",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "airplane_mode"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "584c7244-bf3a-417f-b8ff-76d5ac383cba"
+  }, {
+    "intent": "head_intent.roaming_billing_info",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "roaming_billing_info"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      }, {
+        "parameter": "async_agent_count",
+        "value": null
+      }, {
+        "parameter": "ss_man_async_no",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "aae27e8c-c4b6-4c7d-b771-5705495e1388"
+  }, {
+    "intent": "head_intent.check_if_easy_roam_active",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "check_if_easy_roam_active"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "ec675928-e694-418f-a6a9-2e38843eae0e"
+  }, {
+    "intent": "head_intent.plans_easy_roam_activation_timing",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "easy_roam_start_date"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "cf66f9ac-8017-432c-bd86-318f5906cf9e"
+  }, {
+    "intent": "head_intent.cruise",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "cruise"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "58c5b936-2116-4cdb-8bf2-01a28f503338"
+  }, {
+    "intent": "head_intent.data_flex",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "data_flex"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "2071c0ca-58eb-4793-a1a1-189fad6964b9"
+  }, {
+    "intent": "head_intent.evening_and_weekend",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "evening_and_weekend"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "6568c6d5-2720-4002-af34-3a5749b40f85"
+  }, {
+    "intent": "head_intent.bill_amount_due",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_amount_due"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "a0082f2b-4ce3-47d8-b21d-429f1a34a5fc"
+  }, {
+    "intent": "head_intent.favorite_numbers",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "favorite_numbers"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "aaf43850-4c5b-4826-948d-a36b8fef1fbe"
+  }, {
+    "intent": "head_intent.call_canada_from_roaming",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "call_canada_from_roaming"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "279bb1ef-3b48-40c5-8844-ead8ed739f20"
+  }, {
+    "intent": "head_intent.receive_intl_calls",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "receive_intl_calls"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "a0499a4d-42ab-4d5a-a56a-0cc51624bcdc"
+  }, {
+    "intent": "head_intent.can_us_plan",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "can_us_plan"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "fe6ab941-27cf-4df7-8824-a22641ef4a8d"
+  }, {
+    "intent": "head_intent.can_i_keep_plan",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "can_i_keep_plan"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "15b21e7e-5777-48a6-b849-43d70132cc2c"
+  }, {
+    "intent": "head_intent.expired_plan",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "expired_plan"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "ce0fca6f-3709-4663-ae2e-9c8e9ae09067"
+  }, {
+    "intent": "head_intent.remove_email_from_phone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "remove_emailphone"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "eff06bbd-f9f2-4c51-942a-48006e2f1373"
+  }, {
+    "intent": "head_intent.regional_plans",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "regional_plans"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "302b2237-6fee-442f-88ed-b409b1ae6cc7"
+  }, {
+    "intent": "head_intent.senior_plans",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "senior_plans"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "079b0b56-1447-4b6f-8c45-b35f158295fd"
+  }, {
+    "intent": "head_intent.instant_voicemail",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "instant_voicemail"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "433b63d7-80be-4e8b-aed4-c15b9d9547e2"
+  }, {
+    "intent": "head_intent.back_up_data",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "back_up_data"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "3d9b6dc9-0232-42cf-a921-f4629ec5ed32"
+  }, {
+    "intent": "head_intent.content_recovery",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "content_recovery"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "6617e567-e62f-4cc5-91e1-49ae92feeaba"
+  }, {
+    "intent": "head_intent.disable_voicemail",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "disable_voicemail"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "9f1c0708-7e01-4334-8bf5-7ad8069fa0d5"
+  }, {
+    "intent": "head_intent.voicemail_to_text",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "voicemail_to_text"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "2f7f7577-8485-4497-a1fe-48c3a7dd004e"
+  }, {
+    "intent": "head_intent.phone_compatibility",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "phone_compatibility"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "c714b466-1174-4139-91d6-fce46e993fec"
+  }, {
+    "intent": "head_intent.gps_how_to",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "gps_how_to"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "34ee8e4e-35b7-432d-bee4-0aca1328b79f"
+  }, {
+    "intent": "head_intent.plan_changed_without_consent",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plan_changed_without_consent"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "f46bfa6e-45f2-41aa-9554-573e439bc5d2"
+  }, {
+    "intent": "head_intent.use_device_abroad",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "use_device_abroad"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "b5f33864-a05b-4af6-a06a-a0e6718a011f"
+  }, {
+    "intent": "head_intent.email_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "email_issues"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "0ef0c813-2e14-4786-aa8f-e0b1a63b1791"
+  }, {
+    "intent": "head_intent.watch",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "watch"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "c7a042a0-c93f-4615-ba29-32d2101c2ea4"
+  }, {
+    "intent": "head_intent.troubleshoot_wifi_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "wifi_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "d4bb6fbe-17d2-4118-bdfc-db6515277ff7"
+  }, {
+    "intent": "head_intent.dropped_calls",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "dropped_calls"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "2c3646d9-69de-4479-8930-661e757beaaf"
+  }, {
+    "intent": "head_intent.connection_fee",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "connection_fee"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "cf9232ea-07ea-4865-b66f-7aff8bfeae0c"
+  }, {
+    "intent": "head_intent.price_match",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "price_match"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "88dfaa62-d3bf-40ea-84a5-2b7d1baa6439"
+  }, {
+    "intent": "head_intent.deceased_client",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "deceased_client"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "cfaa90ed-4ccd-460a-8e0c-fc9f71d84af2"
+  }, {
+    "intent": "head_intent.why_two_bans",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "why_two_bans"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "d956e65f-2f6b-4a9b-9297-4174b21c407f"
+  }, {
+    "intent": "head_intent.equipment_credit_eligibility",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "renew_or_aal_eligibility"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "e7bd1d6f-49f2-4ba7-b3fc-3e1e672e3495"
+  }, {
+    "intent": "head_intent.rate_plan_change_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "rate_plan_change_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "dcd51655-1ee4-4f8f-a255-c607805443b8"
+  }, {
+    "intent": "head_intent.plans_remove_feature",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_remove_feature"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "1e730521-0e90-4127-b95f-2222c4b7ebaf"
+  }, {
+    "intent": "head_intent.fast_passes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "fast_passes"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "41e80b15-2903-47c0-9fda-03fd56532926"
+  }, {
+    "intent": "head_intent.plans_usage",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_usage"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "74a7d26f-dcab-4557-b2f5-679080384bd2"
+  }, {
+    "intent": "head_intent.find_account_number",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "find_account_number"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "2f831111-e991-4c5b-8084-f56864dd23db"
+  }, {
+    "intent": "head_intent.payment_made",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_made"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "44428f30-9a05-4981-b0e1-bad060edb0f6"
+  }, {
+    "intent": "head_intent.troubleshoot_data_not_working",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "data_not_working"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "8f863bb7-b771-4cfe-bdb1-a4ec040ac4f9"
+  }, {
+    "intent": "head_intent.epp_plans",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "epp_plans"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "7be4d67c-0d39-490f-803f-480edd455695"
+  }, {
+    "intent": "head_intent.sms_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "sms_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "0d23e8bd-4726-4241-98b0-4eb532531158"
+  }, {
+    "intent": "head_intent.equipment_exchange_return",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_exchange_return"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "c56b2ddd-d311-43f7-a840-dd9bfdfc7476"
+  }, {
+    "intent": "head_intent.contact_webstore",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "contact_webstore"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "8ee40d75-df41-4d4b-bdfa-43a0283e3d72"
+  }, {
+    "intent": "head_intent.puk_code",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "puk_code"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "5de86d86-fa7c-4688-9552-67e299693946"
+  }, {
+    "intent": "head_intent.device_checkup",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "device_checkup"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "f2b57b1c-5d6a-4ebe-8931-45ed2e63ef6d"
+  }, {
+    "intent": "head_intent.intl_sms",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "intl_sms"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "d500c84c-9970-40bc-8c92-e44b325547ee"
+  }, {
+    "intent": "head_intent.troubleshoot_device_wont_start",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "device_wont_start"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "7a0bb749-0de0-4299-80dd-49cb92324fc8"
+  }, {
+    "intent": "head_intent.enable_disable_data",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "enable_disable_data"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "7a2f2e9a-78bc-4178-8315-ce4d70748d95"
+  }, {
+    "intent": "head_intent.warranty_lookup_tool",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "warranty_lookup_tool"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "21b2e269-b1f6-4bca-bf7f-d907d652f676"
+  }, {
+    "intent": "head_intent.esim",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "esim"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "7575a5a8-b751-41d8-9af2-3c56ada84b0a"
+  }, {
+    "intent": "head_intent.account_block_activity",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_block_activity"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "30417ebc-0065-4352-903e-07c4039acf38"
+  }, {
+    "intent": "head_intent.account_fraud",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_fraud"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "84e3c9bb-a820-4c3b-895b-a9e4b9a927db"
+  }, {
+    "intent": "head_intent.bluetooth_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bluetooth"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "4d51455f-82b2-46e4-a97f-85e4bc45e9a1"
+  }, {
+    "intent": "head_intent.app_stores",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "app_stores"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "378b2a2b-7193-45a0-ad41-85a31fa9a91a"
+  }, {
+    "intent": "head_intent.purchase_sim",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "purchase_sim"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "d3c97287-5ee4-4858-b586-70f3371b5396"
+  }, {
+    "intent": "head_intent.tethering",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "tethering"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "5dea1458-84e2-47a5-9dc5-ca7e6b1d4beb"
+  }, {
+    "intent": "head_intent.phone_not_charging",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "phone_not_charging"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "cf9a2beb-e331-45f8-b459-d529e348aaee"
+  }, {
+    "intent": "head_intent.out_of_warranty",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_warranty"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "8810e0af-e46d-4728-8e58-9ade0539ebd2"
+  }, {
+    "intent": "head_intent.repair_status",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "repair_status"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "04eabfea-0220-4b8b-ad42-1e2fabd04e2c"
+  }, {
+    "intent": "head_intent.troubleshoot_slow_frozen_device",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "slow_frozen_device"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "d5ef71b0-057a-44e1-8a45-8f1e959d8580"
+  }, {
+    "intent": "head_intent.troubleshoot_battery_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "battery_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "8cbad2a5-590d-4fd9-b188-c1acc04a86a7"
+  }, {
+    "intent": "head_intent.data_roaming_on_off",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "data_roamingonoff"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "bae23759-de59-4bc5-be0b-2021496aa431"
+  }, {
+    "intent": "head_intent.imessage",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "iMessage"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "0cc68e83-a4d0-4f8d-9fb6-bbe4b1bbc652"
+  }, {
+    "intent": "head_intent.dispute_google_play_purchase",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "dispute_googleplay"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "aa9284ca-fc47-4eaa-b08d-c72642bdcf11"
+  }, {
+    "intent": "head_intent.create_contact_equipment",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "create_contact_equipment"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "5fd22fad-92ed-44c6-965a-6dda5107de10"
+  }, {
+    "intent": "head_intent.sms_deleted_text_message",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "sms_deletedtxtmsg"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "278a5ca2-27bd-4b56-87b6-bafd84439d1c"
+  }, {
+    "intent": "head_intent.tablet_calls_or_sms",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "tablet_calls_or_sms"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "052e0dce-38f2-4150-ae54-fa001953e2df"
+  }, {
+    "intent": "head_intent.text_record",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "text_record"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "602d81c6-24a8-4904-b894-178c649b862f"
+  }, {
+    "intent": "head_intent.mms_included_in_plan",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "mms_included_in_plan"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "25ec907a-9732-4404-ab21-a1ba825c2f33"
+  }, {
+    "intent": "head_intent.audio_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "audio_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "acd4909f-5761-48f3-adeb-2e00e3c8ef49"
+  }, {
+    "intent": "head_intent.data_conversion",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "data_conversion"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "d773c994-d4d3-4432-8eee-19246b926037"
+  }, {
+    "intent": "head_intent.do_not_call_list",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "do_not_call_list"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "8e6379aa-6535-4164-9771-35d38f50cc31"
+  }, {
+    "intent": "head_intent.google_purchases",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "google_purchases"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "6ef01e45-9cc7-4caa-9cd8-345d1bf387c1"
+  }, {
+    "intent": "head_intent.repair_process",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "repair_process"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "7b52c2c1-ea96-4ba5-9370-e9c197fc589d"
+  }, {
+    "intent": "head_intent.invalid_sim",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "invalid_SIM"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "7e9e524d-13e0-4af4-9d01-092c61269a53"
+  }, {
+    "intent": "head_intent.block_mycallerid",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "blockmy_callerid"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "b59bd650-9840-4e9c-acd9-6d905f45bc3e"
+  }, {
+    "intent": "head_intent.equipment_activate_sim",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "activate_sim"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "cc1e3b1a-9c5a-456d-9393-12fc8bddacaa"
+  }, {
+    "intent": "head_intent.data_vs_wifi",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "datavswifi"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "c05a3ce8-fc27-4623-966c-b635d79eae04"
+  }, {
+    "intent": "head_intent.cant_renew_contract",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "cant_renew_contract"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "5ab14d2f-696b-4bad-a412-d3d220ad2115"
+  }, {
+    "intent": "head_intent.equipment_update_order",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "order_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "128645dc-0135-453d-86e8-432f09a86f09"
+  }, {
+    "intent": "head_intent.equipment_unlock_device",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_unlock_device"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "9067ddde-9750-40a2-8d44-49b1d7d29782"
+  }, {
+    "intent": "head_intent.privacy_request_center",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "privacy_request_center"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "a1d7873b-ea9b-465d-9858-4a1991720032"
+  }, {
+    "intent": "head_intent.outbound_call_display",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "outbound_call_display"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "44ce38cb-58a8-4260-8286-3ce7f153de55"
+  }, {
+    "intent": "head_intent.out_of_scope_home_services",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_scope_home_services"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Cross Domain Transfer",
+    "name": "1e34ffad-58c8-40fd-8855-7d4e11b1e837"
+  }, {
+    "intent": "head_intent.out_of_scope_prepaid",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_scope_prepaid"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Cross Domain Transfer",
+    "name": "eac7a5c6-be8b-45b2-a279-5a952e27e92a"
+  }, {
+    "intent": "head_intent.out_of_scope_business",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_scope_business"
+      } ]
+    },
+    "targetFlow": "Cross Domain Transfer",
+    "name": "2017f52c-3972-4c33-9c72-a80be4a2566d"
+  }, {
+    "intent": "head_intent.out_of_scope_corporate",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "out_of_scope_corporate"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "8bcc02d0-f40c-4965-89d9-718e1dad43f6"
+  }, {
+    "intent": "head_intent.account_complaints_feedback",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_complaints_feedback"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "ca92145c-84a4-4825-9926-4bd114c61b2a"
+  }, {
+    "intent": "head_intent.giving_back",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "giving back"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "832ad37b-ec5f-40fa-be79-d916fb417b52"
+  }, {
+    "intent": "head_intent.account_status",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_status"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "c55718bf-1299-4817-b201-727e6f063faf"
+  }, {
+    "intent": "head_intent.equipment_details",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "available_phones"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "841d0347-7bb5-478b-80be-87a42d3ee72a"
+  }, {
+    "intent": "head_intent.bill_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_vague"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "first_pass",
+        "value": 0
+      } ]
+    },
+    "targetFlow": "Bill Vague",
+    "name": "68780236-91ed-4bb0-b90e-84264c473a59"
+  }, {
+    "intent": "head_intent.equipment_upgrades",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": "renew"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "e3861f3f-0427-4054-ac5c-6aca7604a854"
+  }, {
+    "intent": "head_intent.equipment_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "equipment_vague"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "0ac16c86-6868-4002-8aab-eea8d079bb8a"
+  }, {
+    "intent": "head_intent.plans_add_line",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": "activate"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "04ef7649-7629-48c2-90a5-e605a8d0a40f"
+  }, {
+    "intent": "head_intent.plans_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_vague"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetPage": "Plans Vague Disambiguation",
+    "name": "5f3f8f60-2db0-4418-8bff-ed9d9a1f0025"
+  }, {
+    "intent": "head_intent.troubleshoot_website_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "troubleshooting_website_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "7467485a-289c-4a1b-b04b-c19232d85e93"
+  }, {
+    "intent": "head_intent.donate_your_phone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "donate_your_phone"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "45c44ad5-a57b-4c40-8fe0-21eadf1afbd1"
+  }, {
+    "intent": "head_intent.health_for_good",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "health_for_good"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "93c8d1f2-b9ac-4b8a-9202-7941de29047e"
+  }, {
+    "intent": "head_intent.internet_for_good",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "internet_for_good"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "192b4818-a35a-42c3-9b9b-2ed03245b233"
+  }, {
+    "intent": "head_intent.future_friendly_foundation",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "future_friendly_foundation"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "b0415072-5a2b-4889-a2fd-60afd7f33ab1"
+  }, {
+    "intent": "head_intent.mobility_for_good",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "mobility_for_good"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "7bf03e0b-5b73-4647-8a87-a92fbe8c3bae"
+  }, {
+    "intent": "head_intent.social_impact",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "social_impact"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "6bbaf597-6e89-4be4-92e2-db436b0642a7"
+  }, {
+    "intent": "head_intent.wifi_calling_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "wifi_calling_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "07fc845b-e879-4f4a-86fb-158591075228"
+  }, {
+    "intent": "head_intent.account_update_info",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_update_info"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "432333d8-17be-49ae-9a68-c2a66663d76d"
+  }, {
+    "intent": "head_intent.no_corporate_email",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "no_corporate_email"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "f572cc09-1578-474d-947c-fd1345e4c3d8"
+  }, {
+    "intent": "head_intent.referral_program",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "referral_program"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "455a05e3-f12f-4a78-a660-3599dd8b3042"
+  }, {
+    "intent": "head_intent.bill_explanation_charge_by_amount",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can help answer questions about your bill.", "I can definitely help with any questions about your bill." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Bill Explanation",
+    "name": "29fcfcbb-7a79-468d-a912-5e05d07de3e1",
+    "description": "function capture incorrect charged amount and pass it to bill explanation flow "
+  }, {
+    "intent": "head_intent.bill_explanation",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can help answer questions about your bill.", "I can definitely help with any questions about your bill.", "I see, let's take a look at your bill." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_explanation"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Bill Explanation",
+    "name": "f2caa9cd-1b5a-4fa3-af85-de14276503d0"
+  }, {
+    "intent": "head_intent.smart_hubs",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "smart_hubs"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "3ba28c15-a1a8-41d7-a46a-07fd543323cf"
+  }, {
+    "intent": "head_intent.wireless_home_phone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "wireless_home_phone"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "4cd0ef70-5a1f-4c13-9767-6d422df0a0b7"
+  }, {
+    "intent": "head_intent.calls_from_telus",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "calls_from_telus"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "073b8c9c-30ec-408a-a4d3-4880acfbed0b"
+  }, {
+    "intent": "head_intent.chinese_support",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "chinese_support"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "18dff5e3-fdc2-41ad-b791-e5a38871cab6"
+  }, {
+    "intent": "head_intent.telus_rewards",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "telus_rewards"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "ae24ac0e-b32c-4674-aa5d-9ddc9b0b186b"
+  }, {
+    "intent": "head_intent.smart_home_security",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "smart_home_security"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Cross Domain Transfer",
+    "name": "244689a7-9a45-49f9-b9bc-5137cf4c4556"
+  }, {
+    "intent": "head_intent.marketing",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "marketing"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "6d174b45-ea44-4fbe-b8e4-d9aa6580c893"
+  }, {
+    "intent": "head_intent.toll_free_numbers",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "toll_free_ numbers"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "ad0c91d8-1fe7-4803-953f-d68ea30620cf"
+  }, {
+    "intent": "head_intent.alert_ready",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "alert_ready"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "08579799-dafc-49c7-9e2a-6bf9506da8e2"
+  }, {
+    "intent": "head_intent.accessibility",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "accessibility"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "86d0214d-e6df-4e37-b073-a5fa4bb4a8ff"
+  }, {
+    "intent": "head_intent.collect_calls",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "collect_calls"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "f5d7eea5-ccbd-4282-9dcb-4746c0d49f79"
+  }, {
+    "intent": "head_intent.bill_waive_fee",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_waive_fee"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "2bf06d8f-dd9f-4b7a-8dec-acb465919561"
+  }, {
+    "intent": "head_intent.bill_view",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "view_mobility_bill"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "2c0a2707-f489-4fa6-8384-24e2d3d33c8e"
+  }, {
+    "intent": "head_intent.account_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_vague"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetPage": "Account Vague Disambiguation",
+    "name": "8d168014-a297-4040-bf77-4bcc7cb1e659"
+  }, {
+    "intent": "head_intent.account_switch",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "account_switch"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "1314f3cc-5435-4d36-80c9-72475446d59d"
+  }, {
+    "intent": "head_intent.equipment_activate_device",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "activate_device"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "55298329-35c9-4669-acbb-65557154e16f"
+  }, {
+    "intent": "head_intent.equipment_order",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "17a6931d-f400-44b7-bafb-cd2461172c3c"
+  }, {
+    "intent": "head_intent.payment_device_payoff",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "pay_device_balance"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "bf10dc06-6633-49e8-be60-b7ff80519695"
+  }, {
+    "intent": "head_intent.payment_make",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "5a4fa5ef-ed15-4ca2-b4ba-89be38235cce"
+  }, {
+    "intent": "head_intent.payment_refund",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "credit_balance"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "71e30bc8-b3a1-4256-b3c3-511a33d54d65"
+  }, {
+    "intent": "head_intent.payment_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_vague"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetPage": "Payment Disambiguation",
+    "name": "a631d7b4-9cb2-41e7-821d-30c3e5dcabdc"
+  }, {
+    "intent": "head_intent.plans_add",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "available_plans"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "73f37f32-464e-4db4-9d47-405e59649556"
+  }, {
+    "intent": "head_intent.plans_add_feature",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plans_add_feature"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "67bdd193-dc08-4087-ba64-1c0977c117c8"
+  }, {
+    "intent": "head_intent.plans_change",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "rate_plan_change"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "39e673d6-a585-492e-a387-7d8a74a2d48f"
+  }, {
+    "intent": "head_intent.plans_promotions",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "promotions"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "663b2d55-7e02-4fd9-b93b-d22f8662b2d7"
+  }, {
+    "intent": "head_intent.plans_renew",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      }, {
+        "parameter": "activation_vs_renew",
+        "value": "renew"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "c4f63997-e922-4aa5-87b9-d4461d21cb3a"
+  }, {
+    "intent": "head_intent.disable_inapp_purchase",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "disable_in_app_purchases"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "b7a48412-6334-475c-928f-49fdc71c71b0"
+  }, {
+    "intent": "head_intent.intl_calls",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "intl_calls"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "c7672d92-0cee-48f4-bc67-6fa22cbc49d7"
+  }, {
+    "intent": "head_intent.bill_paper_billing",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_notifications"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "65db887c-9eb6-4855-ad19-0f4890cf495e"
+  }, {
+    "intent": "head_intent.account_unlink_accounts",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "unlink_account"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "d02ce547-7845-42c7-bac5-7d5f819e2c0c"
+  }, {
+    "intent": "head_intent.account_port_process",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "porting_process"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "f061b56a-84d2-476a-bfc5-3f224bf45810"
+  }, {
+    "intent": "head_intent.bill_cycle_date",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_cycle_date"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "6fab080c-57c4-46df-9745-d407150e9ce9"
+  }, {
+    "intent": "head_intent.payment_arrangements",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "5ab131d3-2572-4fd1-91d4-79eba49e1d8c"
+  }, {
+    "intent": "head_intent.plans_current_details",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "current_plan"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "c55f74f7-0ef6-4f89-a62a-acf9606acc54"
+  }, {
+    "intent": "head_intent.change_bill_cycle",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "change_bill_cycle"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "0a160b93-4941-42b1-a066-d7718d33af9e"
+  }, {
+    "intent": "head_intent.roaming_coverage",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "roaming_coverage"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "34839307-a53a-4e95-8cb5-0ac29cebb96d"
+  }, {
+    "intent": "head_intent.buy_outright",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "buy_outright"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "b2426842-1a74-49ff-a4e1-1b2694d3bc49"
+  }, {
+    "intent": "head_intent.consumer_health_products",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "consumer_health_product"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "3454a12c-8205-4889-9666-2ed85213b3bc"
+  }, {
+    "intent": "head_intent.accidental_roaming",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "accidental_roaming"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "ce3b2f5a-2b00-40c4-bb80-14970a7822db"
+  }, {
+    "intent": "head_intent.password",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "password_vague"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetPage": "Password Vague",
+    "name": "33908c29-0c49-4e98-a988-9445be62ee8c"
+  }, {
+    "intent": "head_intent.payment_history",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_history"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "9ae23543-21ff-4c78-bd11-015f95ddf700"
+  }, {
+    "intent": "head_intent.koodo_inquiries",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "koodo_inquiries"
+      } ]
+    },
+    "targetFlow": "Cross Domain Transfer",
+    "name": "2a521903-d17a-4a7a-be6c-fd1d3e358fde"
+  }, {
+    "intent": "head_intent.hours_of_operation",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "hours_of_operation"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "6aad772a-9740-41ee-bb04-f014222b7ab6"
+  }, {
+    "intent": "head_intent.payment_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "db56ae1b-916f-46b9-886b-9e54af2f6264"
+  }, {
+    "intent": "head_intent.bring_it_back_returns",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bring_it_back_returns"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "426e5189-ce44-4c10-b403-24aedbb0c0a5"
+  }, {
+    "intent": "supplemental.choose_another_number",
+    "condition": "$session.params.route = \"bill_amount_due\" OR $session.params.route = \"bill_due_date\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "phone_number",
+        "value": null
+      }, {
+        "parameter": "phone_number_counter",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "6ace00ce-5a96-4dab-8893-22250c2efff8"
+  }, {
+    "intent": "head_intent.easy_payment_info",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "easy_payment"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "380ae0d9-9114-4129-ad64-dbae2f6b92d4"
+  }, {
+    "intent": "head_intent.equipment_device_balance",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "easy_payment_balance"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "1dd2565b-34ba-4079-9b95-54b8486b015e"
+  }, {
+    "intent": "supplemental.choose_another_number",
+    "condition": "$session.params.route = \"account_status\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Account Management",
+    "name": "21bc14eb-c248-4a92-a47d-aa1b8d395cce"
+  }, {
+    "intent": "supplemental.choose_another_number",
+    "condition": "$session.params.route = \"find_account_number\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Account Management",
+    "name": "081c4d99-a555-4e8f-8205-a97e8d62f65c"
+  }, {
+    "intent": "supplemental.choose_another_number",
+    "condition": "$session.params.route = \"rate_plan_change\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "c729b454-ab4a-4eb1-96a3-74a5f095c586"
+  }, {
+    "intent": "supplemental.choose_another_number",
+    "condition": "$session.params.route = \"data_not_working\" AND $session.params.data_issues = \"resolved\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "7a0aed40-096c-48ba-9a03-48e9c71107da"
+  }, {
+    "intent": "head_intent.stream_plus",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "stream_plus"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "3624ef21-141c-4460-b175-25bef6d71a53"
+  }, {
+    "intent": "head_intent.troubleshoot_vague",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "troubleshoot_vague"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "$flow.agent_attempt_troubleshoot_vague",
+        "value": 0
+      } ]
+    },
+    "targetPage": "Troubleshoot Vague",
+    "name": "cfd934ce-8997-4698-bcad-ada926b23ea0"
+  }, {
+    "intent": "supplemental.wait_time_agent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "At this time, I won't be able to give you a wait time. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "However once you are transferred to an agent, you will see where you are in the queue to chat with an agent. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pour le moment, je ne peux pas vous donner le temps d'attente." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Cependant, une fois que vous allez être transféré, vous verrez où vous vous trouvez dans la file d'attente pour discuter avec un agent." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "2164cc37-cff7-4706-9e1f-ba2feb063ad5"
+  }, {
+    "intent": "head_intent.eversafe",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "eversafe"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "00da06ef-e9ae-458a-a040-376aa6ed1045"
+  }, {
+    "intent": "head_intent.tou_tv",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "tou_tv"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "f8c7e53d-bd14-454e-8a6c-b605fdeb612a"
+  }, {
+    "intent": "head_intent.watch_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "watch_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "72a11e4b-7f14-4a4d-8922-1f679333b09b"
+  }, {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "is_repeat_prompted",
+        "value": null
+      } ]
+    },
+    "targetPage": "Repeat",
+    "name": "e1d5dab6-3a7e-4151-9ebc-1c700003456c"
+  }, {
+    "intent": "head_intent.remove_extended_warranty",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "remove_extended_warranty"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      }, {
+        "parameter": "handoff_by_design",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "d6c7e24f-9f00-4df9-92e4-e15a3322209c"
+  }, {
+    "intent": "head_intent.plan_change_fee",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "plan_change_fee"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "f0b6ae7d-52fb-438e-946f-973c8aa0b07b"
+  }, {
+    "intent": "head_intent.role_access",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "role access"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      } ]
+    },
+    "targetFlow": "Online Profile",
+    "name": "7f26dddf-730d-471a-a620-06e8b1508bdd"
+  }, {
+    "intent": "head_intent.find_my_phone",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "find_my_phone"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "8b776f28-72e3-4b0e-a61a-35bea6e931ea"
+  }, {
+    "intent": "head_intent.troubleshooting_stream_plus",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "stream_issues"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "623d64e9-b1e2-465e-b048-53265700286e"
+  }, {
+    "intent": "supplemental.change_sms_phone_number",
+    "condition": "$session.params.force_sms = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mandatory_ss_change_num",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "3390c816-2241-49f5-999a-2caa50d78fb0"
+  }, {
+    "intent": "head_intent.bring_it_back_amount",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "BIB_Amount"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "2"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "b34b3df7-318e-428f-9385-24f859656578"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "condition": "$session.params.sms_template != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.page_summary = null",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, I can send a text about the last topic." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, je peux envoyer un message texte lié au dernier sujet." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.page_summary != null",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, I can send a text about the last topic on $session.params.page_summary." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, je peux envoyer un message texte lié au dernier sujet sur $session.params.page_summaryfr." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "4bee6da5-be49-44c3-999b-45190aec807b"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "condition": "$session.params.sms_template = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I can't seem to find a completed request for a text message." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Please repeat your question on the topic of the text you are wanting, and remember to say yes when asking if you would like to receive a text." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Veuillez répéter votre question en lien avec le texto que vous souhaitez recevoir, et n'oubliez pas de dire oui lorsque vous demandez si vous souhaitez recevoir un message texte." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "c2d3ed66-80fa-4f90-bcbe-bb3677f81923"
+  }, {
+    "intent": "supplemental.device_android",
+    "condition": "$session.params.from_flow = \"Billing\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_device_android"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "227fe48a-7284-48db-9bbe-5820690c0d56"
+  }, {
+    "intent": "supplemental.device_iphone",
+    "condition": "$session.params.from_flow = \"Billing\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_device_iphone"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "5288dd4a-4a3a-43dc-b0fe-eb5e5a7faedd"
+  }, {
+    "intent": "supplemental.device_android",
+    "condition": "$session.params.from_flow = \"Equipment\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_device_android"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "3d1b1838-7b97-4172-97df-0e12ab5b1f7b"
+  }, {
+    "intent": "supplemental.device_iphone",
+    "condition": "$session.params.from_flow = \"Equipment\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_device_iphone"
+      } ]
+    },
+    "targetFlow": "Equipment",
+    "name": "7ca0eb47-bf06-4810-8da2-a98738b8dd40"
+  }, {
+    "intent": "supplemental.device_android",
+    "condition": "$session.params.from_flow = \"Troubleshooting\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_device_android"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "9ab1eba8-eb75-42bf-bf6a-0c3b47762e26"
+  }, {
+    "intent": "supplemental.device_iphone",
+    "condition": "$session.params.from_flow = \"Troubleshooting\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "supp_device_iphone"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "3d814794-d9ab-446e-8b44-c37b985e1bf0"
+  }, {
+    "intent": "head_intent.plans_apple_live_vm",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "applelivevm"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "663a9b11-d0bd-4ec2-b3aa-0295b894836a"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_try = null AND ($session.params.last_page = null OR $session.params.last_page = \"nbs late payment forgiveness\")",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To avoid a transfer and ensure I get you to the right team member, please tell me the specific reason for your inquiry today.", "To prevent unwanted transfers to the wrong department, please let me know the exact reason for your call today.", "To minimize unwanted transfers and get you to the right team member, please share the specific reason for your inquiry." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "You can say something like: how to pay my bill, or, I am having issues with my WiFi." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pour éviter un transfert et vous assurer d'être mis en contact avec le bon membre de l'équipe, veuillez m'indiquer la raison précise de votre demande aujourd'hui.", "Pour éviter les transferts non souhaités vers le mauvais service, veuillez m'indiquer la raison exacte de votre appel aujourd'hui.", "Pour minimiser les mauvais transferts et vous mettre en contact avec le bon membre de l'équipe, veuillez me faire part de la raison précise de votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Vous pouvez dire quelque chose comme : comment payer ma facture, ou, j'ai des problèmes avec mon Wi-Fi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "agent_try",
+        "value": "1"
+      }, {
+        "parameter": "humanagent_attempt",
+        "value": 0
+      } ]
+    },
+    "name": "aaec5515-a696-4f2e-810f-9347dfd33342"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_try = \"1\" AND ($session.params.last_page = null OR $session.params.last_page = \"nbs late payment forgiveness\")",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To reduce your wait time, please tell me the specific reason for your call today.", "To decrease your waiting time, please let me know the specific reason for your call.", "To expedite your assistance and reduce your waiting time, please tell me the exact reason for your call." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "I can help with various topics, like how to check plans, or help with the device balance." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pour réduire le temps d'attente, veuillez m'indiquer la raison spécifique de votre appel aujourd'hui.", "Pour réduire votre temps d'attente, veuillez m'indiquer la raison précise de votre appel.\n", "Pour accélérer votre assistance et réduire votre temps d'attente, veuillez m'indiquer la raison exacte de votre appel." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je peux vous aider sur différents sujets, comme la vérification des forfaits ou le solde de l'appareil." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "agent_try",
+        "value": "2"
+      }, {
+        "parameter": "humanagent_attempt",
+        "value": "$sys.func.ADD($session.params.humanagent_attempt, 1)"
+      } ]
+    },
+    "name": "0c813136-983d-4d35-8f22-46efbcde7547"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_try = \"2\" AND ($session.params.last_page = null OR $session.params.last_page = \"nbs late payment forgiveness\")",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "agent_try",
+        "value": "3"
+      } ]
+    },
+    "targetPage": "Agent Type",
+    "name": "39089aa9-9849-4dbc-af69-2b75a13427d0"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.async_intent_list : $session.params.last_page",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Async agent validation",
+    "name": "90c73ef6-76a3-4ffd-b6cd-d4f63a610926"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.last_page != null AND $session.params.last_page != \"GBAS\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transferbasedon_lastpage",
+        "value": "true"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "($session.params.routeDetails.province = \"NB\" OR $session.params.routeDetails.province = \"NF\" OR $session.params.routeDetails.province = \"NS\" OR $session.params.routeDetails.province = \"PE\") AND $session.params.app_first_pages : $session.params.last_page AND $session.params.app_first_poc = true"
+        }, {
+          "condition": "$session.params.mandatory_ss = \"true\""
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sure, let me get you to a team member." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Bien sûr, laissez-moi vous mettre en contact avec un membre de l'équipe." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "9ae5048e-a147-4032-87ec-655e9f177da0"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_attempt = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize, but I can't connect you to the right team member without understanding the reason behind your call. Please let me know the specific type of support you need.", "To connect you with a right team member, I need to know the specific reason for your call today.", "I'm unable to connect you with a right team member without knowing the specific purpose of your call today.", "Without knowing the specific reason for your call, I won't be able to transfer you to the right  team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "You can say something like: how to pay my bill, or, I am having issues with my WiFi." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je m'excuse, mais je ne peux pas vous mettre en relation avec le bon membre de l'équipe sans comprendre la raison de votre appel. S'il vous plaît, veuillez me faire part du type de support spécifique dont vous avez besoin.", "Pour éviter un transfert et vous assurer d'être mis en contact avec le bon membre de l'équipe, veuillez m'indiquer la raison précise de votre demande aujourd'hui. ", "Pour éviter les transferts non souhaités vers le mauvais service, veuillez m'indiquer la raison exacte de votre appel aujourd'hui.\n", "Pour minimiser les mauvais transferts et vous mettre en contact avec le bon membre de l'équipe, veuillez me faire part de la raison précise de votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Vous pouvez dire quelque chose comme : comment payer ma facture, ou, j'ai des problèmes avec mon Wi-Fi." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "gtbas"
+      }, {
+        "parameter": "last_page",
+        "value": "GBAS"
+      }, {
+        "parameter": "agent_attempt",
+        "value": "1"
+      } ]
+    },
+    "name": "400a3e7e-5f50-47f9-baee-3f51a41f49ea"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_attempt = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "agent_attempt",
+        "value": "2"
+      } ]
+    },
+    "targetPage": "Confirm Agent Type",
+    "name": "42dcc09d-f021-49b4-914a-681923c43fee"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_request = \"fixmobile\" AND $session.params.agent_attempt = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sur, il me fera plaisir de vous mettre en contact avec un membre de l’équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "agent_attempt",
+        "value": "3"
+      }, {
+        "parameter": "last_page",
+        "value": "GBAS fixmobile"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d48e0c73-8ea5-4191-95e6-cc31e843b36e"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.agent_request = \"acctmgmt\" AND $session.params.agent_attempt = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sur, il me fera plaisir de vous mettre en contact avec un membre de l’équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "agent_attempt",
+        "value": "3"
+      }, {
+        "parameter": "last_page",
+        "value": "GBAS acctmgmt"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "250ce855-f961-4b16-9f57-2f8f825315d9"
+  }, {
+    "intent": "head_intent.equipment_new_phone_release",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "3"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "7929cbc3-9693-40ef-acf8-471b3a712fd2"
+  }, {
+    "intent": "head_intent.watch_new_line",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "watch_line"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "1"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "792e0281-da00-4f60-8d50-6a77eb62c236"
+  }, {
+    "intent": "mock_head_intent.sal_test",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "In mock head intent." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "area_code",
+        "value": "709"
+      }, {
+        "parameter": "isEPP",
+        "value": "false"
+      }, {
+        "parameter": "conversation.language",
+        "value": "en-US"
+      }, {
+        "parameter": "device_type",
+        "value": "SMARTPHONE"
+      }, {
+        "parameter": "routeDetails.province",
+        "value": "NB"
+      }, {
+        "parameter": "lokesh_testing",
+        "value": true
+      }, {
+        "parameter": "async_intent_list",
+        "value": "Discount expiring,Billing while roaming,Missing credit,Change Phone Number,Change Bill Address,Change Email Address,Account name change,Change Phone Number SMS,Account update info,Change Phone Number,Change Phone Number online or app"
+      }, {
+        "parameter": "app_first_poc",
+        "value": true
+      }, {
+        "parameter": "targetAccount.isSelfserveMandatory",
+        "value": false
+      } ]
+    },
+    "targetPage": "Start Page",
+    "name": "f80482a5-f608-4303-9837-298d6d5620a6"
+  }, {
+    "intent": "head_intent.sms_reception_issues",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "sms_reception_issues"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "7d6636f6-56b9-403a-9a7a-eec450e92a55"
+  }, {
+    "intent": "head_intent.preauthorized_payment_setup",
+    "condition": "$session.params.routeDetails.province = \"ON\" AND $session.params.sal_testing = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "pre-authorized_payments"
+      } ]
+    },
+    "targetPage": "Ontario simplification POC",
+    "name": "b1562178-c137-4278-b83d-b93606fb95a5"
+  }, {
+    "intent": "head_intent.preauthorized_payment_removal",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "preauth_payment"
+      }, {
+        "parameter": "payment_method_action",
+        "value": "remove"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "327e5447-6c52-47c1-9888-29fcffa98875"
+  }, {
+    "intent": "head_intent.preauthorized_payment_update",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "preauth_payment"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      }, {
+        "parameter": "payment_method_action",
+        "value": "update"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "d3bfd2bd-e8c9-45b1-a9ee-35a06f9ccf2e"
+  }, {
+    "intent": "head_intent.preauthorized_payment_setup",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "preauth_payment"
+      }, {
+        "parameter": "intent_exception_segment",
+        "value": "4"
+      }, {
+        "parameter": "payment_method_action",
+        "value": "add"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "c152a6c7-c8dd-4cce-a1cc-10f781b21dbe"
+  }, {
+    "intent": "head_intent.preauthorized_payment_retrieve",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "preauth_payment"
+      }, {
+        "parameter": "payment_method_action",
+        "value": "retrieve"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "52bdc7a6-a95d-408a-b4cc-7703035e6039"
+  }, {
+    "intent": "head_intent.plans_available",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "aam_plans_available"
+      }, {
+        "parameter": "from_flow",
+        "value": "Default Start Flow"
+      } ]
+    },
+    "targetFlow": "Plans Available",
+    "name": "17b241b7-d93c-43b0-bca0-4ada7f379cd6"
+  }, {
+    "intent": "head_intent.troubleshooting_install_tos",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "troubleshooting_install_tos"
+      } ]
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "6ac5e2ac-0b9a-4bb8-befb-9c2301a56c97"
+  }, {
+    "condition": "$session.params.route != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dsfstart_retrycnt",
+        "value": null
+      }, {
+        "parameter": "old_route",
+        "value": "$session.params.route"
+      }, {
+        "parameter": "route",
+        "value": null
+      } ]
+    },
+    "name": "ad11c56e-4b1a-4575-95ac-b799898c5ed1"
+  }, {
+    "condition": "$session.params.dsfstart_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dsfstart_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "d25dc3f8-6d37-41c4-be03-3b0a3aa0ea67"
+  }, {
+    "condition": "$session.params.no_match = \"true\" AND $session.params.targetAccount.isCollection = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collections check",
+    "name": "9de7f8d6-4273-45be-ba67-fa668a6e921a"
+  }, {
+    "condition": "$session.params.no_match = \"true\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "no_match",
+        "value": null
+      }, {
+        "parameter": "dsfstart_retrycnt",
+        "value": 3
+      } ]
+    },
+    "name": "1727e966-b357-49b6-9a66-7f7f69cf6660"
+  }, {
+    "condition": "$session.params.from_flow = \"online profile\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Switch login problems",
+    "name": "19a5f111-e58f-4d04-9fca-a58abe241152"
+  }, {
+    "condition": "$session.params.from_flow = \"OnlineProfile\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Switch login problems",
+    "name": "f17cadf8-e99e-49fa-bdea-0ee90e083eaf"
+  }, {
+    "condition": "$session.params.route = pmt_vague",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Payment Disambiguation",
+    "name": "7e021916-fde6-4d21-9959-9a2b44c7303e"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Je ne crois pas avoir bien saisi. Pouvez-vous répéter?", "Je n’ai pas compris ce que vous avez dit. Pouvez-vous répéter?", "Désolé, pourriez-vous répéter?", "Désolé, pouvez-vous répéter?", "Pouvez-vous répéter cela encore une fois?", "Désolé, je ne crois pas avoir bien saisi. Pouvez-vous reformuler votre phrase?", "Désolé, pouvez-vous répéter?", "Pouvez-vous répéter une autre fois?", "Pardon? Pouvez-vous répéter?", "Pouvez-vous redire cela encore une fois?", "Je n'ai pas compris. Pouvez-vous répéter?", "Je n'ai pas compris. Pouvez-vous redire cela?" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en-ca"
+      }, {
+        "text": {
+          "text": [ "J'ai du mal à comprendre cette question.", "J'ai mal compris votre demande.", "Je n'ai pas saisi ce que vous avez dit.", "Je crois que je ne vous suis pas.", "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "name": "6b1e25ac-a1de-47d5-828d-9d76c70abefe"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en-ca"
+      }, {
+        "text": {
+          "text": [ "J'ai du mal à comprendre cette question.", "J'ai mal compris votre demande.", "Je n'ai pas saisi ce que vous avez dit.", "Je crois que je ne vous suis pas.", "Je ne comprends pas de quoi vous me parlez." ]
+        },
+        "languageCode": "fr"
+      } ]
+    },
+    "name": "331e94ed-9a12-4cb9-89bc-d12c94abff0d"
+  }, {
+    "targetPage": "No match 1",
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+    
+    },
+    "name": "e5790e4c-cf5a-40af-bd8b-3e1f39053049"
+  }, {
+    "targetPage": "No match 2",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+    
+    },
+    "name": "efb475c9-1614-4c60-8cf1-6ac7b40ca8f7"
+  }, {
+    "targetPage": "No match 3",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+    
+    },
+    "name": "23f07b78-3fb6-4c55-b6ab-c997c0642e53"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't hear that. Can you repeat that?", "Sorry, I didn't catch that. Can you repeat your question?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je n'ai pas entendu. Pouvez-vous répéter?", "Désolé, je n'ai pas compris. Pouvez-vous répéter votre question?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "14ac8d27-adae-4f7c-86f5-ee0f2831d68f"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't hear that. Can you repeat that?", "Sorry, I didn't catch that. Can you repeat your question?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je n'ai pas entendu. Pouvez-vous répéter?", "Désolé, je n'ai pas compris. Pouvez-vous répéter votre question?" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "name": "965eb7ca-2289-4a63-9092-50844b5976cc"
+  }, {
+    "targetPage": "No-input",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dsfstart_retrycnt",
+        "value": "$sys.func.ADD($session.params.dsfstart_retrycnt ,1)"
+      } ]
+    },
+    "name": "5f73d375-cc0b-4a65-844c-60ff9742dc99"
+  }, {
+    "targetPage": "No-input",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dsfstart_retrycnt",
+        "value": 2
+      } ]
+    },
+    "name": "3976cc11-85a7-491a-a710-462f4a83214e"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_CUSTOM",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true,
+    "speechSettings": {
+      "endpointerSensitivity": 70,
+      "noSpeechTimeout": {
+        "seconds": 10
+      },
+      "models": [ {
+        "key": "en",
+        "value": "phone_call"
+      }, {
+        "key": "fr-ca",
+        "value": "phone_call"
+      } ]
+    }
+  },
+  "transitionRouteGroups": [ "Small talk" ]
+}

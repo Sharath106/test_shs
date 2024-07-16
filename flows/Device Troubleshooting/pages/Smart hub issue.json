@@ -1,0 +1,373 @@
+{
+  "name": "0ca3cf78-0943-4f91-8d00-e1de8f4186bc",
+  "displayName": "Smart hub issue",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_smart_hub_issues",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur la façon de résoudre ce problème?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to to receive a text message with more information on troubleshooting?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ec1775f3-1b1a-40fa-83e2-6ea9006e9c69"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Dites envoyez-moi le message texte, ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say or press 9. For a team member to help, say or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "68ca2527-3877-476b-ab83-5953e7b58556"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "53c5e411-47d9-43d3-b3cc-7709f8a4f601"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur la façon de résoudre ce problème?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to to receive a text message with more information on troubleshooting?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d921e7c6-d39d-4f63-9bb5-86150610fd2c"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Dites envoyez-moi le message texte, ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say or press 9. For a team member to help, say or press 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "346751f5-fb33-42f6-b090-b3968f8d2970"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "4206077d-1e21-41c8-a8c9-410d1b857dc1"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Smart hub issue"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.smarthubissue_retrycnt = null OR $session.params.smarthubissue_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "J'ai quelques informations sur la façon de dépanner votre terminal intelligent." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur la façon de résoudre ce problème?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "I have some information on how to troubleshoot your smurt hub." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like to to receive a text message with more information?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.smarthubissue_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous que j'envoie un message texte avec plus d'informations sur la façon de résoudre ce problème?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like to to receive a text message with more information on troubleshooting?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.smarthubissue_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Dites envoyez-moi le message texte, ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To receive a text message, say or press 9. For a team member to help, say or press 0." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319006Y"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900E3"
+      }, {
+        "parameter": "smarthubissue_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_smart_hub_issues",
+        "value": null
+      } ]
+    },
+    "name": "7d623a44-880b-4251-9ea3-919d18413660"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthubissue_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_smart_hub_issues",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "c197151c-1559-43b5-b39e-fb47d4fde09f"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthubissue_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_smart_hub_issues",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "18e7081b-7949-403e-ae51-5f0ab34d35e6"
+  }, {
+    "condition": "$session.params.dtmf_smart_hub_issues = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN7319006Y"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900E3"
+      }, {
+        "parameter": "smarthubissue_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_smart_hub_issues",
+        "value": null
+      } ]
+    },
+    "name": "7824f662-3aa0-4444-ad07-b74308f6932b"
+  }, {
+    "condition": "$session.params.dtmf_smart_hub_issues = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "smarthubissue_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_smart_hub_issues",
+        "value": null
+      } ]
+    },
+    "name": "b2f3078b-7a7d-4f1d-88fc-f75e7ef10b6e"
+  }, {
+    "condition": "$session.params.smarthubissue_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthubissue_retrycnt",
+        "value": null
+      } ]
+    },
+    "name": "cecb3852-b89e-4690-80f6-b80699c16251"
+  }, {
+    "condition": "$session.params.smarthubissue_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "406889fe-293f-445e-b81e-25fa2892d220"
+  }, {
+    "condition": "$session.params.dtmf_smart_hub_issues = 1 OR $session.params.dtmf_smart_hub_issues = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_smart_hub_issues",
+        "value": null
+      }, {
+        "parameter": "smarthubissue_retrycnt",
+        "value": "$sys.func.ADD($session.params.smarthubissue_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "cc29cfc4-a1bd-4cf4-ba82-91ef0ff56f1a"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "smarthubissue_retrycnt",
+        "value": "$sys.func.ADD($session.params.smarthubissue_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.smarthubissue_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.smarthubissue_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "bb42cf1c-275f-4deb-b53a-131904119059"
+  } ]
+}

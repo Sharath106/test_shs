@@ -1,0 +1,467 @@
+{
+  "name": "38c1cd37-7458-421d-86ea-939aab4545bf",
+  "displayName": "Payment Disambiguation",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_payment_disambiguation",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-3-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't catch that.", "I'm sorry, I didn't understand that. ", "Sorry, I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Please say how I can help you with your account. I can help you make a payment, report a payment, or set up payment arrangements and more. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Veuillez indiquer comment je peux vous aider avec votre compte. Je peux vous aider à effectuer un paiement, à déclarer un paiement ou à configurer des ententes de paiement et bien plus encore." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "2e0766f3-f1ef-45f8-9b42-27ab43eea448"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I still didn't get that.", "I still didn't understand. ", "I'm still not sure I got this." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Say make a payment, or press 1, report a payment, or press 2, set up payment arrangement, or press 3. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne crois toujours pas avoir compris.", "Je ne comprends toujours pas bien.", "Je crois que je ne vous suis pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Dites effectuer un paiement, ou faites le 1, signaler un paiement, ou faites le 2, configurer des ententes de paiement ou faites le 3." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "2f8226bf-f37b-4d5d-9622-89c607908fff"
+        }, {
+          "targetPage": "No match 3",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "f4027c18-b4b2-4640-ac61-767c4142beb2"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't hear you.", "Sorry, I didn't catch that.", "Sorry, I didn't hear that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Please say how I can help you with your account. I can help you make a payment, report a payment, or set up payment arrangements and more. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Veuillez indiquer comment je peux vous aider avec votre compte. Je peux vous aider à effectuer un paiement, à déclarer un paiement ou à configurer des ententes de paiement et bien plus encore." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "a9d78907-19b6-4c57-9a03-69234a97d23e"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I still didn't get that.", "I still don't hear you.", "I still didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Say make a payment, or press 1, report a payment, or press 2, set up payment arrangement, or press 3. " ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je ne crois toujours pas avoir compris.", "Je ne comprends toujours pas bien.", "Je crois que je ne vous suis pas." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Dites effectuer un paiement, ou faites le 1, signaler un paiement, ou faites le 2, configurer des ententes de paiement ou faites le 3." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "73db913e-63d5-4ac1-9a64-58ec288f8430"
+        }, {
+          "targetPage": "No match 3",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "760a8c22-7e4b-472e-96d1-4f7517546746"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Payment Disambiguation"
+    }, {
+      "parameter": "route",
+      "value": null
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.pymtdisambiguation_retrycnt = null OR $session.params.pymtdisambiguation_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Please tell me in a few words how I can help you with your payment today." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "En quelques mots, dites-moi comment je peux vous aider avec votre paiement." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.pymtdisambiguation_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Can you please tell me in more detail how I can assist you with your payment? For example, I can help you make a payment, report a payment or make a payment arrangement." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Pouvez-vous me donner plus de détails sur comment je peux vous aider avec votre paiement? Par exemple, je peux vous aider à faire un paiement, à signaler un paiement ou à faire une entente de paiement." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.pymtdisambiguation_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "I need more information. Please, try saying things like make a payment, report a payment or make a payment arrangement." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "J'ai besoin d'un peu plus d'information, essayez de dire quelque chose comme faire un paiement, signaler un paiement ou faire une entente de paiement." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.payment_arrangements",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "c0618290-eb92-47d0-ac99-bf06f989978f"
+  }, {
+    "intent": "head_intent.preauthorized_payment_setup",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "preauth_payment"
+      }, {
+        "parameter": "payment_method_action",
+        "value": "add"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "4df98c6d-3539-4957-8c67-08859ede4f5e"
+  }, {
+    "intent": "head_intent.payment_device_payoff",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "pay_device_balance"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "3c759f9c-1089-4b09-9f5b-8cb8e8c51273"
+  }, {
+    "intent": "head_intent.bill_due_date",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_due_date"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "4440297d-51a3-4980-b4e8-a17ec5732b14"
+  }, {
+    "intent": "head_intent.payment_made",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_made"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "ad230436-85a6-4cc8-afaa-aa6d93e77207"
+  }, {
+    "intent": "head_intent.payment_make",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "4584fe9c-b8f5-41e8-a382-a1b8b134e9ac"
+  }, {
+    "intent": "head_intent.preauthorized_payment_update",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "preauth_payment"
+      }, {
+        "parameter": "payment_method_action",
+        "value": "update"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "3f5504da-d519-4e65-88c2-5ab6ba039016"
+  }, {
+    "intent": "head_intent.payment_mistake",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_mistake"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "fd8d8244-dc58-442c-b092-d64dfd780bd9"
+  }, {
+    "intent": "head_intent.payment_posting_time",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "pymtposting_time"
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "38c7ab69-b656-41d6-9ecd-ceb2f7fe5cb5"
+  }, {
+    "intent": "head_intent.payment_refund",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "credit_balance"
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "fdce6c63-d987-4108-88be-21c0f2202e70"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me get you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sur, il me fera plaisir de vous mettre en contact avec un membre de l’équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "1fe4c4a0-448a-41d6-9808-0b6289816878"
+  }, {
+    "condition": "$session.params.dtmf_payment_disambiguation = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, let me get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Bien sur, il me fera plaisir de vous mettre en contact avec un membre de l’équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "7195fe4d-816c-4c4a-81ce-6a7e4998e43b"
+  }, {
+    "condition": "$session.params.pymtdisambiguation_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pymtdisambiguation_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "f03e4e2a-6d8a-469b-8cb4-a0beb9f7f45d"
+  }, {
+    "condition": "$session.params.pymtdisambiguation_retrycnt != null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pymtdisambiguation_retrycnt",
+        "value": "$sys.func.ADD($session.params.pymtdisambiguation_retrycnt,1)"
+      } ]
+    },
+    "name": "5b5c75a6-db8a-4a06-98f9-b9f496469d4d"
+  }, {
+    "condition": "$session.params.pymtdisambiguation_retrycnt \u003e 3",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pymtdisambiguation_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No match 2",
+    "name": "d4703c76-8a91-43e8-8b32-abe8f0465683"
+  }, {
+    "condition": "$session.params.dtmf_payment_disambiguation = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      }, {
+        "parameter": "dtmf_payment_disambiguation",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "6a19fa77-2bbe-4fd1-81b2-a03e4fe316e2"
+  }, {
+    "condition": "$session.params.dtmf_payment_disambiguation = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_made"
+      }, {
+        "parameter": "dtmf_payment_disambiguation",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "a75e62c3-c891-40e4-a7f6-4ef5aff05851"
+  }, {
+    "condition": "$session.params.dtmf_payment_disambiguation = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      }, {
+        "parameter": "dtmf_payment_disambiguation",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "b3669ceb-5f65-4f83-ac37-c47ca1c58cd6"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "pymtdisambiguation_retrycnt",
+        "value": "$sys.func.ADD($session.params.pymtdisambiguation_retrycnt ,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.pymtdisambiguation_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.pymtdisambiguation_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "4053162c-738b-42f9-b5e0-afe576e7d625"
+  } ]
+}

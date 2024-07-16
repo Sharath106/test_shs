@@ -1,0 +1,376 @@
+{
+  "name": "3eb3fba2-1eb6-497b-80f9-8a4d7a843548",
+  "displayName": "Calling issues Mobile cant make or receive",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_cant_call",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous recevoir un message texte expliquant comment résoudre ce problème?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text on how to troubleshoot further?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "bad0b5e6-4b61-4074-bede-83f77830b3ad"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Dites envoyez-moi le message texte ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message for more information, say or press 9. For a team member, 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "dc4dcc71-2d5e-43ab-a04d-f60d5289270e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "6bbb559e-fc5b-461e-b05a-09c65de239ed"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous recevoir un message texte expliquant comment résoudre ce problème?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like to receive a text on how to troubleshoot further?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "76a11c6b-71ef-4590-a1dd-d13bf7f47c41"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Dites envoyez-moi le message texte ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message for more information, say or press 9. For a team member, 0." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "dc4e514a-9a00-42d8-a38d-8929f6c1bbf0"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "c74e3985-8546-44de-8a15-bb67f05e2a0a"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Calling issues Mobile cant make or receive"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.calling_retrycnt = null OR $session.params.calling_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Ok, j'ai compris. Vous ne pouvez ni passer ni recevoir d'appels. J'ai quelques informations pour vous aider." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous recevoir un message texte expliquant comment résoudre ce problème?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Ok, got it. I have some information to help with not being able to make or receive calls." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like to receive a text on how to troubleshoot further?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.calling_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Aimeriez-vous recevoir un message texte expliquant comment résoudre ce problème?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Would you like to receive a text on how to troubleshoot further?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.calling_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Dites envoyez-moi le message texte ou faites le 9. Membre de l'équipe, ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "To receive a text message for more information, say or press 9. For a team member, 0." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900ST"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190144"
+      }, {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_cant_call",
+        "value": null
+      } ]
+    },
+    "name": "81d11f93-492f-4524-9e96-bd4afeae1319"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_cant_call",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "fefda641-44b8-42f9-97b8-879dbeadfd2d"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_cant_call",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "99bbb186-253e-4a0c-8004-ceaf38426b6b"
+  }, {
+    "condition": "$session.params.dtmf_cant_call = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900ST"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN73190144"
+      }, {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_cant_call",
+        "value": null
+      } ]
+    },
+    "name": "daf10c83-a4cf-45cb-9b2e-eef5f8a67b0e"
+  }, {
+    "condition": "$session.params.dtmf_cant_call = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_cant_call",
+        "value": null
+      } ]
+    },
+    "name": "5f55eb87-b634-43f4-b1b4-385dfc11ebe6"
+  }, {
+    "condition": "$session.params.calling_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "092412a0-abaf-4e79-b79a-3dbda80e583e"
+  }, {
+    "condition": "$session.params.calling_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "ec8c772f-0371-4575-9e60-89c2a59c4549"
+  }, {
+    "condition": "$session.params.dtmf_cant_call = 1 OR $session.params.dtmf_cant_call = 3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_cant_call",
+        "value": null
+      }, {
+        "parameter": "calling_retrycnt",
+        "value": "$sys.func.ADD($session.params.calling_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "ec30a5bb-10bc-438b-a6d7-f6ab9861db85"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": "$sys.func.ADD($session.params.calling_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.calling_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.calling_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "26167697-c935-48e2-9a97-132e9633e44d"
+  } ]
+}

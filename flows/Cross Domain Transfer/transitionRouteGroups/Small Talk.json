@@ -1,0 +1,12 @@
+{
+  "name": "695f7439-4deb-4a73-abf7-aa564d2e1e2b",
+  "displayName": "Small Talk",
+  "transitionRoutes": [ {
+    "intent": "small_talk.repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Repeat",
+    "name": "1e0abd7e-0e5c-47e8-8ab4-055ac4a52b5a"
+  } ]
+}

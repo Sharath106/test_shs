@@ -1,0 +1,346 @@
+{
+  "name": "8cba264d-4d51-477c-9f04-188d53897ded",
+  "displayName": "Calling issues Mobile Audio check",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_audio_check",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous des problèmes Audio?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you having Audio issues?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c5f098a9-c4b9-44bd-9ec2-5146c084d2eb"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez des problèmes audio avec votre téléphone, dites oui ou faites le 1. Si vous n’avez pas de problèmes audio, dites non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For Audio issues with your phone, say or press 1. For me to look at the next set of checks, 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "42133ac2-84de-4629-9dbb-2dd09022476e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "170152e3-b1ad-4edf-86c6-2c6d70aefca5"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je ne comprends pas.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous des problèmes Audio?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you having Audio issues?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "85b054ba-6eb7-40bd-847f-2376b134bfc9"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Si vous avez des problèmes audio avec votre téléphone, dites oui ou faites le 1. Si vous n’avez pas de problèmes audio, dites non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "For Audio issues with your phone, say or press 1. For me to look at the next set of checks, 2." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a14de199-f257-4c27-a40c-5e78b1095ca7"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "7c3766b9-462f-484c-b0d4-41fd33eb2737"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Calling issues Mobile Audio check"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.calling_retrycnt = null OR $session.params.calling_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Des problèmes Audio peuvent survenir lorsque vous appelez quelqu'un et qu'il ne peut pas vous entendre ou que vous ne pouvez pas l'entendre. Il peut s'agir de problèmes de haut-parleurs ou même de problèmes d'écouteurs." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Juste pour confirmer, avez-vous des problèmes Audio?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Audio issues are usually when a call is made, and either they can't hear you or you can't hear them. It could be issues with the speaker or extras like earphones." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.calling_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Avez-vous des problèmes Audio?" ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Are you having Audio issues?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.calling_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Si vous avez des problèmes audio avec votre téléphone, dites oui ou faites le 1. Si vous n’avez pas de problèmes audio, dites non ou faites le 2." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "For Audio issues with your phone, say or press 1. For me to look at the next set of checks, 2." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_audio_check",
+        "value": null
+      } ]
+    },
+    "targetPage": "Audio issues",
+    "name": "636d7a48-0d21-4886-82d0-74e38b982101"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_audio_check",
+        "value": null
+      } ]
+    },
+    "targetPage": "Calling issues Mobile dropped call check",
+    "name": "f8442b9e-29d6-4470-9ee3-f5946f5669fe"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_audio_check",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "fdc5109c-b358-4efe-b084-8b4cc7c1bb47"
+  }, {
+    "condition": "$session.params.dtmf_audio_check = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_audio_check",
+        "value": null
+      } ]
+    },
+    "targetPage": "Audio issues",
+    "name": "18888d88-7bd4-4c0b-b5e5-25413708ce95"
+  }, {
+    "condition": "$session.params.dtmf_audio_check = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_audio_check",
+        "value": null
+      } ]
+    },
+    "targetPage": "Calling issues Mobile dropped call check",
+    "name": "d8d01f27-2816-4daf-ab9a-b240f1ba0097"
+  }, {
+    "condition": "$session.params.calling_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "49040a9d-dfe6-4db8-8d1d-a18b15c57aaa"
+  }, {
+    "condition": "$session.params.calling_retrycnt \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "No Match 2",
+    "name": "47a536e2-de51-465e-a780-1f3df9915b53"
+  }, {
+    "condition": "$session.params.dtmf_audio_check = 3 OR $session.params.dtmf_audio_check = 9 OR $session.params.dtmf_audio_check = 0",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_audio_check",
+        "value": null
+      }, {
+        "parameter": "calling_retrycnt",
+        "value": "$sys.func.ADD($session.params.calling_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "8d277ec2-b69c-4bae-877f-ca1e37171efc"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "calling_retrycnt",
+        "value": "$sys.func.ADD($session.params.calling_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.calling_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.calling_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "f4bbd369-0f60-463e-81e1-ed30e3fee4ff"
+  } ]
+}

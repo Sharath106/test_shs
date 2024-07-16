@@ -1,0 +1,428 @@
+{
+  "name": "d3bdeb47-6b80-441a-bbd9-598f75b71577",
+  "displayName": "PIN or Payment Declined",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_collections_decl_pinandpay",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-3-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "You can say, I've already made a payment, I'd like to make a payment arrangement, or, to pay your balance, say, make a payment." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris cela.", "Désolé, je n'ai pas compris.", "Je n'ai pas compris cela." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Vous pouvez dire, j’ai déjà fait un paiement, j’aimerais faire un entente de paiement, ou, pour payer votre solde, dites faire un paiement." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "baaf35af-af0f-4e29-835c-f613ca2cf04a"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Say, I've already made a payment, or press 1. I'd like to make a payment arrangement, or press 2. Pay my balance, or press 3. For a team member, say team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Dites, j’ai déjà fait un paiement, ou faites le 1. J’aimerais faire un entente de paiement, ou faites le 2. Payer mon solde, ou faites le 3. Pour un membre de l'équipe, dites membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "f08d09a5-1e02-47f6-aab3-d829140c4fa6"
+        }, {
+          "targetPage": "Collections End Page",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "cd5d0c7a-0199-4e2e-81ee-2e9999534f15"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "You can say, I've already made a payment, I'd like to make a payment arrangement, or, to pay your balance, say, make a payment." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris cela.", "Désolé, je n'ai pas compris.", "Je n'ai pas compris cela." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Vous pouvez dire, j’ai déjà fait un paiement, j’aimerais faire un entente de paiement, ou, pour payer votre solde, dites faire un paiement." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "46791832-4814-4829-8c14-35666c5c2562"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Say, I've already made a payment, or press 1. I'd like to make a payment arrangement, or press 2. Pay my balance, or press 3. For a team member, say team member, or press 0." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Dites, j’ai déjà fait un paiement, ou faites le 1. J’aimerais faire un entente de paiement, ou faites le 2. Payer mon solde, ou faites le 3. Pour un membre de l'équipe, dites membre de l'équipe, ou faites le 0." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "42d19faa-2fb5-451c-b5c8-32417562a89e"
+        }, {
+          "targetPage": "Collections End Page",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "00238931-2b94-4636-a27f-736ea57fd060"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.colldeclpinandpay_retrycnt = null OR $session.params.collnopin_retrycnt = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can say, I've already made a payment, I'd like to make a payment arrangement, or, to pay your balance, say, make a payment." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez dire, j’ai déjà fait un paiement, j’aimerais faire un entente de paiement, ou, pour payer votre solde, dites faire un paiement." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.colldeclpinandpay_retrycnt = 1",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "You can say, I've already made a payment, I'd like to make a payment arrangement, or, to pay your balance, say, make a payment." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Vous pouvez dire, j’ai déjà fait un paiement, j’aimerais faire un entente de paiement, ou, pour payer votre solde, dites faire un paiement." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.colldeclpinandpay_retrycnt = 2",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Say, I've already made a payment, or press 1. I'd like to make a payment arrangement, or press 2. Pay my balance, or press 3. For a team member, say team member, or press 0." ]
+            },
+            "languageCode": "en"
+          }
+        }, {
+          "message": {
+            "text": {
+              "text": [ "Dites, j’ai déjà fait un paiement, ou faites le 1. J’aimerais faire un entente de paiement, ou faites le 2. Payer mon solde, ou faites le 3. Pour un membre de l'équipe, dites membre de l'équipe, ou faites le 0." ]
+            },
+            "languageCode": "fr-ca"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_collections_decl_pinandpay",
+        "value": null
+      }, {
+        "parameter": "last_page",
+        "value": "PIN or Payment Declined"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "ffb9ad82-aef3-49b7-9b32-8e04351cc1a3"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_collections_decl_pinandpay",
+        "value": null
+      } ]
+    },
+    "targetPage": "Collections End Page",
+    "name": "5fc3674f-13ec-420f-a2f6-bd02836745eb"
+  }, {
+    "intent": "supplemental.payment_made",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_made"
+      }, {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_collections_decl_pinandpay",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "530691de-aafd-46cd-bd0b-b862886e1a46"
+  }, {
+    "intent": "head_intent.bill_amount_due",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "bill_amount_due"
+      }, {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_collections_decl_pinandpay",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Billing",
+    "name": "9fd6eb2a-ffa5-477f-8a44-2ba629c8282d"
+  }, {
+    "intent": "head_intent.payment_arrangements",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      }, {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_collections_decl_pinandpay",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "07b071d4-b6b1-40b3-87fe-4593048ec85d"
+  }, {
+    "intent": "head_intent.payment_make",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      }, {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_collections_decl_pinandpay",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "64c55a89-0152-45f1-acc3-353d84beaa7a"
+  }, {
+    "condition": "$session.params.dtmf_collections_decl_pinandpay = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_made"
+      }, {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_collections_decl_pinandpay",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "a503a032-f150-451f-bf99-35a627100034"
+  }, {
+    "condition": "$session.params.dtmf_collections_decl_pinandpay = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_arrangement"
+      }, {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_collections_decl_pinandpay",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "15dfa3e9-fa9a-4fb2-9ce3-340cfda7bf42"
+  }, {
+    "condition": "$session.params.dtmf_collections_decl_pinandpay = \"3\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "payment_make"
+      }, {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_collections_decl_pinandpay",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Payment",
+    "name": "d51478ab-4e42-4004-8c20-1caa05352ba7"
+  }, {
+    "condition": "$session.params.dtmf_collections_decl_pinandpay = \"0\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Alright, let's get someone to help you." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord, laissez-moi chercher quelqu'un pour vous aider." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": null
+      }, {
+        "parameter": "dtmf_collections_decl_pinandpay",
+        "value": null
+      }, {
+        "parameter": "last_page",
+        "value": "PIN or Payment Declined"
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "259b380e-9259-4773-96f8-9f8af39a22b2"
+  }, {
+    "condition": "$session.params.collnopin_retrycnt = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": 0
+      } ]
+    },
+    "name": "dc3e3b70-f70c-41ce-b00c-8763d3da45de"
+  }, {
+    "condition": "$session.params.collnopin_retrycnt \u003e 2",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": null
+      } ]
+    },
+    "targetPage": "No Match 2",
+    "name": "3f960fa5-ae0f-42cc-a734-2fe66868fb8c"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "colldeclpinandpay_retrycnt",
+        "value": "$sys.func.ADD($session.params.colldeclpinandpay_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.colldeclpinandpay_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je ne crois pas avoir bien compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.colldeclpinandpay_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "00c6fddc-9868-4609-ac58-ad13de756565"
+  } ]
+}

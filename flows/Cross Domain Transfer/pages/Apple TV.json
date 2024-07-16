@@ -1,0 +1,52 @@
+{
+  "name": "6007f344-74ed-4738-9d51-99baa1f0b9dc",
+  "displayName": "Apple TV",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cspeak\u003e Pour obtenir de l'aide concernant Apple TV, veuillez contacter Apple en appelant, \u003cprosody rate=\"slow\"\u003e \u003csay-as interpret-as=\"telephone\"\u003e 1, 8, 0, 0, 2, 6, 3, 3, 3, 9, 4. \u003c/say-as\u003e \u003c/prosody\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Encore une fois, le numéro est:" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\u003cs\u003e\u003cprosody rate=\"slow\"\u003e \u003csay-as interpret-as=\"telephone\"\u003e1, 8, 0, 0, 2, 6, 3, 3, 3, 9, 4.\u003c/say-as\u003e.\u003c/prosody\u003e\u003c/s\u003e\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\r\nTo get support with Apple TV, please contact Apple by calling,\r\n\u003cprosody rate=\"slow\" pitch = \"-8st\"\u003e\r\n\u003csay-as interpret-as=\"telephone\"\u003e\r\n1-800-263-3394.\r\n\u003c/say-as\u003e\r\n\u003c/prosody\u003e\r\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "That number again is.." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e \r\n\u003cprosody rate=\"slow\" pitch = \"-8st\"\u003e \r\n\u003csay-as interpret-as=\"telephone\"\u003e \r\n1-800-263-3394. \r\n\u003c/say-as\u003e \r\n\u003c/prosody\u003e \r\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Apple TV"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End page",
+    "name": "7fa71281-8c2e-4ee0-8a0e-542e23f45f7c"
+  } ]
+}

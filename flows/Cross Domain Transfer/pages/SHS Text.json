@@ -1,0 +1,173 @@
+{
+  "name": "d372a78a-f057-4e85-a279-963ef20faa9f",
+  "displayName": "SHS Text",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_yesno",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like me to send you a text message with more information on SmartHome Security services?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Aimeriez-vous recevoir un message texte avec plus d'informations sur les services Maison connectée?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send you a text message with more information on SmartHome Security services?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous recevoir un message texte avec plus d'informations sur les services Maison connectée?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "3aba1f21-f38d-4925-b5be-4a8d54e6d481"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 1. No, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 1. Non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "808b6faa-95cc-4e7a-b46c-2f3d88f418f2"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "2927be22-df61-4ccb-8a44-1ef31e62d7e0"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send you a text message with more information on SmartHome Security services?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Aimeriez-vous recevoir un message texte avec plus d'informations sur les services Maison connectée?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "028d9a5a-81f7-45d8-8c43-d0dc3f0a87d8"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To receive a text message, say yes, or press 1. No, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 1. Non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "74a458db-6edd-4eba-af02-d2b26b4a146e"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "90bd1981-d73c-4574-9367-a73620a000c2"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "SHS 2 Text"
+    }, {
+      "parameter": "cdt_rd_error",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.dtmf_yesno = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_yesno",
+        "value": null
+      }, {
+        "parameter": "sms_template",
+        "value": "0009SaHN731900F7"
+      }, {
+        "parameter": "sms_template_fr",
+        "value": "0009SaHN731900UV"
+      }, {
+        "parameter": "page_summary",
+        "value": "TELUS Smart Home security"
+      }, {
+        "parameter": "page_summaryfr",
+        "value": "TELUS Maison connectée"
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "80b7a421-64e5-4ced-aa82-b102d8b0899a"
+  } ]
+}

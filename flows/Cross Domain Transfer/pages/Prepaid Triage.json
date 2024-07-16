@@ -1,0 +1,389 @@
+{
+  "name": "8f477863-56c9-4907-8aa5-4e0181a68ea1",
+  "displayName": "Prepaid Triage",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_prepaid_triage",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "$session.params.ask_agent = null",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "It sounds like you're inquiring about Prepaid services. Is this correct?" ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "On dirait que vous parlez des services prépayés. C'est bien ça?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+              "condition": "$session.params.ask_agent = 1",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Are you inquiring about Prepaid services?" ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Parlez-vous des services de prépayés?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't get that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you inquiring about Prepaid services?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Parlez-vous des services de prépayés?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "14984c10-52d4-465c-9a51-656c627003ea"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you're inquiring about Prepaid services, say yes, or press 1. No, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous vous renseignez sur les services prépayés, dites oui, ou faites le un. Non, ou faites le deux." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "5144d106-4bdd-41c9-919b-6cc643f8bead"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+            "setParameterActions": [ {
+              "parameter": "ask_agent",
+              "value": null
+            } ]
+          },
+          "name": "bae42452-1ed2-400f-bcdb-0496f54de094"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't get that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Are you inquiring about Prepaid services?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Parlez-vous des services de prépayés?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "a68bc66d-730d-412f-8352-6c7b5bab3927"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you're inquiring about Prepaid services, say yes, or press 1. No, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous vous renseignez sur les services prépayés, dites oui, ou faites le un. Non, ou faites le deux." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "2eb2569f-93cd-49c6-8529-b39252ebb1d8"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "setParameterActions": [ {
+              "parameter": "ask_agent",
+              "value": null
+            } ]
+          },
+          "name": "115c69f7-3042-43ad-9677-18b41fab669f"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Prepaid Triage"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.ask_agent = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To ensure I provide you with the correct information." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pour m’assurer de vous fournir les informations correctes." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "50290bdb-15d7-4092-ae5a-8a3f9343817e"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.ask_agent = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "In order to assist you better." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Afin de mieux vous assister." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": null
+      } ]
+    },
+    "targetPage": "Prepaid",
+    "name": "c66b01e2-aeee-4837-9f2c-231c6e0eb900"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got it." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "J'ai compris." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": null
+      } ]
+    },
+    "targetPage": "Prepaid",
+    "name": "58847409-528a-4ee3-b603-4b1035d28b3e"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": null
+      }, {
+        "parameter": "dtmf_prepaid_triage",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page Triage",
+    "name": "277bb6fc-7cc2-49e6-980b-3ce1ed0aa9e7"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "f2e7b99f-2f2e-4cba-9a24-972d2f727a70"
+  }, {
+    "intent": "small_talk.i_dont_know",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "30cf46b8-962b-48e9-a692-0c3cf09e7328"
+  }, {
+    "intent": "head_intent.koodo_inquiries",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": null
+      }, {
+        "parameter": "dtmf_prepaid_triage",
+        "value": null
+      } ]
+    },
+    "targetPage": "Koodo Triage",
+    "name": "12d5f7fe-3fc5-41f1-9635-e538a966323e"
+  }, {
+    "intent": "head_intent.out_of_scope_home_services",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": null
+      }, {
+        "parameter": "dtmf_prepaid_triage",
+        "value": null
+      } ]
+    },
+    "targetPage": "FFH Triage",
+    "name": "cbe70c6f-bdbe-45f5-b7e3-d892f721f845"
+  }, {
+    "intent": "head_intent.smart_home_security",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": null
+      }, {
+        "parameter": "dtmf_prepaid_triage",
+        "value": null
+      } ]
+    },
+    "targetPage": "SHS Triage",
+    "name": "52862208-7f8a-424e-925f-41ac3234bfee"
+  }, {
+    "condition": "$session.params.dtmf_prepaid_triage = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got it." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "J'ai compris." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": null
+      } ]
+    },
+    "targetPage": "Prepaid",
+    "name": "387f81bc-513f-41bb-8d55-17085f153b66"
+  }, {
+    "condition": "$session.params.dtmf_prepaid_triage = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "D'accord." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": null
+      }, {
+        "parameter": "dtmf_prepaid_triage",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Page Triage",
+    "name": "1c7439ca-4432-436e-9695-f897461af7fe"
+  } ]
+}

@@ -1,0 +1,210 @@
+{
+  "name": "0bbb982f-f1af-4824-9139-c5fce36d4251",
+  "displayName": "Collections check",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Device Type",
+    "tag": "get_device_type",
+    "setParameterActions": [ {
+      "parameter": "cacheLookupKey",
+      "value": "$session.params.searchResult.searchValue"
+    }, {
+      "parameter": "phone_number",
+      "value": "$session.params.user.ani"
+    }, {
+      "parameter": "ban",
+      "value": "$session.params.user.ban"
+    }, {
+      "parameter": "nbs_pos1",
+      "value": "$session.params.user.nbs[0]"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "webhook": "Get Configs",
+      "tag": "get_bot_config_file",
+      "setParameterActions": [ {
+        "parameter": "bot_name",
+        "value": "telus_mobility"
+      } ]
+    },
+    "name": "f2a0644b-ee7d-48bd-9b38-c034239319cd"
+  }, {
+    "condition": "$sys.func.MID($session.params.targetAccount.billingName.firstName, 1, 14) = \"THE ESTATE OF \"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "first_name",
+        "value": "$sys.func.LOWER($sys.func.SUBSTITUTE($sys.func.SUBSTITUTE($session.params.targetAccount.billingName.firstName, \"THE ESTATE OF \", \"\"), \"\\\"\", \"\"))"
+      } ]
+    },
+    "name": "958a5c90-df45-4db1-9eb8-c14dcdeec5d1",
+    "description": "Conditional route to preset the first_name parameter based on if THE ESTATE OF is in the first name: \n\nIf “THE ESTATE OF “ IS IN targetAccount.billingName.firstName parameter:\n$sys.func.MID($session.params.targetAccount.billingName.firstName, 1, 14) = \"THE ESTATE OF \"\n\nParameter preset:\nfirst_name = $sys.func.LOWER($sys.func.SUBSTITUTE($sys.func.SUBSTITUTE($session.params.targetAccount.billingName.firstName, \"THE ESTATE OF \", \"\"), \"\\\"\", \"\"))"
+  }, {
+    "condition": "$sys.func.MID($session.params.targetAccount.billingName.firstName, 1, 14) != \"THE ESTATE OF \"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "first_name",
+        "value": "$sys.func.LOWER($session.params.targetAccount.billingName.firstName)"
+      } ]
+    },
+    "name": "b7290ef6-b456-4cb0-8004-fb3540915f9a",
+    "description": "Conditional route to preset the first_name parameter based on if THE ESTATE OF is in the first name: \n\nIf “THE ESTATE OF “ IS NOT IN targetAccount.billingName.firstName parameter:\n\n$sys.func.MID($session.params.targetAccount.billingName.firstName, 1, 14) != \"THE ESTATE OF \"\n\nParameter preset:\nfirst_name = $sys.func.LOWER($session.params.targetAccount.billingName.firstName)"
+  }, {
+    "condition": "$session.params.searchResult.idStatus = \"unidentified\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "acct_id_error",
+        "value": "true"
+      } ]
+    },
+    "name": "76be70d7-4bfc-476d-8908-ab081947c056"
+  }, {
+    "condition": "$session.params.searchResult.idStatus != \"unidentified\" AND $session.params.searchResult.idStatus != null AND $session.params.searchResult.idStatus != \"\"",
+    "triggerFulfillment": {
+      "webhook": "Account Identity VC",
+      "tag": "retrieve_account"
+    },
+    "name": "307c1fcd-9b3e-4699-a311-992fd36a107b"
+  }, {
+    "condition": "$session.params.targetAccount.isCollection = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collections check 2",
+    "name": "fa1131a5-9c5f-471a-96b2-4ca6838ae8b6"
+  }, {
+    "condition": "$session.params.targetPath = \"cc_pay_success\" OR $session.params.targetPath = \"cc_pay_back_end_failure\" OR $session.params.targetPath = \"cc_pay_card_rejected\" OR $session.params.targetPath = \"cc_pay_user_cancel\" OR $session.params.targetPath = \"cc_pay_user_error\" OR $session.params.targetPath = \"pap_success\" OR $session.params.targetPath = \"pap_back_end_failure\" OR $session.params.targetPath = \"pap_card_rejected\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "skip_greeting_message",
+        "value": true
+      } ]
+    },
+    "name": "514529b2-806d-40eb-b009-bf7a9ed26291"
+  }, {
+    "condition": "$session.params.routeDetails.province = \"MB\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "original_province",
+        "value": "MB"
+      }, {
+        "parameter": "routeDetails.province",
+        "value": "NB"
+      } ]
+    },
+    "name": "5968c767-94cf-4c05-b992-dc80eb6b5e79"
+  }, {
+    "condition": "$session.params.routeDetails.province = \"SK\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "original_province",
+        "value": "SK"
+      }, {
+        "parameter": "routeDetails.province",
+        "value": "NB"
+      } ]
+    },
+    "name": "bf57b7ec-609a-4fec-b774-69a570ac0b66"
+  }, {
+    "condition": "$session.params.routeDetails.province = \"QC\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "original_province",
+        "value": "QC"
+      }, {
+        "parameter": "routeDetails.province",
+        "value": "NB"
+      } ]
+    },
+    "name": "d800679a-52c9-4b4d-90c8-a6f3091bdd1c"
+  }, {
+    "condition": "$session.params.routeDetails.province = \"ON\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "original_province",
+        "value": "ON"
+      }, {
+        "parameter": "routeDetails.province",
+        "value": "NB"
+      } ]
+    },
+    "name": "5f567520-aa77-4db0-9a30-2e397d2f0f30"
+  }, {
+    "condition": "$session.params.routeDetails.province = \"AB\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "original_province",
+        "value": "AB"
+      }, {
+        "parameter": "routeDetails.province",
+        "value": "NB"
+      } ]
+    },
+    "name": "02fbfae2-1ff1-4ba3-b5c2-cc7123800462"
+  }, {
+    "condition": "$session.params.routeDetails.province = \"BC\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "original_province",
+        "value": "BC"
+      }, {
+        "parameter": "routeDetails.province",
+        "value": "NB"
+      } ]
+    },
+    "name": "69ac2714-a342-43c6-8657-0b0d6c7d0bd6"
+  }, {
+    "condition": "$session.params.routeDetails.province = \"YT\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "original_province",
+        "value": "YT"
+      }, {
+        "parameter": "routeDetails.province",
+        "value": "NB"
+      } ]
+    },
+    "name": "42c93002-ecef-4d6c-b48f-a44a2bb59d4a"
+  }, {
+    "condition": "$session.params.routeDetails.province = \"NT\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "original_province",
+        "value": "NT"
+      }, {
+        "parameter": "routeDetails.province",
+        "value": "NB"
+      } ]
+    },
+    "name": "b2b8f1ad-744c-426d-85d4-fb191d69587f"
+  }, {
+    "condition": "$session.params.routeDetails.province = \"NU\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "original_province",
+        "value": "NU"
+      }, {
+        "parameter": "routeDetails.province",
+        "value": "NB"
+      } ]
+    },
+    "name": "018d0960-1b3e-49fe-84a3-0ce7146e1b76"
+  }, {
+    "condition": "$session.params.nbs_pos1 = \"LPCMobHS\" AND $session.params.isTrustedUser = \"true\" AND $session.params.nbs_lpc_waiver != true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "NBS Late Payment Forgiveness",
+    "name": "928c2ff4-c62f-4803-8060-790c563af830"
+  }, {
+    "condition": "$session.params.targetAccount.isCollection = \"false\" OR $session.params.targetAccount.isCollection = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Greeting",
+    "name": "70003746-ffc2-416b-97bf-42c814a1d18a"
+  } ]
+}

@@ -1,0 +1,291 @@
+{
+  "name": "497534ca-433a-405d-b727-73fd70c4a49a",
+  "displayName": "Check Customer",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_yesno",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "conditionalCases": [ {
+            "cases": [ {
+              "condition": "$session.params.ask_for_agent = null OR $session.params.ask_for_agent = \"1\"",
+              "caseContent": [ {
+                "message": {
+                  "text": {
+                    "text": [ "Do you already have a TELUS Mobility account?" ]
+                  },
+                  "languageCode": "en"
+                }
+              }, {
+                "message": {
+                  "text": {
+                    "text": [ "Avez-vous déjà un compte TELUS Mobilité?" ]
+                  },
+                  "languageCode": "fr-ca"
+                }
+              } ]
+            }, {
+            
+            } ]
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry , I didn't get understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you already have a TELUS Mobility account?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous déjà un compte TELUS Mobilité?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "66fa3ddd-ef38-4f9b-a961-833ab4c20556"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you already have a TELUS Mobility, account  say yes or press 1, no or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous disposez déjà de TELUS Mobilité, dites oui ou appuyez sur 1, non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "cda1d4b4-e549-4acf-bd01-dd85d27e4ed3"
+        }, {
+          "targetPage": "Unidentified sales",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "2d6f81aa-37c7-4b50-a1e7-3c97b4c84c12"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry , I didn't get understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you already have a TELUS Mobility account?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous déjà un compte TELUS Mobilité?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "bb03d34f-a6a0-4126-ad6f-950a25e282ae"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you already have a TELUS Mobility account, say yes or press 1, no or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous disposez déjà de TELUS Mobilité, dites oui ou appuyez sur 1, non ou appuyez sur 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "d2ba39bd-30c6-4b83-bfcb-2a74cbbb548a"
+        }, {
+          "targetPage": "Unidentified sales",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "a32c61ec-1f5a-420d-9c8e-c37ba8b9b1d1"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Check Customer"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sales_unidentified",
+        "value": "true"
+      }, {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "12c31251-1814-4d24-aa26-ef2d8453c0de"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "activate_sim"
+      }, {
+        "parameter": "sales_unidentified",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "5953320b-7b96-4ea4-b31e-bde77a4b2bfc"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "multiple_line_activation"
+      }, {
+        "parameter": "sales_unidentified",
+        "value": "true"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "86354e74-f979-4020-952c-9f254ae48710"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Unidentified sales",
+    "name": "61f1381b-b467-489d-8903-2236e633b256"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.ask_for_agent = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Can you please let me know:" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_for_agent",
+        "value": "1"
+      } ]
+    },
+    "name": "9298d91d-a60e-4509-ade8-d5f841467c4c"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.ask_for_agent = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If you already have a TELUS Mobility account, say yes or press 1, no or press 2." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_for_agent",
+        "value": "2"
+      } ]
+    },
+    "name": "cb7a13b2-59d7-4d8a-a1fc-ea8c197a49b0"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.ask_for_agent = \"2\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "ask_for_agent",
+        "value": null
+      } ]
+    },
+    "targetPage": "Unidentified sales",
+    "name": "3c7af6df-4550-45f5-8ce3-6d32247e2c17"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sales_unidentified",
+        "value": "true"
+      }, {
+        "parameter": "route",
+        "value": "activate_sim"
+      } ]
+    },
+    "targetFlow": "Account Management",
+    "name": "f3d3e908-1e00-4d59-bb6e-c30049bc6db6"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sales_unidentified",
+        "value": "true"
+      }, {
+        "parameter": "route",
+        "value": "new_phone_or_byod"
+      } ]
+    },
+    "targetFlow": "Activations \u0026 Renewals",
+    "name": "4d2e787e-833b-4c5d-a304-c5f18a25007a"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sales_unidentified",
+        "value": "true"
+      }, {
+        "parameter": "route",
+        "value": "multiple_line_activation"
+      } ]
+    },
+    "targetFlow": "Rate Plans \u0026 Features",
+    "name": "c53f947b-61b7-4f0f-89bc-085f8d08cc98"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"2\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Unidentified sales",
+    "name": "79d1239c-cc50-4b6c-8448-0d8834dfdcfc"
+  } ]
+}

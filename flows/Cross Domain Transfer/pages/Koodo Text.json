@@ -1,0 +1,378 @@
+{
+  "name": "93660c97-ca12-448b-b7ad-45a8fe20acc2",
+  "displayName": "Koodo Text",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_koodo_text",
+      "required": true,
+      "entityType": "@dtmf-menu",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Je peux vous envoyer un message texte avec des informations sur les services Koodo." ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "Souhaitez-vous que je vous envoie ces informations sur votre téléphone maintenant?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "I can send you a text with information on Koodo services. Would you like me to send the information to your phone now?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un message texte contenant des informations sur les services Koodo?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message with information on Koodo services to your phone now?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f6938b73-15c2-45a1-a80d-6b896dfda221"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9, pour poser une autre question, dites non ou faites le 1." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes or press 9." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "569a04b5-106f-4457-9f5b-a07b9dedded3"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "87b2342f-1eb6-44a9-9c38-729a6e69b0b0"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Souhaitez-vous que j'envoie un message texte contenant des informations sur les services Koodo?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand that.", "Sorry, I didn't catch that.", "I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Would you like me to send a text message with information on Koodo services to your phone now?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "9516f04a-8c3f-470d-887d-ebc9a302a1f2"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Pour recevoir un message texte, dites oui ou faites le 9, pour poser une autre question, dites non ou faites le 1." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "To receive a text message, say yes or press 9." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5a90b696-0278-44e9-9d75-8428c300cd6f"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "31e3f55c-3a25-4cdf-8f37-38782c5896ed"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Koodo Text"
+    }, {
+      "parameter": "sms_flow_status",
+      "value": "offered"
+    }, {
+      "parameter": "sms_template_fr",
+      "value": "0009SaHN731900CA"
+    }, {
+      "parameter": "sms_template",
+      "value": "0009SaHN731900KE"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e Pour toute demande relative aux nouveaux services mensuels postpayés de Koodo, vous pouvez composer, \u003cprosody rate=\"slow\"\u003e \u003csay-as interpret-as=\"telephone\"\u003e 1, 8, 3, 3, 8, 8, 1, 8, 8, 6, 8 . \u003c/say-as\u003e \u003c/prosody\u003e Ou vous pouvez visiter, \u003cprosody rate=\"slow\"\u003ekoodo point com, barre oblique clavardage.\u003c/prosody\u003e\n\nPour les questions liées à Koodo pré-payé, vous pouvez visiter, \u003cprosody rate=\"slow\"\u003ekoodo point com, barre oblique clavardage, pré-payé.\u003c/prosody\u003e \u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\nFor inquiries related to Koodo monthly services, you can dial,\n\u003cprosody rate=\"slow\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n1-833-881-8868 .\n\u003c/say-as\u003e\n\u003c/prosody\u003e\nor you can visit, \n\u003cprosody rate=\"slow\"\u003ekoodo.com/chat.\u003c/prosody\u003e\n\nFor prepaid you can visit, \n\u003cprosody rate=\"slow\"\u003ekoodo.com/prepaidchat.\u003c/prosody\u003e\n\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_koodo_text",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "d246ed3b-5e53-492e-8796-afa846fce758"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "6a7bc8ce-0ef7-4cb6-af4d-81c27c6ac807"
+  }, {
+    "intent": "small_talk.send_sms",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "a364dcf5-f51e-4aab-8276-b6908fb56fbc"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e Pour toute demande relative aux nouveaux services mensuels postpayés de Koodo, vous pouvez composer, \u003cprosody rate=\"slow\"\u003e \u003csay-as interpret-as=\"telephone\"\u003e 1, 8, 3, 3, 8, 8, 1, 8, 8, 6, 8 . \u003c/say-as\u003e \u003c/prosody\u003e Ou vous pouvez visiter, \u003cprosody rate=\"slow\"\u003ekoodo point com, barre oblique clavardage.\u003c/prosody\u003e Pour les questions liées à Koodo pré-payé, vous pouvez visiter, \u003cprosody rate=\"slow\"\u003ekoodo point com, barre oblique clavardage, pré-payé.\u003c/prosody\u003e \u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\nFor inquiries related to Koodo monthly services, you can dial,\n\u003cprosody rate=\"slow\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n1-833-881-8868 .\n\u003c/say-as\u003e\n\u003c/prosody\u003e\nor you can visit, \n\u003cprosody rate=\"slow\"\u003ekoodo.com/chat.\u003c/prosody\u003e\n\nFor prepaid you can visit, \n\u003cprosody rate=\"slow\"\u003ekoodo.com/prepaidchat.\u003c/prosody\u003e\n\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "20ac0aaf-457d-45c7-8060-3e8f8dadd534"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e Pour toute demande relative aux nouveaux services mensuels postpayés de Koodo, vous pouvez composer, \u003cprosody rate=\"slow\"\u003e \u003csay-as interpret-as=\"telephone\"\u003e 1, 8, 3, 3, 8, 8, 1, 8, 8, 6, 8 . \u003c/say-as\u003e \u003c/prosody\u003e Ou vous pouvez visiter, \u003cprosody rate=\"slow\"\u003ekoodo point com, barre oblique clavardage.\u003c/prosody\u003e Pour les questions liées à Koodo pré-payé, vous pouvez visiter, \u003cprosody rate=\"slow\"\u003ekoodo point com, barre oblique clavardage, pré-payé.\u003c/prosody\u003e \u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\nFor inquiries related to Koodo monthly services, you can dial,\n\u003cprosody rate=\"slow\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n1-833-881-8868 .\n\u003c/say-as\u003e\n\u003c/prosody\u003e\nor you can visit, \n\u003cprosody rate=\"slow\"\u003ekoodo.com/chat.\u003c/prosody\u003e\n\nFor prepaid you can visit, \n\u003cprosody rate=\"slow\"\u003ekoodo.com/prepaidchat.\u003c/prosody\u003e\n\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "fdd43ea4-ce44-4ec0-a0ec-0e7d5035bf44"
+  }, {
+    "intent": "small_talk.i_dont_know",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e Pour toute demande relative aux nouveaux services mensuels postpayés de Koodo, vous pouvez composer, \u003cprosody rate=\"slow\"\u003e \u003csay-as interpret-as=\"telephone\"\u003e 1, 8, 3, 3, 8, 8, 1, 8, 8, 6, 8 . \u003c/say-as\u003e \u003c/prosody\u003e Ou vous pouvez visiter, \u003cprosody rate=\"slow\"\u003ekoodo point com, barre oblique clavardage.\u003c/prosody\u003e Pour les questions liées à Koodo pré-payé, vous pouvez visiter, \u003cprosody rate=\"slow\"\u003ekoodo point com, barre oblique clavardage, pré-payé.\u003c/prosody\u003e \u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\r\nFor inquiries related to Koodo monthly services, you can dial,\r\n\u003cprosody rate=\"slow\"\u003e\r\n\u003csay-as interpret-as=\"telephone\"\u003e\r\n1-833-881-8868 .\r\n\u003c/say-as\u003e\r\n\u003c/prosody\u003e\r\nor you can visit, \r\n\u003cprosody rate=\"slow\"\u003ekoodo.com/chat.\u003c/prosody\u003e\r\n\r\nFor prepaid you can visit, \r\n\u003cprosody rate=\"slow\"\u003ekoodo.com/prepaidchat.\u003c/prosody\u003e\r\n\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "56deed60-2a0a-467a-ac58-286388584643"
+  }, {
+    "intent": "supplemental.sendtxt",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "f666219e-2e39-43b2-b1d2-e59c7d363fbc"
+  }, {
+    "condition": "$session.params.dtmf_koodo_text = \"9\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_koodo_text",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "accepted"
+      } ]
+    },
+    "targetFlow": "SMS Flow",
+    "name": "c6823f65-99ed-4ce0-a42a-db1594aa7fe3"
+  }, {
+    "condition": "$session.params.dtmf_koodo_text = \"1\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e Pour toute demande relative aux nouveaux services mensuels postpayés de Koodo, vous pouvez composer, \u003cprosody rate=\"slow\"\u003e \u003csay-as interpret-as=\"telephone\"\u003e 1, 8, 3, 3, 8, 8, 1, 8, 8, 6, 8 . \u003c/say-as\u003e \u003c/prosody\u003e Ou vous pouvez visiter, \u003cprosody rate=\"slow\"\u003ekoodo point com, barre oblique clavardage.\u003c/prosody\u003e\r\n\r\nPour les questions liées à Koodo pré-payé, vous pouvez visiter, \u003cprosody rate=\"slow\"\u003ekoodo point com, barre oblique clavardage, pré-payé.\u003c/prosody\u003e \u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\nFor inquiries related to Koodo monthly services, you can dial,\n\u003cprosody rate=\"slow\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n1-833-881-8868 .\n\u003c/say-as\u003e\n\u003c/prosody\u003e\nor you can visit, \n\u003cprosody rate=\"slow\"\u003ekoodo.com/chat.\u003c/prosody\u003e\n\nFor prepaid you can visit, \n\u003cprosody rate=\"slow\"\u003ekoodo.com/prepaidchat.\u003c/prosody\u003e\n\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_koodo_text",
+        "value": null
+      }, {
+        "parameter": "sms_flow_status",
+        "value": "declined"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "4ce41b10-a8dc-4fb2-8b83-aee687f87835"
+  }, {
+    "condition": "$session.params.dtmf_koodo_text != \"9\" AND $session.params.dtmf_koodo_text != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je ne pense pas avoir compris.", "Désolé, je n'ai pas tout à fait compris.", "Je ne crois pas avoir bien saisi." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_koodo_text",
+        "value": null
+      }, {
+        "parameter": "koodotext_retrycnt",
+        "value": "$sys.func.ADD($session.params.koodotext_retrycnt,1)"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "fd9d8e51-a618-4185-9e75-6c0a478ba9aa"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Current Page",
+    "event": "NO_INPUT",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "koodotext_retrycnt",
+        "value": "$sys.func.ADD($session.params.koodotext_retrycnt,1)"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.koodotext_retrycnt = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Désolé, je n'ai pas tout à fait compris." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't quite get that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "condition": "$session.params.koodotext_retrycnt = 1",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Je ne crois pas avoir bien saisi." ]
+              },
+              "languageCode": "fr-ca"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Sorry, I didn't catch that." ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "name": "799b56de-e278-4aaf-a2d1-ecdca9eb31a4"
+  } ]
+}

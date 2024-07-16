@@ -1,0 +1,394 @@
+{
+  "name": "7142d1b8-cccd-43ae-9510-81803e757a43",
+  "displayName": "FFH",
+  "form": {
+    "parameters": [ {
+      "displayName": "dtmf_yesno",
+      "required": true,
+      "entityType": "@dtmf-menu-1-2-0",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Do you already have Home Services with TELUS?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Avez-vous déjà des Services Résidentiels avec TELUS ?" ]
+            },
+            "languageCode": "fr-ca"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you already have Home Services with TELUS?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous déjà des Services Résidentiels avec TELUS ?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "be297671-c776-4d22-82c4-f79540110494"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have home services with TELUS, say yes, or press 1, no, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous bénéficiez de services à domicile avec TELUS, dites oui ou faites le 1, non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "8ed73559-0d85-4fdd-9a76-09617464fda6"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "5a5997cf-e50b-485b-a7e0-87e725bac2af"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Do you already have Home Services with TELUS?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Je n'ai pas compris ça.", "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Avez-vous déjà des Services Résidentiels avec TELUS ?" ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "e3f66a83-0909-4b1f-aa54-2e1346085384"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "If you have home services with TELUS, say yes, or press 1, no, or press 2." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Si vous bénéficiez de services à domicile avec TELUS, dites oui ou faites le 1, non ou faites le 2." ]
+              },
+              "languageCode": "fr-ca"
+            } ]
+          },
+          "name": "d8ef17b3-41a7-422f-9ac2-5f70ea53ccba"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "68058879-cc14-44ee-bd18-a9ef6da711de"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "FFH"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.ask_agent = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To connect you with the appropriate team member who can help with Home services." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Pour vous connecter avec le bon agent pour vous aider avec les questions relatives aux services résidentiels." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": "1"
+      } ]
+    },
+    "targetPage": "Current Page",
+    "name": "5078c08a-cdca-4913-946c-c5db0660f7ef"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "condition": "$session.params.ask_agent = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "ask_agent",
+        "value": null
+      } ]
+    },
+    "targetPage": "FFH Existing",
+    "name": "87ec1104-0a65-481f-a108-084889dfe222"
+  }, {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_yesno",
+        "value": null
+      } ]
+    },
+    "targetPage": "FFH Existing",
+    "name": "bafdb777-a4ea-4fef-a31b-8a2f59a79280"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\r\nSome of the services we offer are\r\n\u003cprosody rate=\"slow\"\u003einternet, TV, Smart Home security, and, Home phone.\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\r\nCertains des services que nous offrons sont\r\n\u003cprosody rate=\"slow\"\u003el'internet, la télévision, système de surveillance Maison connectée, téléphonie résidentielle.\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Account Identity VC",
+      "tag": "update_route_details",
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "CD ffh newsales"
+      }, {
+        "parameter": "update_method",
+        "value": "generic"
+      }, {
+        "parameter": "rd_domain",
+        "value": "wireline"
+      }, {
+        "parameter": "rd_brand",
+        "value": "telus"
+      }, {
+        "parameter": "rd_productType",
+        "value": "UNIDENTIFIED"
+      }, {
+        "parameter": "agent",
+        "value": "yes"
+      }, {
+        "parameter": "dtmf_yesno",
+        "value": null
+      } ]
+    },
+    "name": "a04b5157-f6c8-4ef0-88a9-f4696a1af81a"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Aucun problème." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "dtmf_yesno",
+        "value": null
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "ccc58f72-2f0c-4663-a6d2-98c1acb13438"
+  }, {
+    "intent": "small_talk.i_dont_know",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "FFH Existing",
+    "name": "3de5a3a9-978f-47d7-b607-19fc2f48e089"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"1\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "dtmf_yesno",
+        "value": null
+      } ]
+    },
+    "targetPage": "FFH Existing",
+    "name": "6447096a-33a1-4d2f-8bc5-d7e55c06d423"
+  }, {
+    "condition": "$session.params.dtmf_yesno = \"2\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\u003cspeak\u003e\r\nSome of the services we offer are\r\n\u003cprosody rate=\"slow\"\u003einternet, TV, Smart Home security, and, Home phone.\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "\u003cspeak\u003e\r\nCertains des services que nous offrons sont\r\n\u003cprosody rate=\"slow\"\u003el'internet, la télévision, système de surveillance Maison connectée, téléphonie résidentielle.\u003c/prosody\u003e\u003c/speak\u003e" ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "webhook": "Account Identity VC",
+      "tag": "update_route_details",
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "CD ffh newsales"
+      }, {
+        "parameter": "update_method",
+        "value": "generic"
+      }, {
+        "parameter": "rd_domain",
+        "value": "wireline"
+      }, {
+        "parameter": "rd_brand",
+        "value": "telus"
+      }, {
+        "parameter": "rd_productType",
+        "value": "UNIDENTIFIED"
+      }, {
+        "parameter": "agent",
+        "value": "yes"
+      }, {
+        "parameter": "dtmf_yesno",
+        "value": null
+      } ]
+    },
+    "name": "becc6b2b-de38-4d92-b115-421385c8b117"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.error_code != 200 AND $session.params.agent = \"yes\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I am having issues when trying to connect you to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé, je rencontre des problèmes avec votre demande." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "cdt_rd_error",
+        "value": "true"
+      }, {
+        "parameter": "dtmf_yesno",
+        "value": null
+      } ]
+    },
+    "targetPage": "FFH Text",
+    "name": "0844194c-a0e5-4918-a136-13bbe28c2323"
+  }, {
+    "condition": "$session.params.cdt_rd_error != \"true\" AND $session.params.agent = \"yes\" AND $session.params.conversation.language = \"en-US\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I am transferring you now to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Veuillez noter que nous avons un support d'agent en anglais pour le moment." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Je vous transfère maintenant à un membre de notre équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "cross_domain"
+      }, {
+        "parameter": "searchResult",
+        "value": null
+      }, {
+        "parameter": "user",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "d55c5c76-6d0e-40e7-be47-ebe00dc516a0"
+  }, {
+    "condition": "$session.params.cdt_rd_error != \"true\" AND $session.params.agent = \"yes\" AND $session.params.conversation.language = \"fr-CA\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I am transferring you now to a team member." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Veuillez noter que nous avons un support d'agent en anglais pour le moment." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Laissez-moi vous mettre en contact avec un membre de l'équipe maintenant.", "Laissez-moi vous transférer vers un membre de l'équipe maintenant.", "Il me fera plaisir de vous transférer vers un membre de l'équipe maintenant.", "Je vous transfère maintenant à un membre de l'équipe." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "chosenLanguage",
+        "value": "en-US"
+      }, {
+        "parameter": "handoff_type",
+        "value": "cross_domain"
+      }, {
+        "parameter": "searchResult",
+        "value": null
+      }, {
+        "parameter": "user",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "aa23f2e8-fe00-4019-a933-3c75b192ba60"
+  } ]
+}

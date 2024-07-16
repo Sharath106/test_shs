@@ -1,0 +1,386 @@
+{
+  "name": "2c430cf6-fff7-4faf-b73f-a441ef43bd5f",
+  "displayName": "SHS Existing",
+  "form": {
+    "parameters": [ {
+      "displayName": "support_queue",
+      "required": true,
+      "entityType": "@support-queue",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Nous pouvons vous aider avec la facturation, le compte, l'assistance technique, le service de déménagement ou les annulations. Pour lequel avez-vous besoin d'aide ?" ]
+            },
+            "languageCode": "fr-ca"
+          }, {
+            "text": {
+              "text": [ "We can help with billing, account inquiries, technical support, moving service, or cancellations. Which one do you need help with?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Nous pouvons vous aider avec la facturation, le compte, l'assistance technique, le service de déménagement ou les annulations. Pour lequel avez-vous besoin d'aide ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "We can help with billing, account inquiries, technical support, moving service, or cancellations. Which one do you need help with?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "62909332-a04c-4f5e-9136-25ecae385b1c"
+        }, {
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Dites la facturation ou la gestion de compte, ou appuyez sur 1, le soutien technique, ou faites le 2, le service de déménagement, ou faites le 3, ou d’annulation,  ou faites le 4." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Say billing or account inquiries, or press 1, technical support, or press 2, moving service, or press 3, cancellations, or, press 4." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "cc61a910-cb8c-4093-9aa2-71a41d7c9596"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-match-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "714cb78c-1d38-455c-9c68-51bb57a707dd"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Désolé, je n'ai pas compris ça.", "Je n'ai pas compris.", "Je n'ai pas compris ça." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Nous pouvons vous aider avec la facturation, le compte, l'assistance technique, le service de déménagement ou les annulations. Pour lequel avez-vous besoin d'aide ?" ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Sorry, I didn’t understand that.", "Sorry, I didn't catch that.", "I didn't get that." ]
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "We can help with billing, account inquiries, technical support, moving service, or cancellations. Which one do you need help with?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "63fd60b9-9fa2-4fbe-ba25-754513561c2b"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Dites la facturation ou la gestion de compte, ou appuyez sur 1, le soutien technique, ou faites le 2, le service de déménagement, ou faites le 3, ou d’annulation,  ou faites le 4." ]
+              },
+              "languageCode": "fr-ca"
+            }, {
+              "text": {
+                "text": [ "Say billing or account inquiries, or press 1, technical support, or press 2, moving service, or press 3, cancellations, or, press 4." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a08caa42-dddd-44e2-ada0-c09d89796180"
+        }, {
+          "targetPage": "No Match 2",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+          
+          },
+          "name": "142903a0-7609-4951-8296-ad026c589424"
+        } ]
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 1,
+          "finishDigit": "5",
+          "useSystemEntityRule": false,
+          "endpointingTimeoutDuration": {
+            "seconds": 8
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "SHS Existing"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Toutes mes excuses, je dois clarifier le type de soutien dont vous avez besoin." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Apologies, I need to clarify the type of support you need." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "SHS Existing Clarification 1",
+    "name": "13d40395-cc46-4fea-a7e3-caf2d4c58a6f"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Toutes mes excuses, je dois clarifier le type de soutien dont vous avez besoin." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Apologies, I need to clarify the type of support you need." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "SHS Existing Clarification 1",
+    "name": "26d45596-4729-4337-9a23-c00f503428f6"
+  }, {
+    "intent": "head_intent.live_agent_hand_off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Toutes mes excuses, je dois clarifier le type de soutien dont vous avez besoin." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Apologies, I need to clarify the type of support you need." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "SHS Existing Clarification 1",
+    "name": "5ae3c4b1-0f26-43b1-9eb4-3a9f0d7665d6"
+  }, {
+    "intent": "small_talk.i_dont_know",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Toutes mes excuses, je dois clarifier le type de soutien dont vous avez besoin." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Apologies, I need to clarify the type of support you need." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "SHS Existing Clarification 1",
+    "name": "7cfa3bf8-9a70-4e1e-a477-a5eeace5c6a5"
+  }, {
+    "intent": "small_talk.nevermind",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pas de problème." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "No problem." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End page",
+    "name": "75f3e5c4-31fb-41ac-af91-244ac5b7bc9c"
+  }, {
+    "condition": "$session.params.support_queue = \"1\" OR $session.params.support_queue = \"acctmgmt\"",
+    "triggerFulfillment": {
+      "webhook": "Account Identity VC",
+      "tag": "update_route_details",
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "CD shs acctmgmt"
+      }, {
+        "parameter": "update_method",
+        "value": "generic"
+      }, {
+        "parameter": "rd_domain",
+        "value": "wireline"
+      }, {
+        "parameter": "rd_brand",
+        "value": "telus"
+      }, {
+        "parameter": "rd_productType",
+        "value": "SHS"
+      }, {
+        "parameter": "agent",
+        "value": "yes"
+      } ]
+    },
+    "name": "c04c9f08-27cb-4c8b-ba6e-fdee93e078d0"
+  }, {
+    "condition": "$session.params.support_queue = \"2\" OR $session.params.support_queue = \"tech\"",
+    "triggerFulfillment": {
+      "webhook": "Account Identity VC",
+      "tag": "update_route_details",
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "CD shs fixalarm"
+      }, {
+        "parameter": "update_method",
+        "value": "generic"
+      }, {
+        "parameter": "rd_domain",
+        "value": "wireline"
+      }, {
+        "parameter": "rd_brand",
+        "value": "telus"
+      }, {
+        "parameter": "rd_productType",
+        "value": "SHS"
+      }, {
+        "parameter": "agent",
+        "value": "yes"
+      } ]
+    },
+    "name": "e7f597a8-42e8-4fe7-97f0-f87912d4d164"
+  }, {
+    "condition": "$session.params.support_queue = \"3\" OR $session.params.support_queue = \"moving\"",
+    "triggerFulfillment": {
+      "webhook": "Account Identity VC",
+      "tag": "update_route_details",
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "CD shs move"
+      }, {
+        "parameter": "update_method",
+        "value": "generic"
+      }, {
+        "parameter": "rd_domain",
+        "value": "wireline"
+      }, {
+        "parameter": "rd_brand",
+        "value": "telus"
+      }, {
+        "parameter": "rd_productType",
+        "value": "SHS"
+      }, {
+        "parameter": "agent",
+        "value": "yes"
+      } ]
+    },
+    "name": "8a4e8f28-8847-430d-88db-2501d8623f52"
+  }, {
+    "condition": "$session.params.support_queue = \"4\" OR $session.params.support_queue = \"cancel\"",
+    "triggerFulfillment": {
+      "webhook": "Account Identity VC",
+      "tag": "update_route_details",
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "CD shs churn mgmt"
+      }, {
+        "parameter": "update_method",
+        "value": "generic"
+      }, {
+        "parameter": "rd_brand",
+        "value": "telus"
+      }, {
+        "parameter": "rd_domain",
+        "value": "wireline"
+      }, {
+        "parameter": "rd_productType",
+        "value": "SHS"
+      }, {
+        "parameter": "agent",
+        "value": "yes"
+      } ]
+    },
+    "name": "7fd148ec-0d81-495d-9e6e-eeb5ca38850b"
+  }, {
+    "condition": "$session.params.error_code != null AND $session.params.error_code != 200 AND $session.params.agent = \"yes\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Désolé, je rencontre des problèmes lorsque j'essaie de vous connecter à un membre de l'équipe. Je vous enverrai un texte avec plus d'informations." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Sorry, I am having issues when trying to connect you to a team member. I will send you a text with more information." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "cdt_rd_error",
+        "value": "true"
+      }, {
+        "parameter": "dtmf_yesno",
+        "value": "1"
+      }, {
+        "parameter": "support_queue",
+        "value": null
+      } ]
+    },
+    "targetPage": "SHS Text",
+    "name": "06176d37-1549-49b4-997c-9b4366412f48"
+  }, {
+    "condition": "$session.params.cdt_rd_error != \"true\" AND $session.params.agent = \"yes\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Je vous transfère maintenant à un membre de l'équipe.", "Il me fera plaisir de vous transférer vers un membre de l'équipe maintenant.", "Laissez-moi vous transférer vers un membre de l'équipe maintenant.", "Laissez-moi vous mettre en contact avec un membre de l'équipe maintenant." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "I'm transferring you to a team member now.", "Let me transfer you to a team member now.", "Let me connect you with a team member now.", "I'm happy to transfer you to a team member now." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "handoff_type",
+        "value": "cross_domain"
+      }, {
+        "parameter": "searchResult",
+        "value": null
+      }, {
+        "parameter": "user",
+        "value": null
+      } ]
+    },
+    "targetFlow": "Universal handoff",
+    "name": "e9b9ec43-a6f6-4d2a-98bf-dedbcd3fec40"
+  } ]
+}

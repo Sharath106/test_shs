@@ -1,0 +1,83 @@
+{
+  "name": "9abb6f10-26b9-4137-8c85-795a0e957b05",
+  "displayName": "Bluetooth issues",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Let's see what we can do to help with bluetooth issues.\r\nFirst, make sure that Bluetooth is enabled in the settings of your phone.\r\nOnce that's done, here are a few things to try:\r\n1. Try rebooting both your device and the accessory you may be pairing it with.\r\n2. Remove and pair the accessory once more within the Bluetooth settings.\r\n3. Try resetting your network settings, but, this will erase your current Wi-Fi and Bluetooth settings.\r\nIf none of those work, confirm the Bluetooth version and compatibility between devices, or, try a factory reset on your phone." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Did that work?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Voyons ce que nous pouvons faire pour résoudre les problèmes de Bluetooth.\nTout d'abord, assurez-vous que le Bluetooth est activé dans les paramètres de votre téléphone.\nUne fois cela fait, voici quelques solutions pour essayer de résoudre le problème:\n\n1. Essayez de redémarrer votre appareil et l'accessoire.\n2. Essayez de déconnecter l'accessoire dans les paramètres Bluetooth, puis réessayez de le reconnecter.\n3. Essayez de réinitialiser vos paramètres réseau, mais cela effacera les paramètres Wi-Fi et Bluetooth uniquement.\nSi cela ne fonctionne toujours pas, confirmez la version de Bluetooth avec la compatibilité de l'accessoire ou essayez une réinitialisation de votre téléphone." ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "Est-ce que ça a fonctionné?" ]
+      },
+      "languageCode": "fr-ca"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Bluetooth issues"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great!", "Awesome!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Super!", "Génial" ]
+        },
+        "languageCode": "fr-ca"
+      } ]
+    },
+    "targetPage": "End Page",
+    "name": "af3786d8-84a7-4045-826d-23af6927867a"
+  }, {
+    "intent": "small_talk.confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry about that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "For device issues like this one, I suggest looking into repair options for your device." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Désolé de l'apprendre." ]
+        },
+        "languageCode": "fr-ca"
+      }, {
+        "text": {
+          "text": [ "Pour les problèmes d'appareil comme celui-ci, je suggère d'examiner les options de réparation pour votre appareil." ]
+        },
+        "languageCode": "fr-ca"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "route",
+        "value": "repair_process"
+      } ]
+    },
+    "name": "e5db20fa-ce07-4ac2-88c9-4276175c4119"
+  } ],
+  "transitionRouteGroups": [ "troubleshooting_how_to" ]
+}

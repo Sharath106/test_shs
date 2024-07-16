@@ -1,0 +1,32 @@
+{
+  "name": "698b08d7-1ba5-42ec-a3cf-c8440ec706c1",
+  "displayName": "Apple ID issues",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cspeak\u003e\nSi vous avez oublié votre identifiant ou votre mot de passe Apple, vous pouvez accéder à la page d'accueil de l'identifiant Apple et sélectionnez connectez-vous.\nPuis, sélectionnez identifiant ou mot de passe Apple oublié et suivez les instructions pour réinitialiser.\nSi le problème persiste, veuillez contacter l'assistance Apple à.\n\n\u003cprosody rate=\"slow\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n1-800-2-6-3--3-3-9-4 \n\u003c/say-as\u003e \n \u003c/prosody\u003e\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "fr-ca"
+    }, {
+      "text": {
+        "text": [ "\u003cspeak\u003e\nIf you've forgotten your ID or password, you can go to the Apple ID homepage and select sign in. \nThen, select forgot Apple ID or Password and follow the steps to reset.\nIf you are still having issues, you will need to contact Apple Support, over at. \n\n\u003cprosody rate=\"slow\"\u003e\n\u003csay-as interpret-as=\"telephone\"\u003e\n1-800-263-33-94 \n\u003c/say-as\u003e \n \u003c/prosody\u003e\n\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "last_page",
+      "value": "Apple ID issues"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Page",
+    "name": "9361a13a-707a-42ee-988b-980fe8955054"
+  } ]
+}
