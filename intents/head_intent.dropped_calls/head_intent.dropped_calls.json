@@ -1,0 +1,20 @@
+{
+  "name": "1830419c-8d81-43fa-a24e-f76dc50b212c",
+  "displayName": "head_intent.dropped_calls",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Troubleshooting dropped calls",
+  "numTrainingPhrases": 159
+}

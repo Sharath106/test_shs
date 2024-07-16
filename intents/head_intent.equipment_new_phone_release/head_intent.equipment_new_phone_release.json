@@ -1,0 +1,15 @@
+{
+  "name": "b43c839d-ac8a-4817-a68f-3dd83473fe4a",
+  "displayName": "head_intent.equipment_new_phone_release",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Users asking about the release window for a new device (Iphones, Samsung Galaxy phones, Google Pixel phones, Smartwatches, Tablets, etc..)",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 181
+}

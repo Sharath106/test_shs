@@ -1,0 +1,1259 @@
+{
+  "trainingPhrases": [ {
+    "id": "b9702ac8-071b-440e-8009-a84ef50b24d3",
+    "parts": [ {
+      "text": "I'm looking to buy a new "
+    }, {
+      "text": "speaker",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f7e8d47c-37c5-4863-a15f-698f5b59b3b0",
+    "parts": [ {
+      "text": "purchase "
+    }, {
+      "text": "speaker",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2f4deb15-59ab-4842-a491-dcffc26ae638",
+    "parts": [ {
+      "text": "screen",
+      "parameterId": "device_type"
+    }, {
+      "text": "protector"
+    }, {
+      "text": " for a Samsung phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "143ae757-6102-4ebe-b4ff-dd7999a81830",
+    "parts": [ {
+      "text": "buy screen "
+    }, {
+      "text": "protectors",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a160a863-c2c3-4deb-b26e-69be707f9f9a",
+    "parts": [ {
+      "text": "i wanted to order new "
+    }, {
+      "text": "headphones",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f2093267-7507-496d-9076-e1be6b3ac5d3",
+    "parts": [ {
+      "text": "buy "
+    }, {
+      "text": "headphones",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "21add2af-d2f4-4490-bbae-5737dc492607",
+    "parts": [ {
+      "text": "purchase "
+    }, {
+      "text": "fitbit",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c595a21f-c501-4cad-bc30-c330d151d857",
+    "parts": [ {
+      "text": "get new "
+    }, {
+      "text": "fit bit",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "082a171b-5cb0-4441-a9a2-98efcffacf28",
+    "parts": [ {
+      "text": "buy a "
+    }, {
+      "text": "fitbit",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "87fd5272-f501-4da0-b22b-aecdd5376c05",
+    "parts": [ {
+      "text": "I wanted to get new "
+    }, {
+      "text": "earphones"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3bc35d0b-8b11-41ab-a6ef-3220415fd5d1",
+    "parts": [ {
+      "text": "purchase"
+    }, {
+      "text": " "
+    }, {
+      "text": "earphones"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "197444a9-bab8-4d20-bdc2-1731bc1d065c",
+    "parts": [ {
+      "text": "order new "
+    }, {
+      "text": "earphones"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cbd85d74-e60a-447f-998f-b791279a1e56",
+    "parts": [ {
+      "text": "Buy"
+    }, {
+      "text": " "
+    }, {
+      "text": "earbuds"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "68e3689e-0619-40a9-8693-944db8bc9894",
+    "parts": [ {
+      "text": "I'm looking for a "
+    }, {
+      "text": "charger",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b06787bb-453e-4234-8342-e5451ac34a92",
+    "parts": [ {
+      "text": "buy a "
+    }, {
+      "text": "charger",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "81f3d341-990d-4469-a92a-67e980f58cdf",
+    "parts": [ {
+      "text": "phone "
+    }, {
+      "text": "cases",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a8443699-a1b0-43df-a82f-b8a5e34d452f",
+    "parts": [ {
+      "text": "purchase a "
+    }, {
+      "text": "case",
+      "parameterId": "device_type"
+    }, {
+      "text": " for an iPhone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6d41651c-bdd1-4528-a615-abe5a881eafb",
+    "parts": [ {
+      "text": "need a phone "
+    }, {
+      "text": "case",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "57667675-b9ab-40c8-a5fe-0fb482e598b8",
+    "parts": [ {
+      "text": "iphone"
+    }, {
+      "text": " preorder"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3bede412-df5a-46f0-bbbd-7f42a33fff47",
+    "parts": [ {
+      "text": "I want a "
+    }, {
+      "text": "new"
+    }, {
+      "text": " device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5b3d9631-23d0-4aba-a039-9cb83580a5d0",
+    "parts": [ {
+      "text": "new"
+    }, {
+      "text": " "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "07a0ca22-9997-46e1-a580-5d616caaef5c",
+    "parts": [ {
+      "text": "want to "
+    }, {
+      "text": "buy"
+    }, {
+      "text": " apple watch series "
+    }, {
+      "text": "five"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d49a6359-99f2-44f4-b8ae-c62ca4cc45fb",
+    "parts": [ {
+      "text": "need "
+    }, {
+      "text": "new"
+    }, {
+      "text": " telus "
+    }, {
+      "text": "hub"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "32655ee3-f2f7-4855-a5cb-2d5fbd757ab2",
+    "parts": [ {
+      "text": "want to talk about getting new "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66962d80-e3e2-4c45-a8bd-391b11328ac0",
+    "parts": [ {
+      "text": "getting another "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "55dab157-4422-4d5b-aa02-03ac1c4d82bc",
+    "parts": [ {
+      "text": "pre order "
+    }, {
+      "text": "cell"
+    }, {
+      "text": " phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9cc5464f-276b-4282-a396-e8a22604a2b5",
+    "parts": [ {
+      "text": "phone"
+    }, {
+      "text": " sales"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "46ccd448-b450-4a0e-88ce-44ec65fc2014",
+    "parts": [ {
+      "text": "I'm trying to purchase the "
+    }, {
+      "text": "airpods",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4ee80c59-1d6e-46a1-94dd-aad53806043c",
+    "parts": [ {
+      "text": "buy the new "
+    }, {
+      "text": "airpods",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f9f8ea61-6bfe-46bf-9232-57edbfc45bea",
+    "parts": [ {
+      "text": "i want to purchase new "
+    }, {
+      "text": "Airpods",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bf0abac1-9ea5-4b39-8b19-629898f02272",
+    "parts": [ {
+      "text": "I'd like to "
+    }, {
+      "text": "purchase"
+    }, {
+      "text": " a smart hub from "
+    }, {
+      "text": "my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "339bda26-7c5f-4935-acc4-0d4c67f81651",
+    "parts": [ {
+      "text": "Purchase a "
+    }, {
+      "text": "new phone"
+    }, {
+      "text": " on the "
+    }, {
+      "text": "existing account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7dca47bf-9e3f-47c7-8965-d6e40a6c108f",
+    "parts": [ {
+      "text": "I'm looking to "
+    }, {
+      "text": "buy a new phone"
+    }, {
+      "text": " for my husband"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ff3afb54-85c0-4a98-8202-27fc7c7c0394",
+    "parts": [ {
+      "text": " "
+    }, {
+      "text": "buy"
+    }, {
+      "text": " a new "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "671da6cc-0707-4d9b-95c2-cf01396b3898",
+    "parts": [ {
+      "text": "I'm looking to "
+    }, {
+      "text": "buy a new phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "677cb961-3c06-407b-b6d9-aac514327254",
+    "parts": [ {
+      "text": "looking to buy a new "
+    }, {
+      "text": "tablet",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3c7b3156-5a36-495c-a72b-3f73da50b28f",
+    "parts": [ {
+      "text": "buy a new phone"
+    }, {
+      "text": " on a monthly contract please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "98c13a37-0a28-4bda-956c-93eed809d6d6",
+    "parts": [ {
+      "text": "can i order a "
+    }, {
+      "text": "new device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f056428c-63b6-445e-a9b1-18eddedf5520",
+    "parts": [ {
+      "text": "need of a "
+    }, {
+      "text": "new phone"
+    }, {
+      "text": " on "
+    }, {
+      "text": "existing"
+    }, {
+      "text": " account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eb7bfdb3-7907-4acb-8915-ca3d3ee76f7c",
+    "parts": [ {
+      "text": "i want a "
+    }, {
+      "text": "new phone"
+    }, {
+      "text": " on an "
+    }, {
+      "text": "existing"
+    }, {
+      "text": " plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "392b2037-578f-41dd-a609-df55d40d85fb",
+    "parts": [ {
+      "text": "Is it possible i get a "
+    }, {
+      "text": "new phone"
+    }, {
+      "text": " that goes with my "
+    }, {
+      "text": "existing"
+    }, {
+      "text": " line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "488b38f9-53db-45c7-a239-253262d64941",
+    "parts": [ {
+      "text": "New activation"
+    }, {
+      "text": " with a "
+    }, {
+      "text": "new device"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d45c7a9f-d2a1-4584-959a-aa0931448e0d",
+    "parts": [ {
+      "text": "I want to do a "
+    }, {
+      "text": "new activation"
+    }, {
+      "text": " with a "
+    }, {
+      "text": "new phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f6c20b90-cd96-420a-be5b-6dd6083e06ab",
+    "parts": [ {
+      "text": "I want to "
+    }, {
+      "text": "activate"
+    }, {
+      "text": " a "
+    }, {
+      "text": "new"
+    }, {
+      "text": " contract on a "
+    }, {
+      "text": "new phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "01bb6e20-932c-468a-9794-790894076ea3",
+    "parts": [ {
+      "text": "I am trying to buy a "
+    }, {
+      "text": "tablet",
+      "parameterId": "device_type"
+    }, {
+      "text": " and I am stuck"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a5a4c904-7939-4df2-89d1-092e4f53753e",
+    "parts": [ {
+      "text": "I would like to order the Samsung "
+    }, {
+      "text": "tablet",
+      "parameterId": "device_type"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a85d05f6-a7a4-4e34-9984-5546c7a4d64d",
+    "parts": [ {
+      "text": " I wanted to purchase a "
+    }, {
+      "text": "tablet,",
+      "parameterId": "device_type"
+    }, {
+      "text": " I don't need extra line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4cb5908f-7242-49e3-bbf8-1a9bb03209af",
+    "parts": [ {
+      "text": "i am also interested in purchasing the Samsung "
+    }, {
+      "text": "tablet"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4832c211-274c-4f93-939f-9b50e2fd367e",
+    "parts": [ {
+      "text": "I'm looking into buying a new "
+    }, {
+      "text": "tablet",
+      "parameterId": "device_type"
+    }, {
+      "text": " for myself"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "20a5648f-08ba-4ab0-b7f6-594b01dc87a7",
+    "parts": [ {
+      "text": "Does telus sell tablets?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2664f2a6-1c20-4344-964f-90f5aa7f75ba",
+    "parts": [ {
+      "text": "I want to purchase a "
+    }, {
+      "text": "tablet",
+      "parameterId": "device_type"
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "61755667-33e5-4cfe-96a1-f62871486dfe",
+    "parts": [ {
+      "text": "want to buy a "
+    }, {
+      "text": "tablet",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "52a88493-31f9-4bed-b7bf-11e22dbd10a6",
+    "parts": [ {
+      "text": "I would like a new "
+    }, {
+      "text": "tablet",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "51c574ab-2b1c-433d-9ad3-5ea2375d2f6f",
+    "parts": [ {
+      "text": "orders"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b2747907-3d4f-429b-b02f-814d34dad376",
+    "parts": [ {
+      "text": "amazon echo online order"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5b1329e8-e07b-4c65-8ce7-4d007f6f055c",
+    "parts": [ {
+      "text": "online orders"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4e2fc7d5-7f1e-4d09-a788-09e283de359c",
+    "parts": [ {
+      "text": "ordering on line"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c36da24a-b8a4-4f01-9888-e466af271b97",
+    "parts": [ {
+      "text": "on line order"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "40b4c8b0-d144-409e-8be3-1b52f4fae8f2",
+    "parts": [ {
+      "text": "i want to sign up for a mobility "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3f994c81-8674-4ac8-bbd6-d733fff0200d",
+    "parts": [ {
+      "text": "pre order"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0a032dd6-a936-49ce-8080-cc097e4a7913",
+    "parts": [ {
+      "text": "pre order device"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6209a326-d65e-478a-87e1-18ed4713e05b",
+    "parts": [ {
+      "text": "i need to a "
+    }, {
+      "text": "hub"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3a5e3d8a-c5d7-4fa7-a4b4-0c4b9cce86b6",
+    "parts": [ {
+      "text": "i need a new "
+    }, {
+      "text": "hub"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f4650030-0a47-453c-b898-dcd131521fbf",
+    "parts": [ {
+      "text": "i want to "
+    }, {
+      "text": "buy"
+    }, {
+      "text": " a telus "
+    }, {
+      "text": "smarthub"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "073054cb-ddb2-4a41-a940-1afc4865c1fb",
+    "parts": [ {
+      "text": "need a new plan and "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5b476e52-1ab7-4f64-937b-c12df46f83b4",
+    "parts": [ {
+      "text": "want to talk about getting a new "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c9fd868e-c7db-4d72-8d5f-fa74be2ce1bf",
+    "parts": [ {
+      "text": "purchase an "
+    }, {
+      "text": "ipad",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "15e83009-512f-4861-82c7-b67ad5ed6920",
+    "parts": [ {
+      "text": "ipad",
+      "parameterId": "device_type"
+    }, {
+      "text": " pro purchase"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cd35623e-45f0-43ba-8182-c3b7876f8c63",
+    "parts": [ {
+      "text": "i wanna get a new "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "93d726f2-c159-4e64-921c-2a7c347dfb08",
+    "parts": [ {
+      "text": "get new "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e5ee0da9-feb7-40ff-b5b6-eb397f2c7546",
+    "parts": [ {
+      "text": "order a "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2e7a0689-df88-4c25-806d-40b34357a1eb",
+    "parts": [ {
+      "text": "i wanna know how to get a "
+    }, {
+      "text": "phone"
+    }, {
+      "text": " for my wife"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "775d31de-25ad-47ca-9f4a-98473a5419e4",
+    "parts": [ {
+      "text": "i want to order a new "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0006aa1a-b946-4f9e-9212-537ba8441e9e",
+    "parts": [ {
+      "text": "preorder a new "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6d7a1d63-2788-49c5-acdd-dd328719967f",
+    "parts": [ {
+      "text": "i'm looking for a a new "
+    }, {
+      "text": "cellphone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0524570c-06c6-41b7-90ec-873f45959eed",
+    "parts": [ {
+      "text": "i'd like to purchase a "
+    }, {
+      "text": "tablet"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5437b974-b8c5-4a13-8d61-3571bde11ba4",
+    "parts": [ {
+      "text": "hello i want to get a new "
+    }, {
+      "text": "mobile phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7a6b7062-3c09-4928-88f8-fe041299f43b",
+    "parts": [ {
+      "text": "looking to get a "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9364ac7f-81fb-4b29-ac2a-aac10e1f5487",
+    "parts": [ {
+      "text": "we would like to purchase a "
+    }, {
+      "text": "phone"
+    }, {
+      "text": " and a plan"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db3e9d72-77f8-448a-91ad-03d9f7a6f3ee",
+    "parts": [ {
+      "text": "buy"
+    }, {
+      "text": " a "
+    }, {
+      "text": "cell"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5518305b-580d-47aa-981c-001b34885681",
+    "parts": [ {
+      "text": "purchase "
+    }, {
+      "text": "mobile phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aecfe965-eacd-46b4-9bd5-d9e18bccb027",
+    "parts": [ {
+      "text": "pre order "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f2f2f49d-aff7-4598-9c45-28d6116a06bf",
+    "parts": [ {
+      "text": "i wanna get a new "
+    }, {
+      "text": "cellphone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6b22be1d-141a-4b34-a805-40f56cde94fe",
+    "parts": [ {
+      "text": "get tablet"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6f883e76-69fa-4fa2-9f09-5e18f3e8123b",
+    "parts": [ {
+      "text": "preorder a "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aeaa6c65-c0ab-4097-a764-b77060722321",
+    "parts": [ {
+      "text": "looking for my new "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "981e5634-6e84-431d-b24b-62ba44d9c937",
+    "parts": [ {
+      "text": "purchasing a phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "62ef5b7b-08e5-4a9f-b307-da63bc327ce2",
+    "parts": [ {
+      "text": "i would like to get a new "
+    }, {
+      "text": "phone"
+    }, {
+      "text": " from telus"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "55400e51-f713-4ead-b5ee-8958f724ca22",
+    "parts": [ {
+      "text": "pre order new "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bbb4b043-3a2e-423b-8adb-3e79925be965",
+    "parts": [ {
+      "text": "purchase a new "
+    }, {
+      "text": "mobile phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a9d5f6e1-8b72-442c-89e7-c46953e2bb3a",
+    "parts": [ {
+      "text": "getting get a new "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "44986b7e-e115-463e-9c3b-b14af3148eed",
+    "parts": [ {
+      "text": "i want a "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ec17697b-c9bc-4133-993c-0d7c67790367",
+    "parts": [ {
+      "text": "buying "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "35bcf7fa-fd78-4004-b11d-fcd22d60a046",
+    "parts": [ {
+      "text": "iphone"
+    }, {
+      "text": " ten purchase"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4b95b4bd-0096-4e19-9080-e526b798ea3f",
+    "parts": [ {
+      "text": "ordering my "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db4153c1-d00a-474b-bbf4-c62624e0e421",
+    "parts": [ {
+      "text": "i want to pre order "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d5445812-af70-4aef-b6d8-cf060248a915",
+    "parts": [ {
+      "text": "order new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7dbc1399-67d5-45f9-aea1-a3fcd0f70b14",
+    "parts": [ {
+      "text": "i'd like to "
+    }, {
+      "text": "buy"
+    }, {
+      "text": " a "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "71726fd3-ba45-4063-b87a-47fd95991940",
+    "parts": [ {
+      "text": "i want the newest phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f24e9147-23c0-445e-8971-60ae3cdcf475",
+    "parts": [ {
+      "text": "getting new "
+    }, {
+      "text": "cellphone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5897e37b-cf2f-420e-aec6-8097a47c2f7f",
+    "parts": [ {
+      "text": "order new "
+    }, {
+      "text": "cellphone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "86aa2a79-43b8-405c-886a-f6ecfde74949",
+    "parts": [ {
+      "text": "my wife needs a new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "456068a3-e62a-42dd-95ef-c380ae62deb4",
+    "parts": [ {
+      "text": "shopping for "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c26fa156-6f41-49b5-82d2-3e8e72038aa3",
+    "parts": [ {
+      "text": "need new "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "47ca5d29-5346-4465-bd55-0a89b880f6c1",
+    "parts": [ {
+      "text": "want to buy a "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ab0721d7-8d4e-4f93-911d-6a7c380f7d8b",
+    "parts": [ {
+      "text": "i'd like to inquire about getting a "
+    }, {
+      "text": "cellphone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7d8a4be7-c58b-4203-a5e0-33dc2781d161",
+    "parts": [ {
+      "text": "i want the latest "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "97bc4ce0-2803-45c4-8465-6e95d4bcca5f",
+    "parts": [ {
+      "text": "i'd like to purchase an "
+    }, {
+      "text": "ipad",
+      "parameterId": "device_type"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "80ad7ab2-8277-426e-9b0b-c46ca1642b12",
+    "parts": [ {
+      "text": "ordering new "
+    }, {
+      "text": "phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3bf407f2-ae7b-445a-bc20-f0aea69275ab",
+    "parts": [ {
+      "text": "i want a new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1de3d0a1-4872-4afe-b7f8-cc1436623160",
+    "parts": [ {
+      "text": "purchase a new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "850468aa-e027-40e4-9313-ef9f10b80955",
+    "parts": [ {
+      "text": "order a new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bda8f478-242d-48dc-8a7a-7c92de594e13",
+    "parts": [ {
+      "text": "purchase new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4e35731d-5d0e-41c7-9543-c52f311b0e08",
+    "parts": [ {
+      "text": "we need new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "03a7924d-05db-4203-bf13-dc0d3946a60a",
+    "parts": [ {
+      "text": "purchase of a new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a0e2c748-ce5e-408f-b932-20d1c8404cc5",
+    "parts": [ {
+      "text": "ordering a phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a272e3f2-bdcf-4fa8-b8d3-46c74a10ce1c",
+    "parts": [ {
+      "text": "i need new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8f0fbcb0-2737-4693-b9c4-19b6f4ddc6ec",
+    "parts": [ {
+      "text": "purchasing a new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e4b98db9-0ee5-497b-85cd-53b8cac4e300",
+    "parts": [ {
+      "text": "buying a new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "218713f1-b019-4755-bd2e-49efd1c729a8",
+    "parts": [ {
+      "text": "buying a phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0e3b9f13-bac6-46cd-8ae7-ee91713bf6ea",
+    "parts": [ {
+      "text": "buy a new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8133e3bf-d122-46b4-8c1b-f173103fc1a0",
+    "parts": [ {
+      "text": "new phones"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1f00793a-c18a-476c-a972-265ff36204fc",
+    "parts": [ {
+      "text": "get a new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "295966d5-ca6b-4c41-bda5-ffa5bd3a5189",
+    "parts": [ {
+      "text": "i need a new phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2714339f-c8dc-4f04-8bc8-05f0f868e9a6",
+    "parts": [ {
+      "text": "i'd like to purchase a package please"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d7e94506-9aad-41ab-a426-c17f80be98bd",
+    "parts": [ {
+      "text": "order new product"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bc5c8250-35ec-4fd3-a6fa-deda6f7b8253",
+    "parts": [ {
+      "text": "need to order"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cb68dfe5-732e-480d-b198-dd857d50dea7",
+    "parts": [ {
+      "text": "purchase buy"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c310e27b-4a10-41ce-8df8-b9185c9d5790",
+    "parts": [ {
+      "text": "i would like one of the users on my contract to be able to buy a phone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "57b63c90-153b-4741-aacb-f6b7a5d4087f",
+    "parts": [ {
+      "text": "new order"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3db8727e-67a6-4a84-a611-29d96d2dfa90",
+    "parts": [ {
+      "text": "an order"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ef4d984b-b819-4fc6-b539-ece721388cad",
+    "parts": [ {
+      "text": "purchase"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eeed44b1-6ac0-48df-aa6c-cee2ab4f47e5",
+    "parts": [ {
+      "text": "order"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  }, {
+    "id": "52113461-0a62-41ef-b629-fee9348a3464",
+    "parts": [ {
+      "text": "i want the newest "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 7,
+    "languageCode": "en-ca"
+  } ]
+}

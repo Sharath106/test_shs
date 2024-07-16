@@ -1,0 +1,20 @@
+{
+  "name": "62e1fe54-097f-4ba1-baa4-b132b3a700ea",
+  "displayName": "head_intent.device_storage",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer asking about their device storage.",
+  "numTrainingPhrases": 160
+}

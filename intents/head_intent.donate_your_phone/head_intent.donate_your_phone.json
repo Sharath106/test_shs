@@ -1,0 +1,24 @@
+{
+  "name": "3a0c67a1-29f3-4c7d-aec3-57469be256ad",
+  "displayName": "head_intent.donate_your_phone",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "donating your phone",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 130
+}

@@ -1,0 +1,18 @@
+{
+  "name": "d4f6473a-6ce2-4b8a-9a20-cfddcbacef54",
+  "displayName": "head_intent.equipment_activate_device",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about activating a device (activating the line/ sim card on the phone).",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 208
+}

@@ -1,0 +1,24 @@
+{
+  "name": "8f2295a1-7ec6-4f7d-8d24-bb7016d0251e",
+  "displayName": "head_intent.equipment_order_status",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries about the status of an order.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 186
+}

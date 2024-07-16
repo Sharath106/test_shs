@@ -1,0 +1,423 @@
+{
+  "trainingPhrases": [ {
+    "id": "2cdb9aca-d0de-42c2-9166-2c6c53f25e09",
+    "parts": [ {
+      "text": "trade-in offers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7b447c04-e832-4a35-9e81-4e72569b7f5d",
+    "parts": [ {
+      "text": "trade in my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "80448aee-e4c4-4809-b5d0-4222051ff04d",
+    "parts": [ {
+      "text": "trade-in credits"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1e862dc3-381d-409f-a14c-1422eafeb614",
+    "parts": [ {
+      "text": "trade my current phone for credit?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c3541208-867e-4864-8c3d-88946dd124a3",
+    "parts": [ {
+      "text": "phone exchange program"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "35fb1b04-cce1-4fb8-94ba-7867fa266439",
+    "parts": [ {
+      "text": "trade in a phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "70b56c57-2218-4fa1-94f5-3233f83c0fdf",
+    "parts": [ {
+      "text": "TELUS trade-in program"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "92496586-c914-43c5-9c0f-0b85c1594c2b",
+    "parts": [ {
+      "text": "trading in a phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "394b27b2-9b96-4a1c-98e5-e1d358da06ab",
+    "parts": [ {
+      "text": "rules for trading-in"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "98d0fbaf-a58c-4cef-9ebd-0c9e3ce0ca29",
+    "parts": [ {
+      "text": "do you take back old phones"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bf9f4d9a-da1d-4dc0-aae4-3865730acd73",
+    "parts": [ {
+      "text": "also what issues do they look for to bring the trade in value down?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fde3b464-a92e-4417-9119-d4d4d4970acd",
+    "parts": [ {
+      "text": "Im wondering if there is a trade in value for the iPhone 12 Plus that could go towards that upfront cost?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4d1728a1-a5fb-4768-a947-59c50033f22d",
+    "parts": [ {
+      "text": "Is there a trade in feature that would make purchasing a newer phone cheaper?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "56d29604-cbf9-40d4-b66e-09e00c11d72c",
+    "parts": [ {
+      "text": "Im wondering if I'm able to trade in my iPhone XS for the new iPhone. is that offered?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "887e7ff1-a94e-42a5-b5ab-09ced263bcb2",
+    "parts": [ {
+      "text": "I have an iPhone in perfect condition. I would like to sell the trade-in price for a discount on the iPhone that is the smallest in size."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d0e5bbab-84a6-4c32-aa96-3a1a1576d988",
+    "parts": [ {
+      "text": "I'm interested in the device trade in for an iPad."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a89a80bd-be21-44c2-bc09-24df27a6ee34",
+    "parts": [ {
+      "text": "I want to know the trade in value of my iPhone 11 pro max?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "81dd2bd8-2367-40ee-b28a-5cc685700e41",
+    "parts": [ {
+      "text": "i was wondering what the trade in value of an iphone 12 plus with a cracked screen would be?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ff89a184-67d3-44c9-896c-864705f80f96",
+    "parts": [ {
+      "text": "We both have huawei p30 pro's, and would like to trade them in."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d6358e0f-02ed-4d2b-8bff-de44d808fcc8",
+    "parts": [ {
+      "text": "How does it work with the trade in? Its in perfect condition. No scratches, cracks or anything and works perfectly."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ea2a8ba3-5d79-4333-8a22-b77011bcb807",
+    "parts": [ {
+      "text": "I would like to get the new iphone pro. Can I trade in my current iphone?  If so what would be the value?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "879cfc6f-9d3a-405f-96ec-cc357bad1a6d",
+    "parts": [ {
+      "text": "But I am curious to what the trade in value on her phone is"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cffd9367-b2d2-4512-86f3-9325556a106c",
+    "parts": [ {
+      "text": "Any way to do a device trade in while upgrading online?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b33f43cb-bf58-4c18-9a69-735e598f0cbd",
+    "parts": [ {
+      "text": "I would like to trade in my phone. I still owe as I believe I've had this phone for maybe 19 months. Am I still able to trade it in and get a trade in value?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d2c07e51-8027-4399-b800-e66ee1c5d48c",
+    "parts": [ {
+      "text": "I have an iPhone 20 plus in good condition. Is there any trade in value for this?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a46ffcaf-830d-4b43-b051-f032b19bf81e",
+    "parts": [ {
+      "text": "I want to know what the trade in value for my s65+ is?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a817806e-2122-4241-9045-914c53aaa5da",
+    "parts": [ {
+      "text": "also wanted to ask if we can get some trade in value for her old phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "46cdb9ee-baef-4abd-b7a7-db73f06fed77",
+    "parts": [ {
+      "text": "Do Telus offer any trade-in specials?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f399cb0c-fb2a-4e18-8109-1c43bf970015",
+    "parts": [ {
+      "text": "if I wanted to upgrade my phone and trade in a phone after I have upgraded would the credit from my trade in but put towards the cost of my phone or would it be a credit?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5a180d85-c495-42e7-bfbf-08283acdd271",
+    "parts": [ {
+      "text": "if I have a cracked screen is there still trade in value?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aa0938bc-891c-4c19-a1ff-15a3bbc50064",
+    "parts": [ {
+      "text": "I have an iPhone X 10 was wondering what the trade in value would be"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "50d65ffc-974f-4dcd-bbc0-c91139cedc0d",
+    "parts": [ {
+      "text": "I'm wondering if we should bring our phones back in the packaging when trading in our devices?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "29ab431e-1b6d-4876-b7db-1b431d3624b4",
+    "parts": [ {
+      "text": "I was just wondering how much trade in value I can get for trading in my iPhone XR?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4af46541-c8f7-4e31-be5f-c8bf8bd7c50f",
+    "parts": [ {
+      "text": "Does Telus or will Telus have any kind of trade in program? I have a 12 pro max but I might want to trade in for the new"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "789a3c8e-27c4-4bf2-b16f-d4b0cbfc315b",
+    "parts": [ {
+      "text": "Have you restarted your trade-in program?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b8f83213-eeb8-46bb-8091-39f1b043e2a0",
+    "parts": [ {
+      "text": "Does Telus offer a trade in credit for my old iphone x?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b40f6880-609f-492d-9072-3e49af6c50b5",
+    "parts": [ {
+      "text": "What would I owe if I traded?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1a8cacf8-e7ce-4a0b-9237-a41791ff9369",
+    "parts": [ {
+      "text": "I am just wondering what an iphone xr is worth on trade in ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3fc5ce94-82f4-45bf-bd0f-5e67e678b538",
+    "parts": [ {
+      "text": "If I were to upgrade to a new phone can the phone I am using now be traded in for money off?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8e97ee69-d197-43a7-8b73-4d75a7f3b2ff",
+    "parts": [ {
+      "text": "Just wondering if you guys do trade ins?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "deb0ad75-82d4-4d88-a46a-a17ddb211a5a",
+    "parts": [ {
+      "text": "Do you provide trade in value for old phones?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c29afff2-2933-421e-a2fd-6cfda4b5c28f",
+    "parts": [ {
+      "text": "i have a question: if i trade in my i phone n would like to buy new i phone 6 with 24 month contract so any deal on it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7c8af764-41c2-4a39-af6b-021743743356",
+    "parts": [ {
+      "text": "do you guys have trade in value?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "53b69701-6b7f-498c-8622-e9bd1d653f01",
+    "parts": [ {
+      "text": "i was told in a previous chat that i would be eligible for an additional 29 dollar trade in bonus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "147f6f57-8e0d-4f86-a036-2221dc167e33",
+    "parts": [ {
+      "text": "We would like to trade in our phones."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "593d0c5f-d305-47a1-bca7-0afe7cdce75e",
+    "parts": [ {
+      "text": "Im looking for info on how to trade up my phone.  I believe its on a buy back plan."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "14c2998f-f25e-4391-90e3-aa45fd181650",
+    "parts": [ {
+      "text": "My question on that is if I trade in my previous phone, can I use that trade in value towards the taxes I would owe upfront?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5aae17d6-4a28-4832-a150-665b5a6eb9a5",
+    "parts": [ {
+      "text": "I was just wondering if I were to trade in my Iphone 12 after I pay it off, would I get a discount?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e55e0600-9d6f-4686-bc15-c27549e2b42a",
+    "parts": [ {
+      "text": "could i tradein my device and then put that in towards some value of the new phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f001100a-203b-4c6a-9590-e2fcba5ed591",
+    "parts": [ {
+      "text": "do you accept trade in on old iphones?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2c944e22-81ac-42cd-97e1-feb9470edf25",
+    "parts": [ {
+      "text": "just curious if you offer old device buybacks?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b2c81cc9-9e97-4d7d-b379-a0a35f5d363c",
+    "parts": [ {
+      "text": "whats the trade in value in my phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c8317146-8cc7-4330-b65e-c785b7563063",
+    "parts": [ {
+      "text": "Is there a section online where I can select that I am trading in an old phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c46076fb-0b3f-4108-86e0-183f254b339c",
+    "parts": [ {
+      "text": "How does the trade in work on an s6 ultra?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ad6a1306-b420-4a82-8e9f-2546532638ce",
+    "parts": [ {
+      "text": "i am inquiring about trade in deal of up 120 dollars on samsung galaxy s180"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f5d520bf-18b9-4846-a540-f9b27be47397",
+    "parts": [ {
+      "text": "The website shows an additional 60 dollar credit to trade in of an apple watch series 3 or higher. Is that 60 dollars added to my trade in value?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0a326b30-fdd9-46dc-950a-c56a4bae79d6",
+    "parts": [ {
+      "text": "Would it be possible to combine that with trade in value for my current phone to get the best possible deal?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c0ecc2b5-3c94-451d-9e16-9690c19a6d4d",
+    "parts": [ {
+      "text": "I have a samsung s20 under a 2 year contract with you guys. Is it possible for me to trade it in for an iPhone 13 Pro?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a2960de3-a518-4fe4-a526-f22120d261ba",
+    "parts": [ {
+      "text": "Wondering how much I could get for trading in my device."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0b0087fd-99c3-4af9-b345-bf03ff433350",
+    "parts": [ {
+      "text": "Is Telus willing to give me some sort of a trade in credit for my old device?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

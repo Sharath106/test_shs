@@ -1,0 +1,23 @@
+{
+  "name": "088986c1-7054-40cc-a49a-1fbe9bd649ef",
+  "displayName": "head_intent.easy_payment_info",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "payment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Information on Easy Payment.",
+  "numTrainingPhrases": 164
+}

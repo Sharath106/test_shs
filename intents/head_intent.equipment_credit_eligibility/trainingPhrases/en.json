@@ -1,0 +1,914 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I want to get a Samsung watch however it says due to my credit rating to talk to you."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Eligibility to "
+    }, {
+      "text": "add",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " a "
+    }, {
+      "text": "new line",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Am I eligible to "
+    }, {
+      "text": "renew",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I "
+    }, {
+      "text": "activate",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " a "
+    }, {
+      "text": "new",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " line on "
+    }, {
+      "text": "my account"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "eligible to "
+    }, {
+      "text": "renew",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " my line"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "eligible for a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "want to know if I can get a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Am I eligible to "
+    }, {
+      "text": "add a line",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I "
+    }, {
+      "text": "renew",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " my line?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "eligibility for a "
+    }, {
+      "text": "renewal",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i get a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " soon"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "am i eligible for the deal"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you check my eligibility"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you see if my phone is able to "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Eligibility to "
+    }, {
+      "text": "add a line",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " my mother's phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "am I eligible to "
+    }, {
+      "text": "add",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " a "
+    }, {
+      "text": "new line",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am a "
+    }, {
+      "text": "new",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " costumer and was hoping to get an account but I just tried and I wasn't able to because of 'credit limitations' can you give me some insight on this? My credit score is 77, I was able to buy a house and vehicle so I cant see how I could not qualify for a phone!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am inquiring about up grading my phone, but it says I have poor credit rating so to ask yiu"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My iphone 10 has stopped charging, so I'd like to get an iphone 12 but it's saying there is a problem with my credit rating. Are you able to "
+    }, {
+      "text": "help"
+    }, {
+      "text": " me out? Thanks"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to get a "
+    }, {
+      "text": "new phone"
+    }, {
+      "text": " BUT it is saying i cannot get it due to a credit rating"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "So you guys say I cant "
+    }, {
+      "text": "buy a",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " phone online due to my credit rating when my credit rating is good. So if you cant "
+    }, {
+      "text": "help"
+    }, {
+      "text": " me I'm sure another company will. This is ridiculous."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am wondering what i can do for an "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " since my phone broke and i "
+    }, {
+      "text": "need a new",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " "
+    }, {
+      "text": "one"
+    }, {
+      "text": ". you guys keep sending me offers in my email and when i try accesing any of them it wont let me due to my credit rating.."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm looking to get a "
+    }, {
+      "text": "new"
+    }, {
+      "text": " cellphone. My current "
+    }, {
+      "text": "one"
+    }, {
+      "text": " is old. Storage is maxed out, and my battery must be shot, because it shuts down when it gets to about 50%. Credit is bad, so not approved for any."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "im trying to switch providerds to telus and ive never had any phone plans or credit cards in my name before so i dont really have a credit score and it says it cant let me proceed with creating an account but i have no issues with being able to pay the bills and work a full time job"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I applied for an iPhone 12 pro max pre order but have received the email that my credit check was not approved. This is weird as I have a good credit rating as seen on the credit score section of my bank."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I just have a question i tried applying to get a phone but it saying it wont let me due to credit can you "
+    }, {
+      "text": "help"
+    }, {
+      "text": " me with that  ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am looking to "
+    }, {
+      "text": "upgrade"
+    }, {
+      "text": " mine and my wife's phones to take advantage of the peace of mind plan. Unfortunately, we have poor credit and cannot complete the transaction online. The deal ends tomorrow and we are likely unable to get to a Telus store as my wife works as a Registered Nurse and has a shift tomorrow during business hours"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "just wondering what it means in not being able to "
+    }, {
+      "text": "add",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " a phone device due to a credit rating"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I had questions about how the financing approval works?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when i attempted online it said i need assistance becasue of my credit rating"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "alright, so when I try to purchase the phone in question it says my credit score is too low: I am trying to purchase the phone outright, I do not see how my credit score would factor into things?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I went through the whole process and got a plan with the credit report capping me however he was going to look into my credit summary to see if there was any financing to be able to get a "
+    }, {
+      "text": "new",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " device "
+    }, {
+      "text": "not sure"
+    }, {
+      "text": " if this was the same chat or not if you could do that"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I "
+    }, {
+      "text": "need a new phone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " but I have a poor credit rating. I know I dont qualify  but im wondering if there is anyway I can pay a higher upfront to let me have a phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a great transunion credit score, but a  "
+    }, {
+      "text": "zero"
+    }, {
+      "text": " score with Equifax, due to all my revoling credit being reported to Transunion. would  I still be able to have a monthly service with TELUS with a bring your "
+    }, {
+      "text": "own device"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to pre order an LG velvet. The website says my credit rating is not good enough. Can you "
+    }, {
+      "text": "help"
+    }, {
+      "text": " me out?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "But my credit rating is prohibiting me from getting a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it says my credit rating isnt good enough to do it online...."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When signing up for a plan, I have issues with the credit check. The problem is that I don't have a credit history. I was wondering what my options are?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am trying to purchase and "
+    }, {
+      "text": "add",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " a apple watch to my plan but it is telling me it can't due to something with my credit rating. However I don't understand because my credit rating is in the mid 70's. Is there a way you can "
+    }, {
+      "text": "help"
+    }, {
+      "text": " me out?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am just wondering what your credit requirements are generally. Im looking to get a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " but dont want. To get my credit checked if I dont have a chance of being approved."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am trying to get a mobility account and iPhone but seemingly fail the credit check. My credit rating with equifax is 82. Any ideas ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to possibly "
+    }, {
+      "text": "buy a",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " phone ..it says there is a credit rating problem????"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "im trying to order a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " but it says i cant because of my credit. i do not have a credit card or anything so there isnt anything wrong with my credit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was just wondering if you could "
+    }, {
+      "text": "help"
+    }, {
+      "text": " me figure out what i can do to be approve of the apple watch. It says i have a bad credit rating. Would it "
+    }, {
+      "text": "help"
+    }, {
+      "text": " if i pay my overdue balance so i would be able to "
+    }, {
+      "text": "add"
+    }, {
+      "text": " apple watch on "
+    }, {
+      "text": "my account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am wondering what the requirements to finance a smartwatch with telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am trying to order and "
+    }, {
+      "text": "add"
+    }, {
+      "text": " a Apple Watch to "
+    }, {
+      "text": "my account"
+    }, {
+      "text": " but its saying something about my credit rating not allowing me to do so. Yet my credit rating is in the mid 70s. What do I need to do to get "
+    }, {
+      "text": "one"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "So I really "
+    }, {
+      "text": "need a new phone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": ", but can't purchase "
+    }, {
+      "text": "one"
+    }, {
+      "text": " yet due to my credit or something. I wanted to order the "
+    }, {
+      "text": "new",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " motorola razor phone how would I go about doing that???"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "do I still need a credit check to come on board on the mobility side?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was told I could because my credit rating is low"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to get a "
+    }, {
+      "text": "new phone"
+    }, {
+      "text": ". But it says my credit is not good. But when i check my credit bureau credit score my trans union and equifax score both of them has a good credit score. What is the problem i cannot get a "
+    }, {
+      "text": "new phone"
+    }, {
+      "text": " and "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": ". Thank you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am looking to "
+    }, {
+      "text": "buy a",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " "
+    }, {
+      "text": "new",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " iPhone, but the website says that I cannot buy it online due to my credit rating. What is the minimum credit rating that is required?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I know I have not the best credit, am I able to get a phone and account by getting a credit limit, and can I do a credit check without a credit card? I don't have one"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what does my credit rating need to be to get approved"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how do I get a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " if I just recently got a credit card and have no credit?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was told to contact telephone customer service to proceed with a credit check so that I can change from pre paid to post paid, however when I called twice, the call was cancelled."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it says that i can't "
+    }, {
+      "text": "buy a",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " phone because of my credit rating"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it says my credit rating isnt good enough to get the I phone XR but I wanted to put money down on the phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you tell me if i qualify for a phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am trying to "
+    }, {
+      "text": "buy a",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " phone online but it says i cannot due to my credit score."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "But don't have a good credit score what can I do?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what kind of credit score would i need to be eligible for a phone line?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How does someone without a credit history qualify for a phone and plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lastly does Telus do a credit check to be on a contract and if they do and I dont pass can I make a deposit to still be on a contract?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what is the minimum credit score required to open an account and finance a phone through telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me what the average credit score must be to get a phone on credit payment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Well I am wondering if I would qualify for a cell phone contract. My credit score says needs work and I have been working on it for over a year. So before I get Telus to do a hard check on my credit score I was wondering if I would even qualify with with a score of 65"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my phone is broken, I tried getting another "
+    }, {
+      "text": "one"
+    }, {
+      "text": " but it is saying my credit rating is not good enough but Vidotron just accepted me for the same phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am wanting to "
+    }, {
+      "text": "upgrade"
+    }, {
+      "text": " my phone to an Apple XS Max. I would like to use my "
+    }, {
+      "text": "existing",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " phone for my kids to have for call and text. I tried to buy online but couldnt. It said there is problem with my credit rating."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm trying to "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " my phone to the Samsung S21 and it is telling me that I cant due to my credit rating but that seems very unlikely as my credit rating hasnt gone down recently."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am trying to get a phone. Unfortunately it says that due to my credit rating I can't "
+    }, {
+      "text": "add",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " a phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wondering if i need credit history to get approved for a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Looking to know if my credit rating is acceptable for an "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My credit is low and I have a few overdue bills. Is there anyway I can refinance a phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "May i "
+    }, {
+      "text": "buy a",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " device online if i have bad credit ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " my phone early, can I?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Possible to "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " my phone earlier?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Im wanting a newer phone. Can I get an "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " yet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am looking to get a "
+    }, {
+      "text": "new",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " iphone. I was curious if I was available for an "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Am I eligible for a "
+    }, {
+      "text": "new",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " cell "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " yet, if not when can I "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i am inquiring to see if "
+    }, {
+      "text": "my account"
+    }, {
+      "text": " is eligible for an "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " to a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " my iPhone to a "
+    }, {
+      "text": "new",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " "
+    }, {
+      "text": "one"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm wondering if I can "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " to a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was wondering if I could "
+    }, {
+      "text": "upgrade",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " to a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " on the same plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "credit rating"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to know when i'm due for a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when am i eligible for a "
+    }, {
+      "text": "new phone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

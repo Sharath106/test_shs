@@ -1,0 +1,395 @@
+{
+  "trainingPhrases": [ {
+    "id": "d280c9ce-1f27-41af-b444-a137b6c91535",
+    "parts": [ {
+      "text": "I'm trying to find out the status of my order when I check it online it says it's got canceled but I didn't cancel it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2004cb2d-3aac-439e-ab2c-07564810e761",
+    "parts": [ {
+      "text": "Haven't received any notifications of shipment of my order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ba6df3f8-6d76-4278-a500-a8aa296b40fe",
+    "parts": [ {
+      "text": "preordered iphone "
+    }, {
+      "text": "13"
+    }, {
+      "text": " pro "
+    }, {
+      "text": "last week"
+    }, {
+      "text": ". Is it on track to be delivered by the end of "
+    }, {
+      "text": "this week"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b3e00955-b33e-4a4d-ab2e-f38d838e2550",
+    "parts": [ {
+      "text": "trying to get an update on my recent order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cb275dae-77bf-4db9-acb4-507125ed0b5a",
+    "parts": [ {
+      "text": "still waiting for my tracking number please give my an update on my order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9e81f6b8-9c0c-4646-baa8-363f50109453",
+    "parts": [ {
+      "text": "is there an estimated time of arrival for the order I made "
+    }, {
+      "text": "two weeks ago"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d1049615-4d9d-45af-a04b-7b1d5aa06b33",
+    "parts": [ {
+      "text": "how long more do I need to wait for my upgraded phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ac9042b3-f8f4-40d8-a915-c05c49800ddb",
+    "parts": [ {
+      "text": "when can I expect my order to arrive? been a while already"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "54973886-2fce-4d6f-b660-0bbc95823ce7",
+    "parts": [ {
+      "text": "placed an order for iphone "
+    }, {
+      "text": "12 on August 12"
+    }, {
+      "text": " and have not heard nothing since then"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8ac94625-56ca-48d8-b3a2-4bc10b01e464",
+    "parts": [ {
+      "text": "I ordered new sim card "
+    }, {
+      "text": "last month"
+    }, {
+      "text": " and still haven't received it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bb5a9e4d-5c6a-4d36-8766-af75e764fd0a",
+    "parts": [ {
+      "text": "i an order on line order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fb4f0409-79e9-4e2b-a163-d7879f0034b3",
+    "parts": [ {
+      "text": "on line order confirmation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ea8d4c2a-6cb2-401e-b059-1a57466e6039",
+    "parts": [ {
+      "text": "i received an email telling me that i needed needed to call in to verify my on line order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5d04044e-d09c-43ff-affd-f6540483a717",
+    "parts": [ {
+      "text": "regarding status of the order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "41408455-6936-46a2-824d-8de5b6d1f104",
+    "parts": [ {
+      "text": "check on a order status"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "70617777-72e2-47ba-9188-f47b2a8e4b84",
+    "parts": [ {
+      "text": "check on order status"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6322df8b-ca51-4e9e-b4a8-b1136bd76728",
+    "parts": [ {
+      "text": "order status"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "560914a7-5250-4e0a-a987-dffbf70b6978",
+    "parts": [ {
+      "text": "where's my equipment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1741c3a8-eb6c-44f7-a486-8c606ea36eb4",
+    "parts": [ {
+      "text": "i have placed an order for a cellphone at one of your outlets and i'm not sure which one it was and i need some help locating it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bfef01ad-8c0f-4477-a287-77b484c94c4f",
+    "parts": [ {
+      "text": "i haven't received my new phone in the mail yet and i was wondering where it is"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d6a7e789-2127-49db-ae0a-a43186037566",
+    "parts": [ {
+      "text": "new phone ordered"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a343d87a-3393-4b3e-9d7b-3a9678b5938e",
+    "parts": [ {
+      "text": "i bought a phone and i am supposed to call you as soon as possible"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "db107a3d-e718-422c-aa3e-7d68a98c1a2c",
+    "parts": [ {
+      "text": "ordered a new phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "50b2457c-e934-47ce-bf52-47c87cb72fe4",
+    "parts": [ {
+      "text": "inquiring about my pre ordered iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2c0d3375-763a-4262-9a91-62e3ba3fac0b",
+    "parts": [ {
+      "text": "inquiring about my pre ordered phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e49b7a63-5425-4264-81ad-d5d8abe0b4b5",
+    "parts": [ {
+      "text": "i didn't received my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "43febac7-1021-41d1-9e89-869e47bbb197",
+    "parts": [ {
+      "text": "recent order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "87096391-f5e1-4a35-a33d-83f1da48c7fc",
+    "parts": [ {
+      "text": "phone delivery"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1437c9aa-30d2-4ac9-ab7f-c22980911d59",
+    "parts": [ {
+      "text": "pending order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "733a0ade-d0fc-4594-a0de-5c825364c95d",
+    "parts": [ {
+      "text": "i'm tracking a phone that i ordered and it was supposed to be sent in the mail earlier "
+    }, {
+      "text": "this week"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "92a3a52a-3331-4291-98f5-609fc42b10d0",
+    "parts": [ {
+      "text": "regarding a order that was placed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b5868197-0a73-4ca3-8c51-7e6ff5425229",
+    "parts": [ {
+      "text": "delivery of shipment"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "975eadc9-e836-4bcf-89cb-c7a3c1f85f7f",
+    "parts": [ {
+      "text": "missed order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1a99e73e-6386-49c7-bd78-c7036d0f3c5a",
+    "parts": [ {
+      "text": "a new order summary"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cf36c458-80b2-41d4-8679-852c34ef4711",
+    "parts": [ {
+      "text": "i need a confirmation of purchase"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c5cd3f2e-bb37-45b4-9490-f4f8700e2310",
+    "parts": [ {
+      "text": "order number _DIGIT_ _DIGIT_ _DIGIT_ _DIGIT_ _DIGIT_ _DIGIT_ _DIGIT_ _DIGIT_ _DIGIT_"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a50aba7e-64b0-45c7-b95a-bab6b78782ad",
+    "parts": [ {
+      "text": "following up on a phone order from the telus store"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b1291eab-0682-4295-9acd-a417edfff727",
+    "parts": [ {
+      "text": "questions relation to production orders for the r c m p"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bbdcdce5-3d63-434b-ae2e-bb914611087a",
+    "parts": [ {
+      "text": "delivery status"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0c27ee95-803b-4c92-b5f1-7e81ca783436",
+    "parts": [ {
+      "text": "i was sent an email from customer service to give them a call pertaining to my order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ac51598b-4da6-4c59-a259-77aeb90c2cac",
+    "parts": [ {
+      "text": "when will my product be shipped"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "336a1f8b-c591-4c10-9f5b-265ddbf5f98e",
+    "parts": [ {
+      "text": "i ordered something offline i need to talk to someone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "11a6bc51-791b-4063-afe7-332abbbd9d13",
+    "parts": [ {
+      "text": "previously placed order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bc8844d2-3c5b-48e5-bf39-4e0267e85148",
+    "parts": [ {
+      "text": "a battery that was ordered almost "
+    }, {
+      "text": "two weeks ago"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3fb320eb-362b-4334-9c5b-ec69205b251f",
+    "parts": [ {
+      "text": "to see when my replacement is coming"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1acb0186-58f8-434c-8fe6-fc06e19bcc7d",
+    "parts": [ {
+      "text": "delivery date on my tv"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2d43a42c-f722-4fea-8cc3-ce6e027c0e60",
+    "parts": [ {
+      "text": "previous orders"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bf39c5d2-370e-4d1d-b641-94d133ad3bce",
+    "parts": [ {
+      "text": "lost order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d3362bad-970b-4478-a73e-7a335157ad30",
+    "parts": [ {
+      "text": "check order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0019bba1-258e-4719-86c1-50a87c7a98e3",
+    "parts": [ {
+      "text": "shipping"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "67b30639-e086-4fc9-a4d3-9906dc74131b",
+    "parts": [ {
+      "text": "checking my order for a new phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f1ce49dd-39fb-44b8-af52-28d79402c6aa",
+    "parts": [ {
+      "text": "my order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

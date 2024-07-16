@@ -1,0 +1,475 @@
+{
+  "trainingPhrases": [ {
+    "id": "f911827e-07f9-4d78-bd12-c1ca068897c5",
+    "parts": [ {
+      "text": "How do I reactivate in-app purchases?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "942867ba-3558-406a-ba0c-d46c7a802c02",
+    "parts": [ {
+      "text": "I am trying to close purchases that can be made on the "
+    }, {
+      "text": "Google",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": " Play store"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cb4c8a0f-63a1-479d-ab7c-32dfe1a9adfd",
+    "parts": [ {
+      "text": "On my tablet, I would like to cancel all purchases made in the App store"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7b894646-700f-4e97-977c-f171286f0f56",
+    "parts": [ {
+      "text": "Is there a way to block purchases made inside an app?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "06c48aab-eced-4766-92b2-55b8784009b6",
+    "parts": [ {
+      "text": "I just want to prevent my children from having access to app stores purchases"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "590e6e23-9ddc-40cc-b23c-dd6504f685a1",
+    "parts": [ {
+      "text": "Can I close purchases made on app stores"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d2e64ccd-8e4a-4f4c-b1b8-703b74baecbc",
+    "parts": [ {
+      "text": "Could you tell me the easiest way to prevent in-app purchases"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ac304ff4-6b92-4dbf-a2f1-bdb96dbb1f77",
+    "parts": [ {
+      "text": "I can't block purchases made on certain apps"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b36b277e-3d51-4e67-9c45-30dbb5870a7a",
+    "parts": [ {
+      "text": "Can you prevent any purchases made on the applications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4917158b-590e-49f1-8178-ecd58d61d04e",
+    "parts": [ {
+      "text": "I no longer want to make purchases on the "
+    }, {
+      "text": "Google",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": " Play Store"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5f822e03-0cdd-4d92-8b73-9181fc134203",
+    "parts": [ {
+      "text": "No more purchases on applications please!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "35e7cfd4-4884-4e7a-bad8-2e362234a19e",
+    "parts": [ {
+      "text": "How can I stop all transactions made on the app store?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3aa1b91-3de2-4b2a-a5c7-a44358c1e2a8",
+    "parts": [ {
+      "text": "block in app purchases on my tablet"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a838a0f1-534d-46f4-8c12-138c029597b2",
+    "parts": [ {
+      "text": "I want to block purchases made on the Play store"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7adc0b7d-a0cb-4793-ba11-1b9b8aa5b801",
+    "parts": [ {
+      "text": "How can I stop my kids from buying things on the App store?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b95d888-c238-4b13-9942-2110d4f30dcc",
+    "parts": [ {
+      "text": "Would like to stop any transactions made through applications"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "549b0552-da94-4ec6-8f0a-d4c46c104fff",
+    "parts": [ {
+      "text": "Can you make sure that buying things inside applications is not possible on my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8ceaf39c-5c99-4555-b5a4-60065a2d9971",
+    "parts": [ {
+      "text": "Make sure that my son cannot make purchases inside applications on is cellphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e90b5d8a-29ab-4992-9b24-5f493cfc4224",
+    "parts": [ {
+      "text": "How can I block in app purchases made on a tablet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "10d3fa36-3e10-4b73-87ce-9f0206853d44",
+    "parts": [ {
+      "text": "I would like to block purchases made inside applications on my cellphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6d0ed45a-2b01-4c14-8e93-e485b0d0fea7",
+    "parts": [ {
+      "text": "Is there a way to stop purchases made inside applications?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dcc627f2-0a6f-4af8-8600-98ce984c99a8",
+    "parts": [ {
+      "text": "Trying to enable charges from "
+    }, {
+      "text": "third"
+    }, {
+      "text": " party app"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2e68a6d6-5ea3-490c-b4bd-40ebba77d150",
+    "parts": [ {
+      "text": "disabling in-app purchases as not stopped you from charging me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7cbb4ac2-58ce-4056-acc1-ffee6cdc23c8",
+    "parts": [ {
+      "text": "I want to enable in app purchases"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7b4bfeef-70a2-4dfb-a871-cd03630b5135",
+    "parts": [ {
+      "text": "Could you please block "
+    }, {
+      "text": "google",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": " play purchases on my new cellphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1feb9a65-439c-489c-bc8b-d796fb013e1b",
+    "parts": [ {
+      "text": "Need you to please disable in-app purchases on my phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "42669c86-a594-4e17-a905-446bafe79e27",
+    "parts": [ {
+      "text": "Please turn off in-app purchases in my new "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9dccd324-8088-4274-8694-0fbed49ee35c",
+    "parts": [ {
+      "text": "I need to turn off in-app iTunes Store purchases in my "
+    }, {
+      "text": "iPad",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "19584829-3c4d-46c3-bec0-af66978652e0",
+    "parts": [ {
+      "text": "Can you please turn off in-app purchases?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6c56ad08-e7ac-4af8-821b-650e80ce17fd",
+    "parts": [ {
+      "text": "Wondering how to prevent in-app purchases on "
+    }, {
+      "text": "Google",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " Store."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6a52f687-1c45-4ea0-ad3a-f71528423e99",
+    "parts": [ {
+      "text": "Need to disable in-app purchasing."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "efb363c4-ac8a-4367-9339-a4ab4fd41d17",
+    "parts": [ {
+      "text": "Need to turn off in-app purchases on my new phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "68feb67f-385f-4f29-b52e-f9f1d91317be",
+    "parts": [ {
+      "text": "Please turn off in-app purchases for "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " 13 Pro."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9f3a8f4f-8603-4a29-b681-7f111e93a633",
+    "parts": [ {
+      "text": "Please disable in-app purchases on my "
+    }, {
+      "text": "Samsung Galaxy",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f35a2285-ddfa-427c-8805-5d824018a7f8",
+    "parts": [ {
+      "text": "Could you please disable in-app "
+    }, {
+      "text": "iTunes",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " Store purchases?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0b2006d3-dd96-479c-8693-bd713b9b6b5a",
+    "parts": [ {
+      "text": "I want to block in-app "
+    }, {
+      "text": "Google",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": " purchases."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f3c2d4a4-ada0-4e03-b702-7204cb68dac4",
+    "parts": [ {
+      "text": "Need to block app purchase on my son's phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cc879164-7345-44b8-bd91-74b562153b15",
+    "parts": [ {
+      "text": "Could you please block "
+    }, {
+      "text": "google",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": " play purchases on my number?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "308b1c37-30fb-459a-8a6d-5ba737c4fd3b",
+    "parts": [ {
+      "text": "Can you turn off in-app purchases on my "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "13"
+    }, {
+      "text": " Pro?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "46f369e3-39ee-4bda-8e17-bbeb3f666c91",
+    "parts": [ {
+      "text": "How do I disable app purchase on my "
+    }, {
+      "text": "iPhone",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c40a70e5-ea41-4d94-93c5-fcfa1363b578",
+    "parts": [ {
+      "text": "I want to disable "
+    }, {
+      "text": "google",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": " play store purchases."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9376bf3b-1d9e-4dbe-a3de-97f5108724bd",
+    "parts": [ {
+      "text": "Need to disable in-app purchases on my new phone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0a20f5ad-2d12-4a90-8fa7-966d5f1df1dd",
+    "parts": [ {
+      "text": "Want to disable in-app purchases with "
+    }, {
+      "text": "iTunes",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "25aa19ac-14d2-4574-9163-ec5d82060d9e",
+    "parts": [ {
+      "text": "Could you please block "
+    }, {
+      "text": "Google",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": " Play purchases on my new phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2b2ac8ef-392c-4612-9b5b-318b736cf295",
+    "parts": [ {
+      "text": "Need to disable in-app "
+    }, {
+      "text": "google",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": " purchases."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "23c261d0-199c-4fca-91ab-4f542a29e5df",
+    "parts": [ {
+      "text": "Please turn off ability to buy stuff while using "
+    }, {
+      "text": "Google",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " Play."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66abbf51-7f22-42b1-bbb0-62590d2651cc",
+    "parts": [ {
+      "text": "I want to turn off the ability to make in-app "
+    }, {
+      "text": "google",
+      "parameterId": "iphone_vs_android",
+      "auto": true
+    }, {
+      "text": " purchases."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3ca7c6ab-7546-4f0a-9ee0-051fd42098ab",
+    "parts": [ {
+      "text": "Can you disable the ability to make in-app purchases?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2fec684c-6d5a-4169-9a7b-e19deb591576",
+    "parts": [ {
+      "text": "Please disable in-app purchases with "
+    }, {
+      "text": "Google",
+      "parameterId": "iphone_vs_android"
+    }, {
+      "text": " Play."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c4d5a933-4b86-42cc-bdf2-abb11e4b32a3",
+    "parts": [ {
+      "text": "stop in app purchases"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

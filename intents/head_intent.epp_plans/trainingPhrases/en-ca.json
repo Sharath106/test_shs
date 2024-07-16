@@ -1,0 +1,605 @@
+{
+  "trainingPhrases": [ {
+    "id": "48c19965-2b54-4db0-b1ad-76423f17cc27",
+    "parts": [ {
+      "text": "Employee plan offers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e51e6231-904b-46d4-ba27-128131623213",
+    "parts": [ {
+      "text": "Discount for employee plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "19edbdcc-d335-46f3-95c5-8041992fbd76",
+    "parts": [ {
+      "text": "eligible for epp discount"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d8e34998-49a1-47c5-8515-077e1036a33b",
+    "parts": [ {
+      "text": "activate epp account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3a932827-6b53-4675-8ea8-980ef29360d9",
+    "parts": [ {
+      "text": "Looking for an employee rate"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c9729ed2-0c35-40b2-a9e0-336d93790b9c",
+    "parts": [ {
+      "text": "discount for employees"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "39b20217-6887-49d8-bf43-49f6192d733b",
+    "parts": [ {
+      "text": "employee discount program"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ec2af1f3-2dd3-41a4-8b30-1e57ed2dd24f",
+    "parts": [ {
+      "text": "Get a discount since I work for an Hospital?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4316db82-61e0-4f1a-bf9a-1d96ad83a394",
+    "parts": [ {
+      "text": "Eligible for a company discount?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "14857e89-8a7e-45c4-a188-f457fc0754c2",
+    "parts": [ {
+      "text": "employee purchase program"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1b022b5d-11d2-4890-a39b-37cd4c7dba9e",
+    "parts": [ {
+      "text": "I work for the government"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a81594bd-4ab1-410a-b6f1-4ef231a7ae9c",
+    "parts": [ {
+      "text": "How can i get an epp plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "04f9c2f1-b9a4-46f7-b1d3-4971f3f5c091",
+    "parts": [ {
+      "text": "what are epp plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "eea803b6-81b2-4030-af72-045b1e85b54d",
+    "parts": [ {
+      "text": "i'd like to get more info on your EPP plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9a588d74-2d0a-476d-80c8-ed85b4943c34",
+    "parts": [ {
+      "text": "Explain EPP please."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "68635b3b-6d97-49a3-b157-eb1f709b9b95",
+    "parts": [ {
+      "text": "How do i get an EPP plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cab52c14-b7bb-4739-b278-20ebe4dce5ba",
+    "parts": [ {
+      "text": "What available plans do you have for EPP?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8a039ac4-c462-4458-bb6f-e1c3f17c39f9",
+    "parts": [ {
+      "text": "What does EPP mean?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "45e2d7d0-5373-4a28-aa81-2b28f12058d3",
+    "parts": [ {
+      "text": "Am i eligible for EPP?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b46903b5-ce80-4054-9135-b7a0d7900e49",
+    "parts": [ {
+      "text": "Can i know more about the EPP program?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f76a1297-4dd2-48c4-851b-7a6640719a51",
+    "parts": [ {
+      "text": "EPP information"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "400b8a4c-399e-44a4-8661-ada70f197c15",
+    "parts": [ {
+      "text": "Where can i learn more about your employee purchase program?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c53418bf-0e02-4b13-a9e1-68d9a2546568",
+    "parts": [ {
+      "text": "Do i get benefits with EPP?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6792d1d4-2627-418b-b5a9-f4b759a6c077",
+    "parts": [ {
+      "text": "Disadvantages of EPP"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c9485070-e072-4d7b-8a3a-7118533e55ca",
+    "parts": [ {
+      "text": "exclusive partner program"
+    } ],
+    "repeatCount": 3,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b602c0ec-9ea7-4f2b-8f19-cba57ecc9ded",
+    "parts": [ {
+      "text": "Questions about the Exclusive Partner Program."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "771ef668-77e5-40dc-90c4-4406d9e70db4",
+    "parts": [ {
+      "text": "My employer said I'm eligible for an exclusive partner program with you and I'd like more info."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "09c6dc00-fe87-4aee-ae50-f3311f9546c2",
+    "parts": [ {
+      "text": "How can I get the exclusive partner program?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c0b374d6-e1c3-4a45-99d4-27847aceae54",
+    "parts": [ {
+      "text": "Is the EPP available for me?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cf59f19b-e99d-4111-afc6-61675678640d",
+    "parts": [ {
+      "text": "How do I know if EPP is available in my province?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "721d0ad5-d954-4333-a976-d45572c588e0",
+    "parts": [ {
+      "text": "Could you please tell me if the Exclusive Partner Program is available with my work?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1d1a8367-96e5-4dea-b540-fd80a93ffbdd",
+    "parts": [ {
+      "text": "Would like to join the EPP plan."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e870edf8-dd38-40e7-9c78-30997ddaae98",
+    "parts": [ {
+      "text": "Wondering if I can join your EPP program?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "69d5395f-e95a-4c1f-9aea-69dd5559cfa3",
+    "parts": [ {
+      "text": "Anything I could do in order to get an EPP plan, even though I got told I'm not eligible?!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "def6304a-dafd-47a2-b846-745407a5c39b",
+    "parts": [ {
+      "text": "Someone told me I can't get the EPP but want to make sure there's nothing else I can do in order to get it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1842fb5f-0679-4b83-82c5-1470cbcb2d1b",
+    "parts": [ {
+      "text": "Do you have fees associated with the Exclusive Partner Program?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a5f7fb52-f215-4e6d-878b-ed7399f4f6c1",
+    "parts": [ {
+      "text": "Any way to know all the fees associated with the epp?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d3b69302-e04e-43d7-a1f0-7b8118278c2c",
+    "parts": [ {
+      "text": "Anything I should know about your program for the exclusive partner?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7312be2d-dc11-4bef-b400-58e8ddabc91a",
+    "parts": [ {
+      "text": "I want to know more about the program for exclusive partners."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5ac1933e-fe14-4d15-8d5b-80f65e8fa7d5",
+    "parts": [ {
+      "text": "My work told me to ask you about your exclusive program or something like that?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e601ac32-497f-4728-9eb2-0e5b371c21a2",
+    "parts": [ {
+      "text": "Can you tell me more about your partner exclusive program?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "73f8d6f7-7617-414c-8d76-f4a349613537",
+    "parts": [ {
+      "text": "partner exclusive program info"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1e6eaf59-8699-4a8e-a1a6-4becfc67bf50",
+    "parts": [ {
+      "text": "exclusive partner program details"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f9caa927-1bb7-4437-a814-0b1e327cc4cf",
+    "parts": [ {
+      "text": "Just need more information about the partner program"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3fe0c0c7-00d2-4347-bb50-56090e0ecca8",
+    "parts": [ {
+      "text": "Give me more info regarding the partner program"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8baa6223-f04d-4982-a77c-2fae60b0ca6f",
+    "parts": [ {
+      "text": "What would be the advantage for me to join the EPP?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ecda4a20-7fb8-4174-8d3d-54d40c681014",
+    "parts": [ {
+      "text": "Is there any way I could get the EPP plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "074ede8a-a0a6-4521-9389-8805ae42ba24",
+    "parts": [ {
+      "text": "Someone told me it would be advantageous to join your EPP program, can you tell me more about it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7e85fbda-0932-4315-934c-1306b8496192",
+    "parts": [ {
+      "text": "Want to know more about your plans with the exclusive partner program"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fdac68a8-b594-4bfe-a0d7-470a2e8091f0",
+    "parts": [ {
+      "text": "More information regarding your plans under the exclusive partner program, please."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "542b9651-6736-480f-81b8-dada7451af9e",
+    "parts": [ {
+      "text": "EPP plans detail please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "003edcf9-7aae-4d1f-8696-4915df7fd1ff",
+    "parts": [ {
+      "text": "Which plan options do I have with EPP?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "92c32d75-5fc4-49c6-9ad0-da7167dd2749",
+    "parts": [ {
+      "text": "What would be my plans choices with the EPP?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b85baadb-60ea-4d64-a41f-4e236b4b5171",
+    "parts": [ {
+      "text": "I know someone with an EPP plan and would like the same plan."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8451423b-dbf6-4813-8f9f-5561e114c482",
+    "parts": [ {
+      "text": "Is it possible for anyone to get an EPP plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66dcd329-67e4-4784-828f-1280b7e33435",
+    "parts": [ {
+      "text": "My brother who works at the same hospital as me got an EPP plan with you so I am wondering if I can get the same too?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6b537401-ed0e-497d-a74c-2c75168571cb",
+    "parts": [ {
+      "text": "epp accounts"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bfe7184c-a122-4ff2-8a79-3f373f3b45ce",
+    "parts": [ {
+      "text": "Is it possible for anyone to get an epp account?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "58dcd0b6-e39d-4e45-a531-20fbfeeca83e",
+    "parts": [ {
+      "text": "How can I apply for epp?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c71dc9c3-9609-4303-9e0b-9ef089d098fb",
+    "parts": [ {
+      "text": "What plans are included into your exclusive partner program?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fba10b91-f303-4553-83b5-dc22a9f209f1",
+    "parts": [ {
+      "text": "what kinds of phones are available in the epp?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c9ec5f8c-4ad6-4ff6-a2aa-2decc76a06c5",
+    "parts": [ {
+      "text": "can I get into epp without the corporate email?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f5534d71-545b-4df7-a1a0-dec070b6113a",
+    "parts": [ {
+      "text": "how to check if I am eligible for epp?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4da4fb59-c15b-4e36-bfdb-55ff19ec0ee2",
+    "parts": [ {
+      "text": "Discounts for employees"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e0106018-f68f-45be-86b7-ebeae26d4846",
+    "parts": [ {
+      "text": "What is the Telus employee plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dddf287c-a6a5-4c35-8e92-5daa2ac9c6df",
+    "parts": [ {
+      "text": "partner program plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "92125f37-f7ca-4720-ab89-28f740347e26",
+    "parts": [ {
+      "text": "list of your plans under the partner program, please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0e5a0fff-ece9-4819-af6e-27f8b9a48331",
+    "parts": [ {
+      "text": "Hi, could you give me a list of your  partner program plans?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "14c743c0-7440-42af-b925-ecabefca008c",
+    "parts": [ {
+      "text": "I'm in the partner program and would like to learn more about the epp plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2e6c05da-7fcf-4b3c-bb77-d4b28b596324",
+    "parts": [ {
+      "text": "I'd like to learn about the EPP plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "be0fd49d-0204-482a-9d3d-779709cebf88",
+    "parts": [ {
+      "text": "talk about EPP plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5d156013-36d9-4796-b812-2765e5154323",
+    "parts": [ {
+      "text": "Employee discounts"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3d9c063b-7165-4103-9f38-6d0dd84aefba",
+    "parts": [ {
+      "text": "I've got some questions about EPP plans"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b0efe555-c4c3-4975-b2b4-bf145c7f170a",
+    "parts": [ {
+      "text": "I need an answer to my question about EPP"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7666eead-b0fe-4f6e-b47a-07e6e7d04743",
+    "parts": [ {
+      "text": "I heard I have a discount since I work for the government"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "efa6bc04-1cd6-4528-a265-0a3e0debb62b",
+    "parts": [ {
+      "text": "I want to learn about employee plans please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aece133f-60c7-44be-b9e3-2a8ef5b5695c",
+    "parts": [ {
+      "text": "Am I eligible for an epp plan?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "757f6d27-6813-4447-b7a7-cb236475b844",
+    "parts": [ {
+      "text": "I would like to ask some questions about the epp"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f6b7cb0c-7fce-4d93-b153-d02561b4ab1d",
+    "parts": [ {
+      "text": "how to go from a normal plan to an epp plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7961f454-55fa-49b4-b30a-046defa95932",
+    "parts": [ {
+      "text": "What is Telus employee plan discount?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "04447068-fc24-4b93-a1c5-ef34bd45ff11",
+    "parts": [ {
+      "text": "I heard you have some EPP plan. My friend is a police officer and told me about this. Can I get it?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dc34abd2-9c54-4904-9a04-114a9876b04c",
+    "parts": [ {
+      "text": "I would like an EPP plan, just like one my friends please!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cdb1cc89-06ee-46f4-b853-a49fc4032e05",
+    "parts": [ {
+      "text": "I'm filling in an online application for employee discount and have a question"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3351d5c1-ee94-4ecc-a5e6-b13ad947ea01",
+    "parts": [ {
+      "text": "e p p program"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "8b9f0ac1-f7f3-4d55-a1b2-ad401dc12cd1",
+    "parts": [ {
+      "text": "i have a question about my e p p"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b76ee301-1ad0-4352-b937-9d9ccc376bc3",
+    "parts": [ {
+      "text": "employee purchase plan"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

@@ -1,0 +1,745 @@
+{
+  "trainingPhrases": [ {
+    "id": "561397bb-559d-49bb-8e37-ca72070efbeb",
+    "parts": [ {
+      "text": "cannot get into my outlook"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bd23ea49-74be-4795-8044-3f8e54bc78c4",
+    "parts": [ {
+      "text": "telus webmail issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "be01fb76-098e-4a07-9f0e-7fd56e83bcd6",
+    "parts": [ {
+      "text": "lost access to my email on the phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9e082f9c-a83d-4312-b3a9-c04b79b3f146",
+    "parts": [ {
+      "text": "having trouble logging into my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "5472a449-5ce0-4322-aa31-b58b8a411e9e",
+    "parts": [ {
+      "text": "no incoming mail, can send but can't receive"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b04e0e21-4834-4df1-b564-eb979db1cf89",
+    "parts": [ {
+      "text": "trying to check my email and not being able to"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "79c6714d-5c4f-4799-a5cc-fbb752918eb9",
+    "parts": [ {
+      "text": "can't sign in to my webmail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a55cf218-dc86-45be-a387-a0112e2b564c",
+    "parts": [ {
+      "text": "outlook express email problems"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c56b9b32-1002-4167-8a56-68b7dc536ab6",
+    "parts": [ {
+      "text": "need help on my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f7d78eab-c5ac-4311-8b02-93fd2138de80",
+    "parts": [ {
+      "text": "technical support for email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "480921dc-39b5-4a5b-a39f-2196d80f8dcc",
+    "parts": [ {
+      "text": "tech support for emails"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f56c358f-4081-4d06-b8bd-8d56060bae2e",
+    "parts": [ {
+      "text": "my email and then my password i tried different passwords and they keep kicking me off"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "01ffe82c-a846-49b2-9046-9bbe9fc9426c",
+    "parts": [ {
+      "text": "webmail log missing step"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "26471fd1-35f4-4508-8deb-a804b420ffda",
+    "parts": [ {
+      "text": "i'm trying to send a pdf file and i cannot using the telus server"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d7f0cf35-0844-4628-ad04-f710bb30ded7",
+    "parts": [ {
+      "text": "i'm trying to send a pdf file out and it is telling me it cannot send the message using the server telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "043d5b4e-0986-4de3-b023-fb5c94c9e09d",
+    "parts": [ {
+      "text": "i cannot access my internet webmail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4f41d83b-6f71-4691-984e-62a568196678",
+    "parts": [ {
+      "text": "can't access my telus internet email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3695518f-a1cf-47b8-8505-1800edfdc7a4",
+    "parts": [ {
+      "text": "cannot connect to email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "997de8cf-84c1-4684-85dd-ffc92235aee1",
+    "parts": [ {
+      "text": "i need support with my email account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0ee8978d-5993-4ce2-8ca2-a529db199b1f",
+    "parts": [ {
+      "text": "i am getting a cannot get mail signal on my ipad"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cbe9cfc1-131e-4b28-bcfd-1cb692e3c5c9",
+    "parts": [ {
+      "text": "i'm calling about my mail is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b5397e71-c3c2-43f5-b822-13077dce9773",
+    "parts": [ {
+      "text": "webmail is inaccessible"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7e8ae7c8-3b0d-4457-ace8-2c810377a286",
+    "parts": [ {
+      "text": "calling about i can't get telus webmail or any emails"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6fa205b9-f3dd-4a8e-82c3-b4d94479abb5",
+    "parts": [ {
+      "text": "my telus email is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "dff4cd4d-114d-4f3c-b347-f3998f0d82d6",
+    "parts": [ {
+      "text": "i'm calling about my email which is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2048d5ba-f013-4770-bd2a-74e1fe2890da",
+    "parts": [ {
+      "text": "i can't get in to my my webmail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "39596835-cb68-4488-b4ec-5c977c9fc582",
+    "parts": [ {
+      "text": "my email email address is it says user doesn't exist"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6fc9fca3-2081-47b9-b99a-a4590627098d",
+    "parts": [ {
+      "text": "cannot connect to my server via email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3d155a8f-5d07-4b32-99ef-3a15d10bab53",
+    "parts": [ {
+      "text": "i am locked out of my email account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "fdc8b796-1d26-4cd0-95ab-42e3b6e290f2",
+    "parts": [ {
+      "text": "undefined webmail at telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "227539e3-875e-4c4a-a97f-0e48a9f24117",
+    "parts": [ {
+      "text": "error in email address"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "94d8e70e-4f36-4c22-852e-ab0c38d836aa",
+    "parts": [ {
+      "text": "webmail connect won't connect"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "36d4efc9-0156-49f5-a84a-a4fb77612672",
+    "parts": [ {
+      "text": "i'm calling in regard to my email i'm not getting any thank you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "399464f0-4302-40f7-886b-ea7f21aa5769",
+    "parts": [ {
+      "text": "i can't get in to my log in for my telus webmail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "204fa2cd-6cce-4267-90d8-6393196a2093",
+    "parts": [ {
+      "text": "webmail dead"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "26436e89-0e2b-46e0-8523-380a7b3ab339",
+    "parts": [ {
+      "text": "my email is not working properly"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "1dbee4cb-ac01-48f2-b6ab-f2f8772df1ee",
+    "parts": [ {
+      "text": "i can't retrieve my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "578a7ff3-0857-416e-802f-166183fee38b",
+    "parts": [ {
+      "text": "our email is not working can't receive messages"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "aa0024c5-272f-4cf8-b6ee-2dcdb81b20ce",
+    "parts": [ {
+      "text": "assist with windows live mail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "05d44b8f-50bc-4502-9e35-6824a64a06c2",
+    "parts": [ {
+      "text": "my outlook account is not connecting to the internet properly"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d4cc31fb-f40d-4b73-83d6-cadf8c9ccc53",
+    "parts": [ {
+      "text": "my email is not getting through to me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3c1caa34-0683-4388-ad7c-50e660a8e861",
+    "parts": [ {
+      "text": "i haven't received an email since august thirteenth"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "700c5b22-ead3-4272-93fb-bbb75555ff91",
+    "parts": [ {
+      "text": "oh i can't log in my webmail telus webmail i can't log in"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "92d312e7-99a7-4e9e-82c8-5b8684533c19",
+    "parts": [ {
+      "text": "my email is lost i would like to be reconnected with my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3006eefd-7219-4dcb-977a-757e986f28ca",
+    "parts": [ {
+      "text": "i'm calling about my email not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bdfab7b2-d2a7-4b6e-91d3-5e4e8957a52a",
+    "parts": [ {
+      "text": "my email does not work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "26b499a3-e386-4813-9d1d-75cf29cbd735",
+    "parts": [ {
+      "text": "we cannot activate telus emails"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "4da36b77-474f-45b8-8b9e-1db0f3ea3446",
+    "parts": [ {
+      "text": "email troubleshooting"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "63c74bef-0236-4593-9f83-239386d42840",
+    "parts": [ {
+      "text": "email troubles"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e88139af-ccf7-4bbd-a824-f64a176a6c13",
+    "parts": [ {
+      "text": "i cannot reach my email anymore"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ee5c04aa-e9eb-4de7-81dc-f6a8d16328e0",
+    "parts": [ {
+      "text": "my computer or my email on the computer isn't working very well in the send out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "66e5919d-6dd4-41dc-b52d-fecad5cb7c2f",
+    "parts": [ {
+      "text": "yeah hi i'm calling about my email services with telus it's not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "40307158-6aa4-49bb-a8c3-8d3a15527de0",
+    "parts": [ {
+      "text": "i'm having problems with the email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cdab40f8-b2a9-4f1f-86af-efb587dc7b6c",
+    "parts": [ {
+      "text": "i need support for email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "96475d28-ac8e-492e-a47a-4c104a2e7c31",
+    "parts": [ {
+      "text": "i'm calling about my my email i can't send receive i keep getting a message that it's operation failed"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "af08c46f-4ea5-4989-97fc-18d2c266ed3a",
+    "parts": [ {
+      "text": "email down"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ca036867-1755-439c-8957-8e0bf65c5b6f",
+    "parts": [ {
+      "text": "i'm trying to get an email and i get a message saying that the server imap dot telus dot net is not responding what do i do about it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7e6d2166-6071-47bb-9b22-1b1b600d2f3e",
+    "parts": [ {
+      "text": "technician for email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bfbf6c80-0990-47c8-90fa-46b243f4d28d",
+    "parts": [ {
+      "text": "email won't connect to server"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "885c5ed7-2013-46f0-9216-fd9a3daba57a",
+    "parts": [ {
+      "text": "my email is not coming to my phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "e1759ec3-7d66-44a3-8ea7-2a24ecb6fb5d",
+    "parts": [ {
+      "text": "cannot open my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "437c9e95-7491-46de-8e54-2383abf6b4e6",
+    "parts": [ {
+      "text": "i can't seem to get in to my webmail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "41bd3f27-60e2-4eac-9a91-e5bfe20d790f",
+    "parts": [ {
+      "text": "i've lost my email service"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "538a5346-fd60-4b94-8099-fbebf9a97d4b",
+    "parts": [ {
+      "text": "microsoft outlook connection error"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c0d1e12b-8a64-4fba-bb69-7826b3188f68",
+    "parts": [ {
+      "text": "i'm having problems receiving emails"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2790b56d-9036-486d-ae60-879574012608",
+    "parts": [ {
+      "text": "have an email problem on my computer"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f23439bb-480a-44a7-9b58-4792061218d5",
+    "parts": [ {
+      "text": "can't get email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "18d6e4e4-b33b-48e6-87b6-b02fce01d714",
+    "parts": [ {
+      "text": "i just got a new computer and i'm unable to connect to webmail and get my email down and also for some reason my email capacity on my cellphone isn't working either"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "55e446fd-899c-44bc-8713-1b5933dd43e3",
+    "parts": [ {
+      "text": "my email is not able to connect"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f5291f9f-63f7-438b-92b8-4dfe2f10a0c3",
+    "parts": [ {
+      "text": "can't log in to my telus webmail"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "9cb62c92-1a23-4b87-a9f3-ddb85eb707f7",
+    "parts": [ {
+      "text": "fix my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "da2c29bc-79fc-41f6-97ba-d490fd431441",
+    "parts": [ {
+      "text": "yes my email through telus will not work i cannot send out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ec7d0dd7-a180-4486-96e4-ef16c2ce92c4",
+    "parts": [ {
+      "text": "hello i can't get in to my email it says proxy server settings contact email server"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "281c7ebb-91e6-4c9f-aad0-b1b22d540a3f",
+    "parts": [ {
+      "text": "recover an email account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bdde198e-878d-4dfe-b67d-3b826c1b9cb7",
+    "parts": [ {
+      "text": "trouble with my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "68e8192a-a399-4070-97d3-053858223087",
+    "parts": [ {
+      "text": "trouble with getting email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2ecbbbb0-d97c-4c20-845b-0864283519e4",
+    "parts": [ {
+      "text": "i have problems with my email account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c34d2c55-0a54-4acd-8560-8cc5ef3871b7",
+    "parts": [ {
+      "text": "internet email problems"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "3cd5b422-1c95-489e-ba15-e9a3ac458fc5",
+    "parts": [ {
+      "text": "unable to access email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "b20798aa-44b0-4dab-b580-71702facf5ab",
+    "parts": [ {
+      "text": "i can't get email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "7fc6e1f3-b621-4082-a6a2-ab9995a76e4f",
+    "parts": [ {
+      "text": "not receiving emails"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "ea7e7f57-4ee9-4be6-9876-20247574b25d",
+    "parts": [ {
+      "text": "help with my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "11fe9471-023a-4f68-a108-ba56fabd8e70",
+    "parts": [ {
+      "text": "i need help with webmail please"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "71264baf-b17e-4514-89e9-4e3ace2112c1",
+    "parts": [ {
+      "text": "i would like someone to help me fix my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6e9fe6e2-6a6e-4d2e-a456-15b0c1497609",
+    "parts": [ {
+      "text": "i need help with my email they're not coming in"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "bfbfcfd2-b582-4c7a-ac1d-3d165b34c7c1",
+    "parts": [ {
+      "text": "i'm having problems with my telus email account and i need to speak to someone to help me fix it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2bcbebb1-5a1b-45c9-9a3c-9c048b5728a4",
+    "parts": [ {
+      "text": "help with email account"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0f07b18d-d289-4bd2-9f8e-6f4ad5158def",
+    "parts": [ {
+      "text": "i need help with email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "6101bb07-56f6-4364-a85d-6e327a6ac8b1",
+    "parts": [ {
+      "text": "email isn't working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f2c8716a-c8c4-4268-904c-3f2bdce49660",
+    "parts": [ {
+      "text": "problem with email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "c3df7553-d235-402d-ae6e-a9b4d699eb44",
+    "parts": [ {
+      "text": "no email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "05c60835-452d-4b3c-9419-4b4881923ece",
+    "parts": [ {
+      "text": "i am not getting my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cfc19c3d-a206-4294-80bf-2bee05d98719",
+    "parts": [ {
+      "text": "email doesn't work"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "954fdff0-ed94-4c6a-96ac-4c7e55a0309d",
+    "parts": [ {
+      "text": "i'm having trouble with my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "f5540678-a588-4d53-befc-50ae569452b5",
+    "parts": [ {
+      "text": "webmail support"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0b0c10b4-4bfe-4b1f-aa62-d1e6d5dc3c49",
+    "parts": [ {
+      "text": "not receiving email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "d9ad4130-5317-4d71-a1f8-85b0a5738446",
+    "parts": [ {
+      "text": "my email is not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "0fcfc3e6-702f-42ab-b371-a3337db8ac41",
+    "parts": [ {
+      "text": "i can't get in to my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "2fb1e50a-309f-4ad5-8745-8eaa0f974741",
+    "parts": [ {
+      "text": "problems with my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "50a4b36e-71cc-442a-8310-ff6872451e27",
+    "parts": [ {
+      "text": "i need help with my email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "21235b01-9fd5-4090-87c1-68b77e531d22",
+    "parts": [ {
+      "text": "email issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cc9cc5fa-e02f-47ee-adf0-4e098da77b6f",
+    "parts": [ {
+      "text": "problems with email"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "70bd6f3d-f0cb-4dea-945e-441bfe8716d3",
+    "parts": [ {
+      "text": "email issue"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "a29fc255-3a63-4154-be9e-1e0e9cb3fb81",
+    "parts": [ {
+      "text": "email not working"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "cbaff9d5-ce46-4162-a1ca-1d7fbf1990a1",
+    "parts": [ {
+      "text": "email problems"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  }, {
+    "id": "16ae7b88-fc47-4b0e-9d93-6f42f1ce5e86",
+    "parts": [ {
+      "text": "a difficulty accessing emails"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en-ca"
+  } ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "98f437cc-4ee8-40fb-a6d0-057e79d9010e",
+  "displayName": "head_intent.equipment_trade_in",
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer would like to trade their old phone for a new one / credit.",
+  "numTrainingPhrases": 186
+}

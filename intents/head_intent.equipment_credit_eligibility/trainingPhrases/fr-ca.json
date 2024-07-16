@@ -1,0 +1,978 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "quand suis-je éligible pour "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux savoir quand je pourrai avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "cote de crédit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demandais si je pouvais "
+    }, {
+      "text": "passer à un",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " avec le même forfait?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande si je peux "
+    }, {
+      "text": "passer à un",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Puis-je "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon iPhone vers "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je demande si mon compte est éligible pour une "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " vers "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Suis-je déjà éligible pour une "
+    }, {
+      "text": "nouvelle",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " de cellulaire, sinon quand puis-je le "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche à obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " nouvel iphone. J'étais curieux de savoir si j'étais éligible pour une "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux "
+    }, {
+      "text": "un"
+    }, {
+      "text": " téléphone plus récent. Puis-je encore obtenir une "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Possible de "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon téléphone plus tôt?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon téléphone plus tôt, puis-je?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Puis-je "
+    }, {
+      "text": "acheter un",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " appareil en ligne si j'ai un mauvais crédit?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon crédit est faible et j'ai quelques factures en souffrance. Ai-je quand même la possibilité de refinancer "
+    }, {
+      "text": "un"
+    }, {
+      "text": " téléphone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche à savoir si ma cote de crédit est acceptable pour une "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande si j'ai besoin d'antécédents de crédit pour être approuvé pour "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie d'avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " téléphone. Malheureusement, il est indiqué qu'en raison de ma cote de crédit, je ne peux pas ajouter de téléphone."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon téléphone vers le Samsung S21 et ça me dit que je ne peux pas en raison de ma cote de crédit, mais cela semble très peu probable car ma cote de crédit n'a pas baissé récemment."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souhaite "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon téléphone vers "
+    }, {
+      "text": "un"
+    }, {
+      "text": " Apple XS Max. J'aimerais utiliser mon téléphone actuel pour mes enfants pour les appels et les SMS. J'ai essayé d'acheter en ligne mais je n'ai pas pu. Cela a dit qu'il y avait un problème avec ma cote de crédit."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mon téléphone est cassé, j'ai essayé d'en obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " autre mais ça dit que ma cote de crédit n'est pas assez bonne mais Videotron vient de m'accepter pour le même téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Eh bien, je me demande si je serais admissible à "
+    }, {
+      "text": "un"
+    }, {
+      "text": " contrat de téléphonie cellulaire. Mon pointage de crédit indique qu'il a besoin de travail et j'y travaille depuis plus d'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " an. Donc, avant de demander à Telus de faire une vérification approfondie de ma cote de crédit, je me demandais si je serais même admissible avec une cote de 65"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous me dire quelle doit être la cote de crédit moyenne pour obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " téléphone avec paiement à crédit?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quel est le pointage de crédit minimum requis pour ouvrir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " compte et financer "
+    }, {
+      "text": "un"
+    }, {
+      "text": " téléphone via telus?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Enfin, Telus fait-elle une vérification de crédit pour les ententes et si c'est le cas et que je ne suis pas admissible, puis-je faire un dépôt pour être toujours sous contrat?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Comment une personne sans historique de crédit peut-elle devenir éligible pour "
+    }, {
+      "text": "un"
+    }, {
+      "text": " téléphone et "
+    }, {
+      "text": "un"
+    }, {
+      "text": " forfait"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "De quel type de pointage de crédit aurais-je besoin pour être admissible à une ligne téléphonique?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mais je n'ai pas une bonne cote de crédit, que puis-je faire?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie d'"
+    }, {
+      "text": "acheter un",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " téléphone en ligne, mais ça dit que je ne peux pas en raison de ma cote de crédit."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-vous me dire si j'ai droit à "
+    }, {
+      "text": "un"
+    }, {
+      "text": " téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ça dit que ma cote de crédit n'est pas assez bonne pour obtenir l'iphone XR mais je voulais verser un acompte pour le téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ça dit que je ne peux pas acheter de téléphone à cause de ma cote de crédit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "On m'a dit de contacter le service client par téléphone pour procéder à une vérification de crédit afin que je puisse passer du prépayé au postpayé, mais lorsque j'ai appelé deux fois, l'appel a été annulé."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "comment puis-je obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " si je viens de recevoir une carte de crédit et que je n'ai pas de crédit?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quelle doit être ma cote de crédit pour être approuvée"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je sais que je n'ai pas le meilleur crédit, puis-je obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " téléphone et "
+    }, {
+      "text": "un"
+    }, {
+      "text": " compte en obtenant une limite de crédit, et puis-je faire une vérification de crédit sans carte de crédit? j'en ai pas"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche à "
+    }, {
+      "text": "acheter un",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " nouvel iPhone, mais le site Web indique que je ne peux pas l'acheter en ligne en raison de ma cote de crédit. Quelle est la cote de crédit minimale requise?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": ". Mais ça dit que mon crédit n'est pas bon. Mais quand je vérifie ma cote de crédit auprès des bureaux de crédit, transunion et equifax ont tous les deux une bonne cote de crédit. Quel est le problème, je ne peux pas obtenir un "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " et effectuer une "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": ". Merci"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "On m'a dit que je pouvais parce que ma cote de crédit est faible"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ai-je encore besoin d'une vérification de crédit pour souscrire aux services mobiles?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai donc vraiment "
+    }, {
+      "text": "besoin d'un nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": ", mais je ne peux pas encore en "
+    }, {
+      "text": "acheter un",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " à cause de mon crédit ou quelque chose du genre. Je voulais commander le "
+    }, {
+      "text": "nouveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " téléphone Motorola Razor, comment pourrais-je faire?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de commander et d'ajouter une Apple Watch à mon compte, mais cela dit que ma cote de crédit ne me permet pas de le faire. Pourtant, ma cote de crédit se situe au milieu des 70. Que dois-je faire pour en obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande quelles sont les exigences pour financer une montre intelligente avec telus"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demandais simplement si vous pouviez m'aider à trouver ce que je peux faire pour approuver l'Apple Watch. Ça dit que j'ai une mauvaise cote de crédit. Cela aiderait-il si je payais mon solde en souffrance afin que je puisse ajouter l'Apple Watch sur mon compte"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de commander "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " mais ça dit que je ne peux pas à cause de mon crédit. je n'ai pas de carte de crédit ou quoi que ce soit, donc il n'y a rien de mal avec mon crédit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je voudrais éventuellement "
+    }, {
+      "text": "acheter un",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " téléphone. il dit qu'il y a un problème de cote de crédit?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie d'obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " compte de services mobiles et "
+    }, {
+      "text": "un"
+    }, {
+      "text": " iPhone, mais apparemment j'échoue à la vérification de crédit. Ma cote de crédit avec equifax est de 82. Avez-vous une idée?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande simplement quelles sont vos exigences en matière de crédit en général. Je cherche à "
+    }, {
+      "text": "acheter un nouveau",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " téléphone mais je ne veux pas faire vérifier mon crédit si je n'ai aucune chance d'être approuvé."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie d'acheter et d'ajouter une Apple Watch à mon forfait, mais cela me dit que ce n'est pas possible en raison de quelque chose avec ma cote de crédit. Cependant, je ne comprends pas parce que ma cote de crédit dépasse les 70. Y a-t-il quelque chose que vous puissiez faire?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Lors de la souscription d'"
+    }, {
+      "text": "un"
+    }, {
+      "text": " forfait, j'ai des problèmes avec la vérification de crédit. Le problème est que je n'ai pas d'antécédents de crédit. Je me demandais quelles sont mes options?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "ça dit que ma cote de crédit n'est pas assez bonne pour le faire en ligne."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mais ma cote de crédit m'interdit d'"
+    }, {
+      "text": "acheter un nouveau",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je souhaite précommander "
+    }, {
+      "text": "un"
+    }, {
+      "text": " LG Velvet. Le site Web indique que ma cote de crédit n'est pas assez bonne. Pouvez-vous m'aider?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai une excellente cote de crédit avec transunion, mais un pointage nul avec Equifax, car tout mon crédit renouvelable a été signalé à Transunion. serais-je toujours en mesure d'avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " service mensuel avec TELUS si j'apporte mon "
+    }, {
+      "text": "propre appareil",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai "
+    }, {
+      "text": "besoin d'un nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": ", mais j'ai une mauvaise cote de crédit. Je sais que je ne suis pas admissible, mais je me demande si je ne pourrais pas avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " téléphone en payant un montant de départ plus élevé."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai suivi tout le processus et j'ai obtenu "
+    }, {
+      "text": "un"
+    }, {
+      "text": " plan avec le rapport de crédit me plafonnant, mais il allait examiner ma situation de crédit pour voir s'il y avait un financement pour pouvoir obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouvel appareil",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": ", je ne sais pas s'il s'agissait de la même session de clavardage ou pas si vous pouviez faire ça"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "d'accord, alors quand j'essaie d'acheter le téléphone en question, ça dit que mon pointage de crédit est trop bas : j'essaie d'acheter le téléphone sans financement, je ne vois pas pourquoi mon pointage de crédit serait pris en compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "quand j'ai essayé en ligne, cela a dit que j'avais besoin d'aide en raison de ma cote de crédit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'avais des questions sur le fonctionnement de l'approbation du financement?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je me demande simplement ce que ça signifie de ne pas pouvoir ajouter "
+    }, {
+      "text": "un"
+    }, {
+      "text": " appareil téléphonique en raison d'une cote de crédit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche à "
+    }, {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " mon téléphone et celui de ma femme pour profiter du forfait Sans tracas. Malheureusement, nous avons une mauvaise cote de crédit et ne pouvons pas effectuer la transaction en ligne. La promotion se termine demain et nous ne pourrons probablement pas nous rendre dans un magasin Telus car ma femme travaille comme infirmière autorisée et travaille demain pendant les heures de bureau."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai juste une question j'ai essayé d'obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " téléphone, mais ça dit que je ne peux pas en raison de ma cote de crédit, pouvez-vous m'aider avec ça?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'ai demandé l'iPhone 12 pro max en précommande mais j'ai reçu un courriel indiquant que ma vérification de crédit n'a pas été approuvée. C'est bizarre car j'ai une bonne cote de crédit comme on le voit dans la section cote de crédit de ma banque."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "J'essaie de changer de fournisseur pour Telus et je n'ai jamais eu de forfaits téléphoniques ou de cartes de crédit à mon nom auparavant, donc je n'ai pas vraiment de pointage de crédit et ça refuse de me laisser créer "
+    }, {
+      "text": "un"
+    }, {
+      "text": " compte, mais je n'ai aucun problème pour payer les factures et travaille à temps plein"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je cherche à obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " cellulaire. Celui que j'ai est vieux. Le stockage est plein et ma batterie doit être en fin de vie, car le téléphone s'éteint lorsqu'elle atteint environ 50 %. Ma cote de crédit est mauvaise, je ne suis donc pas admissible."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me demande ce que je peux faire pour une "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " vu que mon téléphone est tombé en panne et que j'en ai "
+    }, {
+      "text": "besoin d'un nouveau",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": ". vous continuez à m'envoyer des offres par courriel et lorsque j'essaie d'accéder à l'une d'entre elles, cela ne me laisse pas à cause ma cote de crédit."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Donc, vous dites que je ne peux pas "
+    }, {
+      "text": "acheter un",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " téléphone en ligne en raison de ma cote de crédit alors que ma cote est bonne. Donc, si vous ne pouvez pas m'aider, je suis sûr qu'une autre entreprise le fera. C'est ridicule."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je veux prendre "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " MAIS ça dit que je ne peux pas à cause de ma cote de crédit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Mon iPhone 10 ne charge plus, j'aimerais donc prendre "
+    }, {
+      "text": "un"
+    }, {
+      "text": " iPhone 12, mais ça dit qu'il y a un problème avec ma cote de crédit. Pouvez-vous m'aider? Merci"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je me renseigne sur la "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " de mon téléphone, mais ça dit que j'ai une mauvaise cote de crédit, alors je vous demande"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Je suis "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau client"
+    }, {
+      "text": " et j'espérais obtenir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " compte, mais je viens d'essayer et je n'ai pas pu le faire en raison de \"limites de crédit\", pouvez-vous me donner des informations à ce sujet ? Ma cote de crédit est de 77, j'ai pu acheter une maison et un véhicule, donc je ne vois pas comment je pourrais ne pas être éligible pour un téléphone!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "suis-je éligible pour ajouter une "
+    }, {
+      "text": "nouvelle ligne",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "mettre à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " le téléphone de ma mère"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Possibilité d'"
+    }, {
+      "text": "ajouter une ligne",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "suis-je éligible pour la "
+    }, {
+      "text": "mise à niveau",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " du téléphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Pouvez-vous voir si mon téléphone est capable d'être mis à niveau"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "pouvez-vous vérifier mon éligibilité"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Suis-je éligible à l'offre"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "puis-je avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    }, {
+      "text": " bientôt"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "admissibilité à "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "renouvellement",
+      "parameterId": "activation_vs_renew"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Puis-je "
+    }, {
+      "text": "renouveler",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " ma ligne?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Suis-je éligible pour "
+    }, {
+      "text": "ajouter une ligne",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "je veux savoir si je peux avoir "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "éligible pour "
+    }, {
+      "text": "un"
+    }, {
+      "text": " "
+    }, {
+      "text": "nouveau téléphone",
+      "parameterId": "new_or_byod_phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "éligible pour "
+    }, {
+      "text": "renouveler",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " ma ligne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Puis-je "
+    }, {
+      "text": "activer",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " une "
+    }, {
+      "text": "nouvelle ligne",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": " sur mon compte?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  }, {
+    "parts": [ {
+      "text": "Suis-je éligible au "
+    }, {
+      "text": "renouvellement",
+      "parameterId": "activation_vs_renew"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "fr-ca"
+  } ]
+}

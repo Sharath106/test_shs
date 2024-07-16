@@ -1,0 +1,34 @@
+{
+  "name": "bb7a97bf-4826-44b7-bcd7-08974623d36a",
+  "displayName": "head_intent.equipment_order",
+  "parameters": [ {
+    "id": "activation_vs_renew",
+    "entityType": "@activation-vs-renew"
+  }, {
+    "id": "new_vs_existing_account",
+    "entityType": "@new-vs-existing-account"
+  }, {
+    "id": "new_or_byod_phone",
+    "entityType": "@new-or-byod-phone"
+  }, {
+    "id": "device_type",
+    "entityType": "@device-type"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  }, {
+    "key": "transactional",
+    "value": "transactional"
+  } ],
+  "description": "Customers inquiring about ordering devices and accessories.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 407
+}

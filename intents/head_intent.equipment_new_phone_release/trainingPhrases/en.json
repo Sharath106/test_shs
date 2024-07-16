@@ -1,0 +1,763 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Do you have news on when the upcoming Samsung galaxy Ultra will hit the shelves?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Any news on when Samsung Galaxy 24 phones will be out?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When can I expect the latest Apple watch to be available on the market?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is it possible to know when the next iPhone is hitting stores?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you give information on the release dates for the upcoming Ipad?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you enlighten me on the release date for Samsung Galaxy phones?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When will the new iPhone 16 be available for purchase?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you know when the next galaxy phone is coming out?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What date is the latest Google pixel watch expected to be released on?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you give more details on the release date for the Samsung Galaxy 23 Ultra?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The new Pixel, when will it be available? "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When you'll be releasing your new phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When will TELUS start selling the new phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm considering purchasing the latest iPhone that just came out."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you know when the latest iPhone will be out? I'm considering buying it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Just wondering when they'll be releasing that phone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Any idea as to when they're launching their new phone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When will you guys start selling the new Galaxy phone Samsung just released?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What day is the new model coming out?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What's the launch date for the new iPhone?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "order new iphone put out by Apple"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What's the checkout process for ordering the iPhone 15?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there a specific website or page where I can order the iPhone 15?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I purchase the iPhone 15 online?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What information do you need from me to place my order for the iPhone 15?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm ready to buy the iPhone 15. What's the next step?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm curious about the new iPhone 15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What's the pricing for the iPhone 15?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm interested in purchasing a new device, the iPhone 15."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you provide information about the iPhone 15?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Tell me about any sales offers for the iPhone 15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you have the iPhone 15 available?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to upgrade my iPhone to the latest model"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need the iPhone 15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to purchase the iPhone 15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to buy the iPhone 15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to pre-order the iPhone 15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Tell me about the iPhone 15 ordering process"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Tell me about the iPhone 15 pre-order process"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm looking to buy the latest iPhone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm thinking of buying the iPhone 15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is the iPhone 15 in stock?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm looking to upgrade to the iPhone 15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I acquire the iPhone 15?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want the most recent iPhone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When is the iPhone 15 available for purchase?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Give me information about the iPhone 15 release"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What's the cost of the iPhone 15?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Tell me about the iPhone 15 pricing"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Where can I buy the iPhone 15?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I order the newest iPhone 15?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to purchase the latest iPhone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I get the iPhone 15?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Give me details on the iPhone 15 release date"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I purchase the new iPhone 15 yet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I buy the newest iPhone 15 yet?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I order the new iPhone 15?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When does pre-order of new iphone starts"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When can I do the pre-order for my new iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "When can we book our new iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Features of the new iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Give me information about the new iphone release"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to purchase newest iPhone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you tell me when the new iphone is coming out?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "date of iphone "
+    }, {
+      "text": "15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when is the iphone "
+    }, {
+      "text": "15"
+    }, {
+      "text": " coming out"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "info on iphone "
+    }, {
+      "text": "15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you tell me more about the iphone "
+    }, {
+      "text": "15"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to buy iPhone "
+    }, {
+      "text": "15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where can i order for iPhone "
+    }, {
+      "text": "15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how can i buy the latest iPhone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Pre"
+    }, {
+      "text": " ordering "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    }, {
+      "text": " issues"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "purchase of "
+    }, {
+      "text": "iPhone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "pre"
+    }, {
+      "text": "-order a "
+    }, {
+      "text": "new"
+    }, {
+      "text": " "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    }, {
+      "text": " Promax and it won't let me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to "
+    }, {
+      "text": "pre"
+    }, {
+      "text": "-order the "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "buy "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to preorder an "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to buy "
+    }, {
+      "text": "fifteen"
+    }, {
+      "text": " Promax "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    }, {
+      "text": " Promax but I am not sure about my Mobility plan how my plan will go"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to "
+    }, {
+      "text": "pre"
+    }, {
+      "text": "-order "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to upgrade to the "
+    }, {
+      "text": "new"
+    }, {
+      "text": " "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "fifteen"
+    }, {
+      "text": " "
+    }, {
+      "text": "Pro"
+    }, {
+      "text": " Mac"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm calling about the "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    }, {
+      "text": " "
+    }, {
+      "text": "pre"
+    }, {
+      "text": "-orders"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "pre"
+    }, {
+      "text": "-order an "
+    }, {
+      "text": "iPhone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like information on the "
+    }, {
+      "text": "new"
+    }, {
+      "text": " "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "50"
+    }, {
+      "text": " Promax"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like some information on the "
+    }, {
+      "text": "new"
+    }, {
+      "text": " "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    }, {
+      "text": " Promax prices and plan prices"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I ordered a phone the wrong phone and it's been canceled but I'm trying to "
+    }, {
+      "text": "pre"
+    }, {
+      "text": "-order a "
+    }, {
+      "text": "new"
+    }, {
+      "text": " "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    }, {
+      "text": " Promax and it won't let me"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Pre"
+    }, {
+      "text": " order "
+    }, {
+      "text": "iPhone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to "
+    }, {
+      "text": "pre"
+    }, {
+      "text": " order "
+    }, {
+      "text": "new"
+    }, {
+      "text": " "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want to get latest "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "pre"
+    }, {
+      "text": " order "
+    }, {
+      "text": "new"
+    }, {
+      "text": " "
+    }, {
+      "text": "iphone"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "iphone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    }, {
+      "text": " "
+    }, {
+      "text": "pro"
+    }, {
+      "text": " max"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "pre"
+    }, {
+      "text": " order "
+    }, {
+      "text": "iphone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "iphone"
+    }, {
+      "text": " "
+    }, {
+      "text": "15"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

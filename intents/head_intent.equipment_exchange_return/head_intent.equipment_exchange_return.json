@@ -1,0 +1,28 @@
+{
+  "name": "f1f6c830-aeea-4dee-9368-4cd1a6f4cced",
+  "displayName": "head_intent.equipment_exchange_return",
+  "parameters": [ {
+    "id": "return_device",
+    "entityType": "@return-device"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "aam",
+    "value": "aam"
+  }, {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer inquiring about exchanging/returning their device.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 291
+}

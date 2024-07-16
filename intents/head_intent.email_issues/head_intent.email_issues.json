@@ -1,0 +1,23 @@
+{
+  "name": "561a4bf2-175d-4296-94fb-d061b4aa4470",
+  "displayName": "head_intent.email_issues",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "troubleshoot"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-agent",
+    "value": "redirect-agent"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Troubleshooting email issues",
+  "numTrainingPhrases": 314
+}

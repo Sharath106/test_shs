@@ -1,0 +1,28 @@
+{
+  "name": "d1905286-686d-48ac-b56f-6d4ec845bfc4",
+  "displayName": "head_intent.enable_disable_data",
+  "parameters": [ {
+    "id": "online_vs_app",
+    "entityType": "@online-vs-app"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "equipment"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "redirect-sms",
+    "value": "redirect-sms"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Inquiries on how to turn on/off data.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 158
+}

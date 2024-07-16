@@ -1,0 +1,20 @@
+{
+  "name": "ea764489-17d8-48b2-8bf8-e25816dd5bff",
+  "displayName": "head_intent.discounts",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customers inquiring about a discount.",
+  "numTrainingPhrases": 119
+}

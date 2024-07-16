@@ -1,0 +1,21 @@
+{
+  "name": "28f6fdd0-0c30-4b0c-8ec7-af729ce5f08a",
+  "displayName": "head_intent.dispute_google_play_purchase",
+  "priority": 500000,
+  "labels": [ {
+    "key": "driver",
+    "value": "bill"
+  }, {
+    "key": "informational",
+    "value": "informational"
+  }, {
+    "key": "nonaam",
+    "value": "nonaam"
+  }, {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "Customer disputing a Google play purchase.",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 160
+}
